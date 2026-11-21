@@ -10,6 +10,7 @@ import { STATUS_COLOR, STATUS_LABEL } from '../lib/mastery'
 import { lastNDays, successRate } from '../lib/stats'
 import { LESSONS } from '../content'
 import { LEVELS } from '../content/types'
+import { badges, bestStreak } from '../lib/rewards'
 
 export default function Progress() {
   const profile = useProfile()
@@ -20,6 +21,8 @@ export default function Progress() {
     progress: await db.lessonProgress.toArray(),
     assessments: await db.assessments.orderBy('at').reverse().toArray(),
     cards: await db.cards.toArray(),
+    writings: await db.writings.toArray(),
+    recordings: await db.recordings.count(),
   }))
   if (!d || !profile) return null
 
@@ -58,8 +61,10 @@ export default function Progress() {
         <p className="mt-3 text-sm text-ink-500">Demonstrated level: <LevelBadge level={cur ?? 'not tested'} />. Levels change only through the level test and checkpoints. Retake the level test every 2–3 months to measure real progress.</p>
       </Card>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {[['Study time', `${Math.floor(totalMin / 60)} h ${totalMin % 60} min`], ['Lessons completed', `${completed}/${LESSONS.length}`], ['Words well known', `${vocabKnown}/${d.cards.length}`], [`Success (${range} d)`, sr.total ? `${sr.rate}%` : '—']].map(([k, v]) => (
+      <BadgeGrid d={d} />
+
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+        {[['Study time', `${Math.floor(totalMin / 60)} h ${totalMin % 60} min`], ['Lessons completed', `${completed}/${LESSONS.length}`], ['Words well known', `${vocabKnown}/${d.cards.length}`], [`Success (${range} d)`, sr.total ? `${sr.rate}%` : '—'], ['Best streak', `🔥 ${bestStreak(d.sessions)} d`], ['Total XP', `⭐ ${d.sessions.reduce((a, s) => a + s.xp, 0)}`]].map(([k, v]) => (
           <Card key={k} className="p-3"><p className="text-xs text-ink-400">{k}</p><p className="mt-1 text-xl font-bold tabular-nums">{v}</p></Card>
         ))}
       </div>
@@ -85,7 +90,7 @@ export default function Progress() {
           <div className="flex gap-1" role="group" aria-label="Period">{([7, 30, 90] as const).map((r) => <button key={r} onClick={() => setRange(r)} aria-pressed={range === r} className={clsx('rounded-lg px-2.5 py-1 text-sm', range === r ? 'bg-ink-800 text-white dark:bg-ink-200 dark:text-ink-900' : 'bg-ink-100 dark:bg-ink-800')}>{r} d</button>)}</div>
         </div>
         <p className="mb-1 text-sm text-ink-500">Minutes per day · {periodMin} min in total</p>
-        <div className="h-36"><ResponsiveContainer><BarChart data={rateSeries}><CartesianGrid vertical={false} strokeOpacity={0.15} /><XAxis dataKey="label" fontSize={11} tickLine={false} axisLine={false} interval="preserveStartEnd" /><YAxis width={28} fontSize={11} tickLine={false} axisLine={false} allowDecimals={false} /><Tooltip /><RBar dataKey="minutes" fill="#1b5cf5" radius={[4, 4, 0, 0]} /></BarChart></ResponsiveContainer></div>
+        <div className="h-36"><ResponsiveContainer><BarChart data={rateSeries}><CartesianGrid vertical={false} strokeOpacity={0.15} /><XAxis dataKey="label" fontSize={11} tickLine={false} axisLine={false} interval="preserveStartEnd" /><YAxis width={28} fontSize={11} tickLine={false} axisLine={false} allowDecimals={false} /><Tooltip /><RBar dataKey="minutes" fill="#8257fb" radius={[4, 4, 0, 0]} /></BarChart></ResponsiveContainer></div>
         <p className="mb-1 mt-4 text-sm text-ink-500">Daily success rate (%)</p>
         <div className="h-36"><ResponsiveContainer><LineChart data={rateSeries}><CartesianGrid vertical={false} strokeOpacity={0.15} /><XAxis dataKey="label" fontSize={11} tickLine={false} axisLine={false} interval="preserveStartEnd" /><YAxis width={28} domain={[0, 100]} fontSize={11} tickLine={false} axisLine={false} /><Tooltip /><Line dataKey="rate" stroke="#10b981" strokeWidth={2.5} dot={{ r: 2 }} connectNulls /></LineChart></ResponsiveContainer></div>
       </Card>
@@ -104,5 +109,29 @@ export default function Progress() {
         )}
       </Card>
     </div>
+  )
+}
+
+function BadgeGrid({ d }: { d: Parameters<typeof badges>[0] }) {
+  const all = badges(d)
+  const got = all.filter((b) => b.value >= b.target).length
+  return (
+    <Card>
+      <div className="flex items-center justify-between"><h2 className="font-display text-lg font-extrabold">Badges</h2><span className="chip bg-flame-100 font-bold text-flame-800 dark:bg-flame-900/40 dark:text-flame-200">{got}/{all.length}</span></div>
+      <ul className="mt-3 grid grid-cols-3 gap-3 sm:grid-cols-4">
+        {all.map((b) => {
+          const ok = b.value >= b.target
+          return (
+            <li key={b.id} className="flex flex-col items-center text-center" title={b.desc}>
+              <span className={clsx('flex h-16 w-16 items-center justify-center rounded-full text-3xl', ok ? 'bg-flame-100 shadow-[0_4px_0_0_theme(colors.flame.300)] dark:bg-flame-900/40 dark:shadow-[0_4px_0_0_theme(colors.flame.900)]' : 'bg-ink-100 grayscale dark:bg-ink-800')} aria-hidden>
+                <span className={ok ? '' : 'opacity-40'}>{b.icon}</span>
+              </span>
+              <span className={clsx('mt-2 text-xs font-bold', !ok && 'text-ink-400')}>{b.title}</span>
+              <span className="text-[11px] leading-tight text-ink-400">{ok ? b.desc : `${b.value}/${b.target} · ${b.desc}`}</span>
+            </li>
+          )
+        })}
+      </ul>
+    </Card>
   )
 }

@@ -6,6 +6,8 @@ import { ExerciseRunner, ResultsSummary, type RunnerResult } from '../components
 import { addCards, completeLesson, recordAttempt, startLesson } from '../lib/repo'
 import { useProfile, useStudyTimer } from '../hooks/hooks'
 import type { Lesson } from '../content/types'
+import { XP } from '../lib/stats'
+import { celebrate, sfx } from '../lib/fx'
 
 type Step = 'learn' | 'practice' | 'quiz' | 'done'
 
@@ -24,6 +26,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
   const [results, setResults] = useState<RunnerResult[]>([])
   const [added, setAdded] = useState<number | null>(null)
   const [run, setRun] = useState(0)
+  const [xp, setXp] = useState(0)
 
   useEffect(() => void startLesson(lesson.id), [lesson.id])
 
@@ -32,7 +35,10 @@ function LessonView({ lesson }: { lesson: Lesson }) {
 
   const finishQuiz = async (rs: RunnerResult[]) => {
     const score = Math.round((rs.filter((r) => r.correct).length / rs.length) * 100)
-    await completeLesson(lesson.id, score)
+    const { firstPass } = await completeLesson(lesson.id, score)
+    setXp(rs.filter((r) => r.correct).length * XP.correct + (firstPass ? XP.lessonDone : 0))
+    if (score >= 70) celebrate()
+    else sfx.complete()
     setResults(rs)
     setStep('done')
   }
@@ -48,7 +54,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
     <div>
       <PageTitle back="/learn" title={lesson.title} subtitle={`${lesson.level} · ${lesson.category} · ≈ ${lesson.minutes} min`} />
       <ol className="mb-5 flex gap-1.5" aria-label="Lesson steps">
-        {steps.map((s, k) => <li key={s} className={`h-1.5 flex-1 rounded-full ${steps.indexOf(step) >= k ? 'bg-brand-600' : 'bg-ink-200 dark:bg-ink-800'}`} aria-current={s === step ? 'step' : undefined}><span className="sr-only">{s}</span></li>)}
+        {steps.map((s, k) => <li key={s} className={`h-2 flex-1 rounded-full transition-colors ${steps.indexOf(step) >= k ? 'bg-brand-500' : 'bg-ink-200 dark:bg-ink-800'}`} aria-current={s === step ? 'step' : undefined}><span className="sr-only">{s}</span></li>)}
       </ol>
 
       {step === 'learn' && (
@@ -116,7 +122,7 @@ function LessonView({ lesson }: { lesson: Lesson }) {
       {step === 'done' && (
         <div className="space-y-4">
           <Card>
-            <ResultsSummary results={results} onRetry={() => { setRun(run + 1); setStep('quiz') }}>
+            <ResultsSummary results={results} xp={xp} onRetry={() => { setRun(run + 1); setStep('quiz') }}>
               {nextL ? <Link className="btn-primary" to={`/learn/lesson/${nextL.id}`}>Next lesson →</Link> : <Link className="btn-primary" to={`/learn/checkpoint/${lesson.level}`}>Take the {lesson.level} checkpoint</Link>}
             </ResultsSummary>
           </Card>

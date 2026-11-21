@@ -32,7 +32,7 @@ export default function Speaking() {
 
   return (
     <div className="space-y-4">
-      <PageTitle title="Speaking" subtitle="Speak every day. Record yourself, listen back, improve." />
+      <PageTitle back="/practice" title="Speaking" subtitle="Speak every day. Record yourself, listen back, improve." />
       <Card>
         <div className="flex items-center justify-between gap-2"><p className="label">Daily speaking · 1–3 minutes</p>
           <button className="text-sm font-medium text-brand-600 dark:text-brand-400" onClick={() => setTopicIdx((topicIdx + 1) % TOPICS.length)}>Another topic ↻</button></div>

@@ -1,15 +1,16 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
-import { BarChart, Bar as RBar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts'
+import clsx from 'clsx'
 import { db, today } from '../db/db'
 import { useProfile } from '../hooks/hooks'
-import { Card, Bar, Ring, LevelBadge, PageTitle } from '../components/ui'
-import { computeStreak, lastNDays, xpLevel } from '../lib/stats'
-import { allMastery, coachMessage, dailyChallenges, learningLevel, nextLesson, weakestSkills, weeklyChallenges } from '../lib/recommend'
-import { STATUS_COLOR, STATUS_LABEL } from '../lib/mastery'
+import { Card, Bar, Ring, SpeakButton, StreakChip } from '../components/ui'
+import { computeStreak, xpLevel } from '../lib/stats'
+import { coachMessage, dailyChallenges, learningLevel, nextLesson, weekStart, weeklyChallenges } from '../lib/recommend'
+import { badges, CHEST_XP, earned, weekDots, wordOfTheDay } from '../lib/rewards'
+import { addCards, claimChest } from '../lib/repo'
+import { celebrate } from '../lib/fx'
 import { lessonsFor, getLesson } from '../content'
-import { CORE_SKILLS, CROSS_SKILLS, LEVELS } from '../content/types'
-import clsx from 'clsx'
 
 export default function Home() {
   const profile = useProfile()
@@ -19,7 +20,10 @@ export default function Home() {
     progress: await db.lessonProgress.toArray(),
     cards: await db.cards.toArray(),
     writings: await db.writings.toArray(),
+    assessments: await db.assessments.toArray(),
+    recordings: await db.recordings.count(),
     placement: await db.kv.get('placement.done'),
+    chest: await db.kv.get(`chest.${weekStart()}`),
   }))
   if (!profile || !data) return null
 
@@ -27,137 +31,197 @@ export default function Home() {
   const streak = computeStreak(data.sessions)
   const todayS = data.sessions.find((s) => s.day === today())
   const minutesToday = Math.round((todayS?.seconds ?? 0) / 60)
-  const week = lastNDays(data.sessions, 7)
-  const totalXp = data.sessions.reduce((a, s) => a + s.xp, 0)
-  const xp = xpLevel(totalXp)
-  const mastery = allMastery(data.attempts)
-  const weak = weakestSkills(mastery)
+  const xp = xpLevel(data.sessions.reduce((a, s) => a + s.xp, 0))
   const next = nextLesson(level, data.progress)
   const levelLessons = lessonsFor(level)
-  const done = new Set(data.progress.filter((p) => p.status === 'completed').map((p) => p.lessonId))
-  const levelPct = levelLessons.length ? (levelLessons.filter((l) => done.has(l.id)).length / levelLessons.length) * 100 : 0
-  const pending = data.progress.filter((p) => p.status === 'started').map((p) => getLesson(p.lessonId)).filter(Boolean)
+  const doneIds = new Set(data.progress.filter((p) => p.status === 'completed').map((p) => p.lessonId))
+  const levelDone = levelLessons.filter((l) => doneIds.has(l.id)).length
+  const pending = data.progress.filter((p) => p.status === 'started' && p.lessonId !== next?.id).map((p) => getLesson(p.lessonId)).filter(Boolean)
   const due = data.cards.filter((c) => c.due <= Date.now()).length
   const daily = dailyChallenges(data.sessions, data.attempts, data.cards, profile.dailyGoalMin)
   const weekly = weeklyChallenges(data.sessions, data.writings, data.attempts)
   const lastActive = [...data.sessions].filter((s) => s.seconds >= 60).sort((a, b) => b.day.localeCompare(a.day))[0]?.day
-  const goalIdx = LEVELS.indexOf(profile.goalLevel), curIdx = profile.currentLevel && profile.currentLevel !== 'pre-A2' ? LEVELS.indexOf(profile.currentLevel) + 1 : 0
-  const overall = Math.min(100, (curIdx / (goalIdx + 1)) * 100 + (levelPct / (goalIdx + 1)) * 0.5)
+  const dots = weekDots(data.sessions)
+  const goalDone = minutesToday >= profile.dailyGoalMin
+  const allBadges = badges(data)
+  const got = earned(allBadges)
 
   return (
     <div className="space-y-4">
-      <PageTitle title={`Hi ${profile.name} 👋`} subtitle={coachMessage(streak, minutesToday, profile.dailyGoalMin, lastActive)} />
+      <header className="flex items-start justify-between gap-3">
+        <div>
+          <h1 className="text-[28px] font-extrabold leading-tight tracking-tight">Hi {profile.name} 👋</h1>
+          <p className="mt-1 text-sm text-ink-500 dark:text-ink-400">{coachMessage(streak, minutesToday, profile.dailyGoalMin, lastActive)}</p>
+        </div>
+        <div className="flex shrink-0 flex-col items-end gap-1.5">
+          <StreakChip streak={streak} />
+          <span className="chip bg-brand-100 font-bold text-brand-800 dark:bg-brand-900/50 dark:text-brand-200" title={`${xp.into} / ${xp.need} XP to level ${xp.lvl + 1}`}>⭐ Lv {xp.lvl}</span>
+        </div>
+      </header>
+
+      {/* This week */}
+      <Card className="py-3.5">
+        <ol className="flex justify-between" aria-label="Study days this week">
+          {dots.map((d) => (
+            <li key={d.day} className="flex flex-col items-center gap-1.5">
+              <span className={clsx('text-[11px] font-semibold', d.isToday ? 'text-flame-600' : 'text-ink-400')}>{d.label}</span>
+              <span aria-label={`${d.day}${d.done ? ': studied' : ''}`}
+                className={clsx('flex h-9 w-9 items-center justify-center rounded-full text-base', {
+                  'bg-flame-500 text-white shadow-[0_2px_0_0_theme(colors.flame.700)]': d.done,
+                  'border-2 border-dashed border-flame-400': !d.done && d.isToday,
+                  'bg-ink-100 dark:bg-ink-800': !d.done && !d.isToday,
+                })}>{d.done ? '🔥' : ''}</span>
+            </li>
+          ))}
+        </ol>
+      </Card>
 
       {!data.placement && (
-        <Card className="border-brand-200 bg-brand-50 dark:border-brand-900 dark:bg-brand-900/30">
-          <p className="font-semibold">Find your real level</p>
-          <p className="mt-1 text-sm text-ink-600 dark:text-ink-300">Take the 12-minute level test so your path starts at the right place.</p>
-          <Link to="/placement" className="btn-primary mt-3">Take the level test</Link>
+        <Card className="flex items-center gap-4 border-flame-200 bg-flame-50 dark:border-flame-900 dark:bg-flame-900/20">
+          <span className="text-4xl" aria-hidden>🧭</span>
+          <div className="flex-1">
+            <p className="font-display font-bold">Find your real level</p>
+            <p className="text-sm text-ink-600 dark:text-ink-300">12 minutes so your path starts at the right place.</p>
+          </div>
+          <Link to="/placement" className="btn-primary">Take the test</Link>
         </Card>
       )}
 
-      {/* Today */}
-      <Card className="flex items-center gap-5">
-        <Ring value={(minutesToday / profile.dailyGoalMin) * 100} label={`${minutesToday} of ${profile.dailyGoalMin} minutes today`}>
-          <span className="text-xl font-bold tabular-nums">{minutesToday}</span>
-          <span className="text-[10px] text-ink-400">/ {profile.dailyGoalMin} min</span>
-        </Ring>
-        <div className="grid flex-1 grid-cols-3 gap-2 text-center">
-          <div><p className="text-2xl font-bold tabular-nums">🔥 {streak}</p><p className="text-xs text-ink-400">day streak</p></div>
-          <div><p className="text-2xl font-bold tabular-nums">{xp.lvl}</p><p className="text-xs text-ink-400">XP level</p><Bar value={(xp.into / xp.need) * 100} className="mt-1 h-1" label="XP to next level" /></div>
-          <div><p className="text-2xl font-bold tabular-nums">{due}</p><p className="text-xs text-ink-400">cards due</p></div>
+      {/* Today's mission */}
+      <section aria-labelledby="mission-h" className="relative overflow-hidden rounded-3xl bg-brand-600 p-5 text-white shadow-[0_6px_0_0_theme(colors.brand.800)]">
+        <span className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-brand-500/60" aria-hidden />
+        <span className="pointer-events-none absolute -bottom-14 right-16 h-28 w-28 rounded-full bg-brand-700/60" aria-hidden />
+        <div className="relative flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <h2 id="mission-h" className="text-xs font-bold uppercase tracking-wider text-brand-100">{goalDone ? 'Goal reached · bonus round' : "Today's mission"}</h2>
+            {next ? (<>
+              <p className="mt-1.5 font-display text-2xl font-extrabold leading-tight">{next.title}</p>
+              <p className="mt-1 text-sm text-brand-100">{next.objective}</p>
+            </>) : (<>
+              <p className="mt-1.5 font-display text-2xl font-extrabold leading-tight">Prove your {level} level</p>
+              <p className="mt-1 text-sm text-brand-100">Every {level} lesson is done. Pass the checkpoint to level up.</p>
+            </>)}
+          </div>
+          <Ring value={(minutesToday / profile.dailyGoalMin) * 100} size={68} stroke={7} label={`${minutesToday} of ${profile.dailyGoalMin} minutes today`} tone="onBrand">
+            <span className="text-lg font-bold leading-none tabular-nums">{minutesToday}</span>
+            <span className="text-[10px] text-brand-100">/{profile.dailyGoalMin} min</span>
+          </Ring>
         </div>
-      </Card>
-
-      {/* Level */}
-      <Card>
-        <div className="grid grid-cols-3 gap-2 text-center">
-          <div><p className="label">Demonstrated</p><LevelBadge level={profile.currentLevel ?? '?'} className="mt-1.5 text-sm" /></div>
-          <div><p className="label">Working on</p><LevelBadge level={level} className="mt-1.5 bg-brand-100 text-sm text-brand-800 dark:bg-brand-900 dark:text-brand-200" /></div>
-          <div><p className="label">Goal</p><LevelBadge level={profile.goalLevel} className="mt-1.5 bg-ink-800 text-sm dark:bg-ink-700" /></div>
+        <div className="relative mt-4 flex items-center gap-3">
+          <Link to={next ? `/learn/lesson/${next.id}` : `/learn/checkpoint/${level}`}
+            className="btn flex-1 bg-white py-3.5 text-base text-brand-700 shadow-[0_4px_0_0_theme(colors.brand.900)] hover:bg-brand-50 active:translate-y-[3px] active:shadow-[0_1px_0_0_theme(colors.brand.900)]">
+            {next ? `Start · ${next.minutes} min` : 'Take the checkpoint'} →
+          </Link>
         </div>
-        <div className="mt-3 flex items-center gap-3 text-sm"><span className="w-28 text-ink-500">{level} path</span><Bar value={levelPct} label={`${level} path progress`} /><span className="w-10 text-right tabular-nums">{Math.round(levelPct)}%</span></div>
-        <div className="mt-2 flex items-center gap-3 text-sm"><span className="w-28 text-ink-500">Towards {profile.goalLevel}</span><Bar value={overall} color="bg-ink-700 dark:bg-ink-400" label="Overall progress to goal" /><span className="w-10 text-right tabular-nums">{Math.round(overall)}%</span></div>
-      </Card>
-
-      {/* What to do today */}
-      <section aria-labelledby="today-h">
-        <h2 id="today-h" className="mb-2 mt-6 text-lg font-bold">What should I learn today?</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {next ? (
-            <Link to={`/learn/lesson/${next.id}`} className="card block p-4 transition hover:border-brand-300">
-              <p className="label">Next lesson · {next.level}</p>
-              <p className="mt-1 font-semibold">{next.title}</p>
-              <p className="mt-1 text-sm text-ink-500">{next.objective}</p>
-              <p className="mt-2 text-xs text-ink-400">≈ {next.minutes} min</p>
-            </Link>
-          ) : (
-            <Link to={`/learn/checkpoint/${level}`} className="card block p-4">
-              <p className="label">All {level} lessons done</p>
-              <p className="mt-1 font-semibold">Take the {level} checkpoint to prove your level</p>
-            </Link>
-          )}
-          {due > 0 ? (
-            <Link to="/practice/flashcards" className="card block p-4"><p className="label">Spaced review</p><p className="mt-1 font-semibold">{due} flashcard{due > 1 ? 's' : ''} to review</p><p className="mt-1 text-sm text-ink-500">Difficult words come back more often.</p></Link>
-          ) : (
-            <Link to="/practice" className="card block p-4"><p className="label">Practice</p><p className="mt-1 font-semibold">Reading, listening or writing</p><p className="mt-1 text-sm text-ink-500">Train a skill with a real text or audio.</p></Link>
-          )}
+        <div className="relative mt-3 flex items-center gap-2 text-xs text-brand-100">
+          <span className="shrink-0 font-semibold">{level} path</span>
+          <Bar value={(levelDone / Math.max(levelLessons.length, 1)) * 100} className="h-1.5" track="bg-brand-800/60" color="bg-flame-300" label={`${level} path progress`} />
+          <span className="tabular-nums">{levelDone}/{levelLessons.length}</span>
         </div>
-        {pending.length > 0 && (
-          <Card className="mt-3"><p className="label">In progress</p>
-            <ul className="mt-2 space-y-1">{pending.map((l) => <li key={l!.id}><Link className="text-sm font-medium text-brand-600 dark:text-brand-400" to={`/learn/lesson/${l!.id}`}>Finish: {l!.title} →</Link></li>)}</ul>
-          </Card>
-        )}
       </section>
 
-      {/* Skills */}
-      <section aria-labelledby="skills-h">
-        <h2 id="skills-h" className="mb-2 mt-6 text-lg font-bold">Skills</h2>
-        <Card className="space-y-2.5">
-          {[...CORE_SKILLS, ...CROSS_SKILLS].map((s) => {
-            const m = mastery.find((x) => x.skill === s)!
-            return (
-              <div key={s} className="flex items-center gap-3 text-sm">
-                <span className={clsx('w-28 capitalize', CROSS_SKILLS.includes(s) && 'text-ink-500')}>{s}</span>
-                <Bar value={m.score} />
-                <span className={clsx('chip w-24 justify-center', STATUS_COLOR[m.status])}>{STATUS_LABEL[m.status]}</span>
-              </div>
-            )
-          })}
-          {weak.length > 0 && <p className="pt-2 text-sm text-ink-500">Focus next: <span className="font-semibold capitalize text-ink-800 dark:text-ink-100">{weak.map((w) => w.skill).join(', ')}</span></p>}
+      {pending.length > 0 && (
+        <Card className="py-3">
+          <p className="label">Unfinished</p>
+          <ul className="mt-1.5 space-y-1">{pending.map((l) => <li key={l!.id}><Link className="text-sm font-semibold text-brand-600 dark:text-brand-300" to={`/learn/lesson/${l!.id}`}>Finish: {l!.title} →</Link></li>)}</ul>
         </Card>
-      </section>
+      )}
 
-      {/* Challenges */}
-      <section className="grid gap-3 sm:grid-cols-2" aria-label="Challenges">
-        {[{ t: 'Daily challenges', c: daily }, { t: 'Weekly challenges', c: weekly }].map(({ t, c }) => (
-          <Card key={t}>
-            <p className="label">{t}</p>
-            <ul className="mt-2 space-y-2.5">{c.map((x) => (
-              <li key={x.id} className="text-sm">
-                <div className="flex justify-between"><span>{x.done >= x.target ? '✅' : '◻️'} {x.label}</span><span className="tabular-nums text-ink-400">{Math.min(x.done, x.target)}/{x.target}</span></div>
-                <Bar value={(x.done / x.target) * 100} className="mt-1 h-1.5" color={x.done >= x.target ? 'bg-emerald-500' : 'bg-brand-600'} label={x.label} />
-              </li>
-            ))}</ul>
-          </Card>
-        ))}
-      </section>
+      <div className="grid grid-cols-2 gap-3">
+        <WordOfTheDay level={level} />
+        <Link to="/practice/flashcards" className="card flex flex-col justify-between p-4 transition hover:border-brand-300">
+          <span className="label">Review</span>
+          <span className="mt-2 font-display text-3xl font-extrabold tabular-nums">{due}</span>
+          <span className="text-sm text-ink-500">{due === 1 ? 'card due' : 'cards due'}{due ? ' · go!' : ''}</span>
+        </Link>
+      </div>
 
-      {/* Weekly chart */}
+      {/* Daily challenges */}
       <Card>
-        <p className="label mb-3">This week (minutes)</p>
-        <div className="h-40" role="img" aria-label={`Minutes studied in the last 7 days: ${week.map((d) => `${d.label} ${d.minutes}`).join(', ')}`}>
-          <ResponsiveContainer>
-            <BarChart data={week}>
-              <CartesianGrid vertical={false} strokeOpacity={0.15} />
-              <XAxis dataKey="label" tickLine={false} axisLine={false} fontSize={12} />
-              <YAxis width={28} tickLine={false} axisLine={false} fontSize={12} allowDecimals={false} />
-              <Tooltip cursor={{ fillOpacity: 0.06 }} />
-              <RBar dataKey="minutes" fill="#1b5cf5" radius={[6, 6, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+        <h2 className="label">Daily challenges</h2>
+        <ul className="mt-3 space-y-3">{daily.map((x) => {
+          const ok = x.done >= x.target
+          return (
+            <li key={x.id} className="flex items-center gap-3 text-sm">
+              <span className={clsx('flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold', ok ? 'bg-emerald-500 text-white' : 'bg-ink-100 text-ink-400 dark:bg-ink-800')} aria-hidden>{ok ? '✓' : ''}</span>
+              <span className="min-w-0 flex-1">
+                <span className={clsx('flex justify-between gap-2', ok && 'text-ink-400 line-through')}><span>{x.label}</span><span className="tabular-nums text-ink-400">{Math.min(x.done, x.target)}/{x.target}</span></span>
+                <Bar value={(x.done / x.target) * 100} className="mt-1 h-1.5" color={ok ? 'bg-emerald-500' : 'bg-brand-500'} label={x.label} />
+              </span>
+            </li>
+          )
+        })}</ul>
       </Card>
+
+      <WeeklyChest challenges={weekly} opened={!!data.chest} />
+
+      {/* Badges */}
+      <Link to="/progress" className="card flex items-center gap-3 p-4 transition hover:border-brand-300">
+        <span className="flex -space-x-1.5 text-2xl" aria-hidden>
+          {(got.length ? got.slice(-4) : allBadges.slice(0, 3)).map((b) => <span key={b.id} className={clsx('flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-flame-50 dark:border-ink-900 dark:bg-ink-800', !got.length && 'opacity-40 grayscale')}>{b.icon}</span>)}
+        </span>
+        <span className="flex-1">
+          <span className="block font-display font-bold">Badges</span>
+          <span className="text-sm text-ink-500">{got.length}/{allBadges.length} collected</span>
+        </span>
+        <span className="text-ink-300" aria-hidden>›</span>
+      </Link>
     </div>
+  )
+}
+
+function WordOfTheDay({ level }: { level: Parameters<typeof lessonsFor>[0] }) {
+  const w = wordOfTheDay(lessonsFor(level))
+  const [open, setOpen] = useState(false)
+  const [saved, setSaved] = useState(false)
+  if (!w) return null
+  return (
+    <div className="card flex flex-col p-4">
+      <span className="label">Word of the day</span>
+      <span className="mt-2 flex items-center gap-1.5">
+        <span className="font-display text-xl font-extrabold">{w.word}</span>
+        <SpeakButton text={w.word} className="h-7 w-7" />
+      </span>
+      {open ? (
+        <span className="mt-1 animate-rise text-sm">
+          <span className="block text-ink-600 dark:text-ink-300">{w.definition}</span>
+          <span className="block text-ink-400">{w.fr}</span>
+          <button className="mt-1.5 text-xs font-semibold text-brand-600 dark:text-brand-300" disabled={saved}
+            onClick={() => void addCards([{ id: `${level}:${w.id}`, front: w.word, back: `${w.definition} — ${w.fr}`, ipa: w.ipa, example: w.example, source: `${level}:wotd` }]).then(() => setSaved(true))}>
+            {saved ? '✓ In your flashcards' : '+ Save to flashcards'}
+          </button>
+        </span>
+      ) : (
+        <button className="mt-1 text-left text-sm font-semibold text-brand-600 dark:text-brand-300" onClick={() => setOpen(true)}>Guess it, then reveal →</button>
+      )}
+    </div>
+  )
+}
+
+function WeeklyChest({ challenges, opened }: { challenges: ReturnType<typeof weeklyChallenges>; opened: boolean }) {
+  const done = challenges.filter((c) => c.done >= c.target).length
+  const ready = done === challenges.length && !opened
+  const open = async () => {
+    if (await claimChest(weekStart(), CHEST_XP)) celebrate()
+  }
+  return (
+    <Card className={clsx(ready && 'border-flame-300 dark:border-flame-800')}>
+      <div className="flex items-center gap-4">
+        <span className={clsx('text-5xl', ready && 'animate-wiggle')} aria-hidden>{opened ? '🎉' : '🎁'}</span>
+        <div className="flex-1">
+          <h2 className="font-display font-bold">Weekly chest</h2>
+          <p className="text-sm text-ink-500">{opened ? `Opened! +${CHEST_XP} XP. A new chest arrives Monday.` : ready ? 'All weekly challenges done. Open it!' : `Finish the ${challenges.length} weekly challenges to win ${CHEST_XP} XP.`}</p>
+        </div>
+        {ready && <button className="btn-primary bg-flame-500 shadow-[0_3px_0_0_theme(colors.flame.700)] hover:bg-flame-400" onClick={() => void open()}>Open</button>}
+      </div>
+      {!opened && (
+        <ul className="mt-3 space-y-2">{challenges.map((x) => (
+          <li key={x.id} className="text-sm">
+            <div className="flex justify-between"><span className={clsx(x.done >= x.target && 'text-ink-400 line-through')}>{x.label}</span><span className="tabular-nums text-ink-400">{Math.min(x.done, x.target)}/{x.target}</span></div>
+            <Bar value={(x.done / x.target) * 100} className="mt-1 h-1.5" color={x.done >= x.target ? 'bg-emerald-500' : 'bg-flame-400'} label={x.label} />
+          </li>
+        ))}</ul>
+      )}
+    </Card>
   )
 }

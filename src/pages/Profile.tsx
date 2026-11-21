@@ -24,7 +24,9 @@ export default function Profile() {
         <div><span className="label">Daily goal</span><div className="mt-1"><Seg label="Daily goal" value={p.dailyGoalMin} options={[10, 20, 30, 45, 60].map((m) => [m, `${m} min`])} onChange={(v) => set({ dailyGoalMin: v })} /></div></div>
         <div><span className="label">Theme</span><div className="mt-1"><Seg label="Theme" value={p.theme} options={[['system', 'System'], ['light', 'Light'], ['dark', 'Dark']]} onChange={(v) => set({ theme: v })} /></div></div>
         <label className="flex items-center justify-between gap-3"><span><span className="block font-medium">French support</span><span className="text-sm text-ink-500">Show French explanations and translations. Turn it off as your English grows.</span></span>
-          <input type="checkbox" className="h-5 w-5" checked={p.uiFrench} onChange={(e) => set({ uiFrench: e.target.checked })} /></label>
+          <input type="checkbox" className="h-5 w-5 accent-brand-600" checked={p.uiFrench} onChange={(e) => set({ uiFrench: e.target.checked })} /></label>
+        <label className="flex items-center justify-between gap-3"><span><span className="block font-medium">Sounds and vibrations</span><span className="text-sm text-ink-500">Little sounds for correct answers, combos and rewards.</span></span>
+          <input type="checkbox" className="h-5 w-5 accent-brand-600" checked={p.sound ?? true} onChange={(e) => set({ sound: e.target.checked })} /></label>
         <Link to="/placement" className="btn-ghost">Retake the level test</Link>
       </Card>
       <BackupCard />

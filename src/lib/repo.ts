@@ -72,6 +72,7 @@ export async function completeLesson(lessonId: string, score: number) {
   }
   await db.lessonProgress.put(next)
   if (firstPass) await addXp(XP.lessonDone)
+  return { firstPass }
 }
 
 export async function startLesson(lessonId: string) {
@@ -101,4 +102,15 @@ export async function applyPlacement(overall: Level | 'pre-A2', perSkill: Partia
   const skillLevels = Object.fromEntries(Object.entries(perSkill).map(([k, v]) => [k, v!.level]))
   await saveProfile({ currentLevel: overall, skillLevels })
   await db.kv.put({ key: 'placement.done', value: Date.now() })
+}
+
+/** Opens the weekly chest once per week, when every weekly challenge is done. Returns false if already opened. */
+export async function claimChest(week: string, xp: number) {
+  const key = `chest.${week}`
+  return db.transaction('rw', db.kv, db.sessions, async () => {
+    if (await db.kv.get(key)) return false
+    await db.kv.put({ key, value: Date.now() })
+    await addXp(xp)
+    return true
+  })
 }

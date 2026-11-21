@@ -6,6 +6,7 @@ import { Card, PageTitle, Bar, Notice } from '../components/ui'
 import { recordAttempt, saveAssessment, saveProfile, getProfile } from '../lib/repo'
 import { scoreCheckpoint, CHECKPOINT_THRESHOLD } from '../lib/scoring'
 import { useStudyTimer } from '../hooks/hooks'
+import { celebrate, sfx } from '../lib/fx'
 import type { Level, Skill } from '../content/types'
 import { LEVELS } from '../content/types'
 
@@ -28,6 +29,8 @@ export default function Checkpoint() {
       const cur = p?.currentLevel && p.currentLevel !== 'pre-A2' ? LEVELS.indexOf(p.currentLevel) : -1
       if (LEVELS.indexOf(level) > cur) await saveProfile({ currentLevel: level })
     }
+    if (sc.passed) celebrate()
+    else sfx.complete()
     setRes({ rs, passed: sc.passed, perSkill: sc.perSkill })
   }
 

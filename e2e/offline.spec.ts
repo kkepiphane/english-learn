@@ -6,7 +6,7 @@ async function onboard(page: Page) {
   await page.getByPlaceholder('e.g. Epiphane').fill('Tester')
   await page.getByRole('button', { name: /Start the level test/ }).click()
   await page.getByRole('link', { name: /Skip for now/ }).click()
-  await expect(page.getByText('What should I learn today?')).toBeVisible()
+  await expect(page.getByText("Today's mission")).toBeVisible()
 }
 
 test('PWA manifest is valid for the GitHub Pages sub-path', async ({ page }) => {

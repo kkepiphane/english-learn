@@ -1,7 +1,7 @@
 {
   "name": "english-path",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,7 @@
     "lint": "oxlint src"
   },
   "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
     "clsx": "^2.1.1",
     "dexie": "^4.4.7",
     "dexie-react-hooks": "^4.4.0",
@@ -39,6 +40,6 @@
     "vitest": "^5.1.1",
     "workbox-window": "^7.4.1"
   },
-  "description": "English Path \u2014 offline-first PWA to learn English from A2 to C1 and prepare IELTS / TOEFL. Deployed on GitHub Pages.",
+  "description": "English Path — offline-first PWA to learn English from A2 to C1 and prepare IELTS / TOEFL. Deployed on GitHub Pages.",
   "license": "MIT"
 }

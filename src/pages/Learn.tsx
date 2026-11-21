@@ -5,12 +5,28 @@ import clsx from 'clsx'
 import { db } from '../db/db'
 import { useProfile } from '../hooks/hooks'
 import { availableLevels, getLesson, unitsFor } from '../content'
-import { Card, PageTitle, Bar } from '../components/ui'
-import { learningLevel } from '../lib/recommend'
-import type { Level } from '../content/types'
+import { PageTitle, Bar, Stars } from '../components/ui'
+import { learningLevel, nextLesson } from '../lib/recommend'
+import { stars } from '../lib/rewards'
+import type { Lesson, Level } from '../content/types'
 import { LEVELS } from '../content/types'
 
-const CAT: Record<string, string> = { grammar: 'Grammar', vocabulary: 'Vocabulary', everyday: 'Everyday English' }
+const CAT: Record<Lesson['category'], { label: string; icon: string }> = {
+  grammar: { label: 'Grammar', icon: '✏️' },
+  vocabulary: { label: 'Vocabulary', icon: '🔤' },
+  everyday: { label: 'Everyday English', icon: '💬' },
+}
+
+// Literal class strings so Tailwind keeps them. One colour per unit, cycling.
+const UNIT_TONES = [
+  'bg-brand-600 text-white shadow-[0_4px_0_0_theme(colors.brand.800)]',
+  'bg-emerald-500 text-white shadow-[0_4px_0_0_theme(colors.emerald.700)]',
+  'bg-flame-500 text-white shadow-[0_4px_0_0_theme(colors.flame.700)]',
+  'bg-sky-500 text-white shadow-[0_4px_0_0_theme(colors.sky.700)]',
+]
+
+// Horizontal offsets (px) that make the path wind left and right.
+const WIND = [0, 44, 70, 44, 0, -44, -70, -44]
 
 export default function Learn() {
   const profile = useProfile()
@@ -23,59 +39,82 @@ export default function Learn() {
   const all = units.flatMap((u) => u.lessonIds)
   const doneCount = all.filter((id) => map.get(id)?.status === 'completed').length
   const passed = checkpoints.some((c) => c.targetLevel === current && c.passed)
+  const nextId = nextLesson(current, progress)?.id
 
   return (
     <div>
-      <PageTitle title="Learn" subtitle="Structured path: units → lessons → quiz. Lessons build skills; checkpoints prove them." />
-      <div className="mb-4 flex gap-2" role="tablist" aria-label="Level">
+      <PageTitle title="Learn" subtitle="Follow the path: lessons build skills, the trophy proves them." />
+      <div className="mb-4 flex gap-1.5 rounded-2xl bg-ink-100 p-1 dark:bg-ink-900" role="tablist" aria-label="Level">
         {LEVELS.map((l) => {
           const avail = availableLevels().includes(l)
           return (
             <button key={l} role="tab" aria-selected={l === current} disabled={!avail} onClick={() => setLevel(l)}
-              className={clsx('rounded-xl px-4 py-2 text-sm font-semibold', l === current ? 'bg-brand-600 text-white' : 'bg-white text-ink-600 dark:bg-ink-900 dark:text-ink-300', !avail && 'opacity-40')}
+              className={clsx('flex-1 rounded-xl py-2 text-sm font-bold transition', l === current ? 'bg-white text-brand-700 shadow-sm dark:bg-ink-700 dark:text-white' : 'text-ink-500', !avail && 'opacity-40')}
               title={avail ? undefined : 'Coming in a later content update'}>{l}{!avail && ' 🔒'}</button>
           )
         })}
       </div>
 
-      <Card className="mb-4">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex-1">
-            <p className="font-semibold">{current} path</p>
-            <Bar value={(doneCount / Math.max(all.length, 1)) * 100} className="mt-2" label={`${current} path progress`} />
-            <p className="mt-1 text-xs text-ink-400">{doneCount}/{all.length} lessons completed</p>
-          </div>
-          <Link to={`/learn/checkpoint/${current}`} className={passed ? 'btn-ghost' : 'btn-primary'}>{passed ? '✓ Checkpoint passed' : `${current} checkpoint`}</Link>
+      <div className="card mb-6 flex items-center gap-3 p-4">
+        <div className="flex-1">
+          <p className="font-display font-bold">{current} path</p>
+          <Bar value={(doneCount / Math.max(all.length, 1)) * 100} className="mt-2" label={`${current} path progress`} />
+          <p className="mt-1 text-xs text-ink-400">{doneCount}/{all.length} lessons · level goes up only when you pass the checkpoint (≥ 70 % in every skill)</p>
         </div>
-        {!passed && <p className="mt-3 text-xs text-ink-400">Your level goes up only when you pass the checkpoint (≥ 70 % in grammar, vocabulary, reading and listening). We recommend finishing the lessons first.</p>}
-      </Card>
+      </div>
 
-      <div className="space-y-4">
-        {units.map((u) => (
+      <div className="space-y-8">
+        {units.map((u, ui) => (
           <section key={u.id} aria-labelledby={u.id}>
-            <h2 id={u.id} className="mb-1 font-bold">Unit {u.order} · {u.title}</h2>
-            <p className="mb-2 text-sm text-ink-500">{u.description}</p>
-            <div className="grid gap-2">
+            <div className={clsx('rounded-3xl px-5 py-4', UNIT_TONES[ui % UNIT_TONES.length])}>
+              <p className="text-xs font-bold uppercase tracking-wider opacity-80">Unit {u.order}</p>
+              <h2 id={u.id} className="font-display text-xl font-extrabold leading-tight">{u.title}</h2>
+              <p className="mt-0.5 text-sm opacity-90">{u.description}</p>
+            </div>
+            <ol className="mt-6 flex flex-col items-center gap-5">
               {u.lessonIds.map((id) => {
                 const l = getLesson(id)!
                 const p = map.get(id)
+                const done = p?.status === 'completed'
+                const isNext = id === nextId
+                const x = WIND[all.indexOf(id) % WIND.length]
                 return (
-                  <Link key={id} to={`/learn/lesson/${id}`} className="card flex items-center gap-3 p-3.5 transition hover:border-brand-300">
-                    <span className={clsx('flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-bold', p?.status === 'completed' ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300' : p ? 'bg-amber-100 text-amber-700' : 'bg-ink-100 text-ink-500 dark:bg-ink-800')} aria-hidden>
-                      {p?.status === 'completed' ? '✓' : p ? '…' : '○'}
-                    </span>
-                    <span className="min-w-0 flex-1">
-                      <span className="block text-xs font-semibold uppercase tracking-wide text-ink-400">{CAT[l.category]} · {l.minutes} min</span>
-                      <span className="block font-medium">{l.title}</span>
-                    </span>
-                    {p?.status === 'completed' && <span className="text-sm tabular-nums text-ink-400">{p.bestScore}%</span>}
-                  </Link>
+                  <li key={id} className="flex flex-col items-center" style={{ transform: `translateX(${x}px)` }}>
+                    {isNext && <span className="mb-2 animate-bounce rounded-xl bg-brand-600 px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-white">Start</span>}
+                    <Link to={`/learn/lesson/${id}`} aria-label={`${l.title} — ${done ? `completed, best ${p!.bestScore}%` : isNext ? 'next lesson' : p ? 'in progress' : 'not started'}`}
+                      className={clsx('flex items-center justify-center rounded-full text-2xl transition active:translate-y-[3px]', isNext ? 'h-20 w-20' : 'h-[68px] w-[68px]', {
+                        'bg-emerald-500 text-white shadow-[0_5px_0_0_theme(colors.emerald.700)] active:shadow-[0_2px_0_0_theme(colors.emerald.700)]': done,
+                        'animate-pulsering bg-brand-600 text-white shadow-[0_5px_0_0_theme(colors.brand.800)]': isNext && !done,
+                        'bg-amber-400 text-white shadow-[0_5px_0_0_theme(colors.amber.600)]': p && !done && !isNext,
+                        'bg-white shadow-[0_5px_0_0_theme(colors.ink.200)] dark:bg-ink-800 dark:shadow-[0_5px_0_0_theme(colors.ink.950)]': !p && !isNext,
+                      })}>
+                      <span aria-hidden>{done ? '✓' : CAT[l.category].icon}</span>
+                    </Link>
+                    {done && <Stars n={stars(p!.bestScore)} className="mt-2 text-sm" />}
+                    <span className={clsx('mt-1.5 max-w-[11rem] text-center text-xs font-semibold leading-tight', isNext ? 'text-brand-700 dark:text-brand-300' : 'text-ink-500')}>{l.title}</span>
+                  </li>
                 )
               })}
-            </div>
+            </ol>
           </section>
         ))}
+
+        <div className="flex flex-col items-center pb-2">
+          <Link to={`/learn/checkpoint/${current}`} aria-label={`${current} checkpoint${passed ? ' — passed' : ''}`}
+            className={clsx('flex h-24 w-24 items-center justify-center rounded-3xl text-5xl transition active:translate-y-[3px]',
+              passed ? 'bg-flame-400 shadow-[0_6px_0_0_theme(colors.flame.600)]' : 'bg-flame-100 shadow-[0_6px_0_0_theme(colors.flame.300)] dark:bg-flame-900/40 dark:shadow-[0_6px_0_0_theme(colors.flame.900)]')}>
+            <span aria-hidden>🏆</span>
+          </Link>
+          <p className="mt-3 font-display font-bold">{passed ? `${current} level proven!` : `${current} checkpoint`}</p>
+          <p className="text-center text-xs text-ink-400">{passed ? 'You can retake it any time.' : 'Pass it to move up a level.'}</p>
+        </div>
       </div>
+
+      <Link to="/exams" className="card mt-8 flex items-center gap-3 p-4 transition hover:border-brand-300">
+        <span className="text-3xl" aria-hidden>📝</span>
+        <span className="flex-1"><span className="block font-display font-bold">Exam prep</span><span className="text-sm text-ink-500">IELTS Academic and TOEFL iBT formats</span></span>
+        <span className="text-ink-300" aria-hidden>›</span>
+      </Link>
     </div>
   )
 }

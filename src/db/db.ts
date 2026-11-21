@@ -13,6 +13,8 @@ export interface Profile {
   skillLevels: Partial<Record<Skill, Level | 'pre-A2'>>
   theme: 'light' | 'dark' | 'system'
   uiFrench: boolean
+  /** Sound effects and vibrations (missing = on). */
+  sound?: boolean
   createdAt: number
   updatedAt: number
 }

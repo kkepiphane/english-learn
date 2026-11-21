@@ -15,7 +15,7 @@ export default function Exams() {
   const list = (formats as Format[]).sort((a) => (a.id === exam ? -1 : 1))
   return (
     <div className="space-y-4">
-      <PageTitle title="Exams" subtitle="IELTS Academic & TOEFL iBT preparation" />
+      <PageTitle back="/learn" title="Exams" subtitle="IELTS Academic & TOEFL iBT preparation" />
       <Notice tone="info">
         The exam module (practice mode, timed mode, full mock exams and band-score estimates) is planned for <b>Phase 3</b>. It is not available yet.
         Until then, the A2/B1 path, reading, listening and writing practice build exactly the skills both exams test.

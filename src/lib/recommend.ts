@@ -44,16 +44,25 @@ export function dailyChallenges(sessions: StudySession[], attempts: Attempt[], c
   return [
     { id: 'time', label: `Study ${goalMin} minutes`, done: Math.round((s?.seconds ?? 0) / 60), target: goalMin },
     { id: 'correct', label: 'Get 15 correct answers', done: todays.filter((a) => a.correct).length, target: 15 },
-    { id: 'cards', label: 'Review your due flashcards', done: reviewedToday, target: Math.max(reviewedToday + due, 1) },
+    // With no due cards the review challenge can't be done: ask to save new words instead.
+    reviewedToday + due > 0
+      ? { id: 'cards', label: 'Review your due flashcards', done: reviewedToday, target: reviewedToday + due }
+      : { id: 'cards', label: 'Save 5 new words to your flashcards', done: cards.filter((c) => c.reps + c.lapses === 0 && c.updatedAt >= start.getTime()).length, target: 5 },
   ]
 }
 
+/** Monday of the week containing `now`, as YYYY-MM-DD (weekly challenges and the chest reset every Monday). */
+export function weekStart(now = new Date()): string {
+  const d = new Date(now)
+  d.setHours(0, 0, 0, 0)
+  d.setDate(d.getDate() - ((d.getDay() + 6) % 7))
+  return today(d)
+}
+
 export function weeklyChallenges(sessions: StudySession[], writings: WritingSubmission[], attempts: Attempt[], now = new Date()): Challenge[] {
-  const weekAgo = new Date(now)
-  weekAgo.setDate(weekAgo.getDate() - 6)
-  const from = today(weekAgo)
+  const from = weekStart(now)
   const activeDays = sessions.filter((s) => s.day >= from && s.seconds >= 60).length
-  const since = weekAgo.getTime()
+  const since = new Date(from + 'T00:00:00').getTime()
   return [
     { id: 'days', label: 'Study on 5 different days', done: activeDays, target: 5 },
     { id: 'writing', label: 'Submit 1 writing task', done: writings.filter((w) => w.at >= since).length, target: 1 },
