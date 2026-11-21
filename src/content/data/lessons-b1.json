@@ -1,0 +1,1481 @@
+[
+  {
+    "id": "b1-g-presperf",
+    "unitId": "b1-u1",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Present Perfect vs Past Simple",
+    "minutes": 20,
+    "objective": "Talk about experiences and results now (present perfect) and finished past events (past simple). Use for / since correctly.",
+    "sections": [
+      {
+        "heading": "Form",
+        "en": "have / has + past participle (worked, been, done, seen, written).",
+        "fr": "have/has + participe passé. Attention : le present perfect ne correspond PAS toujours au passé composé.",
+        "examples": [
+          "I have visited Ghana three times.",
+          "She has just finished her report.",
+          "Have you ever spoken in public?",
+          "We haven't received the results yet."
+        ]
+      },
+      {
+        "heading": "When to use it",
+        "en": "1) Life experience with no time given (ever / never). 2) A past action with a result now (just, already, yet). 3) A situation that started in the past and continues now (for / since).",
+        "fr": "Pas de date précise → present perfect. Dès qu'il y a un moment terminé (yesterday, in 2020, last week, ago) → past simple."
+      },
+      {
+        "heading": "Present perfect or past simple?",
+        "en": "Finished time = past simple. Unfinished time or no time = present perfect.",
+        "table": [
+          [
+            "Present perfect",
+            "Past simple"
+          ],
+          [
+            "I have lived in Lomé for 5 years. (I still live there)",
+            "I lived in Kara for 5 years. (I don't now)"
+          ],
+          [
+            "Have you ever been to Canada?",
+            "When did you go to Canada?"
+          ],
+          [
+            "I've lost my keys. (I can't open the door)",
+            "I lost my keys yesterday."
+          ]
+        ]
+      },
+      {
+        "heading": "for / since",
+        "en": "for + a period (for two years, for a long time). since + a starting point (since 2021, since January, since I was a child).",
+        "fr": "« depuis » se traduit par for (durée) ou since (point de départ), avec le present perfect — pas le présent simple !",
+        "examples": [
+          "I have studied English for six months. (not: I study English since six months)",
+          "He has worked here since 2022."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-ever",
+        "word": "ever",
+        "ipa": "/ˈevə/",
+        "pos": "adverb",
+        "definition": "at any time in your life (questions)",
+        "fr": "déjà (dans une question)",
+        "example": "Have you ever worked abroad?",
+        "context": "Experience"
+      },
+      {
+        "id": "v-yet",
+        "word": "yet",
+        "ipa": "/jet/",
+        "pos": "adverb",
+        "definition": "until now (questions and negatives, at the end)",
+        "fr": "encore / déjà",
+        "example": "I haven't finished yet.",
+        "context": "Result"
+      },
+      {
+        "id": "v-already",
+        "word": "already",
+        "ipa": "/ɔːlˈredi/",
+        "pos": "adverb",
+        "definition": "sooner than expected",
+        "fr": "déjà",
+        "example": "I've already sent the email.",
+        "context": "Result"
+      },
+      {
+        "id": "v-achievement",
+        "word": "achievement",
+        "ipa": "/əˈtʃiːvmənt/",
+        "pos": "noun",
+        "definition": "something good you succeeded in doing",
+        "fr": "réussite / accomplissement",
+        "example": "Winning the data challenge was a great achievement.",
+        "context": "CV & interviews"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1pp-p1",
+        "type": "mcq",
+        "prompt": "I ___ English for two years.",
+        "options": [
+          "study",
+          "am studying",
+          "have studied",
+          "studied since"
+        ],
+        "answer": 2,
+        "explanation": "Situation that started in the past and continues → present perfect + for."
+      },
+      {
+        "id": "b1pp-p2",
+        "type": "gap",
+        "prompt": "She has worked here ___ 2021.",
+        "accepted": [
+          "since"
+        ],
+        "explanation": "2021 is a starting point → since."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1pp-q1",
+        "type": "mcq",
+        "prompt": "___ you ever ___ a presentation in English?",
+        "options": [
+          "Did / give",
+          "Have / given",
+          "Have / gave",
+          "Do / give"
+        ],
+        "answer": 1,
+        "explanation": "Life experience with \"ever\" → present perfect: have + past participle (given)."
+      },
+      {
+        "id": "b1pp-q2",
+        "type": "mcq",
+        "prompt": "I ___ my degree in 2023.",
+        "options": [
+          "have finished",
+          "finished",
+          "have finish",
+          "finish"
+        ],
+        "answer": 1,
+        "explanation": "\"In 2023\" = finished time → past simple."
+      },
+      {
+        "id": "b1pp-q3",
+        "type": "gap",
+        "prompt": "We have known each other ___ ten years.",
+        "accepted": [
+          "for"
+        ],
+        "explanation": "Ten years = a period → for."
+      },
+      {
+        "id": "b1pp-q4",
+        "type": "mcq",
+        "prompt": "Has the client answered ___?",
+        "options": [
+          "already",
+          "yet",
+          "ever",
+          "since"
+        ],
+        "answer": 1,
+        "explanation": "\"Yet\" at the end of questions and negatives."
+      },
+      {
+        "id": "b1pp-q5",
+        "type": "truefalse",
+        "prompt": "\"I live in Lomé since 2019\" is correct.",
+        "answer": false,
+        "explanation": "Since/for with an ongoing situation → present perfect: I have lived in Lomé since 2019."
+      },
+      {
+        "id": "b1pp-q6",
+        "type": "mcq",
+        "prompt": "Oh no! I ___ my password. I can't log in.",
+        "options": [
+          "forgot",
+          "have forgotten",
+          "was forgetting",
+          "forget"
+        ],
+        "answer": 1,
+        "explanation": "Past action with a present result → present perfect."
+      },
+      {
+        "id": "b1pp-q7",
+        "type": "gap",
+        "prompt": "She ___ (be) to London twice.",
+        "accepted": [
+          "has been",
+          "'s been"
+        ],
+        "explanation": "Experience → has been (been = gone and come back)."
+      },
+      {
+        "id": "b1pp-q8",
+        "type": "mcq",
+        "prompt": "When ___ you start learning English?",
+        "options": [
+          "have",
+          "did",
+          "has",
+          "do"
+        ],
+        "answer": 1,
+        "explanation": "Questions with \"when\" ask for a finished time → past simple."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I study English since 2024.",
+        "right": "I have studied English since 2024.",
+        "why": "Present perfect with since/for for an ongoing situation."
+      },
+      {
+        "wrong": "I have seen him yesterday.",
+        "right": "I saw him yesterday.",
+        "why": "Finished time (yesterday) → past simple."
+      },
+      {
+        "wrong": "since two years",
+        "right": "for two years",
+        "why": "for + duration; since + starting point."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-education",
+    "unitId": "b1-u1",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Education and studying abroad",
+    "minutes": 14,
+    "objective": "Talk about your studies, applications and academic life — useful for IELTS Speaking Part 1 and interviews.",
+    "sections": [
+      {
+        "heading": "Collocations",
+        "en": "English uses fixed word partners. Learn them together.",
+        "fr": "Attention aux faux amis : « passer un examen » = take an exam ; « réussir » = pass.",
+        "table": [
+          [
+            "verb",
+            "noun"
+          ],
+          [
+            "take / sit",
+            "an exam"
+          ],
+          [
+            "pass / fail",
+            "an exam"
+          ],
+          [
+            "do / get",
+            "a degree in…"
+          ],
+          [
+            "apply to",
+            "a university"
+          ],
+          [
+            "apply for",
+            "a scholarship / a visa"
+          ],
+          [
+            "meet",
+            "a deadline"
+          ],
+          [
+            "do",
+            "research"
+          ]
+        ]
+      },
+      {
+        "heading": "Talking about plans",
+        "en": "I'm planning to do a master's in data science. I've applied to three universities. I'm waiting for an offer."
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-take-exam",
+        "word": "take an exam",
+        "ipa": "/teɪk ən ɪɡˈzæm/",
+        "pos": "collocation",
+        "definition": "to do an exam",
+        "fr": "passer un examen",
+        "example": "I'm taking the IELTS in June.",
+        "context": "Faux ami: « passer » ≠ pass"
+      },
+      {
+        "id": "v-pass",
+        "word": "pass",
+        "ipa": "/pɑːs/",
+        "pos": "verb",
+        "definition": "to succeed in an exam",
+        "fr": "réussir (un examen)",
+        "example": "She passed with a band 7.",
+        "context": "Exams"
+      },
+      {
+        "id": "v-tuition-fees",
+        "word": "tuition fees",
+        "ipa": "/tjuˈɪʃən fiːz/",
+        "pos": "noun",
+        "definition": "money paid to study at a university",
+        "fr": "frais de scolarité",
+        "example": "Tuition fees are lower in some European countries.",
+        "context": "Studying abroad"
+      },
+      {
+        "id": "v-research",
+        "word": "research",
+        "ipa": "/rɪˈsɜːtʃ/",
+        "pos": "noun (uncountable)",
+        "definition": "detailed study to discover new facts",
+        "fr": "recherche(s)",
+        "example": "He does research on machine learning.",
+        "context": "Uncountable — no \"researches\""
+      },
+      {
+        "id": "v-enrol",
+        "word": "enrol",
+        "ipa": "/ɪnˈrəʊl/",
+        "pos": "verb",
+        "definition": "to officially join a course",
+        "fr": "s'inscrire",
+        "example": "I enrolled in an online course.",
+        "context": "Admin"
+      },
+      {
+        "id": "v-graduate",
+        "word": "graduate",
+        "ipa": "/ˈɡrædʒueɪt/",
+        "pos": "verb",
+        "definition": "to finish university with a degree",
+        "fr": "obtenir son diplôme",
+        "example": "I graduated in 2021.",
+        "context": "Studies"
+      },
+      {
+        "id": "v-requirement",
+        "word": "requirement",
+        "ipa": "/rɪˈkwaɪəmənt/",
+        "pos": "noun",
+        "definition": "something that is necessary",
+        "fr": "exigence / condition",
+        "example": "The language requirement is IELTS 6.5.",
+        "context": "Admissions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1e-p1",
+        "type": "mcq",
+        "prompt": "I'm going to ___ the TOEFL next month.",
+        "options": [
+          "pass",
+          "take",
+          "make",
+          "give"
+        ],
+        "answer": 1,
+        "explanation": "\"Take\" an exam = passer. \"Pass\" = réussir."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1e-q1",
+        "type": "mcq",
+        "prompt": "She ___ her exam! She got 8.0.",
+        "options": [
+          "took",
+          "passed",
+          "failed",
+          "sat"
+        ],
+        "answer": 1,
+        "explanation": "Success → passed."
+      },
+      {
+        "id": "b1e-q2",
+        "type": "gap",
+        "prompt": "I've applied ___ a scholarship.",
+        "accepted": [
+          "for"
+        ],
+        "explanation": "Apply for a scholarship / job / visa; apply to a university."
+      },
+      {
+        "id": "b1e-q3",
+        "type": "mcq",
+        "prompt": "The minimum ___ is a bachelor's degree.",
+        "options": [
+          "requirement",
+          "request",
+          "require",
+          "requiring"
+        ],
+        "answer": 0,
+        "explanation": "Requirement = condition needed."
+      },
+      {
+        "id": "b1e-q4",
+        "type": "truefalse",
+        "prompt": "\"I did many researches\" is correct.",
+        "answer": false,
+        "explanation": "Research is uncountable: I did a lot of research."
+      },
+      {
+        "id": "b1e-q5",
+        "type": "mcq",
+        "prompt": "You must pay the ___ before the semester starts.",
+        "options": [
+          "tuition fees",
+          "salary",
+          "scholarship",
+          "degree"
+        ],
+        "answer": 0,
+        "explanation": "Tuition fees = money paid for studies."
+      },
+      {
+        "id": "b1e-q6",
+        "type": "gap",
+        "prompt": "He ___ from university last year. (finished with a degree)",
+        "accepted": [
+          "graduated"
+        ],
+        "explanation": "Graduate = obtain your degree."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I will pass the IELTS on Monday (= sit it)",
+        "right": "I will take the IELTS on Monday.",
+        "why": "« passer » = take ; pass = réussir."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-modals",
+    "unitId": "b1-u2",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Modal verbs: obligation, advice, possibility",
+    "minutes": 18,
+    "objective": "Give advice, express obligation and possibility with must, have to, should, might, can, could.",
+    "sections": [
+      {
+        "heading": "Form",
+        "en": "Modal + base verb, no \"to\", no -s: she should study (not: she shoulds / she should to study)."
+      },
+      {
+        "heading": "Obligation",
+        "en": "\"Must\" = obligation from the speaker or rules. \"Have to\" = external obligation. \"Don't have to\" = it's not necessary. \"Mustn't\" = it's forbidden.",
+        "fr": "Piège : « don't have to » = pas obligé ; « mustn't » = interdit.",
+        "examples": [
+          "You must wear a badge in the building.",
+          "I have to submit the visa form by Friday.",
+          "You don't have to come — it's optional.",
+          "You mustn't share your password."
+        ]
+      },
+      {
+        "heading": "Advice",
+        "en": "should / ought to / you'd better.",
+        "examples": [
+          "You should practise speaking every day.",
+          "You'd better leave now or you'll miss the bus."
+        ]
+      },
+      {
+        "heading": "Possibility & deduction",
+        "en": "might / may / could = possible; must = almost certain; can't = impossible.",
+        "examples": [
+          "It might rain later.",
+          "He must be tired — he worked all night.",
+          "That can't be true."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-mandatory",
+        "word": "mandatory",
+        "ipa": "/ˈmændətəri/",
+        "pos": "adjective",
+        "definition": "required by a rule",
+        "fr": "obligatoire",
+        "example": "Attendance is mandatory.",
+        "context": "Rules"
+      },
+      {
+        "id": "v-optional",
+        "word": "optional",
+        "ipa": "/ˈɒpʃənəl/",
+        "pos": "adjective",
+        "definition": "you can choose to do it or not",
+        "fr": "facultatif",
+        "example": "The second module is optional.",
+        "context": "Rules"
+      },
+      {
+        "id": "v-recommend",
+        "word": "recommend",
+        "ipa": "/ˌrekəˈmend/",
+        "pos": "verb",
+        "definition": "to advise",
+        "fr": "recommander",
+        "example": "I recommend that you read every day.",
+        "context": "Advice"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1m-p1",
+        "type": "mcq",
+        "prompt": "You ___ smoke in the hospital. It's forbidden.",
+        "options": [
+          "don't have to",
+          "mustn't",
+          "shouldn't to",
+          "might not"
+        ],
+        "answer": 1,
+        "explanation": "Forbidden → mustn't."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1m-q1",
+        "type": "mcq",
+        "prompt": "Tomorrow is a holiday, so I ___ go to work.",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "can't",
+          "shouldn't"
+        ],
+        "answer": 1,
+        "explanation": "Not necessary → don't have to."
+      },
+      {
+        "id": "b1m-q2",
+        "type": "mcq",
+        "prompt": "If you want to improve, you ___ listen to podcasts.",
+        "options": [
+          "should",
+          "should to",
+          "must to",
+          "have"
+        ],
+        "answer": 0,
+        "explanation": "Advice → should + base verb."
+      },
+      {
+        "id": "b1m-q3",
+        "type": "mcq",
+        "prompt": "She isn't answering. She ___ be in a meeting.",
+        "options": [
+          "might",
+          "must to",
+          "has to",
+          "can"
+        ],
+        "answer": 0,
+        "explanation": "Possibility → might."
+      },
+      {
+        "id": "b1m-q4",
+        "type": "truefalse",
+        "prompt": "\"He musts finish today\" is correct.",
+        "answer": false,
+        "explanation": "Modals never take -s: He must finish today."
+      },
+      {
+        "id": "b1m-q5",
+        "type": "mcq",
+        "prompt": "You've worked 14 hours. You ___ be exhausted!",
+        "options": [
+          "must",
+          "can't",
+          "should",
+          "have to"
+        ],
+        "answer": 0,
+        "explanation": "Logical deduction (almost certain) → must."
+      },
+      {
+        "id": "b1m-q6",
+        "type": "gap",
+        "prompt": "Students ___ to show their ID card at the exam. (external obligation, use \"have\")",
+        "accepted": [
+          "have"
+        ],
+        "explanation": "External rule → have to."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "You must to go.",
+        "right": "You must go.",
+        "why": "No \"to\" after modal verbs (except have to / ought to)."
+      },
+      {
+        "wrong": "You mustn't come (= it's not necessary)",
+        "right": "You don't have to come.",
+        "why": "Mustn't = forbidden."
+      }
+    ]
+  },
+  {
+    "id": "b1-e-opinion",
+    "unitId": "b1-u2",
+    "level": "B1",
+    "category": "everyday",
+    "skill": "speaking",
+    "version": 1,
+    "title": "Meetings: giving and defending your opinion",
+    "minutes": 14,
+    "objective": "Give an opinion, agree, disagree politely and interrupt in a meeting.",
+    "sections": [
+      {
+        "heading": "Giving an opinion",
+        "en": "Start with an opinion phrase, give a reason, then an example.",
+        "examples": [
+          "In my opinion, we should launch the beta first, because we need real feedback. For example, …",
+          "I think it would be better to…",
+          "From my point of view, …"
+        ]
+      },
+      {
+        "heading": "Agreeing and disagreeing politely",
+        "en": "In professional English, soften disagreement.",
+        "fr": "En anglais professionnel, on adoucit le désaccord : « I see your point, but… » plutôt que « No, you are wrong ».",
+        "examples": [
+          "I completely agree with you.",
+          "That's a good point.",
+          "I see what you mean, but I'm not sure that's the best option.",
+          "I'm afraid I disagree."
+        ]
+      },
+      {
+        "heading": "Interrupting and clarifying",
+        "en": "Sorry to interrupt, but… / Could you clarify what you mean by…? / Just to make sure I understand, …"
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-point-of-view",
+        "word": "point of view",
+        "ipa": "/ˌpɔɪnt əv ˈvjuː/",
+        "pos": "noun",
+        "definition": "opinion",
+        "fr": "point de vue",
+        "example": "From my point of view, the price is too high.",
+        "context": "Opinion"
+      },
+      {
+        "id": "v-agree-with",
+        "word": "agree with",
+        "ipa": "/əˈɡriː wɪð/",
+        "pos": "verb + prep",
+        "definition": "to have the same opinion as someone",
+        "fr": "être d'accord avec",
+        "example": "I agree with Sarah.",
+        "context": "No \"be\": I agree"
+      },
+      {
+        "id": "v-clarify",
+        "word": "clarify",
+        "ipa": "/ˈklærəfaɪ/",
+        "pos": "verb",
+        "definition": "to make something clearer",
+        "fr": "clarifier",
+        "example": "Could you clarify the deadline?",
+        "context": "Meetings"
+      },
+      {
+        "id": "v-suggest",
+        "word": "suggest",
+        "ipa": "/səˈdʒest/",
+        "pos": "verb",
+        "definition": "to propose an idea",
+        "fr": "suggérer",
+        "example": "I suggest that we start with the mobile version.",
+        "context": "Meetings — not \"suggest to do\""
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1o-p1",
+        "type": "mcq",
+        "prompt": "Which is the most polite disagreement?",
+        "options": [
+          "You are wrong.",
+          "No.",
+          "I see your point, but I think the deadline is too short.",
+          "That is stupid."
+        ],
+        "answer": 2,
+        "explanation": "Acknowledge the other view, then add \"but\" + your reason."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1o-q1",
+        "type": "truefalse",
+        "prompt": "\"I am agree with you\" is correct.",
+        "answer": false,
+        "explanation": "\"Agree\" is a verb: I agree with you."
+      },
+      {
+        "id": "b1o-q2",
+        "type": "mcq",
+        "prompt": "I suggest ___ the meeting to Friday.",
+        "options": [
+          "to move",
+          "moving",
+          "move to",
+          "that move"
+        ],
+        "answer": 1,
+        "explanation": "Suggest + -ing (or suggest that we move). Never \"suggest to do\"."
+      },
+      {
+        "id": "b1o-q3",
+        "type": "mcq",
+        "prompt": "Sorry to ___, but I have a quick question.",
+        "options": [
+          "interrupt",
+          "interrupting",
+          "stop you speak",
+          "cut"
+        ],
+        "answer": 0,
+        "explanation": "Sorry to + base verb: Sorry to interrupt."
+      },
+      {
+        "id": "b1o-q4",
+        "type": "order",
+        "prompt": "Order the words.",
+        "words": [
+          "could",
+          "you",
+          "clarify",
+          "what",
+          "you",
+          "mean"
+        ],
+        "answer": "could you clarify what you mean",
+        "explanation": "Indirect question inside: \"what you mean\" (no inversion)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I am agree.",
+        "right": "I agree.",
+        "why": "Agree is a verb."
+      },
+      {
+        "wrong": "I suggest you to call.",
+        "right": "I suggest that you call / I suggest calling.",
+        "why": "Suggest is never followed by object + to."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-conditionals",
+    "unitId": "b1-u3",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Conditional sentences (zero, first, second)",
+    "minutes": 20,
+    "objective": "Talk about general truths, real future possibilities and imaginary situations.",
+    "sections": [
+      {
+        "heading": "Zero conditional — always true",
+        "en": "If + present, present.",
+        "examples": [
+          "If you heat ice, it melts.",
+          "If I drink coffee late, I can't sleep."
+        ]
+      },
+      {
+        "heading": "First conditional — real possibility",
+        "en": "If + present simple, will + base verb. Never \"will\" in the if-clause.",
+        "fr": "Pas de « will » après « if » (comme en français : « s'il pleut », pas « s'il pleuvra »).",
+        "examples": [
+          "If I get the scholarship, I will move to Canada.",
+          "If it rains, we'll stay inside.",
+          "You'll fail unless you study. (unless = if not)"
+        ]
+      },
+      {
+        "heading": "Second conditional — imaginary or unlikely",
+        "en": "If + past simple, would + base verb. Use \"were\" for all persons in careful English.",
+        "fr": "If + prétérit, would + verbe : équivalent de « si + imparfait, conditionnel ».",
+        "examples": [
+          "If I had more time, I would learn Chinese.",
+          "If I were you, I would take the IELTS first.",
+          "What would you do if you lost your job?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-unless",
+        "word": "unless",
+        "ipa": "/ənˈles/",
+        "pos": "conjunction",
+        "definition": "if not; except if",
+        "fr": "à moins que",
+        "example": "I won't go unless you come with me.",
+        "context": "Conditions"
+      },
+      {
+        "id": "v-as-long-as",
+        "word": "as long as",
+        "ipa": "/əz ˈlɒŋ əz/",
+        "pos": "conjunction",
+        "definition": "only if",
+        "fr": "tant que / à condition que",
+        "example": "You can use my laptop as long as you are careful.",
+        "context": "Conditions"
+      },
+      {
+        "id": "v-in-case",
+        "word": "in case",
+        "ipa": "/ɪn keɪs/",
+        "pos": "conjunction",
+        "definition": "because something might happen",
+        "fr": "au cas où",
+        "example": "Take an umbrella in case it rains.",
+        "context": "Precautions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1c-p1",
+        "type": "mcq",
+        "prompt": "If it ___ tomorrow, we will cancel the trip.",
+        "options": [
+          "will rain",
+          "rains",
+          "rained",
+          "would rain"
+        ],
+        "answer": 1,
+        "explanation": "First conditional: if + present simple (no will)."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1c-q1",
+        "type": "mcq",
+        "prompt": "If I ___ rich, I would travel around the world.",
+        "options": [
+          "am",
+          "was/were",
+          "will be",
+          "would be"
+        ],
+        "answer": 1,
+        "explanation": "Second conditional: if + past simple (were is preferred)."
+      },
+      {
+        "id": "b1c-q2",
+        "type": "gap",
+        "prompt": "If you study every day, you ___ (pass) the exam.",
+        "accepted": [
+          "will pass",
+          "'ll pass"
+        ],
+        "explanation": "First conditional result: will + base verb."
+      },
+      {
+        "id": "b1c-q3",
+        "type": "mcq",
+        "prompt": "If I were you, I ___ accept the offer.",
+        "options": [
+          "will",
+          "would",
+          "am",
+          "did"
+        ],
+        "answer": 1,
+        "explanation": "Advice with \"If I were you\" → would."
+      },
+      {
+        "id": "b1c-q4",
+        "type": "truefalse",
+        "prompt": "\"If I will have time, I will call you\" is correct.",
+        "answer": false,
+        "explanation": "No will in the if-clause: If I have time, I will call you."
+      },
+      {
+        "id": "b1c-q5",
+        "type": "mcq",
+        "prompt": "You can't enter ___ you have a ticket.",
+        "options": [
+          "if",
+          "unless",
+          "in case",
+          "so"
+        ],
+        "answer": 1,
+        "explanation": "Unless = if not."
+      },
+      {
+        "id": "b1c-q6",
+        "type": "mcq",
+        "prompt": "If you mix blue and yellow, you ___ green.",
+        "options": [
+          "would get",
+          "get",
+          "got",
+          "had got"
+        ],
+        "answer": 1,
+        "explanation": "General truth → zero conditional: if + present, present."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "If I will finish early, I will call.",
+        "right": "If I finish early, I will call.",
+        "why": "No will after if."
+      },
+      {
+        "wrong": "If I would have money, I would buy it.",
+        "right": "If I had money, I would buy it.",
+        "why": "Past simple after if in the 2nd conditional."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-tech",
+    "unitId": "b1-u3",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Technology and the digital world",
+    "minutes": 14,
+    "objective": "Describe technology, apps and their impact — a frequent IELTS / TOEFL topic.",
+    "sections": [
+      {
+        "heading": "Useful structures",
+        "en": "Technology allows people to… / makes it easier to… / has led to… / One drawback is that…",
+        "fr": "« permettre de » = allow someone to / enable someone to (jamais « permit to »).",
+        "examples": [
+          "Mobile money allows people to pay without a bank account.",
+          "Smartphones have made it easier to learn languages.",
+          "One drawback is that people spend too much time online."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-device",
+        "word": "device",
+        "ipa": "/dɪˈvaɪs/",
+        "pos": "noun",
+        "definition": "a machine or tool, e.g. a phone or tablet",
+        "fr": "appareil",
+        "example": "The app works on any device.",
+        "context": "Tech"
+      },
+      {
+        "id": "v-reliable",
+        "word": "reliable",
+        "ipa": "/rɪˈlaɪəbəl/",
+        "pos": "adjective",
+        "definition": "that you can trust to work well",
+        "fr": "fiable",
+        "example": "We need a reliable Internet connection.",
+        "context": "Quality"
+      },
+      {
+        "id": "v-drawback",
+        "word": "drawback",
+        "ipa": "/ˈdrɔːbæk/",
+        "pos": "noun",
+        "definition": "a disadvantage",
+        "fr": "inconvénient",
+        "example": "The main drawback is the price.",
+        "context": "Essays"
+      },
+      {
+        "id": "v-update",
+        "word": "update",
+        "ipa": "/ˈʌpdeɪt/",
+        "pos": "noun / verb",
+        "definition": "a newer version; to make something more modern",
+        "fr": "mise à jour / mettre à jour",
+        "example": "Install the latest update.",
+        "context": "Software"
+      },
+      {
+        "id": "v-data",
+        "word": "data",
+        "ipa": "/ˈdeɪtə/",
+        "pos": "noun (uncountable in everyday use)",
+        "definition": "information, especially facts or numbers",
+        "fr": "données",
+        "example": "The data is stored on your phone.",
+        "context": "Tech"
+      },
+      {
+        "id": "v-enable",
+        "word": "enable",
+        "ipa": "/ɪˈneɪbəl/",
+        "pos": "verb",
+        "definition": "to make something possible",
+        "fr": "permettre",
+        "example": "The app enables learners to study offline.",
+        "context": "Formal writing"
+      },
+      {
+        "id": "v-breakthrough",
+        "word": "breakthrough",
+        "ipa": "/ˈbreɪkθruː/",
+        "pos": "noun",
+        "definition": "an important new discovery",
+        "fr": "avancée majeure",
+        "example": "AI has made major breakthroughs.",
+        "context": "Science & tech"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1t-p1",
+        "type": "mcq",
+        "prompt": "This app ___ students to practise offline.",
+        "options": [
+          "permits",
+          "allows",
+          "lets",
+          "makes"
+        ],
+        "answer": 1,
+        "explanation": "Allow + object + to + verb. (Let + object + base verb, without to.)"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1t-q1",
+        "type": "mcq",
+        "prompt": "The main ___ of social media is addiction.",
+        "options": [
+          "drawback",
+          "breakthrough",
+          "device",
+          "update"
+        ],
+        "answer": 0,
+        "explanation": "Drawback = disadvantage."
+      },
+      {
+        "id": "b1t-q2",
+        "type": "gap",
+        "prompt": "My connection isn't ___ — it cuts every hour.",
+        "accepted": [
+          "reliable"
+        ],
+        "explanation": "Reliable = works consistently."
+      },
+      {
+        "id": "b1t-q3",
+        "type": "mcq",
+        "prompt": "Technology has made it easier ___ abroad.",
+        "options": [
+          "study",
+          "to study",
+          "studying",
+          "for study"
+        ],
+        "answer": 1,
+        "explanation": "make it easier + to + verb."
+      },
+      {
+        "id": "b1t-q4",
+        "type": "truefalse",
+        "prompt": "\"Smartphones let people to work anywhere\" is correct.",
+        "answer": false,
+        "explanation": "Let + object + base verb: let people work."
+      },
+      {
+        "id": "b1t-q5",
+        "type": "mcq",
+        "prompt": "Please install the latest ___ to fix the bug.",
+        "options": [
+          "device",
+          "update",
+          "data",
+          "drawback"
+        ],
+        "answer": 1,
+        "explanation": "Update = newer version."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "It permits to save time.",
+        "right": "It allows us to save time / It saves time.",
+        "why": "« permettre de » ≠ permit to."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-passive",
+    "unitId": "b1-u4",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "The passive voice",
+    "minutes": 18,
+    "objective": "Describe processes, news and facts when the action is more important than who does it — essential for IELTS Writing Task 1.",
+    "sections": [
+      {
+        "heading": "Form",
+        "en": "be (in the right tense) + past participle.",
+        "table": [
+          [
+            "tense",
+            "active",
+            "passive"
+          ],
+          [
+            "present simple",
+            "They make phones in China.",
+            "Phones are made in China."
+          ],
+          [
+            "past simple",
+            "Someone stole my bag.",
+            "My bag was stolen."
+          ],
+          [
+            "present perfect",
+            "They have built a new road.",
+            "A new road has been built."
+          ],
+          [
+            "future",
+            "They will announce the results.",
+            "The results will be announced."
+          ],
+          [
+            "modal",
+            "You must submit the form.",
+            "The form must be submitted."
+          ]
+        ]
+      },
+      {
+        "heading": "When to use it",
+        "en": "When the doer is unknown, obvious or unimportant, and in formal/scientific writing. Add \"by + agent\" only if it is useful.",
+        "fr": "Le passif est très fréquent en anglais (souvent traduit par « on » en français : « on m'a dit » → « I was told »).",
+        "examples": [
+          "English is spoken in many countries.",
+          "The data was collected in 2025.",
+          "I was told that the office is closed."
+        ]
+      },
+      {
+        "heading": "Describing a process",
+        "en": "First, the cocoa beans are harvested. Then they are dried in the sun. After that, they are transported to the port."
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-harvest",
+        "word": "harvest",
+        "ipa": "/ˈhɑːvɪst/",
+        "pos": "verb / noun",
+        "definition": "to collect crops",
+        "fr": "récolter / récolte",
+        "example": "Coffee is harvested by hand.",
+        "context": "Processes"
+      },
+      {
+        "id": "v-manufacture",
+        "word": "manufacture",
+        "ipa": "/ˌmænjəˈfæktʃə/",
+        "pos": "verb",
+        "definition": "to produce in large quantities in a factory",
+        "fr": "fabriquer",
+        "example": "The parts are manufactured in Asia.",
+        "context": "Industry"
+      },
+      {
+        "id": "v-afterwards",
+        "word": "afterwards",
+        "ipa": "/ˈɑːftəwədz/",
+        "pos": "adverb",
+        "definition": "later; after that",
+        "fr": "ensuite",
+        "example": "Afterwards, the product is packed.",
+        "context": "Sequencing"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1pa-p1",
+        "type": "gap",
+        "prompt": "English ___ (speak) in Ghana.",
+        "accepted": [
+          "is spoken"
+        ],
+        "explanation": "Present simple passive: is + spoken."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1pa-q1",
+        "type": "mcq",
+        "prompt": "The bridge ___ in 2019.",
+        "options": [
+          "built",
+          "was built",
+          "is built",
+          "has built"
+        ],
+        "answer": 1,
+        "explanation": "Past simple passive (finished time): was + built."
+      },
+      {
+        "id": "b1pa-q2",
+        "type": "mcq",
+        "prompt": "The results ___ next week.",
+        "options": [
+          "will announce",
+          "will be announced",
+          "are announcing",
+          "announced"
+        ],
+        "answer": 1,
+        "explanation": "Future passive: will be + past participle."
+      },
+      {
+        "id": "b1pa-q3",
+        "type": "gap",
+        "prompt": "A new hospital ___ (build) in our town. It opened last month. (present perfect passive)",
+        "accepted": [
+          "has been built"
+        ],
+        "explanation": "Present perfect passive: has been + built."
+      },
+      {
+        "id": "b1pa-q4",
+        "type": "truefalse",
+        "prompt": "\"I was told that the meeting is cancelled\" is a correct passive sentence.",
+        "answer": true,
+        "explanation": "Correct — passive with \"tell\" (= on m'a dit)."
+      },
+      {
+        "id": "b1pa-q5",
+        "type": "mcq",
+        "prompt": "The form must ___ before Friday.",
+        "options": [
+          "submit",
+          "be submitted",
+          "submitted",
+          "being submitted"
+        ],
+        "answer": 1,
+        "explanation": "Modal passive: must be + past participle."
+      },
+      {
+        "id": "b1pa-q6",
+        "type": "order",
+        "prompt": "Order the words.",
+        "words": [
+          "the",
+          "beans",
+          "are",
+          "dried",
+          "in",
+          "the",
+          "sun"
+        ],
+        "answer": "the beans are dried in the sun",
+        "explanation": "Process description in the present simple passive."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "The car was repair.",
+        "right": "The car was repaired.",
+        "why": "Passive needs the past participle."
+      },
+      {
+        "wrong": "It is speak English here.",
+        "right": "English is spoken here.",
+        "why": "Make the object the subject."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-environment",
+    "unitId": "b1-u4",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Environment and society",
+    "minutes": 14,
+    "objective": "Discuss environmental problems and solutions with precise vocabulary.",
+    "sections": [
+      {
+        "heading": "Problem → cause → solution",
+        "en": "A strong answer names the problem, explains a cause and proposes a solution.",
+        "examples": [
+          "Deforestation is a serious problem. It is mainly caused by farming and charcoal production. One solution would be to promote gas for cooking."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-pollution",
+        "word": "pollution",
+        "ipa": "/pəˈluːʃən/",
+        "pos": "noun (uncountable)",
+        "definition": "damage to air, water or land by harmful substances",
+        "fr": "pollution",
+        "example": "Air pollution is rising in big cities.",
+        "context": "Environment"
+      },
+      {
+        "id": "v-deforestation",
+        "word": "deforestation",
+        "ipa": "/diːˌfɒrɪˈsteɪʃən/",
+        "pos": "noun",
+        "definition": "cutting down forests",
+        "fr": "déforestation",
+        "example": "Deforestation affects rainfall.",
+        "context": "Environment"
+      },
+      {
+        "id": "v-renewable",
+        "word": "renewable energy",
+        "ipa": "/rɪˈnjuːəbəl ˈenədʒi/",
+        "pos": "noun",
+        "definition": "energy from sources that do not run out (sun, wind)",
+        "fr": "énergie renouvelable",
+        "example": "Solar panels produce renewable energy.",
+        "context": "Energy"
+      },
+      {
+        "id": "v-waste",
+        "word": "waste",
+        "ipa": "/weɪst/",
+        "pos": "noun / verb",
+        "definition": "unwanted material; to use badly",
+        "fr": "déchets / gaspiller",
+        "example": "Plastic waste blocks the drains.",
+        "context": "Environment"
+      },
+      {
+        "id": "v-reduce",
+        "word": "reduce",
+        "ipa": "/rɪˈdjuːs/",
+        "pos": "verb",
+        "definition": "to make smaller or less",
+        "fr": "réduire",
+        "example": "We must reduce our energy consumption.",
+        "context": "Solutions"
+      },
+      {
+        "id": "v-climate-change",
+        "word": "climate change",
+        "ipa": "/ˈklaɪmət tʃeɪndʒ/",
+        "pos": "noun",
+        "definition": "long-term change in the Earth's temperature and weather",
+        "fr": "changement climatique",
+        "example": "Climate change affects farmers.",
+        "context": "Global issues"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1env-p1",
+        "type": "mcq",
+        "prompt": "Solar and wind are sources of ___ energy.",
+        "options": [
+          "renewable",
+          "wasted",
+          "polluted",
+          "reduced"
+        ],
+        "answer": 0,
+        "explanation": "Renewable = will not run out."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1env-q1",
+        "type": "mcq",
+        "prompt": "We should ___ the use of plastic bags.",
+        "options": [
+          "reduce",
+          "waste",
+          "increase to",
+          "pollution"
+        ],
+        "answer": 0,
+        "explanation": "Reduce = make less."
+      },
+      {
+        "id": "b1env-q2",
+        "type": "truefalse",
+        "prompt": "\"There are many pollutions in the city\" is correct.",
+        "answer": false,
+        "explanation": "Pollution is uncountable: There is a lot of pollution."
+      },
+      {
+        "id": "b1env-q3",
+        "type": "gap",
+        "prompt": "Cutting down forests is called ___.",
+        "accepted": [
+          "deforestation"
+        ],
+        "explanation": "Deforestation."
+      },
+      {
+        "id": "b1env-q4",
+        "type": "mcq",
+        "prompt": "Don't ___ water: turn off the tap.",
+        "options": [
+          "waste",
+          "reduce",
+          "renew",
+          "pollute to"
+        ],
+        "answer": 0,
+        "explanation": "Waste = use badly or unnecessarily."
+      },
+      {
+        "id": "b1env-q5",
+        "type": "mcq",
+        "prompt": "Floods are partly ___ by blocked drains.",
+        "options": [
+          "cause",
+          "caused",
+          "causing",
+          "causes"
+        ],
+        "answer": 1,
+        "explanation": "Passive: are caused by."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "many pollutions",
+        "right": "a lot of pollution",
+        "why": "Uncountable noun."
+      }
+    ]
+  }
+]

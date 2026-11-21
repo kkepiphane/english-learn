@@ -1,0 +1,1660 @@
+[
+  {
+    "id": "a2-g-present",
+    "unitId": "a2-u1",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Present Simple vs Present Continuous",
+    "minutes": 15,
+    "objective": "Talk about habits and facts (present simple) and about actions happening now or temporary situations (present continuous).",
+    "sections": [
+      {
+        "heading": "Present simple — habits, routines, facts",
+        "en": "Use the present simple for things that are always or usually true. Add -s / -es with he, she, it.",
+        "fr": "Le présent simple exprime une habitude ou une vérité générale. N'oubliez pas le -s à la 3e personne du singulier.",
+        "examples": [
+          "I work in Lomé.",
+          "She takes the bus every morning.",
+          "Water boils at 100 °C.",
+          "He doesn't drink coffee.",
+          "Do you speak English?"
+        ]
+      },
+      {
+        "heading": "Present continuous — now and temporary",
+        "en": "Use am / is / are + verb-ing for actions in progress now or for temporary situations.",
+        "fr": "Le présent continu (be + -ing) décrit une action en cours ou une situation temporaire. Le français utilise souvent « en train de ».",
+        "examples": [
+          "I'm reading an article right now.",
+          "They are working on a new project this month.",
+          "Look! It's raining.",
+          "She isn't sleeping — she's studying."
+        ]
+      },
+      {
+        "heading": "Signal words",
+        "en": "Some time expressions help you choose.",
+        "table": [
+          [
+            "Present simple",
+            "Present continuous"
+          ],
+          [
+            "always, usually, often, every day, on Mondays, never",
+            "now, right now, at the moment, today, this week, Look!"
+          ]
+        ]
+      },
+      {
+        "heading": "State verbs",
+        "en": "Verbs of thinking, feeling and possession (know, like, want, need, believe, understand, own) are normally NOT used in the continuous form.",
+        "fr": "Les verbes d'état ne se mettent pas à la forme -ing : on dit « I know », jamais « I am knowing ».",
+        "examples": [
+          "I understand the question. (not: I am understanding)",
+          "He wants a new laptop."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-usually",
+        "word": "usually",
+        "ipa": "/ˈjuːʒuəli/",
+        "pos": "adverb",
+        "definition": "in most cases; normally",
+        "fr": "d'habitude",
+        "example": "I usually wake up at six.",
+        "context": "Routines"
+      },
+      {
+        "id": "v-at-the-moment",
+        "word": "at the moment",
+        "ipa": "/ət ðə ˈməʊmənt/",
+        "pos": "phrase",
+        "definition": "now",
+        "fr": "en ce moment",
+        "example": "I'm busy at the moment.",
+        "context": "Present continuous"
+      },
+      {
+        "id": "v-commute",
+        "word": "commute",
+        "ipa": "/kəˈmjuːt/",
+        "pos": "verb / noun",
+        "definition": "to travel regularly between home and work",
+        "fr": "faire le trajet domicile-travail",
+        "example": "She commutes by motorbike.",
+        "context": "Daily life"
+      },
+      {
+        "id": "v-deadline",
+        "word": "deadline",
+        "ipa": "/ˈdedlaɪn/",
+        "pos": "noun",
+        "definition": "the time by which something must be finished",
+        "fr": "date limite",
+        "example": "We are working late because of a deadline.",
+        "context": "Work"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2p-p1",
+        "type": "mcq",
+        "prompt": "Every morning, Koffi ___ to the office by taxi-moto.",
+        "options": [
+          "go",
+          "goes",
+          "is going",
+          "going"
+        ],
+        "answer": 1,
+        "explanation": "\"Every morning\" = routine → present simple. He/she/it takes -s/-es: go → goes."
+      },
+      {
+        "id": "a2p-p2",
+        "type": "gap",
+        "prompt": "Be quiet, please. The baby ___ (sleep).",
+        "accepted": [
+          "is sleeping",
+          "'s sleeping"
+        ],
+        "explanation": "Action happening right now → present continuous: is sleeping."
+      },
+      {
+        "id": "a2p-p3",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "she",
+          "does",
+          "not",
+          "like",
+          "coffee"
+        ],
+        "answer": "she does not like coffee",
+        "explanation": "Negative present simple: subject + does not + base verb (like, not likes)."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2p-q1",
+        "type": "mcq",
+        "prompt": "I ___ English three times a week.",
+        "options": [
+          "study",
+          "am studying",
+          "studies",
+          "studying"
+        ],
+        "answer": 0,
+        "explanation": "\"Three times a week\" is a frequency → present simple. With \"I\" there is no -s."
+      },
+      {
+        "id": "a2p-q2",
+        "type": "mcq",
+        "prompt": "Look! The bus ___.",
+        "options": [
+          "comes",
+          "come",
+          "is coming",
+          "coming"
+        ],
+        "answer": 2,
+        "explanation": "\"Look!\" shows an action happening now → present continuous."
+      },
+      {
+        "id": "a2p-q3",
+        "type": "mcq",
+        "prompt": "I ___ what you mean.",
+        "options": [
+          "am understanding",
+          "understand",
+          "understanding",
+          "understands"
+        ],
+        "answer": 1,
+        "explanation": "\"Understand\" is a state verb: no continuous form."
+      },
+      {
+        "id": "a2p-q4",
+        "type": "gap",
+        "prompt": "My brother ___ (not / work) this week because he is on holiday.",
+        "accepted": [
+          "isn't working",
+          "is not working",
+          "'s not working"
+        ],
+        "explanation": "\"This week\" + temporary situation → present continuous negative: is not working."
+      },
+      {
+        "id": "a2p-q5",
+        "type": "gap",
+        "prompt": "___ your sister speak French? (do / does)",
+        "accepted": [
+          "does",
+          "Does"
+        ],
+        "explanation": "Questions in the present simple with he/she/it use \"does\" + base verb."
+      },
+      {
+        "id": "a2p-q6",
+        "type": "truefalse",
+        "prompt": "\"She watch TV every evening\" is correct.",
+        "answer": false,
+        "explanation": "Third person singular needs -es: She watches TV every evening."
+      },
+      {
+        "id": "a2p-q7",
+        "type": "mcq",
+        "prompt": "We ___ a new app this month. It's a big project.",
+        "options": [
+          "develop",
+          "are developing",
+          "develops",
+          "developed"
+        ],
+        "answer": 1,
+        "explanation": "\"This month\" + temporary project → present continuous."
+      },
+      {
+        "id": "a2p-q8",
+        "type": "order",
+        "prompt": "Make a question.",
+        "words": [
+          "are",
+          "what",
+          "you",
+          "doing",
+          "now"
+        ],
+        "answer": "what are you doing now",
+        "explanation": "Question word + am/is/are + subject + verb-ing."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "He work in a bank.",
+        "right": "He works in a bank.",
+        "why": "Don't forget -s with he/she/it in the present simple."
+      },
+      {
+        "wrong": "I am knowing the answer.",
+        "right": "I know the answer.",
+        "why": "State verbs (know, like, want, need…) are not used with -ing."
+      },
+      {
+        "wrong": "Does she likes music?",
+        "right": "Does she like music?",
+        "why": "After does/doesn't, use the base verb (no -s)."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-daily",
+    "unitId": "a2-u1",
+    "level": "A2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Everyday English: your daily routine",
+    "minutes": 12,
+    "objective": "Describe your day clearly with common routine verbs and time expressions.",
+    "sections": [
+      {
+        "heading": "Routine verbs",
+        "en": "Many routine verbs are phrasal verbs (verb + particle). Learn them as one unit.",
+        "fr": "Beaucoup de verbes du quotidien sont des « phrasal verbs » : apprenez-les en bloc.",
+        "examples": [
+          "I wake up at 5:30 and get up at 5:45.",
+          "I get dressed, have breakfast and leave home at 7.",
+          "In the evening I go back home, have a shower and go to bed around 11."
+        ]
+      },
+      {
+        "heading": "Time expressions",
+        "en": "Use \"in\" with parts of the day, \"at\" with clock times and night, \"on\" with days.",
+        "fr": "in the morning / at 7 o'clock / at night / on Monday.",
+        "table": [
+          [
+            "in",
+            "at",
+            "on"
+          ],
+          [
+            "in the morning, in the afternoon, in the evening",
+            "at 7 a.m., at noon, at night, at the weekend (UK)",
+            "on Monday, on Friday evening, on 12 May"
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-wake-up",
+        "word": "wake up",
+        "ipa": "/weɪk ʌp/",
+        "pos": "phrasal verb",
+        "definition": "to stop sleeping",
+        "fr": "se réveiller",
+        "example": "I wake up before my alarm.",
+        "context": "Morning routine"
+      },
+      {
+        "id": "v-get-up",
+        "word": "get up",
+        "ipa": "/ɡet ʌp/",
+        "pos": "phrasal verb",
+        "definition": "to leave your bed",
+        "fr": "se lever",
+        "example": "I get up at six on weekdays.",
+        "context": "Morning routine"
+      },
+      {
+        "id": "v-have-breakfast",
+        "word": "have breakfast",
+        "ipa": "/hæv ˈbrekfəst/",
+        "pos": "collocation",
+        "definition": "to eat the first meal of the day",
+        "fr": "prendre le petit-déjeuner",
+        "example": "We have breakfast together.",
+        "context": "Meals — we \"have\" meals, we don't \"take\" them"
+      },
+      {
+        "id": "v-rush-hour",
+        "word": "rush hour",
+        "ipa": "/ˈrʌʃ aʊə/",
+        "pos": "noun",
+        "definition": "the busy time when people travel to or from work",
+        "fr": "heure de pointe",
+        "example": "Traffic is terrible during rush hour.",
+        "context": "Transport"
+      },
+      {
+        "id": "v-day-off",
+        "word": "day off",
+        "ipa": "/ˌdeɪ ˈɒf/",
+        "pos": "noun",
+        "definition": "a day when you do not work",
+        "fr": "jour de congé",
+        "example": "Sunday is my day off.",
+        "context": "Work"
+      },
+      {
+        "id": "v-get-home",
+        "word": "get home",
+        "ipa": "/ɡet həʊm/",
+        "pos": "collocation",
+        "definition": "to arrive at your house",
+        "fr": "rentrer à la maison",
+        "example": "I get home at about 7 p.m.",
+        "context": "No \"to\" before home"
+      },
+      {
+        "id": "v-chores",
+        "word": "chores",
+        "ipa": "/tʃɔːz/",
+        "pos": "noun (plural)",
+        "definition": "regular jobs at home, like cleaning",
+        "fr": "tâches ménagères",
+        "example": "I do the chores on Saturday.",
+        "context": "Home"
+      },
+      {
+        "id": "v-take-a-nap",
+        "word": "take a nap",
+        "ipa": "/teɪk ə næp/",
+        "pos": "collocation",
+        "definition": "to sleep for a short time during the day",
+        "fr": "faire une sieste",
+        "example": "I sometimes take a nap after lunch.",
+        "context": "Rest"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2d-p1",
+        "type": "mcq",
+        "prompt": "I always ___ breakfast at 7.",
+        "options": [
+          "take",
+          "have",
+          "make",
+          "do"
+        ],
+        "answer": 1,
+        "explanation": "We \"have\" breakfast/lunch/dinner in English."
+      },
+      {
+        "id": "a2d-p2",
+        "type": "gap",
+        "prompt": "I go to bed ___ night.",
+        "accepted": [
+          "at"
+        ],
+        "explanation": "\"At night\" — fixed expression."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2d-q1",
+        "type": "mcq",
+        "prompt": "My alarm rings and I ___. Then I get up.",
+        "options": [
+          "wake up",
+          "get on",
+          "go up",
+          "stand on"
+        ],
+        "answer": 0,
+        "explanation": "\"Wake up\" = stop sleeping; \"get up\" = leave the bed."
+      },
+      {
+        "id": "a2d-q2",
+        "type": "mcq",
+        "prompt": "I ___ home at 6 p.m.",
+        "options": [
+          "get to",
+          "arrive to",
+          "get",
+          "go to"
+        ],
+        "answer": 2,
+        "explanation": "\"Get home\" / \"go home\" — no \"to\" before \"home\"."
+      },
+      {
+        "id": "a2d-q3",
+        "type": "gap",
+        "prompt": "I have English classes ___ Tuesday evening.",
+        "accepted": [
+          "on"
+        ],
+        "explanation": "\"On\" + day (even with a part of the day): on Tuesday evening."
+      },
+      {
+        "id": "a2d-q4",
+        "type": "gap",
+        "prompt": "The roads are full during ___ hour.",
+        "accepted": [
+          "rush"
+        ],
+        "explanation": "\"Rush hour\" = the busiest travel time."
+      },
+      {
+        "id": "a2d-q5",
+        "type": "mcq",
+        "prompt": "Saturday is my ___. I don't work.",
+        "options": [
+          "day off",
+          "off day work",
+          "free job",
+          "holiday day"
+        ],
+        "answer": 0,
+        "explanation": "\"Day off\" = a day without work."
+      },
+      {
+        "id": "a2d-q6",
+        "type": "truefalse",
+        "prompt": "\"I do the chores\" means I do jobs like cleaning and washing at home.",
+        "answer": true,
+        "explanation": "Chores = regular housework."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I take my breakfast.",
+        "right": "I have breakfast.",
+        "why": "Meals use \"have\" and no possessive."
+      },
+      {
+        "wrong": "I go to home.",
+        "right": "I go home.",
+        "why": "No \"to\" before \"home\"."
+      }
+    ]
+  },
+  {
+    "id": "a2-e-intro",
+    "unitId": "a2-u1",
+    "level": "A2",
+    "category": "everyday",
+    "skill": "speaking",
+    "version": 1,
+    "title": "Introducing yourself professionally",
+    "minutes": 12,
+    "objective": "Introduce yourself, your studies and your job in 4–5 clear sentences.",
+    "sections": [
+      {
+        "heading": "A simple structure",
+        "en": "Name → where you are from / live → what you do → one detail → a goal.",
+        "fr": "Une structure simple et efficace : nom, origine, activité, un détail, un objectif.",
+        "examples": [
+          "Hi, I'm Ama. I'm from Kara, but I live in Lomé.",
+          "I'm a software developer and I work for a small company.",
+          "At the moment I'm studying for a master's degree in data science.",
+          "In my free time I enjoy football and reading.",
+          "I'm learning English because I want to study abroad."
+        ]
+      },
+      {
+        "heading": "Job vs. work",
+        "en": "\"Job\" is a countable noun (a job). \"Work\" is usually uncountable (I have a lot of work). Say \"I work as a developer\" or \"I'm a developer\".",
+        "fr": "« a job » (dénombrable) / « work » (indénombrable). « I work as a… » = je travaille comme…"
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-work-as",
+        "word": "work as",
+        "ipa": "/wɜːk æz/",
+        "pos": "phrase",
+        "definition": "to have a particular job",
+        "fr": "travailler comme",
+        "example": "I work as a data analyst.",
+        "context": "Introductions"
+      },
+      {
+        "id": "v-degree",
+        "word": "degree",
+        "ipa": "/dɪˈɡriː/",
+        "pos": "noun",
+        "definition": "a qualification from a university",
+        "fr": "diplôme universitaire",
+        "example": "She has a degree in economics.",
+        "context": "Education"
+      },
+      {
+        "id": "v-be-based-in",
+        "word": "be based in",
+        "ipa": "/biː beɪst ɪn/",
+        "pos": "phrase",
+        "definition": "to live or work mainly in a place",
+        "fr": "être basé à",
+        "example": "Our company is based in Lomé.",
+        "context": "Work"
+      },
+      {
+        "id": "v-in-my-free-time",
+        "word": "in my free time",
+        "ipa": "/ɪn maɪ friː taɪm/",
+        "pos": "phrase",
+        "definition": "when I am not working or studying",
+        "fr": "pendant mon temps libre",
+        "example": "In my free time I play football.",
+        "context": "Hobbies"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2i-p1",
+        "type": "mcq",
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I am developer.",
+          "I am a developer.",
+          "I am the developer of job.",
+          "I work like a developer."
+        ],
+        "answer": 1,
+        "explanation": "Jobs need \"a/an\": I am a developer. \"Work like\" means \"in the same way as\"; use \"work as\"."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2i-q1",
+        "type": "gap",
+        "prompt": "I work ___ a project manager.",
+        "accepted": [
+          "as"
+        ],
+        "explanation": "\"Work as\" + job."
+      },
+      {
+        "id": "a2i-q2",
+        "type": "mcq",
+        "prompt": "I'm looking for a new ___.",
+        "options": [
+          "work",
+          "job",
+          "works",
+          "employ"
+        ],
+        "answer": 1,
+        "explanation": "\"Job\" is countable: a new job."
+      },
+      {
+        "id": "a2i-q3",
+        "type": "mcq",
+        "prompt": "Our studio ___ Lomé.",
+        "options": [
+          "is based in",
+          "is basing at",
+          "bases on",
+          "is base in"
+        ],
+        "answer": 0,
+        "explanation": "Fixed expression: to be based in + city."
+      },
+      {
+        "id": "a2i-q4",
+        "type": "truefalse",
+        "prompt": "\"I have 28 years\" is the correct way to say your age.",
+        "answer": false,
+        "explanation": "Use \"be\": I am 28 (years old)."
+      },
+      {
+        "id": "a2i-q5",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "I",
+          "am",
+          "learning",
+          "English",
+          "to",
+          "study",
+          "abroad"
+        ],
+        "answer": "I am learning English to study abroad",
+        "explanation": "\"To + verb\" expresses purpose (pour + infinitif)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I am developer.",
+        "right": "I am a developer.",
+        "why": "Use a/an before a job."
+      },
+      {
+        "wrong": "I have 28 years.",
+        "right": "I am 28.",
+        "why": "Age uses \"be\"."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-past",
+    "unitId": "a2-u2",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Past Simple vs Past Continuous",
+    "minutes": 18,
+    "objective": "Tell a short story: finished actions (past simple) and background actions in progress (past continuous).",
+    "sections": [
+      {
+        "heading": "Past simple — finished actions",
+        "en": "Regular verbs add -ed (worked, studied, stopped). Many common verbs are irregular (go → went, see → saw, have → had). Negatives and questions use did + base verb.",
+        "fr": "Le prétérit exprime une action terminée à un moment précis du passé. Après « did/didn't », le verbe reste à la base verbale.",
+        "examples": [
+          "I visited Accra last year.",
+          "She didn't go to work yesterday.",
+          "Did you see the match?",
+          "We had a meeting on Monday."
+        ]
+      },
+      {
+        "heading": "Past continuous — the background",
+        "en": "was / were + verb-ing describes an action in progress at a moment in the past, often interrupted by a short action in the past simple.",
+        "fr": "Le passé continu (was/were + -ing) correspond souvent à l'imparfait : il décrit le décor, l'action en cours.",
+        "examples": [
+          "I was working when the power went off.",
+          "At 8 p.m. yesterday we were watching the news.",
+          "While she was driving, her phone rang."
+        ]
+      },
+      {
+        "heading": "when / while",
+        "en": "\"While\" + long action (past continuous). \"When\" + short action (past simple).",
+        "table": [
+          [
+            "Long action (background)",
+            "Short action (event)"
+          ],
+          [
+            "I was cooking…",
+            "…when the phone rang."
+          ],
+          [
+            "While we were waiting,",
+            "it started to rain."
+          ]
+        ]
+      },
+      {
+        "heading": "Frequent irregular verbs",
+        "en": "Learn these first.",
+        "table": [
+          [
+            "base",
+            "past"
+          ],
+          [
+            "be",
+            "was / were"
+          ],
+          [
+            "go",
+            "went"
+          ],
+          [
+            "have",
+            "had"
+          ],
+          [
+            "make",
+            "made"
+          ],
+          [
+            "take",
+            "took"
+          ],
+          [
+            "get",
+            "got"
+          ],
+          [
+            "see",
+            "saw"
+          ],
+          [
+            "come",
+            "came"
+          ],
+          [
+            "know",
+            "knew"
+          ],
+          [
+            "think",
+            "thought"
+          ],
+          [
+            "buy",
+            "bought"
+          ],
+          [
+            "write",
+            "wrote"
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-suddenly",
+        "word": "suddenly",
+        "ipa": "/ˈsʌdənli/",
+        "pos": "adverb",
+        "definition": "quickly and unexpectedly",
+        "fr": "soudain",
+        "example": "Suddenly, the lights went off.",
+        "context": "Storytelling"
+      },
+      {
+        "id": "v-power-cut",
+        "word": "power cut",
+        "ipa": "/ˈpaʊə kʌt/",
+        "pos": "noun",
+        "definition": "a time when there is no electricity",
+        "fr": "coupure de courant",
+        "example": "There was a power cut during the exam.",
+        "context": "Everyday problems"
+      },
+      {
+        "id": "v-ago",
+        "word": "ago",
+        "ipa": "/əˈɡəʊ/",
+        "pos": "adverb",
+        "definition": "before now (placed after the time)",
+        "fr": "il y a (temps)",
+        "example": "I started English two years ago.",
+        "context": "Past time"
+      },
+      {
+        "id": "v-at-first",
+        "word": "at first",
+        "ipa": "/ət fɜːst/",
+        "pos": "phrase",
+        "definition": "at the beginning",
+        "fr": "au début",
+        "example": "At first, the job was difficult.",
+        "context": "Storytelling"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2pa-p1",
+        "type": "gap",
+        "prompt": "Yesterday I ___ (go) to the market.",
+        "accepted": [
+          "went"
+        ],
+        "explanation": "\"Go\" is irregular: went."
+      },
+      {
+        "id": "a2pa-p2",
+        "type": "mcq",
+        "prompt": "I ___ TV when you called.",
+        "options": [
+          "watched",
+          "was watching",
+          "were watching",
+          "am watching"
+        ],
+        "answer": 1,
+        "explanation": "Background action interrupted by \"you called\" → past continuous: was watching (I → was)."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2pa-q1",
+        "type": "mcq",
+        "prompt": "She ___ to Ghana two years ago.",
+        "options": [
+          "travels",
+          "travelled",
+          "was travel",
+          "has travelled"
+        ],
+        "answer": 1,
+        "explanation": "\"Two years ago\" = finished time → past simple."
+      },
+      {
+        "id": "a2pa-q2",
+        "type": "gap",
+        "prompt": "We ___ (not / have) time to finish the report.",
+        "accepted": [
+          "didn't have",
+          "did not have"
+        ],
+        "explanation": "Negative past simple: did not + base verb (have, not had)."
+      },
+      {
+        "id": "a2pa-q3",
+        "type": "mcq",
+        "prompt": "While I ___, I saw an accident.",
+        "options": [
+          "drove",
+          "was driving",
+          "were driving",
+          "drive"
+        ],
+        "answer": 1,
+        "explanation": "\"While\" + long background action → past continuous."
+      },
+      {
+        "id": "a2pa-q4",
+        "type": "mcq",
+        "prompt": "___ you finish your homework yesterday?",
+        "options": [
+          "Do",
+          "Did",
+          "Were",
+          "Have"
+        ],
+        "answer": 1,
+        "explanation": "Past simple questions: Did + subject + base verb."
+      },
+      {
+        "id": "a2pa-q5",
+        "type": "gap",
+        "prompt": "The power ___ (go) off while we were working.",
+        "accepted": [
+          "went"
+        ],
+        "explanation": "Short action interrupting the background → past simple: went."
+      },
+      {
+        "id": "a2pa-q6",
+        "type": "truefalse",
+        "prompt": "\"Did you went to the meeting?\" is correct.",
+        "answer": false,
+        "explanation": "After \"did\", use the base verb: Did you go…?"
+      },
+      {
+        "id": "a2pa-q7",
+        "type": "mcq",
+        "prompt": "At 9 o'clock last night, they ___ dinner.",
+        "options": [
+          "had",
+          "were having",
+          "was having",
+          "have"
+        ],
+        "answer": 1,
+        "explanation": "Action in progress at a precise past moment → past continuous; they → were."
+      },
+      {
+        "id": "a2pa-q8",
+        "type": "gap",
+        "prompt": "I ___ (buy) a new phone last week.",
+        "accepted": [
+          "bought"
+        ],
+        "explanation": "Buy → bought (irregular)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I didn't went.",
+        "right": "I didn't go.",
+        "why": "After did/didn't, base verb only."
+      },
+      {
+        "wrong": "Since two years I started…",
+        "right": "Two years ago I started…",
+        "why": "\"Ago\" for a point in the past, after the time expression."
+      },
+      {
+        "wrong": "When I was cooking, the phone was ringing.",
+        "right": "While I was cooking, the phone rang.",
+        "why": "The short event is in the past simple."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-travel",
+    "unitId": "a2-u2",
+    "level": "A2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Travel: at the airport and on the road",
+    "minutes": 12,
+    "objective": "Understand and use the key words you need at an airport, a hotel and when asking for directions.",
+    "sections": [
+      {
+        "heading": "At the airport",
+        "en": "You check in, go through security, wait at the gate and board the plane. Your luggage is uncountable: one bag, two pieces of luggage.",
+        "fr": "« luggage » et « baggage » sont indénombrables : pas de -s.",
+        "examples": [
+          "Where can I check in for the flight to Paris?",
+          "My flight is delayed by two hours.",
+          "Boarding starts at gate 12."
+        ]
+      },
+      {
+        "heading": "Polite requests",
+        "en": "Use \"Could you…?\" or \"Can I…?\" + please.",
+        "examples": [
+          "Could you tell me where the taxi rank is?",
+          "Can I have a window seat, please?",
+          "Excuse me, how do I get to the city centre?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-check-in",
+        "word": "check in",
+        "ipa": "/tʃek ɪn/",
+        "pos": "phrasal verb",
+        "definition": "to register at an airport or hotel",
+        "fr": "enregistrer / s'enregistrer",
+        "example": "We checked in two hours before the flight.",
+        "context": "Airport, hotel"
+      },
+      {
+        "id": "v-boarding-pass",
+        "word": "boarding pass",
+        "ipa": "/ˈbɔːdɪŋ pɑːs/",
+        "pos": "noun",
+        "definition": "the document you need to get on a plane",
+        "fr": "carte d'embarquement",
+        "example": "Please show your boarding pass.",
+        "context": "Airport"
+      },
+      {
+        "id": "v-delayed",
+        "word": "delayed",
+        "ipa": "/dɪˈleɪd/",
+        "pos": "adjective",
+        "definition": "late, not on time",
+        "fr": "retardé",
+        "example": "The flight is delayed.",
+        "context": "Airport"
+      },
+      {
+        "id": "v-luggage",
+        "word": "luggage",
+        "ipa": "/ˈlʌɡɪdʒ/",
+        "pos": "noun (uncountable)",
+        "definition": "bags and suitcases for travel",
+        "fr": "bagages",
+        "example": "How much luggage can I take?",
+        "context": "Uncountable"
+      },
+      {
+        "id": "v-gate",
+        "word": "gate",
+        "ipa": "/ɡeɪt/",
+        "pos": "noun",
+        "definition": "the place in an airport where you get on the plane",
+        "fr": "porte d'embarquement",
+        "example": "Go to gate 7.",
+        "context": "Airport"
+      },
+      {
+        "id": "v-book",
+        "word": "book",
+        "ipa": "/bʊk/",
+        "pos": "verb",
+        "definition": "to reserve a room, seat or ticket",
+        "fr": "réserver",
+        "example": "I booked a hotel near the station.",
+        "context": "Hotel"
+      },
+      {
+        "id": "v-round-trip",
+        "word": "return ticket",
+        "ipa": "/rɪˈtɜːn ˈtɪkɪt/",
+        "pos": "noun",
+        "definition": "a ticket to go somewhere and come back (US: round-trip)",
+        "fr": "billet aller-retour",
+        "example": "A return ticket, please.",
+        "context": "Transport"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2t-p1",
+        "type": "mcq",
+        "prompt": "I have two ___.",
+        "options": [
+          "luggages",
+          "pieces of luggage",
+          "luggage",
+          "a luggages"
+        ],
+        "answer": 1,
+        "explanation": "Luggage is uncountable: use \"pieces of luggage\" or \"bags\"."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2t-q1",
+        "type": "mcq",
+        "prompt": "You need your ___ to get on the plane.",
+        "options": [
+          "boarding pass",
+          "check-in",
+          "gate",
+          "luggage"
+        ],
+        "answer": 0,
+        "explanation": "The boarding pass is the document for boarding."
+      },
+      {
+        "id": "a2t-q2",
+        "type": "gap",
+        "prompt": "I'd like to ___ a room for two nights.",
+        "accepted": [
+          "book",
+          "reserve"
+        ],
+        "explanation": "\"Book\" (or \"reserve\") a room."
+      },
+      {
+        "id": "a2t-q3",
+        "type": "mcq",
+        "prompt": "The flight is ___: it will leave at 10 instead of 8.",
+        "options": [
+          "cancelled",
+          "delayed",
+          "boarded",
+          "booked"
+        ],
+        "answer": 1,
+        "explanation": "Delayed = late. Cancelled = it will not happen."
+      },
+      {
+        "id": "a2t-q4",
+        "type": "mcq",
+        "prompt": "___ tell me where gate 5 is?",
+        "options": [
+          "Could you",
+          "Do you can",
+          "You could",
+          "Can you to"
+        ],
+        "answer": 0,
+        "explanation": "Polite request: Could you + base verb?"
+      },
+      {
+        "id": "a2t-q5",
+        "type": "truefalse",
+        "prompt": "\"How much luggages do you have?\" is correct.",
+        "answer": false,
+        "explanation": "No plural: How much luggage do you have?"
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "my luggages",
+        "right": "my luggage / my bags",
+        "why": "Luggage is uncountable."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-future",
+    "unitId": "a2-u3",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Future forms: will, going to, present continuous",
+    "minutes": 16,
+    "objective": "Choose the right future form for plans, decisions, predictions and arrangements.",
+    "sections": [
+      {
+        "heading": "going to — plans and evidence",
+        "en": "Use am/is/are going to + verb for intentions decided before now, and for predictions based on what you see.",
+        "fr": "« be going to » = intention déjà décidée, ou prédiction fondée sur un indice visible.",
+        "examples": [
+          "I'm going to apply for a scholarship next year.",
+          "Look at those clouds. It's going to rain."
+        ]
+      },
+      {
+        "heading": "will — instant decisions, promises, opinions about the future",
+        "en": "Use will + base verb for decisions made at the moment of speaking, offers, promises and predictions based on opinion.",
+        "fr": "« will » = décision prise sur le moment, promesse, offre, prédiction d'opinion.",
+        "examples": [
+          "The phone is ringing — I'll answer it.",
+          "I'll send you the file tonight, I promise.",
+          "I think AI will change many jobs."
+        ]
+      },
+      {
+        "heading": "Present continuous — fixed arrangements",
+        "en": "For arrangements with a time and other people (meetings, appointments, travel).",
+        "fr": "Le présent continu exprime un rendez-vous ou un arrangement déjà organisé.",
+        "examples": [
+          "I'm meeting the client on Thursday at 10.",
+          "We're flying to Abidjan tomorrow."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-scholarship",
+        "word": "scholarship",
+        "ipa": "/ˈskɒləʃɪp/",
+        "pos": "noun",
+        "definition": "money given to a student to pay for studies",
+        "fr": "bourse d'études",
+        "example": "She got a scholarship to study in Canada.",
+        "context": "Education"
+      },
+      {
+        "id": "v-apply-for",
+        "word": "apply for",
+        "ipa": "/əˈplaɪ fɔː/",
+        "pos": "verb + prep",
+        "definition": "to formally ask for a job, a place, etc.",
+        "fr": "postuler à / candidater",
+        "example": "I'm going to apply for a master's programme.",
+        "context": "Careers & studies"
+      },
+      {
+        "id": "v-appointment",
+        "word": "appointment",
+        "ipa": "/əˈpɔɪntmənt/",
+        "pos": "noun",
+        "definition": "a fixed time to meet someone",
+        "fr": "rendez-vous (professionnel)",
+        "example": "I have an appointment with the dentist.",
+        "context": "Arrangements"
+      },
+      {
+        "id": "v-probably",
+        "word": "probably",
+        "ipa": "/ˈprɒbəbli/",
+        "pos": "adverb",
+        "definition": "almost certainly",
+        "fr": "probablement",
+        "example": "I'll probably be late.",
+        "context": "Predictions — after will"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2f-p1",
+        "type": "mcq",
+        "prompt": "\"It's cold in here.\" — \"I ___ close the window.\"",
+        "options": [
+          "am going to",
+          "'ll",
+          "am closing",
+          "close"
+        ],
+        "answer": 1,
+        "explanation": "Instant decision at the moment of speaking → will ('ll)."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2f-q1",
+        "type": "mcq",
+        "prompt": "I've decided. I ___ study in Canada next year.",
+        "options": [
+          "will",
+          "am going to",
+          "go",
+          "going to"
+        ],
+        "answer": 1,
+        "explanation": "Plan decided before speaking → going to."
+      },
+      {
+        "id": "a2f-q2",
+        "type": "mcq",
+        "prompt": "I ___ my manager at 3 p.m. — it's in our calendars.",
+        "options": [
+          "meet",
+          "am meeting",
+          "will meet",
+          "met"
+        ],
+        "answer": 1,
+        "explanation": "Fixed arrangement with a time → present continuous."
+      },
+      {
+        "id": "a2f-q3",
+        "type": "mcq",
+        "prompt": "Don't worry, I ___ tell anyone.",
+        "options": [
+          "won't",
+          "am not going",
+          "don't",
+          "not will"
+        ],
+        "answer": 0,
+        "explanation": "Promise → will / won't."
+      },
+      {
+        "id": "a2f-q4",
+        "type": "gap",
+        "prompt": "Be careful! You ___ fall! (going to)",
+        "accepted": [
+          "are going to",
+          "'re going to"
+        ],
+        "explanation": "Prediction based on visible evidence → going to."
+      },
+      {
+        "id": "a2f-q5",
+        "type": "truefalse",
+        "prompt": "\"I will to call you tomorrow\" is correct.",
+        "answer": false,
+        "explanation": "No \"to\" after will: I will call you."
+      },
+      {
+        "id": "a2f-q6",
+        "type": "mcq",
+        "prompt": "I think robots ___ do many jobs in 2050.",
+        "options": [
+          "are doing",
+          "will",
+          "will do",
+          "do"
+        ],
+        "answer": 2,
+        "explanation": "Opinion about the future (\"I think\") → will + base verb."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I will to go.",
+        "right": "I will go.",
+        "why": "Modal verbs are followed by the base verb, without \"to\"."
+      },
+      {
+        "wrong": "Tomorrow I go to Kara.",
+        "right": "Tomorrow I'm going to Kara.",
+        "why": "Present simple is not used for personal future plans."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-work",
+    "unitId": "a2-u3",
+    "level": "A2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Work and careers",
+    "minutes": 12,
+    "objective": "Talk about your job, your tasks and your career goals.",
+    "sections": [
+      {
+        "heading": "Talking about your job",
+        "en": "Say what you are responsible for and what you deal with.",
+        "examples": [
+          "I'm in charge of the mobile team.",
+          "I'm responsible for testing new features.",
+          "I deal with clients every day."
+        ]
+      },
+      {
+        "heading": "Career goals",
+        "en": "Use \"I'd like to…\", \"My goal is to…\", \"I'm planning to…\".",
+        "examples": [
+          "My goal is to become a data engineer.",
+          "I'd like to work for an international company."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-in-charge-of",
+        "word": "be in charge of",
+        "ipa": "/ɪn tʃɑːdʒ əv/",
+        "pos": "phrase",
+        "definition": "to be responsible for something or someone",
+        "fr": "être responsable de",
+        "example": "She is in charge of the budget.",
+        "context": "Responsibilities"
+      },
+      {
+        "id": "v-colleague",
+        "word": "colleague",
+        "ipa": "/ˈkɒliːɡ/",
+        "pos": "noun",
+        "definition": "a person you work with",
+        "fr": "collègue",
+        "example": "My colleagues are very helpful.",
+        "context": "Workplace"
+      },
+      {
+        "id": "v-salary",
+        "word": "salary",
+        "ipa": "/ˈsæləri/",
+        "pos": "noun",
+        "definition": "money you receive regularly for your job",
+        "fr": "salaire",
+        "example": "The salary is paid monthly.",
+        "context": "Employment"
+      },
+      {
+        "id": "v-skills",
+        "word": "skills",
+        "ipa": "/skɪlz/",
+        "pos": "noun (plural)",
+        "definition": "abilities you have learned",
+        "fr": "compétences",
+        "example": "This job requires good communication skills.",
+        "context": "CV & interviews"
+      },
+      {
+        "id": "v-hire",
+        "word": "hire",
+        "ipa": "/haɪə/",
+        "pos": "verb",
+        "definition": "to give someone a job",
+        "fr": "embaucher",
+        "example": "The company is hiring two developers.",
+        "context": "Recruitment"
+      },
+      {
+        "id": "v-freelance",
+        "word": "freelance",
+        "ipa": "/ˈfriːlɑːns/",
+        "pos": "adjective / adverb",
+        "definition": "working for different clients, not employed by one company",
+        "fr": "indépendant / en freelance",
+        "example": "He works freelance for foreign clients.",
+        "context": "Work types"
+      },
+      {
+        "id": "v-promotion",
+        "word": "promotion",
+        "ipa": "/prəˈməʊʃən/",
+        "pos": "noun",
+        "definition": "a move to a higher position at work",
+        "fr": "promotion",
+        "example": "She got a promotion last year.",
+        "context": "Career"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2w-p1",
+        "type": "gap",
+        "prompt": "I'm in charge ___ the website.",
+        "accepted": [
+          "of"
+        ],
+        "explanation": "\"In charge of\" + noun."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2w-q1",
+        "type": "mcq",
+        "prompt": "The company wants to ___ three new engineers.",
+        "options": [
+          "hire",
+          "fire",
+          "apply",
+          "promote"
+        ],
+        "answer": 0,
+        "explanation": "Hire = give someone a job. Fire = remove from a job."
+      },
+      {
+        "id": "a2w-q2",
+        "type": "mcq",
+        "prompt": "Teamwork and communication are important ___.",
+        "options": [
+          "skills",
+          "salaries",
+          "colleagues",
+          "charges"
+        ],
+        "answer": 0,
+        "explanation": "Skills = abilities."
+      },
+      {
+        "id": "a2w-q3",
+        "type": "gap",
+        "prompt": "I work ___ for several clients. (not employed)",
+        "accepted": [
+          "freelance",
+          "as a freelancer"
+        ],
+        "explanation": "Work freelance = independent."
+      },
+      {
+        "id": "a2w-q4",
+        "type": "mcq",
+        "prompt": "My ___ helped me fix the bug.",
+        "options": [
+          "colleague",
+          "college",
+          "collage",
+          "collect"
+        ],
+        "answer": 0,
+        "explanation": "Colleague /ˈkɒliːɡ/ = coworker. College = school."
+      },
+      {
+        "id": "a2w-q5",
+        "type": "truefalse",
+        "prompt": "\"I am responsible of the team\" is correct.",
+        "answer": false,
+        "explanation": "Responsible FOR (in charge OF)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "responsible of",
+        "right": "responsible for",
+        "why": "Different preposition from French « responsable de »."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-articles",
+    "unitId": "a2-u4",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Articles (a, an, the, Ø) and prepositions of time and place",
+    "minutes": 18,
+    "objective": "Use articles correctly with general and specific nouns, and choose in / on / at.",
+    "sections": [
+      {
+        "heading": "a / an",
+        "en": "Use a/an with a singular countable noun mentioned for the first time, or with jobs. \"An\" before a vowel sound: an hour, an engineer, but a university (/juː/).",
+        "fr": "« an » se choisit selon le son, pas la lettre : an hour, a university."
+      },
+      {
+        "heading": "the",
+        "en": "Use \"the\" when the listener knows which one: something mentioned before, unique things, or specified by the sentence.",
+        "examples": [
+          "I bought a laptop. The laptop is very fast.",
+          "The sun is hot today.",
+          "The report you sent was excellent."
+        ]
+      },
+      {
+        "heading": "No article (Ø) for general meaning",
+        "en": "In English, general statements use NO article with plural and uncountable nouns. This is the most common error of French speakers.",
+        "fr": "Contrairement au français, on ne met PAS d'article pour une idée générale : « La vie est belle » → « Life is beautiful ».",
+        "examples": [
+          "Life is short. (not: The life)",
+          "I love music.",
+          "Students need practice.",
+          "Technology changes quickly."
+        ]
+      },
+      {
+        "heading": "in / on / at",
+        "en": "Time and place.",
+        "table": [
+          [
+            "",
+            "time",
+            "place"
+          ],
+          [
+            "at",
+            "at 6 o'clock, at night, at the weekend",
+            "at home, at work, at the station"
+          ],
+          [
+            "on",
+            "on Monday, on 3 May",
+            "on the table, on the second floor"
+          ],
+          [
+            "in",
+            "in May, in 2027, in the morning",
+            "in Lomé, in the room, in Canada"
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "v-in-general",
+        "word": "in general",
+        "ipa": "/ɪn ˈdʒenrəl/",
+        "pos": "phrase",
+        "definition": "usually; in most situations",
+        "fr": "en général",
+        "example": "In general, people like music.",
+        "context": "General statements"
+      },
+      {
+        "id": "v-floor",
+        "word": "floor",
+        "ipa": "/flɔː/",
+        "pos": "noun",
+        "definition": "a level of a building",
+        "fr": "étage",
+        "example": "Our office is on the third floor.",
+        "context": "Places"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2a-p1",
+        "type": "mcq",
+        "prompt": "___ education is important.",
+        "options": [
+          "The",
+          "An",
+          "A",
+          "— (no article)"
+        ],
+        "answer": 3,
+        "explanation": "General meaning of an uncountable noun → no article."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2a-q1",
+        "type": "mcq",
+        "prompt": "She is ___ engineer.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "\"Engineer\" starts with a vowel sound → an."
+      },
+      {
+        "id": "a2a-q2",
+        "type": "mcq",
+        "prompt": "I study at ___ university in Lomé.",
+        "options": [
+          "an",
+          "a",
+          "the",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "\"University\" starts with the sound /juː/ (a consonant sound) → a."
+      },
+      {
+        "id": "a2a-q3",
+        "type": "gap",
+        "prompt": "My birthday is ___ June.",
+        "accepted": [
+          "in"
+        ],
+        "explanation": "Months → in."
+      },
+      {
+        "id": "a2a-q4",
+        "type": "gap",
+        "prompt": "The meeting is on Friday ___ 10 a.m.",
+        "accepted": [
+          "at"
+        ],
+        "explanation": "On + day, at + clock time."
+      },
+      {
+        "id": "a2a-q5",
+        "type": "truefalse",
+        "prompt": "\"The money is not everything\" expresses a general idea correctly.",
+        "answer": false,
+        "explanation": "General meaning → no article: Money is not everything."
+      },
+      {
+        "id": "a2a-q6",
+        "type": "mcq",
+        "prompt": "I'm ___ home now.",
+        "options": [
+          "in",
+          "at",
+          "on",
+          "to"
+        ],
+        "answer": 1,
+        "explanation": "At home (fixed)."
+      },
+      {
+        "id": "a2a-q7",
+        "type": "mcq",
+        "prompt": "I watched a film yesterday. ___ film was boring.",
+        "options": [
+          "A",
+          "The",
+          "—",
+          "An"
+        ],
+        "answer": 1,
+        "explanation": "Second mention → the."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "The life is hard.",
+        "right": "Life is hard.",
+        "why": "No article for general/abstract meaning."
+      },
+      {
+        "wrong": "an university",
+        "right": "a university",
+        "why": "Choose a/an by sound, not by letter."
+      },
+      {
+        "wrong": "in Monday",
+        "right": "on Monday",
+        "why": "Days take \"on\"."
+      }
+    ]
+  }
+]

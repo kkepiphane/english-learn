@@ -1,0 +1,28 @@
+[
+  {
+    "id": "ielts",
+    "name": "IELTS Academic",
+    "verifiedOn": "2026-11-20",
+    "source": "ielts.org",
+    "sections": [
+      { "name": "Listening (≈ 30 min)", "summary": "4 parts — two conversations and two monologues, including an academic lecture; 40 questions." },
+      { "name": "Reading (60 min)", "summary": "3 long academic passages (≈ 2,150–2,750 words in total); 40 questions." },
+      { "name": "Writing (60 min)", "summary": "Task 1: describe a graph, table, chart or diagram (min. 150 words). Task 2: argumentative essay (min. 250 words)." },
+      { "name": "Speaking (11–14 min)", "summary": "Part 1 interview, Part 2 individual long turn on a topic card, Part 3 discussion." }
+    ],
+    "scoring": "Band scores from 0 to 9 in half bands, for each skill and overall. Total test time ≈ 2 h 45 min."
+  },
+  {
+    "id": "toefl",
+    "name": "TOEFL iBT (format updated January 2026)",
+    "verifiedOn": "2026-11-20",
+    "source": "ets.org/toefl",
+    "sections": [
+      { "name": "Reading", "summary": "Multistage adaptive: difficulty adjusts midway through the section based on your performance." },
+      { "name": "Listening", "summary": "Multistage adaptive, with academic and everyday listening tasks." },
+      { "name": "Writing", "summary": "Writing tasks updated in 2026 with more real-world academic contexts." },
+      { "name": "Speaking", "summary": "Speaking tasks updated in 2026." }
+    ],
+    "scoring": "Since 21 January 2026: section and total scores on a 1–6 scale in 0.5 steps, aligned with the CEFR. Until January 2028, reports also show a comparable 0–120 score."
+  }
+]

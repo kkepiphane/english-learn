@@ -1,0 +1,342 @@
+[
+  {
+    "id": "r-a2-market",
+    "level": "A2",
+    "topic": "Everyday life",
+    "title": "A Saturday at the market",
+    "minutes": 5,
+    "paragraphs": [
+      "Every Saturday, Efua goes to the big market in the city centre. She usually leaves home at seven o'clock, before the streets get busy. She takes a shared taxi because it is cheaper than a private one.",
+      "At the market, she buys vegetables, fish and rice for the whole week. She always visits the same seller, Mrs Agbo, because her tomatoes are fresh and her prices are fair. They often chat about their families.",
+      "This Saturday is different. Efua is not shopping for food. She is looking for a present for her brother, who is graduating next week. After an hour, she finds a beautiful leather bag. It is expensive, but she decides to buy it. \"He will use it every day at his new job,\" she thinks."
+    ],
+    "glossary": {
+      "shared": {
+        "def": "used by several people at the same time",
+        "fr": "partagé",
+        "ipa": "/ʃeəd/"
+      },
+      "fair": {
+        "def": "reasonable and right",
+        "fr": "juste, raisonnable",
+        "ipa": "/feə/"
+      },
+      "chat": {
+        "def": "to talk in a friendly, informal way",
+        "fr": "bavarder",
+        "ipa": "/tʃæt/"
+      },
+      "present": {
+        "def": "a gift",
+        "fr": "cadeau",
+        "ipa": "/ˈprezənt/"
+      },
+      "graduating": {
+        "def": "finishing university with a degree",
+        "fr": "obtenir son diplôme",
+        "ipa": "/ˈɡrædʒueɪtɪŋ/"
+      },
+      "leather": {
+        "def": "material made from animal skin",
+        "fr": "cuir",
+        "ipa": "/ˈleðə/"
+      }
+    },
+    "summary": "Efua shops at the market every Saturday, always from the same seller. This week she buys a leather bag as a graduation present for her brother.",
+    "questions": [
+      {
+        "id": "ra2m-1",
+        "type": "mcq",
+        "prompt": "Why does Efua take a shared taxi?",
+        "options": [
+          "It is faster.",
+          "It is cheaper.",
+          "Her brother drives it.",
+          "There are no buses."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1: \"because it is cheaper than a private one\"."
+      },
+      {
+        "id": "ra2m-2",
+        "type": "truefalse",
+        "prompt": "Efua buys from many different sellers.",
+        "answer": false,
+        "explanation": "She \"always visits the same seller, Mrs Agbo\"."
+      },
+      {
+        "id": "ra2m-3",
+        "type": "mcq",
+        "prompt": "What is different this Saturday?",
+        "options": [
+          "She goes later.",
+          "She is buying a present.",
+          "Mrs Agbo is absent.",
+          "She buys fish."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3: she is looking for a present for her brother."
+      },
+      {
+        "id": "ra2m-4",
+        "type": "mcq",
+        "prompt": "Why does her brother need the bag?",
+        "options": [
+          "For a trip",
+          "For his new job",
+          "For university",
+          "For the market"
+        ],
+        "answer": 1,
+        "explanation": "\"He will use it every day at his new job.\""
+      },
+      {
+        "id": "ra2m-5",
+        "type": "gap",
+        "prompt": "Mrs Agbo's tomatoes are ___ and her prices are fair.",
+        "accepted": [
+          "fresh"
+        ],
+        "explanation": "Paragraph 2: \"her tomatoes are fresh\"."
+      }
+    ]
+  },
+  {
+    "id": "r-b1-mobilemoney",
+    "level": "B1",
+    "topic": "Technology",
+    "title": "How mobile money changed daily life",
+    "minutes": 7,
+    "paragraphs": [
+      "Twenty years ago, sending money to a relative in another town was slow and risky. People often gave cash to a bus driver or travelled for hours to deliver it themselves. Today, in many West African countries, a few taps on a basic phone are enough.",
+      "Mobile money services allow users to store money in an account linked to their phone number. They can transfer it, pay bills or buy airtime without a bank account. This has been especially important for people in rural areas, where banks are rare and often far away.",
+      "Researchers have found that families who use mobile money are better able to deal with emergencies, such as an illness or a poor harvest, because relatives can send help quickly. Small traders also benefit: they can receive payments from customers they have never met.",
+      "However, the system is not perfect. Transaction fees can be high for small amounts, and fraud — for example, fake messages asking users to send money back — remains a problem. Experts argue that better digital education is as important as new technology."
+    ],
+    "glossary": {
+      "relative": {
+        "def": "a member of your family",
+        "fr": "un proche, membre de la famille",
+        "ipa": "/ˈrelətɪv/"
+      },
+      "risky": {
+        "def": "dangerous; something bad may happen",
+        "fr": "risqué",
+        "ipa": "/ˈrɪski/"
+      },
+      "airtime": {
+        "def": "phone credit for calls and data",
+        "fr": "crédit téléphonique",
+        "ipa": "/ˈeətaɪm/"
+      },
+      "rural": {
+        "def": "in the countryside",
+        "fr": "rural",
+        "ipa": "/ˈrʊərəl/"
+      },
+      "emergencies": {
+        "def": "sudden dangerous situations needing quick action",
+        "fr": "urgences",
+        "ipa": "/ɪˈmɜːdʒənsiz/"
+      },
+      "harvest": {
+        "def": "the crops collected in a season",
+        "fr": "récolte",
+        "ipa": "/ˈhɑːvɪst/"
+      },
+      "traders": {
+        "def": "people who buy and sell goods",
+        "fr": "commerçants",
+        "ipa": "/ˈtreɪdəz/"
+      },
+      "fees": {
+        "def": "money paid for a service",
+        "fr": "frais",
+        "ipa": "/fiːz/"
+      },
+      "fraud": {
+        "def": "illegal tricks to get money",
+        "fr": "fraude, arnaque",
+        "ipa": "/frɔːd/"
+      }
+    },
+    "summary": "Mobile money lets people transfer and store money with a phone, which helps rural families, emergencies and small traders. Problems remain: high fees for small amounts and fraud, so digital education is needed.",
+    "questions": [
+      {
+        "id": "rb1mm-1",
+        "type": "mcq",
+        "prompt": "How did people send money to relatives twenty years ago?",
+        "options": [
+          "By bank transfer",
+          "Through a bus driver or in person",
+          "By post",
+          "With a smartphone app"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1: they gave cash to a bus driver or travelled to deliver it."
+      },
+      {
+        "id": "rb1mm-2",
+        "type": "truefalse",
+        "prompt": "You need a bank account to use mobile money.",
+        "answer": false,
+        "explanation": "Paragraph 2: \"without a bank account\"."
+      },
+      {
+        "id": "rb1mm-3",
+        "type": "mcq",
+        "prompt": "Why is mobile money especially important in rural areas?",
+        "options": [
+          "Phones are cheaper there.",
+          "Banks are rare and far away.",
+          "People earn more there.",
+          "There is no fraud."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2: \"where banks are rare and often far away\"."
+      },
+      {
+        "id": "rb1mm-4",
+        "type": "mcq",
+        "prompt": "According to researchers, mobile money helps families…",
+        "options": [
+          "save more each month",
+          "cope with emergencies",
+          "avoid paying fees",
+          "find jobs"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3: better able to deal with emergencies."
+      },
+      {
+        "id": "rb1mm-5",
+        "type": "mcq",
+        "prompt": "What does the writer suggest at the end?",
+        "options": [
+          "Stopping mobile money",
+          "Lowering phone prices",
+          "Improving digital education",
+          "Opening more banks"
+        ],
+        "answer": 2,
+        "explanation": "Last sentence: better digital education is as important as new technology."
+      },
+      {
+        "id": "rb1mm-6",
+        "type": "gap",
+        "prompt": "Fake messages asking users to send money back are an example of ___.",
+        "accepted": [
+          "fraud"
+        ],
+        "explanation": "Paragraph 4."
+      }
+    ]
+  },
+  {
+    "id": "r-b1-sleep",
+    "level": "B1",
+    "topic": "Science & health",
+    "title": "Why sleep helps you learn",
+    "minutes": 7,
+    "paragraphs": [
+      "Many students believe that staying up late is the best way to prepare for an exam. Scientific studies suggest the opposite: sleep plays an essential role in learning.",
+      "During the day, the brain collects new information. At night, especially during deep sleep, it reorganises this information and transfers important memories to long-term storage. In one well-known type of experiment, people who slept after learning a list of words remembered more of them the next day than people who stayed awake.",
+      "Sleep also affects attention. After a short night, it is harder to concentrate, and we make more mistakes. This is why a tired student may read the same page several times without understanding it.",
+      "For language learners, the message is clear: regular short study sessions followed by a good night's sleep are more effective than one long session the night before a test."
+    ],
+    "glossary": {
+      "staying up": {
+        "def": "not going to bed",
+        "fr": "veiller",
+        "ipa": "/ˈsteɪɪŋ ʌp/"
+      },
+      "essential": {
+        "def": "extremely important",
+        "fr": "essentiel",
+        "ipa": "/ɪˈsenʃəl/"
+      },
+      "reorganises": {
+        "def": "puts in a new order",
+        "fr": "réorganise",
+        "ipa": "/riˈɔːɡənaɪzɪz/"
+      },
+      "storage": {
+        "def": "a place where things are kept",
+        "fr": "stockage",
+        "ipa": "/ˈstɔːrɪdʒ/"
+      },
+      "concentrate": {
+        "def": "to give all your attention",
+        "fr": "se concentrer",
+        "ipa": "/ˈkɒnsəntreɪt/"
+      },
+      "effective": {
+        "def": "producing the result you want",
+        "fr": "efficace",
+        "ipa": "/ɪˈfektɪv/"
+      }
+    },
+    "summary": "Sleep helps learning because the brain reorganises and stores memories at night and attention is better after rest. Short regular sessions plus sleep beat one long late-night session.",
+    "questions": [
+      {
+        "id": "rb1s-1",
+        "type": "mcq",
+        "prompt": "What do many students believe?",
+        "options": [
+          "Sleep improves memory.",
+          "Studying late is the best preparation.",
+          "Exams are useless.",
+          "Short sessions are better."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1."
+      },
+      {
+        "id": "rb1s-2",
+        "type": "mcq",
+        "prompt": "What does the brain do during deep sleep?",
+        "options": [
+          "It deletes new information.",
+          "It moves important memories to long-term storage.",
+          "It stops working.",
+          "It learns new words."
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2."
+      },
+      {
+        "id": "rb1s-3",
+        "type": "truefalse",
+        "prompt": "In the experiment, people who stayed awake remembered more words.",
+        "answer": false,
+        "explanation": "Those who slept remembered more."
+      },
+      {
+        "id": "rb1s-4",
+        "type": "mcq",
+        "prompt": "The word \"effective\" in the last paragraph is closest to…",
+        "options": [
+          "expensive",
+          "useful and successful",
+          "long",
+          "difficult"
+        ],
+        "answer": 1,
+        "explanation": "Effective = producing the desired result."
+      },
+      {
+        "id": "rb1s-5",
+        "type": "mcq",
+        "prompt": "What is the best title for the last paragraph?",
+        "options": [
+          "A practical lesson for learners",
+          "The history of sleep research",
+          "Why exams are stressful",
+          "How to stay awake"
+        ],
+        "answer": 0,
+        "explanation": "It gives practical advice for language learners."
+      }
+    ]
+  }
+]

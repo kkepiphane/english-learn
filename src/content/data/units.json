@@ -1,0 +1,90 @@
+[
+  {
+    "id": "a2-u1",
+    "level": "A2",
+    "order": 1,
+    "title": "Daily life & introductions",
+    "description": "Routines, the present tenses and introducing yourself.",
+    "lessonIds": [
+      "a2-g-present",
+      "a2-v-daily",
+      "a2-e-intro"
+    ]
+  },
+  {
+    "id": "a2-u2",
+    "level": "A2",
+    "order": 2,
+    "title": "Past experiences & travel",
+    "description": "Telling stories in the past and travelling.",
+    "lessonIds": [
+      "a2-g-past",
+      "a2-v-travel"
+    ]
+  },
+  {
+    "id": "a2-u3",
+    "level": "A2",
+    "order": 3,
+    "title": "Plans, work & the future",
+    "description": "Future forms and talking about your job.",
+    "lessonIds": [
+      "a2-g-future",
+      "a2-v-work"
+    ]
+  },
+  {
+    "id": "a2-u4",
+    "level": "A2",
+    "order": 4,
+    "title": "Getting the details right",
+    "description": "Articles and prepositions — the classic traps for French speakers.",
+    "lessonIds": [
+      "a2-g-articles"
+    ]
+  },
+  {
+    "id": "b1-u1",
+    "level": "B1",
+    "order": 1,
+    "title": "Experiences & education",
+    "description": "Present perfect, for/since, studying abroad.",
+    "lessonIds": [
+      "b1-g-presperf",
+      "b1-v-education"
+    ]
+  },
+  {
+    "id": "b1-u2",
+    "level": "B1",
+    "order": 2,
+    "title": "Advice, rules & meetings",
+    "description": "Modal verbs and expressing your opinion professionally.",
+    "lessonIds": [
+      "b1-g-modals",
+      "b1-e-opinion"
+    ]
+  },
+  {
+    "id": "b1-u3",
+    "level": "B1",
+    "order": 3,
+    "title": "Possibilities & technology",
+    "description": "Conditionals and the digital world.",
+    "lessonIds": [
+      "b1-g-conditionals",
+      "b1-v-tech"
+    ]
+  },
+  {
+    "id": "b1-u4",
+    "level": "B1",
+    "order": 4,
+    "title": "Processes, news & the planet",
+    "description": "The passive voice and environmental topics.",
+    "lessonIds": [
+      "b1-g-passive",
+      "b1-v-environment"
+    ]
+  }
+]

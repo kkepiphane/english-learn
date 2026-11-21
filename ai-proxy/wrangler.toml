@@ -1,0 +1,12 @@
+name = "english-path-ai"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+PROVIDER = "openai"          # or "anthropic"
+MODEL = ""                   # set the model name you want to use
+ALLOWED_ORIGIN = ""          # e.g. https://your-user.github.io
+
+# Secrets (never commit them):
+#   npx wrangler secret put OPENAI_API_KEY      (or ANTHROPIC_API_KEY)
+#   npx wrangler secret put ACCESS_TOKEN

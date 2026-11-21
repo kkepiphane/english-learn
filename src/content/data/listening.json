@@ -1,0 +1,280 @@
+[
+  {
+    "id": "l-a2-cafe",
+    "level": "A2",
+    "kind": "Everyday conversation",
+    "title": "Ordering at a café",
+    "lines": [
+      {
+        "speaker": "Waiter",
+        "text": "Good morning. What can I get you?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Hi. Can I have a large coffee with milk, please?"
+      },
+      {
+        "speaker": "Waiter",
+        "text": "Of course. Anything to eat?"
+      },
+      {
+        "speaker": "Customer",
+        "text": "Yes, a cheese sandwich. How much is that?"
+      },
+      {
+        "speaker": "Waiter",
+        "text": "That's six pounds fifty altogether."
+      },
+      {
+        "speaker": "Customer",
+        "text": "Can I pay by card?"
+      },
+      {
+        "speaker": "Waiter",
+        "text": "Sorry, the card machine isn't working today. Cash only."
+      },
+      {
+        "speaker": "Customer",
+        "text": "No problem. Here you are."
+      }
+    ],
+    "questions": [
+      {
+        "id": "la2c-1",
+        "type": "mcq",
+        "prompt": "What size is the coffee?",
+        "options": [
+          "Small",
+          "Medium",
+          "Large",
+          "Not mentioned"
+        ],
+        "answer": 2,
+        "explanation": "\"A large coffee with milk.\""
+      },
+      {
+        "id": "la2c-2",
+        "type": "mcq",
+        "prompt": "How much does the customer pay?",
+        "options": [
+          "£5.50",
+          "£6.15",
+          "£6.50",
+          "£16.50"
+        ],
+        "answer": 2,
+        "explanation": "\"Six pounds fifty altogether.\""
+      },
+      {
+        "id": "la2c-3",
+        "type": "truefalse",
+        "prompt": "The customer pays by card.",
+        "answer": false,
+        "explanation": "The card machine isn't working — cash only."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "altogether",
+        "def": "in total"
+      },
+      {
+        "word": "Here you are",
+        "def": "said when giving something to someone"
+      }
+    ]
+  },
+  {
+    "id": "l-b1-interview",
+    "level": "B1",
+    "kind": "Professional dialogue",
+    "title": "A job interview for a developer",
+    "lines": [
+      {
+        "speaker": "Interviewer",
+        "text": "Thanks for coming in. Could you tell me a little about your background?"
+      },
+      {
+        "speaker": "Candidate",
+        "text": "Sure. I've been a web developer for about five years. I started in a small agency, and for the last two years I've been working on mobile payment apps."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Interesting. What would you say is your biggest achievement?"
+      },
+      {
+        "speaker": "Candidate",
+        "text": "Last year our team won a national data challenge. I was responsible for cleaning the data and building the dashboard."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "And why do you want to leave your current job?"
+      },
+      {
+        "speaker": "Candidate",
+        "text": "I enjoy it, but I'd like to work on larger projects and with international teams. I'm also improving my English for that reason."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Great. The position is fully remote, but we have a team meeting every Monday at nine."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lb1i-1",
+        "type": "mcq",
+        "prompt": "How long has the candidate been a developer?",
+        "options": [
+          "Two years",
+          "About five years",
+          "Nine years",
+          "One year"
+        ],
+        "answer": 1,
+        "explanation": "\"I've been a web developer for about five years.\""
+      },
+      {
+        "id": "lb1i-2",
+        "type": "mcq",
+        "prompt": "What did the candidate do in the data challenge?",
+        "options": [
+          "Managed the budget",
+          "Cleaned the data and built the dashboard",
+          "Presented the results",
+          "Wrote the rules"
+        ],
+        "answer": 1,
+        "explanation": "\"I was responsible for cleaning the data and building the dashboard.\""
+      },
+      {
+        "id": "lb1i-3",
+        "type": "mcq",
+        "prompt": "Why does the candidate want to change jobs?",
+        "options": [
+          "The salary is low.",
+          "He doesn't like his team.",
+          "He wants larger, international projects.",
+          "He is moving abroad."
+        ],
+        "answer": 2,
+        "explanation": "\"I'd like to work on larger projects and with international teams.\""
+      },
+      {
+        "id": "lb1i-4",
+        "type": "truefalse",
+        "prompt": "The job requires going to the office every day.",
+        "answer": false,
+        "explanation": "The position is fully remote."
+      },
+      {
+        "id": "lb1i-5",
+        "type": "gap",
+        "prompt": "The team meeting is every ___ at nine.",
+        "accepted": [
+          "monday"
+        ],
+        "explanation": "\"Every Monday at nine.\""
+      }
+    ],
+    "vocab": [
+      {
+        "word": "background",
+        "def": "your education and experience"
+      },
+      {
+        "word": "fully remote",
+        "def": "working from home all the time"
+      },
+      {
+        "word": "position",
+        "def": "a job (formal)"
+      }
+    ]
+  },
+  {
+    "id": "l-b1-lecture",
+    "level": "B1",
+    "kind": "Academic talk",
+    "title": "A short lecture on urban heat",
+    "lines": [
+      {
+        "speaker": "Lecturer",
+        "text": "Today we're looking at a phenomenon called the urban heat island. Simply put, cities are often several degrees warmer than the countryside around them."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "There are three main causes. First, materials like concrete and asphalt absorb heat during the day and release it at night. Second, there are fewer trees, so there is less shade. Third, cars and air conditioners produce extra heat."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "Why does this matter? Higher temperatures increase energy use and can be dangerous for elderly people."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "Fortunately, there are solutions. Planting trees, painting roofs white and creating green spaces can reduce temperatures significantly."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lb1l-1",
+        "type": "mcq",
+        "prompt": "What is an urban heat island?",
+        "options": [
+          "A hot island near a city",
+          "A city that is warmer than the countryside around it",
+          "A park in a city",
+          "A type of building"
+        ],
+        "answer": 1,
+        "explanation": "Definition given at the start."
+      },
+      {
+        "id": "lb1l-2",
+        "type": "mcq",
+        "prompt": "How many main causes does the lecturer mention?",
+        "options": [
+          "Two",
+          "Three",
+          "Four",
+          "Five"
+        ],
+        "answer": 1,
+        "explanation": "\"There are three main causes.\""
+      },
+      {
+        "id": "lb1l-3",
+        "type": "mcq",
+        "prompt": "Which is NOT mentioned as a solution?",
+        "options": [
+          "Planting trees",
+          "White roofs",
+          "Green spaces",
+          "Banning cars"
+        ],
+        "answer": 3,
+        "explanation": "Banning cars is not mentioned."
+      },
+      {
+        "id": "lb1l-4",
+        "type": "truefalse",
+        "prompt": "Concrete releases heat at night.",
+        "answer": true,
+        "explanation": "\"Absorb heat during the day and release it at night.\""
+      }
+    ],
+    "vocab": [
+      {
+        "word": "absorb",
+        "def": "to take in"
+      },
+      {
+        "word": "release",
+        "def": "to let out"
+      },
+      {
+        "word": "significantly",
+        "def": "by a large amount"
+      }
+    ]
+  }
+]

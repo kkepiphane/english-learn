@@ -1,0 +1,440 @@
+[
+  {
+    "id": "pl-a2-g1",
+    "level": "A2",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-a2-g1",
+      "type": "mcq",
+      "prompt": "She ___ in a hospital. She's a nurse.",
+      "options": [
+        "work",
+        "works",
+        "is work",
+        "working"
+      ],
+      "answer": 1,
+      "explanation": "Present simple, 3rd person: works."
+    }
+  },
+  {
+    "id": "pl-a2-g2",
+    "level": "A2",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-a2-g2",
+      "type": "mcq",
+      "prompt": "We ___ to the beach last Sunday.",
+      "options": [
+        "go",
+        "goes",
+        "went",
+        "have gone"
+      ],
+      "answer": 2,
+      "explanation": "Last Sunday → past simple: went."
+    }
+  },
+  {
+    "id": "pl-a2-g3",
+    "level": "A2",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-a2-g3",
+      "type": "mcq",
+      "prompt": "My brother is ___ than me.",
+      "options": [
+        "tall",
+        "more tall",
+        "taller",
+        "tallest"
+      ],
+      "answer": 2,
+      "explanation": "Comparative of a short adjective: taller."
+    }
+  },
+  {
+    "id": "pl-a2-v1",
+    "level": "A2",
+    "skill": "vocabulary",
+    "item": {
+      "id": "pl-a2-v1",
+      "type": "mcq",
+      "prompt": "I'm hungry. Let's ___ lunch.",
+      "options": [
+        "make",
+        "have",
+        "take",
+        "do"
+      ],
+      "answer": 1,
+      "explanation": "Have lunch."
+    }
+  },
+  {
+    "id": "pl-a2-v2",
+    "level": "A2",
+    "skill": "vocabulary",
+    "item": {
+      "id": "pl-a2-v2",
+      "type": "mcq",
+      "prompt": "The opposite of \"cheap\" is…",
+      "options": [
+        "expensive",
+        "poor",
+        "easy",
+        "small"
+      ],
+      "answer": 0,
+      "explanation": "Cheap ↔ expensive."
+    }
+  },
+  {
+    "id": "pl-a2-r1",
+    "level": "A2",
+    "skill": "reading",
+    "item": {
+      "id": "pl-a2-r1",
+      "type": "mcq",
+      "prompt": "Notice: \"Library closed on Sundays. Open Monday–Saturday, 8 a.m.–6 p.m.\" When can you go?",
+      "options": [
+        "Sunday morning",
+        "Saturday at 5 p.m.",
+        "Monday at 7 p.m.",
+        "Every day"
+      ],
+      "answer": 1,
+      "explanation": "Saturday 5 p.m. is within opening hours."
+    }
+  },
+  {
+    "id": "pl-a2-l1",
+    "level": "A2",
+    "skill": "listening",
+    "listen": "Hi, it's Paul. I'm sorry, I'm going to be late. My bus is stuck in traffic. I'll be there at about ten past nine.",
+    "item": {
+      "id": "pl-a2-l1",
+      "type": "mcq",
+      "prompt": "When will Paul arrive?",
+      "options": [
+        "9:00",
+        "9:10",
+        "9:30",
+        "10:00"
+      ],
+      "answer": 1,
+      "explanation": "\"About ten past nine\" = 9:10."
+    }
+  },
+  {
+    "id": "pl-a2-l2",
+    "level": "A2",
+    "skill": "listening",
+    "listen": "Excuse me, where is the pharmacy? — Go straight on, then take the second street on the left. It's next to the bank.",
+    "item": {
+      "id": "pl-a2-l2",
+      "type": "mcq",
+      "prompt": "Where is the pharmacy?",
+      "options": [
+        "Next to the bank",
+        "Opposite the bank",
+        "On the first street on the right",
+        "Behind the station"
+      ],
+      "answer": 0,
+      "explanation": "\"It's next to the bank.\""
+    }
+  },
+  {
+    "id": "pl-b1-g1",
+    "level": "B1",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-b1-g1",
+      "type": "mcq",
+      "prompt": "I ___ here since 2020.",
+      "options": [
+        "work",
+        "am working",
+        "have worked",
+        "worked"
+      ],
+      "answer": 2,
+      "explanation": "Since + ongoing → present perfect."
+    }
+  },
+  {
+    "id": "pl-b1-g2",
+    "level": "B1",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-b1-g2",
+      "type": "mcq",
+      "prompt": "If I ___ more time, I would learn the guitar.",
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "would have"
+      ],
+      "answer": 1,
+      "explanation": "Second conditional: if + past simple."
+    }
+  },
+  {
+    "id": "pl-b1-g3",
+    "level": "B1",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-b1-g3",
+      "type": "mcq",
+      "prompt": "The new road ___ next year.",
+      "options": [
+        "will build",
+        "will be built",
+        "builds",
+        "is building"
+      ],
+      "answer": 1,
+      "explanation": "Future passive."
+    }
+  },
+  {
+    "id": "pl-b1-v1",
+    "level": "B1",
+    "skill": "vocabulary",
+    "item": {
+      "id": "pl-b1-v1",
+      "type": "mcq",
+      "prompt": "The main ___ of living in a big city is the noise.",
+      "options": [
+        "advantage",
+        "drawback",
+        "benefit",
+        "reason"
+      ],
+      "answer": 1,
+      "explanation": "Drawback = disadvantage."
+    }
+  },
+  {
+    "id": "pl-b1-v2",
+    "level": "B1",
+    "skill": "vocabulary",
+    "item": {
+      "id": "pl-b1-v2",
+      "type": "mcq",
+      "prompt": "I'm going to ___ for a scholarship.",
+      "options": [
+        "apply",
+        "ask",
+        "demand",
+        "postulate"
+      ],
+      "answer": 0,
+      "explanation": "Apply for."
+    }
+  },
+  {
+    "id": "pl-b1-r1",
+    "level": "B1",
+    "skill": "reading",
+    "item": {
+      "id": "pl-b1-r1",
+      "type": "mcq",
+      "prompt": "\"Although the project was delayed, the team managed to deliver a product that exceeded the client's expectations.\" What happened?",
+      "options": [
+        "The project failed.",
+        "The project was late but very successful.",
+        "The client was disappointed.",
+        "The project was early."
+      ],
+      "answer": 1,
+      "explanation": "Delayed (late) + exceeded expectations (very good)."
+    }
+  },
+  {
+    "id": "pl-b1-l1",
+    "level": "B1",
+    "skill": "listening",
+    "listen": "Good afternoon, everyone. Just a quick reminder that the workshop originally planned for Thursday has been moved to Friday, same time, but it will now take place in room 204 instead of the main hall.",
+    "item": {
+      "id": "pl-b1-l1",
+      "type": "mcq",
+      "prompt": "What has NOT changed about the workshop?",
+      "options": [
+        "The day",
+        "The room",
+        "The time",
+        "Nothing has changed"
+      ],
+      "answer": 2,
+      "explanation": "\"Same time\" — day and room changed."
+    }
+  },
+  {
+    "id": "pl-b1-l2",
+    "level": "B1",
+    "skill": "listening",
+    "listen": "I used to take the bus to work, but since I bought a bicycle, I get there faster and I don't spend money on tickets anymore.",
+    "item": {
+      "id": "pl-b1-l2",
+      "type": "mcq",
+      "prompt": "How does the speaker go to work now?",
+      "options": [
+        "By bus",
+        "By bicycle",
+        "On foot",
+        "By car"
+      ],
+      "answer": 1,
+      "explanation": "\"Since I bought a bicycle…\" — \"used to take the bus\" is the past habit."
+    }
+  },
+  {
+    "id": "pl-b2-g1",
+    "level": "B2",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-b2-g1",
+      "type": "mcq",
+      "prompt": "If she had left earlier, she ___ the train.",
+      "options": [
+        "would catch",
+        "would have caught",
+        "will catch",
+        "had caught"
+      ],
+      "answer": 1,
+      "explanation": "Third conditional: would have + past participle."
+    }
+  },
+  {
+    "id": "pl-b2-g2",
+    "level": "B2",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-b2-g2",
+      "type": "mcq",
+      "prompt": "He told me that he ___ the report the day before.",
+      "options": [
+        "finishes",
+        "has finished",
+        "had finished",
+        "was finish"
+      ],
+      "answer": 2,
+      "explanation": "Reported speech: past simple → past perfect."
+    }
+  },
+  {
+    "id": "pl-b2-g3",
+    "level": "B2",
+    "skill": "grammar",
+    "item": {
+      "id": "pl-b2-g3",
+      "type": "mcq",
+      "prompt": "Not only ___ late, but he also forgot the documents.",
+      "options": [
+        "he arrived",
+        "did he arrive",
+        "he did arrive",
+        "arrived he"
+      ],
+      "answer": 1,
+      "explanation": "Inversion after \"Not only\"."
+    }
+  },
+  {
+    "id": "pl-b2-v1",
+    "level": "B2",
+    "skill": "vocabulary",
+    "item": {
+      "id": "pl-b2-v1",
+      "type": "mcq",
+      "prompt": "The government plans to ___ the use of single-use plastics by 2030.",
+      "options": [
+        "phase out",
+        "put up with",
+        "come across",
+        "look after"
+      ],
+      "answer": 0,
+      "explanation": "Phase out = gradually stop."
+    }
+  },
+  {
+    "id": "pl-b2-v2",
+    "level": "B2",
+    "skill": "vocabulary",
+    "item": {
+      "id": "pl-b2-v2",
+      "type": "mcq",
+      "prompt": "Her argument was very ___: everyone in the room was convinced.",
+      "options": [
+        "compelling",
+        "reluctant",
+        "tedious",
+        "vague"
+      ],
+      "answer": 0,
+      "explanation": "Compelling = convincing."
+    }
+  },
+  {
+    "id": "pl-b2-r1",
+    "level": "B2",
+    "skill": "reading",
+    "item": {
+      "id": "pl-b2-r1",
+      "type": "mcq",
+      "prompt": "\"While remote work has undeniably increased flexibility, critics contend that it erodes the informal exchanges that foster innovation.\" The critics believe remote work…",
+      "options": [
+        "increases innovation",
+        "reduces useful informal contact",
+        "is more flexible than they thought",
+        "has no disadvantages"
+      ],
+      "answer": 1,
+      "explanation": "\"Erodes informal exchanges\" = reduces them."
+    }
+  },
+  {
+    "id": "pl-b2-l1",
+    "level": "B2",
+    "skill": "listening",
+    "listen": "Contrary to what many people assume, the study found that productivity didn't drop when employees switched to a four-day week. If anything, absenteeism fell slightly, though the researchers caution that the sample was relatively small.",
+    "item": {
+      "id": "pl-b2-l1",
+      "type": "mcq",
+      "prompt": "What is the researchers' caution?",
+      "options": [
+        "Productivity fell.",
+        "Absenteeism rose.",
+        "The sample was small.",
+        "The week was too short."
+      ],
+      "answer": 2,
+      "explanation": "\"The sample was relatively small.\""
+    }
+  },
+  {
+    "id": "pl-b2-l2",
+    "level": "B2",
+    "skill": "listening",
+    "listen": "I wouldn't say the proposal is flawed, exactly. It's more that the timeline seems a bit optimistic given the resources we currently have.",
+    "item": {
+      "id": "pl-b2-l2",
+      "type": "mcq",
+      "prompt": "What is the speaker's main concern?",
+      "options": [
+        "The proposal is completely wrong.",
+        "The schedule is unrealistic.",
+        "There are too many resources.",
+        "The proposal is too cautious."
+      ],
+      "answer": 1,
+      "explanation": "The timeline seems optimistic = probably unrealistic."
+    }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "w-a2-routine",
+    "level": "A2",
+    "kind": "paragraph",
+    "title": "My weekday routine",
+    "minWords": 60,
+    "maxWords": 120,
+    "instructions": "Write a paragraph about a normal weekday. Say what you do in the morning, afternoon and evening, and one thing that is different this week.",
+    "checklist": [
+      "Use the present simple for habits",
+      "Use the present continuous for this week",
+      "Use time expressions (in the morning, at 7, on Monday)",
+      "Use at least 3 linking words (first, then, after that…)"
+    ],
+    "usefulLanguage": [
+      "I usually…",
+      "First, … Then, … After that, …",
+      "This week, I'm…",
+      "In the evening, …"
+    ],
+    "modelAnswer": "On weekdays, I usually wake up at 5:30. First, I have a shower and get dressed. Then I have a quick breakfast and leave home at 6:45 because the traffic is terrible during rush hour. I start work at 8 o'clock. In the afternoon, I usually have meetings with my team. I get home at about 7 p.m. After dinner, I study English for thirty minutes and I go to bed at 11. This week is different because I'm preparing an important presentation, so I'm staying late at the office."
+  },
+  {
+    "id": "w-a2-email",
+    "level": "A2",
+    "kind": "email",
+    "title": "Email to a colleague: changing a meeting",
+    "minWords": 50,
+    "maxWords": 100,
+    "instructions": "Write an email to a colleague. Say you can't come to the meeting on Thursday, explain why, and suggest another day and time.",
+    "checklist": [
+      "Greeting and closing",
+      "Reason (because…)",
+      "A suggestion (Could we… ? / How about…?)",
+      "Polite tone"
+    ],
+    "usefulLanguage": [
+      "Hi Sarah,",
+      "I'm sorry, but I can't…",
+      "Could we meet on… instead?",
+      "Best regards,"
+    ],
+    "modelAnswer": "Hi Sarah,\n\nI'm sorry, but I can't come to the meeting on Thursday at 10. I have to visit a client in Kpalimé that day and I will not be back before the evening.\n\nCould we meet on Friday morning instead? I'm free from 9 to 12. If that doesn't work for you, Monday afternoon is also possible.\n\nThanks for understanding.\n\nBest regards,\nKoffi"
+  },
+  {
+    "id": "w-b1-experience",
+    "level": "B1",
+    "kind": "experience",
+    "title": "A difficult situation you solved",
+    "minWords": 120,
+    "maxWords": 200,
+    "instructions": "Describe a difficult situation you experienced at work or at school. Explain what happened, what you did and what you learned.",
+    "checklist": [
+      "Past simple and past continuous for the story",
+      "A clear beginning, middle and end",
+      "What you learned (present perfect is useful: I have learned…)",
+      "Linking words: at first, then, finally, as a result"
+    ],
+    "usefulLanguage": [
+      "A few months ago, …",
+      "While I was …, …",
+      "At first, I didn't know what to do.",
+      "As a result, …",
+      "Since then, I have…"
+    ],
+    "modelAnswer": "A few months ago, I was working on a website for a client when the server suddenly crashed, two days before the launch. At first, I panicked, because we had no recent backup of the database.\n\nThen I decided to stay calm and make a plan. I called the hosting company, explained the problem clearly and asked them to restore the latest snapshot. While they were working on it, I informed the client honestly about the delay. Finally, the site was restored and we launched only one day late.\n\nAs a result, the client trusted us even more because we had communicated well. Since then, I have set up automatic daily backups for every project, and I have learned that clear communication is as important as technical skills."
+  },
+  {
+    "id": "w-b1-opinion",
+    "level": "B1",
+    "kind": "opinion",
+    "title": "Opinion: should university be free?",
+    "minWords": 150,
+    "maxWords": 250,
+    "instructions": "Some people think university education should be free for everyone. Do you agree or disagree? Give reasons and examples.",
+    "checklist": [
+      "Introduction with a clear opinion",
+      "Two body paragraphs, each with one main idea + example",
+      "One opposing view (However, some people argue…)",
+      "Conclusion that repeats your opinion in new words"
+    ],
+    "usefulLanguage": [
+      "In my opinion, …",
+      "Firstly, … Secondly, …",
+      "For example, …",
+      "However, some people argue that…",
+      "In conclusion, …"
+    ],
+    "modelAnswer": "Many people believe that university should be free for everyone. In my opinion, free higher education is a good idea, although it must be organised carefully.\n\nFirstly, free university gives equal opportunities. Talented students from poor families often stop studying because they cannot pay tuition fees. If university were free, the country would benefit from all its talent, not only from the richest families.\n\nSecondly, a more educated population helps the economy. For example, countries with high levels of education usually have more innovative companies and better-paid jobs.\n\nHowever, some people argue that free education is too expensive for the government and that students may not take their studies seriously. This is a fair point. One solution could be to offer free education with conditions, such as passing every year.\n\nIn conclusion, I believe that free university is a valuable investment, as long as the system rewards effort and is financially realistic."
+  }
+]
