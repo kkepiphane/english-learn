@@ -37,6 +37,7 @@ export function ExerciseRunner({
   onFinish,
   feedback = 'immediate',
   title,
+  bare = false,
 }: {
   items: RunnerItem[]
   onAnswer?: (r: RunnerResult) => void | Promise<void>
@@ -44,6 +45,8 @@ export function ExerciseRunner({
   /** 'deferred' = test mode: no correction until the end (placement, checkpoint). */
   feedback?: 'immediate' | 'deferred'
   title?: string
+  /** Single-question card inside a lesson deck: no progress row (the deck shows its own). */
+  bare?: boolean
 }) {
   const [i, setI] = useState(0)
   const [answer, setAnswer] = useState<Answer>(null)
@@ -88,11 +91,11 @@ export function ExerciseRunner({
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center gap-3">
+      {!bare && <div className="flex items-center gap-3">
         <Bar value={((i + (checked ? 1 : 0)) / items.length) * 100} className="h-3" color="bg-emerald-500" label="Exercise progress" />
         {combo >= 2 && feedback === 'immediate' && <span key={combo} className="chip animate-pop bg-flame-100 font-bold text-flame-700 dark:bg-flame-900/40 dark:text-flame-200" aria-label={`${combo} correct in a row`}>🔥 {combo}</span>}
         <span className="shrink-0 text-xs font-semibold tabular-nums text-ink-400">{i + 1}/{items.length}</span>
-      </div>
+      </div>}
       {title && <p className="label">{title}</p>}
       {cur.listen && <ListenBox text={cur.listen} key={cur.item.id} />}
       <ItemView key={cur.item.id} ex={cur.item} answer={answer} setAnswer={setAnswer} disabled={checked} onEnter={() => (checked ? advance() : void submit())} />
@@ -114,7 +117,7 @@ export function ExerciseRunner({
           </button>
         ) : (
           <button className={clsx('btn-primary min-w-32 py-3', checked && !ok && 'bg-rose-500 shadow-[0_3px_0_0_theme(colors.rose.700)] hover:bg-rose-400')} onClick={() => advance()} autoFocus>
-            {i + 1 === items.length ? 'See results' : 'Continue'}
+            {bare ? 'Continue' : i + 1 === items.length ? 'See results' : 'Continue'}
           </button>
         )}
       </div>

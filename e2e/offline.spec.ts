@@ -31,11 +31,13 @@ test('works offline after first load: lesson, quiz, writing feedback, progress s
 
   // A lesson loads from the precache and its quiz is graded.
   await page.goto('./#/learn/lesson/a2-g-articles')
-  await expect(page.getByText('Objective')).toBeVisible()
-  await page.getByRole('button', { name: 'Practice →' }).click()
+  // Lessons open straight on a guess-first question (no reading wall before acting).
+  await expect(page.getByText('Guess first!')).toBeVisible()
   await page.locator('fieldset button').nth(3).click()
   await page.getByRole('button', { name: 'Check' }).click()
   await expect(page.getByText('✓ Correct!')).toBeVisible()
+  await page.getByRole('button', { name: 'Continue' }).click()
+  await expect(page.getByText('The rule')).toBeVisible()
 
   // Offline writing feedback explains errors.
   await page.goto('./#/practice/writing/w-a2-routine')

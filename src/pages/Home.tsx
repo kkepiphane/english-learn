@@ -11,6 +11,7 @@ import { badges, CHEST_XP, earned, weekDots, wordOfTheDay } from '../lib/rewards
 import { addCards, claimChest } from '../lib/repo'
 import { celebrate } from '../lib/fx'
 import { lessonsFor, getLesson } from '../content'
+import { buildBites } from '../lib/lessonDeck'
 
 export default function Home() {
   const profile = useProfile()
@@ -24,6 +25,7 @@ export default function Home() {
     recordings: await db.recordings.count(),
     placement: await db.kv.get('placement.done'),
     chest: await db.kv.get(`chest.${weekStart()}`),
+    bites: await db.kv.where('key').startsWith('lesson.bites.').toArray(),
   }))
   if (!profile || !data) return null
 
@@ -33,6 +35,8 @@ export default function Home() {
   const minutesToday = Math.round((todayS?.seconds ?? 0) / 60)
   const xp = xpLevel(data.sessions.reduce((a, s) => a + s.xp, 0))
   const next = nextLesson(level, data.progress)
+  const nextBites = next ? buildBites(next) : []
+  const nextDone = Math.min((data.bites.find((b) => b.key === `lesson.bites.${next?.id}`)?.value as number | undefined) ?? 0, Math.max(nextBites.length - 1, 0))
   const levelLessons = lessonsFor(level)
   const doneIds = new Set(data.progress.filter((p) => p.status === 'completed').map((p) => p.lessonId))
   const levelDone = levelLessons.filter((l) => doneIds.has(l.id)).length
@@ -110,9 +114,10 @@ export default function Home() {
         <div className="relative mt-4 flex items-center gap-3">
           <Link to={next ? `/learn/lesson/${next.id}` : `/learn/checkpoint/${level}`}
             className="btn flex-1 bg-white py-3.5 text-base text-brand-700 shadow-[0_4px_0_0_theme(colors.brand.900)] hover:bg-brand-50 active:translate-y-[3px] active:shadow-[0_1px_0_0_theme(colors.brand.900)]">
-            {next ? `Start · ${next.minutes} min` : 'Take the checkpoint'} →
+            {next ? `${nextDone ? 'Continue' : 'Start'} · ${nextBites[nextDone]?.minutes ?? next.minutes} min` : 'Take the checkpoint'} →
           </Link>
         </div>
+        {next && nextBites.length > 1 && <p className="relative mt-2 text-center text-xs text-brand-100">Bite {nextDone + 1} of {nextBites.length} · you can stop after each one</p>}
         <div className="relative mt-3 flex items-center gap-2 text-xs text-brand-100">
           <span className="shrink-0 font-semibold">{level} path</span>
           <Bar value={(levelDone / Math.max(levelLessons.length, 1)) * 100} className="h-1.5" track="bg-brand-800/60" color="bg-flame-300" label={`${level} path progress`} />

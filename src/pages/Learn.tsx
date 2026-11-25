@@ -8,6 +8,7 @@ import { availableLevels, getLesson, unitsFor } from '../content'
 import { PageTitle, Bar, Stars } from '../components/ui'
 import { learningLevel, nextLesson } from '../lib/recommend'
 import { stars } from '../lib/rewards'
+import { buildBites } from '../lib/lessonDeck'
 import type { Lesson, Level } from '../content/types'
 import { LEVELS } from '../content/types'
 
@@ -32,6 +33,8 @@ export default function Learn() {
   const profile = useProfile()
   const progress = useLiveQuery(() => db.lessonProgress.toArray(), [], [])
   const checkpoints = useLiveQuery(() => db.assessments.where('kind').equals('checkpoint').toArray(), [], [])
+  const biteRows = useLiveQuery(() => db.kv.where('key').startsWith('lesson.bites.').toArray(), [], [])
+  const bitesDone = new Map(biteRows.map((r) => [r.key.slice('lesson.bites.'.length), r.value as number]))
   const [level, setLevel] = useState<Level | null>(null)
   const current = level ?? learningLevel(profile)
   const map = new Map(progress.map((p) => [p.lessonId, p]))
@@ -80,7 +83,7 @@ export default function Learn() {
                 const x = WIND[all.indexOf(id) % WIND.length]
                 return (
                   <li key={id} className="flex flex-col items-center" style={{ transform: `translateX(${x}px)` }}>
-                    {isNext && <span className="mb-2 animate-bounce rounded-xl bg-brand-600 px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-white">Start</span>}
+                    {isNext && <span className="mb-2 animate-bounce rounded-xl bg-brand-600 px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-white">{bitesDone.get(id) ? 'Continue' : 'Start'}</span>}
                     <Link to={`/learn/lesson/${id}`} aria-label={`${l.title} — ${done ? `completed, best ${p!.bestScore}%` : isNext ? 'next lesson' : p ? 'in progress' : 'not started'}`}
                       className={clsx('flex items-center justify-center rounded-full text-2xl transition active:translate-y-[3px]', isNext ? 'h-20 w-20' : 'h-[68px] w-[68px]', {
                         'bg-emerald-500 text-white shadow-[0_5px_0_0_theme(colors.emerald.700)] active:shadow-[0_2px_0_0_theme(colors.emerald.700)]': done,
@@ -90,7 +93,7 @@ export default function Learn() {
                       })}>
                       <span aria-hidden>{done ? '✓' : CAT[l.category].icon}</span>
                     </Link>
-                    {done && <Stars n={stars(p!.bestScore)} className="mt-2 text-sm" />}
+                    {done ? <Stars n={stars(p!.bestScore)} className="mt-2 text-sm" /> : <BiteDots lesson={l} done={bitesDone.get(id) ?? 0} />}
                     <span className={clsx('mt-1.5 max-w-[11rem] text-center text-xs font-semibold leading-tight', isNext ? 'text-brand-700 dark:text-brand-300' : 'text-ink-500')}>{l.title}</span>
                   </li>
                 )
@@ -116,5 +119,15 @@ export default function Learn() {
         <span className="text-ink-300" aria-hidden>›</span>
       </Link>
     </div>
+  )
+}
+
+/** One dot per bite of the lesson, filled when that bite is done. */
+function BiteDots({ lesson, done }: { lesson: Lesson; done: number }) {
+  const total = buildBites(lesson).length
+  return (
+    <span className="mt-2 flex gap-1" role="img" aria-label={`${done} of ${total} bites done`}>
+      {Array.from({ length: total }, (_, k) => <span key={k} className={clsx('h-1.5 w-4 rounded-full', k < done ? 'bg-brand-500' : 'bg-ink-200 dark:bg-ink-700')} />)}
+    </span>
   )
 }

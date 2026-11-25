@@ -34,7 +34,7 @@ export function successRate(attempts: Attempt[], days?: number, now = Date.now()
   return { total: rs.length, rate: rs.length ? Math.round((rs.filter((a) => a.correct).length / rs.length) * 100) : 0 }
 }
 
-export const XP = { correct: 5, lessonDone: 50, readingDone: 30, listeningDone: 30, writingDone: 40, cardReview: 2, placementDone: 100 }
+export const XP = { correct: 5, biteDone: 10, lessonDone: 50, readingDone: 30, listeningDone: 30, writingDone: 40, cardReview: 2, placementDone: 100 }
 
 /** Player level from XP: each level needs 100 more XP than the previous. */
 export function xpLevel(xp: number) {

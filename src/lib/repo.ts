@@ -114,3 +114,17 @@ export async function claimChest(week: string, xp: number) {
     return true
   })
 }
+
+export const bitesKey = (lessonId: string) => `lesson.bites.${lessonId}`
+
+/** Records that a bite of a lesson is finished. XP only the first time each bite is reached. */
+export async function completeBite(lessonId: string, bitesDone: number) {
+  const key = bitesKey(lessonId)
+  return db.transaction('rw', db.kv, db.sessions, async () => {
+    const prev = ((await db.kv.get(key))?.value as number | undefined) ?? 0
+    if (bitesDone <= prev) return false
+    await db.kv.put({ key, value: bitesDone })
+    await addXp(XP.biteDone)
+    return true
+  })
+}
