@@ -15,6 +15,8 @@ export interface Profile {
   uiFrench: boolean
   /** Sound effects and vibrations (missing = on). */
   sound?: boolean
+  /** The learner's reason to learn (dream, destination, date, reminder). */
+  why?: import('../lib/goals').Why
   createdAt: number
   updatedAt: number
 }

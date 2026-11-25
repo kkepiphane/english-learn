@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
 import { db } from '../db/db'
 import { useOnline, useProfile, useTheme } from '../hooks/hooks'
 import { badges, earned, type Badge } from '../lib/rewards'
-import { confetti, setSoundEnabled, sfx } from '../lib/fx'
+import { celebrate, confetti, setSoundEnabled, sfx } from '../lib/fx'
+import { xpLevel } from '../lib/stats'
 import { UpdatePrompt } from './UpdatePrompt'
 
 // Speaking lives in Practice, Exams in Learn: five tabs fit comfortably on a phone.
@@ -74,10 +75,44 @@ function BadgeWatcher() {
   )
 }
 
+/** Full-screen celebration when the XP level goes up. */
+function LevelUpWatcher() {
+  const [lvl, setLvl] = useState<number | null>(null)
+  const data = useLiveQuery(async () => ({
+    xp: (await db.sessions.toArray()).reduce((a, s) => a + s.xp, 0),
+    seen: (await db.kv.get('xp.level'))?.value as number | undefined,
+  }))
+  useEffect(() => {
+    if (!data) return
+    const cur = xpLevel(data.xp).lvl
+    if (data.seen === undefined || cur < data.seen) return void db.kv.put({ key: 'xp.level', value: cur })
+    if (cur > data.seen) {
+      void db.kv.put({ key: 'xp.level', value: cur })
+      setLvl(cur)
+      celebrate()
+    }
+  }, [data])
+  if (lvl === null) return null
+  return (
+    <div className="fixed inset-0 z-50 flex animate-fadein items-center justify-center bg-ink-950/70 p-6 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="lvl-h" onClick={() => setLvl(null)}>
+      <div className="w-full max-w-xs animate-zoomin rounded-[2rem] bg-white p-6 text-center shadow-2xl dark:bg-ink-900">
+        <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-flame-100 shadow-[0_6px_0_0_theme(colors.flame.300)] dark:bg-flame-900/40">
+          <span className="animate-flicker text-6xl" aria-hidden>⭐</span>
+        </div>
+        <p className="mt-5 text-xs font-extrabold uppercase tracking-widest text-flame-600">Level up!</p>
+        <p id="lvl-h" className="font-display text-5xl font-extrabold">Level {lvl}</p>
+        <p className="mt-2 text-sm text-ink-500">Your English is growing every day. Keep the fire going.</p>
+        <button className="btn-primary mt-5 w-full py-3" autoFocus onClick={() => setLvl(null)}>Keep going →</button>
+      </div>
+    </div>
+  )
+}
+
 export function Layout() {
   useTheme()
   const profile = useProfile()
   useEffect(() => void setSoundEnabled(profile?.sound ?? true), [profile?.sound])
+  const { pathname } = useLocation()
   return (
     <div className="min-h-dvh md:flex">
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-white focus:p-2">Skip to content</a>
@@ -104,7 +139,7 @@ export function Layout() {
           <StatusPill />
         </div>
         <main id="main" className="mx-auto w-full max-w-3xl flex-1 px-4 pb-28 pt-4 sm:px-6 md:pb-10 md:pt-8">
-          <Outlet />
+          <div key={pathname} className="animate-rise"><Outlet /></div>
         </main>
       </div>
 
@@ -120,6 +155,7 @@ export function Layout() {
         ))}
       </nav>
       <BadgeWatcher />
+      <LevelUpWatcher />
       <UpdatePrompt />
     </div>
   )

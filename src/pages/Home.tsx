@@ -4,14 +4,17 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
 import { db, today } from '../db/db'
 import { useProfile } from '../hooks/hooks'
-import { Card, Bar, Ring, SpeakButton, StreakChip } from '../components/ui'
+import { Card, Bar, Ring, SpeakButton, StreakChip, CountUp } from '../components/ui'
 import { computeStreak, xpLevel } from '../lib/stats'
 import { coachMessage, dailyChallenges, learningLevel, nextLesson, weekStart, weeklyChallenges } from '../lib/recommend'
-import { badges, CHEST_XP, earned, weekDots, wordOfTheDay } from '../lib/rewards'
+import { badges, bestStreak, CHEST_XP, earned, weekDots, wordOfTheDay } from '../lib/rewards'
 import { addCards, claimChest } from '../lib/repo'
 import { celebrate } from '../lib/fx'
-import { lessonsFor, getLesson } from '../content'
+import { lessonsFor, getLesson, availableLevels } from '../content'
 import { buildBites } from '../lib/lessonDeck'
+import { DREAMS, EXAM_RANGE, daysLeft, dreamTitle, records, weekVsWeek, whyOf } from '../lib/goals'
+import { LEVELS, type Level } from '../content/types'
+import type { Profile, StudySession, LessonProgress } from '../db/db'
 
 export default function Home() {
   const profile = useProfile()
@@ -51,7 +54,7 @@ export default function Home() {
   const got = earned(allBadges)
 
   return (
-    <div className="space-y-4">
+    <div className="stagger space-y-4">
       <header className="flex items-start justify-between gap-3">
         <div>
           <h1 className="text-[28px] font-extrabold leading-tight tracking-tight">Hi {profile.name} 👋</h1>
@@ -62,6 +65,8 @@ export default function Home() {
           <span className="chip bg-brand-100 font-bold text-brand-800 dark:bg-brand-900/50 dark:text-brand-200" title={`${xp.into} / ${xp.need} XP to level ${xp.lvl + 1}`}>⭐ Lv {xp.lvl}</span>
         </div>
       </header>
+
+      <DreamCard profile={profile} progress={data.progress} />
 
       {/* This week */}
       <Card className="py-3.5">
@@ -93,8 +98,8 @@ export default function Home() {
 
       {/* Today's mission */}
       <section aria-labelledby="mission-h" className="relative overflow-hidden rounded-3xl bg-brand-600 p-5 text-white shadow-[0_6px_0_0_theme(colors.brand.800)]">
-        <span className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-brand-500/60" aria-hidden />
-        <span className="pointer-events-none absolute -bottom-14 right-16 h-28 w-28 rounded-full bg-brand-700/60" aria-hidden />
+        <span className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 animate-float rounded-full bg-brand-500/60" aria-hidden />
+        <span className="pointer-events-none absolute -bottom-14 right-16 h-28 w-28 animate-float rounded-full bg-brand-700/60 [animation-delay:-3s]" aria-hidden />
         <div className="relative flex items-start justify-between gap-3">
           <div className="min-w-0">
             <h2 id="mission-h" className="text-xs font-bold uppercase tracking-wider text-brand-100">{goalDone ? 'Goal reached · bonus round' : "Today's mission"}</h2>
@@ -113,7 +118,7 @@ export default function Home() {
         </div>
         <div className="relative mt-4 flex items-center gap-3">
           <Link to={next ? `/learn/lesson/${next.id}` : `/learn/checkpoint/${level}`}
-            className="btn flex-1 bg-white py-3.5 text-base text-brand-700 shadow-[0_4px_0_0_theme(colors.brand.900)] hover:bg-brand-50 active:translate-y-[3px] active:shadow-[0_1px_0_0_theme(colors.brand.900)]">
+            className="btn shine relative flex-1 overflow-hidden bg-white py-3.5 text-base text-brand-700 shadow-[0_4px_0_0_theme(colors.brand.900)] hover:bg-brand-50 active:translate-y-[3px] active:shadow-[0_1px_0_0_theme(colors.brand.900)]">
             {next ? `${nextDone ? 'Continue' : 'Start'} · ${nextBites[nextDone]?.minutes ?? next.minutes} min` : 'Take the checkpoint'} →
           </Link>
         </div>
@@ -131,6 +136,8 @@ export default function Home() {
           <ul className="mt-1.5 space-y-1">{pending.map((l) => <li key={l!.id}><Link className="text-sm font-semibold text-brand-600 dark:text-brand-300" to={`/learn/lesson/${l!.id}`}>Finish: {l!.title} →</Link></li>)}</ul>
         </Card>
       )}
+
+      <YouVsYou sessions={data.sessions} />
 
       <div className="grid grid-cols-2 gap-3">
         <WordOfTheDay level={level} />
@@ -227,6 +234,96 @@ function WeeklyChest({ challenges, opened }: { challenges: ReturnType<typeof wee
           </li>
         ))}</ul>
       )}
+    </Card>
+  )
+}
+
+/** The learner's dream, always on top: destination, countdown, level ladder and exam equivalence. */
+function DreamCard({ profile, progress }: { profile: Profile; progress: LessonProgress[] }) {
+  const why = whyOf(profile)
+  if (!why)
+    return (
+      <Link to="/goal" className="card flex items-center gap-4 border-2 border-dashed border-brand-300 p-4 transition hover:border-brand-500 dark:border-brand-800">
+        <span className="grid shrink-0 grid-cols-2 gap-0.5 text-2xl leading-none" aria-hidden><span>✈️</span><span>🎓</span><span>💼</span><span>📝</span></span>
+        <span className="flex-1">
+          <span className="block font-display font-extrabold">What is your English for?</span>
+          <span className="text-sm text-ink-500">Travel, study abroad, a job, IELTS or TOEFL… Set your goal and keep it in sight.</span>
+        </span>
+        <span className="text-ink-300" aria-hidden>›</span>
+      </Link>
+    )
+  const days = daysLeft(why.date)
+  const demonstrated = profile.currentLevel && profile.currentLevel !== 'pre-A2' ? LEVELS.indexOf(profile.currentLevel) : -1
+  const goalIdx = LEVELS.indexOf(profile.goalLevel)
+  // Lessons still to do on the levels between now and the goal (only levels whose content exists).
+  const done = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.lessonId))
+  const left = availableLevels().filter((l) => LEVELS.indexOf(l) > demonstrated && LEVELS.indexOf(l) <= goalIdx).flatMap((l) => lessonsFor(l)).filter((l) => !done.has(l.id)).length
+  const dayIdx = Math.floor(Date.now() / 86_400_000)
+  const push = DREAMS[why.dreams[dayIdx % why.dreams.length]].push
+  const range = EXAM_RANGE[profile.goalLevel]
+  return (
+    <Link to="/goal" className="card relative block overflow-hidden p-4 transition hover:border-brand-300">
+      <div className="flex items-start gap-3">
+        <span className="animate-float text-4xl" aria-hidden>{DREAMS[why.dreams[0]].icon}</span>
+        <div className="min-w-0 flex-1">
+          <p className="label">My goal</p>
+          <p className="font-display text-xl font-extrabold leading-tight">{dreamTitle(why)}</p>
+          <p className="mt-0.5 text-xs text-ink-500">{profile.goalLevel}{profile.exam !== 'none' ? ` · ${profile.exam === 'ielts' ? `IELTS ${range.ielts}` : `TOEFL iBT ${range.toefl}`}` : ''}</p>
+        </div>
+        {days !== null && (
+          <span className="shrink-0 rounded-2xl bg-flame-100 px-3 py-1.5 text-center text-flame-800 dark:bg-flame-900/40 dark:text-flame-100">
+            <span className="block font-display text-xl font-extrabold leading-none tabular-nums"><CountUp to={days} /></span>
+            <span className="text-[10px] font-bold uppercase">days left</span>
+          </span>
+        )}
+      </div>
+      <ol className="mt-4 flex items-center gap-1" aria-label={`Level ladder: demonstrated ${profile.currentLevel ?? 'unknown'}, goal ${profile.goalLevel}`}>
+        {LEVELS.map((l: Level, i) => (
+          <li key={l} className="flex flex-1 flex-col items-center gap-1">
+            <span className={clsx('h-2.5 w-full rounded-full', i <= demonstrated ? 'bg-emerald-500' : i <= goalIdx ? 'bg-brand-200 dark:bg-brand-900' : 'bg-ink-100 dark:bg-ink-800')} />
+            <span className={clsx('text-xs font-bold', i === goalIdx ? 'text-brand-700 dark:text-brand-300' : i <= demonstrated ? 'text-emerald-600' : 'text-ink-400')}>{l}{i === goalIdx ? ' 🏁' : i === demonstrated ? ' ✓' : ''}</span>
+          </li>
+        ))}
+      </ol>
+      <p className="mt-3 text-sm text-ink-600 dark:text-ink-300">
+        {left > 0 && days ? `${left} lessons left on your path: about 1 every ${Math.max(1, Math.floor(days / left))} days keeps you on track. ` : ''}
+        <span className="italic text-ink-500">{push}</span>
+      </p>
+    </Link>
+  )
+}
+
+/** Competing with yourself: this week against last week, and personal records. */
+function YouVsYou({ sessions }: { sessions: StudySession[] }) {
+  const { thisWeek, lastWeek } = weekVsWeek(sessions)
+  const r = records(sessions)
+  const max = Math.max(thisWeek, lastWeek, 1)
+  const ahead = thisWeek > lastWeek
+  const newRecord = r.todayXp > 0 && r.todayXp >= r.bestDay
+  return (
+    <Card>
+      <div className="flex items-center justify-between">
+        <h2 className="font-display text-lg font-extrabold">You vs you</h2>
+        <span className={clsx('chip font-bold', ahead ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200' : 'bg-flame-100 text-flame-800 dark:bg-flame-900/40 dark:text-flame-200')}>
+          {ahead ? `🏆 +${thisWeek - lastWeek} XP ahead` : `${lastWeek - thisWeek + 1} XP to beat last week`}
+        </span>
+      </div>
+      <div className="mt-3 space-y-2 text-sm">
+        {[['This week', thisWeek, 'bg-brand-500'], ['Last week', lastWeek, 'bg-ink-300 dark:bg-ink-600']].map(([label, v, color]) => (
+          <div key={label as string} className="flex items-center gap-3">
+            <span className="w-20 shrink-0 text-ink-500">{label}</span>
+            <Bar value={((v as number) / max) * 100} className="h-3" color={color as string} label={`${label}: ${v} XP`} />
+            <span className="w-14 shrink-0 text-right font-bold tabular-nums">{v as number}</span>
+          </div>
+        ))}
+      </div>
+      <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+        <div className={clsx('rounded-2xl p-2', newRecord ? 'animate-pop bg-flame-100 dark:bg-flame-900/40' : 'bg-ink-50 dark:bg-ink-800')}>
+          <p className="font-display text-lg font-extrabold tabular-nums">{r.todayXp}</p><p className="text-[11px] text-ink-500">{newRecord ? '🔥 record!' : 'XP today'}</p>
+        </div>
+        <div className="rounded-2xl bg-ink-50 p-2 dark:bg-ink-800"><p className="font-display text-lg font-extrabold tabular-nums">{r.bestDay}</p><p className="text-[11px] text-ink-500">best day XP</p></div>
+        <div className="rounded-2xl bg-ink-50 p-2 dark:bg-ink-800"><p className="font-display text-lg font-extrabold tabular-nums">{bestStreak(sessions)}</p><p className="text-[11px] text-ink-500">best streak</p></div>
+      </div>
     </Card>
   )
 }

@@ -17,6 +17,11 @@ export default function Profile() {
   return (
     <div className="space-y-4">
       <PageTitle title="Profile" subtitle="Settings, backups and privacy" />
+      <Link to="/goal" className="card flex items-center gap-3 p-4 transition hover:border-brand-300">
+        <span className="text-3xl" aria-hidden>🎯</span>
+        <span className="flex-1"><span className="block font-display font-bold">My goal and daily reminder</span><span className="text-sm text-ink-500">Why you learn, where, when, and a reminder in your calendar</span></span>
+        <span className="text-ink-300" aria-hidden>›</span>
+      </Link>
       <Card className="space-y-4">
         <label className="block"><span className="label">Name</span><input className="input mt-1" defaultValue={p.name} onBlur={(e) => set({ name: e.target.value.trim() || 'Learner' })} /></label>
         <div><span className="label">Goal level</span><div className="mt-1"><Seg label="Goal" value={p.goalLevel} options={(['B1', 'B2', 'C1'] as Level[]).map((l) => [l, l])} onChange={(v) => set({ goalLevel: v })} /></div></div>

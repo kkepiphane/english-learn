@@ -92,6 +92,6 @@ export const Stars = ({ n, className }: { n: number; className?: string }) => (
 
 export const StreakChip = ({ streak, className }: { streak: number; className?: string }) => (
   <span className={clsx('chip text-sm font-bold', streak > 0 ? 'bg-flame-100 text-flame-800 dark:bg-flame-900/40 dark:text-flame-200' : 'bg-ink-100 text-ink-500 dark:bg-ink-800', className)} title="Day streak">
-    <span className={streak > 0 ? '' : 'grayscale'} aria-hidden>🔥</span><span className="tabular-nums">{streak}</span><span className="sr-only"> day streak</span>
+    <span className={streak > 0 ? 'inline-block animate-flicker' : 'grayscale'} aria-hidden>🔥</span><span className="tabular-nums">{streak}</span><span className="sr-only"> day streak</span>
   </span>
 )
