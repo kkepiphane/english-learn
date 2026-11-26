@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import { db, today } from '../db/db'
 import { useProfile } from '../hooks/hooks'
 import { Card, Bar, Ring, SpeakButton, StreakChip, CountUp } from '../components/ui'
-import { computeStreak, xpLevel } from '../lib/stats'
+import { streakInfo, xpLevel } from '../lib/stats'
 import { coachMessage, dailyChallenges, learningLevel, nextLesson, weekStart, weeklyChallenges } from '../lib/recommend'
 import { badges, bestStreak, CHEST_XP, earned, nextStreakMilestone, weekDots, wordOfTheDay } from '../lib/rewards'
 import { loadRewardData } from '../lib/rewardData'
@@ -16,7 +16,7 @@ import { lessonsFor, getLesson, availableLevels } from '../content'
 import { buildBites } from '../lib/lessonDeck'
 import { DREAMS, EXAM_RANGE, daysLeft, dreamTitle, records, weekVsWeek, whyOf } from '../lib/goals'
 import { LEVELS, type Level } from '../content/types'
-import { ArrowRight, ArrowsClockwise, CaretRight, Cards, Check, Compass, Fire, Flag, Lightning, Plus, Trophy } from '@phosphor-icons/react'
+import { ArrowRight, ArrowsClockwise, CaretRight, Snowflake, Cards, Check, Compass, Fire, Flag, Lightning, Plus, Trophy } from '@phosphor-icons/react'
 import { DREAM_ICON } from '../components/dreamIcons'
 import type { Profile, StudySession, LessonProgress } from '../db/db'
 
@@ -39,7 +39,8 @@ export default function Home() {
   if (!profile || !data) return null
 
   const level = learningLevel(profile)
-  const streak = computeStreak(data.sessions)
+  const st = streakInfo(data.sessions)
+  const streak = st.current
   const todayS = data.sessions.find((s) => s.day === today())
   const minutesToday = Math.round((todayS?.seconds ?? 0) / 60)
   const xp = xpLevel(data.sessions.reduce((a, s) => a + s.xp, 0))
@@ -54,7 +55,7 @@ export default function Home() {
   const daily = dailyChallenges(data.sessions, data.attempts, data.cards, profile.dailyGoalMin)
   const weekly = weeklyChallenges(data.sessions, data.writings, data.attempts)
   const lastActive = [...data.sessions].filter((s) => s.seconds >= 60).sort((a, b) => b.day.localeCompare(a.day))[0]?.day
-  const dots = weekDots(data.sessions)
+  const dots = weekDots(data.sessions, new Date(), st.frozenDays)
   const nextMilestone = nextStreakMilestone(streak)
   const dueRev = dueReviews(data.progress, data.reviewStates)
   const upcoming = dueRev.length ? undefined : nextReview(data.progress, data.reviewStates)
@@ -86,18 +87,22 @@ export default function Home() {
               <span aria-label={`${d.day}${d.done ? ': studied' : ''}`}
                 className={clsx('flex h-9 w-9 items-center justify-center rounded-full text-base', {
                   'bg-flame-500 text-white shadow-[0_3px_0_0_theme(colors.flame.700)]': d.done,
-                  'border-2 border-dashed border-flame-400': !d.done && d.isToday,
-                  'bg-ink-100 dark:bg-ink-800': !d.done && !d.isToday,
-                })}>{d.done && <Fire weight="fill" aria-hidden />}</span>
+                  'bg-sky-400 text-white shadow-[0_3px_0_0_theme(colors.sky.600)]': d.frozen,
+                  'border-2 border-dashed border-flame-400': !d.done && !d.frozen && d.isToday,
+                  'bg-ink-100 dark:bg-ink-800': !d.done && !d.frozen && !d.isToday,
+                })}>{d.done ? <Fire weight="fill" aria-hidden /> : d.frozen ? <Snowflake weight="fill" aria-hidden /> : null}</span>
             </li>
           ))}
         </ol>
-        {nextMilestone && (
-          <p className="mt-3 flex items-center justify-center gap-1.5 text-xs font-semibold text-ink-500">
-            <Fire weight="fill" className="text-flame-500" aria-hidden />
-            {nextMilestone - streak === 1 ? 'Tomorrow' : `${nextMilestone - streak} more days`}: {nextMilestone}-day streak badge
-          </p>
-        )}
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs font-semibold text-ink-500">
+          {nextMilestone && (
+            <span className="flex items-center gap-1.5"><Fire weight="fill" className="text-flame-500" aria-hidden />
+              {nextMilestone - streak === 1 ? 'Tomorrow' : `${nextMilestone - streak} more days`}: {nextMilestone}-day badge</span>
+          )}
+          {st.freezesLeft > 0 && (
+            <span className="flex items-center gap-1 text-sky-600 dark:text-sky-400" title="A freeze protects your streak if you miss a day"><Snowflake weight="fill" aria-hidden />{st.freezesLeft} {st.freezesLeft > 1 ? 'freezes' : 'freeze'} ready</span>
+          )}
+        </div>
       </Card>
 
       {!data.placement && (

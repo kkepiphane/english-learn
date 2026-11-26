@@ -142,7 +142,7 @@ function BadgeGrid({ d }: { d: RewardData }) {
                     <span className={clsx('flex h-14 w-14 items-center justify-center rounded-full text-2xl transition active:scale-95', ok ? 'bg-sun-400 shadow-[inset_0_-4px_0_0_theme(colors.sun.600),0_4px_0_0_theme(colors.sun.600)]' : 'bg-ink-100 grayscale dark:bg-ink-800')} aria-hidden>
                       <span className={ok ? '' : 'opacity-40'}>{b.icon}</span>
                     </span>
-                    <span className={clsx('mt-1.5 text-[11px] font-bold leading-tight', !ok && 'text-ink-400')}>{b.title}</span>
+                    <span className={clsx('mt-1.5 text-[11px] font-bold leading-tight', !ok && 'text-ink-400')}>{b.title}{(b.times ?? 0) > 1 ? ` ×${b.times}` : ''}</span>
                   </button>
                 </li>
               )

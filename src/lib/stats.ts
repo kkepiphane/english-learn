@@ -3,18 +3,75 @@ import { today } from '../db/db'
 
 const DAY = 86_400_000
 
-/** Streak counts consecutive days with ≥ 1 minute of study. Today not yet studied does not break it. */
-export function computeStreak(sessions: StudySession[], now = new Date()): number {
-  const active = new Set(sessions.filter((s) => s.seconds >= 60).map((s) => s.day))
-  let streak = 0
-  const d = new Date(now)
-  if (!active.has(today(d))) d.setDate(d.getDate() - 1)
-  while (active.has(today(d))) {
-    streak++
-    d.setDate(d.getDate() - 1)
-  }
-  return streak
+const dayNum = (k: string) => Math.round(Date.UTC(+k.slice(0, 4), +k.slice(5, 7) - 1, +k.slice(8, 10)) / DAY)
+const dayKey = (n: number) => new Date(n * DAY).toISOString().slice(0, 10)
+
+/**
+ * Streak freezes: missed days are forgiven only once the streak is long enough, and never more than this
+ * for a whole streak. From 7 days: 1 frozen day. From 50 days: 3 frozen days in total.
+ */
+export const freezeAllowance = (run: number) => (run >= 50 ? 3 : run >= 7 ? 1 : 0)
+
+export interface StreakInfo {
+  /** Current streak (0 when broken). Frozen days don't count as study days. */
+  current: number
+  /** Longest streak ever. */
+  best: number
+  freezesUsed: number
+  freezesLeft: number
+  /** Missed days covered by a freeze in the current streak (YYYY-MM-DD). */
+  frozenDays: Set<string>
+  /** Length of every streak, past and current: a badge can be won again after a reset. */
+  runs: number[]
 }
+
+/**
+ * A study day = at least 1 minute of study. Not having studied yet today never breaks the streak.
+ * When the gap is too long for the freezes left, the streak restarts from zero (badges are kept).
+ */
+export function streakInfo(sessions: StudySession[], now = new Date()): StreakInfo {
+  const t = dayNum(today(now))
+  const days = [...new Set(sessions.filter((s) => s.seconds >= 60).map((s) => s.day))].map(dayNum).filter((n) => n <= t).sort((a, b) => a - b)
+  const runs: number[] = []
+  let run = 0, used = 0, frozen: number[] = [], prev: number | null = null
+  for (const n of days) {
+    const gap = prev === null ? 0 : n - prev - 1
+    if (prev === null || gap === 0) run++
+    else if (used + gap <= freezeAllowance(run)) {
+      for (let k = prev + 1; k < n; k++) frozen.push(k)
+      used += gap
+      run++
+    } else {
+      runs.push(run)
+      run = 1
+      used = 0
+      frozen = []
+    }
+    prev = n
+  }
+  let current = 0
+  if (prev !== null) {
+    const missed = t - prev - 1 // days missed up to yesterday; today can still be studied
+    if (missed <= 0) current = run
+    else if (used + missed <= freezeAllowance(run)) {
+      for (let k = prev + 1; k < t; k++) frozen.push(k)
+      used += missed
+      current = run
+    }
+    runs.push(run)
+    if (!current) frozen = []
+  }
+  return {
+    current,
+    best: Math.max(0, ...runs),
+    freezesUsed: current ? used : 0,
+    freezesLeft: current ? Math.max(0, freezeAllowance(current) - used) : 0,
+    frozenDays: new Set(frozen.map(dayKey)),
+    runs,
+  }
+}
+
+export const computeStreak = (sessions: StudySession[], now = new Date()) => streakInfo(sessions, now).current
 
 export function lastNDays(sessions: StudySession[], n: number, now = new Date()) {
   const map = new Map(sessions.map((s) => [s.day, s]))

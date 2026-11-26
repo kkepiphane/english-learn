@@ -1,11 +1,11 @@
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { BasicsHome } from './Basics'
 import { levelSprintId, skillSprintId, sprintKey, SPRINT_SECONDS, unitSprintId, type SprintRecord } from '../lib/sprint'
 import { unitTestKey, type UnitTestRecord } from '../lib/unitTest'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
 import { db } from '../db/db'
-import { useProfile } from '../hooks/hooks'
+import { useProfile, useRememberedLevel } from '../hooks/hooks'
 import { availableLevels, getLesson, unitsFor } from '../content'
 import { PageTitle, Bar, Stars } from '../components/ui'
 import { learningLevel, nextLesson } from '../lib/recommend'
@@ -38,10 +38,7 @@ export default function Learn() {
   const checkpoints = useLiveQuery(() => db.assessments.where('kind').equals('checkpoint').toArray(), [], [])
   const biteRows = useLiveQuery(() => db.kv.where('key').startsWith('lesson.bites.').toArray(), [], [])
   const bitesDone = new Map(biteRows.map((r) => [r.key.slice('lesson.bites.'.length), r.value as number]))
-  const [params, setParams] = useSearchParams()
-  const asked = params.get('level')
-  const current: Level = LEVELS.includes(asked as Level) ? (asked as Level) : learningLevel(profile)
-  const setLevel = (l: Level) => setParams({ level: l }, { replace: true })
+  const [current, setLevel] = useRememberedLevel<Level>('ep.learn.level', LEVELS, learningLevel(profile))
   // Sprint records and unit test results, by kv key.
   const recRows = useLiveQuery(() => db.kv.where('key').startsWithAnyOf('sprint.', 'unittest.').toArray(), [], [])
   const rec = new Map(recRows.map((r) => [r.key, r.value]))

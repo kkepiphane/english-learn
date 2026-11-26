@@ -1,7 +1,7 @@
 import type { Assessment, Card, LessonProgress, StudySession, WritingSubmission } from '../db/db'
 import { today } from '../db/db'
 import { LEVELS, type Lesson, type Level, type VocabItem } from '../content/types'
-import { computeStreak, xpLevel } from './stats'
+import { streakInfo, xpLevel } from './stats'
 
 /** Everything badges are computed from. Badges are derived, never stored, so they can't drift from real data. */
 export interface RewardData {
@@ -28,21 +28,12 @@ export interface Badge {
   /** Current value and target, for the progress hint on locked badges. */
   value: number
   target: number
+  /** How many times it was won (streak badges can be won again after a reset). */
+  times?: number
 }
 
-/** Longest run of consecutive study days ever (a broken streak keeps its record). */
-export function bestStreak(sessions: StudySession[]): number {
-  const days = [...new Set(sessions.filter((s) => s.seconds >= 60).map((s) => s.day))].sort()
-  let best = 0, run = 0, prev = ''
-  for (const d of days) {
-    const p = new Date(d + 'T12:00:00')
-    p.setDate(p.getDate() - 1)
-    run = prev === today(p) ? run + 1 : 1
-    best = Math.max(best, run)
-    prev = d
-  }
-  return best
-}
+/** Longest streak ever (a broken streak keeps its record). */
+export const bestStreak = (sessions: StudySession[]) => streakInfo(sessions).best
 
 export const STREAK_MILESTONES = [3, 7, 14, 30, 50, 100, 200, 365]
 const STREAK_ICONS = ['🔥', '⚡', '🌟', '👑', '💎', '🚀', '🏅', '🌍']
@@ -59,7 +50,8 @@ function provenLevel(assessments: Assessment[]): number {
 }
 
 export function badges(d: RewardData): Badge[] {
-  const streak = Math.max(bestStreak(d.sessions), computeStreak(d.sessions))
+  const st = streakInfo(d.sessions)
+  const streak = st.best
   const lessons = d.progress.filter((p) => p.status === 'completed').length
   const perfect = d.progress.filter((p) => p.bestScore === 100).length
   const xp = xpLevel(d.sessions.reduce((a, s) => a + s.xp, 0)).lvl
@@ -68,7 +60,7 @@ export function badges(d: RewardData): Badge[] {
   const B = (group: BadgeGroup) => (id: string, icon: string, title: string, desc: string, value: number, target: number): Badge => ({ id, icon, title, desc, group, value: Math.min(value, target), target })
   const S = B('streak'), Lv = B('level'), Le = B('learning'), Sk = B('skills')
   return [
-    ...STREAK_MILESTONES.map((n, i) => S(`streak-${n}`, STREAK_ICONS[i], `${n}-day streak`, `Study ${n} days in a row`, streak, n)),
+    ...STREAK_MILESTONES.map((n, i) => ({ ...S(`streak-${n}`, STREAK_ICONS[i], `${n}-day streak`, `Study ${n} days in a row`, Math.max(streak, st.current), n), times: st.runs.filter((r) => r >= n).length })),
     ...LEVELS.map((l, i) => Lv(`level-${l}`, LEVEL_ICONS[l], `${l} achieved`, `Prove your ${l} level (checkpoint or level test)`, proven >= i ? 1 : 0, 1)),
     Le('placement', '🧭', 'Explorer', 'Take the level test', placement, 1),
     Le('lesson-1', '🌱', 'First step', 'Complete your first lesson', lessons, 1),
@@ -101,7 +93,7 @@ export const earned = (bs: Badge[]) => bs.filter((b) => b.value >= b.target)
 export const stars = (score: number) => (score >= 90 ? 3 : score >= 70 ? 2 : score > 0 ? 1 : 0)
 
 /** Monday→Sunday of the current week with study status, for the streak dots. */
-export function weekDots(sessions: StudySession[], now = new Date()) {
+export function weekDots(sessions: StudySession[], now = new Date(), frozen: Set<string> = streakInfo(sessions, now).frozenDays) {
   const active = new Set(sessions.filter((s) => s.seconds >= 60).map((s) => s.day))
   const d = new Date(now)
   d.setHours(12, 0, 0, 0)
@@ -111,7 +103,7 @@ export function weekDots(sessions: StudySession[], now = new Date()) {
     const day = new Date(d)
     day.setDate(d.getDate() + i)
     const k = today(day)
-    return { day: k, label: day.toLocaleDateString('en', { weekday: 'narrow' }), done: active.has(k), isToday: k === t, future: k > t }
+    return { day: k, label: day.toLocaleDateString('en', { weekday: 'narrow' }), done: active.has(k), frozen: frozen.has(k), isToday: k === t, future: k > t }
   })
 }
 

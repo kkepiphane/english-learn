@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db } from '../db/db'
 import { addStudyTime } from '../lib/repo'
@@ -53,4 +54,22 @@ export function useTheme() {
     mq.addEventListener('change', apply)
     return () => mq.removeEventListener('change', apply)
   }, [profile?.theme])
+}
+
+/**
+ * A level filter kept in the URL (?level=) and remembered on this device, so leaving
+ * the tab and coming back shows the same level. Falls back to `fallback`.
+ */
+export function useRememberedLevel<T extends string>(storageKey: string, allowed: readonly T[], fallback: T) {
+  const [params, setParams] = useSearchParams()
+  const read = () => {
+    try { return localStorage.getItem(storageKey) } catch { return null }
+  }
+  const asked = params.get('level') ?? read()
+  const value = allowed.includes(asked as T) ? (asked as T) : fallback
+  const set = (v: T) => {
+    try { localStorage.setItem(storageKey, v) } catch { /* private mode: URL still works */ }
+    setParams({ level: v }, { replace: true })
+  }
+  return [value, set] as const
 }
