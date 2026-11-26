@@ -2089,7 +2089,7 @@
           "salary"
         ],
         "answer": 0,
-        "explanation": "refund."
+        "explanation": "A refund is money given back when you return something."
       }
     ],
     "quiz": [
@@ -2159,6 +2159,637 @@
         "wrong": "I spent money for clothes.",
         "right": "I spent money on clothes.",
         "why": "spend money on something."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-past-perfect",
+    "unitId": "b1-u7",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Past perfect for stories",
+    "minutes": 14,
+    "objective": "Tell stories clearly by showing which past event happened first.",
+    "sections": [
+      {
+        "heading": "Form and use",
+        "en": "had + past participle = an action before another past action.",
+        "fr": "Le plus-que-parfait : « j'avais déjà mangé quand il est arrivé ».",
+        "examples": [
+          "When I arrived, the bus had already left.",
+          "She was nervous because she had never flown before.",
+          "I realised I had forgotten my passport."
+        ]
+      },
+      {
+        "heading": "Time words",
+        "en": "already · just · never · by the time · before · after.",
+        "examples": [
+          "By the time we got there, the shop had closed.",
+          "After he had finished, he went home."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1pp2-v1",
+        "word": "realise",
+        "ipa": "/ˈrɪəlaɪz/",
+        "pos": "verb",
+        "definition": "to suddenly understand",
+        "fr": "se rendre compte",
+        "example": "I realised I had lost my keys.",
+        "context": "Stories"
+      },
+      {
+        "id": "b1pp2-v2",
+        "word": "by the time",
+        "ipa": "/baɪ ðə taɪm/",
+        "pos": "conjunction",
+        "definition": "before or when",
+        "fr": "au moment où",
+        "example": "By the time I called, she had left.",
+        "context": "Time"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1pp2-p1",
+        "type": "mcq",
+        "prompt": "When we arrived, the film ___.",
+        "options": [
+          "already started",
+          "had already started",
+          "has already started"
+        ],
+        "answer": 1,
+        "explanation": "Earlier past → had started."
+      },
+      {
+        "id": "b1pp2-p2",
+        "type": "mcq",
+        "prompt": "She ___ never seen the sea before that trip.",
+        "options": [
+          "has",
+          "had",
+          "was"
+        ],
+        "answer": 1,
+        "explanation": "Past perfect: had seen."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1pp2-q1",
+        "type": "mcq",
+        "prompt": "I couldn't pay because I ___ my wallet.",
+        "options": [
+          "lost",
+          "had lost",
+          "have lost",
+          "was losing"
+        ],
+        "answer": 1,
+        "explanation": "Loss happened first → had lost."
+      },
+      {
+        "id": "b1pp2-q2",
+        "type": "gap",
+        "prompt": "By the time the police came, the thief ___ escaped.",
+        "accepted": [
+          "had"
+        ],
+        "explanation": "had + past participle."
+      },
+      {
+        "id": "b1pp2-q3",
+        "type": "truefalse",
+        "prompt": "In \"After she had eaten, she left\", eating happened first.",
+        "answer": true,
+        "explanation": "Past perfect = earlier action."
+      },
+      {
+        "id": "b1pp2-q4",
+        "type": "mcq",
+        "prompt": "He ___ to London before, so he knew the city.",
+        "options": [
+          "has been",
+          "had been",
+          "was being",
+          "is"
+        ],
+        "answer": 1,
+        "explanation": "Earlier experience → had been."
+      },
+      {
+        "id": "b1pp2-q5",
+        "type": "mcq",
+        "prompt": "I ___ that I had left the door open.",
+        "options": [
+          "realised",
+          "had realised",
+          "realise",
+          "was realise"
+        ],
+        "answer": 0,
+        "explanation": "Main past event → past simple."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "When I arrived, the bus already left.",
+        "right": "When I arrived, the bus had already left.",
+        "why": "Earlier action → past perfect."
+      },
+      {
+        "wrong": "I had went",
+        "right": "I had gone",
+        "why": "Use the past participle."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-feelings",
+    "unitId": "b1-u7",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Feelings: -ed or -ing?",
+    "minutes": 12,
+    "objective": "Describe emotions precisely and avoid the classic -ed/-ing mistake.",
+    "sections": [
+      {
+        "heading": "-ed vs -ing",
+        "en": "-ed = how you feel (I'm bored). -ing = what causes the feeling (The film is boring).",
+        "fr": "« Je suis ennuyeux » ≠ « je m'ennuie » : I'm boring ≠ I'm bored !",
+        "table": [
+          [
+            "Feeling (-ed)",
+            "Cause (-ing)"
+          ],
+          [
+            "bored",
+            "boring"
+          ],
+          [
+            "interested",
+            "interesting"
+          ],
+          [
+            "tired",
+            "tiring"
+          ],
+          [
+            "embarrassed",
+            "embarrassing"
+          ],
+          [
+            "disappointed",
+            "disappointing"
+          ]
+        ]
+      },
+      {
+        "heading": "More emotions",
+        "en": "proud · relieved · frustrated · anxious · grateful · upset.",
+        "examples": [
+          "I was relieved when I passed the exam.",
+          "She's proud of her son."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1fe-v1",
+        "word": "relieved",
+        "ipa": "/rɪˈliːvd/",
+        "pos": "adjective",
+        "definition": "happy because a worry has gone",
+        "fr": "soulagé",
+        "example": "I was relieved to hear the news.",
+        "context": "Emotions"
+      },
+      {
+        "id": "b1fe-v2",
+        "word": "disappointed",
+        "ipa": "/ˌdɪsəˈpɔɪntɪd/",
+        "pos": "adjective",
+        "definition": "sad because something was not as good as expected",
+        "fr": "déçu",
+        "example": "He was disappointed with his score.",
+        "context": "Emotions"
+      },
+      {
+        "id": "b1fe-v3",
+        "word": "anxious",
+        "ipa": "/ˈæŋkʃəs/",
+        "pos": "adjective",
+        "definition": "worried and nervous",
+        "fr": "anxieux",
+        "example": "I feel anxious before exams.",
+        "context": "Emotions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1fe-p1",
+        "type": "mcq",
+        "prompt": "The lesson was very ___.",
+        "options": [
+          "interested",
+          "interesting"
+        ],
+        "answer": 1,
+        "explanation": "The lesson causes the feeling → interesting."
+      },
+      {
+        "id": "b1fe-p2",
+        "type": "mcq",
+        "prompt": "I'm ___ in history.",
+        "options": [
+          "interested",
+          "interesting"
+        ],
+        "answer": 0,
+        "explanation": "Your feeling → interested."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1fe-q1",
+        "type": "mcq",
+        "prompt": "The journey was long and ___.",
+        "options": [
+          "tired",
+          "tiring",
+          "tire",
+          "tiredly"
+        ],
+        "answer": 1,
+        "explanation": "Cause → tiring."
+      },
+      {
+        "id": "b1fe-q2",
+        "type": "mcq",
+        "prompt": "I felt ___ when I fell in front of everyone.",
+        "options": [
+          "embarrassing",
+          "embarrassed",
+          "embarrass",
+          "embarrassment"
+        ],
+        "answer": 1,
+        "explanation": "Feeling → embarrassed."
+      },
+      {
+        "id": "b1fe-q3",
+        "type": "gap",
+        "prompt": "She was very ___ of her daughter's success. (pleased about something good)",
+        "accepted": [
+          "proud"
+        ],
+        "explanation": "proud of."
+      },
+      {
+        "id": "b1fe-q4",
+        "type": "truefalse",
+        "prompt": "\"I'm boring\" means I'm not interested in something.",
+        "answer": false,
+        "explanation": "That is I'm bored; I'm boring = I make others bored."
+      },
+      {
+        "id": "b1fe-q5",
+        "type": "mcq",
+        "prompt": "Happy because a worry is gone:",
+        "options": [
+          "anxious",
+          "relieved",
+          "upset",
+          "frustrated"
+        ],
+        "answer": 1,
+        "explanation": "relieved."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I'm boring in this class.",
+        "right": "I'm bored in this class.",
+        "why": "-ed = how you feel."
+      },
+      {
+        "wrong": "I'm very interesting by music.",
+        "right": "I'm very interested in music.",
+        "why": "interested in."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-questions",
+    "unitId": "b1-u8",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Indirect questions and question tags",
+    "minutes": 14,
+    "objective": "Ask polite questions and check information naturally.",
+    "sections": [
+      {
+        "heading": "Indirect questions",
+        "en": "Could you tell me / Do you know + question word + subject + verb (no do/does). Yes/no: if / whether.",
+        "fr": "Ordre normal sujet-verbe après « Could you tell me where… ».",
+        "examples": [
+          "Could you tell me where the station is?",
+          "Do you know what time it opens?",
+          "I wonder if you could help me."
+        ]
+      },
+      {
+        "heading": "Question tags",
+        "en": "Positive sentence → negative tag; negative sentence → positive tag. Use the same auxiliary.",
+        "examples": [
+          "You're from Togo, aren't you?",
+          "She can't swim, can she?",
+          "They left early, didn't they?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1qt-v1",
+        "word": "wonder",
+        "ipa": "/ˈwʌndə/",
+        "pos": "verb",
+        "definition": "to want to know",
+        "fr": "se demander",
+        "example": "I wonder if it will rain.",
+        "context": "Politeness"
+      },
+      {
+        "id": "b1qt-v2",
+        "word": "whether",
+        "ipa": "/ˈweðə/",
+        "pos": "conjunction",
+        "definition": "if (used for choices)",
+        "fr": "si",
+        "example": "Do you know whether he's coming?",
+        "context": "Questions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1qt-p1",
+        "type": "mcq",
+        "prompt": "Could you tell me where ___?",
+        "options": [
+          "is the bank",
+          "the bank is",
+          "does the bank"
+        ],
+        "answer": 1,
+        "explanation": "Indirect: subject + verb."
+      },
+      {
+        "id": "b1qt-p2",
+        "type": "mcq",
+        "prompt": "You like coffee, ___?",
+        "options": [
+          "do you",
+          "don't you",
+          "aren't you"
+        ],
+        "answer": 1,
+        "explanation": "Positive → negative tag: don't you."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1qt-q1",
+        "type": "mcq",
+        "prompt": "Do you know what time ___?",
+        "options": [
+          "does the shop open",
+          "the shop opens",
+          "opens the shop",
+          "the shop does open"
+        ],
+        "answer": 1,
+        "explanation": "Statement order: the shop opens."
+      },
+      {
+        "id": "b1qt-q2",
+        "type": "mcq",
+        "prompt": "She isn't here, ___?",
+        "options": [
+          "is she",
+          "isn't she",
+          "does she",
+          "doesn't she"
+        ],
+        "answer": 0,
+        "explanation": "Negative → positive tag."
+      },
+      {
+        "id": "b1qt-q3",
+        "type": "gap",
+        "prompt": "They went home, ___ they?",
+        "accepted": [
+          "didn't"
+        ],
+        "explanation": "Past simple positive → didn't."
+      },
+      {
+        "id": "b1qt-q4",
+        "type": "truefalse",
+        "prompt": "\"Can you tell me where is the toilet?\" is correct.",
+        "answer": false,
+        "explanation": "Use: where the toilet is."
+      },
+      {
+        "id": "b1qt-q5",
+        "type": "mcq",
+        "prompt": "I wonder ___ you could help me.",
+        "options": [
+          "if",
+          "that",
+          "what",
+          "do"
+        ],
+        "answer": 0,
+        "explanation": "Yes/no indirect question → if."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Can you tell me where is the station?",
+        "right": "Can you tell me where the station is?",
+        "why": "No question order in indirect questions."
+      },
+      {
+        "wrong": "You are tired, no?",
+        "right": "You're tired, aren't you?",
+        "why": "Use a question tag."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-travel-problems",
+    "unitId": "b1-u8",
+    "level": "B1",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Travel problems and complaints",
+    "minutes": 14,
+    "objective": "Deal with delays, lost luggage and hotel problems politely but firmly.",
+    "sections": [
+      {
+        "heading": "At the airport",
+        "en": "delayed · cancelled · boarding pass · lost luggage · connecting flight · gate.",
+        "examples": [
+          "Our flight has been delayed by three hours.",
+          "My luggage didn't arrive. Where can I report it?"
+        ]
+      },
+      {
+        "heading": "Making a complaint",
+        "en": "I'm afraid there's a problem with… · I'd like to make a complaint. · Could you… please? · I'd expect… · I'd like a refund / another room.",
+        "fr": "Ferme mais poli : « I'm afraid… » adoucit la réclamation.",
+        "examples": [
+          "I'm afraid the air conditioning in my room isn't working.",
+          "Could you move me to another room, please?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1tp-v1",
+        "word": "delayed",
+        "ipa": "/dɪˈleɪd/",
+        "pos": "adjective",
+        "definition": "later than planned",
+        "fr": "retardé",
+        "example": "The train was delayed.",
+        "context": "Travel"
+      },
+      {
+        "id": "b1tp-v2",
+        "word": "luggage",
+        "ipa": "/ˈlʌɡɪdʒ/",
+        "pos": "noun (uncountable)",
+        "definition": "bags you take when travelling",
+        "fr": "bagages",
+        "example": "My luggage is lost.",
+        "context": "Travel"
+      },
+      {
+        "id": "b1tp-v3",
+        "word": "complaint",
+        "ipa": "/kəmˈpleɪnt/",
+        "pos": "noun",
+        "definition": "a statement that something is wrong",
+        "fr": "réclamation, plainte",
+        "example": "I'd like to make a complaint.",
+        "context": "Customer service"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1tp-p1",
+        "type": "mcq",
+        "prompt": "The flight won't happen. It's ___.",
+        "options": [
+          "delayed",
+          "cancelled",
+          "boarding"
+        ],
+        "answer": 1,
+        "explanation": "cancelled = it won't happen."
+      },
+      {
+        "id": "b1tp-p2",
+        "type": "mcq",
+        "prompt": "Polite complaint start:",
+        "options": [
+          "This is terrible!",
+          "I'm afraid there's a problem with my room.",
+          "Fix it now."
+        ],
+        "answer": 1,
+        "explanation": "I'm afraid… softens it."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1tp-q1",
+        "type": "mcq",
+        "prompt": "Bags you travel with:",
+        "options": [
+          "luggages",
+          "luggage",
+          "a luggage",
+          "luggage's"
+        ],
+        "answer": 1,
+        "explanation": "luggage is uncountable."
+      },
+      {
+        "id": "b1tp-q2",
+        "type": "gap",
+        "prompt": "I'd like to make a ___.",
+        "accepted": [
+          "complaint"
+        ],
+        "explanation": "make a complaint."
+      },
+      {
+        "id": "b1tp-q3",
+        "type": "truefalse",
+        "prompt": "A 'connecting flight' is a second flight you take to continue your journey.",
+        "answer": true,
+        "explanation": "connecting flight."
+      },
+      {
+        "id": "b1tp-q4",
+        "type": "mcq",
+        "prompt": "Later than planned:",
+        "options": [
+          "cancelled",
+          "delayed",
+          "booked",
+          "boarded"
+        ],
+        "answer": 1,
+        "explanation": "Delayed = later than planned (cancelled = not happening)."
+      },
+      {
+        "id": "b1tp-q5",
+        "type": "mcq",
+        "prompt": "Most polite request:",
+        "options": [
+          "Give me another room.",
+          "Could you move me to another room, please?",
+          "Another room!",
+          "I want room."
+        ],
+        "answer": 1,
+        "explanation": "Could you… please?"
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I lost my luggages.",
+        "right": "I lost my luggage.",
+        "why": "Uncountable."
+      },
+      {
+        "wrong": "I want to complain you.",
+        "right": "I'd like to make a complaint.",
+        "why": "complain about something / make a complaint."
       }
     ]
   }

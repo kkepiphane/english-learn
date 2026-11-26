@@ -2609,5 +2609,621 @@
         "why": "disagreeable means unpleasant."
       }
     ]
+  },
+  {
+    "id": "b2-g-quantifiers",
+    "unitId": "b2-u7",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Quantifiers: both, neither, few, a few",
+    "minutes": 14,
+    "objective": "Talk precisely about amounts and choices.",
+    "sections": [
+      {
+        "heading": "both / either / neither",
+        "en": "both = the two. either = one or the other. neither = not one and not the other (positive verb).",
+        "fr": "« ni l'un ni l'autre » = neither (avec un verbe affirmatif).",
+        "examples": [
+          "Both options are good.",
+          "You can take either bus.",
+          "Neither of my brothers lives here."
+        ]
+      },
+      {
+        "heading": "few / a few · little / a little",
+        "en": "a few / a little = some (positive). few / little = not enough (negative). few + plural; little + uncountable.",
+        "examples": [
+          "I have a few friends in Accra. (some)",
+          "Few people came. (disappointingly small)",
+          "There's little hope left."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2q-v1",
+        "word": "neither",
+        "ipa": "/ˈnaɪðə/",
+        "pos": "determiner",
+        "definition": "not one and not the other",
+        "fr": "aucun des deux",
+        "example": "Neither answer is correct.",
+        "context": "Choices"
+      },
+      {
+        "id": "b2q-v2",
+        "word": "scarce",
+        "ipa": "/skeəs/",
+        "pos": "adjective",
+        "definition": "not enough, rare",
+        "fr": "rare, peu abondant",
+        "example": "Water is scarce in the dry season.",
+        "context": "Quantity"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2q-p1",
+        "type": "mcq",
+        "prompt": "___ of my parents speak English. (the two)",
+        "options": [
+          "Both",
+          "Either",
+          "Neither"
+        ],
+        "answer": 0,
+        "explanation": "Both = the two together."
+      },
+      {
+        "id": "b2q-p2",
+        "type": "mcq",
+        "prompt": "I have ___ friends here — enough to go out with.",
+        "options": [
+          "few",
+          "a few",
+          "little"
+        ],
+        "answer": 1,
+        "explanation": "a few = some, positive."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2q-q1",
+        "type": "mcq",
+        "prompt": "___ of the hotels was clean. (not one, not the other)",
+        "options": [
+          "Both",
+          "Either",
+          "Neither",
+          "None both"
+        ],
+        "answer": 2,
+        "explanation": "Neither + singular verb."
+      },
+      {
+        "id": "b2q-q2",
+        "type": "mcq",
+        "prompt": "There's ___ time left, so hurry!",
+        "options": [
+          "few",
+          "a few",
+          "little",
+          "many"
+        ],
+        "answer": 2,
+        "explanation": "little + uncountable = not much."
+      },
+      {
+        "id": "b2q-q3",
+        "type": "gap",
+        "prompt": "You can sit on ___ chair — both are free.",
+        "accepted": [
+          "either"
+        ],
+        "explanation": "either = one or the other."
+      },
+      {
+        "id": "b2q-q4",
+        "type": "truefalse",
+        "prompt": "\"Few students passed\" suggests the result was disappointing.",
+        "answer": true,
+        "explanation": "few without a = not many."
+      },
+      {
+        "id": "b2q-q5",
+        "type": "mcq",
+        "prompt": "___ of them are coming. (the two of them)",
+        "options": [
+          "Both",
+          "Neither",
+          "Either",
+          "Each"
+        ],
+        "answer": 0,
+        "explanation": "Both + plural verb."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Neither of them don't know.",
+        "right": "Neither of them knows.",
+        "why": "neither is already negative."
+      },
+      {
+        "wrong": "I have few money.",
+        "right": "I have little money.",
+        "why": "little + uncountable."
+      }
+    ]
+  },
+  {
+    "id": "b2-v-media",
+    "unitId": "b2-u7",
+    "level": "B2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "News and media literacy",
+    "minutes": 14,
+    "objective": "Talk about the news and spot unreliable information.",
+    "sections": [
+      {
+        "heading": "News vocabulary",
+        "en": "headline · source · breaking news · editorial · bias · coverage · fact-check · misinformation.",
+        "examples": [
+          "The headline was misleading.",
+          "Always check the source before sharing."
+        ]
+      },
+      {
+        "heading": "Evaluating information",
+        "en": "Is the source reliable? Is it fact or opinion? Who benefits? Is the date recent?",
+        "fr": "Compétence clé à l'université et en IELTS Reading (fait vs opinion).",
+        "examples": [
+          "This article reflects a clear bias.",
+          "The claim went viral before it was fact-checked."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2me-v1",
+        "word": "bias",
+        "ipa": "/ˈbaɪəs/",
+        "pos": "noun",
+        "definition": "an unfair preference for one side",
+        "fr": "parti pris, biais",
+        "example": "The report shows political bias.",
+        "context": "Media"
+      },
+      {
+        "id": "b2me-v2",
+        "word": "reliable",
+        "ipa": "/rɪˈlaɪəbl/",
+        "pos": "adjective",
+        "definition": "that you can trust",
+        "fr": "fiable",
+        "example": "Is this a reliable source?",
+        "context": "Media"
+      },
+      {
+        "id": "b2me-v3",
+        "word": "go viral",
+        "ipa": "/ɡəʊ ˈvaɪrəl/",
+        "pos": "phrase",
+        "definition": "spread very quickly online",
+        "fr": "devenir viral",
+        "example": "The video went viral overnight.",
+        "context": "Social media"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2me-p1",
+        "type": "mcq",
+        "prompt": "The title of a news article:",
+        "options": [
+          "headline",
+          "editorial",
+          "bias"
+        ],
+        "answer": 0,
+        "explanation": "headline = the title of a news story."
+      },
+      {
+        "id": "b2me-p2",
+        "type": "mcq",
+        "prompt": "False information spread by mistake:",
+        "options": [
+          "coverage",
+          "misinformation",
+          "source"
+        ],
+        "answer": 1,
+        "explanation": "misinformation = false information."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2me-q1",
+        "type": "mcq",
+        "prompt": "An unfair preference for one side:",
+        "options": [
+          "bias",
+          "source",
+          "coverage",
+          "fact"
+        ],
+        "answer": 0,
+        "explanation": "bias = unfair preference."
+      },
+      {
+        "id": "b2me-q2",
+        "type": "gap",
+        "prompt": "Before sharing, check if the ___ is reliable. (where the information comes from)",
+        "accepted": [
+          "source"
+        ],
+        "explanation": "source = origin of information."
+      },
+      {
+        "id": "b2me-q3",
+        "type": "truefalse",
+        "prompt": "An editorial presents the newspaper's opinion.",
+        "answer": true,
+        "explanation": "An editorial is an opinion piece."
+      },
+      {
+        "id": "b2me-q4",
+        "type": "mcq",
+        "prompt": "To spread very quickly online:",
+        "options": [
+          "go viral",
+          "go public",
+          "go live",
+          "go wrong"
+        ],
+        "answer": 0,
+        "explanation": "go viral."
+      },
+      {
+        "id": "b2me-q5",
+        "type": "mcq",
+        "prompt": "A trustworthy source is…",
+        "options": [
+          "biased",
+          "reliable",
+          "viral",
+          "breaking"
+        ],
+        "answer": 1,
+        "explanation": "reliable = trustworthy."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "an informations",
+        "right": "a piece of information",
+        "why": "information is uncountable."
+      },
+      {
+        "wrong": "The news are bad.",
+        "right": "The news is bad.",
+        "why": "news takes a singular verb."
+      }
+    ]
+  },
+  {
+    "id": "b2-g-articles-adv",
+    "unitId": "b2-u8",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Advanced articles",
+    "minutes": 14,
+    "objective": "Use the, a/an and no article correctly with general ideas, institutions and places.",
+    "sections": [
+      {
+        "heading": "General vs specific",
+        "en": "No article for general plural/uncountable nouns: Education is important. Use the for specific ones: The education I received was excellent.",
+        "fr": "Le français dit « l'éducation » en général ; l'anglais dit « education » sans article.",
+        "examples": [
+          "Life is short.",
+          "The life of a student is busy.",
+          "Doctors work long hours."
+        ]
+      },
+      {
+        "heading": "Institutions and places",
+        "en": "go to school / university / hospital / prison / church (for its main purpose) — no article. Use the for a visit to the building. Countries: no article, except the USA, the UK, the Netherlands.",
+        "examples": [
+          "She's in hospital. (patient)",
+          "I went to the hospital to visit her.",
+          "He studied in the UK, then moved to Canada."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2ar-v1",
+        "word": "institution",
+        "ipa": "/ˌɪnstɪˈtjuːʃn/",
+        "pos": "noun",
+        "definition": "an important organisation such as a school or hospital",
+        "fr": "institution",
+        "example": "Universities are public institutions.",
+        "context": "Society"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2ar-p1",
+        "type": "mcq",
+        "prompt": "___ is important for development.",
+        "options": [
+          "The education",
+          "Education",
+          "An education"
+        ],
+        "answer": 1,
+        "explanation": "General idea → no article."
+      },
+      {
+        "id": "b2ar-p2",
+        "type": "mcq",
+        "prompt": "She studied in ___ United States.",
+        "options": [
+          "—",
+          "the",
+          "a"
+        ],
+        "answer": 1,
+        "explanation": "the United States."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2ar-q1",
+        "type": "mcq",
+        "prompt": "My son is still at ___ school. (he is a pupil)",
+        "options": [
+          "the",
+          "a",
+          "—",
+          "an"
+        ],
+        "answer": 2,
+        "explanation": "Main purpose → no article."
+      },
+      {
+        "id": "b2ar-q2",
+        "type": "mcq",
+        "prompt": "___ unemployment is rising.",
+        "options": [
+          "The",
+          "An",
+          "—",
+          "A"
+        ],
+        "answer": 2,
+        "explanation": "General uncountable idea → no article."
+      },
+      {
+        "id": "b2ar-q3",
+        "type": "gap",
+        "prompt": "I went to ___ hospital to visit my aunt. (article)",
+        "accepted": [
+          "the"
+        ],
+        "explanation": "Visiting the building → the."
+      },
+      {
+        "id": "b2ar-q4",
+        "type": "truefalse",
+        "prompt": "\"I live in the Ghana\" is correct.",
+        "answer": false,
+        "explanation": "Most countries take no article: in Ghana."
+      },
+      {
+        "id": "b2ar-q5",
+        "type": "mcq",
+        "prompt": "___ people I met in Accra were friendly.",
+        "options": [
+          "—",
+          "The",
+          "A",
+          "Some the"
+        ],
+        "answer": 1,
+        "explanation": "Specific people → the."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "The life is beautiful.",
+        "right": "Life is beautiful.",
+        "why": "General idea → no article."
+      },
+      {
+        "wrong": "He is in the prison. (as a prisoner)",
+        "right": "He is in prison.",
+        "why": "Institution's main purpose → no article."
+      }
+    ]
+  },
+  {
+    "id": "b2-v-graphs",
+    "unitId": "b2-u8",
+    "level": "B2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Describing graphs and trends",
+    "minutes": 16,
+    "objective": "Describe charts and data, as in IELTS Writing Task 1.",
+    "sections": [
+      {
+        "heading": "Movement",
+        "en": "rise / increase / grow · fall / drop / decline · remain stable · fluctuate · peak at · hit a low of.",
+        "examples": [
+          "Sales rose sharply in 2022.",
+          "The number of visitors peaked at 2 million in July."
+        ]
+      },
+      {
+        "heading": "Degree and speed",
+        "en": "sharply · dramatically · significantly · steadily · gradually · slightly. Nouns: a sharp rise, a slight fall.",
+        "fr": "Varier verbes et noms (« rose sharply » / « a sharp rise ») fait gagner des points en Task 1.",
+        "table": [
+          [
+            "Verb + adverb",
+            "Adjective + noun"
+          ],
+          [
+            "rose sharply",
+            "a sharp rise"
+          ],
+          [
+            "fell slightly",
+            "a slight fall"
+          ],
+          [
+            "grew steadily",
+            "steady growth"
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2gr-v1",
+        "word": "fluctuate",
+        "ipa": "/ˈflʌktʃueɪt/",
+        "pos": "verb",
+        "definition": "to go up and down often",
+        "fr": "fluctuer",
+        "example": "Prices fluctuated during the year.",
+        "context": "Data"
+      },
+      {
+        "id": "b2gr-v2",
+        "word": "peak",
+        "ipa": "/piːk/",
+        "pos": "verb / noun",
+        "definition": "to reach the highest point",
+        "fr": "atteindre un sommet, pic",
+        "example": "Temperatures peak in March.",
+        "context": "Data"
+      },
+      {
+        "id": "b2gr-v3",
+        "word": "steadily",
+        "ipa": "/ˈstedɪli/",
+        "pos": "adverb",
+        "definition": "gradually and regularly",
+        "fr": "régulièrement",
+        "example": "Numbers grew steadily.",
+        "context": "Data"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2gr-p1",
+        "type": "mcq",
+        "prompt": "Went up and down many times:",
+        "options": [
+          "fluctuated",
+          "peaked",
+          "remained stable"
+        ],
+        "answer": 0,
+        "explanation": "fluctuate = go up and down."
+      },
+      {
+        "id": "b2gr-p2",
+        "type": "mcq",
+        "prompt": "A small change:",
+        "options": [
+          "dramatically",
+          "slightly",
+          "sharply"
+        ],
+        "answer": 1,
+        "explanation": "slightly = a little."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2gr-q1",
+        "type": "mcq",
+        "prompt": "Noun form of 'rose sharply':",
+        "options": [
+          "a sharp rise",
+          "a sharply rise",
+          "a rise sharp",
+          "sharp rose"
+        ],
+        "answer": 0,
+        "explanation": "adjective + noun: a sharp rise."
+      },
+      {
+        "id": "b2gr-q2",
+        "type": "gap",
+        "prompt": "Exports ___ at 5 million in 2020. (reached the highest point)",
+        "accepted": [
+          "peaked"
+        ],
+        "explanation": "peak at = reach the highest point."
+      },
+      {
+        "id": "b2gr-q3",
+        "type": "truefalse",
+        "prompt": "\"Remained stable\" means there was little or no change.",
+        "answer": true,
+        "explanation": "remain stable = no change."
+      },
+      {
+        "id": "b2gr-q4",
+        "type": "mcq",
+        "prompt": "Which shows a fast, big change?",
+        "options": [
+          "gradually",
+          "slightly",
+          "dramatically",
+          "steadily"
+        ],
+        "answer": 2,
+        "explanation": "dramatically = big and fast."
+      },
+      {
+        "id": "b2gr-q5",
+        "type": "mcq",
+        "prompt": "The opposite of 'increase':",
+        "options": [
+          "grow",
+          "decline",
+          "peak",
+          "rise"
+        ],
+        "answer": 1,
+        "explanation": "decline = go down."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "The sales were increased.",
+        "right": "Sales increased.",
+        "why": "increase is intransitive here: no passive."
+      },
+      {
+        "wrong": "a sharply increase",
+        "right": "a sharp increase",
+        "why": "Adjective before a noun."
+      }
+    ]
   }
 ]

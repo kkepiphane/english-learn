@@ -456,5 +456,923 @@
         "def": "to move or develop more slowly than something else"
       }
     ]
+  },
+  {
+    "id": "l-a1-phone",
+    "level": "A1",
+    "kind": "Phone call",
+    "title": "Where are you?",
+    "lines": [
+      {
+        "speaker": "Mum",
+        "text": "Hello, Kofi! Where are you?"
+      },
+      {
+        "speaker": "Kofi",
+        "text": "Hi, Mum. I'm at the bus station."
+      },
+      {
+        "speaker": "Mum",
+        "text": "Is the bus late?"
+      },
+      {
+        "speaker": "Kofi",
+        "text": "Yes, it's very late. I'm hungry and tired."
+      },
+      {
+        "speaker": "Mum",
+        "text": "Oh no! What time is it now?"
+      },
+      {
+        "speaker": "Kofi",
+        "text": "It's half past six. The bus leaves at seven."
+      },
+      {
+        "speaker": "Mum",
+        "text": "OK. Call me from the bus. Dinner is at nine!"
+      }
+    ],
+    "questions": [
+      {
+        "id": "la1p-q1",
+        "type": "mcq",
+        "prompt": "Where is Kofi?",
+        "options": [
+          "At home",
+          "At the bus station",
+          "At school",
+          "On the bus"
+        ],
+        "answer": 1,
+        "explanation": "\"I'm at the bus station.\""
+      },
+      {
+        "id": "la1p-q2",
+        "type": "mcq",
+        "prompt": "What time is it?",
+        "options": [
+          "6:00",
+          "6:30",
+          "7:00",
+          "9:00"
+        ],
+        "answer": 1,
+        "explanation": "\"It's half past six.\""
+      },
+      {
+        "id": "la1p-q3",
+        "type": "truefalse",
+        "prompt": "The bus leaves at seven.",
+        "answer": true,
+        "explanation": "\"The bus leaves at seven.\""
+      },
+      {
+        "id": "la1p-q4",
+        "type": "mcq",
+        "prompt": "What time is dinner?",
+        "options": [
+          "7:00",
+          "8:00",
+          "9:00",
+          "6:30"
+        ],
+        "answer": 2,
+        "explanation": "\"Dinner is at nine!\""
+      }
+    ],
+    "vocab": [
+      {
+        "word": "bus station",
+        "def": "the place where buses arrive and leave"
+      },
+      {
+        "word": "late",
+        "def": "after the right time"
+      }
+    ]
+  },
+  {
+    "id": "l-a1-cafe",
+    "level": "A1",
+    "kind": "Everyday conversation",
+    "title": "Ordering a drink",
+    "lines": [
+      {
+        "speaker": "Waiter",
+        "text": "Good afternoon. What would you like?"
+      },
+      {
+        "speaker": "Ama",
+        "text": "Can I have an orange juice, please?"
+      },
+      {
+        "speaker": "Waiter",
+        "text": "Small or large?"
+      },
+      {
+        "speaker": "Ama",
+        "text": "Large, please. And a sandwich."
+      },
+      {
+        "speaker": "Waiter",
+        "text": "Chicken or cheese?"
+      },
+      {
+        "speaker": "Ama",
+        "text": "Cheese, please. How much is it?"
+      },
+      {
+        "speaker": "Waiter",
+        "text": "That's two thousand five hundred francs."
+      }
+    ],
+    "questions": [
+      {
+        "id": "la1c-q1",
+        "type": "mcq",
+        "prompt": "What drink does Ama order?",
+        "options": [
+          "Coffee",
+          "Water",
+          "Orange juice",
+          "Tea"
+        ],
+        "answer": 2,
+        "explanation": "\"an orange juice\"."
+      },
+      {
+        "id": "la1c-q2",
+        "type": "mcq",
+        "prompt": "What size?",
+        "options": [
+          "Small",
+          "Medium",
+          "Large",
+          "Not said"
+        ],
+        "answer": 2,
+        "explanation": "\"Large, please.\""
+      },
+      {
+        "id": "la1c-q3",
+        "type": "mcq",
+        "prompt": "What sandwich?",
+        "options": [
+          "Chicken",
+          "Cheese",
+          "Fish",
+          "Egg"
+        ],
+        "answer": 1,
+        "explanation": "\"Cheese, please.\""
+      },
+      {
+        "id": "la1c-q4",
+        "type": "mcq",
+        "prompt": "How much is it?",
+        "options": [
+          "1,500 francs",
+          "2,000 francs",
+          "2,500 francs",
+          "5,200 francs"
+        ],
+        "answer": 2,
+        "explanation": "\"two thousand five hundred francs\"."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "waiter",
+        "def": "a person who serves food in a restaurant"
+      },
+      {
+        "word": "would you like",
+        "def": "a polite way to ask what someone wants"
+      }
+    ]
+  },
+  {
+    "id": "l-a2-directions",
+    "level": "A2",
+    "kind": "Directions",
+    "title": "Finding the post office",
+    "lines": [
+      {
+        "speaker": "Tourist",
+        "text": "Excuse me, is there a post office near here?"
+      },
+      {
+        "speaker": "Woman",
+        "text": "Yes, there is. Go straight on for about two hundred metres."
+      },
+      {
+        "speaker": "Tourist",
+        "text": "Straight on, OK."
+      },
+      {
+        "speaker": "Woman",
+        "text": "Then turn left at the traffic lights. The post office is on the right, next to a big pharmacy."
+      },
+      {
+        "speaker": "Tourist",
+        "text": "Is it far?"
+      },
+      {
+        "speaker": "Woman",
+        "text": "No, it's about five minutes on foot. But it closes at four today, so hurry!"
+      },
+      {
+        "speaker": "Tourist",
+        "text": "Thank you so much!"
+      }
+    ],
+    "questions": [
+      {
+        "id": "la2d-q1",
+        "type": "mcq",
+        "prompt": "What is the tourist looking for?",
+        "options": [
+          "A pharmacy",
+          "A post office",
+          "A bank",
+          "A hotel"
+        ],
+        "answer": 1,
+        "explanation": "\"…a post office near here?\""
+      },
+      {
+        "id": "la2d-q2",
+        "type": "mcq",
+        "prompt": "Where should he turn left?",
+        "options": [
+          "At the pharmacy",
+          "At the traffic lights",
+          "At the bank",
+          "After 500 metres"
+        ],
+        "answer": 1,
+        "explanation": "\"turn left at the traffic lights\"."
+      },
+      {
+        "id": "la2d-q3",
+        "type": "mcq",
+        "prompt": "What is next to the post office?",
+        "options": [
+          "A bank",
+          "A school",
+          "A pharmacy",
+          "A market"
+        ],
+        "answer": 2,
+        "explanation": "\"next to a big pharmacy\"."
+      },
+      {
+        "id": "la2d-q4",
+        "type": "truefalse",
+        "prompt": "The post office is open until six today.",
+        "answer": false,
+        "explanation": "\"…it closes at four today.\""
+      }
+    ],
+    "vocab": [
+      {
+        "word": "straight on",
+        "def": "forward, without turning"
+      },
+      {
+        "word": "traffic lights",
+        "def": "red, yellow and green lights that control cars"
+      }
+    ]
+  },
+  {
+    "id": "l-a2-doctor",
+    "level": "A2",
+    "kind": "At the doctor's",
+    "title": "Feeling ill",
+    "lines": [
+      {
+        "speaker": "Doctor",
+        "text": "Good morning. What's the problem?"
+      },
+      {
+        "speaker": "Patient",
+        "text": "I've got a headache and a sore throat. I feel very tired."
+      },
+      {
+        "speaker": "Doctor",
+        "text": "How long have you felt like this?"
+      },
+      {
+        "speaker": "Patient",
+        "text": "Since Monday. So, three days."
+      },
+      {
+        "speaker": "Doctor",
+        "text": "Let me check your temperature… You've got a small fever. It's probably a cold."
+      },
+      {
+        "speaker": "Patient",
+        "text": "Do I need medicine?"
+      },
+      {
+        "speaker": "Doctor",
+        "text": "Take these tablets twice a day, drink a lot of water and rest. Come back if you don't feel better on Friday."
+      }
+    ],
+    "questions": [
+      {
+        "id": "la2dr-q1",
+        "type": "mcq",
+        "prompt": "Which symptom is NOT mentioned?",
+        "options": [
+          "Headache",
+          "Sore throat",
+          "Stomach ache",
+          "Tiredness"
+        ],
+        "answer": 2,
+        "explanation": "Stomach ache is not mentioned."
+      },
+      {
+        "id": "la2dr-q2",
+        "type": "mcq",
+        "prompt": "How long has the patient been ill?",
+        "options": [
+          "One day",
+          "Two days",
+          "Three days",
+          "A week"
+        ],
+        "answer": 2,
+        "explanation": "\"Since Monday. So, three days.\""
+      },
+      {
+        "id": "la2dr-q3",
+        "type": "mcq",
+        "prompt": "How often should the patient take the tablets?",
+        "options": [
+          "Once a day",
+          "Twice a day",
+          "Three times a day",
+          "Only at night"
+        ],
+        "answer": 1,
+        "explanation": "\"twice a day\"."
+      },
+      {
+        "id": "la2dr-q4",
+        "type": "truefalse",
+        "prompt": "The doctor says to come back on Friday if there is no improvement.",
+        "answer": true,
+        "explanation": "\"Come back if you don't feel better on Friday.\""
+      }
+    ],
+    "vocab": [
+      {
+        "word": "sore throat",
+        "def": "pain in your throat"
+      },
+      {
+        "word": "tablets",
+        "def": "small pieces of medicine"
+      }
+    ]
+  },
+  {
+    "id": "l-b1-podcast",
+    "level": "B1",
+    "kind": "Podcast",
+    "title": "Learning a language as an adult",
+    "lines": [
+      {
+        "speaker": "Host",
+        "text": "Today I'm talking to Grace, who learned Spanish at the age of forty. Grace, was it difficult?"
+      },
+      {
+        "speaker": "Grace",
+        "text": "At first, yes. I was worried that it was too late, but actually adults have some advantages: we're more organised and we know why we're learning."
+      },
+      {
+        "speaker": "Host",
+        "text": "What helped you most?"
+      },
+      {
+        "speaker": "Grace",
+        "text": "Speaking from the first week. I found a conversation partner online and we talked twice a week, even when I made lots of mistakes."
+      },
+      {
+        "speaker": "Host",
+        "text": "And how long did it take you to feel confident?"
+      },
+      {
+        "speaker": "Grace",
+        "text": "About eighteen months. The key was doing a little every day — fifteen or twenty minutes — rather than studying for hours once a week."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lb1p-q1",
+        "type": "mcq",
+        "prompt": "How old was Grace when she started Spanish?",
+        "options": [
+          "14",
+          "24",
+          "40",
+          "50"
+        ],
+        "answer": 2,
+        "explanation": "\"…at the age of forty.\""
+      },
+      {
+        "id": "lb1p-q2",
+        "type": "mcq",
+        "prompt": "Which advantage of adults does she mention?",
+        "options": [
+          "Better memory",
+          "Being organised and knowing why they learn",
+          "More free time",
+          "Better pronunciation"
+        ],
+        "answer": 1,
+        "explanation": "\"we're more organised and we know why we're learning\"."
+      },
+      {
+        "id": "lb1p-q3",
+        "type": "mcq",
+        "prompt": "What helped her most?",
+        "options": [
+          "Grammar books",
+          "Speaking from the first week",
+          "Watching films",
+          "A long course"
+        ],
+        "answer": 1,
+        "explanation": "\"Speaking from the first week.\""
+      },
+      {
+        "id": "lb1p-q4",
+        "type": "truefalse",
+        "prompt": "She recommends studying for hours once a week.",
+        "answer": false,
+        "explanation": "She recommends a little every day."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "conversation partner",
+        "def": "a person you practise speaking with"
+      },
+      {
+        "word": "confident",
+        "def": "sure of your abilities"
+      }
+    ]
+  },
+  {
+    "id": "l-b2-interview",
+    "level": "B2",
+    "kind": "Job interview",
+    "title": "Interview for an NGO",
+    "lines": [
+      {
+        "speaker": "Interviewer",
+        "text": "Thanks for coming in. Could you tell us why you're interested in this position?"
+      },
+      {
+        "speaker": "Candidate",
+        "text": "Certainly. I've been volunteering with health projects for three years, and I'd like to turn that experience into a long-term career in public health."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Can you describe a challenge you faced in one of those projects?"
+      },
+      {
+        "speaker": "Candidate",
+        "text": "Yes. During a vaccination campaign, attendance was very low in one village. I organised meetings with local leaders to understand their concerns, and within a month attendance had doubled."
+      },
+      {
+        "speaker": "Interviewer",
+        "text": "Impressive. How do you handle pressure?"
+      },
+      {
+        "speaker": "Candidate",
+        "text": "I break big tasks into smaller steps and prioritise. I also find that being honest with the team about deadlines prevents problems later."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lb2i-q1",
+        "type": "mcq",
+        "prompt": "How long has the candidate been volunteering?",
+        "options": [
+          "One year",
+          "Two years",
+          "Three years",
+          "Five years"
+        ],
+        "answer": 2,
+        "explanation": "\"…for three years\"."
+      },
+      {
+        "id": "lb2i-q2",
+        "type": "mcq",
+        "prompt": "What was the problem in the village?",
+        "options": [
+          "No vaccines",
+          "Low attendance",
+          "Bad roads",
+          "No leaders"
+        ],
+        "answer": 1,
+        "explanation": "\"…attendance was very low\"."
+      },
+      {
+        "id": "lb2i-q3",
+        "type": "mcq",
+        "prompt": "What was the result of the meetings?",
+        "options": [
+          "Attendance doubled",
+          "The campaign stopped",
+          "Leaders refused",
+          "Nothing changed"
+        ],
+        "answer": 0,
+        "explanation": "\"…attendance had doubled\"."
+      },
+      {
+        "id": "lb2i-q4",
+        "type": "truefalse",
+        "prompt": "The candidate prefers to hide problems from the team.",
+        "answer": false,
+        "explanation": "Being honest with the team prevents problems."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "attendance",
+        "def": "the number of people who come to an event"
+      },
+      {
+        "word": "prioritise",
+        "def": "to decide what is most important and do it first"
+      }
+    ]
+  },
+  {
+    "id": "l-b2-news",
+    "level": "B2",
+    "kind": "Radio news",
+    "title": "City plans new bus lanes",
+    "lines": [
+      {
+        "speaker": "Presenter",
+        "text": "The city council has announced plans to create dedicated bus lanes on three of the capital's busiest roads, in an attempt to reduce traffic jams."
+      },
+      {
+        "speaker": "Reporter",
+        "text": "The project, which is expected to cost around twelve billion francs, will be partly funded by an international development bank. Work is due to begin in March and should take eighteen months."
+      },
+      {
+        "speaker": "Presenter",
+        "text": "How have residents reacted?"
+      },
+      {
+        "speaker": "Reporter",
+        "text": "Opinions are divided. Commuters I spoke to welcomed faster journeys, but several shop owners are worried that losing parking spaces will reduce their customers."
+      },
+      {
+        "speaker": "Presenter",
+        "text": "And what does the council say?"
+      },
+      {
+        "speaker": "Reporter",
+        "text": "It insists that studies from other cities show shops actually benefit, as more people pass by on foot."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lb2n-q1",
+        "type": "mcq",
+        "prompt": "What is the aim of the bus lanes?",
+        "options": [
+          "To raise money",
+          "To reduce traffic jams",
+          "To help tourists",
+          "To close shops"
+        ],
+        "answer": 1,
+        "explanation": "\"…in an attempt to reduce traffic jams\"."
+      },
+      {
+        "id": "lb2n-q2",
+        "type": "mcq",
+        "prompt": "How long will the work take?",
+        "options": [
+          "Three months",
+          "Twelve months",
+          "Eighteen months",
+          "Two years"
+        ],
+        "answer": 2,
+        "explanation": "\"…should take eighteen months\"."
+      },
+      {
+        "id": "lb2n-q3",
+        "type": "mcq",
+        "prompt": "Why are some shop owners worried?",
+        "options": [
+          "Higher taxes",
+          "Losing parking spaces",
+          "More noise",
+          "Fewer buses"
+        ],
+        "answer": 1,
+        "explanation": "\"…losing parking spaces will reduce their customers\"."
+      },
+      {
+        "id": "lb2n-q4",
+        "type": "truefalse",
+        "prompt": "The council believes shops will benefit.",
+        "answer": true,
+        "explanation": "\"…shops actually benefit\"."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "dedicated",
+        "def": "used for only one purpose"
+      },
+      {
+        "word": "funded",
+        "def": "paid for"
+      }
+    ]
+  },
+  {
+    "id": "l-b2-lecture",
+    "level": "B2",
+    "kind": "Lecture",
+    "title": "How memory works",
+    "lines": [
+      {
+        "speaker": "Lecturer",
+        "text": "Good morning. Today we'll look at why we forget, and what that means for studying."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "In the 1880s, the psychologist Hermann Ebbinghaus showed that we forget most new information within a day unless we review it. This is known as the forgetting curve."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "However, each time we review something, the curve becomes flatter: we forget more slowly. That's the principle behind spaced repetition — reviewing at increasing intervals, say after one day, then three, then a week."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "A second technique is retrieval practice. Testing yourself, rather than simply rereading notes, forces the brain to reconstruct information, which strengthens the memory."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "So, for your next exam: little and often, and test yourself."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lb2l-q1",
+        "type": "mcq",
+        "prompt": "What did Ebbinghaus show?",
+        "options": [
+          "We never forget",
+          "We forget most new information within a day without review",
+          "Sleep is not important",
+          "Rereading is best"
+        ],
+        "answer": 1,
+        "explanation": "The forgetting curve."
+      },
+      {
+        "id": "lb2l-q2",
+        "type": "mcq",
+        "prompt": "What is spaced repetition?",
+        "options": [
+          "Studying all night",
+          "Reviewing at increasing intervals",
+          "Reading faster",
+          "Studying in groups"
+        ],
+        "answer": 1,
+        "explanation": "\"…reviewing at increasing intervals\"."
+      },
+      {
+        "id": "lb2l-q3",
+        "type": "truefalse",
+        "prompt": "The lecturer says rereading notes is better than testing yourself.",
+        "answer": false,
+        "explanation": "Testing yourself (retrieval practice) is more effective."
+      },
+      {
+        "id": "lb2l-q4",
+        "type": "mcq",
+        "prompt": "What is the lecturer's final advice?",
+        "options": [
+          "Study the night before",
+          "Little and often, and test yourself",
+          "Only reread",
+          "Avoid reviews"
+        ],
+        "answer": 1,
+        "explanation": "\"little and often, and test yourself\"."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "forgetting curve",
+        "def": "a graph showing how quickly we forget"
+      },
+      {
+        "word": "retrieval practice",
+        "def": "learning by recalling information, e.g. self-testing"
+      }
+    ]
+  },
+  {
+    "id": "l-c1-debate",
+    "level": "C1",
+    "kind": "Panel debate",
+    "title": "Should university be free?",
+    "lines": [
+      {
+        "speaker": "Chair",
+        "text": "Our motion tonight: university education should be free for all. Dr Adjei, you're in favour."
+      },
+      {
+        "speaker": "Adjei",
+        "text": "Indeed. Higher education yields benefits far beyond the individual — a healthier, more productive and more engaged citizenry. It seems perverse to price out talented students on the basis of their parents' income."
+      },
+      {
+        "speaker": "Chair",
+        "text": "Ms Laurent, you oppose the motion."
+      },
+      {
+        "speaker": "Laurent",
+        "text": "I don't dispute the benefits, but 'free' is a misnomer: someone pays, namely the taxpayer, including those who never attend university. Evidence from several countries suggests that free tuition disproportionately benefits the middle class."
+      },
+      {
+        "speaker": "Adjei",
+        "text": "That's an argument for targeted grants alongside free tuition, not against free tuition itself."
+      },
+      {
+        "speaker": "Laurent",
+        "text": "Perhaps, but with finite budgets, I'd rather see money invested in primary schools, where the returns are arguably greater."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lc1d-q1",
+        "type": "mcq",
+        "prompt": "What is Dr Adjei's main argument?",
+        "options": [
+          "University is too easy",
+          "Higher education benefits society, so cost shouldn't exclude talent",
+          "Taxes should rise",
+          "Only the rich should study"
+        ],
+        "answer": 1,
+        "explanation": "Benefits beyond the individual; pricing out talent is wrong."
+      },
+      {
+        "id": "lc1d-q2",
+        "type": "mcq",
+        "prompt": "Why does Ms Laurent call 'free' a misnomer?",
+        "options": [
+          "Because it's illegal",
+          "Because taxpayers still pay",
+          "Because fees are high",
+          "Because students pay later"
+        ],
+        "answer": 1,
+        "explanation": "\"someone pays, namely the taxpayer\"."
+      },
+      {
+        "id": "lc1d-q3",
+        "type": "truefalse",
+        "prompt": "Ms Laurent claims free tuition mainly helps the middle class.",
+        "answer": true,
+        "explanation": "\"…disproportionately benefits the middle class.\""
+      },
+      {
+        "id": "lc1d-q4",
+        "type": "mcq",
+        "prompt": "Where would Ms Laurent prefer to invest?",
+        "options": [
+          "Universities",
+          "Primary schools",
+          "Scholarships abroad",
+          "Sports"
+        ],
+        "answer": 1,
+        "explanation": "\"…invested in primary schools\"."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "motion",
+        "def": "the statement discussed in a formal debate"
+      },
+      {
+        "word": "misnomer",
+        "def": "a name or word that is wrong or misleading"
+      }
+    ]
+  },
+  {
+    "id": "l-c1-interview",
+    "level": "C1",
+    "kind": "Radio interview",
+    "title": "The science of procrastination",
+    "lines": [
+      {
+        "speaker": "Host",
+        "text": "Why do we put things off, even when we know it's bad for us?"
+      },
+      {
+        "speaker": "Researcher",
+        "text": "Contrary to popular belief, procrastination isn't primarily a time-management problem. It's an emotion-regulation problem. We delay tasks that make us feel anxious, bored or inadequate, because avoiding them gives us immediate relief."
+      },
+      {
+        "speaker": "Host",
+        "text": "So better planners won't fix it?"
+      },
+      {
+        "speaker": "Researcher",
+        "text": "Planning helps, but only up to a point. What's far more effective is reducing the emotional cost of starting: break the task into a tiny first step — 'open the document', 'write one sentence' — and be compassionate towards yourself when you slip."
+      },
+      {
+        "speaker": "Host",
+        "text": "Self-compassion sounds rather soft."
+      },
+      {
+        "speaker": "Researcher",
+        "text": "It does, but studies show that students who forgave themselves for procrastinating on one exam procrastinated less on the next. Self-criticism, by contrast, tends to feed the cycle."
+      }
+    ],
+    "questions": [
+      {
+        "id": "lc1i-q1",
+        "type": "mcq",
+        "prompt": "According to the researcher, procrastination is mainly…",
+        "options": [
+          "a time-management problem",
+          "an emotion-regulation problem",
+          "laziness",
+          "a lack of intelligence"
+        ],
+        "answer": 1,
+        "explanation": "\"It's an emotion-regulation problem.\""
+      },
+      {
+        "id": "lc1i-q2",
+        "type": "mcq",
+        "prompt": "What does she recommend?",
+        "options": [
+          "Longer study sessions",
+          "A tiny first step and self-compassion",
+          "Strict punishment",
+          "Working only at night"
+        ],
+        "answer": 1,
+        "explanation": "Tiny first step + compassion."
+      },
+      {
+        "id": "lc1i-q3",
+        "type": "truefalse",
+        "prompt": "Students who forgave themselves procrastinated less next time.",
+        "answer": true,
+        "explanation": "Studies cited at the end."
+      },
+      {
+        "id": "lc1i-q4",
+        "type": "mcq",
+        "prompt": "What effect does self-criticism tend to have?",
+        "options": [
+          "It stops procrastination",
+          "It feeds the cycle",
+          "It has no effect",
+          "It improves planning"
+        ],
+        "answer": 1,
+        "explanation": "\"Self-criticism … tends to feed the cycle.\""
+      }
+    ],
+    "vocab": [
+      {
+        "word": "put off",
+        "def": "to delay doing something"
+      },
+      {
+        "word": "self-compassion",
+        "def": "being kind to yourself when you fail"
+      }
+    ]
   }
 ]

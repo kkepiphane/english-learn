@@ -2170,5 +2170,617 @@
         "why": "Polite, formal request."
       }
     ]
+  },
+  {
+    "id": "c1-g-conditional-alts",
+    "unitId": "c1-u7",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Beyond if: provided, unless, otherwise",
+    "minutes": 14,
+    "objective": "Express conditions with precision using alternatives to if.",
+    "sections": [
+      {
+        "heading": "Conditional conjunctions",
+        "en": "provided / providing (that) · as long as · on condition that · unless (= if not) · in case (precaution) · supposing · otherwise.",
+        "fr": "« au cas où » = in case — ce n'est PAS une condition : « Take an umbrella in case it rains ».",
+        "examples": [
+          "You can borrow it provided you return it by Friday.",
+          "Unless we act now, it will be too late.",
+          "Take some cash in case the card machine isn't working.",
+          "Hurry, otherwise we'll miss the train."
+        ]
+      },
+      {
+        "heading": "Register",
+        "en": "provided / on condition that are formal; as long as is neutral; otherwise often starts a new clause.",
+        "examples": [
+          "The grant will be renewed on condition that progress reports are submitted."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1ca-v1",
+        "word": "provided",
+        "ipa": "/prəˈvaɪdɪd/",
+        "pos": "conjunction",
+        "definition": "only if",
+        "fr": "à condition que",
+        "example": "Provided it doesn't rain, we'll go.",
+        "context": "Conditions"
+      },
+      {
+        "id": "c1ca-v2",
+        "word": "in case",
+        "ipa": "/ɪn keɪs/",
+        "pos": "conjunction",
+        "definition": "as a precaution because something might happen",
+        "fr": "au cas où",
+        "example": "Save a copy in case the file is lost.",
+        "context": "Precaution"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1ca-p1",
+        "type": "mcq",
+        "prompt": "I'll help you ___ you tell me the truth.",
+        "options": [
+          "unless",
+          "provided",
+          "in case"
+        ],
+        "answer": 1,
+        "explanation": "Only if → provided."
+      },
+      {
+        "id": "c1ca-p2",
+        "type": "mcq",
+        "prompt": "Take a jacket ___ it gets cold.",
+        "options": [
+          "unless",
+          "in case",
+          "provided"
+        ],
+        "answer": 1,
+        "explanation": "Precaution → in case."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1ca-q1",
+        "type": "mcq",
+        "prompt": "___ you study, you won't pass. (= if you don't)",
+        "options": [
+          "Unless",
+          "Provided",
+          "In case",
+          "As long as"
+        ],
+        "answer": 0,
+        "explanation": "unless = if not."
+      },
+      {
+        "id": "c1ca-q2",
+        "type": "mcq",
+        "prompt": "Leave now, ___ you'll be late.",
+        "options": [
+          "unless",
+          "otherwise",
+          "provided",
+          "in case"
+        ],
+        "answer": 1,
+        "explanation": "otherwise = if not, then…"
+      },
+      {
+        "id": "c1ca-q3",
+        "type": "gap",
+        "prompt": "You can stay as ___ as you're quiet.",
+        "accepted": [
+          "long"
+        ],
+        "explanation": "as long as = on condition that."
+      },
+      {
+        "id": "c1ca-q4",
+        "type": "truefalse",
+        "prompt": "\"in case\" means the same as \"if\".",
+        "answer": false,
+        "explanation": "in case = as a precaution."
+      },
+      {
+        "id": "c1ca-q5",
+        "type": "mcq",
+        "prompt": "The loan is granted on ___ that it is repaid in a year.",
+        "options": [
+          "condition",
+          "case",
+          "provided",
+          "unless"
+        ],
+        "answer": 0,
+        "explanation": "on condition that."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Unless you don't hurry, …",
+        "right": "Unless you hurry, …",
+        "why": "unless already means if not."
+      },
+      {
+        "wrong": "I'll take an umbrella if it rains. (precaution)",
+        "right": "I'll take an umbrella in case it rains.",
+        "why": "Precaution → in case."
+      }
+    ]
+  },
+  {
+    "id": "c1-v-critical",
+    "unitId": "c1-u7",
+    "level": "C1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Critical thinking vocabulary",
+    "minutes": 14,
+    "objective": "Analyse arguments: assumptions, evidence, bias and fallacies.",
+    "sections": [
+      {
+        "heading": "Analysing an argument",
+        "en": "claim · premise · assumption · evidence · counter-example · validity · bias · flawed reasoning.",
+        "examples": [
+          "The argument rests on the assumption that all students have internet access.",
+          "This counter-example undermines the claim."
+        ]
+      },
+      {
+        "heading": "Common fallacies",
+        "en": "generalisation (all X are…) · false dilemma (only two options) · correlation vs causation · appeal to authority.",
+        "fr": "Repérer ces erreurs est essentiel pour les essais C1 et les débats.",
+        "examples": [
+          "Just because ice-cream sales and drownings rise together doesn't mean one causes the other.",
+          "Presenting only two options when others exist is a false dilemma."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1cr-v1",
+        "word": "assumption",
+        "ipa": "/əˈsʌmpʃn/",
+        "pos": "noun",
+        "definition": "something accepted as true without proof",
+        "fr": "présupposé, hypothèse",
+        "example": "That's a dangerous assumption.",
+        "context": "Reasoning"
+      },
+      {
+        "id": "c1cr-v2",
+        "word": "undermine",
+        "ipa": "/ˌʌndəˈmaɪn/",
+        "pos": "verb",
+        "definition": "to make something weaker",
+        "fr": "affaiblir, saper",
+        "example": "The new data undermine the theory.",
+        "context": "Arguments"
+      },
+      {
+        "id": "c1cr-v3",
+        "word": "flawed",
+        "ipa": "/flɔːd/",
+        "pos": "adjective",
+        "definition": "having mistakes or weaknesses",
+        "fr": "défectueux, erroné",
+        "example": "The study's method was flawed.",
+        "context": "Evaluation"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1cr-p1",
+        "type": "mcq",
+        "prompt": "Something believed without proof:",
+        "options": [
+          "evidence",
+          "assumption",
+          "conclusion"
+        ],
+        "answer": 1,
+        "explanation": "assumption."
+      },
+      {
+        "id": "c1cr-p2",
+        "type": "mcq",
+        "prompt": "\"Either we ban cars or the city dies\" is a…",
+        "options": [
+          "false dilemma",
+          "counter-example",
+          "valid premise"
+        ],
+        "answer": 0,
+        "explanation": "Only two options presented → false dilemma."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1cr-q1",
+        "type": "mcq",
+        "prompt": "Two things happen together, so one must cause the other. This confuses…",
+        "options": [
+          "bias and fact",
+          "correlation and causation",
+          "claim and premise",
+          "theory and data"
+        ],
+        "answer": 1,
+        "explanation": "correlation ≠ causation."
+      },
+      {
+        "id": "c1cr-q2",
+        "type": "gap",
+        "prompt": "These results seriously ___ his argument. (make weaker)",
+        "accepted": [
+          "undermine"
+        ],
+        "explanation": "undermine = weaken."
+      },
+      {
+        "id": "c1cr-q3",
+        "type": "truefalse",
+        "prompt": "A single counter-example can challenge a general claim.",
+        "answer": true,
+        "explanation": "One exception disproves 'all X are Y'."
+      },
+      {
+        "id": "c1cr-q4",
+        "type": "mcq",
+        "prompt": "A method with serious weaknesses is…",
+        "options": [
+          "flawed",
+          "valid",
+          "robust",
+          "biased"
+        ],
+        "answer": 0,
+        "explanation": "Flawed = containing mistakes or weaknesses."
+      },
+      {
+        "id": "c1cr-q5",
+        "type": "mcq",
+        "prompt": "\"All young people are lazy\" is a…",
+        "options": [
+          "sweeping generalisation",
+          "hypothesis",
+          "statistic",
+          "premise"
+        ],
+        "answer": 0,
+        "explanation": "Over-generalisation."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "This proves that…",
+        "right": "This suggests that…",
+        "why": "Avoid overclaiming."
+      },
+      {
+        "wrong": "an evidence",
+        "right": "a piece of evidence",
+        "why": "Uncountable."
+      }
+    ]
+  },
+  {
+    "id": "c1-g-fronting",
+    "unitId": "c1-u8",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Fronting and sentence adverbials",
+    "minutes": 14,
+    "objective": "Change word order and use sentence adverbials for emphasis and cohesion.",
+    "sections": [
+      {
+        "heading": "Fronting",
+        "en": "Move a phrase to the start for emphasis or contrast. Common in writing and storytelling.",
+        "fr": "Effet stylistique : à utiliser avec parcimonie.",
+        "examples": [
+          "Strange though it may seem, I enjoy exams.",
+          "Much as I admire her, I disagree.",
+          "Into the room walked the director.",
+          "What she said, I'll never forget."
+        ]
+      },
+      {
+        "heading": "Sentence adverbials",
+        "en": "Comment on the whole sentence: Admittedly · Undeniably · Ironically · Presumably · Understandably · Needless to say.",
+        "examples": [
+          "Admittedly, the plan has weaknesses.",
+          "Ironically, the safety campaign caused an accident.",
+          "Needless to say, we missed the train."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1fr-v1",
+        "word": "admittedly",
+        "ipa": "/ədˈmɪtɪdli/",
+        "pos": "adverb",
+        "definition": "used to accept a point against your view",
+        "fr": "certes, il faut l'admettre",
+        "example": "Admittedly, it's expensive.",
+        "context": "Argument"
+      },
+      {
+        "id": "c1fr-v2",
+        "word": "presumably",
+        "ipa": "/prɪˈzjuːməbli/",
+        "pos": "adverb",
+        "definition": "probably, based on what you know",
+        "fr": "vraisemblablement",
+        "example": "Presumably, he missed the bus.",
+        "context": "Deduction"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1fr-p1",
+        "type": "mcq",
+        "prompt": "___ as I like him, I can't support his plan.",
+        "options": [
+          "Much",
+          "Although",
+          "Despite"
+        ],
+        "answer": 0,
+        "explanation": "Much as = although (fronted)."
+      },
+      {
+        "id": "c1fr-p2",
+        "type": "mcq",
+        "prompt": "___, the plan has some flaws. (accepting a point)",
+        "options": [
+          "Admittedly",
+          "Presumably",
+          "Needlessly"
+        ],
+        "answer": 0,
+        "explanation": "Admittedly concedes a point."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1fr-q1",
+        "type": "mcq",
+        "prompt": "Strange ___ it may seem, I prefer winter.",
+        "options": [
+          "though",
+          "although",
+          "despite",
+          "even"
+        ],
+        "answer": 0,
+        "explanation": "adjective + though it may seem."
+      },
+      {
+        "id": "c1fr-q2",
+        "type": "mcq",
+        "prompt": "___, the anti-smoking ad featured a smoker. (surprising contrast)",
+        "options": [
+          "Ironically",
+          "Admittedly",
+          "Presumably",
+          "Understandably"
+        ],
+        "answer": 0,
+        "explanation": "Ironically."
+      },
+      {
+        "id": "c1fr-q3",
+        "type": "gap",
+        "prompt": "___ to say, we were exhausted. (obviously)",
+        "accepted": [
+          "needless"
+        ],
+        "explanation": "Needless to say."
+      },
+      {
+        "id": "c1fr-q4",
+        "type": "truefalse",
+        "prompt": "\"Presumably\" means you are completely certain.",
+        "answer": false,
+        "explanation": "It means probably, based on assumptions."
+      },
+      {
+        "id": "c1fr-q5",
+        "type": "mcq",
+        "prompt": "___, she was upset after losing her job. (it's easy to understand)",
+        "options": [
+          "Understandably",
+          "Ironically",
+          "Allegedly",
+          "Conversely"
+        ],
+        "answer": 0,
+        "explanation": "Understandably."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Strange as though it seems",
+        "right": "Strange though it seems / Strange as it seems",
+        "why": "Use as or though, not both."
+      },
+      {
+        "wrong": "Needless to say that…",
+        "right": "Needless to say, …",
+        "why": "No that."
+      }
+    ]
+  },
+  {
+    "id": "c1-v-negotiation",
+    "unitId": "c1-u8",
+    "level": "C1",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Negotiation language",
+    "minutes": 14,
+    "objective": "Negotiate a salary, a deal or a group decision with diplomacy.",
+    "sections": [
+      {
+        "heading": "Making and responding to offers",
+        "en": "We'd be prepared to… · Would you consider…? · That's a step in the right direction. · I'm afraid that's not quite what we had in mind.",
+        "examples": [
+          "Would you consider a six-month trial period?",
+          "We'd be prepared to lower the price if you ordered in bulk."
+        ]
+      },
+      {
+        "heading": "Reaching agreement",
+        "en": "meet halfway · a win-win solution · a deal-breaker · put something on the table · reach a compromise.",
+        "fr": "En négociation, on conditionne : « If you…, we could… ».",
+        "examples": [
+          "Could we meet halfway on the delivery date?",
+          "Flexible hours are a deal-breaker for me."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1ng-v1",
+        "word": "compromise",
+        "ipa": "/ˈkɒmprəmaɪz/",
+        "pos": "noun / verb",
+        "definition": "an agreement where each side gives something",
+        "fr": "compromis",
+        "example": "We reached a compromise.",
+        "context": "Negotiation"
+      },
+      {
+        "id": "c1ng-v2",
+        "word": "deal-breaker",
+        "ipa": "/ˈdiːl breɪkə/",
+        "pos": "noun",
+        "definition": "a point that would make you reject an agreement",
+        "fr": "point non négociable",
+        "example": "Salary is not a deal-breaker for me.",
+        "context": "Negotiation"
+      },
+      {
+        "id": "c1ng-v3",
+        "word": "meet halfway",
+        "ipa": "/miːt ˌhɑːfˈweɪ/",
+        "pos": "idiom",
+        "definition": "to compromise equally",
+        "fr": "couper la poire en deux",
+        "example": "Let's meet halfway.",
+        "context": "Negotiation"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1ng-p1",
+        "type": "mcq",
+        "prompt": "Each side gives something:",
+        "options": [
+          "a compromise",
+          "a deal-breaker",
+          "an ultimatum"
+        ],
+        "answer": 0,
+        "explanation": "compromise."
+      },
+      {
+        "id": "c1ng-p2",
+        "type": "mcq",
+        "prompt": "Most diplomatic refusal:",
+        "options": [
+          "No way.",
+          "I'm afraid that's not quite what we had in mind.",
+          "Forget it."
+        ],
+        "answer": 1,
+        "explanation": "Softened refusal."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1ng-q1",
+        "type": "mcq",
+        "prompt": "A condition that would end the negotiation:",
+        "options": [
+          "a win-win",
+          "a deal-breaker",
+          "a step forward",
+          "a trial"
+        ],
+        "answer": 1,
+        "explanation": "deal-breaker."
+      },
+      {
+        "id": "c1ng-q2",
+        "type": "gap",
+        "prompt": "Let's meet ___ — you pay half and we pay half.",
+        "accepted": [
+          "halfway"
+        ],
+        "explanation": "meet halfway."
+      },
+      {
+        "id": "c1ng-q3",
+        "type": "truefalse",
+        "prompt": "\"Would you consider…?\" is a polite way to make a proposal.",
+        "answer": true,
+        "explanation": "Tentative, polite proposal."
+      },
+      {
+        "id": "c1ng-q4",
+        "type": "mcq",
+        "prompt": "A solution good for both sides:",
+        "options": [
+          "win-win",
+          "lose-lose",
+          "deal-breaker",
+          "stalemate"
+        ],
+        "answer": 0,
+        "explanation": "Win-win = a result that benefits both sides."
+      },
+      {
+        "id": "c1ng-q5",
+        "type": "mcq",
+        "prompt": "\"We'd be prepared to…\" introduces…",
+        "options": [
+          "a threat",
+          "a conditional offer",
+          "a refusal",
+          "a question"
+        ],
+        "answer": 1,
+        "explanation": "A conditional offer."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "We will accept if you will lower the price.",
+        "right": "We'd accept if you lowered the price.",
+        "why": "Conditional offer: would + past."
+      },
+      {
+        "wrong": "make a compromission",
+        "right": "make / reach a compromise",
+        "why": "False friend."
+      }
+    ]
   }
 ]

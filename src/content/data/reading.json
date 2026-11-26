@@ -666,5 +666,752 @@
         "explanation": "The effort through which durable learning occurs."
       }
     ]
+  },
+  {
+    "id": "r-a1-family",
+    "level": "A1",
+    "topic": "People",
+    "title": "My family",
+    "minutes": 3,
+    "paragraphs": [
+      "Hello! My name is Esi. I am 16 and I live in Ho, in Ghana. I've got a big family.",
+      "My father is a taxi driver and my mother has got a small shop. I've got two brothers, Yaw and Kwame. Yaw is 20 and he is a student. Kwame is 12. He loves football.",
+      "My grandmother lives with us. She is 75 and she cooks very well. On Sundays, we eat together and we talk a lot. I love my family!"
+    ],
+    "glossary": {
+      "taxi driver": {
+        "def": "a person who drives a taxi",
+        "fr": "chauffeur de taxi",
+        "ipa": "/ˈtæksi ˌdraɪvə/"
+      },
+      "shop": {
+        "def": "a place where you buy things",
+        "fr": "boutique",
+        "ipa": "/ʃɒp/"
+      },
+      "together": {
+        "def": "with each other",
+        "fr": "ensemble",
+        "ipa": "/təˈɡeðə/"
+      }
+    },
+    "summary": "Esi lives in Ho with her parents, two brothers and her grandmother; they eat together on Sundays.",
+    "questions": [
+      {
+        "id": "ra1f-q1",
+        "type": "mcq",
+        "prompt": "How old is Esi?",
+        "options": [
+          "12",
+          "16",
+          "20",
+          "75"
+        ],
+        "answer": 1,
+        "explanation": "\"I am 16.\""
+      },
+      {
+        "id": "ra1f-q2",
+        "type": "mcq",
+        "prompt": "What is her father's job?",
+        "options": [
+          "shop owner",
+          "student",
+          "taxi driver",
+          "cook"
+        ],
+        "answer": 2,
+        "explanation": "\"My father is a taxi driver.\""
+      },
+      {
+        "id": "ra1f-q3",
+        "type": "truefalse",
+        "prompt": "Kwame loves football.",
+        "answer": true,
+        "explanation": "\"Kwame is 12. He loves football.\""
+      },
+      {
+        "id": "ra1f-q4",
+        "type": "mcq",
+        "prompt": "Who cooks very well?",
+        "options": [
+          "Her mother",
+          "Her grandmother",
+          "Yaw",
+          "Esi"
+        ],
+        "answer": 1,
+        "explanation": "\"She cooks very well\" — the grandmother."
+      }
+    ]
+  },
+  {
+    "id": "r-a1-market",
+    "level": "A1",
+    "topic": "Daily life",
+    "title": "At the market",
+    "minutes": 3,
+    "paragraphs": [
+      "It is Saturday morning. Afi goes to the market with her mother. The market is big and there are a lot of people.",
+      "They buy tomatoes, onions, rice and fish. The tomatoes are cheap today, but the fish is expensive. Afi's mother asks: \"How much is this fish?\" The woman says: \"Three thousand francs.\"",
+      "After the market, they go home by moto. Afi is tired but happy. In the afternoon, she helps her mother cook."
+    ],
+    "glossary": {
+      "onions": {
+        "def": "round vegetables with a strong taste",
+        "fr": "oignons",
+        "ipa": "/ˈʌnjənz/"
+      },
+      "cheap": {
+        "def": "not expensive",
+        "fr": "pas cher",
+        "ipa": "/tʃiːp/"
+      },
+      "tired": {
+        "def": "needing rest",
+        "fr": "fatigué",
+        "ipa": "/ˈtaɪəd/"
+      }
+    },
+    "summary": "Afi and her mother buy food at a busy Saturday market, go home by moto and cook together.",
+    "questions": [
+      {
+        "id": "ra1m-q1",
+        "type": "mcq",
+        "prompt": "When do they go to the market?",
+        "options": [
+          "Sunday morning",
+          "Saturday morning",
+          "Saturday evening",
+          "Monday"
+        ],
+        "answer": 1,
+        "explanation": "\"It is Saturday morning.\""
+      },
+      {
+        "id": "ra1m-q2",
+        "type": "truefalse",
+        "prompt": "The fish is cheap today.",
+        "answer": false,
+        "explanation": "The tomatoes are cheap; the fish is expensive."
+      },
+      {
+        "id": "ra1m-q3",
+        "type": "mcq",
+        "prompt": "How much is the fish?",
+        "options": [
+          "300 francs",
+          "1,000 francs",
+          "3,000 francs",
+          "30,000 francs"
+        ],
+        "answer": 2,
+        "explanation": "\"Three thousand francs.\""
+      },
+      {
+        "id": "ra1m-q4",
+        "type": "mcq",
+        "prompt": "How do they go home?",
+        "options": [
+          "by bus",
+          "by moto",
+          "on foot",
+          "by taxi"
+        ],
+        "answer": 1,
+        "explanation": "\"They go home by moto.\""
+      }
+    ]
+  },
+  {
+    "id": "r-a2-holiday",
+    "level": "A2",
+    "topic": "Travel",
+    "title": "A weekend in Kpalimé",
+    "minutes": 5,
+    "paragraphs": [
+      "Last month, Kodjo and his friends went to Kpalimé for the weekend. They left Lomé early on Saturday morning and arrived two hours later.",
+      "In the afternoon, they climbed Mount Agou, the highest mountain in Togo. It was hot and the path was difficult, but the view from the top was amazing. They could see villages, forests and even Lake Volta in the distance.",
+      "In the evening, they stayed in a small guesthouse. The owner cooked a delicious dinner of fufu and peanut soup. On Sunday, they visited a waterfall and bought some coffee from a local farmer before they went home. Kodjo wants to go back next year."
+    ],
+    "glossary": {
+      "climbed": {
+        "def": "went up something high",
+        "fr": "ont gravi",
+        "ipa": "/klaɪmd/"
+      },
+      "view": {
+        "def": "what you can see from a place",
+        "fr": "vue",
+        "ipa": "/vjuː/"
+      },
+      "guesthouse": {
+        "def": "a small, simple hotel",
+        "fr": "maison d'hôtes",
+        "ipa": "/ˈɡesthaʊs/"
+      },
+      "waterfall": {
+        "def": "water falling from a high place",
+        "fr": "chute d'eau",
+        "ipa": "/ˈwɔːtəfɔːl/"
+      }
+    },
+    "summary": "Kodjo and his friends spent a weekend in Kpalimé: they climbed Mount Agou, ate local food and visited a waterfall.",
+    "questions": [
+      {
+        "id": "ra2h-q1",
+        "type": "mcq",
+        "prompt": "How long was the journey to Kpalimé?",
+        "options": [
+          "One hour",
+          "Two hours",
+          "Half a day",
+          "A weekend"
+        ],
+        "answer": 1,
+        "explanation": "\"…arrived two hours later.\""
+      },
+      {
+        "id": "ra2h-q2",
+        "type": "mcq",
+        "prompt": "What did they do on Saturday afternoon?",
+        "options": [
+          "Visited a waterfall",
+          "Climbed Mount Agou",
+          "Bought coffee",
+          "Went home"
+        ],
+        "answer": 1,
+        "explanation": "\"In the afternoon, they climbed Mount Agou.\""
+      },
+      {
+        "id": "ra2h-q3",
+        "type": "truefalse",
+        "prompt": "The climb was easy.",
+        "answer": false,
+        "explanation": "\"The path was difficult.\""
+      },
+      {
+        "id": "ra2h-q4",
+        "type": "mcq",
+        "prompt": "What did they buy on Sunday?",
+        "options": [
+          "Fufu",
+          "Coffee",
+          "Peanuts",
+          "Souvenirs"
+        ],
+        "answer": 1,
+        "explanation": "\"…bought some coffee from a local farmer.\""
+      }
+    ]
+  },
+  {
+    "id": "r-a2-phone",
+    "level": "A2",
+    "topic": "Technology",
+    "title": "Life without a phone",
+    "minutes": 5,
+    "paragraphs": [
+      "Ama is 22 and, like most young people, she uses her phone all the time. Last week, her teacher gave the class a challenge: no phone for three days.",
+      "The first day was very hard. Ama didn't know the time, she couldn't check the news and she missed her friends' messages. She felt bored and a little nervous.",
+      "But on the second day, things got better. She read a book, went for a walk and talked to her neighbours. On the third day, she slept better and had more time to study. \"I'm not going to stop using my phone,\" she says, \"but now I switch it off every evening at nine.\""
+    ],
+    "glossary": {
+      "challenge": {
+        "def": "something difficult that tests your ability",
+        "fr": "défi",
+        "ipa": "/ˈtʃælɪndʒ/"
+      },
+      "bored": {
+        "def": "not interested, with nothing to do",
+        "fr": "qui s'ennuie",
+        "ipa": "/bɔːd/"
+      },
+      "switch off": {
+        "def": "to stop a machine working",
+        "fr": "éteindre",
+        "ipa": "/swɪtʃ ɒf/"
+      }
+    },
+    "summary": "Ama tried three days without her phone: the first day was hard, but then she read, walked, slept better and now switches it off every evening.",
+    "questions": [
+      {
+        "id": "ra2p-q1",
+        "type": "mcq",
+        "prompt": "How long was the challenge?",
+        "options": [
+          "One day",
+          "Three days",
+          "A week",
+          "A month"
+        ],
+        "answer": 1,
+        "explanation": "\"…no phone for three days.\""
+      },
+      {
+        "id": "ra2p-q2",
+        "type": "mcq",
+        "prompt": "How did Ama feel on the first day?",
+        "options": [
+          "Happy",
+          "Bored and nervous",
+          "Relaxed",
+          "Excited"
+        ],
+        "answer": 1,
+        "explanation": "\"She felt bored and a little nervous.\""
+      },
+      {
+        "id": "ra2p-q3",
+        "type": "truefalse",
+        "prompt": "Ama slept better on the third day.",
+        "answer": true,
+        "explanation": "\"On the third day, she slept better.\""
+      },
+      {
+        "id": "ra2p-q4",
+        "type": "mcq",
+        "prompt": "What does Ama do now?",
+        "options": [
+          "She has no phone",
+          "She switches it off at nine every evening",
+          "She uses it all night",
+          "She bought a new phone"
+        ],
+        "answer": 1,
+        "explanation": "\"…now I switch it off every evening at nine.\""
+      }
+    ]
+  },
+  {
+    "id": "r-b1-volunteer",
+    "level": "B1",
+    "topic": "Society",
+    "title": "Why young people volunteer",
+    "minutes": 6,
+    "paragraphs": [
+      "Every Saturday, Sena, a 24-year-old accountant, spends four hours teaching reading to children in a community centre in Lomé. She isn't paid, but she says it is the best part of her week.",
+      "Sena is one of a growing number of young Africans who volunteer. Some help in hospitals, others clean beaches or teach computer skills. According to a recent survey, more than a third of young people in the region have volunteered at least once in the past year.",
+      "Their reasons vary. Many want to give something back to their community. Others see volunteering as a way to gain experience, meet new people and improve their CV. \"Employers often ask me about it in interviews,\" says Sena.",
+      "However, volunteering is not always easy. Organisations sometimes lack money and volunteers can find it hard to balance their free time with work or studies. Experts suggest that short, flexible projects are the best way to keep young volunteers involved."
+    ],
+    "glossary": {
+      "accountant": {
+        "def": "a person who keeps financial records",
+        "fr": "comptable",
+        "ipa": "/əˈkaʊntənt/"
+      },
+      "community": {
+        "def": "the people living in an area",
+        "fr": "communauté",
+        "ipa": "/kəˈmjuːnəti/"
+      },
+      "survey": {
+        "def": "questions asked to many people",
+        "fr": "enquête, sondage",
+        "ipa": "/ˈsɜːveɪ/"
+      },
+      "flexible": {
+        "def": "able to change easily",
+        "fr": "flexible",
+        "ipa": "/ˈfleksəbl/"
+      }
+    },
+    "summary": "More young Africans volunteer to help their communities and gain experience, but they need flexible projects to stay involved.",
+    "questions": [
+      {
+        "id": "rb1v-q1",
+        "type": "mcq",
+        "prompt": "What does Sena do on Saturdays?",
+        "options": [
+          "Works as an accountant",
+          "Teaches children to read",
+          "Cleans beaches",
+          "Works in a hospital"
+        ],
+        "answer": 1,
+        "explanation": "She teaches reading in a community centre."
+      },
+      {
+        "id": "rb1v-q2",
+        "type": "mcq",
+        "prompt": "According to the survey, how many young people volunteered in the past year?",
+        "options": [
+          "Almost none",
+          "More than a third",
+          "Half",
+          "Everyone"
+        ],
+        "answer": 1,
+        "explanation": "\"more than a third\"."
+      },
+      {
+        "id": "rb1v-q3",
+        "type": "truefalse",
+        "prompt": "Sena thinks volunteering is useful for her career.",
+        "answer": true,
+        "explanation": "Employers ask her about it in interviews."
+      },
+      {
+        "id": "rb1v-q4",
+        "type": "mcq",
+        "prompt": "What do experts suggest?",
+        "options": [
+          "Paying volunteers",
+          "Short, flexible projects",
+          "Only weekend projects",
+          "Stopping volunteering"
+        ],
+        "answer": 1,
+        "explanation": "\"…short, flexible projects are the best way…\""
+      }
+    ]
+  },
+  {
+    "id": "r-b2-sleep-tech",
+    "level": "B2",
+    "topic": "Health",
+    "title": "Is your phone stealing your sleep?",
+    "minutes": 8,
+    "paragraphs": [
+      "Most adults need between seven and nine hours of sleep a night, yet surveys consistently show that a large proportion of young people get far less. While stress and long working hours play a part, researchers increasingly point to another culprit: the smartphone.",
+      "The problem is twofold. First, the blue light emitted by screens suppresses melatonin, the hormone that tells the body it is time to sleep. Second, and perhaps more importantly, phones keep the brain alert: an exciting video, a worrying message or an endless social media feed makes it much harder to switch off.",
+      "The consequences go beyond feeling tired. Chronic lack of sleep has been linked to poorer concentration, weaker memory and a higher risk of depression. For students preparing for exams, this is particularly worrying, since much of what we learn during the day is consolidated while we sleep.",
+      "Fortunately, the solutions are simple, if not always easy. Experts recommend putting the phone away at least an hour before bed, keeping it out of the bedroom and using an old-fashioned alarm clock. Those who try it often report falling asleep faster within a week."
+    ],
+    "glossary": {
+      "culprit": {
+        "def": "the person or thing responsible for a problem",
+        "fr": "coupable, responsable",
+        "ipa": "/ˈkʌlprɪt/"
+      },
+      "suppresses": {
+        "def": "stops something from happening",
+        "fr": "inhibe, bloque",
+        "ipa": "/səˈpresɪz/"
+      },
+      "chronic": {
+        "def": "lasting for a long time",
+        "fr": "chronique",
+        "ipa": "/ˈkrɒnɪk/"
+      },
+      "consolidated": {
+        "def": "made stronger and more permanent",
+        "fr": "consolidé",
+        "ipa": "/kənˈsɒlɪdeɪtɪd/"
+      }
+    },
+    "summary": "Smartphones harm sleep through blue light and mental stimulation, which affects memory and mood; keeping the phone away before bed helps quickly.",
+    "questions": [
+      {
+        "id": "rb2s-q1",
+        "type": "mcq",
+        "prompt": "What are the two ways phones affect sleep?",
+        "options": [
+          "Noise and heat",
+          "Blue light and keeping the brain alert",
+          "Cost and time",
+          "Radiation and stress"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2."
+      },
+      {
+        "id": "rb2s-q2",
+        "type": "truefalse",
+        "prompt": "According to the text, we consolidate learning while we sleep.",
+        "answer": true,
+        "explanation": "\"…consolidated while we sleep.\""
+      },
+      {
+        "id": "rb2s-q3",
+        "type": "mcq",
+        "prompt": "Which is NOT mentioned as a consequence of lack of sleep?",
+        "options": [
+          "Weaker memory",
+          "Poorer concentration",
+          "Higher risk of depression",
+          "Weight gain"
+        ],
+        "answer": 3,
+        "explanation": "Weight gain is not mentioned."
+      },
+      {
+        "id": "rb2s-q4",
+        "type": "mcq",
+        "prompt": "What do experts recommend?",
+        "options": [
+          "Sleeping with the phone on silent",
+          "Putting the phone away an hour before bed",
+          "Using a brighter screen",
+          "Sleeping less"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4."
+      }
+    ]
+  },
+  {
+    "id": "r-b2-renewable",
+    "level": "B2",
+    "topic": "Environment",
+    "title": "Solar power in West Africa",
+    "minutes": 8,
+    "paragraphs": [
+      "Across West Africa, millions of homes still have no reliable electricity. Extending the national grid to remote villages is slow and expensive, which is why a growing number of communities are turning to an alternative that is literally above their heads: the sun.",
+      "Off-grid solar kits, consisting of a small panel, a battery and a few lights, have become dramatically cheaper over the past decade. Many are sold on a pay-as-you-go basis: customers pay a small amount each day by mobile money, and after a year or two the system is theirs.",
+      "The benefits are considerable. Children can study after dark without breathing in smoke from kerosene lamps, small shops can stay open longer, and farmers can charge their phones to check market prices. Some health centres now use solar power to keep vaccines cold.",
+      "Nevertheless, challenges remain. Cheap, low-quality equipment sometimes breaks within months, and recycling old batteries is a growing environmental problem. Analysts argue that governments should set quality standards and support local repair businesses if solar power is to fulfil its promise."
+    ],
+    "glossary": {
+      "grid": {
+        "def": "the network of wires that brings electricity",
+        "fr": "réseau électrique",
+        "ipa": "/ɡrɪd/"
+      },
+      "off-grid": {
+        "def": "not connected to the main electricity network",
+        "fr": "hors réseau",
+        "ipa": "/ˌɒf ˈɡrɪd/"
+      },
+      "kerosene": {
+        "def": "a fuel used in lamps",
+        "fr": "pétrole lampant",
+        "ipa": "/ˈkerəsiːn/"
+      },
+      "fulfil": {
+        "def": "to achieve what was hoped",
+        "fr": "tenir (une promesse), réaliser",
+        "ipa": "/fʊlˈfɪl/"
+      }
+    },
+    "summary": "Cheap pay-as-you-go solar kits bring light and power to villages without electricity, but quality and battery recycling need regulation.",
+    "questions": [
+      {
+        "id": "rb2r-q1",
+        "type": "mcq",
+        "prompt": "Why are communities turning to solar power?",
+        "options": [
+          "It is fashionable",
+          "The grid is slow and expensive to extend",
+          "Kerosene is free",
+          "Governments ban electricity"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1."
+      },
+      {
+        "id": "rb2r-q2",
+        "type": "mcq",
+        "prompt": "How does pay-as-you-go work?",
+        "options": [
+          "Pay everything at once",
+          "Small daily payments by mobile money",
+          "The government pays",
+          "It's free for a year"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2."
+      },
+      {
+        "id": "rb2r-q3",
+        "type": "truefalse",
+        "prompt": "Solar power helps some health centres keep vaccines cold.",
+        "answer": true,
+        "explanation": "Paragraph 3."
+      },
+      {
+        "id": "rb2r-q4",
+        "type": "mcq",
+        "prompt": "Which problem is mentioned?",
+        "options": [
+          "Too much sun",
+          "Low-quality equipment and battery recycling",
+          "Expensive phones",
+          "Lack of customers"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4."
+      }
+    ]
+  },
+  {
+    "id": "r-c1-languages",
+    "level": "C1",
+    "topic": "Culture",
+    "title": "Do endangered languages matter?",
+    "minutes": 9,
+    "paragraphs": [
+      "Linguists estimate that roughly half of the world's seven thousand languages may cease to be spoken by the end of this century. Most of these have few speakers, no written tradition and little presence in schools or the media. As older speakers die and younger generations shift to dominant languages, entire ways of describing the world disappear with them.",
+      "Sceptics argue that this is simply the natural course of history: languages have always risen and fallen, and a common language facilitates trade, education and mobility. Why, they ask, should scarce public funds be spent preserving tongues that their own speakers are abandoning?",
+      "Proponents of revitalisation offer several counter-arguments. Languages encode irreplaceable knowledge, from the medicinal properties of local plants to sophisticated systems of navigation. Moreover, there is growing evidence that children who are first taught to read in their mother tongue go on to perform better, including in the dominant language, than those immersed in an unfamiliar one from day one.",
+      "Perhaps the most compelling case, however, is a matter of dignity rather than utility. For many communities, a language is inseparable from identity, and its loss is experienced as a profound injustice. The debate, then, is less about whether diversity has value than about who should bear the cost of sustaining it."
+    ],
+    "glossary": {
+      "cease": {
+        "def": "to stop",
+        "fr": "cesser",
+        "ipa": "/siːs/"
+      },
+      "facilitates": {
+        "def": "makes easier",
+        "fr": "facilite",
+        "ipa": "/fəˈsɪlɪteɪts/"
+      },
+      "revitalisation": {
+        "def": "giving new life to something",
+        "fr": "revitalisation",
+        "ipa": "/riːˌvaɪtəlaɪˈzeɪʃn/"
+      },
+      "encode": {
+        "def": "to contain information in a particular form",
+        "fr": "encoder, renfermer",
+        "ipa": "/ɪnˈkəʊd/"
+      },
+      "compelling": {
+        "def": "very convincing",
+        "fr": "convaincant",
+        "ipa": "/kəmˈpelɪŋ/"
+      },
+      "inseparable": {
+        "def": "impossible to separate",
+        "fr": "indissociable",
+        "ipa": "/ɪnˈseprəbl/"
+      }
+    },
+    "summary": "Half the world's languages may disappear; sceptics see it as natural, but supporters stress lost knowledge, better learning in the mother tongue and identity.",
+    "questions": [
+      {
+        "id": "rc1l-q1",
+        "type": "mcq",
+        "prompt": "What do sceptics argue?",
+        "options": [
+          "All languages must be saved",
+          "Language loss is natural and a common language has benefits",
+          "Schools should teach every language",
+          "Writing preserves languages"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2."
+      },
+      {
+        "id": "rc1l-q2",
+        "type": "mcq",
+        "prompt": "According to paragraph 3, children taught first in their mother tongue…",
+        "options": [
+          "perform worse in the dominant language",
+          "often perform better, including in the dominant language",
+          "forget the dominant language",
+          "learn more slowly"
+        ],
+        "answer": 1,
+        "explanation": "\"…go on to perform better, including in the dominant language\"."
+      },
+      {
+        "id": "rc1l-q3",
+        "type": "truefalse",
+        "prompt": "The writer considers dignity the strongest argument.",
+        "answer": true,
+        "explanation": "\"the most compelling case … is a matter of dignity\"."
+      },
+      {
+        "id": "rc1l-q4",
+        "type": "mcq",
+        "prompt": "The final sentence suggests the real question is…",
+        "options": [
+          "whether languages are useful",
+          "who should pay to keep them alive",
+          "how to stop migration",
+          "how many languages exist"
+        ],
+        "answer": 1,
+        "explanation": "\"…who should bear the cost of sustaining it.\""
+      }
+    ]
+  },
+  {
+    "id": "r-c1-cities",
+    "level": "C1",
+    "topic": "Urban life",
+    "title": "The fifteen-minute city",
+    "minutes": 9,
+    "paragraphs": [
+      "The idea is deceptively simple: residents should be able to reach most of their daily needs — work, school, shops, healthcare, green space — within a fifteen-minute walk or bike ride. Popularised by the urbanist Carlos Moreno and adopted, in various forms, by cities from Paris to Melbourne, the 'fifteen-minute city' promises cleaner air, stronger communities and less time wasted in traffic.",
+      "Its appeal is understandable. Commuting consumes hours of people's lives and a substantial share of their income, while car-dependent suburbs isolate those who cannot drive. Bringing services closer to homes, proponents argue, would benefit the elderly, children and low-income households most of all.",
+      "Critics, however, raise practical and political objections. Retrofitting sprawling cities is enormously expensive, and improving a neighbourhood can drive up rents, pushing out the very residents it was meant to help. A vocal minority has even portrayed the concept as a plot to restrict movement, a claim urban planners firmly reject.",
+      "For rapidly growing African cities, the debate takes on a different character. Many neighbourhoods already function informally as fifteen-minute cities, with markets, schools and workshops within walking distance. The challenge may be less to impose a new model than to protect and upgrade what already works."
+    ],
+    "glossary": {
+      "deceptively": {
+        "def": "in a way that seems different from reality",
+        "fr": "faussement",
+        "ipa": "/dɪˈseptɪvli/"
+      },
+      "commuting": {
+        "def": "travelling regularly between home and work",
+        "fr": "trajets domicile-travail",
+        "ipa": "/kəˈmjuːtɪŋ/"
+      },
+      "retrofitting": {
+        "def": "adding new features to something old",
+        "fr": "réaménagement",
+        "ipa": "/ˈretrəʊfɪtɪŋ/"
+      },
+      "sprawling": {
+        "def": "spreading over a large area in an untidy way",
+        "fr": "tentaculaire",
+        "ipa": "/ˈsprɔːlɪŋ/"
+      }
+    },
+    "summary": "The fifteen-minute city aims to put daily needs within walking distance; critics cite cost and rising rents, while African cities may already work this way informally.",
+    "questions": [
+      {
+        "id": "rc1c-q1",
+        "type": "mcq",
+        "prompt": "What is the main idea of the fifteen-minute city?",
+        "options": [
+          "Faster cars",
+          "Daily needs within a short walk or ride",
+          "Taller buildings",
+          "Free public transport"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1."
+      },
+      {
+        "id": "rc1c-q2",
+        "type": "mcq",
+        "prompt": "Who would benefit most, according to proponents?",
+        "options": [
+          "Car owners",
+          "The elderly, children and low-income households",
+          "Tourists",
+          "Developers"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 2."
+      },
+      {
+        "id": "rc1c-q3",
+        "type": "truefalse",
+        "prompt": "The text says improving a neighbourhood can raise rents.",
+        "answer": true,
+        "explanation": "Paragraph 3."
+      },
+      {
+        "id": "rc1c-q4",
+        "type": "mcq",
+        "prompt": "What does the writer suggest for African cities?",
+        "options": [
+          "Copy Paris exactly",
+          "Protect and upgrade existing walkable neighbourhoods",
+          "Build more highways",
+          "Stop urban growth"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4."
+      }
+    ]
   }
 ]

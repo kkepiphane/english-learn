@@ -721,7 +721,7 @@
         "accepted": [
           "farmer"
         ],
-        "explanation": "farmer."
+        "explanation": "A farmer grows food or keeps animals."
       }
     ],
     "rememberErrors": [
@@ -2002,7 +2002,7 @@
           "It's hot."
         ],
         "answer": 1,
-        "explanation": "raining."
+        "explanation": "Water falling from the sky → It's raining (be + -ing)."
       }
     ],
     "quiz": [
@@ -2059,7 +2059,7 @@
           "meal"
         ],
         "answer": 1,
-        "explanation": "hobby."
+        "explanation": "A hobby is something you enjoy doing in your free time."
       }
     ],
     "rememberErrors": [
@@ -2072,6 +2072,625 @@
         "wrong": "It's rain.",
         "right": "It's raining.",
         "why": "Use the -ing form."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-was-were",
+    "unitId": "a1-u7",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "was and were",
+    "minutes": 10,
+    "objective": "Talk about the past with the verb be.",
+    "sections": [
+      {
+        "heading": "Forms",
+        "en": "I/he/she/it was · you/we/they were. Negative: wasn't / weren't. Question: Was he…? Were you…?",
+        "fr": "« J'étais / j'ai été » = I was.",
+        "examples": [
+          "I was at home yesterday.",
+          "They were very happy.",
+          "Were you at school on Monday? — No, I wasn't."
+        ]
+      },
+      {
+        "heading": "Time words",
+        "en": "yesterday · last night / week / year · two days ago · in 2020.",
+        "examples": [
+          "She was in Accra last week.",
+          "We were tired two hours ago."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1ww-v1",
+        "word": "yesterday",
+        "ipa": "/ˈjestədeɪ/",
+        "pos": "adverb",
+        "definition": "the day before today",
+        "fr": "hier",
+        "example": "I was ill yesterday.",
+        "context": "Time"
+      },
+      {
+        "id": "a1ww-v2",
+        "word": "ago",
+        "ipa": "/əˈɡəʊ/",
+        "pos": "adverb",
+        "definition": "before now",
+        "fr": "il y a (temps)",
+        "example": "Three days ago.",
+        "context": "Time"
+      },
+      {
+        "id": "a1ww-v3",
+        "word": "last",
+        "ipa": "/lɑːst/",
+        "pos": "adjective",
+        "definition": "the one before this one",
+        "fr": "dernier",
+        "example": "last weekend",
+        "context": "Time"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gw-p1",
+        "type": "mcq",
+        "prompt": "I ___ at the market yesterday.",
+        "options": [
+          "was",
+          "were",
+          "am"
+        ],
+        "answer": 0,
+        "explanation": "I → was in the past."
+      },
+      {
+        "id": "a1gw-p2",
+        "type": "mcq",
+        "prompt": "They ___ at school last Friday.",
+        "options": [
+          "was",
+          "were",
+          "are"
+        ],
+        "answer": 1,
+        "explanation": "they → were in the past."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gw-q1",
+        "type": "mcq",
+        "prompt": "___ you at home last night?",
+        "options": [
+          "Was",
+          "Were",
+          "Are",
+          "Did"
+        ],
+        "answer": 1,
+        "explanation": "you → Were you…?"
+      },
+      {
+        "id": "a1gw-q2",
+        "type": "mcq",
+        "prompt": "He ___ tired yesterday. (negative)",
+        "options": [
+          "weren't",
+          "wasn't",
+          "isn't",
+          "didn't"
+        ],
+        "answer": 1,
+        "explanation": "he → wasn't."
+      },
+      {
+        "id": "a1gw-q3",
+        "type": "gap",
+        "prompt": "We ___ in Lomé two years ago.",
+        "accepted": [
+          "were"
+        ],
+        "explanation": "we → were in the past."
+      },
+      {
+        "id": "a1gw-q4",
+        "type": "truefalse",
+        "prompt": "\"I were happy\" is correct.",
+        "answer": false,
+        "explanation": "I → was: I was happy."
+      },
+      {
+        "id": "a1gw-q5",
+        "type": "mcq",
+        "prompt": "Three days ___ I was in Kara.",
+        "options": [
+          "last",
+          "ago",
+          "before",
+          "yesterday"
+        ],
+        "answer": 1,
+        "explanation": "number + ago."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I were tired.",
+        "right": "I was tired.",
+        "why": "I → was."
+      },
+      {
+        "wrong": "before two days",
+        "right": "two days ago",
+        "why": "Time + ago."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-transport",
+    "unitId": "a1-u7",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Transport and directions",
+    "minutes": 10,
+    "objective": "Talk about how you travel and ask the way.",
+    "sections": [
+      {
+        "heading": "Transport",
+        "en": "by bus · by car · by moto · by plane · by train · on foot (walk).",
+        "fr": "« à pied » = on foot (pas « by foot »).",
+        "examples": [
+          "I go to work by bus.",
+          "She goes to school on foot."
+        ]
+      },
+      {
+        "heading": "Directions",
+        "en": "Go straight on · Turn left / right · It's on the left / right · next to · opposite.",
+        "examples": [
+          "Excuse me, where is the bank?",
+          "Turn left. It's next to the pharmacy."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1tr-v1",
+        "word": "turn left",
+        "ipa": "/tɜːn left/",
+        "pos": "phrase",
+        "definition": "go to the left side",
+        "fr": "tourner à gauche",
+        "example": "Turn left at the school.",
+        "context": "Directions"
+      },
+      {
+        "id": "a1tr-v2",
+        "word": "straight on",
+        "ipa": "/streɪt ɒn/",
+        "pos": "adverb",
+        "definition": "forward, without turning",
+        "fr": "tout droit",
+        "example": "Go straight on.",
+        "context": "Directions"
+      },
+      {
+        "id": "a1tr-v3",
+        "word": "station",
+        "ipa": "/ˈsteɪʃn/",
+        "pos": "noun",
+        "definition": "a place where buses or trains stop",
+        "fr": "gare",
+        "example": "The bus station is near here.",
+        "context": "Transport"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vtr-p1",
+        "type": "mcq",
+        "prompt": "I go to school ___ foot.",
+        "options": [
+          "by",
+          "on",
+          "with"
+        ],
+        "answer": 1,
+        "explanation": "Walking = on foot (not \"by foot\")."
+      },
+      {
+        "id": "a1vtr-p2",
+        "type": "mcq",
+        "prompt": "Go forward = go ___",
+        "options": [
+          "left",
+          "straight on",
+          "back"
+        ],
+        "answer": 1,
+        "explanation": "straight on."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vtr-q1",
+        "type": "mcq",
+        "prompt": "She goes to Paris ___ plane.",
+        "options": [
+          "on",
+          "by",
+          "in",
+          "with"
+        ],
+        "answer": 1,
+        "explanation": "by + transport."
+      },
+      {
+        "id": "a1vtr-q2",
+        "type": "gap",
+        "prompt": "Don't go right. Turn ___.",
+        "accepted": [
+          "left"
+        ],
+        "explanation": "The opposite of right is left."
+      },
+      {
+        "id": "a1vtr-q3",
+        "type": "truefalse",
+        "prompt": "\"by foot\" is the usual expression.",
+        "answer": false,
+        "explanation": "Say on foot."
+      },
+      {
+        "id": "a1vtr-q4",
+        "type": "mcq",
+        "prompt": "A place where trains stop:",
+        "options": [
+          "station",
+          "market",
+          "hospital",
+          "office"
+        ],
+        "answer": 0,
+        "explanation": "A station is where trains or buses stop."
+      },
+      {
+        "id": "a1vtr-q5",
+        "type": "mcq",
+        "prompt": "\"Where is the bank?\" — \"It's ___ the hotel.\"",
+        "options": [
+          "opposite",
+          "by plane",
+          "straight",
+          "yesterday"
+        ],
+        "answer": 0,
+        "explanation": "opposite = in front of, on the other side."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "by foot",
+        "right": "on foot",
+        "why": "Fixed expression."
+      },
+      {
+        "wrong": "I go to work with the bus.",
+        "right": "I go to work by bus.",
+        "why": "by + transport."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-continuous",
+    "unitId": "a1-u8",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Present continuous: right now",
+    "minutes": 10,
+    "objective": "Say what is happening now.",
+    "sections": [
+      {
+        "heading": "Form",
+        "en": "am / is / are + verb-ing. Questions: Are you…-ing? Negative: isn't / aren't …-ing.",
+        "fr": "Pour une action en cours MAINTENANT : « je suis en train de manger » = I'm eating.",
+        "examples": [
+          "I'm cooking now.",
+          "She's talking on the phone.",
+          "Are you watching TV? — No, I'm reading."
+        ]
+      },
+      {
+        "heading": "Now vs every day",
+        "en": "Present continuous = now. Present simple = habits.",
+        "examples": [
+          "I usually walk to work, but today I'm taking a taxi."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1cn2-v1",
+        "word": "now",
+        "ipa": "/naʊ/",
+        "pos": "adverb",
+        "definition": "at this moment",
+        "fr": "maintenant",
+        "example": "What are you doing now?",
+        "context": "Time"
+      },
+      {
+        "id": "a1cn2-v2",
+        "word": "at the moment",
+        "ipa": "/æt ðə ˈməʊmənt/",
+        "pos": "phrase",
+        "definition": "now",
+        "fr": "en ce moment",
+        "example": "He's working at the moment.",
+        "context": "Time"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gcn-p1",
+        "type": "mcq",
+        "prompt": "Look! It ___.",
+        "options": [
+          "rains",
+          "is raining",
+          "rain"
+        ],
+        "answer": 1,
+        "explanation": "Now → is raining."
+      },
+      {
+        "id": "a1gcn-p2",
+        "type": "mcq",
+        "prompt": "I ___ my homework now.",
+        "options": [
+          "do",
+          "am doing",
+          "does"
+        ],
+        "answer": 1,
+        "explanation": "Now → am doing."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gcn-q1",
+        "type": "mcq",
+        "prompt": "What ___ you doing?",
+        "options": [
+          "is",
+          "are",
+          "do",
+          "am"
+        ],
+        "answer": 1,
+        "explanation": "you → are."
+      },
+      {
+        "id": "a1gcn-q2",
+        "type": "mcq",
+        "prompt": "She ___ a book at the moment.",
+        "options": [
+          "reads",
+          "is reading",
+          "read",
+          "are reading"
+        ],
+        "answer": 1,
+        "explanation": "at the moment → is reading."
+      },
+      {
+        "id": "a1gcn-q3",
+        "type": "gap",
+        "prompt": "They are ___ (play) football now.",
+        "accepted": [
+          "playing"
+        ],
+        "explanation": "be + -ing."
+      },
+      {
+        "id": "a1gcn-q4",
+        "type": "truefalse",
+        "prompt": "\"I am go to work now\" is correct.",
+        "answer": false,
+        "explanation": "Use -ing: I am going to work now."
+      },
+      {
+        "id": "a1gcn-q5",
+        "type": "mcq",
+        "prompt": "Every day I ___ to school.",
+        "options": [
+          "am walking",
+          "walk",
+          "walking",
+          "am walk"
+        ],
+        "answer": 1,
+        "explanation": "Habit → present simple."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I am eat.",
+        "right": "I am eating.",
+        "why": "be + -ing."
+      },
+      {
+        "wrong": "She cooking now.",
+        "right": "She is cooking now.",
+        "why": "Don't forget be."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-clothes",
+    "unitId": "a1-u8",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Clothes and colours",
+    "minutes": 10,
+    "objective": "Describe what people wear.",
+    "sections": [
+      {
+        "heading": "Clothes",
+        "en": "shirt · T-shirt · trousers · dress · skirt · shoes · hat · jacket. wear = have on your body.",
+        "fr": "« porter un vêtement » = wear (pas « carry »).",
+        "examples": [
+          "He's wearing a blue shirt.",
+          "I like your dress!"
+        ]
+      },
+      {
+        "heading": "Colours",
+        "en": "red · blue · green · yellow · black · white · brown · pink · grey. Colour comes before the noun.",
+        "examples": [
+          "a red dress",
+          "black shoes"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1cl-v1",
+        "word": "wear",
+        "ipa": "/weə/",
+        "pos": "verb",
+        "definition": "to have clothes on your body",
+        "fr": "porter (vêtement)",
+        "example": "She wears glasses.",
+        "context": "Clothes"
+      },
+      {
+        "id": "a1cl-v2",
+        "word": "trousers",
+        "ipa": "/ˈtraʊzəz/",
+        "pos": "noun (plural)",
+        "definition": "clothes covering both legs",
+        "fr": "pantalon",
+        "example": "These trousers are new.",
+        "context": "Clothes"
+      },
+      {
+        "id": "a1cl-v3",
+        "word": "dress",
+        "ipa": "/dres/",
+        "pos": "noun",
+        "definition": "one piece of clothing for women and girls",
+        "fr": "robe",
+        "example": "A beautiful dress.",
+        "context": "Clothes"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vcl-p1",
+        "type": "mcq",
+        "prompt": "He ___ a hat every day.",
+        "options": [
+          "carries",
+          "wears",
+          "puts"
+        ],
+        "answer": 1,
+        "explanation": "wear clothes."
+      },
+      {
+        "id": "a1vcl-p2",
+        "type": "mcq",
+        "prompt": "Correct order:",
+        "options": [
+          "a dress red",
+          "a red dress",
+          "red a dress"
+        ],
+        "answer": 1,
+        "explanation": "Colour before the noun."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vcl-q1",
+        "type": "mcq",
+        "prompt": "The colour of the sky on a sunny day:",
+        "options": [
+          "green",
+          "blue",
+          "brown",
+          "black"
+        ],
+        "answer": 1,
+        "explanation": "The sky is blue."
+      },
+      {
+        "id": "a1vcl-q2",
+        "type": "mcq",
+        "prompt": "Clothes for both legs:",
+        "options": [
+          "a skirt",
+          "trousers",
+          "a hat",
+          "a shirt"
+        ],
+        "answer": 1,
+        "explanation": "trousers."
+      },
+      {
+        "id": "a1vcl-q3",
+        "type": "gap",
+        "prompt": "She is ___ (wear) a yellow T-shirt.",
+        "accepted": [
+          "wearing"
+        ],
+        "explanation": "be + wearing."
+      },
+      {
+        "id": "a1vcl-q4",
+        "type": "truefalse",
+        "prompt": "\"I carry a jacket\" means I have it on my body.",
+        "answer": false,
+        "explanation": "Use wear for clothes on your body."
+      },
+      {
+        "id": "a1vcl-q5",
+        "type": "mcq",
+        "prompt": "Which is correct?",
+        "options": [
+          "shoes black",
+          "black shoes",
+          "blacks shoes",
+          "shoes blacks"
+        ],
+        "answer": 1,
+        "explanation": "Adjectives have no plural and come first."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "a shirt blue",
+        "right": "a blue shirt",
+        "why": "Colour before the noun."
+      },
+      {
+        "wrong": "He carries a hat.",
+        "right": "He wears a hat.",
+        "why": "wear clothes."
       }
     ]
   }

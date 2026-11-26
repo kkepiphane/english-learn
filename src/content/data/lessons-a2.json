@@ -1943,7 +1943,7 @@
           "tall"
         ],
         "answer": 1,
-        "explanation": "funny."
+        "explanation": "Funny = someone who makes you laugh."
       },
       {
         "id": "a2dp-q2",
@@ -2278,7 +2278,7 @@
         "accepted": [
           "fever"
         ],
-        "explanation": "fever."
+        "explanation": "A fever is a high body temperature."
       },
       {
         "id": "a2h-q3",
@@ -2324,6 +2324,609 @@
         "wrong": "You should to rest.",
         "right": "You should rest.",
         "why": "should + base verb."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-adverbs",
+    "unitId": "a2-u7",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Adverbs: how and how often",
+    "minutes": 12,
+    "objective": "Say how often and how people do things.",
+    "sections": [
+      {
+        "heading": "Frequency",
+        "en": "always · usually · often · sometimes · rarely · never. Before the main verb, after be.",
+        "fr": "Place : « I often go », mais « She is often late ».",
+        "examples": [
+          "I usually get up at six.",
+          "He is never late.",
+          "We sometimes eat out."
+        ]
+      },
+      {
+        "heading": "Manner",
+        "en": "Adjective + -ly: quick → quickly, careful → carefully. Irregular: good → well, fast → fast, hard → hard.",
+        "examples": [
+          "She speaks English well.",
+          "Drive carefully!",
+          "He works hard."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2ad-v1",
+        "word": "rarely",
+        "ipa": "/ˈreəli/",
+        "pos": "adverb",
+        "definition": "not often",
+        "fr": "rarement",
+        "example": "I rarely watch TV.",
+        "context": "Frequency"
+      },
+      {
+        "id": "a2ad-v2",
+        "word": "carefully",
+        "ipa": "/ˈkeəfəli/",
+        "pos": "adverb",
+        "definition": "with attention",
+        "fr": "prudemment, avec soin",
+        "example": "Read the question carefully.",
+        "context": "Manner"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2ad-p1",
+        "type": "mcq",
+        "prompt": "She speaks French very ___.",
+        "options": [
+          "good",
+          "well",
+          "goodly"
+        ],
+        "answer": 1,
+        "explanation": "good → well."
+      },
+      {
+        "id": "a2ad-p2",
+        "type": "mcq",
+        "prompt": "Correct order:",
+        "options": [
+          "I go often to the gym.",
+          "I often go to the gym.",
+          "Often I go gym."
+        ],
+        "answer": 1,
+        "explanation": "Frequency adverb before the main verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2ad-q1",
+        "type": "mcq",
+        "prompt": "He is ___ on time. (100%)",
+        "options": [
+          "never",
+          "always",
+          "sometimes",
+          "rarely"
+        ],
+        "answer": 1,
+        "explanation": "always = 100%."
+      },
+      {
+        "id": "a2ad-q2",
+        "type": "gap",
+        "prompt": "quick → ___ (adverb)",
+        "accepted": [
+          "quickly"
+        ],
+        "explanation": "Most adverbs = adjective + -ly: quick → quickly."
+      },
+      {
+        "id": "a2ad-q3",
+        "type": "mcq",
+        "prompt": "Which is correct?",
+        "options": [
+          "She is late always.",
+          "She always is late.",
+          "She is always late.",
+          "Always she late is."
+        ],
+        "answer": 2,
+        "explanation": "After be: is always."
+      },
+      {
+        "id": "a2ad-q4",
+        "type": "truefalse",
+        "prompt": "\"He works hardly\" means he works a lot.",
+        "answer": false,
+        "explanation": "hard = with effort; hardly = almost not."
+      },
+      {
+        "id": "a2ad-q5",
+        "type": "mcq",
+        "prompt": "Please drive ___.",
+        "options": [
+          "careful",
+          "carefully",
+          "care",
+          "carefulness"
+        ],
+        "answer": 1,
+        "explanation": "Verb + adverb: drive carefully."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "She speaks good English. / She speaks English good.",
+        "right": "She speaks English well.",
+        "why": "Adverb of good = well."
+      },
+      {
+        "wrong": "I go always to church.",
+        "right": "I always go to church.",
+        "why": "Frequency adverb before the main verb."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-home",
+    "unitId": "a2-u7",
+    "level": "A2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Home and renting",
+    "minutes": 12,
+    "objective": "Describe your home and talk to a landlord.",
+    "sections": [
+      {
+        "heading": "Rooms and things",
+        "en": "living room · bedroom · kitchen · bathroom · balcony · fridge · fan · air conditioning · furniture.",
+        "examples": [
+          "My flat has two bedrooms and a small balcony.",
+          "The fan in the bedroom doesn't work."
+        ]
+      },
+      {
+        "heading": "Renting",
+        "en": "rent (money per month) · landlord · tenant · deposit · bills (water, electricity) · furnished / unfurnished.",
+        "fr": "« loyer » = rent ; « propriétaire » = landlord.",
+        "examples": [
+          "The rent is 80,000 francs a month.",
+          "Are bills included?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2ho-v1",
+        "word": "landlord",
+        "ipa": "/ˈlændlɔːd/",
+        "pos": "noun",
+        "definition": "a person who rents a home to you",
+        "fr": "propriétaire (bailleur)",
+        "example": "I called the landlord about the leak.",
+        "context": "Renting"
+      },
+      {
+        "id": "a2ho-v2",
+        "word": "deposit",
+        "ipa": "/dɪˈpɒzɪt/",
+        "pos": "noun",
+        "definition": "money you pay first and get back later",
+        "fr": "caution",
+        "example": "The deposit is two months' rent.",
+        "context": "Renting"
+      },
+      {
+        "id": "a2ho-v3",
+        "word": "furniture",
+        "ipa": "/ˈfɜːnɪtʃə/",
+        "pos": "noun (uncountable)",
+        "definition": "tables, chairs, beds, etc.",
+        "fr": "meubles",
+        "example": "The flat has new furniture.",
+        "context": "Home"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2ho-p1",
+        "type": "mcq",
+        "prompt": "Money you pay every month for a flat:",
+        "options": [
+          "rent",
+          "deposit",
+          "bill"
+        ],
+        "answer": 0,
+        "explanation": "Rent is the money you pay every month to live in a flat."
+      },
+      {
+        "id": "a2ho-p2",
+        "type": "mcq",
+        "prompt": "You cook in the ___.",
+        "options": [
+          "bedroom",
+          "kitchen",
+          "balcony"
+        ],
+        "answer": 1,
+        "explanation": "The kitchen is the room where you cook."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2ho-q1",
+        "type": "mcq",
+        "prompt": "The person who owns the flat you rent:",
+        "options": [
+          "tenant",
+          "landlord",
+          "neighbour",
+          "agent"
+        ],
+        "answer": 1,
+        "explanation": "landlord."
+      },
+      {
+        "id": "a2ho-q2",
+        "type": "truefalse",
+        "prompt": "\"furnitures\" is correct.",
+        "answer": false,
+        "explanation": "furniture is uncountable."
+      },
+      {
+        "id": "a2ho-q3",
+        "type": "gap",
+        "prompt": "Are the ___ (water, electricity) included?",
+        "accepted": [
+          "bills"
+        ],
+        "explanation": "Bills are what you pay for water, electricity, internet…"
+      },
+      {
+        "id": "a2ho-q4",
+        "type": "mcq",
+        "prompt": "A flat with tables and beds is…",
+        "options": [
+          "unfurnished",
+          "furnished",
+          "empty",
+          "rented"
+        ],
+        "answer": 1,
+        "explanation": "furnished."
+      },
+      {
+        "id": "a2ho-q5",
+        "type": "mcq",
+        "prompt": "Money you get back when you leave:",
+        "options": [
+          "rent",
+          "deposit",
+          "bill",
+          "salary"
+        ],
+        "answer": 1,
+        "explanation": "A deposit is paid at the start and returned when you leave."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "furnitures",
+        "right": "furniture / pieces of furniture",
+        "why": "Uncountable."
+      },
+      {
+        "wrong": "the proprietary",
+        "right": "the landlord",
+        "why": "False friend."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-linking",
+    "unitId": "a2-u8",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "and, but, because, so, when",
+    "minutes": 10,
+    "objective": "Connect ideas into longer sentences.",
+    "sections": [
+      {
+        "heading": "Linking words",
+        "en": "and (add) · but (contrast) · because (reason) · so (result) · when (time).",
+        "fr": "because + raison, so + conséquence. « donc » = so.",
+        "examples": [
+          "I was tired, so I went to bed.",
+          "I went to bed because I was tired.",
+          "It's cheap but good.",
+          "When I arrived, they were eating."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2li-v1",
+        "word": "because",
+        "ipa": "/bɪˈkɒz/",
+        "pos": "conjunction",
+        "definition": "for the reason that",
+        "fr": "parce que",
+        "example": "I'm late because of the traffic.",
+        "context": "Reasons"
+      },
+      {
+        "id": "a2li-v2",
+        "word": "so",
+        "ipa": "/səʊ/",
+        "pos": "conjunction",
+        "definition": "and for this reason",
+        "fr": "donc, alors",
+        "example": "It rained, so we stayed in.",
+        "context": "Results"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2li-p1",
+        "type": "mcq",
+        "prompt": "I was hungry, ___ I ate.",
+        "options": [
+          "because",
+          "so",
+          "but"
+        ],
+        "answer": 1,
+        "explanation": "Result → so."
+      },
+      {
+        "id": "a2li-p2",
+        "type": "mcq",
+        "prompt": "I ate ___ I was hungry.",
+        "options": [
+          "because",
+          "so",
+          "and"
+        ],
+        "answer": 0,
+        "explanation": "Reason → because."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2li-q1",
+        "type": "mcq",
+        "prompt": "The hotel was nice ___ expensive.",
+        "options": [
+          "so",
+          "but",
+          "because",
+          "when"
+        ],
+        "answer": 1,
+        "explanation": "Contrast → but."
+      },
+      {
+        "id": "a2li-q2",
+        "type": "mcq",
+        "prompt": "___ I was a child, I lived in Kara.",
+        "options": [
+          "So",
+          "When",
+          "But",
+          "Because of"
+        ],
+        "answer": 1,
+        "explanation": "Time → when."
+      },
+      {
+        "id": "a2li-q3",
+        "type": "gap",
+        "prompt": "She didn't come ___ she was ill.",
+        "accepted": [
+          "because"
+        ],
+        "explanation": "Reason → because."
+      },
+      {
+        "id": "a2li-q4",
+        "type": "truefalse",
+        "prompt": "\"I was tired, so I slept\" shows a result.",
+        "answer": true,
+        "explanation": "so = result."
+      },
+      {
+        "id": "a2li-q5",
+        "type": "mcq",
+        "prompt": "It was late, ___ we took a taxi.",
+        "options": [
+          "so",
+          "because",
+          "but",
+          "when"
+        ],
+        "answer": 0,
+        "explanation": "Result → so."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Because I was tired. (alone)",
+        "right": "I went home because I was tired.",
+        "why": "Because needs a main clause in writing."
+      },
+      {
+        "wrong": "I was ill so I stay.",
+        "right": "I was ill, so I stayed.",
+        "why": "Keep the tense consistent."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-calls",
+    "unitId": "a2-u8",
+    "level": "A2",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Phone calls and messages",
+    "minutes": 12,
+    "objective": "Make a phone call and write a short message.",
+    "sections": [
+      {
+        "heading": "On the phone",
+        "en": "Hello, this is… · Can I speak to…? · Hold on, please. · She's not available. Can I take a message? · Could you call me back?",
+        "fr": "« C'est Ama » = This is Ama (pas « I am Ama »).",
+        "examples": [
+          "Hello, this is Kofi. Can I speak to Mr Mensah?",
+          "Sorry, he's in a meeting. Can I take a message?"
+        ]
+      },
+      {
+        "heading": "Short messages",
+        "en": "Hi / Dear… · Just to let you know… · Can you…? · Thanks! · See you soon / Best wishes.",
+        "examples": [
+          "Hi Sena, just to let you know I'll be ten minutes late. Sorry! Kofi"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2ca-v1",
+        "word": "call back",
+        "ipa": "/kɔːl bæk/",
+        "pos": "phrasal verb",
+        "definition": "to phone someone who phoned you",
+        "fr": "rappeler",
+        "example": "Can you call me back later?",
+        "context": "Phone"
+      },
+      {
+        "id": "a2ca-v2",
+        "word": "hold on",
+        "ipa": "/həʊld ɒn/",
+        "pos": "phrasal verb",
+        "definition": "to wait for a short time",
+        "fr": "patienter",
+        "example": "Hold on, please.",
+        "context": "Phone"
+      },
+      {
+        "id": "a2ca-v3",
+        "word": "message",
+        "ipa": "/ˈmesɪdʒ/",
+        "pos": "noun",
+        "definition": "information you send or leave for someone",
+        "fr": "message",
+        "example": "Can I take a message?",
+        "context": "Phone"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2ca-p1",
+        "type": "mcq",
+        "prompt": "On the phone you say:",
+        "options": [
+          "I am Kofi.",
+          "This is Kofi.",
+          "Here Kofi is."
+        ],
+        "answer": 1,
+        "explanation": "On the phone, say \"This is…\", not \"I am…\"."
+      },
+      {
+        "id": "a2ca-p2",
+        "type": "mcq",
+        "prompt": "Please wait = ___",
+        "options": [
+          "Hold on.",
+          "Call back.",
+          "Hang up."
+        ],
+        "answer": 0,
+        "explanation": "\"Hold on\" means wait a moment on the phone."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2ca-q1",
+        "type": "mcq",
+        "prompt": "\"Can I take a message?\" means…",
+        "options": [
+          "Can I write down your message for someone?",
+          "Can I steal your phone?",
+          "Can I call you?",
+          "Can I go?"
+        ],
+        "answer": 0,
+        "explanation": "Offer to pass on information."
+      },
+      {
+        "id": "a2ca-q2",
+        "type": "gap",
+        "prompt": "Could you call me ___ later? (phrasal verb)",
+        "accepted": [
+          "back"
+        ],
+        "explanation": "call back."
+      },
+      {
+        "id": "a2ca-q3",
+        "type": "truefalse",
+        "prompt": "\"Can I speak to Ama?\" is a polite phone question.",
+        "answer": true,
+        "explanation": "Standard polite request."
+      },
+      {
+        "id": "a2ca-q4",
+        "type": "mcq",
+        "prompt": "Informal ending for a message:",
+        "options": [
+          "Yours faithfully",
+          "See you soon!",
+          "Dear Sir",
+          "To whom it may concern"
+        ],
+        "answer": 1,
+        "explanation": "Informal: See you soon."
+      },
+      {
+        "id": "a2ca-q5",
+        "type": "mcq",
+        "prompt": "\"Just to let you know…\" introduces…",
+        "options": [
+          "a complaint",
+          "some information",
+          "a goodbye",
+          "a question"
+        ],
+        "answer": 1,
+        "explanation": "Information."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Hello, I am Kofi. (on the phone)",
+        "right": "Hello, this is Kofi.",
+        "why": "Phone convention."
+      },
+      {
+        "wrong": "Can I talk with Ama?",
+        "right": "Can I speak to Ama?",
+        "why": "Usual phone phrase."
       }
     ]
   }

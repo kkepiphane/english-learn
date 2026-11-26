@@ -328,5 +328,115 @@
       "c1-g-discourse",
       "c1-v-register"
     ]
+  },
+  {
+    "id": "a1-u7",
+    "level": "A1",
+    "order": 7,
+    "title": "Yesterday and travel",
+    "description": "was/were, transport and directions.",
+    "lessonIds": [
+      "a1-g-was-were",
+      "a1-v-transport"
+    ]
+  },
+  {
+    "id": "a1-u8",
+    "level": "A1",
+    "order": 8,
+    "title": "Right now",
+    "description": "Present continuous, clothes and colours.",
+    "lessonIds": [
+      "a1-g-continuous",
+      "a1-v-clothes"
+    ]
+  },
+  {
+    "id": "a2-u7",
+    "level": "A2",
+    "order": 7,
+    "title": "Home and habits",
+    "description": "Adverbs, rooms and renting.",
+    "lessonIds": [
+      "a2-g-adverbs",
+      "a2-v-home"
+    ]
+  },
+  {
+    "id": "a2-u8",
+    "level": "A2",
+    "order": 8,
+    "title": "Staying in touch",
+    "description": "Linking ideas, phone calls and messages.",
+    "lessonIds": [
+      "a2-g-linking",
+      "a2-v-calls"
+    ]
+  },
+  {
+    "id": "b1-u7",
+    "level": "B1",
+    "order": 7,
+    "title": "Telling stories",
+    "description": "Past perfect and feelings.",
+    "lessonIds": [
+      "b1-g-past-perfect",
+      "b1-v-feelings"
+    ]
+  },
+  {
+    "id": "b1-u8",
+    "level": "B1",
+    "order": 8,
+    "title": "Travel smart",
+    "description": "Polite questions and solving travel problems.",
+    "lessonIds": [
+      "b1-g-questions",
+      "b1-v-travel-problems"
+    ]
+  },
+  {
+    "id": "b2-u7",
+    "level": "B2",
+    "order": 7,
+    "title": "Information and media",
+    "description": "Quantifiers and evaluating the news.",
+    "lessonIds": [
+      "b2-g-quantifiers",
+      "b2-v-media"
+    ]
+  },
+  {
+    "id": "b2-u8",
+    "level": "B2",
+    "order": 8,
+    "title": "Exam toolkit",
+    "description": "Advanced articles and describing graphs.",
+    "lessonIds": [
+      "b2-g-articles-adv",
+      "b2-v-graphs"
+    ]
+  },
+  {
+    "id": "c1-u7",
+    "level": "C1",
+    "order": 7,
+    "title": "Thinking critically",
+    "description": "Precise conditions and analysing arguments.",
+    "lessonIds": [
+      "c1-g-conditional-alts",
+      "c1-v-critical"
+    ]
+  },
+  {
+    "id": "c1-u8",
+    "level": "C1",
+    "order": 8,
+    "title": "Influence",
+    "description": "Fronting, sentence adverbials and negotiation.",
+    "lessonIds": [
+      "c1-g-fronting",
+      "c1-v-negotiation"
+    ]
   }
 ]

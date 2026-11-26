@@ -140,5 +140,30 @@
       "On balance, …"
     ],
     "modelAnswer": "The rapid spread of artificial intelligence in education has led some commentators to predict the disappearance of the teaching profession. While AI will undoubtedly transform how people learn, I would argue that the claim that teachers will become unnecessary within a generation significantly overstates what the technology can do.\n\nThere is, admittedly, some merit in the optimistic view. Not only can AI tutors adapt instantly to each learner's level, but they are also available at any hour and at negligible cost. For students in regions with a severe shortage of qualified teachers, this could arguably be the most significant improvement in access to education in decades. A learner in a rural area could, for instance, receive individual feedback on an essay within seconds.\n\nWhat is often overlooked, however, is that learning is not merely the transmission of information. Research suggests that students who depend on AI for answers tend to perform worse in later assessments, as the tool removes the effortful practice through which lasting understanding develops. Moreover, the motivation of reluctant learners, the management of group dynamics and the modelling of curiosity remain distinctly human tasks. It is precisely these aspects of teaching that determine whether students persevere.\n\nIt seems far more plausible, therefore, that the role of teachers will evolve rather than vanish. Teachers may spend less time correcting routine exercises and more time designing projects, mentoring and helping students use AI critically.\n\nOn balance, AI is likely to become a powerful assistant in classrooms, but the expectation that it will replace teachers within a generation is, in my view, unrealistic. The real challenge lies in ensuring that technology strengthens, rather than erodes, the skills that education exists to develop."
+  },
+  {
+    "id": "w-a1-me",
+    "level": "A1",
+    "kind": "sentences",
+    "title": "About me",
+    "minWords": 30,
+    "maxWords": 70,
+    "instructions": "Write 5–7 short sentences about you: your name, age, city, family, job or studies, and one thing you like doing.",
+    "checklist": [
+      "Name and age (I am…)",
+      "Where you live",
+      "Family (I have got…)",
+      "Job or studies",
+      "One hobby (I like + -ing)"
+    ],
+    "usefulLanguage": [
+      "My name is…",
+      "I am … years old.",
+      "I live in…",
+      "I have got…",
+      "I am a student / a…",
+      "I like …ing."
+    ],
+    "modelAnswer": "My name is Kossi and I am 23 years old. I live in Lomé with my parents. I have got one sister and two brothers. I am a student at the university. I study economics. I like playing football and listening to music. My favourite food is fufu."
   }
 ]
