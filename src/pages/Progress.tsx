@@ -10,7 +10,9 @@ import { STATUS_COLOR, STATUS_LABEL } from '../lib/mastery'
 import { lastNDays, successRate } from '../lib/stats'
 import { LESSONS } from '../content'
 import { LEVELS } from '../content/types'
-import { badges, bestStreak } from '../lib/rewards'
+import { badges, bestStreak, type Badge, type BadgeGroup, type RewardData } from '../lib/rewards'
+import { loadRewardData } from '../lib/rewardData'
+import { BadgeModal } from '../components/BadgeModal'
 import { Flag } from '@phosphor-icons/react'
 
 export default function Progress() {
@@ -24,6 +26,7 @@ export default function Progress() {
     cards: await db.cards.toArray(),
     writings: await db.writings.toArray(),
     recordings: await db.recordings.count(),
+    rewards: await loadRewardData(),
   }))
   if (!d || !profile) return null
 
@@ -62,7 +65,7 @@ export default function Progress() {
         <p className="mt-3 text-sm text-ink-500">Demonstrated level: <LevelBadge level={cur ?? 'not tested'} />. Levels change only through the level test and checkpoints. Retake the level test every 2–3 months to measure real progress.</p>
       </Card>
 
-      <BadgeGrid d={d} />
+      <BadgeGrid d={d.rewards} />
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
         {[['Study time', `${Math.floor(totalMin / 60)} h ${totalMin % 60} min`], ['Lessons completed', `${completed}/${LESSONS.length}`], ['Words well known', `${vocabKnown}/${d.cards.length}`], [`Success (${range} d)`, sr.total ? `${sr.rate}%` : '—'], ['Best streak', `${bestStreak(d.sessions)} days`], ['Total XP', `${d.sessions.reduce((a, s) => a + s.xp, 0)}`]].map(([k, v]) => (
@@ -113,26 +116,41 @@ export default function Progress() {
   )
 }
 
-function BadgeGrid({ d }: { d: Parameters<typeof badges>[0] }) {
+const GROUPS: { id: BadgeGroup; title: string }[] = [
+  { id: 'streak', title: 'Streaks' },
+  { id: 'level', title: 'Levels' },
+  { id: 'learning', title: 'Learning' },
+  { id: 'skills', title: 'Skills' },
+]
+
+function BadgeGrid({ d }: { d: RewardData }) {
   const all = badges(d)
+  const [open, setOpen] = useState<Badge | null>(null)
   const got = all.filter((b) => b.value >= b.target).length
   return (
     <Card>
       <div className="flex items-center justify-between"><h2 className="font-display text-lg font-extrabold">Badges</h2><span className="chip bg-sun-100 font-bold text-sun-900 dark:bg-sun-900/40 dark:text-sun-300">{got}/{all.length}</span></div>
-      <ul className="mt-3 grid grid-cols-3 gap-3 sm:grid-cols-4">
-        {all.map((b) => {
-          const ok = b.value >= b.target
-          return (
-            <li key={b.id} className="flex flex-col items-center text-center" title={b.desc}>
-              <span className={clsx('flex h-16 w-16 items-center justify-center rounded-full text-3xl', ok ? 'bg-sun-100 shadow-[0_3px_0_0_theme(colors.sun.300)] dark:bg-sun-900/40 dark:shadow-[0_3px_0_0_theme(colors.sun.900)]' : 'bg-ink-100 grayscale dark:bg-ink-800')} aria-hidden>
-                <span className={ok ? '' : 'opacity-40'}>{b.icon}</span>
-              </span>
-              <span className={clsx('mt-2 text-xs font-bold', !ok && 'text-ink-400')}>{b.title}</span>
-              <span className="text-[11px] leading-tight text-ink-400">{ok ? b.desc : `${b.value}/${b.target} · ${b.desc}`}</span>
-            </li>
-          )
-        })}
-      </ul>
+      {GROUPS.map((g) => (
+        <section key={g.id} className="mt-4">
+          <h3 className="label mb-2">{g.title}</h3>
+          <ul className="grid grid-cols-4 gap-2">
+            {all.filter((b) => b.group === g.id).map((b) => {
+              const ok = b.value >= b.target
+              return (
+                <li key={b.id}>
+                  <button type="button" onClick={() => setOpen(b)} className="flex w-full flex-col items-center text-center" aria-label={`${b.title}: ${ok ? 'earned' : `${b.value} of ${b.target}`}`}>
+                    <span className={clsx('flex h-14 w-14 items-center justify-center rounded-full text-2xl transition active:scale-95', ok ? 'bg-sun-400 shadow-[inset_0_-4px_0_0_theme(colors.sun.600),0_4px_0_0_theme(colors.sun.600)]' : 'bg-ink-100 grayscale dark:bg-ink-800')} aria-hidden>
+                      <span className={ok ? '' : 'opacity-40'}>{b.icon}</span>
+                    </span>
+                    <span className={clsx('mt-1.5 text-[11px] font-bold leading-tight', !ok && 'text-ink-400')}>{b.title}</span>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+      ))}
+      {open && <BadgeModal badge={open} onClose={() => setOpen(null)} />}
     </Card>
   )
 }

@@ -26,6 +26,13 @@ describe('rewards', () => {
     expect(got).not.toContain('streak-7')
   })
 
+  it('streak badges go up to 365 days and level badges follow proven levels', () => {
+    const all = badges({ ...empty, assessments: [{ uuid: 'x', at: 0, kind: 'placement', overall: 'B1', perSkill: {}, perLevel: {} }] })
+    expect(all.filter((b) => b.group === 'streak').map((b) => b.target)).toEqual([3, 7, 14, 30, 50, 100, 200, 365])
+    const lv = Object.fromEntries(all.filter((b) => b.group === 'level').map((b) => [b.id, b.value >= b.target]))
+    expect(lv).toEqual({ 'level-A1': true, 'level-A2': true, 'level-B1': true, 'level-B2': false, 'level-C1': false })
+  })
+
   it('stars follow the quiz score', () => {
     expect([stars(0), stars(40), stars(70), stars(89), stars(90), stars(100)]).toEqual([0, 1, 2, 2, 3, 3])
   })

@@ -71,7 +71,11 @@ export async function completeLesson(lessonId: string, score: number) {
     updatedAt: Date.now(),
   }
   await db.lessonProgress.put(next)
-  if (firstPass) await addXp(XP.lessonDone)
+  if (firstPass) {
+    await addXp(XP.lessonDone)
+    // The lesson will come back for short reviews after 1 week, 2 weeks and 1 month.
+    await db.kv.put({ key: `review.${lessonId}`, value: { base: Date.now(), stage: 0 } })
+  }
   return { firstPass }
 }
 

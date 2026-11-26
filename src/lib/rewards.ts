@@ -1,6 +1,6 @@
 import type { Assessment, Card, LessonProgress, StudySession, WritingSubmission } from '../db/db'
 import { today } from '../db/db'
-import type { Lesson, VocabItem } from '../content/types'
+import { LEVELS, type Lesson, type Level, type VocabItem } from '../content/types'
 import { computeStreak, xpLevel } from './stats'
 
 /** Everything badges are computed from. Badges are derived, never stored, so they can't drift from real data. */
@@ -11,13 +11,20 @@ export interface RewardData {
   writings: WritingSubmission[]
   assessments: Assessment[]
   recordings: number
+  /** Unit tests passed (optional: older callers don't track them). */
+  unitTests?: number
+  /** Spaced lesson reviews completed. */
+  reviews?: number
 }
+
+export type BadgeGroup = 'streak' | 'level' | 'learning' | 'skills'
 
 export interface Badge {
   id: string
   icon: string
   title: string
   desc: string
+  group: BadgeGroup
   /** Current value and target, for the progress hint on locked badges. */
   value: number
   target: number
@@ -37,31 +44,56 @@ export function bestStreak(sessions: StudySession[]): number {
   return best
 }
 
+export const STREAK_MILESTONES = [3, 7, 14, 30, 50, 100, 200, 365]
+const STREAK_ICONS = ['🔥', '⚡', '🌟', '👑', '💎', '🚀', '🏅', '🌍']
+const LEVEL_ICONS: Record<Level, string> = { A1: '🎯', A2: '🥉', B1: '🥈', B2: '🥇', C1: '🏆' }
+
+/** Highest level proven by a passed checkpoint or by the placement test. */
+function provenLevel(assessments: Assessment[]): number {
+  let best = -1
+  for (const a of assessments) {
+    const l = a.kind === 'checkpoint' ? (a.passed ? a.targetLevel : undefined) : a.overall === 'pre-A2' ? undefined : a.overall
+    if (l) best = Math.max(best, LEVELS.indexOf(l))
+  }
+  return best
+}
+
 export function badges(d: RewardData): Badge[] {
   const streak = Math.max(bestStreak(d.sessions), computeStreak(d.sessions))
   const lessons = d.progress.filter((p) => p.status === 'completed').length
   const perfect = d.progress.filter((p) => p.bestScore === 100).length
   const xp = xpLevel(d.sessions.reduce((a, s) => a + s.xp, 0)).lvl
-  const checkpoints = d.assessments.filter((a) => a.kind === 'checkpoint' && a.passed).length
+  const proven = provenLevel(d.assessments)
   const placement = d.assessments.some((a) => a.kind === 'placement') ? 1 : 0
-  const B = (id: string, icon: string, title: string, desc: string, value: number, target: number): Badge => ({ id, icon, title, desc, value: Math.min(value, target), target })
+  const B = (group: BadgeGroup) => (id: string, icon: string, title: string, desc: string, value: number, target: number): Badge => ({ id, icon, title, desc, group, value: Math.min(value, target), target })
+  const S = B('streak'), Lv = B('level'), Le = B('learning'), Sk = B('skills')
   return [
-    B('placement', '🧭', 'Explorer', 'Take the level test', placement, 1),
-    B('lesson-1', '🌱', 'First step', 'Complete your first lesson', lessons, 1),
-    B('lesson-5', '📚', 'Bookworm', 'Complete 5 lessons', lessons, 5),
-    B('lesson-15', '🎓', 'Scholar', 'Complete 15 lessons', lessons, 15),
-    B('perfect', '💯', 'Perfectionist', 'Score 100 % on a lesson quiz', perfect, 1),
-    B('streak-3', '🔥', 'On fire', 'Study 3 days in a row', streak, 3),
-    B('streak-7', '⚡', 'Unstoppable', 'Study 7 days in a row', streak, 7),
-    B('streak-30', '👑', 'Habit master', 'Study 30 days in a row', streak, 30),
-    B('words-20', '🃏', 'Collector', 'Save 20 words to your flashcards', d.cards.length, 20),
-    B('words-100', '🧠', 'Word hoarder', 'Save 100 words to your flashcards', d.cards.length, 100),
-    B('writer', '✍️', 'Writer', 'Submit 3 writing tasks', d.writings.length, 3),
-    B('speaker', '🎙️', 'Brave voice', 'Record yourself speaking', d.recordings, 1),
-    B('xp-5', '⭐', 'Rising star', 'Reach XP level 5', xp, 5),
-    B('checkpoint', '🏆', 'Level up', 'Pass a level checkpoint', checkpoints, 1),
+    ...STREAK_MILESTONES.map((n, i) => S(`streak-${n}`, STREAK_ICONS[i], `${n}-day streak`, `Study ${n} days in a row`, streak, n)),
+    ...LEVELS.map((l, i) => Lv(`level-${l}`, LEVEL_ICONS[l], `${l} achieved`, `Prove your ${l} level (checkpoint or level test)`, proven >= i ? 1 : 0, 1)),
+    Le('placement', '🧭', 'Explorer', 'Take the level test', placement, 1),
+    Le('lesson-1', '🌱', 'First step', 'Complete your first lesson', lessons, 1),
+    Le('lesson-5', '📚', 'Bookworm', 'Complete 5 lessons', lessons, 5),
+    Le('lesson-15', '🎓', 'Scholar', 'Complete 15 lessons', lessons, 15),
+    Le('lesson-30', '📖', 'Dedicated', 'Complete 30 lessons', lessons, 30),
+    Le('lesson-60', '🏛️', 'Master learner', 'Complete 60 lessons', lessons, 60),
+    Le('perfect', '💯', 'Perfectionist', 'Score 100 % on a lesson quiz', perfect, 1),
+    Le('unit-1', '🛡️', 'Unit cleared', 'Pass a unit test', d.unitTests ?? 0, 1),
+    Le('unit-10', '🏰', 'Fortress', 'Pass 10 unit tests', d.unitTests ?? 0, 10),
+    Le('review-1', '🔁', 'Memory keeper', 'Complete a spaced review', d.reviews ?? 0, 1),
+    Le('review-20', '🧠', 'Iron memory', 'Complete 20 spaced reviews', d.reviews ?? 0, 20),
+    Sk('words-20', '🃏', 'Collector', 'Save 20 words to your flashcards', d.cards.length, 20),
+    Sk('words-100', '📇', 'Word hoarder', 'Save 100 words to your flashcards', d.cards.length, 100),
+    Sk('words-300', '🗝️', 'Lexicon', 'Save 300 words to your flashcards', d.cards.length, 300),
+    Sk('writer', '✍️', 'Writer', 'Submit 3 writing tasks', d.writings.length, 3),
+    Sk('speaker', '🎙️', 'Brave voice', 'Record yourself speaking', d.recordings, 1),
+    Sk('xp-5', '⭐', 'Rising star', 'Reach XP level 5', xp, 5),
+    Sk('xp-10', '🌠', 'Shooting star', 'Reach XP level 10', xp, 10),
+    Sk('xp-20', '☀️', 'Supernova', 'Reach XP level 20', xp, 20),
   ]
 }
+
+/** Next streak milestone to aim for (or undefined after the last one). */
+export const nextStreakMilestone = (streak: number) => STREAK_MILESTONES.find((n) => n > streak)
 
 export const earned = (bs: Badge[]) => bs.filter((b) => b.value >= b.target)
 

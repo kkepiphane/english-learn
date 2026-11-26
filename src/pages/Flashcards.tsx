@@ -57,30 +57,32 @@ export default function Flashcards() {
 
       {cur ? (
         <>
-          <button type="button" onClick={() => setFlipped(!flipped)} className="card flex min-h-64 w-full flex-col items-center justify-center p-6 text-center" aria-live="polite">
-            {!flipped ? (
-              <>
+          {/* 3D card: the answer is printed on the back and the card turns over. */}
+          <div className="medal-scene h-72 w-full">
+            <div key={cur.id} className="medal h-full w-full" style={{ transform: flipped ? 'rotateY(180deg)' : undefined }}>
+              <button type="button" onClick={() => setFlipped(true)} aria-hidden={flipped} tabIndex={flipped ? -1 : 0}
+                className="card absolute inset-0 flex flex-col items-center justify-center p-6 text-center [backface-visibility:hidden] shadow-[0_6px_0_0_theme(colors.ink.200)] dark:shadow-[0_6px_0_0_theme(colors.ink.950)]">
                 <p className="text-3xl font-bold">{reversed ? cur.back.split(' — ')[1] ?? cur.back : cur.front}</p>
                 {!reversed && cur.ipa && <p className="mt-2 font-mono text-ink-400">{cur.ipa}</p>}
                 <p className="mt-6 text-sm text-ink-400">Think of the answer, then tap to reveal</p>
-              </>
-            ) : (
-              <>
+              </button>
+              <div aria-live="polite" aria-hidden={!flipped} onClick={() => setFlipped(false)}
+                className="card absolute inset-0 flex flex-col items-center justify-center overflow-auto border-brand-200 bg-brand-50 p-6 text-center [backface-visibility:hidden] [transform:rotateY(180deg)] shadow-[0_6px_0_0_theme(colors.brand.300)] dark:border-brand-800 dark:bg-ink-900 dark:shadow-[0_6px_0_0_theme(colors.brand.900)]">
                 <div className="flex items-center gap-2"><SpeakButton text={cur.front} /><p className="text-2xl font-bold">{cur.front}</p></div>
                 {cur.ipa && <p className="mt-1 font-mono text-ink-400">{cur.ipa}</p>}
                 <p className="mt-3 text-lg">{cur.back}</p>
                 {cur.example && <p className="mt-2 italic text-ink-500">“{cur.example}”</p>}
-              </>
-            )}
-          </button>
+              </div>
+            </div>
+          </div>
           {flipped ? (
-            <div className="mt-3 grid grid-cols-4 gap-2" role="group" aria-label="How well did you know it?">
+            <div className="mt-4 grid grid-cols-4 gap-2" role="group" aria-label="How well did you know it?">
               {([['Again', 0, 'bg-rose-600'], ['Hard', 1, 'bg-amber-500'], ['Good', 2, 'bg-emerald-600'], ['Easy', 3, 'bg-brand-600']] as const).map(([l, g, c]) => (
                 <button key={l} className={`btn ${c} flex-col gap-0 text-white`} onClick={() => void grade(g)}>{l}<span className="text-[11px] font-normal opacity-80">{preview(g)}</span></button>
               ))}
             </div>
           ) : (
-            <button className="btn-primary mt-3 w-full" onClick={() => setFlipped(true)}>Show answer</button>
+            <button className="btn-primary mt-4 w-full" onClick={() => setFlipped(true)}>Show answer</button>
           )}
           <label className="mt-3 flex items-center justify-center gap-2 text-sm text-ink-500"><input type="checkbox" checked={reversed} onChange={(e) => setReversed(e.target.checked)} /> French → English mode</label>
         </>

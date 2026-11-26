@@ -40,3 +40,13 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
 }
+
+/* 3D medal: a coin that spins in when it appears, then gently sways; tap to flip it. */
+.medal-scene { perspective: 900px; }
+.medal { position: relative; transform-style: preserve-3d; transition: transform .8s cubic-bezier(.2,.8,.2,1); }
+.medal-face { position: absolute; inset: 0; border-radius: 9999px; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; align-items: center; justify-content: center; }
+.medal-back { transform: rotateY(180deg); }
+.medal-spin { animation: medal-spin 1.6s cubic-bezier(.2,.8,.2,1) both; }
+.medal-sway { animation: medal-sway 4s ease-in-out infinite; }
+@keyframes medal-spin { 0% { transform: rotateY(-720deg) scale(.3); opacity: 0; } 60% { opacity: 1; } 80% { transform: rotateY(15deg) scale(1.08); } 100% { transform: rotateY(0) scale(1); } }
+@keyframes medal-sway { 0%, 100% { transform: rotateY(-14deg) rotateX(4deg); } 50% { transform: rotateY(14deg) rotateX(-4deg); } }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
 import { Barbell, ChartBar, House, MapTrifold, User, type Icon as PhIcon } from '@phosphor-icons/react'
@@ -8,7 +8,10 @@ import { useOnline, useProfile, useTheme } from '../hooks/hooks'
 import { badges, earned, type Badge } from '../lib/rewards'
 import { celebrate, confetti, setSoundEnabled, sfx } from '../lib/fx'
 import { xpLevel } from '../lib/stats'
+import { loadRewardData } from '../lib/rewardData'
 import { UpdatePrompt } from './UpdatePrompt'
+import { BadgeModal } from './BadgeModal'
+import { Medal } from './Medal'
 
 // Speaking lives in Practice, Exams in Learn: five tabs fit comfortably on a phone.
 const NAV: { to: string; label: string; icon: PhIcon }[] = [
@@ -35,12 +38,7 @@ export function StatusPill() {
 function BadgeWatcher() {
   const [fresh, setFresh] = useState<Badge[]>([])
   const data = useLiveQuery(async () => ({
-    sessions: await db.sessions.toArray(),
-    progress: await db.lessonProgress.toArray(),
-    cards: await db.cards.toArray(),
-    writings: await db.writings.toArray(),
-    assessments: await db.assessments.toArray(),
-    recordings: await db.recordings.count(),
+    ...(await loadRewardData()),
     seen: (await db.kv.get('badges.seen'))?.value as string[] | undefined,
   }))
   useEffect(() => {
@@ -54,23 +52,8 @@ function BadgeWatcher() {
     sfx.unlock()
     confetti(80)
   }, [data])
-  useEffect(() => {
-    if (!fresh.length) return
-    const t = setTimeout(() => setFresh([]), 5000)
-    return () => clearTimeout(t)
-  }, [fresh])
   if (!fresh.length) return null
-  return (
-    <div className="fixed inset-x-0 top-3 z-50 flex justify-center px-4" role="status" aria-live="polite">
-      <Link to="/progress" onClick={() => setFresh([])} className="flex max-w-sm animate-pop items-center gap-3 rounded-3xl border border-flame-200 bg-white px-4 py-3 shadow-xl dark:border-flame-900 dark:bg-ink-900">
-        <span className="text-3xl animate-wiggle" aria-hidden>{fresh[0].icon}</span>
-        <span>
-          <span className="block text-xs font-bold uppercase tracking-wider text-flame-600">{fresh.length > 1 ? `${fresh.length} new badges!` : 'New badge!'}</span>
-          <span className="block font-display font-bold">{fresh.map((b) => b.title).join(' · ')}</span>
-        </span>
-      </Link>
-    </div>
-  )
+  return <BadgeModal badge={fresh[0]} isNew more={fresh.length - 1} onClose={() => setFresh([])} />
 }
 
 /** Full-screen celebration when the XP level goes up. */
@@ -92,11 +75,9 @@ function LevelUpWatcher() {
   }, [data])
   if (lvl === null) return null
   return (
-    <div className="fixed inset-0 z-50 flex animate-fadein items-center justify-center bg-ink-950/70 p-6 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="lvl-h" onClick={() => setLvl(null)}>
+    <div className="fixed inset-0 z-[55] flex animate-fadein items-center justify-center bg-ink-950/70 p-6 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="lvl-h" onClick={() => setLvl(null)}>
       <div className="w-full max-w-xs animate-zoomin rounded-[2rem] bg-white p-6 text-center shadow-2xl dark:bg-ink-900">
-        <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-flame-100 shadow-[0_6px_0_0_theme(colors.flame.300)] dark:bg-flame-900/40">
-          <span className="animate-flicker text-6xl" aria-hidden>⭐</span>
-        </div>
+        <Medal icon="⭐" back={`Level ${lvl}`} size={140} />
         <p className="mt-5 text-xs font-extrabold uppercase tracking-widest text-flame-600">Level up!</p>
         <p id="lvl-h" className="font-display text-5xl font-extrabold">Level {lvl}</p>
         <p className="mt-2 text-sm text-ink-500">Your English is growing every day. Keep the fire going.</p>

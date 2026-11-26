@@ -7,14 +7,16 @@ import { useProfile } from '../hooks/hooks'
 import { Card, Bar, Ring, SpeakButton, StreakChip, CountUp } from '../components/ui'
 import { computeStreak, xpLevel } from '../lib/stats'
 import { coachMessage, dailyChallenges, learningLevel, nextLesson, weekStart, weeklyChallenges } from '../lib/recommend'
-import { badges, bestStreak, CHEST_XP, earned, weekDots, wordOfTheDay } from '../lib/rewards'
+import { badges, bestStreak, CHEST_XP, earned, nextStreakMilestone, weekDots, wordOfTheDay } from '../lib/rewards'
+import { loadRewardData } from '../lib/rewardData'
+import { dueReviews, loadReviewStates, nextReview, REVIEW_LABELS, REVIEW_XP } from '../lib/review'
 import { addCards, claimChest } from '../lib/repo'
 import { celebrate } from '../lib/fx'
 import { lessonsFor, getLesson, availableLevels } from '../content'
 import { buildBites } from '../lib/lessonDeck'
 import { DREAMS, EXAM_RANGE, daysLeft, dreamTitle, records, weekVsWeek, whyOf } from '../lib/goals'
 import { LEVELS, type Level } from '../content/types'
-import { ArrowRight, CaretRight, Cards, Check, Compass, Fire, Flag, Lightning, Plus, Trophy } from '@phosphor-icons/react'
+import { ArrowRight, ArrowsClockwise, CaretRight, Cards, Check, Compass, Fire, Flag, Lightning, Plus, Trophy } from '@phosphor-icons/react'
 import { DREAM_ICON } from '../components/dreamIcons'
 import type { Profile, StudySession, LessonProgress } from '../db/db'
 
@@ -31,6 +33,8 @@ export default function Home() {
     placement: await db.kv.get('placement.done'),
     chest: await db.kv.get(`chest.${weekStart()}`),
     bites: await db.kv.where('key').startsWith('lesson.bites.').toArray(),
+    reviewStates: await loadReviewStates(),
+    rewards: await loadRewardData(),
   }))
   if (!profile || !data) return null
 
@@ -51,8 +55,11 @@ export default function Home() {
   const weekly = weeklyChallenges(data.sessions, data.writings, data.attempts)
   const lastActive = [...data.sessions].filter((s) => s.seconds >= 60).sort((a, b) => b.day.localeCompare(a.day))[0]?.day
   const dots = weekDots(data.sessions)
+  const nextMilestone = nextStreakMilestone(streak)
+  const dueRev = dueReviews(data.progress, data.reviewStates)
+  const upcoming = dueRev.length ? undefined : nextReview(data.progress, data.reviewStates)
   const goalDone = minutesToday >= profile.dailyGoalMin
-  const allBadges = badges(data)
+  const allBadges = badges(data.rewards)
   const got = earned(allBadges)
 
   return (
@@ -85,6 +92,12 @@ export default function Home() {
             </li>
           ))}
         </ol>
+        {nextMilestone && (
+          <p className="mt-3 flex items-center justify-center gap-1.5 text-xs font-semibold text-ink-500">
+            <Fire weight="fill" className="text-flame-500" aria-hidden />
+            {nextMilestone - streak === 1 ? 'Tomorrow' : `${nextMilestone - streak} more days`}: {nextMilestone}-day streak badge
+          </p>
+        )}
       </Card>
 
       {!data.placement && (
@@ -135,6 +148,25 @@ export default function Home() {
           <p className="label">Unfinished</p>
           <ul className="mt-1.5 space-y-1">{pending.map((l) => <li key={l!.id}><Link className="text-sm font-semibold text-brand-600 dark:text-brand-300" to={`/learn/lesson/${l!.id}`}>Finish: {l!.title} <ArrowRight className="inline" aria-hidden /></Link></li>)}</ul>
         </Card>
+      )}
+
+      {dueRev.length > 0 ? (
+        <Card className="border-brand-200 dark:border-brand-800">
+          <h2 className="flex items-center gap-2 font-display text-lg font-extrabold"><ArrowsClockwise className="text-brand-600 dark:text-brand-300" aria-hidden />Time to review</h2>
+          <ul className="mt-3 space-y-2">
+            {dueRev.slice(0, 3).map((r) => (
+              <li key={r.lesson.id}>
+                <Link to={`/learn/review/${r.lesson.id}`} className="flex items-center gap-3 rounded-2xl border-2 border-b-4 border-ink-200 p-3 transition active:translate-y-[2px] active:border-b-2 dark:border-ink-700">
+                  <span className="min-w-0 flex-1"><span className="block truncate font-bold">{r.lesson.title}</span><span className="text-xs text-ink-500">{REVIEW_LABELS[r.stage]} · +{REVIEW_XP} XP</span></span>
+                  <ArrowRight weight="bold" className="text-brand-600" aria-hidden />
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {dueRev.length > 3 && <p className="mt-2 text-xs text-ink-400">+{dueRev.length - 3} more waiting</p>}
+        </Card>
+      ) : upcoming && (
+        <p className="flex items-center gap-2 px-1 text-sm text-ink-500"><ArrowsClockwise className="text-brand-500" aria-hidden />Next review: <span className="font-semibold text-ink-700 dark:text-ink-200">{upcoming.lesson.title}</span> in {Math.max(1, Math.ceil((upcoming.due - Date.now()) / 86_400_000))} days</p>
       )}
 
       <YouVsYou sessions={data.sessions} />
