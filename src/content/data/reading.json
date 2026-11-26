@@ -461,5 +461,210 @@
         "explanation": "Paragraph 5: it depends largely on policy."
       }
     ]
+  },
+  {
+    "id": "r-a1-kofi",
+    "level": "A1",
+    "topic": "People",
+    "title": "Kofi's day",
+    "minutes": 3,
+    "paragraphs": [
+      "Kofi is 24. He is from Kpalimé, but he lives in Lomé with his sister Ama. Kofi is a mechanic and Ama is a nurse.",
+      "Kofi gets up at six o'clock. He has breakfast — bread and tea — and goes to work by moto. His garage is next to a big market.",
+      "Ama works at night, so she sleeps in the morning. On Sundays, Kofi and Ama visit their parents in Kpalimé. They love their mother's food!"
+    ],
+    "glossary": {
+      "mechanic": {
+        "def": "a person who repairs cars and motorbikes",
+        "fr": "mécanicien",
+        "ipa": "/məˈkænɪk/"
+      },
+      "garage": {
+        "def": "a place where cars are repaired",
+        "fr": "garage",
+        "ipa": "/ˈɡærɑːʒ/"
+      },
+      "visit": {
+        "def": "to go and see someone",
+        "fr": "rendre visite à",
+        "ipa": "/ˈvɪzɪt/"
+      }
+    },
+    "summary": "Kofi, a mechanic in Lomé, lives with his sister Ama, a nurse; on Sundays they visit their parents.",
+    "questions": [
+      {
+        "id": "ra1-q1",
+        "type": "mcq",
+        "prompt": "Where is Kofi from?",
+        "options": [
+          "Lomé",
+          "Kpalimé",
+          "Accra",
+          "Kara"
+        ],
+        "answer": 1,
+        "explanation": "\"He is from Kpalimé.\""
+      },
+      {
+        "id": "ra1-q2",
+        "type": "mcq",
+        "prompt": "What is Ama's job?",
+        "options": [
+          "mechanic",
+          "teacher",
+          "nurse",
+          "farmer"
+        ],
+        "answer": 2,
+        "explanation": "\"Ama is a nurse.\""
+      },
+      {
+        "id": "ra1-q3",
+        "type": "truefalse",
+        "prompt": "Kofi goes to work by bus.",
+        "answer": false,
+        "explanation": "He goes by moto."
+      },
+      {
+        "id": "ra1-q4",
+        "type": "mcq",
+        "prompt": "When do they visit their parents?",
+        "options": [
+          "On Saturdays",
+          "On Sundays",
+          "Every day",
+          "At night"
+        ],
+        "answer": 1,
+        "explanation": "\"On Sundays.\""
+      }
+    ]
+  },
+  {
+    "id": "r-c1-ai-classroom",
+    "level": "C1",
+    "topic": "Education",
+    "title": "Will AI tutors replace teachers?",
+    "minutes": 9,
+    "paragraphs": [
+      "Few technologies have entered classrooms as rapidly as generative AI. Within two years of its public release, students on every continent were using chatbots to summarise readings, check grammar and, inevitably, write essays. Predictably, the debate has polarised: enthusiasts herald a revolution in personalised learning, while sceptics warn of a generation that outsources thinking itself.",
+      "The case for AI tutoring rests largely on a well-established finding. Decades of research indicate that one-to-one tutoring dramatically improves outcomes compared with conventional classroom instruction. Until now, such tutoring has been prohibitively expensive; an AI that adapts to each learner at negligible cost could, in principle, democratise it.",
+      "Yet the evidence so far is more nuanced than either camp suggests. Several studies have found that students who rely on AI to solve problems perform well during practice but worse on subsequent tests, arguably because the tool removes the productive struggle through which durable learning occurs. Where AI was configured to give hints rather than answers, however, the decline largely disappeared.",
+      "What emerges, then, is less a story of replacement than of redesign. Teachers remain indispensable for what machines do poorly: motivating reluctant learners, reading a room, and modelling intellectual curiosity. The more pressing question is not whether AI belongs in education, but how institutions can harness it without eroding the very skills education is meant to build."
+    ],
+    "glossary": {
+      "polarised": {
+        "def": "divided into two opposing groups",
+        "fr": "polarisé",
+        "ipa": "/ˈpəʊləraɪzd/"
+      },
+      "herald": {
+        "def": "to announce something as important and coming",
+        "fr": "annoncer, saluer",
+        "ipa": "/ˈherəld/"
+      },
+      "outsources": {
+        "def": "gives work to an outside person or system",
+        "fr": "externalise",
+        "ipa": "/ˈaʊtsɔːsɪz/"
+      },
+      "prohibitively": {
+        "def": "so much that people cannot afford it",
+        "fr": "de façon prohibitive",
+        "ipa": "/prəˈhɪbətɪvli/"
+      },
+      "negligible": {
+        "def": "so small it is not important",
+        "fr": "négligeable",
+        "ipa": "/ˈneɡlɪdʒəbl/"
+      },
+      "nuanced": {
+        "def": "showing small but important differences",
+        "fr": "nuancé",
+        "ipa": "/ˈnjuːɑːnst/"
+      },
+      "durable": {
+        "def": "lasting a long time",
+        "fr": "durable",
+        "ipa": "/ˈdjʊərəbl/"
+      },
+      "indispensable": {
+        "def": "absolutely necessary",
+        "fr": "indispensable",
+        "ipa": "/ˌɪndɪˈspensəbl/"
+      },
+      "harness": {
+        "def": "to control and use something for a purpose",
+        "fr": "exploiter, mettre à profit",
+        "ipa": "/ˈhɑːnɪs/"
+      },
+      "eroding": {
+        "def": "gradually destroying or weakening",
+        "fr": "éroder, affaiblir",
+        "ipa": "/ɪˈrəʊdɪŋ/"
+      }
+    },
+    "summary": "AI tutoring could make one-to-one help cheap, but it harms learning when it gives answers; the future lies in redesigning teaching, not replacing teachers.",
+    "questions": [
+      {
+        "id": "rc1-q1",
+        "type": "mcq",
+        "prompt": "Why could AI tutoring be important, according to paragraph 2?",
+        "options": [
+          "It is more fun than teachers",
+          "It could make effective one-to-one tutoring affordable",
+          "It replaces exams",
+          "It writes better essays"
+        ],
+        "answer": 1,
+        "explanation": "One-to-one tutoring works but has been too expensive."
+      },
+      {
+        "id": "rc1-q2",
+        "type": "mcq",
+        "prompt": "What happened when students relied on AI to solve problems?",
+        "options": [
+          "They did better on later tests",
+          "They did worse on later tests",
+          "Nothing changed",
+          "They stopped using it"
+        ],
+        "answer": 1,
+        "explanation": "\"…worse on subsequent tests\"."
+      },
+      {
+        "id": "rc1-q3",
+        "type": "truefalse",
+        "prompt": "The decline disappeared when AI gave hints instead of answers.",
+        "answer": true,
+        "explanation": "Paragraph 3, last sentence."
+      },
+      {
+        "id": "rc1-q4",
+        "type": "mcq",
+        "prompt": "The writer's overall view is that…",
+        "options": [
+          "teachers will soon disappear",
+          "AI should be banned",
+          "education must be redesigned to use AI wisely",
+          "AI has no effect"
+        ],
+        "answer": 2,
+        "explanation": "\"less a story of replacement than of redesign\"."
+      },
+      {
+        "id": "rc1-q5",
+        "type": "mcq",
+        "prompt": "'Productive struggle' refers to…",
+        "options": [
+          "arguments between students",
+          "useful effort that builds lasting learning",
+          "difficult exams",
+          "teacher stress"
+        ],
+        "answer": 1,
+        "explanation": "The effort through which durable learning occurs."
+      }
+    ]
   }
 ]

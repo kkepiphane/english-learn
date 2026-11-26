@@ -23,7 +23,7 @@ describe('placement scoring', () => {
     expect(res.overall).toBe('A2')
   })
   it('starting level is the next level to learn', () => {
-    expect(startingLevel('pre-A2')).toBe('A2')
+    expect(startingLevel('pre-A2')).toBe('A1')
     expect(startingLevel('A2')).toBe('B1')
   })
 })

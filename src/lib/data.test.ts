@@ -42,8 +42,8 @@ describe('content integrity', () => {
   it('placement has enough evidence per level to be scored', () => {
     for (const lvl of ['A2', 'B1', 'B2'] as const) expect(PLACEMENT.filter((p) => p.level === lvl).length).toBeGreaterThanOrEqual(MIN_ITEMS_PER_LEVEL)
   })
-  it('checkpoints cover four skills for A2, B1 and B2', () => {
-    for (const lvl of ['A2', 'B1', 'B2'] as const) expect(new Set(checkpointItems(lvl).map((c) => c.skill)).size).toBe(4)
+  it('checkpoints cover four skills at every level', () => {
+    for (const lvl of ['A1', 'A2', 'B1', 'B2', 'C1'] as const) expect(new Set(checkpointItems(lvl).map((c) => c.skill)).size).toBe(4)
   })
   it('A1 sheets are short and have enough sprint items', () => {
     for (const b of BASICS) {

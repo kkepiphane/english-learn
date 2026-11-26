@@ -1,5 +1,6 @@
 import { Link, useSearchParams } from 'react-router-dom'
 import { BasicsHome } from './Basics'
+import { levelSprintId, sprintKey, SPRINT_SECONDS, type SprintRecord } from '../lib/sprint'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
 import { db } from '../db/db'
@@ -11,7 +12,7 @@ import { stars } from '../lib/rewards'
 import { buildBites } from '../lib/lessonDeck'
 import type { Lesson, Level } from '../content/types'
 import { LEVELS } from '../content/types'
-import { CaretRight, ChatsCircle, Check, Exam, Lock, PencilSimple, TextAa, Trophy, type Icon } from '@phosphor-icons/react'
+import { ArrowRight, CaretRight, ChatsCircle, Check, Exam, Lock, PencilSimple, TextAa, Timer, Trophy, type Icon } from '@phosphor-icons/react'
 
 const CAT: Record<Lesson['category'], { label: string; icon: Icon }> = {
   grammar: { label: 'Grammar', icon: PencilSimple },
@@ -38,9 +39,9 @@ export default function Learn() {
   const bitesDone = new Map(biteRows.map((r) => [r.key.slice('lesson.bites.'.length), r.value as number]))
   const [params, setParams] = useSearchParams()
   const asked = params.get('level')
-  const tab: 'A1' | Level = asked === 'A1' || LEVELS.includes(asked as Level) ? (asked as 'A1' | Level) : learningLevel(profile)
-  const setLevel = (l: 'A1' | Level) => setParams({ level: l }, { replace: true })
-  const current: Level = tab === 'A1' ? 'A2' : tab
+  const current: Level = LEVELS.includes(asked as Level) ? (asked as Level) : learningLevel(profile)
+  const setLevel = (l: Level) => setParams({ level: l }, { replace: true })
+  const sprint = useLiveQuery(() => db.kv.get(sprintKey(levelSprintId(current))), [current])?.value as SprintRecord | undefined
   const map = new Map(progress.map((p) => [p.lessonId, p]))
   const units = unitsFor(current)
   const all = units.flatMap((u) => u.lessonIds)
@@ -52,24 +53,31 @@ export default function Learn() {
     <div>
       <PageTitle title="Learn" />
       <div className="mb-4 flex gap-1.5 rounded-2xl bg-ink-100 p-1 dark:bg-ink-900" role="tablist" aria-label="Level">
-        {(['A1', ...LEVELS] as const).map((l) => {
-          const avail = l === 'A1' || availableLevels().includes(l)
+        {LEVELS.map((l) => {
+          const avail = availableLevels().includes(l)
           return (
-            <button key={l} role="tab" aria-selected={l === tab} disabled={!avail} onClick={() => setLevel(l)}
-              className={clsx('flex-1 rounded-xl py-2 text-sm font-bold transition', l === tab ? 'bg-white text-brand-700 shadow-[0_3px_0_0_theme(colors.ink.200)] dark:bg-ink-700 dark:text-white dark:shadow-[0_3px_0_0_theme(colors.ink.950)]' : 'text-ink-500', !avail && 'opacity-40')}
+            <button key={l} role="tab" aria-selected={l === current} disabled={!avail} onClick={() => setLevel(l)}
+              className={clsx('flex-1 rounded-xl py-2 text-sm font-bold transition', l === current ? 'bg-white text-brand-700 shadow-[0_3px_0_0_theme(colors.ink.200)] dark:bg-ink-700 dark:text-white dark:shadow-[0_3px_0_0_theme(colors.ink.950)]' : 'text-ink-500', !avail && 'opacity-40')}
               title={avail ? undefined : 'Coming in a later content update'}><span className="inline-flex items-center gap-1">{l}{!avail && <Lock size={13} weight="bold" aria-hidden />}</span></button>
           )
         })}
       </div>
 
-      {tab === 'A1' ? <BasicsHome /> : (<>
-      <div className="card mb-6 flex items-center gap-3 p-4">
+      <div className="card mb-4 flex items-center gap-3 p-4">
         <div className="flex-1">
           <p className="font-display font-bold">{current} path</p>
           <Bar value={(doneCount / Math.max(all.length, 1)) * 100} className="mt-2" label={`${current} path progress`} />
           <p className="mt-1 text-xs text-ink-400">{doneCount}/{all.length} lessons</p>
         </div>
       </div>
+
+      {current !== 'A1' && (
+        <Link to={`/basics/sprint/${levelSprintId(current)}`} className="mb-6 flex items-center gap-3 rounded-[1.25rem] bg-flame-500 p-4 text-white shadow-[0_5px_0_0_theme(colors.flame.700)] transition active:translate-y-[3px] active:shadow-[0_2px_0_0_theme(colors.flame.700)]">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/20" aria-hidden><Timer size={26} weight="fill" /></span>
+          <span className="flex-1"><span className="block font-display text-lg font-extrabold">{current} sprint · {SPRINT_SECONDS.level} s</span><span className="text-sm text-flame-50">{sprint ? `Beat your ghost: ${sprint.best}` : 'Race the clock'}</span></span>
+          <ArrowRight size={22} weight="bold" aria-hidden />
+        </Link>
+      )}
 
       <div className="space-y-8">
         {units.map((u, ui) => (
@@ -96,7 +104,7 @@ export default function Learn() {
                         'bg-brand-100 text-brand-700 shadow-[0_4px_0_0_theme(colors.brand.300)] dark:bg-brand-900/60 dark:text-brand-200': p && !done && !isNext,
                         'bg-white text-ink-400 shadow-[0_4px_0_0_theme(colors.ink.200)] dark:bg-ink-800 dark:shadow-[0_4px_0_0_theme(colors.ink.950)]': !p && !isNext,
                       })}>
-                      {(() => { const I = done ? Check : CAT[l.category].icon; return <I size={isNext ? 34 : 28} weight={done ? 'bold' : 'duotone'} aria-hidden /> })()}
+                      {(() => { const I = done ? Check : CAT[l.category].icon; return <I size={isNext ? 34 : 28} weight={done ? 'bold' : 'fill'} aria-hidden /> })()}
                     </Link>
                     {done ? <Stars n={stars(p!.bestScore)} className="mt-2 text-sm" /> : <BiteDots lesson={l} done={bitesDone.get(id) ?? 0} />}
                     <span className={clsx('mt-1.5 max-w-[11rem] text-center text-xs font-semibold leading-tight', isNext ? 'text-brand-700 dark:text-brand-300' : 'text-ink-500')}>{l.title}</span>
@@ -111,17 +119,22 @@ export default function Learn() {
           <Link to={`/learn/checkpoint/${current}`} aria-label={`${current} checkpoint${passed ? ' — passed' : ''}`}
             className={clsx('flex h-24 w-24 items-center justify-center rounded-3xl text-5xl transition active:translate-y-[3px]',
               passed ? 'bg-sun-400 text-sun-900 shadow-[0_5px_0_0_theme(colors.sun.600)]' : 'bg-flame-50 text-flame-500 shadow-[0_5px_0_0_theme(colors.flame.200)] dark:bg-flame-900/30 dark:shadow-[0_5px_0_0_theme(colors.flame.900)]')}>
-            <Trophy size={48} weight="duotone" aria-hidden />
+            <Trophy size={48} weight="fill" aria-hidden />
           </Link>
           <p className="mt-3 font-display font-bold">{passed ? `${current} level proven!` : `${current} checkpoint`}</p>
           <p className="text-center text-xs text-ink-400">{passed ? 'You can retake it any time.' : 'Pass it to level up.'}</p>
         </div>
       </div>
 
-      </>)}
+      {current === 'A1' && (
+        <section className="mt-10" aria-labelledby="basics-h">
+          <h2 id="basics-h" className="mb-3 text-lg font-extrabold">Review sheets and sprints</h2>
+          <BasicsHome />
+        </section>
+      )}
 
       <Link to="/exams" className="card mt-8 flex items-center gap-3 p-4 transition hover:border-brand-300">
-        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden><Exam size={24} weight="duotone" /></span>
+        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden><Exam size={24} weight="fill" /></span>
         <span className="flex-1"><span className="block font-display font-bold">Exam prep</span><span className="text-sm text-ink-500">IELTS Academic and TOEFL iBT formats</span></span>
         <CaretRight className="text-ink-300" weight="bold" aria-hidden />
       </Link>

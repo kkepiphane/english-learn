@@ -57,7 +57,7 @@ function GoalForm({ p }: { p: Profile }) {
             return (
               <button key={d} type="button" aria-pressed={on} onClick={() => toggle(d)}
                 className={clsx('flex flex-col items-center gap-1.5 rounded-2xl border-2 border-b-4 px-3 py-4 text-sm font-bold transition active:translate-y-[2px] active:border-b-2', on ? 'border-brand-500 bg-brand-50 text-brand-800 dark:bg-brand-900/40 dark:text-brand-100' : 'border-ink-200 dark:border-ink-700')}>
-                {(() => { const I = DREAM_ICON[d]; return <I size={36} weight={on ? 'fill' : 'duotone'} className={clsx('transition', on ? 'animate-pop text-brand-600 dark:text-brand-300' : 'text-ink-400')} aria-hidden /> })()}
+                {(() => { const I = DREAM_ICON[d]; return <I size={36} weight="fill" className={clsx('transition', on ? 'animate-pop text-brand-600 dark:text-brand-300' : 'text-ink-400')} aria-hidden /> })()}
                 {DREAMS[d].label}
               </button>
             )
@@ -88,7 +88,7 @@ function GoalForm({ p }: { p: Profile }) {
       </Card>
 
       <Card>
-        <h2 className="flex items-center gap-2 font-display text-lg font-extrabold"><AlarmIcon size={22} weight="duotone" className="text-flame-500" aria-hidden />Daily reminder</h2>
+        <h2 className="flex items-center gap-2 font-display text-lg font-extrabold"><AlarmIcon size={22} weight="fill" className="text-flame-500" aria-hidden />Daily reminder</h2>
         <p className="text-sm text-ink-500">The app can't ring by itself when it's closed, so let your phone's calendar remind you every day.</p>
         <label className="mt-3 flex items-center gap-3"><span className="label">Time</span>
           <input type="time" className="input w-auto" value={why.reminder ?? '19:00'} onChange={(e) => setWhy({ ...why, reminder: e.target.value || '19:00' })} /></label>

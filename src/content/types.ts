@@ -1,6 +1,8 @@
 // Content model — mirrors the server-side versioned content tables.
-export type Level = 'A2' | 'B1' | 'B2' | 'C1'
-export const LEVELS: Level[] = ['A2', 'B1', 'B2', 'C1']
+export type Level = 'A1' | 'A2' | 'B1' | 'B2' | 'C1'
+export const LEVELS: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1']
+/** Levels the placement test measures. Below A2 the learner starts with the A1 course. */
+export const PLACEMENT_LEVELS: Level[] = ['A2', 'B1', 'B2']
 
 export type Skill = 'reading' | 'listening' | 'writing' | 'speaking' | 'grammar' | 'vocabulary' | 'pronunciation'
 export const CORE_SKILLS: Skill[] = ['reading', 'listening', 'writing', 'speaking']

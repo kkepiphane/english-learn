@@ -1,7 +1,9 @@
 import type { BasicSheet, Exercise, Lesson, Level, ListeningItem, PlacementQuestion, ReadingText, Skill, Unit, WritingPrompt } from './types'
+import lessonsA1 from './data/lessons-a1.json'
 import lessonsA2 from './data/lessons-a2.json'
 import lessonsB1 from './data/lessons-b1.json'
 import lessonsB2 from './data/lessons-b2.json'
+import lessonsC1 from './data/lessons-c1.json'
 import basics from './data/a1-basics.json'
 import units from './data/units.json'
 import reading from './data/reading.json'
@@ -14,7 +16,7 @@ import placement from './data/placement.json'
  * They are bundled and precached by the service worker, so every lesson works offline after first load.
  * To add a level (B2, C1): add lessons-b2.json + units in units.json, then import it here.
  */
-export const LESSONS = [...lessonsA2, ...lessonsB1, ...lessonsB2] as unknown as Lesson[]
+export const LESSONS = [...lessonsA1, ...lessonsA2, ...lessonsB1, ...lessonsB2, ...lessonsC1] as unknown as Lesson[]
 /** A1 basics: short review sheets and timed sprints (not a levelled path). */
 export const BASICS = basics as unknown as BasicSheet[]
 export const getSheet = (id: string) => BASICS.find((b) => b.id === id)
@@ -40,6 +42,12 @@ export function checkpointItems(level: Level): { skill: Skill; item: Exercise; l
   const grammar = pick(lessons.filter((l) => l.category === 'grammar').flatMap((l) => l.quiz), 6).map((item) => ({ skill: 'grammar' as Skill, item }))
   const vocab = pick(lessons.filter((l) => l.category !== 'grammar').flatMap((l) => l.quiz), 5).map((item) => ({ skill: 'vocabulary' as Skill, item }))
   const rd = pick(READINGS.filter((r) => r.level === level).flatMap((r) => r.questions), 4).map((item) => ({ skill: 'reading' as Skill, item }))
-  const pl = PLACEMENT.filter((p) => p.level === level && p.skill === 'listening').map((p) => ({ skill: 'listening' as Skill, item: p.item, listen: p.listen }))
-  return [...grammar, ...vocab, ...rd, ...pl]
+  let ls = PLACEMENT.filter((p) => p.level === level && p.skill === 'listening').map((p) => ({ skill: 'listening' as Skill, item: p.item, listen: p.listen }))
+  // Levels outside the placement test (A1, C1) take their listening items from the listening dialogues.
+  if (!ls.length)
+    ls = LISTENINGS.filter((l) => l.level === level).flatMap((l) => {
+      const audio = l.lines.map((x) => x.text).join(' ')
+      return l.questions.slice(0, 3).map((item) => ({ skill: 'listening' as Skill, item, listen: audio }))
+    })
+  return [...grammar, ...vocab, ...rd, ...ls]
 }

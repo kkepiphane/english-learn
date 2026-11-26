@@ -1,5 +1,5 @@
 import type { Level, Skill } from '../content/types'
-import { LEVELS } from '../content/types'
+import { LEVELS, PLACEMENT_LEVELS } from '../content/types'
 
 export interface ItemResult {
   level: Level
@@ -25,7 +25,7 @@ const accuracy = (rs: ItemResult[]) => (rs.length ? rs.filter((r) => r.correct).
  */
 export function placeLevel(results: ItemResult[], minItems = MIN_ITEMS_PER_LEVEL): Level | 'pre-A2' {
   let placed: Level | 'pre-A2' = 'pre-A2'
-  for (const lvl of LEVELS) {
+  for (const lvl of PLACEMENT_LEVELS) {
     const rs = results.filter((r) => r.level === lvl)
     if (rs.length < minItems || accuracy(rs) < PASS_THRESHOLD) break
     placed = lvl
@@ -49,9 +49,9 @@ export function scorePlacement(results: ItemResult[]): PlacementResult {
   return { overall: placeLevel(results), perLevel, perSkill }
 }
 
-/** The learning path starts at A2 even for pre-A2 learners (A2 units begin with consolidation). */
+/** Below A2, the path starts with the A1 course (solid basics first). */
 export const startingLevel = (placed: Level | 'pre-A2'): Level =>
-  placed === 'pre-A2' ? 'A2' : placed === 'C1' ? 'C1' : LEVELS[Math.min(LEVELS.indexOf(placed) + 1, LEVELS.length - 1)]
+  placed === 'pre-A2' ? 'A1' : placed === 'C1' ? 'C1' : LEVELS[Math.min(LEVELS.indexOf(placed) + 1, LEVELS.length - 1)]
 
 /** Checkpoint (level-up test): every tested skill must reach 70 % — a strong area cannot hide a weak one. */
 export const CHECKPOINT_THRESHOLD = 0.7

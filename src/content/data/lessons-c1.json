@@ -1,0 +1,1542 @@
+[
+  {
+    "id": "c1-g-inversion",
+    "unitId": "c1-u1",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Inversion for emphasis",
+    "minutes": 18,
+    "objective": "Add emphasis and formality with negative and restrictive adverbials: Never have I…, Not only…, Hardly… when.",
+    "sections": [
+      {
+        "heading": "How inversion works",
+        "en": "After a negative or restrictive expression at the start of a sentence, use question word order: auxiliary + subject + verb. If there is no auxiliary, add do / does / did.",
+        "fr": "Registre soutenu : essais, discours, IELTS Writing band 7+. À doser : une ou deux fois par texte.",
+        "examples": [
+          "Never have I seen such a crowd.",
+          "Rarely does the government admit its mistakes.",
+          "Not only did she pass, but she also won a prize."
+        ]
+      },
+      {
+        "heading": "Common triggers",
+        "en": "Use these at the start of the sentence.",
+        "table": [
+          [
+            "Trigger",
+            "Example"
+          ],
+          [
+            "Never / Rarely / Seldom",
+            "Seldom do we get a second chance."
+          ],
+          [
+            "Not only … but (also)",
+            "Not only is it cheap, but it's also fast."
+          ],
+          [
+            "Hardly / Scarcely … when",
+            "Hardly had I arrived when it started to rain."
+          ],
+          [
+            "No sooner … than",
+            "No sooner had we left than the bus broke down."
+          ],
+          [
+            "Only then / Only after",
+            "Only after the test did I relax."
+          ],
+          [
+            "Under no circumstances",
+            "Under no circumstances should you share your password."
+          ]
+        ]
+      },
+      {
+        "heading": "Conditionals without if",
+        "en": "Formal writing replaces if with inversion: Had I known… / Should you need help… / Were it not for…",
+        "examples": [
+          "Should you have any questions, please contact us.",
+          "Were it not for her support, I would have given up."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1i-v1",
+        "word": "seldom",
+        "ipa": "/ˈseldəm/",
+        "pos": "adverb",
+        "definition": "not often (formal)",
+        "fr": "rarement",
+        "example": "Seldom have I read such a clear report.",
+        "context": "Formal style"
+      },
+      {
+        "id": "c1i-v2",
+        "word": "circumstance",
+        "ipa": "/ˈsɜːkəmstəns/",
+        "pos": "noun",
+        "definition": "a fact or condition that affects a situation",
+        "fr": "circonstance",
+        "example": "Under no circumstances should you leave early.",
+        "context": "Formal style"
+      },
+      {
+        "id": "c1i-v3",
+        "word": "unprecedented",
+        "ipa": "/ʌnˈpresɪdentɪd/",
+        "pos": "adjective",
+        "definition": "never having happened before",
+        "fr": "sans précédent",
+        "example": "The city saw unprecedented growth.",
+        "context": "Academic"
+      },
+      {
+        "id": "c1i-v4",
+        "word": "acknowledge",
+        "ipa": "/əkˈnɒlɪdʒ/",
+        "pos": "verb",
+        "definition": "to accept or admit that something is true",
+        "fr": "reconnaître",
+        "example": "Rarely do leaders acknowledge their errors.",
+        "context": "Arguments"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1in-p1",
+        "type": "mcq",
+        "prompt": "Never ___ such a beautiful view.",
+        "options": [
+          "I have seen",
+          "have I seen",
+          "I saw",
+          "did I saw"
+        ],
+        "answer": 1,
+        "explanation": "Never + auxiliary + subject: have I seen."
+      },
+      {
+        "id": "c1in-p2",
+        "type": "mcq",
+        "prompt": "Not only ___ late, but he also forgot the slides.",
+        "options": [
+          "he arrived",
+          "did he arrive",
+          "arrived he",
+          "he did arrive"
+        ],
+        "answer": 1,
+        "explanation": "No auxiliary in the original → add did: did he arrive."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1in-q1",
+        "type": "mcq",
+        "prompt": "Rarely ___ such dedication.",
+        "options": [
+          "we see",
+          "do we see",
+          "we do see",
+          "see we"
+        ],
+        "answer": 1,
+        "explanation": "Rarely + do + subject + verb."
+      },
+      {
+        "id": "c1in-q2",
+        "type": "mcq",
+        "prompt": "Hardly had I sat down ___ the phone rang.",
+        "options": [
+          "than",
+          "when",
+          "that",
+          "then"
+        ],
+        "answer": 1,
+        "explanation": "Hardly … when (No sooner … than)."
+      },
+      {
+        "id": "c1in-q3",
+        "type": "gap",
+        "prompt": "___ you need further information, please call us. (formal 'if', 6 letters)",
+        "accepted": [
+          "should"
+        ],
+        "explanation": "Should you need = If you need (formal)."
+      },
+      {
+        "id": "c1in-q4",
+        "type": "truefalse",
+        "prompt": "\"Under no circumstances you should open this door\" is correct.",
+        "answer": false,
+        "explanation": "Inversion needed: Under no circumstances should you open…"
+      },
+      {
+        "id": "c1in-q5",
+        "type": "mcq",
+        "prompt": "No sooner had we arrived ___ it began to snow.",
+        "options": [
+          "when",
+          "than",
+          "then",
+          "as"
+        ],
+        "answer": 1,
+        "explanation": "No sooner … than."
+      },
+      {
+        "id": "c1in-q6",
+        "type": "mcq",
+        "prompt": "___ it not for the rain, we would have won.",
+        "options": [
+          "Had",
+          "Were",
+          "Should",
+          "Did"
+        ],
+        "answer": 1,
+        "explanation": "Were it not for = If it were not for."
+      },
+      {
+        "id": "c1in-q7",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "did",
+          "understand",
+          "then",
+          "I",
+          "the",
+          "problem",
+          "Only"
+        ],
+        "answer": "Only then did I understand the problem",
+        "explanation": "Only then + did + subject + verb."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Never I have seen this.",
+        "right": "Never have I seen this.",
+        "why": "Invert after a negative adverbial."
+      },
+      {
+        "wrong": "Not only she sings, …",
+        "right": "Not only does she sing, …",
+        "why": "Add do/does/did when there is no auxiliary."
+      }
+    ]
+  },
+  {
+    "id": "c1-v-hedging",
+    "unitId": "c1-u1",
+    "level": "C1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Hedging and academic stance",
+    "minutes": 16,
+    "objective": "Express precise degrees of certainty, as expected in academic writing and IELTS band 7+.",
+    "sections": [
+      {
+        "heading": "Why hedge?",
+        "en": "Academic writers rarely claim absolute truth. Hedging shows you are careful and credible: it would appear that, this may suggest, to a certain extent, arguably.",
+        "fr": "Trop d'affirmations catégoriques (always, never, prove) font perdre des points en écriture académique."
+      },
+      {
+        "heading": "Tools for hedging",
+        "en": "Choose the strength you mean.",
+        "examples": [
+          "These findings suggest a link between sleep and memory.",
+          "Remote work tends to increase productivity, at least in some sectors."
+        ],
+        "table": [
+          [
+            "Tool",
+            "Examples"
+          ],
+          [
+            "Modal verbs",
+            "may, might, could"
+          ],
+          [
+            "Verbs",
+            "suggest, indicate, appear, tend to"
+          ],
+          [
+            "Adverbs",
+            "arguably, possibly, largely, relatively"
+          ],
+          [
+            "Phrases",
+            "to some extent, in most cases, there is evidence that"
+          ]
+        ]
+      },
+      {
+        "heading": "Boosting and stance",
+        "en": "When the evidence is strong, boost carefully: clearly, undoubtedly, it is evident that. Stance adverbs show your attitude: Surprisingly, Regrettably, Interestingly.",
+        "examples": [
+          "Interestingly, the effect disappears after six months.",
+          "It is evident that further research is needed."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1h-v1",
+        "word": "arguably",
+        "ipa": "/ˈɑːɡjuəbli/",
+        "pos": "adverb",
+        "definition": "used to say something may be true, with good reasons",
+        "fr": "sans doute, on peut soutenir que",
+        "example": "This is arguably the best solution.",
+        "context": "Stance"
+      },
+      {
+        "id": "c1h-v2",
+        "word": "tend to",
+        "ipa": "/tend tə/",
+        "pos": "verb phrase",
+        "definition": "to usually do or be something",
+        "fr": "avoir tendance à",
+        "example": "Older users tend to prefer phone calls.",
+        "context": "Hedging"
+      },
+      {
+        "id": "c1h-v3",
+        "word": "findings",
+        "ipa": "/ˈfaɪndɪŋz/",
+        "pos": "noun (plural)",
+        "definition": "the results of research",
+        "fr": "résultats (d'une étude)",
+        "example": "The findings were published last year.",
+        "context": "Research"
+      },
+      {
+        "id": "c1h-v4",
+        "word": "to some extent",
+        "ipa": "/tə sʌm ɪkˈstent/",
+        "pos": "phrase",
+        "definition": "partly, not completely",
+        "fr": "dans une certaine mesure",
+        "example": "I agree with this view to some extent.",
+        "context": "Hedging"
+      },
+      {
+        "id": "c1h-v5",
+        "word": "plausible",
+        "ipa": "/ˈplɔːzəbl/",
+        "pos": "adjective",
+        "definition": "seeming likely to be true",
+        "fr": "plausible",
+        "example": "This is a plausible explanation.",
+        "context": "Arguments"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1he-p1",
+        "type": "mcq",
+        "prompt": "Which sentence is best hedged?",
+        "options": [
+          "This proves that social media causes depression.",
+          "This may suggest a link between social media and low mood.",
+          "Social media always causes depression.",
+          "Everyone knows social media is bad."
+        ],
+        "answer": 1,
+        "explanation": "may + suggest = cautious claim."
+      },
+      {
+        "id": "c1he-p2",
+        "type": "gap",
+        "prompt": "I agree to some ___. (partly)",
+        "accepted": [
+          "extent"
+        ],
+        "explanation": "to some extent = partly."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1he-q1",
+        "type": "mcq",
+        "prompt": "'The results ___ that the method works.' (cautious)",
+        "options": [
+          "prove",
+          "indicate",
+          "show clearly",
+          "guarantee"
+        ],
+        "answer": 1,
+        "explanation": "indicate is cautious; prove is too strong."
+      },
+      {
+        "id": "c1he-q2",
+        "type": "mcq",
+        "prompt": "'Seeming likely to be true' is…",
+        "options": [
+          "plausible",
+          "arguable",
+          "evident",
+          "tentative"
+        ],
+        "answer": 0,
+        "explanation": "plausible."
+      },
+      {
+        "id": "c1he-q3",
+        "type": "truefalse",
+        "prompt": "Hedging means making stronger, absolute claims.",
+        "answer": false,
+        "explanation": "Hedging softens claims."
+      },
+      {
+        "id": "c1he-q4",
+        "type": "mcq",
+        "prompt": "Young people ___ spend more time online. (usually)",
+        "options": [
+          "tend to",
+          "tend",
+          "are tending",
+          "tend for"
+        ],
+        "answer": 0,
+        "explanation": "tend to + verb."
+      },
+      {
+        "id": "c1he-q5",
+        "type": "gap",
+        "prompt": "The ___ of the study were surprising. (results, 8 letters)",
+        "accepted": [
+          "findings"
+        ],
+        "explanation": "findings = results of research."
+      },
+      {
+        "id": "c1he-q6",
+        "type": "mcq",
+        "prompt": "Which is a stance adverb?",
+        "options": [
+          "Interestingly",
+          "Because",
+          "Although",
+          "Therefore"
+        ],
+        "answer": 0,
+        "explanation": "Interestingly shows the writer's attitude."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "This proves that…",
+        "right": "This suggests / indicates that…",
+        "why": "Avoid over-claiming."
+      },
+      {
+        "wrong": "It tends increase.",
+        "right": "It tends to increase.",
+        "why": "tend to + verb."
+      }
+    ]
+  },
+  {
+    "id": "c1-g-cleft",
+    "unitId": "c1-u2",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Cleft sentences for focus",
+    "minutes": 16,
+    "objective": "Highlight the key information in speech and writing with it-clefts and what-clefts.",
+    "sections": [
+      {
+        "heading": "It-clefts",
+        "en": "It + be + focused part + that/who + rest. Use them to correct or contrast.",
+        "fr": "Équivalent de « C'est … qui/que … ».",
+        "examples": [
+          "It was Ama who found the solution (not Kofi).",
+          "It's the cost that worries me, not the distance.",
+          "It wasn't until 2020 that I started English."
+        ]
+      },
+      {
+        "heading": "What-clefts",
+        "en": "What + clause + be + focus. Great for presenting your main point or a need.",
+        "examples": [
+          "What I need is more practice.",
+          "What surprised me was how friendly everyone was.",
+          "What you should do is contact the embassy."
+        ]
+      },
+      {
+        "heading": "Other focusing structures",
+        "en": "All (that) I want is… · The reason (why)… is that… · The thing that… is…",
+        "examples": [
+          "All I want is a quiet place to study.",
+          "The reason I'm applying is that I love research."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1c-v1",
+        "word": "emphasise",
+        "ipa": "/ˈemfəsaɪz/",
+        "pos": "verb",
+        "definition": "to show that something is especially important",
+        "fr": "souligner, insister sur",
+        "example": "I'd like to emphasise one point.",
+        "context": "Presenting"
+      },
+      {
+        "id": "c1c-v2",
+        "word": "crucial",
+        "ipa": "/ˈkruːʃl/",
+        "pos": "adjective",
+        "definition": "extremely important",
+        "fr": "crucial",
+        "example": "What is crucial is the first impression.",
+        "context": "Emphasis"
+      },
+      {
+        "id": "c1c-v3",
+        "word": "underlying",
+        "ipa": "/ˌʌndəˈlaɪɪŋ/",
+        "pos": "adjective",
+        "definition": "real but not obvious",
+        "fr": "sous-jacent",
+        "example": "The underlying problem is poor planning.",
+        "context": "Analysis"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1cl-p1",
+        "type": "mcq",
+        "prompt": "___ I really need is a break.",
+        "options": [
+          "That",
+          "What",
+          "Which",
+          "It"
+        ],
+        "answer": 1,
+        "explanation": "What-cleft: What I need is…"
+      },
+      {
+        "id": "c1cl-p2",
+        "type": "mcq",
+        "prompt": "It was in Accra ___ we first met.",
+        "options": [
+          "where",
+          "that",
+          "what",
+          "which"
+        ],
+        "answer": 1,
+        "explanation": "It-cleft: It was … that."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1cl-q1",
+        "type": "mcq",
+        "prompt": "It wasn't until midnight ___ he called.",
+        "options": [
+          "when",
+          "that",
+          "than",
+          "what"
+        ],
+        "answer": 1,
+        "explanation": "It wasn't until … that."
+      },
+      {
+        "id": "c1cl-q2",
+        "type": "mcq",
+        "prompt": "What annoys me ___ the noise.",
+        "options": [
+          "is",
+          "are",
+          "it is",
+          "that"
+        ],
+        "answer": 0,
+        "explanation": "What-cleft + is."
+      },
+      {
+        "id": "c1cl-q3",
+        "type": "gap",
+        "prompt": "___ I want is a quiet room. (3 letters, = the only thing)",
+        "accepted": [
+          "all"
+        ],
+        "explanation": "All I want is…"
+      },
+      {
+        "id": "c1cl-q4",
+        "type": "truefalse",
+        "prompt": "\"It was Kofi who broke the window\" emphasises who did it.",
+        "answer": true,
+        "explanation": "It-cleft focuses on Kofi."
+      },
+      {
+        "id": "c1cl-q5",
+        "type": "mcq",
+        "prompt": "The reason I left ___ that the salary was low.",
+        "options": [
+          "is",
+          "was",
+          "because",
+          "why"
+        ],
+        "answer": 1,
+        "explanation": "The reason … was that…"
+      },
+      {
+        "id": "c1cl-q6",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "matters",
+          "What",
+          "most",
+          "your",
+          "is",
+          "attitude"
+        ],
+        "answer": "What matters most is your attitude",
+        "explanation": "What-cleft: What + clause + is + focus."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "What I need it is time.",
+        "right": "What I need is time.",
+        "why": "No extra 'it'."
+      },
+      {
+        "wrong": "The reason is because…",
+        "right": "The reason is that…",
+        "why": "Avoid 'reason … because' in formal English."
+      }
+    ]
+  },
+  {
+    "id": "c1-e-presenting",
+    "unitId": "c1-u2",
+    "level": "C1",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Presentations and debates",
+    "minutes": 16,
+    "objective": "Structure a presentation, handle questions and disagree diplomatically in seminars and meetings.",
+    "sections": [
+      {
+        "heading": "Signposting",
+        "en": "Guide your audience: I'd like to begin by… · Moving on to… · This brings me to… · To sum up…",
+        "fr": "Les « signposts » rendent un exposé facile à suivre — critère clé en entretien et en master.",
+        "examples": [
+          "I'd like to begin by outlining the problem.",
+          "This brings me to my second point.",
+          "To wrap up, let me highlight three key takeaways."
+        ]
+      },
+      {
+        "heading": "Handling questions",
+        "en": "Buy time and stay in control: That's a great question. · If I understand you correctly, you're asking… · I'm afraid I don't have the figures to hand, but I'll get back to you.",
+        "examples": [
+          "That's a fair point — let me come back to it at the end.",
+          "I'd rather not speculate, but the data suggest…"
+        ]
+      },
+      {
+        "heading": "Disagreeing diplomatically",
+        "en": "Soften disagreement: I see your point, but… · I'm not entirely convinced that… · With respect, I'd argue that…",
+        "fr": "Évitez « You're wrong ». Le désaccord poli est attendu à C1."
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1p-v1",
+        "word": "outline",
+        "ipa": "/ˈaʊtlaɪn/",
+        "pos": "verb",
+        "definition": "to give the main ideas without details",
+        "fr": "présenter dans les grandes lignes",
+        "example": "Let me outline the plan.",
+        "context": "Presenting"
+      },
+      {
+        "id": "c1p-v2",
+        "word": "takeaway",
+        "ipa": "/ˈteɪkəweɪ/",
+        "pos": "noun",
+        "definition": "a key idea people should remember",
+        "fr": "point clé à retenir",
+        "example": "The main takeaway is: practise daily.",
+        "context": "Presenting"
+      },
+      {
+        "id": "c1p-v3",
+        "word": "to hand",
+        "ipa": "/tə hænd/",
+        "pos": "phrase",
+        "definition": "available, near you",
+        "fr": "sous la main",
+        "example": "I don't have the numbers to hand.",
+        "context": "Q&A"
+      },
+      {
+        "id": "c1p-v4",
+        "word": "convinced",
+        "ipa": "/kənˈvɪnst/",
+        "pos": "adjective",
+        "definition": "completely sure",
+        "fr": "convaincu",
+        "example": "I'm not entirely convinced.",
+        "context": "Debate"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1ep-p1",
+        "type": "mcq",
+        "prompt": "Most diplomatic disagreement:",
+        "options": [
+          "You're wrong.",
+          "That's stupid.",
+          "I'm not entirely convinced that's the case.",
+          "No."
+        ],
+        "answer": 2,
+        "explanation": "Softened disagreement."
+      },
+      {
+        "id": "c1ep-p2",
+        "type": "mcq",
+        "prompt": "To move to the next part:",
+        "options": [
+          "Finished.",
+          "This brings me to my next point.",
+          "Now other thing.",
+          "Stop."
+        ],
+        "answer": 1,
+        "explanation": "Signposting phrase."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1ep-q1",
+        "type": "mcq",
+        "prompt": "When you don't know the answer:",
+        "options": [
+          "I don't know.",
+          "I'm afraid I don't have that to hand, but I'll get back to you.",
+          "Next question.",
+          "Ask Google."
+        ],
+        "answer": 1,
+        "explanation": "Polite and professional."
+      },
+      {
+        "id": "c1ep-q2",
+        "type": "gap",
+        "prompt": "Let me ___ the main ideas. (give without details)",
+        "accepted": [
+          "outline"
+        ],
+        "explanation": "outline the main ideas."
+      },
+      {
+        "id": "c1ep-q3",
+        "type": "truefalse",
+        "prompt": "\"To sum up\" introduces the conclusion.",
+        "answer": true,
+        "explanation": "To sum up = in conclusion."
+      },
+      {
+        "id": "c1ep-q4",
+        "type": "mcq",
+        "prompt": "A key idea to remember is a…",
+        "options": [
+          "takeaway",
+          "takeoff",
+          "outlet",
+          "breakdown"
+        ],
+        "answer": 0,
+        "explanation": "takeaway."
+      },
+      {
+        "id": "c1ep-q5",
+        "type": "mcq",
+        "prompt": "\"With respect, I'd argue that…\" is used to…",
+        "options": [
+          "agree strongly",
+          "disagree politely",
+          "end the talk",
+          "ask for time"
+        ],
+        "answer": 1,
+        "explanation": "Polite disagreement."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "You are wrong.",
+        "right": "I see your point, but I'd argue that…",
+        "why": "Soften disagreement."
+      },
+      {
+        "wrong": "I will talk about three things. First thing…",
+        "right": "I'd like to begin by…",
+        "why": "Use signposting."
+      }
+    ]
+  },
+  {
+    "id": "c1-g-subjunctive",
+    "unitId": "c1-u3",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Subjunctive and unreal past",
+    "minutes": 16,
+    "objective": "Use formal subjunctive and the unreal past after wish, it's time, would rather and as if.",
+    "sections": [
+      {
+        "heading": "The formal subjunctive",
+        "en": "After verbs and adjectives of demand or importance (suggest, insist, recommend, essential, vital), use the base form for all persons — no -s, no should needed.",
+        "fr": "« Il est essentiel qu'il soit présent » = It is essential that he be present.",
+        "examples": [
+          "The committee recommends that she be promoted.",
+          "It is vital that every student submit the form.",
+          "I insist that he apologise."
+        ]
+      },
+      {
+        "heading": "Unreal past",
+        "en": "Use a past form for a present unreal meaning after: It's (high) time…, I'd rather you…, as if / as though, suppose / supposing.",
+        "examples": [
+          "It's high time we made a decision.",
+          "I'd rather you didn't tell anyone.",
+          "He talks as if he were the boss.",
+          "Suppose you lost your passport — what would you do?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1s-v1",
+        "word": "insist",
+        "ipa": "/ɪnˈsɪst/",
+        "pos": "verb",
+        "definition": "to demand firmly",
+        "fr": "insister (pour que)",
+        "example": "She insisted that he leave.",
+        "context": "Formal requests"
+      },
+      {
+        "id": "c1s-v2",
+        "word": "imperative",
+        "ipa": "/ɪmˈperətɪv/",
+        "pos": "adjective",
+        "definition": "extremely important and urgent",
+        "fr": "impératif",
+        "example": "It is imperative that we act now.",
+        "context": "Formal style"
+      },
+      {
+        "id": "c1s-v3",
+        "word": "committee",
+        "ipa": "/kəˈmɪti/",
+        "pos": "noun",
+        "definition": "a group chosen to make decisions",
+        "fr": "comité",
+        "example": "The committee met on Monday.",
+        "context": "Institutions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1su-p1",
+        "type": "mcq",
+        "prompt": "The doctor recommended that he ___ more water.",
+        "options": [
+          "drinks",
+          "drink",
+          "drank",
+          "drinking"
+        ],
+        "answer": 1,
+        "explanation": "Subjunctive: base form drink."
+      },
+      {
+        "id": "c1su-p2",
+        "type": "mcq",
+        "prompt": "It's time we ___ home.",
+        "options": [
+          "go",
+          "went",
+          "going",
+          "will go"
+        ],
+        "answer": 1,
+        "explanation": "It's time + past simple."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1su-q1",
+        "type": "mcq",
+        "prompt": "It is essential that everyone ___ on time.",
+        "options": [
+          "is",
+          "be",
+          "are",
+          "was"
+        ],
+        "answer": 1,
+        "explanation": "Formal subjunctive: be."
+      },
+      {
+        "id": "c1su-q2",
+        "type": "mcq",
+        "prompt": "I'd rather you ___ smoke here.",
+        "options": [
+          "don't",
+          "didn't",
+          "won't",
+          "not"
+        ],
+        "answer": 1,
+        "explanation": "would rather + subject + past."
+      },
+      {
+        "id": "c1su-q3",
+        "type": "gap",
+        "prompt": "He acts as if he ___ the owner. (be, formal)",
+        "accepted": [
+          "were"
+        ],
+        "explanation": "as if + were (formal unreal)."
+      },
+      {
+        "id": "c1su-q4",
+        "type": "truefalse",
+        "prompt": "\"They insisted that she pays\" is the standard formal form.",
+        "answer": false,
+        "explanation": "Subjunctive: that she pay."
+      },
+      {
+        "id": "c1su-q5",
+        "type": "mcq",
+        "prompt": "It's high time the government ___ action.",
+        "options": [
+          "take",
+          "took",
+          "takes",
+          "taking"
+        ],
+        "answer": 1,
+        "explanation": "It's high time + past."
+      },
+      {
+        "id": "c1su-q6",
+        "type": "mcq",
+        "prompt": "___ you won the lottery, what would you buy?",
+        "options": [
+          "Suppose",
+          "Unless",
+          "Provided",
+          "Despite"
+        ],
+        "answer": 0,
+        "explanation": "Suppose + past = imagine."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "It is important that he comes.",
+        "right": "It is important that he come.",
+        "why": "Formal subjunctive: base form."
+      },
+      {
+        "wrong": "It's time we go.",
+        "right": "It's time we went.",
+        "why": "It's time + past."
+      }
+    ]
+  },
+  {
+    "id": "c1-v-idioms",
+    "unitId": "c1-u3",
+    "level": "C1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Idioms and phrasal verbs at work",
+    "minutes": 14,
+    "objective": "Understand and use common idioms and phrasal verbs from offices, meetings and media.",
+    "sections": [
+      {
+        "heading": "Idioms you will hear",
+        "en": "Learn idioms in context; don't overuse them in formal essays.",
+        "fr": "Les idiomes rapportent des points à l'oral (IELTS Speaking), beaucoup moins à l'écrit académique.",
+        "table": [
+          [
+            "Idiom",
+            "Meaning"
+          ],
+          [
+            "get the ball rolling",
+            "start something"
+          ],
+          [
+            "on the same page",
+            "agreeing, understanding the same thing"
+          ],
+          [
+            "a steep learning curve",
+            "a lot to learn quickly"
+          ],
+          [
+            "cut corners",
+            "do something badly to save time or money"
+          ],
+          [
+            "the bottom line",
+            "the most important fact"
+          ]
+        ]
+      },
+      {
+        "heading": "Phrasal verbs for work",
+        "en": "come up with (an idea) · carry out (research) · point out (a fact) · run out of (time) · put forward (a proposal) · follow up (on).",
+        "examples": [
+          "She came up with a brilliant solution.",
+          "We ran out of time before the last question.",
+          "I'll follow up on this by email."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1d-v1",
+        "word": "come up with",
+        "ipa": "/kʌm ʌp wɪð/",
+        "pos": "phrasal verb",
+        "definition": "to think of an idea or plan",
+        "fr": "trouver (une idée)",
+        "example": "He came up with a new strategy.",
+        "context": "Ideas"
+      },
+      {
+        "id": "c1d-v2",
+        "word": "carry out",
+        "ipa": "/ˈkæri aʊt/",
+        "pos": "phrasal verb",
+        "definition": "to do a task, research or plan",
+        "fr": "mener, réaliser",
+        "example": "They carried out a survey.",
+        "context": "Research"
+      },
+      {
+        "id": "c1d-v3",
+        "word": "cut corners",
+        "ipa": "/kʌt ˈkɔːnəz/",
+        "pos": "idiom",
+        "definition": "to do something cheaply or carelessly",
+        "fr": "bâcler, rogner",
+        "example": "Don't cut corners on safety.",
+        "context": "Work"
+      },
+      {
+        "id": "c1d-v4",
+        "word": "steep learning curve",
+        "ipa": "/stiːp ˈlɜːnɪŋ kɜːv/",
+        "pos": "idiom",
+        "definition": "a situation where you must learn a lot fast",
+        "fr": "apprentissage intense",
+        "example": "My first month abroad was a steep learning curve.",
+        "context": "New job"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1id-p1",
+        "type": "mcq",
+        "prompt": "Let's start: let's ___.",
+        "options": [
+          "get the ball rolling",
+          "cut corners",
+          "run out",
+          "hit the sack"
+        ],
+        "answer": 0,
+        "explanation": "get the ball rolling = start."
+      },
+      {
+        "id": "c1id-p2",
+        "type": "mcq",
+        "prompt": "We had no more time: we ___ time.",
+        "options": [
+          "ran out of",
+          "came up with",
+          "carried out",
+          "put forward"
+        ],
+        "answer": 0,
+        "explanation": "run out of."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1id-q1",
+        "type": "mcq",
+        "prompt": "'The most important fact' is…",
+        "options": [
+          "the bottom line",
+          "the last straw",
+          "the bottom drawer",
+          "the front line"
+        ],
+        "answer": 0,
+        "explanation": "the bottom line."
+      },
+      {
+        "id": "c1id-q2",
+        "type": "gap",
+        "prompt": "She came ___ with a great idea. (2 letters)",
+        "accepted": [
+          "up"
+        ],
+        "explanation": "come up with."
+      },
+      {
+        "id": "c1id-q3",
+        "type": "truefalse",
+        "prompt": "To 'cut corners' is a good professional practice.",
+        "answer": false,
+        "explanation": "It means doing things carelessly to save time/money."
+      },
+      {
+        "id": "c1id-q4",
+        "type": "mcq",
+        "prompt": "The researchers ___ a survey of 500 students.",
+        "options": [
+          "carried out",
+          "ran out",
+          "pointed out",
+          "came up"
+        ],
+        "answer": 0,
+        "explanation": "carry out research/a survey."
+      },
+      {
+        "id": "c1id-q5",
+        "type": "mcq",
+        "prompt": "'Are we on the same page?' asks if we…",
+        "options": [
+          "read the same book",
+          "agree / understand the same thing",
+          "work in the same office",
+          "are tired"
+        ],
+        "answer": 1,
+        "explanation": "on the same page = in agreement."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "We need to cut the corners.",
+        "right": "We shouldn't cut corners.",
+        "why": "Fixed idiom, no article."
+      },
+      {
+        "wrong": "He came with an idea.",
+        "right": "He came up with an idea.",
+        "why": "come up with."
+      }
+    ]
+  },
+  {
+    "id": "c1-g-nominalisation",
+    "unitId": "c1-u4",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Nominalisation for formal writing",
+    "minutes": 16,
+    "objective": "Turn verbs and adjectives into nouns to write in a concise, academic style.",
+    "sections": [
+      {
+        "heading": "What is nominalisation?",
+        "en": "Academic English often expresses actions as nouns: 'Prices increased rapidly' → 'The rapid increase in prices'. It sounds more objective and packs more information into a sentence.",
+        "fr": "Très utile en IELTS Task 1 (graphiques) et dans les essais.",
+        "table": [
+          [
+            "Verb / adjective",
+            "Noun"
+          ],
+          [
+            "increase / decrease",
+            "an increase / a decrease in"
+          ],
+          [
+            "decide",
+            "a decision"
+          ],
+          [
+            "fail",
+            "a failure"
+          ],
+          [
+            "develop",
+            "development"
+          ],
+          [
+            "important",
+            "importance"
+          ],
+          [
+            "able",
+            "ability"
+          ]
+        ]
+      },
+      {
+        "heading": "Rewriting sentences",
+        "en": "Move the action into a noun phrase and choose a neutral verb (lead to, result in, cause, contribute to).",
+        "examples": [
+          "Because the government invested more, unemployment fell. → Greater government investment led to a fall in unemployment.",
+          "People are becoming aware of climate change. → There is growing awareness of climate change."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1n-v1",
+        "word": "awareness",
+        "ipa": "/əˈweənəs/",
+        "pos": "noun",
+        "definition": "knowledge that something exists or is important",
+        "fr": "prise de conscience",
+        "example": "Public awareness of the issue is growing.",
+        "context": "Academic"
+      },
+      {
+        "id": "c1n-v2",
+        "word": "contribute to",
+        "ipa": "/kənˈtrɪbjuːt tuː/",
+        "pos": "verb",
+        "definition": "to be one of the causes of",
+        "fr": "contribuer à",
+        "example": "Stress contributes to poor sleep.",
+        "context": "Cause and effect"
+      },
+      {
+        "id": "c1n-v3",
+        "word": "decline",
+        "ipa": "/dɪˈklaɪn/",
+        "pos": "noun / verb",
+        "definition": "a gradual decrease",
+        "fr": "déclin, baisse",
+        "example": "There was a sharp decline in sales.",
+        "context": "Data description"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1no-p1",
+        "type": "mcq",
+        "prompt": "Nominalise: 'Sales grew rapidly.'",
+        "options": [
+          "The rapid growth in sales",
+          "The rapid grow of sales",
+          "Sales rapid growing",
+          "Rapidly sales growth"
+        ],
+        "answer": 0,
+        "explanation": "grow → growth; adverb → adjective."
+      },
+      {
+        "id": "c1no-p2",
+        "type": "gap",
+        "prompt": "decide → a ___",
+        "accepted": [
+          "decision"
+        ],
+        "explanation": "decide → decision."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1no-q1",
+        "type": "mcq",
+        "prompt": "The noun of 'fail' is…",
+        "options": [
+          "failing",
+          "failure",
+          "failness",
+          "failment"
+        ],
+        "answer": 1,
+        "explanation": "fail → failure."
+      },
+      {
+        "id": "c1no-q2",
+        "type": "mcq",
+        "prompt": "'Investment rose, so jobs increased.' → Higher investment ___ more jobs.",
+        "options": [
+          "led to",
+          "lead",
+          "resulted",
+          "caused to"
+        ],
+        "answer": 0,
+        "explanation": "lead to + noun."
+      },
+      {
+        "id": "c1no-q3",
+        "type": "gap",
+        "prompt": "able → ___ (noun)",
+        "accepted": [
+          "ability"
+        ],
+        "explanation": "able → ability."
+      },
+      {
+        "id": "c1no-q4",
+        "type": "truefalse",
+        "prompt": "Nominalisation usually makes writing more formal and concise.",
+        "answer": true,
+        "explanation": "That is its purpose."
+      },
+      {
+        "id": "c1no-q5",
+        "type": "mcq",
+        "prompt": "There was a sharp ___ in unemployment. (it went down)",
+        "options": [
+          "decline",
+          "rise",
+          "growth",
+          "increase"
+        ],
+        "answer": 0,
+        "explanation": "decline = decrease."
+      },
+      {
+        "id": "c1no-q6",
+        "type": "mcq",
+        "prompt": "The noun of 'important' is…",
+        "options": [
+          "importancy",
+          "importance",
+          "importation",
+          "importantness"
+        ],
+        "answer": 1,
+        "explanation": "important → importance."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "The increase of prices",
+        "right": "The increase in prices",
+        "why": "increase in + noun."
+      },
+      {
+        "wrong": "This lead to problems.",
+        "right": "This led to problems. / This leads to problems.",
+        "why": "lead – led – led."
+      }
+    ]
+  },
+  {
+    "id": "c1-g-ellipsis",
+    "unitId": "c1-u4",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Ellipsis and substitution",
+    "minutes": 14,
+    "objective": "Avoid repetition like a native speaker with so, not, do so, one(s) and ellipsis.",
+    "sections": [
+      {
+        "heading": "so and not",
+        "en": "Replace a whole clause after think, hope, expect, suppose, be afraid: I think so / I hope not / I'm afraid not.",
+        "fr": "« Je pense que oui » = I think so (pas « I think yes »).",
+        "examples": [
+          "Will it rain? — I hope not.",
+          "Is he coming? — I suppose so.",
+          "Did you pass? — I'm afraid not."
+        ]
+      },
+      {
+        "heading": "do so, one(s), auxiliaries",
+        "en": "do (so) replaces a verb phrase; one / ones replaces a countable noun; an auxiliary alone avoids repeating the verb.",
+        "examples": [
+          "She promised to call, and she did so.",
+          "I prefer the blue shirt to the red one.",
+          "I can't swim, but my sister can.",
+          "He said he'd finish it, and he has."
+        ]
+      },
+      {
+        "heading": "Ellipsis",
+        "en": "Leave out words that are obvious from context, especially after and, but, or to.",
+        "examples": [
+          "I wanted to go, but I didn't have time to.",
+          "She can speak French and (she can speak) Ewe."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1e-v1",
+        "word": "suppose",
+        "ipa": "/səˈpəʊz/",
+        "pos": "verb",
+        "definition": "to think something is probably true",
+        "fr": "supposer",
+        "example": "I suppose so.",
+        "context": "Short answers"
+      },
+      {
+        "id": "c1e-v2",
+        "word": "repetition",
+        "ipa": "/ˌrepəˈtɪʃn/",
+        "pos": "noun",
+        "definition": "saying the same thing again",
+        "fr": "répétition",
+        "example": "Avoid repetition in your essay.",
+        "context": "Style"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1el-p1",
+        "type": "mcq",
+        "prompt": "Is the shop open? — I think ___.",
+        "options": [
+          "yes",
+          "so",
+          "it",
+          "that"
+        ],
+        "answer": 1,
+        "explanation": "I think so."
+      },
+      {
+        "id": "c1el-p2",
+        "type": "mcq",
+        "prompt": "I like the big bag, not the small ___.",
+        "options": [
+          "it",
+          "one",
+          "ones",
+          "bag one"
+        ],
+        "answer": 1,
+        "explanation": "one replaces a singular countable noun."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1el-q1",
+        "type": "mcq",
+        "prompt": "Will it be expensive? — I hope ___.",
+        "options": [
+          "no",
+          "not",
+          "don't",
+          "none"
+        ],
+        "answer": 1,
+        "explanation": "I hope not."
+      },
+      {
+        "id": "c1el-q2",
+        "type": "mcq",
+        "prompt": "These shoes are nicer than the old ___.",
+        "options": [
+          "one",
+          "ones",
+          "it",
+          "them"
+        ],
+        "answer": 1,
+        "explanation": "Plural → ones."
+      },
+      {
+        "id": "c1el-q3",
+        "type": "gap",
+        "prompt": "I can't drive, but my brother ___. (auxiliary)",
+        "accepted": [
+          "can"
+        ],
+        "explanation": "Auxiliary alone: my brother can."
+      },
+      {
+        "id": "c1el-q4",
+        "type": "truefalse",
+        "prompt": "\"I think yes\" is natural English.",
+        "answer": false,
+        "explanation": "Say I think so."
+      },
+      {
+        "id": "c1el-q5",
+        "type": "mcq",
+        "prompt": "He asked me to leave, and I ___.",
+        "options": [
+          "did so",
+          "made so",
+          "did it so",
+          "so did"
+        ],
+        "answer": 0,
+        "explanation": "do so replaces the verb phrase."
+      },
+      {
+        "id": "c1el-q6",
+        "type": "mcq",
+        "prompt": "I meant to call you, but I forgot ___.",
+        "options": [
+          "to",
+          "it to",
+          "to call",
+          "calling"
+        ],
+        "answer": 0,
+        "explanation": "Ellipsis after to: I forgot to."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I think yes.",
+        "right": "I think so.",
+        "why": "Use so to replace the clause."
+      },
+      {
+        "wrong": "I don't think so not.",
+        "right": "I don't think so. / I think not.",
+        "why": "One negative only."
+      }
+    ]
+  }
+]

@@ -9,20 +9,22 @@ import { correctAnswerText, isCorrect, type Answer } from '../lib/exercise'
 import { addXp } from '../lib/repo'
 import { celebrate, sfx } from '../lib/fx'
 import { useStudyTimer } from '../hooks/hooks'
-import { ghostAt, getRecord, MIX_ID, saveRun, SPRINT_SECONDS, sprintItems, type SprintRecord } from '../lib/sprint'
+import { ghostAt, getRecord, MIX_ID, saveRun, sprintItems, sprintLevel, sprintSeconds, type SprintRecord } from '../lib/sprint'
 
 const XP_PER_CORRECT = 2
 
 export default function Sprint() {
   const id = useParams().id!
-  const sheet = id === MIX_ID ? null : getSheet(id)
-  if (id !== MIX_ID && !sheet) return <Notice tone="error">Sprint not found.</Notice>
-  return <SprintRun key={id} id={id} title={sheet?.title ?? 'Mixed sprint'} seconds={id === MIX_ID ? SPRINT_SECONDS.mix : SPRINT_SECONDS.sheet} />
+  const lvl = sprintLevel(id)
+  const sheet = getSheet(id)
+  if (id !== MIX_ID && !lvl && !sheet) return <Notice tone="error">Sprint not found.</Notice>
+  const title = lvl ? `${lvl} sprint` : sheet?.title ?? 'A1 mixed sprint'
+  return <SprintRun key={id} id={id} title={title} seconds={sprintSeconds(id)} back={lvl ?? 'A1'} />
 }
 
 type Phase = 'ready' | 'run' | 'done'
 
-function SprintRun({ id, title, seconds }: { id: string; title: string; seconds: number }) {
+function SprintRun({ id, title, seconds, back }: { id: string; title: string; seconds: number; back: string }) {
   useStudyTimer()
   const [phase, setPhase] = useState<Phase>('ready')
   const [ghost, setGhost] = useState<SprintRecord | undefined>()
@@ -94,9 +96,9 @@ function SprintRun({ id, title, seconds }: { id: string; title: string; seconds:
   if (phase === 'ready')
     return (
       <div className="space-y-4">
-        <Back />
+        <Back level={back} />
         <Card className="py-8 text-center">
-          <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-flame-50 text-flame-500 dark:bg-flame-900/30" aria-hidden><Timer size={44} weight="duotone" /></span>
+          <span className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-flame-50 text-flame-500 dark:bg-flame-900/30" aria-hidden><Timer size={44} weight="fill" /></span>
           <h1 className="mt-4 text-2xl font-extrabold">{title}</h1>
           <p className="mt-1 text-ink-500">{seconds} seconds. As many as you can.</p>
           <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-ink-100 px-3 py-1.5 text-sm font-bold dark:bg-ink-800">
@@ -110,7 +112,7 @@ function SprintRun({ id, title, seconds }: { id: string; title: string; seconds:
   if (phase === 'done')
     return (
       <div className="space-y-4">
-        <Back />
+        <Back level={back} />
         <Card className="py-8 text-center">
           <p className="animate-pop text-6xl" aria-hidden>{record ? '🏆' : score >= (ghost?.best ?? 0) ? '🤝' : '👻'}</p>
           <p className="mt-3 font-display text-2xl font-extrabold">{record ? 'New record!' : score === ghost?.best ? 'Tie with your ghost' : 'The ghost wins this time'}</p>
@@ -183,4 +185,4 @@ function SprintAnswer({ item, onAnswer, disabled }: { item: Exercise; onAnswer: 
   return null
 }
 
-const Back = () => <Link to="/learn?level=A1" className="inline-block text-sm font-semibold text-brand-600 dark:text-brand-300">← A1 basics</Link>
+const Back = ({ level }: { level: string }) => <Link to={`/learn?level=${level}`} className="inline-block text-sm font-semibold text-brand-600 dark:text-brand-300">← {level}</Link>

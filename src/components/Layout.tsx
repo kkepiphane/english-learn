@@ -123,7 +123,7 @@ export function Layout() {
         <nav className="flex flex-1 flex-col gap-1" aria-label="Main">
           {NAV.map((n) => (
             <NavLink key={n.to} to={n.to} end={n.to === '/'} className={({ isActive }) => clsx('flex items-center gap-3 rounded-xl px-3 py-2.5 text-[15px] font-bold transition', isActive ? 'bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200' : 'text-ink-500 hover:bg-ink-100 dark:text-ink-300 dark:hover:bg-ink-800')}>
-              {({ isActive }) => <><n.icon size={22} weight={isActive ? 'fill' : 'regular'} aria-hidden />{n.label}</>}
+              <n.icon size={22} weight="fill" aria-hidden />{n.label}
             </NavLink>
           ))}
         </nav>
@@ -146,7 +146,7 @@ export function Layout() {
         {NAV.map((n) => (
           <NavLink key={n.to} to={n.to} end={n.to === '/'} className={({ isActive }) => clsx('group flex flex-col items-center gap-0.5 py-2 text-[11px] font-semibold', isActive ? 'text-brand-600 dark:text-brand-300' : 'text-ink-400')}>
             {({ isActive }) => (<>
-              <span className={clsx('flex h-8 w-14 items-center justify-center rounded-full transition', isActive && 'bg-brand-50 dark:bg-brand-900/60')}><n.icon size={24} weight={isActive ? 'fill' : 'regular'} aria-hidden /></span>
+              <span className={clsx('flex h-8 w-14 items-center justify-center rounded-full transition', isActive && 'bg-brand-50 dark:bg-brand-900/60')}><n.icon size={24} weight="fill" aria-hidden /></span>
               {n.label}
             </>)}
           </NavLink>

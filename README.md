@@ -1,6 +1,6 @@
 # English Path
 
-Application web progressive (PWA) pour apprendre l'anglais de **A2 à C1** et préparer **IELTS Academic / TOEFL iBT**.
+Application web progressive (PWA) pour apprendre l'anglais de **A1 à C1** et préparer **IELTS Academic / TOEFL iBT**.
 100 % frontend, **hébergée gratuitement sur GitHub Pages**, installable sur Android, iOS et ordinateur, et **utilisable hors ligne** après le premier chargement.
 
 > Aucun serveur, aucun compte, aucun abonnement. Les données de l'apprenant restent dans le navigateur (IndexedDB). L'IA est **optionnelle** et passe par un proxy que vous déployez vous-même.

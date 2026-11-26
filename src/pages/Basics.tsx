@@ -44,7 +44,7 @@ export function BasicsHome() {
           return (
             <li key={b.id}>
               <Link to={`/basics/${b.id}`} className="card flex h-full flex-col gap-2 p-4 shadow-[0_4px_0_0_theme(colors.ink.200)] transition active:translate-y-[2px] active:shadow-[0_2px_0_0_theme(colors.ink.200)] dark:shadow-[0_4px_0_0_theme(colors.ink.950)]">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden><I size={22} weight="duotone" /></span>
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden><I size={22} weight="fill" /></span>
                 <span className="font-display font-bold leading-tight">{b.title}</span>
                 <span className="mt-auto text-xs font-semibold text-ink-400">{rec ? `Best: ${rec.best}` : 'Not tried yet'}</span>
               </Link>
@@ -66,7 +66,7 @@ export default function SheetPage() {
     <div className="space-y-4">
       <PageTitle back="/learn?level=A1" title={sheet.title} />
       <Card className="space-y-3">
-        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden><I size={24} weight="duotone" /></span>
+        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden><I size={24} weight="fill" /></span>
         <ul className="space-y-3">
           {sheet.points.map((p) => (
             <li key={p.rule}>

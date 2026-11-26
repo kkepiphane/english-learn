@@ -21,7 +21,7 @@ export default defineConfig({
       manifest: {
         name: 'English Path',
         short_name: 'English Path',
-        description: 'Your personal English tutor — A2 to C1, IELTS & TOEFL preparation, works offline.',
+        description: 'Your personal English tutor — A1 to C1, IELTS & TOEFL preparation, works offline.',
         theme_color: '#0f7f76',
         background_color: '#131210',
         display: 'standalone',

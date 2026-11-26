@@ -276,5 +276,185 @@
         "def": "by a large amount"
       }
     ]
+  },
+  {
+    "id": "l-a1-meet",
+    "level": "A1",
+    "kind": "Everyday conversation",
+    "title": "Meeting a new classmate",
+    "lines": [
+      {
+        "speaker": "Sena",
+        "text": "Hi! I'm Sena. What's your name?"
+      },
+      {
+        "speaker": "Paul",
+        "text": "Hello, Sena. I'm Paul. Nice to meet you."
+      },
+      {
+        "speaker": "Sena",
+        "text": "Nice to meet you too. Where are you from, Paul?"
+      },
+      {
+        "speaker": "Paul",
+        "text": "I'm from Cotonou, in Benin. And you?"
+      },
+      {
+        "speaker": "Sena",
+        "text": "I'm from Aného. How old are you?"
+      },
+      {
+        "speaker": "Paul",
+        "text": "I'm nineteen. I've got two sisters and one brother."
+      },
+      {
+        "speaker": "Sena",
+        "text": "Cool! The class starts at nine o'clock. See you later!"
+      }
+    ],
+    "questions": [
+      {
+        "id": "la1-q1",
+        "type": "mcq",
+        "prompt": "Where is Paul from?",
+        "options": [
+          "Aného",
+          "Lomé",
+          "Cotonou",
+          "Accra"
+        ],
+        "answer": 2,
+        "explanation": "\"I'm from Cotonou, in Benin.\""
+      },
+      {
+        "id": "la1-q2",
+        "type": "mcq",
+        "prompt": "How old is Paul?",
+        "options": [
+          "9",
+          "19",
+          "90",
+          "29"
+        ],
+        "answer": 1,
+        "explanation": "\"I'm nineteen.\""
+      },
+      {
+        "id": "la1-q3",
+        "type": "truefalse",
+        "prompt": "Paul has got two brothers.",
+        "answer": false,
+        "explanation": "Two sisters and one brother."
+      },
+      {
+        "id": "la1-q4",
+        "type": "mcq",
+        "prompt": "What time does the class start?",
+        "options": [
+          "8:00",
+          "9:00",
+          "9:30",
+          "10:00"
+        ],
+        "answer": 1,
+        "explanation": "\"At nine o'clock.\""
+      }
+    ],
+    "vocab": [
+      {
+        "word": "classmate",
+        "def": "a person in the same class"
+      },
+      {
+        "word": "see you later",
+        "def": "goodbye, I'll see you again soon"
+      }
+    ]
+  },
+  {
+    "id": "l-c1-seminar",
+    "level": "C1",
+    "kind": "University seminar",
+    "title": "A seminar on urban growth",
+    "lines": [
+      {
+        "speaker": "Lecturer",
+        "text": "What I'd like us to consider today is not whether African cities will grow, but how. By 2050, Lagos alone may well exceed thirty million inhabitants."
+      },
+      {
+        "speaker": "Student",
+        "text": "With respect, isn't the bigger issue that most of that growth will be informal? Planning tends to lag years behind."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "That's a fair point. Rarely do master plans anticipate how quickly settlements appear. Kigali, however, is often cited as a partial exception."
+      },
+      {
+        "speaker": "Student",
+        "text": "Partly, yes, but critics argue its success came at a social cost, with low-income residents relocated to the edges."
+      },
+      {
+        "speaker": "Lecturer",
+        "text": "Exactly — which brings me to this week's essay: to what extent can rapid urbanisation be both orderly and fair?"
+      }
+    ],
+    "questions": [
+      {
+        "id": "lc1-q1",
+        "type": "mcq",
+        "prompt": "What is the lecturer's main focus?",
+        "options": [
+          "Whether cities will grow",
+          "How cities will grow",
+          "Why people leave cities",
+          "Transport prices"
+        ],
+        "answer": 1,
+        "explanation": "\"not whether … but how\"."
+      },
+      {
+        "id": "lc1-q2",
+        "type": "mcq",
+        "prompt": "What concern does the student raise?",
+        "options": [
+          "Cities are shrinking",
+          "Growth will be largely informal and planning is slow",
+          "Lagos is too small",
+          "Essays are too long"
+        ],
+        "answer": 1,
+        "explanation": "Informal growth; planning lags behind."
+      },
+      {
+        "id": "lc1-q3",
+        "type": "truefalse",
+        "prompt": "The student fully agrees that Kigali is a perfect model.",
+        "answer": false,
+        "explanation": "\"Partly, yes, but critics argue…\""
+      },
+      {
+        "id": "lc1-q4",
+        "type": "mcq",
+        "prompt": "The essay question asks…",
+        "options": [
+          "to describe Kigali",
+          "to what extent urbanisation can be orderly and fair",
+          "how to build roads",
+          "why Lagos is big"
+        ],
+        "answer": 1,
+        "explanation": "Final line."
+      }
+    ],
+    "vocab": [
+      {
+        "word": "informal settlement",
+        "def": "housing built without official permission or planning"
+      },
+      {
+        "word": "lag behind",
+        "def": "to move or develop more slowly than something else"
+      }
+    ]
   }
 ]

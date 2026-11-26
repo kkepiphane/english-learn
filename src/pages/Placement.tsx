@@ -34,7 +34,7 @@ export default function Placement() {
         <h1 className="mt-1 flex items-center gap-3 text-3xl font-bold">Estimated level <LevelBadge level={result.overall} className="text-lg" /></h1>
         <p className="mt-2 text-ink-500">
           {result.overall === 'pre-A2'
-            ? 'You are building the foundations. The A2 path will consolidate the basics step by step.'
+            ? 'You are building the foundations. Start with the A1 course for solid basics.'
             : `You have shown a solid ${result.overall} level. Your path now focuses on ${next}.`}
         </p>
         <Card className="mt-6 space-y-3">

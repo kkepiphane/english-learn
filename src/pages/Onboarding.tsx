@@ -31,7 +31,7 @@ export default function Onboarding() {
     <main className="mx-auto flex min-h-dvh max-w-lg flex-col justify-center px-5 py-10">
       <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="mb-5 h-14 w-14" />
       <h1 className="text-3xl font-bold tracking-tight">Welcome to English Path</h1>
-      <p className="mt-2 text-ink-500">Your personal English tutor, from A2 to C1. Everything is stored on this device and works offline.</p>
+      <p className="mt-2 text-ink-500">Your personal English tutor, from A1 to C1. Everything is stored on this device and works offline.</p>
       <p className="mt-1 text-sm italic text-ink-400">🇫🇷 Votre professeur d'anglais personnel. Vos données restent sur cet appareil.</p>
 
       <div className="mt-8 space-y-6">

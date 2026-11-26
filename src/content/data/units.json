@@ -130,5 +130,93 @@
       "b2-g-relative",
       "b2-g-modals-past"
     ]
+  },
+  {
+    "id": "a1-u1",
+    "level": "A1",
+    "order": 1,
+    "title": "Hello!",
+    "description": "Introduce yourself, greetings and numbers.",
+    "lessonIds": [
+      "a1-g-be",
+      "a1-v-hello"
+    ]
+  },
+  {
+    "id": "a1-u2",
+    "level": "A1",
+    "order": 2,
+    "title": "My family",
+    "description": "Family, jobs and what you have.",
+    "lessonIds": [
+      "a1-g-have",
+      "a1-v-family"
+    ]
+  },
+  {
+    "id": "a1-u3",
+    "level": "A1",
+    "order": 3,
+    "title": "My day",
+    "description": "Routines, days and the time.",
+    "lessonIds": [
+      "a1-g-present",
+      "a1-v-time"
+    ]
+  },
+  {
+    "id": "a1-u4",
+    "level": "A1",
+    "order": 4,
+    "title": "Around town",
+    "description": "Places, directions and shopping.",
+    "lessonIds": [
+      "a1-g-there",
+      "a1-e-shopping"
+    ]
+  },
+  {
+    "id": "c1-u1",
+    "level": "C1",
+    "order": 1,
+    "title": "Academic mastery",
+    "description": "Emphasis and careful claims for top exam scores.",
+    "lessonIds": [
+      "c1-g-inversion",
+      "c1-v-hedging"
+    ]
+  },
+  {
+    "id": "c1-u2",
+    "level": "C1",
+    "order": 2,
+    "title": "Persuade and present",
+    "description": "Focus your message and lead discussions.",
+    "lessonIds": [
+      "c1-g-cleft",
+      "c1-e-presenting"
+    ]
+  },
+  {
+    "id": "c1-u3",
+    "level": "C1",
+    "order": 3,
+    "title": "Nuance",
+    "description": "Formal demands, unreal past and idioms.",
+    "lessonIds": [
+      "c1-g-subjunctive",
+      "c1-v-idioms"
+    ]
+  },
+  {
+    "id": "c1-u4",
+    "level": "C1",
+    "order": 4,
+    "title": "Style",
+    "description": "Concise, natural, native-like writing.",
+    "lessonIds": [
+      "c1-g-nominalisation",
+      "c1-g-ellipsis"
+    ]
   }
 ]

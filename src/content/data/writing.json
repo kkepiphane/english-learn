@@ -114,5 +114,31 @@
       "To sum up, while… , I firmly believe that…"
     ],
     "modelAnswer": "In an increasingly global job market, many students wonder whether they should complete their education abroad or at home. Although both options have clear advantages, I believe that studying abroad offers more for a future career, provided that students plan it carefully.\n\nProponents of studying abroad argue that it develops skills that employers value highly. Living in another country forces students to become independent, to adapt to new situations and to communicate in a foreign language every day. For example, a Togolese student who completes a master's degree in Canada will not only become fluent in English but will also build an international network that may lead to job offers.\n\nOn the other hand, studying in one's own country has significant benefits. It is considerably cheaper, which means that students and their families avoid heavy debts. Moreover, local universities understand the national economy, so graduates may find it easier to obtain jobs in local companies or public institutions. Some people also maintain that talented graduates are needed at home to develop their country.\n\nFrom my perspective, the experience of living abroad is extremely valuable, although it is not the only route to success. The most effective approach might be to combine both: completing a first degree at home and then spending a year or a master's programme abroad. Nevertheless, the decision should depend on each student's financial situation and career goals.\n\nTo sum up, while studying at home is affordable and locally relevant, studying abroad provides language skills, independence and international contacts. For these reasons, I firmly believe it is the better preparation for a successful career."
+  },
+  {
+    "id": "w-c1-essay",
+    "level": "C1",
+    "kind": "opinion",
+    "title": "C1 essay: technology and learning",
+    "minWords": 260,
+    "maxWords": 330,
+    "instructions": "\"Artificial intelligence will make traditional teachers unnecessary within a generation.\" To what extent do you agree or disagree? Support your answer with reasons and examples.",
+    "checklist": [
+      "Nuanced thesis (to what extent)",
+      "Hedging: may, arguably, to some extent",
+      "At least one inversion or cleft for emphasis",
+      "Nominalised phrases in topic sentences",
+      "A concession and a rebuttal",
+      "Conclusion that answers the question precisely"
+    ],
+    "usefulLanguage": [
+      "It would be naive to assume that…",
+      "Arguably, …",
+      "Not only does AI…, but it also…",
+      "What is often overlooked is…",
+      "While there is some merit in this view, …",
+      "On balance, …"
+    ],
+    "modelAnswer": "The rapid spread of artificial intelligence in education has led some commentators to predict the disappearance of the teaching profession. While AI will undoubtedly transform how people learn, I would argue that the claim that teachers will become unnecessary within a generation significantly overstates what the technology can do.\n\nThere is, admittedly, some merit in the optimistic view. Not only can AI tutors adapt instantly to each learner's level, but they are also available at any hour and at negligible cost. For students in regions with a severe shortage of qualified teachers, this could arguably be the most significant improvement in access to education in decades. A learner in a rural area could, for instance, receive individual feedback on an essay within seconds.\n\nWhat is often overlooked, however, is that learning is not merely the transmission of information. Research suggests that students who depend on AI for answers tend to perform worse in later assessments, as the tool removes the effortful practice through which lasting understanding develops. Moreover, the motivation of reluctant learners, the management of group dynamics and the modelling of curiosity remain distinctly human tasks. It is precisely these aspects of teaching that determine whether students persevere.\n\nIt seems far more plausible, therefore, that the role of teachers will evolve rather than vanish. Teachers may spend less time correcting routine exercises and more time designing projects, mentoring and helping students use AI critically.\n\nOn balance, AI is likely to become a powerful assistant in classrooms, but the expectation that it will replace teachers within a generation is, in my view, unrealistic. The real challenge lies in ensuring that technology strengthens, rather than erodes, the skills that education exists to develop."
   }
 ]

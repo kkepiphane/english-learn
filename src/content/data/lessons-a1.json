@@ -1,0 +1,1432 @@
+[
+  {
+    "id": "a1-g-be",
+    "unitId": "a1-u1",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "I am, you are: the verb be",
+    "minutes": 10,
+    "objective": "Say who you are, where you're from and how you feel.",
+    "sections": [
+      {
+        "heading": "Forms of be",
+        "en": "I am · you are · he/she/it is · we/they are. Short forms: I'm, you're, he's.",
+        "fr": "Le verbe être. En anglais on dit « I am 20 » pour l'âge.",
+        "table": [
+          [
+            "Full",
+            "Short",
+            "Negative"
+          ],
+          [
+            "I am",
+            "I'm",
+            "I'm not"
+          ],
+          [
+            "you are",
+            "you're",
+            "you aren't"
+          ],
+          [
+            "he / she / it is",
+            "he's / she's / it's",
+            "isn't"
+          ],
+          [
+            "we / they are",
+            "we're / they're",
+            "aren't"
+          ]
+        ]
+      },
+      {
+        "heading": "Questions",
+        "en": "Put be before the subject.",
+        "examples": [
+          "Are you from Togo? — Yes, I am.",
+          "Is she a teacher? — No, she isn't.",
+          "Where are you from?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1b-v1",
+        "word": "from",
+        "ipa": "/frɒm/",
+        "pos": "preposition",
+        "definition": "shows where someone was born or lives",
+        "fr": "de (origine)",
+        "example": "I'm from Lomé.",
+        "context": "Introductions"
+      },
+      {
+        "id": "a1b-v2",
+        "word": "tired",
+        "ipa": "/ˈtaɪəd/",
+        "pos": "adjective",
+        "definition": "needing rest or sleep",
+        "fr": "fatigué",
+        "example": "I'm tired today.",
+        "context": "Feelings"
+      },
+      {
+        "id": "a1b-v3",
+        "word": "happy",
+        "ipa": "/ˈhæpi/",
+        "pos": "adjective",
+        "definition": "feeling good",
+        "fr": "content, heureux",
+        "example": "We are happy here.",
+        "context": "Feelings"
+      },
+      {
+        "id": "a1b-v4",
+        "word": "married",
+        "ipa": "/ˈmærid/",
+        "pos": "adjective",
+        "definition": "having a husband or wife",
+        "fr": "marié",
+        "example": "Is your brother married?",
+        "context": "Personal details"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gb-p1",
+        "type": "mcq",
+        "prompt": "You ___ my friend.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "answer": 2,
+        "explanation": "you → are."
+      },
+      {
+        "id": "a1gb-p2",
+        "type": "mcq",
+        "prompt": "___ he from Ghana?",
+        "options": [
+          "Are",
+          "Is",
+          "Am"
+        ],
+        "answer": 1,
+        "explanation": "he → Is he…?"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gb-q1",
+        "type": "mcq",
+        "prompt": "I ___ 30 years old.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "have"
+        ],
+        "answer": 1,
+        "explanation": "Age: I am 30."
+      },
+      {
+        "id": "a1gb-q2",
+        "type": "mcq",
+        "prompt": "They ___ at work.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "answer": 2,
+        "explanation": "they → are."
+      },
+      {
+        "id": "a1gb-q3",
+        "type": "gap",
+        "prompt": "She ___ a doctor.",
+        "accepted": [
+          "is"
+        ],
+        "explanation": "she → is."
+      },
+      {
+        "id": "a1gb-q4",
+        "type": "truefalse",
+        "prompt": "\"I'm not tired\" is correct.",
+        "answer": true,
+        "explanation": "Negative: I'm not."
+      },
+      {
+        "id": "a1gb-q5",
+        "type": "mcq",
+        "prompt": "\"Are you Kofi?\" — \"Yes, I ___.\"",
+        "options": [
+          "am",
+          "'m",
+          "are",
+          "is"
+        ],
+        "answer": 0,
+        "explanation": "Short answers use the full form: Yes, I am."
+      },
+      {
+        "id": "a1gb-q6",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "Where",
+          "are",
+          "from",
+          "you"
+        ],
+        "answer": "Where are you from",
+        "explanation": "Question: Where + are + you + from?"
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I have 25 years.",
+        "right": "I am 25.",
+        "why": "Age uses be."
+      },
+      {
+        "wrong": "He is tired?",
+        "right": "Is he tired?",
+        "why": "Question: be first."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-hello",
+    "unitId": "a1-u1",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Hello! Greetings and numbers",
+    "minutes": 10,
+    "objective": "Greet people, spell your name and use numbers 1–100.",
+    "sections": [
+      {
+        "heading": "Greetings",
+        "en": "Hello / Hi · Good morning / afternoon / evening · Goodbye / Bye · Nice to meet you.",
+        "fr": "« Good night » sert seulement pour dire au revoir le soir ou avant de dormir.",
+        "examples": [
+          "Hi, I'm Ama. Nice to meet you.",
+          "How are you? — I'm fine, thanks. And you?"
+        ]
+      },
+      {
+        "heading": "Numbers",
+        "en": "1–12: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve. Then thirteen… nineteen, twenty, thirty, forty, fifty, a hundred.",
+        "fr": "Attention : thirteen (13) / thirty (30). L'accent est à la fin pour 13, au début pour 30.",
+        "examples": [
+          "My number is 90 45 12 78.",
+          "She is thirteen. Her mother is thirty."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1h-v1",
+        "word": "nice to meet you",
+        "ipa": "/naɪs tə miːt juː/",
+        "pos": "phrase",
+        "definition": "polite words when you meet someone for the first time",
+        "fr": "enchanté(e)",
+        "example": "Hi, Sam. Nice to meet you.",
+        "context": "Greetings"
+      },
+      {
+        "id": "a1h-v2",
+        "word": "fine",
+        "ipa": "/faɪn/",
+        "pos": "adjective",
+        "definition": "well, OK",
+        "fr": "bien",
+        "example": "I'm fine, thanks.",
+        "context": "Greetings"
+      },
+      {
+        "id": "a1h-v3",
+        "word": "spell",
+        "ipa": "/spel/",
+        "pos": "verb",
+        "definition": "to say the letters of a word in order",
+        "fr": "épeler",
+        "example": "How do you spell your name?",
+        "context": "Classroom"
+      },
+      {
+        "id": "a1h-v4",
+        "word": "phone number",
+        "ipa": "/fəʊn ˈnʌmbə/",
+        "pos": "noun",
+        "definition": "the numbers you call to reach a phone",
+        "fr": "numéro de téléphone",
+        "example": "What's your phone number?",
+        "context": "Personal details"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vh-p1",
+        "type": "mcq",
+        "prompt": "In the morning you say…",
+        "options": [
+          "Good night",
+          "Good morning",
+          "Good evening"
+        ],
+        "answer": 1,
+        "explanation": "Morning → Good morning."
+      },
+      {
+        "id": "a1vh-p2",
+        "type": "gap",
+        "prompt": "13 in letters:",
+        "accepted": [
+          "thirteen"
+        ],
+        "explanation": "13 = thirteen."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vh-q1",
+        "type": "mcq",
+        "prompt": "\"How are you?\" — \"___\"",
+        "options": [
+          "I'm 20.",
+          "I'm fine, thanks.",
+          "I'm Kofi.",
+          "Goodbye."
+        ],
+        "answer": 1,
+        "explanation": "Answer about how you feel."
+      },
+      {
+        "id": "a1vh-q2",
+        "type": "mcq",
+        "prompt": "40 is…",
+        "options": [
+          "fourteen",
+          "forty",
+          "fourty",
+          "four"
+        ],
+        "answer": 1,
+        "explanation": "40 = forty (no u)."
+      },
+      {
+        "id": "a1vh-q3",
+        "type": "truefalse",
+        "prompt": "You say \"Good night\" when you arrive in the evening.",
+        "answer": false,
+        "explanation": "Arriving → Good evening. Good night = goodbye at night."
+      },
+      {
+        "id": "a1vh-q4",
+        "type": "gap",
+        "prompt": "100 in letters: a ___",
+        "accepted": [
+          "hundred"
+        ],
+        "explanation": "100 = a hundred."
+      },
+      {
+        "id": "a1vh-q5",
+        "type": "mcq",
+        "prompt": "When you meet someone new:",
+        "options": [
+          "See you!",
+          "Nice to meet you.",
+          "Good night.",
+          "Sorry."
+        ],
+        "answer": 1,
+        "explanation": "First meeting → Nice to meet you."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "fourty",
+        "right": "forty",
+        "why": "Spelling: forty."
+      },
+      {
+        "wrong": "Good night! (arriving)",
+        "right": "Good evening!",
+        "why": "Good night is only for leaving."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-have",
+    "unitId": "a1-u2",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "have got, my, your",
+    "minutes": 10,
+    "objective": "Talk about family and things you have with have got and possessive words.",
+    "sections": [
+      {
+        "heading": "have got",
+        "en": "I/you/we/they have got (I've got) · he/she has got (he's got). Negative: haven't got / hasn't got. Question: Have you got…?",
+        "fr": "« Have you got a car? » = As-tu une voiture ? On peut aussi dire « Do you have a car? ».",
+        "examples": [
+          "I've got two brothers.",
+          "She hasn't got a car.",
+          "Have you got a pen?"
+        ]
+      },
+      {
+        "heading": "Possessive words",
+        "en": "my · your · his · her · its · our · their. Name + 's = belongs to.",
+        "examples": [
+          "This is my sister.",
+          "Ama's bag is red."
+        ],
+        "table": [
+          [
+            "I → my",
+            "he → his",
+            "she → her"
+          ],
+          [
+            "we → our",
+            "they → their",
+            "Kofi → Kofi's"
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1hv-v1",
+        "word": "brother",
+        "ipa": "/ˈbrʌðə/",
+        "pos": "noun",
+        "definition": "a boy or man with the same parents as you",
+        "fr": "frère",
+        "example": "I've got one brother.",
+        "context": "Family"
+      },
+      {
+        "id": "a1hv-v2",
+        "word": "sister",
+        "ipa": "/ˈsɪstə/",
+        "pos": "noun",
+        "definition": "a girl or woman with the same parents as you",
+        "fr": "sœur",
+        "example": "My sister is a nurse.",
+        "context": "Family"
+      },
+      {
+        "id": "a1hv-v3",
+        "word": "bag",
+        "ipa": "/bæɡ/",
+        "pos": "noun",
+        "definition": "a thing you use to carry objects",
+        "fr": "sac",
+        "example": "Her bag is black.",
+        "context": "Objects"
+      },
+      {
+        "id": "a1hv-v4",
+        "word": "key",
+        "ipa": "/kiː/",
+        "pos": "noun",
+        "definition": "a small metal object that opens a door",
+        "fr": "clé",
+        "example": "Have you got the key?",
+        "context": "Objects"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gh-p1",
+        "type": "mcq",
+        "prompt": "She ___ got a new phone.",
+        "options": [
+          "have",
+          "has",
+          "is"
+        ],
+        "answer": 1,
+        "explanation": "she → has got."
+      },
+      {
+        "id": "a1gh-p2",
+        "type": "mcq",
+        "prompt": "This is Kofi. ___ car is blue.",
+        "options": [
+          "Her",
+          "His",
+          "Its"
+        ],
+        "answer": 1,
+        "explanation": "Kofi is a man → his."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gh-q1",
+        "type": "mcq",
+        "prompt": "We ___ got a big house.",
+        "options": [
+          "has",
+          "have",
+          "are",
+          "is"
+        ],
+        "answer": 1,
+        "explanation": "we → have got."
+      },
+      {
+        "id": "a1gh-q2",
+        "type": "mcq",
+        "prompt": "___ you got a brother?",
+        "options": [
+          "Has",
+          "Have",
+          "Do",
+          "Are"
+        ],
+        "answer": 1,
+        "explanation": "Question: Have you got…?"
+      },
+      {
+        "id": "a1gh-q3",
+        "type": "mcq",
+        "prompt": "That is Ama and ___ mother.",
+        "options": [
+          "his",
+          "her",
+          "their",
+          "my"
+        ],
+        "answer": 1,
+        "explanation": "Ama (woman) → her."
+      },
+      {
+        "id": "a1gh-q4",
+        "type": "gap",
+        "prompt": "He ___ got a bike. (negative, short form)",
+        "accepted": [
+          "hasn't",
+          "has not"
+        ],
+        "explanation": "he → hasn't got."
+      },
+      {
+        "id": "a1gh-q5",
+        "type": "truefalse",
+        "prompt": "\"the car of my father\" is the natural way to say « la voiture de mon père ».",
+        "answer": false,
+        "explanation": "Use 's: my father's car."
+      },
+      {
+        "id": "a1gh-q6",
+        "type": "mcq",
+        "prompt": "They love ___ children.",
+        "options": [
+          "there",
+          "their",
+          "they're",
+          "them"
+        ],
+        "answer": 1,
+        "explanation": "Possessive: their."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "He have got a car.",
+        "right": "He has got a car.",
+        "why": "he → has."
+      },
+      {
+        "wrong": "the bag of Ama",
+        "right": "Ama's bag",
+        "why": "Use 's for people."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-family",
+    "unitId": "a1-u2",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Family and jobs",
+    "minutes": 10,
+    "objective": "Name family members and say what people do.",
+    "sections": [
+      {
+        "heading": "Family",
+        "en": "mother · father · parents · son · daughter · brother · sister · husband · wife · grandmother · grandfather · uncle · aunt · cousin.",
+        "examples": [
+          "My parents live in Kpalimé.",
+          "I've got two cousins in Accra."
+        ]
+      },
+      {
+        "heading": "Jobs",
+        "en": "Use a / an with jobs: I'm a teacher. She's an engineer. Ask: What do you do?",
+        "fr": "En anglais, l'article est obligatoire : « I am a nurse », pas « I am nurse ».",
+        "examples": [
+          "What do you do? — I'm a student.",
+          "My father is a farmer."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1f-v1",
+        "word": "parents",
+        "ipa": "/ˈpeərənts/",
+        "pos": "noun",
+        "definition": "your mother and father",
+        "fr": "parents",
+        "example": "My parents are teachers.",
+        "context": "Family"
+      },
+      {
+        "id": "a1f-v2",
+        "word": "daughter",
+        "ipa": "/ˈdɔːtə/",
+        "pos": "noun",
+        "definition": "your female child",
+        "fr": "fille (enfant)",
+        "example": "Their daughter is five.",
+        "context": "Family"
+      },
+      {
+        "id": "a1f-v3",
+        "word": "farmer",
+        "ipa": "/ˈfɑːmə/",
+        "pos": "noun",
+        "definition": "a person who grows food or keeps animals",
+        "fr": "agriculteur",
+        "example": "My uncle is a farmer.",
+        "context": "Jobs"
+      },
+      {
+        "id": "a1f-v4",
+        "word": "nurse",
+        "ipa": "/nɜːs/",
+        "pos": "noun",
+        "definition": "a person who looks after sick people",
+        "fr": "infirmier, infirmière",
+        "example": "She is a nurse in a hospital.",
+        "context": "Jobs"
+      },
+      {
+        "id": "a1f-v5",
+        "word": "engineer",
+        "ipa": "/ˌendʒɪˈnɪə/",
+        "pos": "noun",
+        "definition": "a person who designs machines, roads or systems",
+        "fr": "ingénieur",
+        "example": "He's an engineer.",
+        "context": "Jobs"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vf-p1",
+        "type": "mcq",
+        "prompt": "Your mother's brother is your…",
+        "options": [
+          "cousin",
+          "uncle",
+          "aunt"
+        ],
+        "answer": 1,
+        "explanation": "Mother's brother = uncle."
+      },
+      {
+        "id": "a1vf-p2",
+        "type": "gap",
+        "prompt": "My father's mother is my ___.",
+        "accepted": [
+          "grandmother",
+          "grandma"
+        ],
+        "explanation": "Father's mother = grandmother."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vf-q1",
+        "type": "mcq",
+        "prompt": "Your uncle's son is your…",
+        "options": [
+          "brother",
+          "cousin",
+          "nephew",
+          "son"
+        ],
+        "answer": 1,
+        "explanation": "Uncle's child = cousin."
+      },
+      {
+        "id": "a1vf-q2",
+        "type": "mcq",
+        "prompt": "\"What do you do?\" means…",
+        "options": [
+          "How are you?",
+          "What is your job?",
+          "Where do you live?",
+          "What are you doing now?"
+        ],
+        "answer": 1,
+        "explanation": "What do you do? = What's your job?"
+      },
+      {
+        "id": "a1vf-q3",
+        "type": "mcq",
+        "prompt": "She is ___ engineer.",
+        "options": [
+          "a",
+          "an",
+          "—",
+          "the"
+        ],
+        "answer": 1,
+        "explanation": "Vowel sound → an engineer."
+      },
+      {
+        "id": "a1vf-q4",
+        "type": "truefalse",
+        "prompt": "\"I am teacher\" is correct.",
+        "answer": false,
+        "explanation": "Jobs need a/an: I am a teacher."
+      },
+      {
+        "id": "a1vf-q5",
+        "type": "gap",
+        "prompt": "A person who grows food is a ___.",
+        "accepted": [
+          "farmer"
+        ],
+        "explanation": "farmer."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I am nurse.",
+        "right": "I am a nurse.",
+        "why": "Jobs need a/an."
+      },
+      {
+        "wrong": "my parents (= relatives)",
+        "right": "my relatives",
+        "why": "Parents = mother and father only."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-present",
+    "unitId": "a1-u3",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Present simple: my day",
+    "minutes": 12,
+    "objective": "Talk about your routine with the present simple.",
+    "sections": [
+      {
+        "heading": "Positive",
+        "en": "I/you/we/they work · he/she/it works. Add -es after -ch, -sh, -s, -o: watches, goes.",
+        "fr": "Le -s de la 3e personne est l'erreur n°1 des francophones.",
+        "examples": [
+          "I get up at six.",
+          "She goes to work by bus.",
+          "He watches the news every evening."
+        ]
+      },
+      {
+        "heading": "Negative and questions",
+        "en": "don't / doesn't + verb. Do / Does + subject + verb?",
+        "examples": [
+          "I don't drink coffee.",
+          "Does he work on Saturday? — Yes, he does.",
+          "What time do you start?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1p-v1",
+        "word": "get up",
+        "ipa": "/ɡet ʌp/",
+        "pos": "phrasal verb",
+        "definition": "to leave your bed in the morning",
+        "fr": "se lever",
+        "example": "I get up at 6 o'clock.",
+        "context": "Routine"
+      },
+      {
+        "id": "a1p-v2",
+        "word": "have breakfast",
+        "ipa": "/hæv ˈbrekfəst/",
+        "pos": "phrase",
+        "definition": "to eat the first meal of the day",
+        "fr": "prendre le petit-déjeuner",
+        "example": "We have breakfast at seven.",
+        "context": "Routine"
+      },
+      {
+        "id": "a1p-v3",
+        "word": "go to bed",
+        "ipa": "/ɡəʊ tə bed/",
+        "pos": "phrase",
+        "definition": "to lie down to sleep",
+        "fr": "aller se coucher",
+        "example": "She goes to bed at ten.",
+        "context": "Routine"
+      },
+      {
+        "id": "a1p-v4",
+        "word": "usually",
+        "ipa": "/ˈjuːʒuəli/",
+        "pos": "adverb",
+        "definition": "most of the time",
+        "fr": "d'habitude",
+        "example": "I usually walk to school.",
+        "context": "Frequency"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gp-p1",
+        "type": "mcq",
+        "prompt": "She ___ at 7.",
+        "options": [
+          "get up",
+          "gets up",
+          "getting up"
+        ],
+        "answer": 1,
+        "explanation": "she → gets up."
+      },
+      {
+        "id": "a1gp-p2",
+        "type": "mcq",
+        "prompt": "I ___ like tea.",
+        "options": [
+          "don't",
+          "doesn't",
+          "not"
+        ],
+        "answer": 0,
+        "explanation": "I → don't."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gp-q1",
+        "type": "mcq",
+        "prompt": "He ___ to school by moto.",
+        "options": [
+          "go",
+          "goes",
+          "gos",
+          "going"
+        ],
+        "answer": 1,
+        "explanation": "go → goes."
+      },
+      {
+        "id": "a1gp-q2",
+        "type": "mcq",
+        "prompt": "___ she work in Lomé?",
+        "options": [
+          "Do",
+          "Does",
+          "Is",
+          "Has"
+        ],
+        "answer": 1,
+        "explanation": "she → Does."
+      },
+      {
+        "id": "a1gp-q3",
+        "type": "gap",
+        "prompt": "We ___ (not / watch) TV in the morning.",
+        "accepted": [
+          "don't watch",
+          "do not watch"
+        ],
+        "explanation": "we → don't watch."
+      },
+      {
+        "id": "a1gp-q4",
+        "type": "truefalse",
+        "prompt": "\"She doesn't works\" is correct.",
+        "answer": false,
+        "explanation": "After doesn't, no -s: She doesn't work."
+      },
+      {
+        "id": "a1gp-q5",
+        "type": "mcq",
+        "prompt": "My brother ___ football on Sundays.",
+        "options": [
+          "play",
+          "plays",
+          "playes",
+          "is play"
+        ],
+        "answer": 1,
+        "explanation": "he → plays."
+      },
+      {
+        "id": "a1gp-q6",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "time",
+          "get",
+          "do",
+          "What",
+          "you",
+          "up"
+        ],
+        "answer": "What time do you get up",
+        "explanation": "Question word + do + you + verb."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "She work in a bank.",
+        "right": "She works in a bank.",
+        "why": "he/she/it + -s."
+      },
+      {
+        "wrong": "Does he works?",
+        "right": "Does he work?",
+        "why": "No -s after does."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-time",
+    "unitId": "a1-u3",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Days, months and the time",
+    "minutes": 10,
+    "objective": "Say the time, the days of the week and dates.",
+    "sections": [
+      {
+        "heading": "The time",
+        "en": "It's seven o'clock · half past seven (7:30) · quarter past seven (7:15) · quarter to eight (7:45). Ask: What time is it?",
+        "fr": "« Half past seven » = 7 h 30 : on compte à partir de l'heure passée.",
+        "examples": [
+          "What time is it? — It's half past three.",
+          "The bank opens at nine o'clock."
+        ]
+      },
+      {
+        "heading": "Days and months",
+        "en": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. January… December. Always a capital letter. on + day, in + month.",
+        "examples": [
+          "See you on Friday.",
+          "My birthday is in August."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1t-v1",
+        "word": "o'clock",
+        "ipa": "/əˈklɒk/",
+        "pos": "adverb",
+        "definition": "used for exact hours",
+        "fr": "heure(s) pile",
+        "example": "It's ten o'clock.",
+        "context": "Time"
+      },
+      {
+        "id": "a1t-v2",
+        "word": "half past",
+        "ipa": "/hɑːf pɑːst/",
+        "pos": "phrase",
+        "definition": "thirty minutes after the hour",
+        "fr": "et demie",
+        "example": "It's half past two (2:30).",
+        "context": "Time"
+      },
+      {
+        "id": "a1t-v3",
+        "word": "weekend",
+        "ipa": "/ˌwiːkˈend/",
+        "pos": "noun",
+        "definition": "Saturday and Sunday",
+        "fr": "week-end",
+        "example": "What do you do at the weekend?",
+        "context": "Days"
+      },
+      {
+        "id": "a1t-v4",
+        "word": "birthday",
+        "ipa": "/ˈbɜːθdeɪ/",
+        "pos": "noun",
+        "definition": "the day you were born, every year",
+        "fr": "anniversaire",
+        "example": "When is your birthday?",
+        "context": "Dates"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vt-p1",
+        "type": "mcq",
+        "prompt": "7:30 is…",
+        "options": [
+          "half past seven",
+          "half past six",
+          "seven half"
+        ],
+        "answer": 0,
+        "explanation": "7:30 = half past seven."
+      },
+      {
+        "id": "a1vt-p2",
+        "type": "mcq",
+        "prompt": "The day after Monday is…",
+        "options": [
+          "Thursday",
+          "Tuesday",
+          "Sunday"
+        ],
+        "answer": 1,
+        "explanation": "Monday → Tuesday."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vt-q1",
+        "type": "mcq",
+        "prompt": "8:15 is…",
+        "options": [
+          "quarter to eight",
+          "quarter past eight",
+          "eight fifteen past",
+          "half past eight"
+        ],
+        "answer": 1,
+        "explanation": "15 minutes after → quarter past."
+      },
+      {
+        "id": "a1vt-q2",
+        "type": "mcq",
+        "prompt": "The meeting is ___ Monday.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "Days → on."
+      },
+      {
+        "id": "a1vt-q3",
+        "type": "gap",
+        "prompt": "The day before Saturday is ___.",
+        "accepted": [
+          "friday",
+          "Friday"
+        ],
+        "explanation": "Friday comes before Saturday."
+      },
+      {
+        "id": "a1vt-q4",
+        "type": "truefalse",
+        "prompt": "In English, days and months start with a capital letter.",
+        "answer": true,
+        "explanation": "Monday, January…"
+      },
+      {
+        "id": "a1vt-q5",
+        "type": "mcq",
+        "prompt": "9:45 is…",
+        "options": [
+          "quarter past nine",
+          "quarter to ten",
+          "quarter to nine",
+          "half past nine"
+        ],
+        "answer": 1,
+        "explanation": "15 minutes before ten → quarter to ten."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "monday",
+        "right": "Monday",
+        "why": "Capital letter for days."
+      },
+      {
+        "wrong": "in Monday",
+        "right": "on Monday",
+        "why": "on + day."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-there",
+    "unitId": "a1-u4",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "There is, there are: my town",
+    "minutes": 10,
+    "objective": "Describe a place with there is / there are and prepositions of place.",
+    "sections": [
+      {
+        "heading": "there is / there are",
+        "en": "There is (there's) + one thing. There are + many things. Questions: Is there…? Are there…? Use any in questions and negatives.",
+        "fr": "« Il y a » = there is / there are. Ne dites pas « it has ».",
+        "examples": [
+          "There's a market near my house.",
+          "There are three hotels in the town.",
+          "Is there a bank here? — No, there isn't.",
+          "There aren't any taxis."
+        ]
+      },
+      {
+        "heading": "Where is it?",
+        "en": "in · on · under · next to · between · opposite · near.",
+        "examples": [
+          "The pharmacy is next to the bank.",
+          "The keys are on the table.",
+          "The school is opposite the church."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1th2-v1",
+        "word": "market",
+        "ipa": "/ˈmɑːkɪt/",
+        "pos": "noun",
+        "definition": "a place where people buy and sell food and goods",
+        "fr": "marché",
+        "example": "There's a big market in the centre.",
+        "context": "Town"
+      },
+      {
+        "id": "a1th2-v2",
+        "word": "pharmacy",
+        "ipa": "/ˈfɑːməsi/",
+        "pos": "noun",
+        "definition": "a shop that sells medicine",
+        "fr": "pharmacie",
+        "example": "Is there a pharmacy near here?",
+        "context": "Town"
+      },
+      {
+        "id": "a1th2-v3",
+        "word": "next to",
+        "ipa": "/nekst tuː/",
+        "pos": "preposition",
+        "definition": "very close, at the side of",
+        "fr": "à côté de",
+        "example": "The bank is next to the hotel.",
+        "context": "Place"
+      },
+      {
+        "id": "a1th2-v4",
+        "word": "opposite",
+        "ipa": "/ˈɒpəzɪt/",
+        "pos": "preposition",
+        "definition": "on the other side, facing",
+        "fr": "en face de",
+        "example": "The school is opposite the church.",
+        "context": "Place"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gt-p1",
+        "type": "mcq",
+        "prompt": "___ two banks in my street.",
+        "options": [
+          "There is",
+          "There are",
+          "It has"
+        ],
+        "answer": 1,
+        "explanation": "Plural → there are."
+      },
+      {
+        "id": "a1gt-p2",
+        "type": "mcq",
+        "prompt": "The cat is ___ the table. (below)",
+        "options": [
+          "on",
+          "under",
+          "next to"
+        ],
+        "answer": 1,
+        "explanation": "Below = under."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gt-q1",
+        "type": "mcq",
+        "prompt": "___ a hospital in your town?",
+        "options": [
+          "Are there",
+          "Is there",
+          "There is",
+          "Has it"
+        ],
+        "answer": 1,
+        "explanation": "Singular question → Is there…?"
+      },
+      {
+        "id": "a1gt-q2",
+        "type": "mcq",
+        "prompt": "There aren't ___ restaurants here.",
+        "options": [
+          "some",
+          "any",
+          "a",
+          "one"
+        ],
+        "answer": 1,
+        "explanation": "Negative → any."
+      },
+      {
+        "id": "a1gt-q3",
+        "type": "gap",
+        "prompt": "There ___ a supermarket near the station.",
+        "accepted": [
+          "is",
+          "'s"
+        ],
+        "explanation": "Singular → there is."
+      },
+      {
+        "id": "a1gt-q4",
+        "type": "truefalse",
+        "prompt": "\"It has a pharmacy in my street\" is natural English.",
+        "answer": false,
+        "explanation": "Use There is a pharmacy in my street."
+      },
+      {
+        "id": "a1gt-q5",
+        "type": "mcq",
+        "prompt": "The bank is ___ the pharmacy and the hotel.",
+        "options": [
+          "between",
+          "opposite",
+          "under",
+          "on"
+        ],
+        "answer": 0,
+        "explanation": "In the middle of two places → between."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "It has many shops here.",
+        "right": "There are many shops here.",
+        "why": "« Il y a » = there is / there are."
+      },
+      {
+        "wrong": "There is two banks.",
+        "right": "There are two banks.",
+        "why": "Plural → there are."
+      }
+    ]
+  },
+  {
+    "id": "a1-e-shopping",
+    "unitId": "a1-u4",
+    "level": "A1",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Shopping and prices",
+    "minutes": 10,
+    "objective": "Ask for things, ask the price and pay in a shop.",
+    "sections": [
+      {
+        "heading": "In a shop",
+        "en": "Can I have…, please? · How much is it / are they? · That's 500 francs. · Here you are. · Thank you.",
+        "fr": "« How much » pour le prix. « Can I have » est poli et très courant.",
+        "examples": [
+          "Can I have two bottles of water, please?",
+          "How much are these shoes? — They're 15,000 francs.",
+          "Here you are. — Thank you!"
+        ]
+      },
+      {
+        "heading": "this, that, these, those",
+        "en": "this / these = near you; that / those = far from you. Singular: this, that. Plural: these, those.",
+        "examples": [
+          "How much is this shirt?",
+          "I like those bags."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1s-v1",
+        "word": "how much",
+        "ipa": "/haʊ mʌtʃ/",
+        "pos": "phrase",
+        "definition": "used to ask a price",
+        "fr": "combien",
+        "example": "How much is the bread?",
+        "context": "Shopping"
+      },
+      {
+        "id": "a1s-v2",
+        "word": "cheap",
+        "ipa": "/tʃiːp/",
+        "pos": "adjective",
+        "definition": "not expensive",
+        "fr": "pas cher",
+        "example": "Fruit is cheap at the market.",
+        "context": "Shopping"
+      },
+      {
+        "id": "a1s-v3",
+        "word": "expensive",
+        "ipa": "/ɪkˈspensɪv/",
+        "pos": "adjective",
+        "definition": "costing a lot of money",
+        "fr": "cher",
+        "example": "This phone is expensive.",
+        "context": "Shopping"
+      },
+      {
+        "id": "a1s-v4",
+        "word": "change",
+        "ipa": "/tʃeɪndʒ/",
+        "pos": "noun",
+        "definition": "money you get back when you pay too much",
+        "fr": "monnaie",
+        "example": "Here's your change.",
+        "context": "Paying"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1es-p1",
+        "type": "mcq",
+        "prompt": "To ask the price:",
+        "options": [
+          "How many is it?",
+          "How much is it?",
+          "What price you?"
+        ],
+        "answer": 1,
+        "explanation": "How much is it?"
+      },
+      {
+        "id": "a1es-p2",
+        "type": "mcq",
+        "prompt": "___ shoes here are nice. (near, plural)",
+        "options": [
+          "This",
+          "These",
+          "That"
+        ],
+        "answer": 1,
+        "explanation": "Near + plural → these."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1es-q1",
+        "type": "mcq",
+        "prompt": "Polite way to ask for water:",
+        "options": [
+          "Give me water.",
+          "Can I have some water, please?",
+          "I want water now.",
+          "Water!"
+        ],
+        "answer": 1,
+        "explanation": "Can I have…, please?"
+      },
+      {
+        "id": "a1es-q2",
+        "type": "mcq",
+        "prompt": "The opposite of cheap is…",
+        "options": [
+          "small",
+          "expensive",
+          "new",
+          "big"
+        ],
+        "answer": 1,
+        "explanation": "cheap ≠ expensive."
+      },
+      {
+        "id": "a1es-q3",
+        "type": "gap",
+        "prompt": "How much ___ these bananas? (be)",
+        "accepted": [
+          "are"
+        ],
+        "explanation": "Plural → How much are…?"
+      },
+      {
+        "id": "a1es-q4",
+        "type": "truefalse",
+        "prompt": "\"Here you are\" is what you say when you give something to someone.",
+        "answer": true,
+        "explanation": "Here you are = voilà."
+      },
+      {
+        "id": "a1es-q5",
+        "type": "mcq",
+        "prompt": "Money you get back is the…",
+        "options": [
+          "change",
+          "price",
+          "bill",
+          "card"
+        ],
+        "answer": 0,
+        "explanation": "change = la monnaie."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "How much it costs?",
+        "right": "How much does it cost? / How much is it?",
+        "why": "Question form needs does / is."
+      },
+      {
+        "wrong": "I want a bread.",
+        "right": "Can I have some bread, please?",
+        "why": "Bread is uncountable; be polite."
+      }
+    ]
+  }
+]

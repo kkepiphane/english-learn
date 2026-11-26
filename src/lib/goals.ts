@@ -24,6 +24,7 @@ export const DREAMS: Record<Dream, { icon: string; label: string; verb: string; 
 
 /** Commonly used CEFR equivalences (IELTS Academic band, TOEFL iBT total). Indicative only. */
 export const EXAM_RANGE: Record<Level, { ielts: string; toefl: string }> = {
+  A1: { ielts: '2.0–2.5', toefl: '—' },
   A2: { ielts: '3.0–3.5', toefl: '—' },
   B1: { ielts: '4.0–5.0', toefl: '42–71' },
   B2: { ielts: '5.5–6.5', toefl: '72–94' },

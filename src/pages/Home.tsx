@@ -89,7 +89,7 @@ export default function Home() {
 
       {!data.placement && (
         <Card className="flex items-center gap-4 border-flame-200 bg-flame-50 dark:border-flame-900 dark:bg-flame-900/20">
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-flame-500 dark:bg-ink-900" aria-hidden><Compass size={28} weight="duotone" /></span>
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-flame-500 dark:bg-ink-900" aria-hidden><Compass size={28} weight="fill" /></span>
           <div className="flex-1">
             <p className="font-display font-bold">Find your real level</p>
             <p className="text-sm text-ink-500">12 minutes</p>
@@ -244,7 +244,7 @@ function DreamCard({ profile, progress }: { profile: Profile; progress: LessonPr
   if (!why)
     return (
       <Link to="/goal" className="card flex items-center gap-4 border-2 border-dashed border-brand-300 p-4 transition hover:border-brand-500 dark:border-brand-800">
-        <span className="grid shrink-0 grid-cols-2 gap-1 text-brand-600 dark:text-brand-300" aria-hidden>{Object.values(DREAM_ICON).map((I, k) => <I key={k} size={22} weight="duotone" />)}</span>
+        <span className="grid shrink-0 grid-cols-2 gap-1 text-brand-600 dark:text-brand-300" aria-hidden>{Object.values(DREAM_ICON).map((I, k) => <I key={k} size={22} weight="fill" />)}</span>
         <span className="flex-1">
           <span className="block font-display font-extrabold">What is your English for?</span>
           <span className="text-sm text-ink-500">Set your goal</span>
@@ -264,7 +264,7 @@ function DreamCard({ profile, progress }: { profile: Profile; progress: LessonPr
   return (
     <Link to="/goal" className="card relative block overflow-hidden p-4 transition hover:border-brand-300">
       <div className="flex items-start gap-3">
-        <span className="flex h-12 w-12 shrink-0 animate-float items-center justify-center rounded-2xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden>{(() => { const I = DREAM_ICON[why.dreams[0]]; return <I size={28} weight="duotone" /> })()}</span>
+        <span className="flex h-12 w-12 shrink-0 animate-float items-center justify-center rounded-2xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden>{(() => { const I = DREAM_ICON[why.dreams[0]]; return <I size={28} weight="fill" /> })()}</span>
         <div className="min-w-0 flex-1">
           <p className="label">My goal</p>
           <p className="font-display text-xl font-extrabold leading-tight">{dreamTitle(why)}</p>
