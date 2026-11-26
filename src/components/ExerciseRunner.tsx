@@ -161,7 +161,7 @@ function ItemView({ ex, answer, setAnswer, disabled, onEnter }: { ex: Exercise; 
             const selected = answer === value(k)
             return (
               <button key={k} type="button" disabled={disabled} onClick={() => setAnswer(value(k))} aria-pressed={selected}
-                className={clsx('rounded-xl border-2 px-4 py-3 text-left text-[15px] font-medium transition active:scale-[.99]', {
+                className={clsx('rounded-2xl border-2 border-b-4 px-4 py-3 text-left text-[15px] font-semibold transition active:translate-y-[2px] active:border-b-2', {
                   'border-brand-500 bg-brand-50 dark:bg-brand-900/30': selected && !showResult,
                   'border-ink-200 hover:border-ink-300 dark:border-ink-700': !selected && !showResult,
                   'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/30': showResult && k === correctIdx,

@@ -102,3 +102,14 @@ export interface PlacementQuestion {
   /** For listening items: text spoken by TTS before the question. */
   listen?: string
 }
+
+/** A1 review sheet: a few short rules with one example each, a classic trap, and quick sprint items. */
+export interface BasicSheet {
+  id: string
+  title: string
+  /** One-line summary in French. */
+  fr: string
+  points: { rule: string; example: string }[]
+  trap: { wrong: string; right: string }
+  items: Exercise[]
+}

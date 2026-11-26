@@ -1,6 +1,8 @@
-import type { Exercise, Lesson, Level, ListeningItem, PlacementQuestion, ReadingText, Skill, Unit, WritingPrompt } from './types'
+import type { BasicSheet, Exercise, Lesson, Level, ListeningItem, PlacementQuestion, ReadingText, Skill, Unit, WritingPrompt } from './types'
 import lessonsA2 from './data/lessons-a2.json'
 import lessonsB1 from './data/lessons-b1.json'
+import lessonsB2 from './data/lessons-b2.json'
+import basics from './data/a1-basics.json'
 import units from './data/units.json'
 import reading from './data/reading.json'
 import listening from './data/listening.json'
@@ -12,7 +14,10 @@ import placement from './data/placement.json'
  * They are bundled and precached by the service worker, so every lesson works offline after first load.
  * To add a level (B2, C1): add lessons-b2.json + units in units.json, then import it here.
  */
-export const LESSONS = [...lessonsA2, ...lessonsB1] as unknown as Lesson[]
+export const LESSONS = [...lessonsA2, ...lessonsB1, ...lessonsB2] as unknown as Lesson[]
+/** A1 basics: short review sheets and timed sprints (not a levelled path). */
+export const BASICS = basics as unknown as BasicSheet[]
+export const getSheet = (id: string) => BASICS.find((b) => b.id === id)
 export const UNITS = units as unknown as Unit[]
 export const READINGS = reading as unknown as ReadingText[]
 export const LISTENINGS = listening as unknown as ListeningItem[]

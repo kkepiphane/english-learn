@@ -338,5 +338,128 @@
         "explanation": "It gives practical advice for language learners."
       }
     ]
+  },
+  {
+    "id": "r-b2-brain-drain",
+    "level": "B2",
+    "topic": "Society",
+    "title": "Brain drain or brain gain?",
+    "minutes": 9,
+    "paragraphs": [
+      "Every year, thousands of young Africans leave their countries to study or work abroad. Doctors move to the United Kingdom, engineers to Canada, and students to France, Germany or China. For decades, this movement was described as a 'brain drain': the departure of talented people whose education had been paid for by their home countries, which then lost their skills.",
+      "The costs are real. In some countries, more doctors trained locally now work abroad than at home, and hospitals struggle to replace them. Governments argue that they invest heavily in universities only to see graduates contribute to the economies of richer nations. Critics add that recruitment campaigns by foreign health services make the problem worse.",
+      "However, a growing number of economists question this pessimistic view. They point out that migrants send home remittances worth more than all international aid combined, money which pays for school fees, small businesses and medical care. Moreover, the possibility of working abroad encourages more young people to pursue higher education in the first place, and not all of them actually leave.",
+      "There is also the phenomenon of 'brain circulation'. Many professionals return after several years, bringing new skills, international networks and capital. Others remain abroad but invest in start-ups, mentor students online or create partnerships between universities. In this sense, the diaspora can become a bridge rather than a loss.",
+      "Whether migration is a drain or a gain therefore depends largely on policy. Countries that offer attractive conditions for returnees, recognise foreign qualifications and involve their diaspora in development projects tend to benefit most. The question, experts conclude, is not how to stop people from leaving, but how to make sure that their success abroad also benefits those who stay."
+    ],
+    "glossary": {
+      "drain": {
+        "def": "a continuous loss of something valuable",
+        "fr": "fuite, perte",
+        "ipa": "/dreɪn/"
+      },
+      "recruitment": {
+        "def": "the process of finding new people to work for an organisation",
+        "fr": "recrutement",
+        "ipa": "/rɪˈkruːtmənt/"
+      },
+      "pessimistic": {
+        "def": "expecting bad things to happen",
+        "fr": "pessimiste",
+        "ipa": "/ˌpesɪˈmɪstɪk/"
+      },
+      "remittances": {
+        "def": "money sent by migrants to their families at home",
+        "fr": "transferts de fonds (de la diaspora)",
+        "ipa": "/rɪˈmɪtnsɪz/"
+      },
+      "pursue": {
+        "def": "to try to achieve something over time",
+        "fr": "poursuivre",
+        "ipa": "/pəˈsjuː/"
+      },
+      "returnees": {
+        "def": "people who come back to their country after living abroad",
+        "fr": "personnes de retour au pays",
+        "ipa": "/rɪˌtɜːˈniːz/"
+      },
+      "diaspora": {
+        "def": "people from one country who live in other countries",
+        "fr": "diaspora",
+        "ipa": "/daɪˈæspərə/"
+      },
+      "mentor": {
+        "def": "to advise and help a less experienced person",
+        "fr": "accompagner, être mentor",
+        "ipa": "/ˈmentɔː/"
+      },
+      "capital": {
+        "def": "money used to start or develop a business",
+        "fr": "capital, fonds",
+        "ipa": "/ˈkæpɪtl/"
+      }
+    },
+    "summary": "Skilled migration costs African countries talent, but remittances, returnees and diaspora networks can turn it into a gain, depending on government policy.",
+    "questions": [
+      {
+        "id": "rb2-q1",
+        "type": "mcq",
+        "prompt": "What does 'brain drain' originally describe?",
+        "options": [
+          "Students failing exams",
+          "Talented people leaving their country, which loses their skills",
+          "Foreign doctors arriving in Africa",
+          "A lack of universities"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 1: the departure of talented people whose skills are lost."
+      },
+      {
+        "id": "rb2-q2",
+        "type": "mcq",
+        "prompt": "According to paragraph 3, remittances are…",
+        "options": [
+          "smaller than international aid",
+          "worth more than all international aid combined",
+          "only used for business",
+          "illegal in some countries"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 3: worth more than all international aid combined."
+      },
+      {
+        "id": "rb2-q3",
+        "type": "truefalse",
+        "prompt": "The text says that everyone who studies with the aim of going abroad actually leaves.",
+        "answer": false,
+        "explanation": "Paragraph 3: 'not all of them actually leave'."
+      },
+      {
+        "id": "rb2-q4",
+        "type": "mcq",
+        "prompt": "'Brain circulation' means that…",
+        "options": [
+          "professionals never return",
+          "skills and money move back and forth between countries",
+          "universities close",
+          "doctors change jobs"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 4: people return or stay connected, bringing skills and capital."
+      },
+      {
+        "id": "rb2-q5",
+        "type": "mcq",
+        "prompt": "What is the writer's main conclusion?",
+        "options": [
+          "Migration should be stopped",
+          "The effect of migration depends on policy",
+          "Brain drain is a myth",
+          "Only rich countries benefit"
+        ],
+        "answer": 1,
+        "explanation": "Paragraph 5: it depends largely on policy."
+      }
+    ]
   }
 ]

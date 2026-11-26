@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import { EnglishPathDB } from '../db/db'
 import { buildBackup, restoreBackup, validateBackup } from './backup'
-import { LESSONS, UNITS, READINGS, LISTENINGS, PLACEMENT, WRITING_PROMPTS, checkpointItems } from '../content'
+import { LESSONS, UNITS, READINGS, LISTENINGS, PLACEMENT, WRITING_PROMPTS, BASICS, checkpointItems } from '../content'
 import type { Exercise } from '../content/types'
 import { MIN_ITEMS_PER_LEVEL } from './scoring'
 
@@ -11,6 +11,7 @@ describe('content integrity', () => {
     ...READINGS.flatMap((r) => r.questions),
     ...LISTENINGS.flatMap((l) => l.questions),
     ...PLACEMENT.map((p) => p.item),
+    ...BASICS.flatMap((b) => b.items),
   ]
   it('every exercise is gradable and explained', () => {
     for (const ex of allItems) {
@@ -25,7 +26,7 @@ describe('content integrity', () => {
     }
   })
   it('exercise ids are unique', () => {
-    const ids = [...LESSONS.flatMap((l) => [...l.practice, ...l.quiz]), ...READINGS.flatMap((r) => r.questions), ...LISTENINGS.flatMap((l) => l.questions)].map((e) => e.id)
+    const ids = [...LESSONS.flatMap((l) => [...l.practice, ...l.quiz]), ...READINGS.flatMap((r) => r.questions), ...LISTENINGS.flatMap((l) => l.questions), ...BASICS.flatMap((b) => b.items)].map((e) => e.id)
     expect(new Set(ids).size).toBe(ids.length)
   })
   it('every unit references existing lessons, every lesson has a quiz', () => {
@@ -41,8 +42,15 @@ describe('content integrity', () => {
   it('placement has enough evidence per level to be scored', () => {
     for (const lvl of ['A2', 'B1', 'B2'] as const) expect(PLACEMENT.filter((p) => p.level === lvl).length).toBeGreaterThanOrEqual(MIN_ITEMS_PER_LEVEL)
   })
-  it('checkpoints cover four skills for A2 and B1', () => {
-    for (const lvl of ['A2', 'B1'] as const) expect(new Set(checkpointItems(lvl).map((c) => c.skill)).size).toBe(4)
+  it('checkpoints cover four skills for A2, B1 and B2', () => {
+    for (const lvl of ['A2', 'B1', 'B2'] as const) expect(new Set(checkpointItems(lvl).map((c) => c.skill)).size).toBe(4)
+  })
+  it('A1 sheets are short and have enough sprint items', () => {
+    for (const b of BASICS) {
+      expect(b.points.length, b.id).toBeLessThanOrEqual(4)
+      expect(b.items.length, b.id).toBeGreaterThanOrEqual(8)
+      expect(b.items.every((i) => i.type !== 'order'), `${b.id}: sprints need fast item types`).toBe(true)
+    }
   })
   it('writing prompts have model answers within the word range', () => {
     for (const w of WRITING_PROMPTS) {

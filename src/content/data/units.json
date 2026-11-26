@@ -86,5 +86,49 @@
       "b1-g-passive",
       "b1-v-environment"
     ]
+  },
+  {
+    "id": "b2-u1",
+    "level": "B2",
+    "order": 1,
+    "title": "Studying abroad",
+    "description": "Imagine other pasts and write like a university student.",
+    "lessonIds": [
+      "b2-g-conditionals",
+      "b2-v-academic"
+    ]
+  },
+  {
+    "id": "b2-u2",
+    "level": "B2",
+    "order": 2,
+    "title": "Work and interviews",
+    "description": "Report what people said and sell yourself in an interview.",
+    "lessonIds": [
+      "b2-g-reported",
+      "b2-e-interview"
+    ]
+  },
+  {
+    "id": "b2-u3",
+    "level": "B2",
+    "order": 3,
+    "title": "Arguing your point",
+    "description": "Contrast ideas and sound natural with collocations.",
+    "lessonIds": [
+      "b2-g-linkers",
+      "b2-v-collocations"
+    ]
+  },
+  {
+    "id": "b2-u4",
+    "level": "B2",
+    "order": 4,
+    "title": "Precision and nuance",
+    "description": "Richer sentences and confident deductions about the past.",
+    "lessonIds": [
+      "b2-g-relative",
+      "b2-g-modals-past"
+    ]
   }
 ]

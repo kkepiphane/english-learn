@@ -56,7 +56,7 @@ function GoalForm({ p }: { p: Profile }) {
             const on = why.dreams.includes(d)
             return (
               <button key={d} type="button" aria-pressed={on} onClick={() => toggle(d)}
-                className={clsx('flex flex-col items-center gap-1.5 rounded-2xl border-2 px-3 py-4 text-sm font-bold transition active:scale-[.98]', on ? 'border-brand-500 bg-brand-50 text-brand-800 dark:bg-brand-900/40 dark:text-brand-100' : 'border-ink-200 dark:border-ink-700')}>
+                className={clsx('flex flex-col items-center gap-1.5 rounded-2xl border-2 border-b-4 px-3 py-4 text-sm font-bold transition active:translate-y-[2px] active:border-b-2', on ? 'border-brand-500 bg-brand-50 text-brand-800 dark:bg-brand-900/40 dark:text-brand-100' : 'border-ink-200 dark:border-ink-700')}>
                 {(() => { const I = DREAM_ICON[d]; return <I size={36} weight={on ? 'fill' : 'duotone'} className={clsx('transition', on ? 'animate-pop text-brand-600 dark:text-brand-300' : 'text-ink-400')} aria-hidden /> })()}
                 {DREAMS[d].label}
               </button>

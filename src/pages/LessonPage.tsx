@@ -157,7 +157,7 @@ function DeckCardView({ card, fr, onNext, onAnswer, onQuizAnswer, onQuiz }: { ca
     return (
       <Card>
         <Tag icon={Question} tone="flame">Guess first!</Tag>
-        <p className="mb-4 text-sm text-ink-500">You haven't seen the rule yet — trust your instinct. Getting it wrong is part of learning.</p>
+        <p className="mb-4 text-sm text-ink-500">No rule yet: trust your instinct.</p>
         <ExerciseRunner bare items={[{ item: card.item }]} onAnswer={onAnswer} onFinish={onNext} />
       </Card>
     )

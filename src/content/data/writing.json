@@ -88,5 +88,31 @@
       "In conclusion, …"
     ],
     "modelAnswer": "Many people believe that university should be free for everyone. In my opinion, free higher education is a good idea, although it must be organised carefully.\n\nFirstly, free university gives equal opportunities. Talented students from poor families often stop studying because they cannot pay tuition fees. If university were free, the country would benefit from all its talent, not only from the richest families.\n\nSecondly, a more educated population helps the economy. For example, countries with high levels of education usually have more innovative companies and better-paid jobs.\n\nHowever, some people argue that free education is too expensive for the government and that students may not take their studies seriously. This is a fair point. One solution could be to offer free education with conditions, such as passing every year.\n\nIn conclusion, I believe that free university is a valuable investment, as long as the system rewards effort and is financially realistic."
+  },
+  {
+    "id": "w-b2-ielts-task2",
+    "level": "B2",
+    "kind": "opinion",
+    "title": "IELTS Task 2: studying abroad",
+    "minWords": 250,
+    "maxWords": 320,
+    "instructions": "Some people believe that studying abroad is the best way to prepare for a successful career, while others think that studying in your own country is more valuable. Discuss both views and give your own opinion. Write at least 250 words.",
+    "checklist": [
+      "Introduction: paraphrase the question and state your opinion",
+      "Body 1: the first view, with an explanation and an example",
+      "Body 2: the second view, with an explanation and an example",
+      "Use contrast linkers (whereas, although, nevertheless)",
+      "Conclusion: summarise both sides and restate your opinion"
+    ],
+    "usefulLanguage": [
+      "It is often argued that…",
+      "Proponents of this view claim that…",
+      "On the other hand, …",
+      "Although…, …",
+      "Nevertheless, …",
+      "From my perspective, …",
+      "To sum up, while… , I firmly believe that…"
+    ],
+    "modelAnswer": "In an increasingly global job market, many students wonder whether they should complete their education abroad or at home. Although both options have clear advantages, I believe that studying abroad offers more for a future career, provided that students plan it carefully.\n\nProponents of studying abroad argue that it develops skills that employers value highly. Living in another country forces students to become independent, to adapt to new situations and to communicate in a foreign language every day. For example, a Togolese student who completes a master's degree in Canada will not only become fluent in English but will also build an international network that may lead to job offers.\n\nOn the other hand, studying in one's own country has significant benefits. It is considerably cheaper, which means that students and their families avoid heavy debts. Moreover, local universities understand the national economy, so graduates may find it easier to obtain jobs in local companies or public institutions. Some people also maintain that talented graduates are needed at home to develop their country.\n\nFrom my perspective, the experience of living abroad is extremely valuable, although it is not the only route to success. The most effective approach might be to combine both: completing a first degree at home and then spending a year or a master's programme abroad. Nevertheless, the decision should depend on each student's financial situation and career goals.\n\nTo sum up, while studying at home is affordable and locally relevant, studying abroad provides language skills, independence and international contacts. For these reasons, I firmly believe it is the better preparation for a successful career."
   }
 ]

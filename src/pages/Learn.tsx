@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
+import { BasicsHome } from './Basics'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
 import { db } from '../db/db'
@@ -21,10 +21,10 @@ const CAT: Record<Lesson['category'], { label: string; icon: Icon }> = {
 
 // Literal class strings so Tailwind keeps them. One colour per unit, cycling.
 const UNIT_TONES = [
-  'bg-brand-700 text-white',
-  'bg-flame-500 text-white',
-  'bg-brand-900 text-white',
-  'bg-sun-400 text-sun-900',
+  'bg-brand-700 text-white shadow-[0_5px_0_0_theme(colors.brand.900)]',
+  'bg-flame-500 text-white shadow-[0_5px_0_0_theme(colors.flame.700)]',
+  'bg-brand-900 text-white shadow-[0_5px_0_0_theme(colors.brand.950)]',
+  'bg-sun-400 text-sun-900 shadow-[0_5px_0_0_theme(colors.sun.600)]',
 ]
 
 // Horizontal offsets (px) that make the path wind left and right.
@@ -36,8 +36,11 @@ export default function Learn() {
   const checkpoints = useLiveQuery(() => db.assessments.where('kind').equals('checkpoint').toArray(), [], [])
   const biteRows = useLiveQuery(() => db.kv.where('key').startsWith('lesson.bites.').toArray(), [], [])
   const bitesDone = new Map(biteRows.map((r) => [r.key.slice('lesson.bites.'.length), r.value as number]))
-  const [level, setLevel] = useState<Level | null>(null)
-  const current = level ?? learningLevel(profile)
+  const [params, setParams] = useSearchParams()
+  const asked = params.get('level')
+  const tab: 'A1' | Level = asked === 'A1' || LEVELS.includes(asked as Level) ? (asked as 'A1' | Level) : learningLevel(profile)
+  const setLevel = (l: 'A1' | Level) => setParams({ level: l }, { replace: true })
+  const current: Level = tab === 'A1' ? 'A2' : tab
   const map = new Map(progress.map((p) => [p.lessonId, p]))
   const units = unitsFor(current)
   const all = units.flatMap((u) => u.lessonIds)
@@ -47,23 +50,24 @@ export default function Learn() {
 
   return (
     <div>
-      <PageTitle title="Learn" subtitle="Follow the path: lessons build skills, the trophy proves them." />
+      <PageTitle title="Learn" />
       <div className="mb-4 flex gap-1.5 rounded-2xl bg-ink-100 p-1 dark:bg-ink-900" role="tablist" aria-label="Level">
-        {LEVELS.map((l) => {
-          const avail = availableLevels().includes(l)
+        {(['A1', ...LEVELS] as const).map((l) => {
+          const avail = l === 'A1' || availableLevels().includes(l)
           return (
-            <button key={l} role="tab" aria-selected={l === current} disabled={!avail} onClick={() => setLevel(l)}
-              className={clsx('flex-1 rounded-xl py-2 text-sm font-bold transition', l === current ? 'bg-white text-brand-700 shadow-sm dark:bg-ink-700 dark:text-white' : 'text-ink-500', !avail && 'opacity-40')}
+            <button key={l} role="tab" aria-selected={l === tab} disabled={!avail} onClick={() => setLevel(l)}
+              className={clsx('flex-1 rounded-xl py-2 text-sm font-bold transition', l === tab ? 'bg-white text-brand-700 shadow-[0_3px_0_0_theme(colors.ink.200)] dark:bg-ink-700 dark:text-white dark:shadow-[0_3px_0_0_theme(colors.ink.950)]' : 'text-ink-500', !avail && 'opacity-40')}
               title={avail ? undefined : 'Coming in a later content update'}><span className="inline-flex items-center gap-1">{l}{!avail && <Lock size={13} weight="bold" aria-hidden />}</span></button>
           )
         })}
       </div>
 
+      {tab === 'A1' ? <BasicsHome /> : (<>
       <div className="card mb-6 flex items-center gap-3 p-4">
         <div className="flex-1">
           <p className="font-display font-bold">{current} path</p>
           <Bar value={(doneCount / Math.max(all.length, 1)) * 100} className="mt-2" label={`${current} path progress`} />
-          <p className="mt-1 text-xs text-ink-400">{doneCount}/{all.length} lessons · level goes up only when you pass the checkpoint (≥ 70 % in every skill)</p>
+          <p className="mt-1 text-xs text-ink-400">{doneCount}/{all.length} lessons</p>
         </div>
       </div>
 
@@ -110,9 +114,11 @@ export default function Learn() {
             <Trophy size={48} weight="duotone" aria-hidden />
           </Link>
           <p className="mt-3 font-display font-bold">{passed ? `${current} level proven!` : `${current} checkpoint`}</p>
-          <p className="text-center text-xs text-ink-400">{passed ? 'You can retake it any time.' : 'Pass it to move up a level.'}</p>
+          <p className="text-center text-xs text-ink-400">{passed ? 'You can retake it any time.' : 'Pass it to level up.'}</p>
         </div>
       </div>
+
+      </>)}
 
       <Link to="/exams" className="card mt-8 flex items-center gap-3 p-4 transition hover:border-brand-300">
         <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden><Exam size={24} weight="duotone" /></span>

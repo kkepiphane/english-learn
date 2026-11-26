@@ -1,0 +1,913 @@
+[
+  {
+    "id": "a1-be",
+    "title": "be: am, is, are",
+    "fr": "Le verbe être au présent.",
+    "points": [
+      {
+        "rule": "I am · you/we/they are · he/she/it is",
+        "example": "I am Togolese. They are students."
+      },
+      {
+        "rule": "Negative: add not (isn't, aren't)",
+        "example": "She isn't at home."
+      },
+      {
+        "rule": "Question: put be first",
+        "example": "Are you ready?"
+      }
+    ],
+    "trap": {
+      "wrong": "I have 20 years.",
+      "right": "I am 20 (years old)."
+    },
+    "items": [
+      {
+        "id": "a1be-1",
+        "type": "mcq",
+        "prompt": "She ___ a nurse.",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": 1,
+        "explanation": "he/she/it → is."
+      },
+      {
+        "id": "a1be-2",
+        "type": "mcq",
+        "prompt": "We ___ from Lomé.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "answer": 2,
+        "explanation": "we → are."
+      },
+      {
+        "id": "a1be-3",
+        "type": "mcq",
+        "prompt": "___ you tired?",
+        "options": [
+          "Is",
+          "Are",
+          "Am",
+          "Do"
+        ],
+        "answer": 1,
+        "explanation": "Questions with be: Are you…?"
+      },
+      {
+        "id": "a1be-4",
+        "type": "gap",
+        "prompt": "I ___ 25 years old.",
+        "accepted": [
+          "am",
+          "'m"
+        ],
+        "explanation": "Age uses be: I am 25."
+      },
+      {
+        "id": "a1be-5",
+        "type": "truefalse",
+        "prompt": "\"He are my brother\" is correct.",
+        "answer": false,
+        "explanation": "he → is: He is my brother."
+      },
+      {
+        "id": "a1be-6",
+        "type": "mcq",
+        "prompt": "They ___ at school today. (negative)",
+        "options": [
+          "isn't",
+          "aren't",
+          "not are",
+          "don't"
+        ],
+        "answer": 1,
+        "explanation": "they → aren't."
+      },
+      {
+        "id": "a1be-7",
+        "type": "mcq",
+        "prompt": "It ___ cold today.",
+        "options": [
+          "is",
+          "are",
+          "am",
+          "have"
+        ],
+        "answer": 0,
+        "explanation": "it → is."
+      },
+      {
+        "id": "a1be-8",
+        "type": "truefalse",
+        "prompt": "\"I am hungry\" is correct.",
+        "answer": true,
+        "explanation": "Hunger uses be in English, not have."
+      }
+    ]
+  },
+  {
+    "id": "a1-present",
+    "title": "Present simple",
+    "fr": "Habitudes et vérités. N'oubliez pas le -s à la 3e personne.",
+    "points": [
+      {
+        "rule": "he / she / it + verb-s",
+        "example": "She works in a bank."
+      },
+      {
+        "rule": "Negative: don't / doesn't + verb",
+        "example": "He doesn't like coffee."
+      },
+      {
+        "rule": "Question: Do / Does + subject + verb",
+        "example": "Does she speak English?"
+      }
+    ],
+    "trap": {
+      "wrong": "He don't eat meat.",
+      "right": "He doesn't eat meat."
+    },
+    "items": [
+      {
+        "id": "a1ps-1",
+        "type": "mcq",
+        "prompt": "He ___ football every Sunday.",
+        "options": [
+          "play",
+          "plays",
+          "playing",
+          "is play"
+        ],
+        "answer": 1,
+        "explanation": "he → plays."
+      },
+      {
+        "id": "a1ps-2",
+        "type": "mcq",
+        "prompt": "I ___ like fish.",
+        "options": [
+          "doesn't",
+          "don't",
+          "not",
+          "isn't"
+        ],
+        "answer": 1,
+        "explanation": "I → don't."
+      },
+      {
+        "id": "a1ps-3",
+        "type": "mcq",
+        "prompt": "___ your sister live in Accra?",
+        "options": [
+          "Do",
+          "Does",
+          "Is",
+          "Are"
+        ],
+        "answer": 1,
+        "explanation": "she → Does."
+      },
+      {
+        "id": "a1ps-4",
+        "type": "gap",
+        "prompt": "My father ___ (work) at night.",
+        "accepted": [
+          "works"
+        ],
+        "explanation": "he → works."
+      },
+      {
+        "id": "a1ps-5",
+        "type": "truefalse",
+        "prompt": "\"Does he speaks French?\" is correct.",
+        "answer": false,
+        "explanation": "After does, no -s: Does he speak…?"
+      },
+      {
+        "id": "a1ps-6",
+        "type": "mcq",
+        "prompt": "We ___ to church on Sundays.",
+        "options": [
+          "goes",
+          "go",
+          "going",
+          "goed"
+        ],
+        "answer": 1,
+        "explanation": "we → go."
+      },
+      {
+        "id": "a1ps-7",
+        "type": "mcq",
+        "prompt": "She ___ TV in the evening.",
+        "options": [
+          "watch",
+          "watchs",
+          "watches",
+          "watching"
+        ],
+        "answer": 2,
+        "explanation": "-ch → -es: watches."
+      },
+      {
+        "id": "a1ps-8",
+        "type": "gap",
+        "prompt": "They ___ (not / like) rain.",
+        "accepted": [
+          "don't like",
+          "do not like"
+        ],
+        "explanation": "they → don't like."
+      }
+    ]
+  },
+  {
+    "id": "a1-articles",
+    "title": "a, an, the",
+    "fr": "Articles : a/an pour une chose quelconque, the pour une chose précise.",
+    "points": [
+      {
+        "rule": "a + consonant sound",
+        "example": "a book, a university"
+      },
+      {
+        "rule": "an + vowel sound",
+        "example": "an apple, an hour"
+      },
+      {
+        "rule": "the = the one we know",
+        "example": "The book on the table is mine."
+      }
+    ],
+    "trap": {
+      "wrong": "She is engineer.",
+      "right": "She is an engineer."
+    },
+    "items": [
+      {
+        "id": "a1ar-1",
+        "type": "mcq",
+        "prompt": "I have ___ orange.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "Vowel sound → an."
+      },
+      {
+        "id": "a1ar-2",
+        "type": "mcq",
+        "prompt": "He is ___ doctor.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "—"
+        ],
+        "answer": 0,
+        "explanation": "Jobs need a/an: a doctor."
+      },
+      {
+        "id": "a1ar-3",
+        "type": "mcq",
+        "prompt": "Close ___ door, please.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "—"
+        ],
+        "answer": 2,
+        "explanation": "A specific door → the."
+      },
+      {
+        "id": "a1ar-4",
+        "type": "mcq",
+        "prompt": "It takes ___ hour.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "Hour starts with a vowel sound → an hour."
+      },
+      {
+        "id": "a1ar-5",
+        "type": "truefalse",
+        "prompt": "\"a university\" is correct.",
+        "answer": true,
+        "explanation": "University starts with a /j/ sound → a."
+      },
+      {
+        "id": "a1ar-6",
+        "type": "gap",
+        "prompt": "She is ___ English teacher.",
+        "accepted": [
+          "an"
+        ],
+        "explanation": "English starts with a vowel sound → an."
+      },
+      {
+        "id": "a1ar-7",
+        "type": "mcq",
+        "prompt": "___ sun is hot today.",
+        "options": [
+          "A",
+          "An",
+          "The",
+          "—"
+        ],
+        "answer": 2,
+        "explanation": "Only one sun → the."
+      },
+      {
+        "id": "a1ar-8",
+        "type": "truefalse",
+        "prompt": "\"I am student\" is correct.",
+        "answer": false,
+        "explanation": "I am a student."
+      }
+    ]
+  },
+  {
+    "id": "a1-plurals",
+    "title": "Plurals, this and these",
+    "fr": "Pluriels réguliers et irréguliers ; this/that au singulier, these/those au pluriel.",
+    "points": [
+      {
+        "rule": "Most nouns + s · -s/-sh/-ch/-x + es",
+        "example": "books, buses, watches"
+      },
+      {
+        "rule": "Irregular: man → men, child → children",
+        "example": "two women, three children"
+      },
+      {
+        "rule": "this/that + singular · these/those + plural",
+        "example": "this phone, these phones"
+      }
+    ],
+    "trap": {
+      "wrong": "These childs are my cousins.",
+      "right": "These children are my cousins."
+    },
+    "items": [
+      {
+        "id": "a1pl-1",
+        "type": "mcq",
+        "prompt": "One box, two ___.",
+        "options": [
+          "boxs",
+          "boxes",
+          "boxies",
+          "box"
+        ],
+        "answer": 1,
+        "explanation": "-x → -es."
+      },
+      {
+        "id": "a1pl-2",
+        "type": "mcq",
+        "prompt": "One child, three ___.",
+        "options": [
+          "childs",
+          "childrens",
+          "children",
+          "childes"
+        ],
+        "answer": 2,
+        "explanation": "Irregular: children."
+      },
+      {
+        "id": "a1pl-3",
+        "type": "mcq",
+        "prompt": "___ shoes are new.",
+        "options": [
+          "This",
+          "That",
+          "These",
+          "It"
+        ],
+        "answer": 2,
+        "explanation": "Plural near → these."
+      },
+      {
+        "id": "a1pl-4",
+        "type": "gap",
+        "prompt": "One man, two ___.",
+        "accepted": [
+          "men"
+        ],
+        "explanation": "Irregular: men."
+      },
+      {
+        "id": "a1pl-5",
+        "type": "truefalse",
+        "prompt": "\"this books\" is correct.",
+        "answer": false,
+        "explanation": "this + singular: this book / these books."
+      },
+      {
+        "id": "a1pl-6",
+        "type": "mcq",
+        "prompt": "One city, two ___.",
+        "options": [
+          "citys",
+          "cities",
+          "cityes",
+          "city"
+        ],
+        "answer": 1,
+        "explanation": "consonant + y → -ies."
+      },
+      {
+        "id": "a1pl-7",
+        "type": "mcq",
+        "prompt": "Look at ___ bird over there!",
+        "options": [
+          "this",
+          "these",
+          "that",
+          "those"
+        ],
+        "answer": 2,
+        "explanation": "Singular, far → that."
+      },
+      {
+        "id": "a1pl-8",
+        "type": "gap",
+        "prompt": "One foot, two ___.",
+        "accepted": [
+          "feet"
+        ],
+        "explanation": "Irregular: feet."
+      }
+    ]
+  },
+  {
+    "id": "a1-questions",
+    "title": "Question words",
+    "fr": "Les mots interrogatifs.",
+    "points": [
+      {
+        "rule": "What = thing · Who = person · Where = place",
+        "example": "Where do you live?"
+      },
+      {
+        "rule": "When = time · Why = reason · How = way",
+        "example": "Why are you late?"
+      },
+      {
+        "rule": "How much (uncountable) · How many (countable)",
+        "example": "How many brothers have you got?"
+      }
+    ],
+    "trap": {
+      "wrong": "Where you live?",
+      "right": "Where do you live?"
+    },
+    "items": [
+      {
+        "id": "a1qw-1",
+        "type": "mcq",
+        "prompt": "___ is your name?",
+        "options": [
+          "Who",
+          "What",
+          "Where",
+          "How"
+        ],
+        "answer": 1,
+        "explanation": "A name is a thing → What."
+      },
+      {
+        "id": "a1qw-2",
+        "type": "mcq",
+        "prompt": "___ do you live? — In Kara.",
+        "options": [
+          "What",
+          "When",
+          "Where",
+          "Why"
+        ],
+        "answer": 2,
+        "explanation": "Place → Where."
+      },
+      {
+        "id": "a1qw-3",
+        "type": "mcq",
+        "prompt": "___ is your birthday? — In May.",
+        "options": [
+          "When",
+          "Where",
+          "Who",
+          "How"
+        ],
+        "answer": 0,
+        "explanation": "Time → When."
+      },
+      {
+        "id": "a1qw-4",
+        "type": "mcq",
+        "prompt": "___ sugar do you want?",
+        "options": [
+          "How many",
+          "How much",
+          "How",
+          "What many"
+        ],
+        "answer": 1,
+        "explanation": "Sugar is uncountable → How much."
+      },
+      {
+        "id": "a1qw-5",
+        "type": "gap",
+        "prompt": "___ old are you? (3 letters)",
+        "accepted": [
+          "how"
+        ],
+        "explanation": "Age: How old are you?"
+      },
+      {
+        "id": "a1qw-6",
+        "type": "truefalse",
+        "prompt": "\"Where you work?\" is correct.",
+        "answer": false,
+        "explanation": "Add do: Where do you work?"
+      },
+      {
+        "id": "a1qw-7",
+        "type": "mcq",
+        "prompt": "___ is that man? — My uncle.",
+        "options": [
+          "What",
+          "Who",
+          "Which",
+          "Whose"
+        ],
+        "answer": 1,
+        "explanation": "Person → Who."
+      },
+      {
+        "id": "a1qw-8",
+        "type": "mcq",
+        "prompt": "___ are you sad? — Because I lost my phone.",
+        "options": [
+          "How",
+          "Why",
+          "When",
+          "What"
+        ],
+        "answer": 1,
+        "explanation": "Reason → Why."
+      }
+    ]
+  },
+  {
+    "id": "a1-time",
+    "title": "in, on, at (time)",
+    "fr": "Prépositions de temps.",
+    "points": [
+      {
+        "rule": "at + clock time, night, the weekend (UK)",
+        "example": "at 7 o'clock, at night"
+      },
+      {
+        "rule": "on + days and dates",
+        "example": "on Monday, on 5 May"
+      },
+      {
+        "rule": "in + months, years, seasons, parts of the day",
+        "example": "in June, in 2026, in the morning"
+      }
+    ],
+    "trap": {
+      "wrong": "I was born in Monday.",
+      "right": "I was born on Monday."
+    },
+    "items": [
+      {
+        "id": "a1tm-1",
+        "type": "mcq",
+        "prompt": "The class starts ___ 8 o'clock.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "by"
+        ],
+        "answer": 2,
+        "explanation": "Clock time → at."
+      },
+      {
+        "id": "a1tm-2",
+        "type": "mcq",
+        "prompt": "I see her ___ Fridays.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "Days → on."
+      },
+      {
+        "id": "a1tm-3",
+        "type": "mcq",
+        "prompt": "My birthday is ___ March.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "—"
+        ],
+        "answer": 0,
+        "explanation": "Months → in."
+      },
+      {
+        "id": "a1tm-4",
+        "type": "gap",
+        "prompt": "I study ___ the evening.",
+        "accepted": [
+          "in"
+        ],
+        "explanation": "Parts of the day → in the evening."
+      },
+      {
+        "id": "a1tm-5",
+        "type": "truefalse",
+        "prompt": "\"at night\" is correct.",
+        "answer": true,
+        "explanation": "Exception: at night."
+      },
+      {
+        "id": "a1tm-6",
+        "type": "mcq",
+        "prompt": "She was born ___ 2001.",
+        "options": [
+          "on",
+          "in",
+          "at",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "Years → in."
+      },
+      {
+        "id": "a1tm-7",
+        "type": "mcq",
+        "prompt": "See you ___ 3 July!",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "Dates → on."
+      },
+      {
+        "id": "a1tm-8",
+        "type": "truefalse",
+        "prompt": "\"in Monday morning\" is correct.",
+        "answer": false,
+        "explanation": "A specific day → on Monday morning."
+      }
+    ]
+  },
+  {
+    "id": "a1-can",
+    "title": "can and can't",
+    "fr": "Capacité et permission. Jamais de « to » après can.",
+    "points": [
+      {
+        "rule": "can + base verb (same for all persons)",
+        "example": "She can swim."
+      },
+      {
+        "rule": "Negative: can't / cannot",
+        "example": "I can't drive."
+      },
+      {
+        "rule": "Question: Can + subject + verb",
+        "example": "Can you help me?"
+      }
+    ],
+    "trap": {
+      "wrong": "He can to speak English.",
+      "right": "He can speak English."
+    },
+    "items": [
+      {
+        "id": "a1cn-1",
+        "type": "mcq",
+        "prompt": "I ___ play the guitar.",
+        "options": [
+          "can",
+          "cans",
+          "can to",
+          "am can"
+        ],
+        "answer": 0,
+        "explanation": "can + base verb."
+      },
+      {
+        "id": "a1cn-2",
+        "type": "mcq",
+        "prompt": "She ___ swim. (negative)",
+        "options": [
+          "don't can",
+          "can't",
+          "isn't can",
+          "not can"
+        ],
+        "answer": 1,
+        "explanation": "Negative: can't."
+      },
+      {
+        "id": "a1cn-3",
+        "type": "mcq",
+        "prompt": "___ I open the window?",
+        "options": [
+          "Do",
+          "Can",
+          "Am",
+          "Does"
+        ],
+        "answer": 1,
+        "explanation": "Permission: Can I…?"
+      },
+      {
+        "id": "a1cn-4",
+        "type": "truefalse",
+        "prompt": "\"He cans drive\" is correct.",
+        "answer": false,
+        "explanation": "No -s: he can drive."
+      },
+      {
+        "id": "a1cn-5",
+        "type": "gap",
+        "prompt": "Can you ___ (help) me?",
+        "accepted": [
+          "help"
+        ],
+        "explanation": "Can + base verb."
+      },
+      {
+        "id": "a1cn-6",
+        "type": "truefalse",
+        "prompt": "\"We can speak French\" is correct.",
+        "answer": true,
+        "explanation": "can + base verb."
+      },
+      {
+        "id": "a1cn-7",
+        "type": "mcq",
+        "prompt": "Birds ___ fly.",
+        "options": [
+          "can",
+          "can to",
+          "cans",
+          "are can"
+        ],
+        "answer": 0,
+        "explanation": "can + base verb."
+      },
+      {
+        "id": "a1cn-8",
+        "type": "truefalse",
+        "prompt": "\"I can to come tomorrow\" is correct.",
+        "answer": false,
+        "explanation": "No to after can."
+      }
+    ]
+  },
+  {
+    "id": "a1-there",
+    "title": "there is, there are",
+    "fr": "Il y a : there is + singulier, there are + pluriel.",
+    "points": [
+      {
+        "rule": "there is + singular / uncountable",
+        "example": "There is a bank near here."
+      },
+      {
+        "rule": "there are + plural",
+        "example": "There are two markets in town."
+      },
+      {
+        "rule": "Question: Is there…? Are there…?",
+        "example": "Are there any taxis?"
+      }
+    ],
+    "trap": {
+      "wrong": "It has a pharmacy near my house.",
+      "right": "There is a pharmacy near my house."
+    },
+    "items": [
+      {
+        "id": "a1th-1",
+        "type": "mcq",
+        "prompt": "___ a problem with my phone.",
+        "options": [
+          "There is",
+          "There are",
+          "It has",
+          "Have"
+        ],
+        "answer": 0,
+        "explanation": "Singular → there is."
+      },
+      {
+        "id": "a1th-2",
+        "type": "mcq",
+        "prompt": "___ many people at the market.",
+        "options": [
+          "There is",
+          "There are",
+          "It is",
+          "They have"
+        ],
+        "answer": 1,
+        "explanation": "Plural → there are."
+      },
+      {
+        "id": "a1th-3",
+        "type": "mcq",
+        "prompt": "___ a hospital in your town?",
+        "options": [
+          "Is there",
+          "Are there",
+          "There is",
+          "Has it"
+        ],
+        "answer": 0,
+        "explanation": "Question, singular → Is there…?"
+      },
+      {
+        "id": "a1th-4",
+        "type": "gap",
+        "prompt": "There ___ some water in the bottle.",
+        "accepted": [
+          "is",
+          "'s"
+        ],
+        "explanation": "Water is uncountable → there is."
+      },
+      {
+        "id": "a1th-5",
+        "type": "truefalse",
+        "prompt": "\"There are a car outside\" is correct.",
+        "answer": false,
+        "explanation": "Singular → There is a car."
+      },
+      {
+        "id": "a1th-6",
+        "type": "mcq",
+        "prompt": "There ___ any eggs. (negative)",
+        "options": [
+          "isn't",
+          "aren't",
+          "not",
+          "don't"
+        ],
+        "answer": 1,
+        "explanation": "Plural negative → there aren't."
+      },
+      {
+        "id": "a1th-7",
+        "type": "truefalse",
+        "prompt": "\"It has a lot of noise here\" is natural English for « il y a beaucoup de bruit ».",
+        "answer": false,
+        "explanation": "Use There is a lot of noise here."
+      },
+      {
+        "id": "a1th-8",
+        "type": "mcq",
+        "prompt": "How many students ___ in your class?",
+        "options": [
+          "is there",
+          "are there",
+          "there are",
+          "have"
+        ],
+        "answer": 1,
+        "explanation": "How many + are there."
+      }
+    ]
+  }
+]

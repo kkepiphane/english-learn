@@ -78,7 +78,7 @@ export default function Home() {
               <span className={clsx('text-[11px] font-semibold', d.isToday ? 'text-flame-600' : 'text-ink-400')}>{d.label}</span>
               <span aria-label={`${d.day}${d.done ? ': studied' : ''}`}
                 className={clsx('flex h-9 w-9 items-center justify-center rounded-full text-base', {
-                  'bg-flame-500 text-white': d.done,
+                  'bg-flame-500 text-white shadow-[0_3px_0_0_theme(colors.flame.700)]': d.done,
                   'border-2 border-dashed border-flame-400': !d.done && d.isToday,
                   'bg-ink-100 dark:bg-ink-800': !d.done && !d.isToday,
                 })}>{d.done && <Fire weight="fill" aria-hidden />}</span>
@@ -92,14 +92,14 @@ export default function Home() {
           <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-flame-500 dark:bg-ink-900" aria-hidden><Compass size={28} weight="duotone" /></span>
           <div className="flex-1">
             <p className="font-display font-bold">Find your real level</p>
-            <p className="text-sm text-ink-600 dark:text-ink-300">12 minutes so your path starts at the right place.</p>
+            <p className="text-sm text-ink-500">12 minutes</p>
           </div>
           <Link to="/placement" className="btn-primary">Take the test</Link>
         </Card>
       )}
 
       {/* Today's mission */}
-      <section aria-labelledby="mission-h" className="relative overflow-hidden rounded-[1.5rem] bg-brand-700 p-5 text-white">
+      <section aria-labelledby="mission-h" className="relative overflow-hidden rounded-[1.5rem] bg-brand-700 p-5 text-white shadow-[0_6px_0_0_theme(colors.brand.900)]">
         <span className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 animate-float rounded-full bg-brand-600/70" aria-hidden />
         <span className="pointer-events-none absolute -bottom-14 right-16 h-28 w-28 animate-float rounded-full bg-brand-800/60 [animation-delay:-3s]" aria-hidden />
         <div className="relative flex items-start justify-between gap-3">
@@ -107,10 +107,8 @@ export default function Home() {
             <h2 id="mission-h" className="text-[11px] font-bold uppercase tracking-[.08em] text-brand-200">{goalDone ? 'Goal reached · bonus round' : "Today's mission"}</h2>
             {next ? (<>
               <p className="mt-1.5 font-display text-2xl font-extrabold leading-tight">{next.title}</p>
-              <p className="mt-1 text-sm text-brand-100">{next.objective}</p>
             </>) : (<>
               <p className="mt-1.5 font-display text-2xl font-extrabold leading-tight">Prove your {level} level</p>
-              <p className="mt-1 text-sm text-brand-100">Every {level} lesson is done. Pass the checkpoint to level up.</p>
             </>)}
           </div>
           <Ring value={(minutesToday / profile.dailyGoalMin) * 100} size={68} stroke={7} label={`${minutesToday} of ${profile.dailyGoalMin} minutes today`} tone="onBrand">
@@ -124,7 +122,7 @@ export default function Home() {
             {next ? `${nextDone ? 'Continue' : 'Start'} · ${nextBites[nextDone]?.minutes ?? next.minutes} min` : 'Take the checkpoint'} <ArrowRight weight="bold" aria-hidden />
           </Link>
         </div>
-        {next && nextBites.length > 1 && <p className="relative mt-2 text-center text-xs text-brand-100">Bite {nextDone + 1} of {nextBites.length} · you can stop after each one</p>}
+        {next && nextBites.length > 1 && <p className="relative mt-2 text-center text-xs text-brand-100">Bite {nextDone + 1}/{nextBites.length}</p>}
         <div className="relative mt-3 flex items-center gap-2 text-xs text-brand-100">
           <span className="shrink-0 font-semibold">{level} path</span>
           <Bar value={(levelDone / Math.max(levelLessons.length, 1)) * 100} className="h-1.5" track="bg-brand-900/50" color="bg-sun-400" label={`${level} path progress`} />
@@ -206,7 +204,7 @@ function WordOfTheDay({ level }: { level: Parameters<typeof lessonsFor>[0] }) {
           </button>
         </span>
       ) : (
-        <button className="mt-1 text-left text-sm font-semibold text-brand-600 dark:text-brand-300" onClick={() => setOpen(true)}>Guess it, then reveal <ArrowRight className="inline" aria-hidden /></button>
+        <button className="mt-1 text-left text-sm font-semibold text-brand-600 dark:text-brand-300" onClick={() => setOpen(true)}>Reveal <ArrowRight className="inline" aria-hidden /></button>
       )}
     </div>
   )
@@ -224,7 +222,7 @@ function WeeklyChest({ challenges, opened }: { challenges: ReturnType<typeof wee
         <span className={clsx('text-5xl', ready && 'animate-wiggle')} aria-hidden>{opened ? '🎉' : '🎁'}</span>
         <div className="flex-1">
           <h2 className="font-display font-bold">Weekly chest</h2>
-          <p className="text-sm text-ink-500">{opened ? `Opened! +${CHEST_XP} XP. A new chest arrives Monday.` : ready ? 'All weekly challenges done. Open it!' : `Finish the ${challenges.length} weekly challenges to win ${CHEST_XP} XP.`}</p>
+          <p className="text-sm text-ink-500">{opened ? `+${CHEST_XP} XP · new chest on Monday` : ready ? 'Ready to open!' : `${done}/${challenges.length} challenges · +${CHEST_XP} XP`}</p>
         </div>
         {ready && <button className="btn-cta" onClick={() => void open()}>Open</button>}
       </div>
@@ -249,7 +247,7 @@ function DreamCard({ profile, progress }: { profile: Profile; progress: LessonPr
         <span className="grid shrink-0 grid-cols-2 gap-1 text-brand-600 dark:text-brand-300" aria-hidden>{Object.values(DREAM_ICON).map((I, k) => <I key={k} size={22} weight="duotone" />)}</span>
         <span className="flex-1">
           <span className="block font-display font-extrabold">What is your English for?</span>
-          <span className="text-sm text-ink-500">Travel, study abroad, a job, IELTS or TOEFL… Set your goal and keep it in sight.</span>
+          <span className="text-sm text-ink-500">Set your goal</span>
         </span>
         <CaretRight className="text-ink-300" weight="bold" aria-hidden />
       </Link>
@@ -288,8 +286,7 @@ function DreamCard({ profile, progress }: { profile: Profile; progress: LessonPr
         ))}
       </ol>
       <p className="mt-3 text-sm text-ink-600 dark:text-ink-300">
-        {left > 0 && days ? `${left} lessons left on your path: about 1 every ${Math.max(1, Math.floor(days / left))} days keeps you on track. ` : ''}
-        <span className="italic text-ink-500">{push}</span>
+        {left > 0 && days ? `${left} lessons left · about 1 every ${Math.max(1, Math.floor(days / left))} days` : <span className="italic text-ink-500">{push}</span>}
       </p>
     </Link>
   )

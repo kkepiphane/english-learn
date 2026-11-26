@@ -1,0 +1,1950 @@
+[
+  {
+    "id": "b2-g-conditionals",
+    "unitId": "b2-u1",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Third and mixed conditionals",
+    "minutes": 20,
+    "objective": "Talk about imaginary pasts and their consequences: regrets, missed chances and 'what if' stories about your studies or career.",
+    "sections": [
+      {
+        "heading": "Third conditional: an unreal past",
+        "en": "Use the third conditional to imagine a different past and its past result. Form: If + past perfect, would have + past participle. It often expresses regret, relief or criticism. Both events are finished and impossible to change.",
+        "fr": "Équivalent du « si j'avais… j'aurais… ». Jamais « would » dans la partie en if : on dit « If I had known », pas « If I would have known ».",
+        "examples": [
+          "If I had applied earlier, I would have got a scholarship.",
+          "If she hadn't missed the bus, she wouldn't have been late for the IELTS test.",
+          "We would have stayed longer if the visa had been cheaper.",
+          "If you had told me, I could have helped you."
+        ]
+      },
+      {
+        "heading": "Mixed conditionals: past cause, present result",
+        "en": "When a past event changes the present situation, mix the forms: If + past perfect, would + base verb (now). The reverse also exists: a present fact explains a past result: If + past simple, would have + past participle.",
+        "fr": "On mélange les époques : « Si j'avais étudié l'anglais plus tôt, je parlerais couramment aujourd'hui. »",
+        "table": [
+          [
+            "Type",
+            "If-clause",
+            "Main clause",
+            "Example"
+          ],
+          [
+            "Third",
+            "past perfect",
+            "would have + pp",
+            "If I had studied, I would have passed."
+          ],
+          [
+            "Mixed (past → now)",
+            "past perfect",
+            "would + verb",
+            "If I had studied, I would be at university now."
+          ],
+          [
+            "Mixed (now → past)",
+            "past simple",
+            "would have + pp",
+            "If I spoke Spanish, I would have applied to Madrid."
+          ]
+        ]
+      },
+      {
+        "heading": "Modals and variations",
+        "en": "Replace would with could (ability or possibility) or might (less certain). In formal writing, you can drop if and invert: Had I known = If I had known. Use 'but for' + noun to mean 'if it hadn't been for'.",
+        "examples": [
+          "Had I known about the deadline, I would have submitted my essay.",
+          "With a better score, she might have been accepted.",
+          "But for your support, I would never have finished my degree."
+        ]
+      },
+      {
+        "heading": "Wishes and regrets",
+        "en": "I wish / If only + past perfect expresses a regret about the past. I wish + past simple expresses a regret about the present. Never use would after I wish for your own actions.",
+        "fr": "« Je regrette de ne pas avoir… » = I wish I had…, et non « I regret to not have… ».",
+        "examples": [
+          "I wish I had started English earlier.",
+          "If only we had booked the flight in January!",
+          "I wish I lived closer to the university."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2c-v1",
+        "word": "scholarship",
+        "ipa": "/ˈskɒləʃɪp/",
+        "pos": "noun",
+        "definition": "money given to a student to pay for their studies",
+        "fr": "bourse d'études",
+        "example": "She won a full scholarship to study in Canada.",
+        "context": "Studying abroad"
+      },
+      {
+        "id": "b2c-v2",
+        "word": "deadline",
+        "ipa": "/ˈdedlaɪn/",
+        "pos": "noun",
+        "definition": "the latest time by which something must be done",
+        "fr": "date limite",
+        "example": "The application deadline is 15 March.",
+        "context": "Applications"
+      },
+      {
+        "id": "b2c-v3",
+        "word": "regret",
+        "ipa": "/rɪˈɡret/",
+        "pos": "verb / noun",
+        "definition": "to feel sorry about something you did or didn't do",
+        "fr": "regretter / regret",
+        "example": "I regret not taking the job offer.",
+        "context": "Feelings"
+      },
+      {
+        "id": "b2c-v4",
+        "word": "turning point",
+        "ipa": "/ˈtɜːnɪŋ pɔɪnt/",
+        "pos": "noun",
+        "definition": "a moment when a situation starts to change completely",
+        "fr": "tournant",
+        "example": "Meeting my mentor was a turning point in my career.",
+        "context": "Life stories"
+      },
+      {
+        "id": "b2c-v5",
+        "word": "in hindsight",
+        "ipa": "/ɪn ˈhaɪndsaɪt/",
+        "pos": "phrase",
+        "definition": "thinking about it later, with knowledge you didn't have before",
+        "fr": "avec le recul",
+        "example": "In hindsight, I should have chosen a different course.",
+        "context": "Reflection"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2c-p1",
+        "type": "mcq",
+        "prompt": "If I ___ about the scholarship, I would have applied.",
+        "options": [
+          "knew",
+          "had known",
+          "would know",
+          "have known"
+        ],
+        "answer": 1,
+        "explanation": "Unreal past → if + past perfect (had known)."
+      },
+      {
+        "id": "b2c-p2",
+        "type": "mcq",
+        "prompt": "If he had taken the job in Accra, he ___ there now.",
+        "options": [
+          "would live",
+          "would have lived",
+          "lives",
+          "had lived"
+        ],
+        "answer": 0,
+        "explanation": "Past cause (had taken), present result (now) → mixed conditional: would + verb."
+      },
+      {
+        "id": "b2c-p3",
+        "type": "gap",
+        "prompt": "___ I known, I would have come earlier. (inversion)",
+        "accepted": [
+          "had"
+        ],
+        "explanation": "Formal inversion: Had I known = If I had known."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2c-q1",
+        "type": "mcq",
+        "prompt": "If she ___ harder, she would have passed the exam.",
+        "options": [
+          "studied",
+          "had studied",
+          "would study",
+          "has studied"
+        ],
+        "answer": 1,
+        "explanation": "Third conditional: if + past perfect."
+      },
+      {
+        "id": "b2c-q2",
+        "type": "mcq",
+        "prompt": "If I spoke better English, I ___ that job last year.",
+        "options": [
+          "would get",
+          "would have got",
+          "had got",
+          "got"
+        ],
+        "answer": 1,
+        "explanation": "Present fact (I don't speak well) → past result: would have + past participle."
+      },
+      {
+        "id": "b2c-q3",
+        "type": "gap",
+        "prompt": "If we had left earlier, we ___ have missed the plane. (negative, contraction)",
+        "accepted": [
+          "wouldn't",
+          "would not"
+        ],
+        "explanation": "Third conditional result: wouldn't have + past participle."
+      },
+      {
+        "id": "b2c-q4",
+        "type": "mcq",
+        "prompt": "I wish I ___ that email. It was a mistake.",
+        "options": [
+          "didn't send",
+          "hadn't sent",
+          "wouldn't send",
+          "haven't sent"
+        ],
+        "answer": 1,
+        "explanation": "Regret about the past → I wish + past perfect."
+      },
+      {
+        "id": "b2c-q5",
+        "type": "truefalse",
+        "prompt": "\"If I would have known, I would have helped\" is correct standard English.",
+        "answer": false,
+        "explanation": "No would in the if-clause: If I had known, I would have helped."
+      },
+      {
+        "id": "b2c-q6",
+        "type": "mcq",
+        "prompt": "___ for the scholarship, she couldn't have studied abroad.",
+        "options": [
+          "If not",
+          "But",
+          "Unless",
+          "Without"
+        ],
+        "answer": 1,
+        "explanation": "But for + noun = if it hadn't been for."
+      },
+      {
+        "id": "b2c-q7",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "would",
+          "be",
+          "I",
+          "I",
+          "had",
+          "more",
+          "saved",
+          "If",
+          "travelling",
+          "now"
+        ],
+        "answer": "If I had saved more I would be travelling now",
+        "explanation": "Mixed conditional: past cause (had saved), present result (would be travelling now)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "If I would have studied, I would have passed.",
+        "right": "If I had studied, I would have passed.",
+        "why": "Never would in the if-clause: use the past perfect."
+      },
+      {
+        "wrong": "I regret to not have learned English earlier.",
+        "right": "I wish I had learned English earlier. / I regret not learning English earlier.",
+        "why": "Regret about the past: I wish + past perfect, or regret + -ing."
+      },
+      {
+        "wrong": "If I had more time last year, I would have finished.",
+        "right": "If I had had more time last year, I would have finished.",
+        "why": "A past situation needs the past perfect: had had."
+      }
+    ]
+  },
+  {
+    "id": "b2-v-academic",
+    "unitId": "b2-u1",
+    "level": "B2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Academic vocabulary for essays and IELTS",
+    "minutes": 18,
+    "objective": "Use precise academic words and phrases to present ideas, evidence and conclusions in essays, presentations and IELTS Writing Task 2.",
+    "sections": [
+      {
+        "heading": "Why academic vocabulary matters",
+        "en": "Examiners and lecturers reward precise, neutral words. Instead of 'a lot of', 'thing' or 'get', use words that show exactly what you mean: a significant number of, factor, obtain. Avoid contractions and very informal expressions in essays.",
+        "fr": "En IELTS, le critère « Lexical Resource » compte pour 25 % de la note Writing. Varier et préciser le vocabulaire fait monter la note.",
+        "table": [
+          [
+            "Informal",
+            "Academic"
+          ],
+          [
+            "a lot of",
+            "a significant number of / a great deal of"
+          ],
+          [
+            "get",
+            "obtain / acquire / receive"
+          ],
+          [
+            "show",
+            "demonstrate / illustrate / indicate"
+          ],
+          [
+            "big",
+            "substantial / considerable"
+          ],
+          [
+            "think",
+            "argue / maintain / claim"
+          ],
+          [
+            "because of",
+            "due to / owing to / as a result of"
+          ]
+        ]
+      },
+      {
+        "heading": "Presenting evidence and ideas",
+        "en": "Use reporting verbs to introduce evidence and keep distance from it. Research suggests, the data indicate, experts argue, critics claim. Choose the verb carefully: 'prove' is very strong, 'suggest' is cautious. Cautious language (hedging) is typical of academic English: may, tend to, it appears that, to some extent.",
+        "examples": [
+          "Recent studies suggest that bilingual children perform better at problem-solving.",
+          "The figures indicate a steady rise in international students.",
+          "To some extent, online learning has replaced traditional lectures.",
+          "Critics argue that tuition fees discourage students from poorer backgrounds."
+        ]
+      },
+      {
+        "heading": "Structuring an argument",
+        "en": "Signal the structure of your essay so the reader can follow it: firstly, furthermore, in addition, on the other hand, consequently, to sum up. Each body paragraph should start with a clear topic sentence, then give an explanation and an example.",
+        "fr": "Une phrase-thème claire au début de chaque paragraphe : c'est ce que l'examinateur cherche en premier (« Coherence and Cohesion »)."
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2a-v1",
+        "word": "significant",
+        "ipa": "/sɪɡˈnɪfɪkənt/",
+        "pos": "adjective",
+        "definition": "large or important enough to have an effect",
+        "fr": "important, notable",
+        "example": "There has been a significant increase in online courses.",
+        "context": "Data & trends"
+      },
+      {
+        "id": "b2a-v2",
+        "word": "evidence",
+        "ipa": "/ˈevɪdəns/",
+        "pos": "noun (uncountable)",
+        "definition": "facts or information that show something is true",
+        "fr": "preuves, données",
+        "example": "There is little evidence that homework improves results.",
+        "context": "Arguments"
+      },
+      {
+        "id": "b2a-v3",
+        "word": "issue",
+        "ipa": "/ˈɪʃuː/",
+        "pos": "noun",
+        "definition": "an important problem that people discuss",
+        "fr": "question, problème",
+        "example": "Unemployment is a major issue for young graduates.",
+        "context": "Essay topics"
+      },
+      {
+        "id": "b2a-v4",
+        "word": "approach",
+        "ipa": "/əˈprəʊtʃ/",
+        "pos": "noun",
+        "definition": "a way of dealing with something",
+        "fr": "approche",
+        "example": "A practical approach to learning works best for adults.",
+        "context": "Methods"
+      },
+      {
+        "id": "b2a-v5",
+        "word": "drawback",
+        "ipa": "/ˈdrɔːbæk/",
+        "pos": "noun",
+        "definition": "a disadvantage",
+        "fr": "inconvénient",
+        "example": "The main drawback of studying abroad is the cost.",
+        "context": "Pros and cons"
+      },
+      {
+        "id": "b2a-v6",
+        "word": "consequently",
+        "ipa": "/ˈkɒnsɪkwəntli/",
+        "pos": "adverb",
+        "definition": "as a result",
+        "fr": "par conséquent",
+        "example": "Fees rose sharply; consequently, fewer students applied.",
+        "context": "Linking ideas"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2a-p1",
+        "type": "mcq",
+        "prompt": "Choose the most academic option: 'The study ___ that sleep improves memory.'",
+        "options": [
+          "shows off",
+          "gets",
+          "demonstrates",
+          "says big"
+        ],
+        "answer": 2,
+        "explanation": "'Demonstrate' is the precise academic verb for showing a result."
+      },
+      {
+        "id": "b2a-p2",
+        "type": "gap",
+        "prompt": "There is a lot of ___ that exercise reduces stress. (facts that prove it; uncountable)",
+        "accepted": [
+          "evidence"
+        ],
+        "explanation": "Evidence is uncountable: a lot of evidence, not 'evidences'."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2a-q1",
+        "type": "mcq",
+        "prompt": "Which word is closest to 'disadvantage'?",
+        "options": [
+          "approach",
+          "drawback",
+          "issue",
+          "evidence"
+        ],
+        "answer": 1,
+        "explanation": "A drawback is a disadvantage."
+      },
+      {
+        "id": "b2a-q2",
+        "type": "mcq",
+        "prompt": "'Research ___ that online learning may suit adults.' (cautious)",
+        "options": [
+          "proves",
+          "suggests",
+          "knows",
+          "is sure"
+        ],
+        "answer": 1,
+        "explanation": "Suggest is cautious (hedging), typical of academic English."
+      },
+      {
+        "id": "b2a-q3",
+        "type": "truefalse",
+        "prompt": "\"Evidences\" is a correct plural in standard English.",
+        "answer": false,
+        "explanation": "Evidence is uncountable: some evidence, a piece of evidence."
+      },
+      {
+        "id": "b2a-q4",
+        "type": "gap",
+        "prompt": "Prices rose; ___, demand fell. (= as a result, adverb starting with c)",
+        "accepted": [
+          "consequently"
+        ],
+        "explanation": "Consequently introduces a result."
+      },
+      {
+        "id": "b2a-q5",
+        "type": "mcq",
+        "prompt": "Replace 'a lot of' in an essay:",
+        "options": [
+          "loads of",
+          "a significant number of",
+          "tons of",
+          "plenty plenty"
+        ],
+        "answer": 1,
+        "explanation": "A significant number of is neutral and formal."
+      },
+      {
+        "id": "b2a-q6",
+        "type": "mcq",
+        "prompt": "'Due to' is followed by…",
+        "options": [
+          "a clause (subject + verb)",
+          "a noun or noun phrase",
+          "an infinitive",
+          "nothing"
+        ],
+        "answer": 1,
+        "explanation": "Due to + noun: due to the high cost. Because + clause: because it costs a lot."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "The study shows big results.",
+        "right": "The study shows significant results.",
+        "why": "Use precise academic adjectives in essays."
+      },
+      {
+        "wrong": "There are many evidences.",
+        "right": "There is a lot of evidence.",
+        "why": "Evidence is uncountable."
+      },
+      {
+        "wrong": "Due to it is expensive, …",
+        "right": "Because it is expensive, … / Due to the cost, …",
+        "why": "Due to + noun; because + clause."
+      }
+    ]
+  },
+  {
+    "id": "b2-g-reported",
+    "unitId": "b2-u2",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Reported speech and reporting verbs",
+    "minutes": 20,
+    "objective": "Report what people said, asked and advised, using tense changes and precise reporting verbs (suggest, warn, deny, admit) as in meetings, emails and interviews.",
+    "sections": [
+      {
+        "heading": "Backshift: changing the tense",
+        "en": "When the reporting verb is in the past (said, told), the original tense usually moves one step back. Present simple becomes past simple, present perfect becomes past perfect, will becomes would, can becomes could. Time words change too: today → that day, tomorrow → the next day, here → there.",
+        "fr": "Si l'information est toujours vraie, on peut garder le présent : « She said the office opens at 8. »",
+        "table": [
+          [
+            "Direct speech",
+            "Reported speech"
+          ],
+          [
+            "\"I work in Lomé.\"",
+            "He said (that) he worked in Lomé."
+          ],
+          [
+            "\"I have finished.\"",
+            "She said she had finished."
+          ],
+          [
+            "\"We will call you.\"",
+            "They said they would call me."
+          ],
+          [
+            "\"I can't come tomorrow.\"",
+            "He said he couldn't come the next day."
+          ]
+        ]
+      },
+      {
+        "heading": "say or tell?",
+        "en": "Tell always needs a person: tell someone something. Say does not take a person directly: say something (to someone). Use tell for instructions: She told me to wait.",
+        "examples": [
+          "She told me (that) the interview was at ten.",
+          "She said (that) the interview was at ten.",
+          "The manager told us to send the report by Friday."
+        ]
+      },
+      {
+        "heading": "Reported questions",
+        "en": "Reported questions use normal statement word order (subject + verb) and no question mark. Yes/no questions use if or whether.",
+        "fr": "Erreur fréquente : « He asked me where was I from ». On dit : « He asked me where I was from. »",
+        "examples": [
+          "\"Where do you live?\" → She asked me where I lived.",
+          "\"Have you got a visa?\" → He asked if I had a visa.",
+          "\"Can you start on Monday?\" → They asked whether I could start on Monday."
+        ]
+      },
+      {
+        "heading": "Reporting verbs: richer than said",
+        "en": "Reporting verbs summarise the speaker's intention. Each one has its own pattern: advise / warn / remind someone to do; suggest doing or suggest that someone (should) do; admit / deny doing; apologise for doing; promise / refuse / offer to do.",
+        "table": [
+          [
+            "Pattern",
+            "Verbs",
+            "Example"
+          ],
+          [
+            "verb + to do",
+            "promise, refuse, offer, agree",
+            "She refused to sign the contract."
+          ],
+          [
+            "verb + someone + to do",
+            "advise, warn, remind, encourage",
+            "He advised me to apply early."
+          ],
+          [
+            "verb + -ing",
+            "suggest, admit, deny, recommend",
+            "They suggested meeting online."
+          ],
+          [
+            "verb + preposition + -ing",
+            "apologise for, insist on",
+            "He apologised for being late."
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2r-v1",
+        "word": "deny",
+        "ipa": "/dɪˈnaɪ/",
+        "pos": "verb",
+        "definition": "to say that something is not true or that you did not do it",
+        "fr": "nier",
+        "example": "He denied copying the essay.",
+        "context": "Reporting"
+      },
+      {
+        "id": "b2r-v2",
+        "word": "admit",
+        "ipa": "/ədˈmɪt/",
+        "pos": "verb",
+        "definition": "to agree, often unwillingly, that something is true",
+        "fr": "admettre, avouer",
+        "example": "She admitted making a mistake in the report.",
+        "context": "Reporting"
+      },
+      {
+        "id": "b2r-v3",
+        "word": "remind",
+        "ipa": "/rɪˈmaɪnd/",
+        "pos": "verb",
+        "definition": "to make someone remember something",
+        "fr": "rappeler (à quelqu'un)",
+        "example": "Remind me to call the embassy.",
+        "context": "Workplace"
+      },
+      {
+        "id": "b2r-v4",
+        "word": "claim",
+        "ipa": "/kleɪm/",
+        "pos": "verb",
+        "definition": "to say something is true without proof",
+        "fr": "affirmer, prétendre",
+        "example": "The company claims its course guarantees a band 7.",
+        "context": "Critical thinking"
+      },
+      {
+        "id": "b2r-v5",
+        "word": "whether",
+        "ipa": "/ˈweðə/",
+        "pos": "conjunction",
+        "definition": "if (used in reported questions and choices)",
+        "fr": "si (choix)",
+        "example": "They asked whether I had any experience.",
+        "context": "Questions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2r-p1",
+        "type": "mcq",
+        "prompt": "\"I'll send the documents.\" → She said she ___ the documents.",
+        "options": [
+          "will send",
+          "would send",
+          "sends",
+          "sent"
+        ],
+        "answer": 1,
+        "explanation": "will → would in reported speech."
+      },
+      {
+        "id": "b2r-p2",
+        "type": "mcq",
+        "prompt": "He asked me where ___.",
+        "options": [
+          "did I live",
+          "I lived",
+          "do I live",
+          "lived I"
+        ],
+        "answer": 1,
+        "explanation": "Reported questions use statement word order: where I lived."
+      },
+      {
+        "id": "b2r-p3",
+        "type": "gap",
+        "prompt": "The doctor advised me ___ rest. (two letters)",
+        "accepted": [
+          "to"
+        ],
+        "explanation": "advise someone to do something."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2r-q1",
+        "type": "mcq",
+        "prompt": "She ___ me that the meeting was cancelled.",
+        "options": [
+          "said",
+          "told",
+          "spoke",
+          "talked"
+        ],
+        "answer": 1,
+        "explanation": "Tell + person: she told me."
+      },
+      {
+        "id": "b2r-q2",
+        "type": "mcq",
+        "prompt": "\"I have never been to London.\" → He said he ___ to London.",
+        "options": [
+          "has never been",
+          "had never been",
+          "never went",
+          "was never"
+        ],
+        "answer": 1,
+        "explanation": "Present perfect → past perfect."
+      },
+      {
+        "id": "b2r-q3",
+        "type": "mcq",
+        "prompt": "They suggested ___ the train.",
+        "options": [
+          "to take",
+          "taking",
+          "take",
+          "that taking"
+        ],
+        "answer": 1,
+        "explanation": "suggest + -ing (or suggest that we take)."
+      },
+      {
+        "id": "b2r-q4",
+        "type": "gap",
+        "prompt": "\"Are you ready?\" → She asked ___ I was ready. (two letters)",
+        "accepted": [
+          "if"
+        ],
+        "explanation": "Yes/no question → if or whether."
+      },
+      {
+        "id": "b2r-q5",
+        "type": "mcq",
+        "prompt": "He ___ breaking the printer. (said it wasn't him)",
+        "options": [
+          "admitted",
+          "denied",
+          "refused",
+          "promised"
+        ],
+        "answer": 1,
+        "explanation": "deny + -ing = say you did not do it."
+      },
+      {
+        "id": "b2r-q6",
+        "type": "truefalse",
+        "prompt": "\"She said me that she was tired\" is correct.",
+        "answer": false,
+        "explanation": "Say does not take a person: she said (that) / she told me (that)."
+      },
+      {
+        "id": "b2r-q7",
+        "type": "mcq",
+        "prompt": "\"Don't touch the screen!\" → He warned us ___ the screen.",
+        "options": [
+          "not touch",
+          "not to touch",
+          "to not touching",
+          "don't touch"
+        ],
+        "answer": 1,
+        "explanation": "warn someone not to do something."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "He said me that he was busy.",
+        "right": "He told me that he was busy.",
+        "why": "Tell + person; say without a person."
+      },
+      {
+        "wrong": "She asked me where was the station.",
+        "right": "She asked me where the station was.",
+        "why": "No question word order in reported questions."
+      },
+      {
+        "wrong": "He suggested me to apply.",
+        "right": "He suggested (that) I apply. / He suggested applying.",
+        "why": "Suggest is never followed by object + to."
+      }
+    ]
+  },
+  {
+    "id": "b2-e-interview",
+    "unitId": "b2-u2",
+    "level": "B2",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Job interviews and formal register",
+    "minutes": 18,
+    "objective": "Present yourself confidently in a job or university interview in English: talk about strengths, achievements and goals in a professional register.",
+    "sections": [
+      {
+        "heading": "Answering 'Tell me about yourself'",
+        "en": "This classic opening is not a request for your life story. Give a 60–90 second professional summary: present (current role or studies), past (key experience and one achievement), future (why this job or programme fits your goals). Finish by linking back to the position.",
+        "fr": "Structure « présent – passé – futur ». Préparez-la à l'avance et chronométrez-vous : 1 min 30 maximum.",
+        "examples": [
+          "I'm currently in my final year of a degree in computer science at the University of Lomé.",
+          "Over the past two years, I've led a team of four on a data project for a local NGO.",
+          "I'm now looking for a role where I can apply my analytical skills in an international environment."
+        ]
+      },
+      {
+        "heading": "The STAR method for experience questions",
+        "en": "For questions like 'Describe a time when you solved a problem', use STAR: Situation (context), Task (your responsibility), Action (what you did — use I, not we), Result (what changed, with numbers if possible). Use past simple for the story and present perfect to connect it to today.",
+        "table": [
+          [
+            "Step",
+            "Useful language"
+          ],
+          [
+            "Situation",
+            "When I was working at…, we faced…"
+          ],
+          [
+            "Task",
+            "My role was to… / I was responsible for…"
+          ],
+          [
+            "Action",
+            "I decided to… / I took the initiative to…"
+          ],
+          [
+            "Result",
+            "As a result, … increased by 20%. / This led to…"
+          ]
+        ]
+      },
+      {
+        "heading": "Formal and polite register",
+        "en": "Interviews and formal emails need a neutral, polite tone. Prefer full forms in writing, indirect questions and softeners: Could you tell me…?, I was wondering whether…, I would appreciate… Avoid slang (gonna, stuff, kind of) and overly direct demands.",
+        "fr": "« I want to know the salary » paraît brutal. Préférez : « Could you tell me more about the salary range? »",
+        "examples": [
+          "I was wondering whether there are opportunities for training.",
+          "Could you tell me what a typical day looks like?",
+          "I would appreciate the chance to discuss this further."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2i-v1",
+        "word": "strength",
+        "ipa": "/streŋθ/",
+        "pos": "noun",
+        "definition": "a quality or ability that makes someone effective",
+        "fr": "point fort",
+        "example": "One of my main strengths is my ability to adapt.",
+        "context": "Interview"
+      },
+      {
+        "id": "b2i-v2",
+        "word": "background",
+        "ipa": "/ˈbækɡraʊnd/",
+        "pos": "noun",
+        "definition": "a person's education, experience and social history",
+        "fr": "parcours, formation",
+        "example": "I have a background in accounting.",
+        "context": "Interview"
+      },
+      {
+        "id": "b2i-v3",
+        "word": "position",
+        "ipa": "/pəˈzɪʃn/",
+        "pos": "noun",
+        "definition": "a job in an organisation (formal)",
+        "fr": "poste",
+        "example": "I'm applying for the position of data analyst.",
+        "context": "Applications"
+      },
+      {
+        "id": "b2i-v4",
+        "word": "take the initiative",
+        "ipa": "/teɪk ðə ɪˈnɪʃətɪv/",
+        "pos": "phrase",
+        "definition": "to act before others do, without being told",
+        "fr": "prendre l'initiative",
+        "example": "I took the initiative to organise weekly meetings.",
+        "context": "STAR answers"
+      },
+      {
+        "id": "b2i-v5",
+        "word": "fluent",
+        "ipa": "/ˈfluːənt/",
+        "pos": "adjective",
+        "definition": "able to speak a language easily and well",
+        "fr": "courant (langue)",
+        "example": "I'm fluent in French and Ewe.",
+        "context": "CV"
+      },
+      {
+        "id": "b2i-v6",
+        "word": "reliable",
+        "ipa": "/rɪˈlaɪəbl/",
+        "pos": "adjective",
+        "definition": "someone you can trust to do what they promise",
+        "fr": "fiable",
+        "example": "My previous manager described me as reliable.",
+        "context": "Qualities"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2i-p1",
+        "type": "mcq",
+        "prompt": "Which question is the most polite in an interview?",
+        "options": [
+          "What's the money?",
+          "I want to know the salary.",
+          "Could you tell me about the salary range?",
+          "Tell me the salary now."
+        ],
+        "answer": 2,
+        "explanation": "Indirect question + 'could' = polite, formal register."
+      },
+      {
+        "id": "b2i-p2",
+        "type": "order",
+        "prompt": "Put the words in order (indirect question).",
+        "words": [
+          "I",
+          "whether",
+          "offer",
+          "wondering",
+          "training",
+          "was",
+          "you"
+        ],
+        "answer": "I was wondering whether you offer training",
+        "explanation": "Indirect question: I was wondering whether + subject + verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2i-q1",
+        "type": "mcq",
+        "prompt": "In STAR, the 'A' stands for…",
+        "options": [
+          "Answer",
+          "Action",
+          "Ability",
+          "Attitude"
+        ],
+        "answer": 1,
+        "explanation": "Situation, Task, Action, Result."
+      },
+      {
+        "id": "b2i-q2",
+        "type": "mcq",
+        "prompt": "Which sentence is best for the Action step?",
+        "options": [
+          "We did a lot of things.",
+          "I redesigned the schedule and trained two new colleagues.",
+          "It was a hard time.",
+          "The team was good."
+        ],
+        "answer": 1,
+        "explanation": "Use I and specific actions."
+      },
+      {
+        "id": "b2i-q3",
+        "type": "gap",
+        "prompt": "I'm applying for the ___ of marketing assistant. (formal word for job)",
+        "accepted": [
+          "position",
+          "post",
+          "role"
+        ],
+        "explanation": "Position / post / role are formal words for a job."
+      },
+      {
+        "id": "b2i-q4",
+        "type": "truefalse",
+        "prompt": "\"Gonna\" and \"stuff\" are suitable in a formal job interview.",
+        "answer": false,
+        "explanation": "Avoid slang in formal register."
+      },
+      {
+        "id": "b2i-q5",
+        "type": "mcq",
+        "prompt": "'Someone you can trust to do what they promise' is…",
+        "options": [
+          "fluent",
+          "reliable",
+          "background",
+          "strength"
+        ],
+        "answer": 1,
+        "explanation": "Reliable = trustworthy, dependable."
+      },
+      {
+        "id": "b2i-q6",
+        "type": "mcq",
+        "prompt": "'Tell me about yourself' should mainly cover…",
+        "options": [
+          "your childhood",
+          "present, past and future professional profile",
+          "your hobbies only",
+          "your salary"
+        ],
+        "answer": 1,
+        "explanation": "A short professional summary: present → past → future."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I want to know the salary.",
+        "right": "Could you tell me about the salary range?",
+        "why": "Direct demands sound rude; use indirect questions."
+      },
+      {
+        "wrong": "We made a project and it was good.",
+        "right": "I led a three-person project that cut costs by 15%.",
+        "why": "Use I + specific actions + measurable results."
+      },
+      {
+        "wrong": "I am graduated since 2023.",
+        "right": "I graduated in 2023. / I have been a graduate since 2023.",
+        "why": "Graduate is a verb: I graduated."
+      }
+    ]
+  },
+  {
+    "id": "b2-g-linkers",
+    "unitId": "b2-u3",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Contrast and concession: although, despite, whereas",
+    "minutes": 18,
+    "objective": "Balance arguments like a B2 writer: contrast two ideas and concede a point using although, despite, in spite of, whereas, however and nevertheless.",
+    "sections": [
+      {
+        "heading": "Although / even though + clause",
+        "en": "Although and even though introduce a clause (subject + verb) that contrasts with the main idea. Even though is stronger and more emotional. Though can also end a sentence in speech: It was expensive. Worth it, though.",
+        "fr": "Pas de « but » après although : « Although it was late, but we continued » est faux.",
+        "examples": [
+          "Although the course was difficult, most students passed.",
+          "Even though she had a scholarship, she had to work at weekends.",
+          "I enjoyed the trip. The food was too spicy, though."
+        ]
+      },
+      {
+        "heading": "Despite / in spite of + noun or -ing",
+        "en": "Despite and in spite of are followed by a noun, a pronoun or an -ing form, never directly by a clause. To use a clause after them, add 'the fact that'. Never say 'despite of'.",
+        "table": [
+          [
+            "Linker",
+            "Followed by",
+            "Example"
+          ],
+          [
+            "although / even though",
+            "clause",
+            "Although it rained, we went out."
+          ],
+          [
+            "despite / in spite of",
+            "noun / -ing",
+            "Despite the rain, we went out. / Despite being tired, …"
+          ],
+          [
+            "despite the fact that",
+            "clause",
+            "Despite the fact that it rained, …"
+          ],
+          [
+            "whereas / while",
+            "clause (comparison)",
+            "Lomé is humid, whereas Kara is drier."
+          ]
+        ]
+      },
+      {
+        "heading": "However, nevertheless, on the other hand",
+        "en": "These adverbs link two sentences. Put them at the start of the second sentence followed by a comma, or after the subject between commas. Use a full stop or semicolon before them, not just a comma. Nevertheless is more formal and means 'in spite of this'. On the other hand compares two sides of the same question.",
+        "fr": "En IELTS, varier ces connecteurs améliore « Coherence and Cohesion », mais sans en abuser : un par paragraphe suffit souvent.",
+        "examples": [
+          "Online courses are cheap. However, they require strong self-discipline.",
+          "The plan was risky; nevertheless, the board approved it.",
+          "Living abroad is exciting. On the other hand, it can feel lonely at first."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2l-v1",
+        "word": "nevertheless",
+        "ipa": "/ˌnevəðəˈles/",
+        "pos": "adverb",
+        "definition": "in spite of what has just been said (formal)",
+        "fr": "néanmoins",
+        "example": "The results were disappointing; nevertheless, we learned a lot.",
+        "context": "Essays"
+      },
+      {
+        "id": "b2l-v2",
+        "word": "whereas",
+        "ipa": "/weərˈæz/",
+        "pos": "conjunction",
+        "definition": "used to compare two different facts",
+        "fr": "tandis que, alors que",
+        "example": "My brother loves maths, whereas I prefer languages.",
+        "context": "Comparisons"
+      },
+      {
+        "id": "b2l-v3",
+        "word": "concede",
+        "ipa": "/kənˈsiːd/",
+        "pos": "verb",
+        "definition": "to admit that something is true, often unwillingly",
+        "fr": "concéder",
+        "example": "I concede that the cost is high, but the benefits are greater.",
+        "context": "Arguments"
+      },
+      {
+        "id": "b2l-v4",
+        "word": "counter-argument",
+        "ipa": "/ˈkaʊntər ˌɑːɡjumənt/",
+        "pos": "noun",
+        "definition": "an argument against another argument",
+        "fr": "contre-argument",
+        "example": "A strong essay mentions a counter-argument.",
+        "context": "IELTS Task 2"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2l-p1",
+        "type": "mcq",
+        "prompt": "___ the heavy traffic, we arrived on time.",
+        "options": [
+          "Although",
+          "Despite",
+          "However",
+          "Whereas"
+        ],
+        "answer": 1,
+        "explanation": "Despite + noun (the heavy traffic)."
+      },
+      {
+        "id": "b2l-p2",
+        "type": "gap",
+        "prompt": "___ she was tired, she finished the essay. (8 letters, + clause)",
+        "accepted": [
+          "although"
+        ],
+        "explanation": "Although + clause (subject + verb)."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2l-q1",
+        "type": "mcq",
+        "prompt": "In spite ___ the cost, they bought the house.",
+        "options": [
+          "that",
+          "of",
+          "for",
+          "—"
+        ],
+        "answer": 1,
+        "explanation": "In spite of + noun."
+      },
+      {
+        "id": "b2l-q2",
+        "type": "mcq",
+        "prompt": "Which sentence is correct?",
+        "options": [
+          "Despite it was cold, we swam.",
+          "Despite of the cold, we swam.",
+          "Despite the cold, we swam.",
+          "Although the cold, we swam."
+        ],
+        "answer": 2,
+        "explanation": "Despite + noun, without 'of'."
+      },
+      {
+        "id": "b2l-q3",
+        "type": "gap",
+        "prompt": "Despite ___ the fact that he was ill, he came. (no word needed? type the missing article)",
+        "accepted": [
+          "the"
+        ],
+        "explanation": "Despite the fact that + clause."
+      },
+      {
+        "id": "b2l-q4",
+        "type": "mcq",
+        "prompt": "Ghana uses the cedi, ___ Togo uses the CFA franc.",
+        "options": [
+          "despite",
+          "whereas",
+          "however",
+          "in spite of"
+        ],
+        "answer": 1,
+        "explanation": "Whereas compares two different facts in one sentence."
+      },
+      {
+        "id": "b2l-q5",
+        "type": "truefalse",
+        "prompt": "\"Although it was expensive, but we bought it\" is correct.",
+        "answer": false,
+        "explanation": "Don't use but after although."
+      },
+      {
+        "id": "b2l-q6",
+        "type": "mcq",
+        "prompt": "The plan is ambitious. ___, it is realistic.",
+        "options": [
+          "Despite",
+          "Although",
+          "Nevertheless",
+          "Whereas"
+        ],
+        "answer": 2,
+        "explanation": "Nevertheless links two sentences: 'in spite of this'."
+      },
+      {
+        "id": "b2l-q7",
+        "type": "mcq",
+        "prompt": "Despite ___ hard, he failed the test.",
+        "options": [
+          "he studied",
+          "studying",
+          "to study",
+          "study"
+        ],
+        "answer": 1,
+        "explanation": "Despite + -ing."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Despite of the rain, …",
+        "right": "Despite the rain, … / In spite of the rain, …",
+        "why": "Despite never takes of."
+      },
+      {
+        "wrong": "Although he was tired, but he worked.",
+        "right": "Although he was tired, he worked.",
+        "why": "One linker only: although OR but."
+      },
+      {
+        "wrong": "Despite it was late, …",
+        "right": "Although it was late, … / Despite the late hour, …",
+        "why": "Despite + noun/-ing; although + clause."
+      }
+    ]
+  },
+  {
+    "id": "b2-v-collocations",
+    "unitId": "b2-u3",
+    "level": "B2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Collocations: make, do, take and strong pairs",
+    "minutes": 16,
+    "objective": "Sound natural by using word partners that native speakers expect: make a decision, do research, take responsibility, heavy traffic, strong coffee.",
+    "sections": [
+      {
+        "heading": "What is a collocation?",
+        "en": "A collocation is a pair or group of words that naturally go together. Grammar may allow other combinations, but they sound wrong to native speakers: we say 'heavy rain', not 'strong rain', and 'make a mistake', not 'do a mistake'. Learning words with their partners is one of the fastest ways to sound fluent and to score higher in IELTS Lexical Resource.",
+        "fr": "Beaucoup d'erreurs viennent de la traduction mot à mot : « faire une erreur » → make a mistake, « faire ses devoirs » → do your homework, « prendre une décision » → make a decision."
+      },
+      {
+        "heading": "make, do, take",
+        "en": "Make is often about creating or producing something (a decision, a plan, progress, an effort). Do is about tasks, work and activities (homework, research, business, your best). Take is used for actions you choose or accept (a break, an exam, responsibility, part, notes).",
+        "table": [
+          [
+            "make",
+            "do",
+            "take"
+          ],
+          [
+            "a decision",
+            "research",
+            "responsibility"
+          ],
+          [
+            "progress",
+            "homework",
+            "a break"
+          ],
+          [
+            "an effort",
+            "business (with)",
+            "an exam / a test"
+          ],
+          [
+            "a mistake",
+            "your best",
+            "part (in)"
+          ],
+          [
+            "a complaint",
+            "someone a favour",
+            "notes"
+          ]
+        ]
+      },
+      {
+        "heading": "Adjective + noun partners",
+        "en": "Many nouns have favourite adjectives. Learn them as blocks: heavy traffic, a strong accent, a high salary, a narrow escape, a broad range, a vital role, fierce competition, a tight deadline.",
+        "examples": [
+          "We have a tight deadline, so let's make a plan today.",
+          "There is fierce competition for scholarships.",
+          "Teachers play a vital role in students' motivation."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2k-v1",
+        "word": "make progress",
+        "ipa": "/meɪk ˈprəʊɡres/",
+        "pos": "collocation",
+        "definition": "to improve or move forward",
+        "fr": "progresser",
+        "example": "You've made real progress in your speaking.",
+        "context": "Learning"
+      },
+      {
+        "id": "b2k-v2",
+        "word": "do research",
+        "ipa": "/duː rɪˈsɜːtʃ/",
+        "pos": "collocation",
+        "definition": "to study a subject carefully to discover facts",
+        "fr": "faire des recherches",
+        "example": "She is doing research on renewable energy.",
+        "context": "Studies"
+      },
+      {
+        "id": "b2k-v3",
+        "word": "take responsibility",
+        "ipa": "/teɪk rɪˌspɒnsəˈbɪləti/",
+        "pos": "collocation",
+        "definition": "to accept that something is your duty or fault",
+        "fr": "assumer la responsabilité",
+        "example": "A good leader takes responsibility for mistakes.",
+        "context": "Work"
+      },
+      {
+        "id": "b2k-v4",
+        "word": "tight deadline",
+        "ipa": "/taɪt ˈdedlaɪn/",
+        "pos": "collocation",
+        "definition": "a deadline with very little time",
+        "fr": "délai serré",
+        "example": "We're working to a tight deadline.",
+        "context": "Work"
+      },
+      {
+        "id": "b2k-v5",
+        "word": "fierce competition",
+        "ipa": "/fɪəs ˌkɒmpəˈtɪʃn/",
+        "pos": "collocation",
+        "definition": "very strong competition",
+        "fr": "concurrence féroce",
+        "example": "There is fierce competition for places at top universities.",
+        "context": "Studies abroad"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2k-p1",
+        "type": "mcq",
+        "prompt": "I need to ___ a decision about my master's.",
+        "options": [
+          "do",
+          "make",
+          "take",
+          "have"
+        ],
+        "answer": 1,
+        "explanation": "make a decision."
+      },
+      {
+        "id": "b2k-p2",
+        "type": "mcq",
+        "prompt": "She is ___ research on climate change.",
+        "options": [
+          "making",
+          "doing",
+          "taking",
+          "giving"
+        ],
+        "answer": 1,
+        "explanation": "do research."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2k-q1",
+        "type": "mcq",
+        "prompt": "Let's ___ a ten-minute break.",
+        "options": [
+          "make",
+          "do",
+          "take",
+          "give"
+        ],
+        "answer": 2,
+        "explanation": "take a break."
+      },
+      {
+        "id": "b2k-q2",
+        "type": "mcq",
+        "prompt": "Which is natural English?",
+        "options": [
+          "strong rain",
+          "heavy rain",
+          "big rain",
+          "fat rain"
+        ],
+        "answer": 1,
+        "explanation": "heavy rain is the collocation."
+      },
+      {
+        "id": "b2k-q3",
+        "type": "gap",
+        "prompt": "I always ___ my best in exams. (verb)",
+        "accepted": [
+          "do"
+        ],
+        "explanation": "do your best."
+      },
+      {
+        "id": "b2k-q4",
+        "type": "mcq",
+        "prompt": "He ___ a mistake in the calculation.",
+        "options": [
+          "did",
+          "made",
+          "took",
+          "had"
+        ],
+        "answer": 1,
+        "explanation": "make a mistake."
+      },
+      {
+        "id": "b2k-q5",
+        "type": "truefalse",
+        "prompt": "\"Take part in\" means to participate.",
+        "answer": true,
+        "explanation": "take part in a competition = participate in it."
+      },
+      {
+        "id": "b2k-q6",
+        "type": "mcq",
+        "prompt": "There is ___ competition for these jobs.",
+        "options": [
+          "fierce",
+          "heavy",
+          "tall",
+          "deep"
+        ],
+        "answer": 0,
+        "explanation": "fierce competition = very strong competition."
+      },
+      {
+        "id": "b2k-q7",
+        "type": "gap",
+        "prompt": "Could you ___ me a favour? (verb)",
+        "accepted": [
+          "do"
+        ],
+        "explanation": "do someone a favour."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I did a mistake.",
+        "right": "I made a mistake.",
+        "why": "make a mistake."
+      },
+      {
+        "wrong": "We must take a decision.",
+        "right": "We must make a decision.",
+        "why": "In most English, make a decision (take a decision is mainly British and formal)."
+      },
+      {
+        "wrong": "I made my homework.",
+        "right": "I did my homework.",
+        "why": "do homework."
+      }
+    ]
+  },
+  {
+    "id": "b2-g-relative",
+    "unitId": "b2-u4",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Relative and participle clauses",
+    "minutes": 18,
+    "objective": "Write denser, more elegant sentences with defining and non-defining relative clauses, and shorten them with participle clauses.",
+    "sections": [
+      {
+        "heading": "Defining vs non-defining",
+        "en": "A defining relative clause gives essential information: without it, we don't know who or what we mean. No commas. A non-defining clause adds extra information about something already identified. It has commas and cannot use 'that'.",
+        "fr": "Les virgules changent le sens : « My sister who lives in Paris » (j'ai plusieurs sœurs) ≠ « My sister, who lives in Paris, » (je n'en ai qu'une).",
+        "examples": [
+          "The students who passed the test received a certificate. (defining)",
+          "My manager, who has lived in Canada, gave me great advice. (non-defining)",
+          "The book that I recommended is in the library.",
+          "Accra, which is the capital of Ghana, has a busy port."
+        ]
+      },
+      {
+        "heading": "Choosing the pronoun",
+        "en": "who for people, which for things, that for both (defining only), whose for possession, where for places, when for times. In defining clauses you can omit the pronoun when it is the object: The course (that) I chose is online.",
+        "table": [
+          [
+            "Pronoun",
+            "Use",
+            "Example"
+          ],
+          [
+            "who",
+            "people",
+            "the teacher who helped me"
+          ],
+          [
+            "which",
+            "things (both clause types)",
+            "the visa, which took a month"
+          ],
+          [
+            "that",
+            "people/things, defining only",
+            "the job that I want"
+          ],
+          [
+            "whose",
+            "possession",
+            "the student whose essay won"
+          ],
+          [
+            "where",
+            "places",
+            "the city where I studied"
+          ]
+        ]
+      },
+      {
+        "heading": "Participle clauses: shorter and more formal",
+        "en": "You can reduce a relative clause with an -ing (active) or past participle (passive) form. The students taking the test = the students who are taking the test. The report written by the team = the report which was written by the team. Participle clauses can also replace adverbial clauses: Having finished the essay, she went to bed.",
+        "examples": [
+          "Applicants wishing to study abroad must submit a language certificate.",
+          "Most of the goods sold in the market are imported.",
+          "Having lived in London, he understood British humour."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2rel-v1",
+        "word": "applicant",
+        "ipa": "/ˈæplɪkənt/",
+        "pos": "noun",
+        "definition": "a person who formally asks for a job, a place at university, etc.",
+        "fr": "candidat",
+        "example": "Applicants must have an IELTS score of 6.5.",
+        "context": "Applications"
+      },
+      {
+        "id": "b2rel-v2",
+        "word": "submit",
+        "ipa": "/səbˈmɪt/",
+        "pos": "verb",
+        "definition": "to formally give a document for consideration",
+        "fr": "soumettre, déposer",
+        "example": "Submit your application before the deadline.",
+        "context": "Applications"
+      },
+      {
+        "id": "b2rel-v3",
+        "word": "certificate",
+        "ipa": "/səˈtɪfɪkət/",
+        "pos": "noun",
+        "definition": "an official document proving a qualification",
+        "fr": "certificat, attestation",
+        "example": "You need a TOEFL certificate less than two years old.",
+        "context": "Exams"
+      },
+      {
+        "id": "b2rel-v4",
+        "word": "requirement",
+        "ipa": "/rɪˈkwaɪəmənt/",
+        "pos": "noun",
+        "definition": "something you must have or do",
+        "fr": "exigence, condition",
+        "example": "The entry requirements include a B2 level in English.",
+        "context": "Studies abroad"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2rel-p1",
+        "type": "mcq",
+        "prompt": "The woman ___ son won the prize is my neighbour.",
+        "options": [
+          "who",
+          "whose",
+          "which",
+          "that"
+        ],
+        "answer": 1,
+        "explanation": "Possession → whose."
+      },
+      {
+        "id": "b2rel-p2",
+        "type": "mcq",
+        "prompt": "Lomé, ___ is on the coast, has a large port.",
+        "options": [
+          "that",
+          "which",
+          "who",
+          "where"
+        ],
+        "answer": 1,
+        "explanation": "Non-defining clause about a thing → which (never that)."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2rel-q1",
+        "type": "mcq",
+        "prompt": "This is the university ___ I studied economics.",
+        "options": [
+          "which",
+          "where",
+          "who",
+          "whose"
+        ],
+        "answer": 1,
+        "explanation": "Place → where."
+      },
+      {
+        "id": "b2rel-q2",
+        "type": "truefalse",
+        "prompt": "\"My father, that is a doctor, works in Kara\" is correct.",
+        "answer": false,
+        "explanation": "No 'that' in non-defining clauses: My father, who is a doctor, …"
+      },
+      {
+        "id": "b2rel-q3",
+        "type": "mcq",
+        "prompt": "Students ___ the exam must arrive at 8.",
+        "options": [
+          "taking",
+          "taken",
+          "who take it",
+          "took"
+        ],
+        "answer": 0,
+        "explanation": "Active participle clause: students (who are) taking the exam."
+      },
+      {
+        "id": "b2rel-q4",
+        "type": "mcq",
+        "prompt": "The documents ___ yesterday were incomplete.",
+        "options": [
+          "submitting",
+          "submitted",
+          "who submitted",
+          "submit"
+        ],
+        "answer": 1,
+        "explanation": "Passive meaning → past participle: (which were) submitted."
+      },
+      {
+        "id": "b2rel-q5",
+        "type": "gap",
+        "prompt": "___ finished the test, she left the room. (participle clause, 6 letters)",
+        "accepted": [
+          "having"
+        ],
+        "explanation": "Having + past participle = after she had finished."
+      },
+      {
+        "id": "b2rel-q6",
+        "type": "mcq",
+        "prompt": "In which sentence can you omit the pronoun?",
+        "options": [
+          "The man who called you is here.",
+          "The course that I chose is online.",
+          "Paris, which I love, is busy.",
+          "The girl whose bag…"
+        ],
+        "answer": 1,
+        "explanation": "Object pronoun in a defining clause can be omitted: the course I chose."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "My brother, that lives in Accra, is a nurse.",
+        "right": "My brother, who lives in Accra, is a nurse.",
+        "why": "No 'that' after a comma."
+      },
+      {
+        "wrong": "The city where I visited was beautiful.",
+        "right": "The city (that) I visited was beautiful.",
+        "why": "Visit takes a direct object, so no 'where'."
+      },
+      {
+        "wrong": "The man which helped me…",
+        "right": "The man who helped me…",
+        "why": "who for people."
+      }
+    ]
+  },
+  {
+    "id": "b2-g-modals-past",
+    "unitId": "b2-u4",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Past modals: deduction and criticism",
+    "minutes": 18,
+    "objective": "Make logical deductions about the past (must have, can't have, might have) and express criticism or regret (should have, needn't have).",
+    "sections": [
+      {
+        "heading": "Deduction about the past",
+        "en": "Use modal + have + past participle to guess what happened, based on evidence. must have = I'm almost sure it happened. can't / couldn't have = I'm almost sure it didn't happen. might / may / could have = it's possible.",
+        "fr": "Le contraire de « must have » (sûrement) est « can't have » (sûrement pas), pas « mustn't have ».",
+        "examples": [
+          "The lights are off. They must have gone home.",
+          "She can't have failed — she studied every day.",
+          "He might have missed the bus; that's why he's late.",
+          "You could have left your phone in the taxi."
+        ]
+      },
+      {
+        "heading": "Criticism, regret and unnecessary actions",
+        "en": "should have / ought to have + past participle = it was the right thing to do, but it didn't happen (criticism or regret). shouldn't have = it happened, but it was wrong. needn't have = you did it, but it wasn't necessary. didn't need to = it wasn't necessary (and usually you didn't do it).",
+        "table": [
+          [
+            "Form",
+            "Meaning",
+            "Example"
+          ],
+          [
+            "should have done",
+            "criticism / regret",
+            "I should have revised more."
+          ],
+          [
+            "shouldn't have done",
+            "it was a mistake",
+            "You shouldn't have shouted."
+          ],
+          [
+            "needn't have done",
+            "done, but unnecessary",
+            "I needn't have printed it — they wanted a PDF."
+          ],
+          [
+            "didn't need to do",
+            "not necessary",
+            "I didn't need to queue; I had a pass."
+          ]
+        ]
+      },
+      {
+        "heading": "In speaking and listening",
+        "en": "In fast speech, have becomes /əv/: must've, should've, could've. This is why learners sometimes write 'should of' — it is always wrong in writing. In IELTS Speaking Part 3, past modals are a natural way to speculate about causes.",
+        "examples": [
+          "People must've had very different lives fifty years ago.",
+          "The government should've invested more in public transport."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2m-v1",
+        "word": "evidence",
+        "ipa": "/ˈevɪdəns/",
+        "pos": "noun",
+        "definition": "facts or signs that make you believe something",
+        "fr": "indices, preuves",
+        "example": "There's no evidence that he took the money.",
+        "context": "Deduction"
+      },
+      {
+        "id": "b2m-v2",
+        "word": "assume",
+        "ipa": "/əˈsjuːm/",
+        "pos": "verb",
+        "definition": "to think something is true without proof",
+        "fr": "supposer",
+        "example": "I assumed you had already booked the hotel.",
+        "context": "Deduction"
+      },
+      {
+        "id": "b2m-v3",
+        "word": "hindsight",
+        "ipa": "/ˈhaɪndsaɪt/",
+        "pos": "noun",
+        "definition": "understanding a situation only after it has happened",
+        "fr": "recul",
+        "example": "With hindsight, we should have left earlier.",
+        "context": "Regret"
+      },
+      {
+        "id": "b2m-v4",
+        "word": "speculate",
+        "ipa": "/ˈspekjuleɪt/",
+        "pos": "verb",
+        "definition": "to guess possible answers without enough information",
+        "fr": "spéculer, faire des hypothèses",
+        "example": "Scientists speculate that the city was abandoned after a flood.",
+        "context": "IELTS Speaking"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2m-p1",
+        "type": "mcq",
+        "prompt": "His car isn't here. He ___ already.",
+        "options": [
+          "must leave",
+          "must have left",
+          "can't have left",
+          "should leave"
+        ],
+        "answer": 1,
+        "explanation": "Strong deduction about the past → must have + past participle."
+      },
+      {
+        "id": "b2m-p2",
+        "type": "mcq",
+        "prompt": "I failed. I ___ more.",
+        "options": [
+          "must have studied",
+          "should have studied",
+          "can't have studied",
+          "needn't study"
+        ],
+        "answer": 1,
+        "explanation": "Regret → should have + past participle."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2m-q1",
+        "type": "mcq",
+        "prompt": "She ___ the email — she replied to it.",
+        "options": [
+          "must have read",
+          "can't have read",
+          "needn't have read",
+          "shouldn't read"
+        ],
+        "answer": 0,
+        "explanation": "Evidence (she replied) → must have read."
+      },
+      {
+        "id": "b2m-q2",
+        "type": "mcq",
+        "prompt": "He ___ stolen it. He was with me all day.",
+        "options": [
+          "must have",
+          "can't have",
+          "should have",
+          "might have"
+        ],
+        "answer": 1,
+        "explanation": "Impossible → can't have."
+      },
+      {
+        "id": "b2m-q3",
+        "type": "gap",
+        "prompt": "You should ___ told me! (one word)",
+        "accepted": [
+          "have"
+        ],
+        "explanation": "should have + past participle; never 'should of'."
+      },
+      {
+        "id": "b2m-q4",
+        "type": "truefalse",
+        "prompt": "\"I needn't have bought bread\" means I bought bread but it wasn't necessary.",
+        "answer": true,
+        "explanation": "needn't have = done but unnecessary."
+      },
+      {
+        "id": "b2m-q5",
+        "type": "mcq",
+        "prompt": "The opposite of 'He must have forgotten' is…",
+        "options": [
+          "He mustn't have forgotten",
+          "He can't have forgotten",
+          "He shouldn't forget",
+          "He didn't must forget"
+        ],
+        "answer": 1,
+        "explanation": "Negative deduction: can't have."
+      },
+      {
+        "id": "b2m-q6",
+        "type": "mcq",
+        "prompt": "Maybe she took the earlier train. → She ___ the earlier train.",
+        "options": [
+          "must have taken",
+          "might have taken",
+          "should have taken",
+          "can't take"
+        ],
+        "answer": 1,
+        "explanation": "Possibility → might / may / could have."
+      },
+      {
+        "id": "b2m-q7",
+        "type": "truefalse",
+        "prompt": "\"I should of called you\" is correct in writing.",
+        "answer": false,
+        "explanation": "Always should have (should've in speech)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I should of known.",
+        "right": "I should have known.",
+        "why": "'of' is a spelling mistake for 've."
+      },
+      {
+        "wrong": "He mustn't have seen us.",
+        "right": "He can't have seen us.",
+        "why": "Negative deduction uses can't have."
+      },
+      {
+        "wrong": "You must have told me yesterday!",
+        "right": "You should have told me yesterday!",
+        "why": "must have = deduction; should have = criticism."
+      }
+    ]
+  }
+]

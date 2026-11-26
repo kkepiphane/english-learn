@@ -21,6 +21,8 @@ const Exams = lazy(() => import('./pages/Exams'))
 const Progress = lazy(() => import('./pages/Progress'))
 const Profile = lazy(() => import('./pages/Profile'))
 const Goal = lazy(() => import('./pages/Goal'))
+const SheetPage = lazy(() => import('./pages/Basics'))
+const Sprint = lazy(() => import('./pages/Sprint'))
 
 const Loading = () => <div className="flex h-40 items-center justify-center text-sm text-ink-400" role="status">Loading…</div>
 
@@ -59,6 +61,8 @@ export default function App() {
                 <Route path="progress" element={<Progress />} />
                 <Route path="profile" element={<Profile />} />
                 <Route path="goal" element={<Goal />} />
+                <Route path="basics/:id" element={<SheetPage />} />
+                <Route path="basics/sprint/:id" element={<Sprint />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Route>
             </Routes>
