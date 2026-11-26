@@ -30,6 +30,15 @@ describe('streak freezes', () => {
     expect(streakInfo(on(...fifty, 54), at(54)).current).toBe(1)
     expect(streakInfo(on(...fifty, 52, 55), at(55)).current).toBe(1) // 2 + 2 missed = 4 > 3
   })
+  it('one more freeze every 30 days of streak, never more than the cap', () => {
+    // 7 days, a frozen day, then study up to day 30 of the streak: a new freeze covers another missed day.
+    expect(streakInfo(on(...range(0, 6), ...range(8, 30), 32), at(32)).current).toBe(31)
+    // Without reaching 30 days, the second missed day breaks the streak.
+    expect(streakInfo(on(...range(0, 6), ...range(8, 28), 30), at(30)).current).toBe(1)
+    // From 50 days you hold at most 3 freezes, even after 60 days.
+    const s = streakInfo(on(...range(0, 59)), at(59))
+    expect(s.freezesLeft).toBe(3)
+  })
   it('a missed yesterday is covered while today is still open', () => {
     const s = streakInfo(on(...range(0, 9)), at(11))
     expect(s.current).toBe(10)
