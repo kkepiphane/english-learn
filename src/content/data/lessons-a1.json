@@ -1428,5 +1428,651 @@
         "why": "Bread is uncountable; be polite."
       }
     ]
+  },
+  {
+    "id": "a1-g-countable",
+    "unitId": "a1-u5",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "some, any, how much, how many",
+    "minutes": 10,
+    "objective": "Talk about food and quantities.",
+    "sections": [
+      {
+        "heading": "Countable or not?",
+        "en": "Countable: one apple, two apples. Uncountable: water, rice, bread, money — no plural, no a/an.",
+        "fr": "« Du riz » = some rice. On ne dit jamais « a rice » ni « rices ».",
+        "examples": [
+          "I've got some bananas.",
+          "There's some rice in the pot."
+        ]
+      },
+      {
+        "heading": "some / any · much / many",
+        "en": "some in positive sentences; any in questions and negatives. How many + plural; How much + uncountable.",
+        "examples": [
+          "Is there any milk?",
+          "We haven't got any eggs.",
+          "How many eggs? How much sugar?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1c-v1",
+        "word": "rice",
+        "ipa": "/raɪs/",
+        "pos": "noun (uncountable)",
+        "definition": "small white or brown grains you cook and eat",
+        "fr": "riz",
+        "example": "We eat rice every day.",
+        "context": "Food"
+      },
+      {
+        "id": "a1c-v2",
+        "word": "bottle",
+        "ipa": "/ˈbɒtl/",
+        "pos": "noun",
+        "definition": "a glass or plastic container for liquids",
+        "fr": "bouteille",
+        "example": "a bottle of water",
+        "context": "Quantities"
+      },
+      {
+        "id": "a1c-v3",
+        "word": "bread",
+        "ipa": "/bred/",
+        "pos": "noun (uncountable)",
+        "definition": "food made from flour and baked",
+        "fr": "pain",
+        "example": "Can I have some bread?",
+        "context": "Food"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gc-p1",
+        "type": "mcq",
+        "prompt": "There is ___ water in the fridge.",
+        "options": [
+          "a",
+          "some",
+          "many"
+        ],
+        "answer": 1,
+        "explanation": "Uncountable, positive → some."
+      },
+      {
+        "id": "a1gc-p2",
+        "type": "mcq",
+        "prompt": "How ___ apples do you want?",
+        "options": [
+          "much",
+          "many",
+          "any"
+        ],
+        "answer": 1,
+        "explanation": "Apples are countable → many."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gc-q1",
+        "type": "mcq",
+        "prompt": "Have you got ___ money?",
+        "options": [
+          "some",
+          "any",
+          "a",
+          "many"
+        ],
+        "answer": 1,
+        "explanation": "Question → any."
+      },
+      {
+        "id": "a1gc-q2",
+        "type": "mcq",
+        "prompt": "How ___ sugar do you need?",
+        "options": [
+          "many",
+          "much",
+          "lot",
+          "any"
+        ],
+        "answer": 1,
+        "explanation": "Uncountable → much."
+      },
+      {
+        "id": "a1gc-q3",
+        "type": "truefalse",
+        "prompt": "\"I'd like a rice\" is correct.",
+        "answer": false,
+        "explanation": "Rice is uncountable: some rice."
+      },
+      {
+        "id": "a1gc-q4",
+        "type": "gap",
+        "prompt": "We haven't got ___ eggs.",
+        "accepted": [
+          "any"
+        ],
+        "explanation": "Negative → any."
+      },
+      {
+        "id": "a1gc-q5",
+        "type": "mcq",
+        "prompt": "Which is uncountable?",
+        "options": [
+          "banana",
+          "egg",
+          "water",
+          "orange"
+        ],
+        "answer": 2,
+        "explanation": "water is uncountable."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "a bread",
+        "right": "some bread / a piece of bread",
+        "why": "Bread is uncountable."
+      },
+      {
+        "wrong": "How much eggs?",
+        "right": "How many eggs?",
+        "why": "Countable plural → many."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-food",
+    "unitId": "a1-u5",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Food and meals",
+    "minutes": 10,
+    "objective": "Name food and drinks and order a meal.",
+    "sections": [
+      {
+        "heading": "Meals",
+        "en": "breakfast (morning) · lunch (midday) · dinner (evening). I'd like… is polite for ordering.",
+        "examples": [
+          "For breakfast I have tea and bread.",
+          "I'd like chicken and rice, please."
+        ]
+      },
+      {
+        "heading": "Food words",
+        "en": "fish · chicken · meat · vegetables · fruit · beans · soup · juice · water · tea · coffee.",
+        "fr": "« I'd like » = je voudrais. Plus poli que « I want »."
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1fd-v1",
+        "word": "lunch",
+        "ipa": "/lʌntʃ/",
+        "pos": "noun",
+        "definition": "the meal in the middle of the day",
+        "fr": "déjeuner",
+        "example": "We have lunch at one.",
+        "context": "Meals"
+      },
+      {
+        "id": "a1fd-v2",
+        "word": "vegetables",
+        "ipa": "/ˈvedʒtəblz/",
+        "pos": "noun",
+        "definition": "plants you eat, like tomatoes or carrots",
+        "fr": "légumes",
+        "example": "Eat more vegetables!",
+        "context": "Food"
+      },
+      {
+        "id": "a1fd-v3",
+        "word": "juice",
+        "ipa": "/dʒuːs/",
+        "pos": "noun",
+        "definition": "a drink made from fruit",
+        "fr": "jus",
+        "example": "An orange juice, please.",
+        "context": "Drinks"
+      },
+      {
+        "id": "a1fd-v4",
+        "word": "hungry",
+        "ipa": "/ˈhʌŋɡri/",
+        "pos": "adjective",
+        "definition": "wanting to eat",
+        "fr": "avoir faim",
+        "example": "I'm hungry!",
+        "context": "Feelings"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vd-p1",
+        "type": "mcq",
+        "prompt": "The evening meal is…",
+        "options": [
+          "breakfast",
+          "lunch",
+          "dinner"
+        ],
+        "answer": 2,
+        "explanation": "Evening → dinner."
+      },
+      {
+        "id": "a1vd-p2",
+        "type": "mcq",
+        "prompt": "Polite order:",
+        "options": [
+          "I want fish.",
+          "I'd like fish, please.",
+          "Fish now."
+        ],
+        "answer": 1,
+        "explanation": "I'd like…, please."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vd-q1",
+        "type": "mcq",
+        "prompt": "The morning meal is…",
+        "options": [
+          "dinner",
+          "breakfast",
+          "lunch",
+          "snack"
+        ],
+        "answer": 1,
+        "explanation": "Morning → breakfast."
+      },
+      {
+        "id": "a1vd-q2",
+        "type": "gap",
+        "prompt": "I want to eat. I'm ___.",
+        "accepted": [
+          "hungry"
+        ],
+        "explanation": "hungry = wanting to eat."
+      },
+      {
+        "id": "a1vd-q3",
+        "type": "truefalse",
+        "prompt": "Juice is a drink made from fruit.",
+        "answer": true,
+        "explanation": "Orange juice, mango juice…"
+      },
+      {
+        "id": "a1vd-q4",
+        "type": "mcq",
+        "prompt": "Carrots and tomatoes are…",
+        "options": [
+          "fruit",
+          "vegetables",
+          "drinks",
+          "meat"
+        ],
+        "answer": 1,
+        "explanation": "vegetables."
+      },
+      {
+        "id": "a1vd-q5",
+        "type": "mcq",
+        "prompt": "\"I am hunger\" should be…",
+        "options": [
+          "I have hungry",
+          "I'm hungry",
+          "I hungry",
+          "I have hunger"
+        ],
+        "answer": 1,
+        "explanation": "be + hungry."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I have hunger.",
+        "right": "I'm hungry.",
+        "why": "Use be + hungry."
+      },
+      {
+        "wrong": "I want a coffee. (to a waiter)",
+        "right": "I'd like a coffee, please.",
+        "why": "More polite."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-like",
+    "unitId": "a1-u6",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "can, like and love + -ing",
+    "minutes": 10,
+    "objective": "Say what you can do and what you like doing.",
+    "sections": [
+      {
+        "heading": "can / can't",
+        "en": "can + verb for ability, the same for all persons. Can you…? — Yes, I can. / No, I can't.",
+        "examples": [
+          "I can swim, but I can't dance.",
+          "Can you play the guitar?"
+        ]
+      },
+      {
+        "heading": "like / love / hate + -ing",
+        "en": "After like, love, hate and enjoy, use the -ing form.",
+        "fr": "« J'aime nager » = I like swimming.",
+        "examples": [
+          "She loves cooking.",
+          "I don't like getting up early.",
+          "Do you enjoy reading?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1l-v1",
+        "word": "enjoy",
+        "ipa": "/ɪnˈdʒɔɪ/",
+        "pos": "verb",
+        "definition": "to like doing something",
+        "fr": "aimer, apprécier",
+        "example": "I enjoy dancing.",
+        "context": "Free time"
+      },
+      {
+        "id": "a1l-v2",
+        "word": "hate",
+        "ipa": "/heɪt/",
+        "pos": "verb",
+        "definition": "to really not like",
+        "fr": "détester",
+        "example": "He hates waiting.",
+        "context": "Feelings"
+      },
+      {
+        "id": "a1l-v3",
+        "word": "swim",
+        "ipa": "/swɪm/",
+        "pos": "verb",
+        "definition": "to move through water",
+        "fr": "nager",
+        "example": "Can you swim?",
+        "context": "Sports"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gl-p1",
+        "type": "mcq",
+        "prompt": "I like ___ music.",
+        "options": [
+          "listen",
+          "listening to",
+          "to listening"
+        ],
+        "answer": 1,
+        "explanation": "like + -ing."
+      },
+      {
+        "id": "a1gl-p2",
+        "type": "mcq",
+        "prompt": "She ___ speak three languages.",
+        "options": [
+          "can",
+          "cans",
+          "can to"
+        ],
+        "answer": 0,
+        "explanation": "can + verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gl-q1",
+        "type": "mcq",
+        "prompt": "He loves ___ football.",
+        "options": [
+          "play",
+          "playing",
+          "plays",
+          "to playing"
+        ],
+        "answer": 1,
+        "explanation": "love + -ing."
+      },
+      {
+        "id": "a1gl-q2",
+        "type": "mcq",
+        "prompt": "\"Can you cook?\" — \"No, I ___.\"",
+        "options": [
+          "don't",
+          "can't",
+          "not",
+          "isn't"
+        ],
+        "answer": 1,
+        "explanation": "Short answer: No, I can't."
+      },
+      {
+        "id": "a1gl-q3",
+        "type": "gap",
+        "prompt": "I enjoy ___ (read).",
+        "accepted": [
+          "reading"
+        ],
+        "explanation": "enjoy + -ing."
+      },
+      {
+        "id": "a1gl-q4",
+        "type": "truefalse",
+        "prompt": "\"She can to drive\" is correct.",
+        "answer": false,
+        "explanation": "No to after can."
+      },
+      {
+        "id": "a1gl-q5",
+        "type": "mcq",
+        "prompt": "We hate ___ in the rain.",
+        "options": [
+          "walk",
+          "walking",
+          "walks",
+          "to walking"
+        ],
+        "answer": 1,
+        "explanation": "hate + -ing."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I like swim.",
+        "right": "I like swimming.",
+        "why": "like + -ing."
+      },
+      {
+        "wrong": "He can plays.",
+        "right": "He can play.",
+        "why": "can + base verb."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-freetime",
+    "unitId": "a1-u6",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Free time and weather",
+    "minutes": 10,
+    "objective": "Talk about hobbies and the weather.",
+    "sections": [
+      {
+        "heading": "Hobbies",
+        "en": "play football / cards · go swimming / shopping · watch films · listen to music · read books.",
+        "fr": "play + sport/jeu, go + activité en -ing.",
+        "examples": [
+          "At the weekend I play football.",
+          "We go shopping on Saturday."
+        ]
+      },
+      {
+        "heading": "Weather",
+        "en": "It's sunny · hot · cold · windy · raining · cloudy. Ask: What's the weather like?",
+        "examples": [
+          "What's the weather like today? — It's hot and sunny.",
+          "It's raining. Take an umbrella!"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1fr-v1",
+        "word": "weekend",
+        "ipa": "/ˌwiːkˈend/",
+        "pos": "noun",
+        "definition": "Saturday and Sunday",
+        "fr": "week-end",
+        "example": "What do you do at the weekend?",
+        "context": "Free time"
+      },
+      {
+        "id": "a1fr-v2",
+        "word": "sunny",
+        "ipa": "/ˈsʌni/",
+        "pos": "adjective",
+        "definition": "with a lot of sun",
+        "fr": "ensoleillé",
+        "example": "It's sunny today.",
+        "context": "Weather"
+      },
+      {
+        "id": "a1fr-v3",
+        "word": "umbrella",
+        "ipa": "/ʌmˈbrelə/",
+        "pos": "noun",
+        "definition": "a thing that protects you from rain",
+        "fr": "parapluie",
+        "example": "Take your umbrella.",
+        "context": "Weather"
+      },
+      {
+        "id": "a1fr-v4",
+        "word": "hobby",
+        "ipa": "/ˈhɒbi/",
+        "pos": "noun",
+        "definition": "something you like doing in your free time",
+        "fr": "loisir",
+        "example": "My hobby is photography.",
+        "context": "Free time"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vf2-p1",
+        "type": "mcq",
+        "prompt": "___ football",
+        "options": [
+          "go",
+          "play",
+          "do"
+        ],
+        "answer": 1,
+        "explanation": "play + sport."
+      },
+      {
+        "id": "a1vf2-p2",
+        "type": "mcq",
+        "prompt": "Lots of water from the sky:",
+        "options": [
+          "It's sunny.",
+          "It's raining.",
+          "It's hot."
+        ],
+        "answer": 1,
+        "explanation": "raining."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vf2-q1",
+        "type": "mcq",
+        "prompt": "I ___ swimming on Sundays.",
+        "options": [
+          "play",
+          "go",
+          "make",
+          "do"
+        ],
+        "answer": 1,
+        "explanation": "go swimming."
+      },
+      {
+        "id": "a1vf2-q2",
+        "type": "mcq",
+        "prompt": "\"What's the weather like?\" asks about…",
+        "options": [
+          "food",
+          "the weather",
+          "a person",
+          "time"
+        ],
+        "answer": 1,
+        "explanation": "The weather."
+      },
+      {
+        "id": "a1vf2-q3",
+        "type": "gap",
+        "prompt": "When it rains, take an ___.",
+        "accepted": [
+          "umbrella"
+        ],
+        "explanation": "umbrella."
+      },
+      {
+        "id": "a1vf2-q4",
+        "type": "truefalse",
+        "prompt": "\"It's windy\" means there is a lot of wind.",
+        "answer": true,
+        "explanation": "windy = lots of wind."
+      },
+      {
+        "id": "a1vf2-q5",
+        "type": "mcq",
+        "prompt": "Something you like doing in your free time is a…",
+        "options": [
+          "job",
+          "hobby",
+          "habit",
+          "meal"
+        ],
+        "answer": 1,
+        "explanation": "hobby."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I make sport.",
+        "right": "I do sport. / I play football.",
+        "why": "Not make for sport."
+      },
+      {
+        "wrong": "It's rain.",
+        "right": "It's raining.",
+        "why": "Use the -ing form."
+      }
+    ]
   }
 ]

@@ -1946,5 +1946,668 @@
         "why": "must have = deduction; should have = criticism."
       }
     ]
+  },
+  {
+    "id": "b2-g-future-perfect",
+    "unitId": "b2-u5",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Future continuous and future perfect",
+    "minutes": 16,
+    "objective": "Talk about actions in progress or completed at a future time: plans for your studies and career.",
+    "sections": [
+      {
+        "heading": "Future continuous",
+        "en": "will be + -ing = an action in progress at a future moment. Also a polite way to ask about plans.",
+        "fr": "« Demain à 10 h, je serai en train de passer l'examen » = I'll be taking the exam.",
+        "examples": [
+          "This time next year, I'll be studying in Montreal.",
+          "Will you be using the car tonight?"
+        ]
+      },
+      {
+        "heading": "Future perfect",
+        "en": "will have + past participle = completed before a future time. Often with by (by 2027, by the time…).",
+        "examples": [
+          "By June, I'll have finished my degree.",
+          "By the time you arrive, we'll have eaten.",
+          "In five years, she will have worked here for a decade."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2fp-v1",
+        "word": "by the time",
+        "ipa": "/baɪ ðə taɪm/",
+        "pos": "conjunction",
+        "definition": "before or when something happens",
+        "fr": "d'ici à ce que, au moment où",
+        "example": "By the time I graduate, I'll be 24.",
+        "context": "Future"
+      },
+      {
+        "id": "b2fp-v2",
+        "word": "graduate",
+        "ipa": "/ˈɡrædʒueɪt/",
+        "pos": "verb",
+        "definition": "to complete a university degree",
+        "fr": "obtenir son diplôme",
+        "example": "She'll graduate next year.",
+        "context": "Studies"
+      },
+      {
+        "id": "b2fp-v3",
+        "word": "milestone",
+        "ipa": "/ˈmaɪlstəʊn/",
+        "pos": "noun",
+        "definition": "an important stage in progress",
+        "fr": "étape importante",
+        "example": "Reaching B2 is a big milestone.",
+        "context": "Goals"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2fp-p1",
+        "type": "mcq",
+        "prompt": "At 9 tomorrow, I ___ my interview.",
+        "options": [
+          "will do",
+          "will be doing",
+          "will have done"
+        ],
+        "answer": 1,
+        "explanation": "In progress at a future time → will be doing."
+      },
+      {
+        "id": "b2fp-p2",
+        "type": "mcq",
+        "prompt": "By 2030, they ___ the bridge.",
+        "options": [
+          "will build",
+          "will be building",
+          "will have built"
+        ],
+        "answer": 2,
+        "explanation": "Completed before a future time → will have built."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2fp-q1",
+        "type": "mcq",
+        "prompt": "By Friday, I ___ the report.",
+        "options": [
+          "will finish",
+          "will have finished",
+          "am finishing",
+          "finish"
+        ],
+        "answer": 1,
+        "explanation": "by + future time → future perfect."
+      },
+      {
+        "id": "b2fp-q2",
+        "type": "mcq",
+        "prompt": "Don't call at 8 — we ___ dinner.",
+        "options": [
+          "will have",
+          "will be having",
+          "will have had",
+          "have"
+        ],
+        "answer": 1,
+        "explanation": "Action in progress at 8 → future continuous."
+      },
+      {
+        "id": "b2fp-q3",
+        "type": "gap",
+        "prompt": "By the time you read this, I will ___ left. (one word)",
+        "accepted": [
+          "have"
+        ],
+        "explanation": "will have + past participle."
+      },
+      {
+        "id": "b2fp-q4",
+        "type": "truefalse",
+        "prompt": "\"Will you be using the printer?\" is a polite question about plans.",
+        "answer": true,
+        "explanation": "Future continuous is often used politely."
+      },
+      {
+        "id": "b2fp-q5",
+        "type": "mcq",
+        "prompt": "Next month, she ___ here for ten years.",
+        "options": [
+          "will work",
+          "will have worked",
+          "works",
+          "is working"
+        ],
+        "answer": 1,
+        "explanation": "Duration up to a future point → future perfect."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "By June I will finish.",
+        "right": "By June I will have finished.",
+        "why": "by + time → future perfect."
+      },
+      {
+        "wrong": "Tomorrow at 10 I will take the exam. (in progress)",
+        "right": "Tomorrow at 10 I'll be taking the exam.",
+        "why": "In progress → will be + -ing."
+      }
+    ]
+  },
+  {
+    "id": "b2-v-society",
+    "unitId": "b2-u5",
+    "level": "B2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Society and social issues",
+    "minutes": 16,
+    "objective": "Discuss social topics that appear in IELTS and TOEFL: inequality, urbanisation, unemployment.",
+    "sections": [
+      {
+        "heading": "Key words",
+        "en": "inequality · poverty · unemployment · urbanisation · access to healthcare · the cost of living · public services · the gap between rich and poor.",
+        "fr": "Sujets fréquents en IELTS Writing Task 2 et Speaking Part 3.",
+        "examples": [
+          "Urbanisation puts pressure on public services.",
+          "The cost of living has risen sharply."
+        ]
+      },
+      {
+        "heading": "Talking about solutions",
+        "en": "tackle a problem · raise awareness · invest in · provide access to · reduce the gap.",
+        "examples": [
+          "Governments should invest in rural schools.",
+          "Campaigns can raise awareness of mental health."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2so-v1",
+        "word": "inequality",
+        "ipa": "/ˌɪnɪˈkwɒləti/",
+        "pos": "noun",
+        "definition": "an unfair difference between groups",
+        "fr": "inégalité",
+        "example": "Income inequality is growing.",
+        "context": "Society"
+      },
+      {
+        "id": "b2so-v2",
+        "word": "tackle",
+        "ipa": "/ˈtækl/",
+        "pos": "verb",
+        "definition": "to deal with a difficult problem",
+        "fr": "s'attaquer à",
+        "example": "We must tackle youth unemployment.",
+        "context": "Solutions"
+      },
+      {
+        "id": "b2so-v3",
+        "word": "cost of living",
+        "ipa": "/kɒst əv ˈlɪvɪŋ/",
+        "pos": "noun",
+        "definition": "the money needed for basic things like food and rent",
+        "fr": "coût de la vie",
+        "example": "The cost of living is high in cities.",
+        "context": "Economy"
+      },
+      {
+        "id": "b2so-v4",
+        "word": "urbanisation",
+        "ipa": "/ˌɜːbənaɪˈzeɪʃn/",
+        "pos": "noun",
+        "definition": "people moving from the countryside to cities",
+        "fr": "urbanisation",
+        "example": "Rapid urbanisation creates traffic.",
+        "context": "Cities"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2so-p1",
+        "type": "mcq",
+        "prompt": "Deal with a problem = ___ a problem",
+        "options": [
+          "tackle",
+          "raise",
+          "provide"
+        ],
+        "answer": 0,
+        "explanation": "tackle a problem."
+      },
+      {
+        "id": "b2so-p2",
+        "type": "mcq",
+        "prompt": "Making people know about an issue = ___ awareness",
+        "options": [
+          "make",
+          "raise",
+          "rise"
+        ],
+        "answer": 1,
+        "explanation": "raise awareness."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2so-q1",
+        "type": "mcq",
+        "prompt": "People moving to cities:",
+        "options": [
+          "inequality",
+          "urbanisation",
+          "poverty",
+          "pollution"
+        ],
+        "answer": 1,
+        "explanation": "urbanisation."
+      },
+      {
+        "id": "b2so-q2",
+        "type": "gap",
+        "prompt": "Food and rent prices = the cost of ___.",
+        "accepted": [
+          "living"
+        ],
+        "explanation": "the cost of living."
+      },
+      {
+        "id": "b2so-q3",
+        "type": "mcq",
+        "prompt": "Which collocation is correct?",
+        "options": [
+          "make awareness",
+          "rise awareness",
+          "raise awareness",
+          "do awareness"
+        ],
+        "answer": 2,
+        "explanation": "raise awareness."
+      },
+      {
+        "id": "b2so-q4",
+        "type": "truefalse",
+        "prompt": "\"Inequality\" means an unfair difference between groups.",
+        "answer": true,
+        "explanation": "inequality = lack of equality."
+      },
+      {
+        "id": "b2so-q5",
+        "type": "mcq",
+        "prompt": "The government should ___ in public transport.",
+        "options": [
+          "invest",
+          "spend in",
+          "tackle",
+          "provide"
+        ],
+        "answer": 0,
+        "explanation": "invest in something."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "rise awareness",
+        "right": "raise awareness",
+        "why": "raise (transitive) ≠ rise (intransitive)."
+      },
+      {
+        "wrong": "the life cost",
+        "right": "the cost of living",
+        "why": "Fixed expression."
+      }
+    ]
+  },
+  {
+    "id": "b2-g-passive-reporting",
+    "unitId": "b2-u6",
+    "level": "B2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "It is said that… and have something done",
+    "minutes": 16,
+    "objective": "Report opinions impersonally and talk about services others do for you.",
+    "sections": [
+      {
+        "heading": "Impersonal passive",
+        "en": "It is said / believed / thought that + clause. Or: Subject + is said to + verb / to have + past participle.",
+        "fr": "Très utile en écriture formelle pour présenter des opinions sans citer de source précise.",
+        "examples": [
+          "It is believed that the city was founded in 1880.",
+          "The president is said to be ill.",
+          "The painting is thought to have been stolen."
+        ]
+      },
+      {
+        "heading": "Causative: have / get something done",
+        "en": "Someone else does it for you: have + object + past participle. get is more informal.",
+        "examples": [
+          "I had my hair cut yesterday.",
+          "We're getting the roof repaired.",
+          "She had her phone stolen. (bad experience)"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2pr-v1",
+        "word": "allegedly",
+        "ipa": "/əˈledʒɪdli/",
+        "pos": "adverb",
+        "definition": "said to be true, without proof",
+        "fr": "prétendument",
+        "example": "He allegedly took the money.",
+        "context": "News"
+      },
+      {
+        "id": "b2pr-v2",
+        "word": "repair",
+        "ipa": "/rɪˈpeə/",
+        "pos": "verb",
+        "definition": "to fix something broken",
+        "fr": "réparer",
+        "example": "I need to get my car repaired.",
+        "context": "Services"
+      },
+      {
+        "id": "b2pr-v3",
+        "word": "found",
+        "ipa": "/faʊnd/",
+        "pos": "verb",
+        "definition": "to start an organisation or city",
+        "fr": "fonder",
+        "example": "The school was founded in 1990.",
+        "context": "History"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2pr-p1",
+        "type": "mcq",
+        "prompt": "It ___ that the price will rise.",
+        "options": [
+          "says",
+          "is said",
+          "has said"
+        ],
+        "answer": 1,
+        "explanation": "Impersonal passive: It is said that…"
+      },
+      {
+        "id": "b2pr-p2",
+        "type": "mcq",
+        "prompt": "I ___ my laptop repaired last week.",
+        "options": [
+          "had",
+          "made",
+          "did"
+        ],
+        "answer": 0,
+        "explanation": "have something done."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2pr-q1",
+        "type": "mcq",
+        "prompt": "He is believed ___ the country.",
+        "options": [
+          "leaving",
+          "to have left",
+          "left",
+          "to leave yesterday"
+        ],
+        "answer": 1,
+        "explanation": "Past event → to have + past participle."
+      },
+      {
+        "id": "b2pr-q2",
+        "type": "mcq",
+        "prompt": "We're ___ our house painted.",
+        "options": [
+          "doing",
+          "having",
+          "making",
+          "letting"
+        ],
+        "answer": 1,
+        "explanation": "having something done."
+      },
+      {
+        "id": "b2pr-q3",
+        "type": "gap",
+        "prompt": "It is ___ that he was born in Ghana. (thought / believed…)",
+        "accepted": [
+          "thought",
+          "believed",
+          "said",
+          "reported"
+        ],
+        "explanation": "It is thought/believed/said that…"
+      },
+      {
+        "id": "b2pr-q4",
+        "type": "truefalse",
+        "prompt": "\"I had my hair cut\" means someone else cut my hair.",
+        "answer": true,
+        "explanation": "have + object + past participle = a service someone does for you."
+      },
+      {
+        "id": "b2pr-q5",
+        "type": "mcq",
+        "prompt": "She had her bag ___ on the bus.",
+        "options": [
+          "steal",
+          "stealing",
+          "stolen",
+          "stole"
+        ],
+        "answer": 2,
+        "explanation": "have + object + past participle."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I cut my hair at the hairdresser's.",
+        "right": "I had my hair cut at the hairdresser's.",
+        "why": "Someone else did it → causative."
+      },
+      {
+        "wrong": "He is said that he is rich.",
+        "right": "He is said to be rich. / It is said that he is rich.",
+        "why": "Two structures, don't mix them."
+      }
+    ]
+  },
+  {
+    "id": "b2-v-word-formation",
+    "unitId": "b2-u6",
+    "level": "B2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Word formation: prefixes and suffixes",
+    "minutes": 14,
+    "objective": "Build word families to expand your vocabulary fast.",
+    "sections": [
+      {
+        "heading": "Suffixes",
+        "en": "Nouns: -tion, -ment, -ness, -ity (decide → decision, happy → happiness). Adjectives: -ful, -less, -able, -ive (use → useful/useless). Adverbs: -ly.",
+        "table": [
+          [
+            "Verb",
+            "Noun",
+            "Adjective"
+          ],
+          [
+            "create",
+            "creation",
+            "creative"
+          ],
+          [
+            "employ",
+            "employment",
+            "employable"
+          ],
+          [
+            "succeed",
+            "success",
+            "successful"
+          ]
+        ]
+      },
+      {
+        "heading": "Prefixes",
+        "en": "Negative: un- (unhappy), in-/im-/il-/ir- (impossible, illegal, irregular), dis- (disagree). Others: re- (again), over- (too much), mis- (wrongly).",
+        "fr": "Exercice classique des examens Cambridge et du TOEFL : trouver la bonne forme du mot.",
+        "examples": [
+          "The instructions were misleading.",
+          "I had to rewrite my essay.",
+          "Don't overcook the rice."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b2wf-v1",
+        "word": "employment",
+        "ipa": "/ɪmˈplɔɪmənt/",
+        "pos": "noun",
+        "definition": "having a paid job",
+        "fr": "emploi",
+        "example": "Employment rates are rising.",
+        "context": "Work"
+      },
+      {
+        "id": "b2wf-v2",
+        "word": "misleading",
+        "ipa": "/ˌmɪsˈliːdɪŋ/",
+        "pos": "adjective",
+        "definition": "giving the wrong idea",
+        "fr": "trompeur",
+        "example": "The advert was misleading.",
+        "context": "Media"
+      },
+      {
+        "id": "b2wf-v3",
+        "word": "irregular",
+        "ipa": "/ɪˈreɡjələ/",
+        "pos": "adjective",
+        "definition": "not following the normal rule",
+        "fr": "irrégulier",
+        "example": "\"Go\" is an irregular verb.",
+        "context": "Grammar"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b2wf-p1",
+        "type": "mcq",
+        "prompt": "succeed → (adjective)",
+        "options": [
+          "success",
+          "successful",
+          "succession"
+        ],
+        "answer": 1,
+        "explanation": "succeed → successful."
+      },
+      {
+        "id": "b2wf-p2",
+        "type": "mcq",
+        "prompt": "Opposite of 'legal':",
+        "options": [
+          "unlegal",
+          "illegal",
+          "dislegal"
+        ],
+        "answer": 1,
+        "explanation": "il- before l: illegal."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b2wf-q1",
+        "type": "mcq",
+        "prompt": "Opposite of 'possible':",
+        "options": [
+          "unpossible",
+          "impossible",
+          "inpossible",
+          "dispossible"
+        ],
+        "answer": 1,
+        "explanation": "im- before p: impossible."
+      },
+      {
+        "id": "b2wf-q2",
+        "type": "gap",
+        "prompt": "happy → ___ (noun)",
+        "accepted": [
+          "happiness"
+        ],
+        "explanation": "y → i + ness."
+      },
+      {
+        "id": "b2wf-q3",
+        "type": "mcq",
+        "prompt": "To write again =",
+        "options": [
+          "miswrite",
+          "rewrite",
+          "overwrite",
+          "unwrite"
+        ],
+        "answer": 1,
+        "explanation": "re- = again."
+      },
+      {
+        "id": "b2wf-q4",
+        "type": "truefalse",
+        "prompt": "\"useless\" means very useful.",
+        "answer": false,
+        "explanation": "-less = without: useless = not useful."
+      },
+      {
+        "id": "b2wf-q5",
+        "type": "mcq",
+        "prompt": "create → (adjective)",
+        "options": [
+          "creation",
+          "creative",
+          "creatively",
+          "creator"
+        ],
+        "answer": 1,
+        "explanation": "create → creative."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "unpossible",
+        "right": "impossible",
+        "why": "im- before p, b, m."
+      },
+      {
+        "wrong": "disagreeable (= I disagree)",
+        "right": "I disagree",
+        "why": "disagreeable means unpleasant."
+      }
+    ]
   }
 ]

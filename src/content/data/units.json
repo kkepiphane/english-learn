@@ -218,5 +218,115 @@
       "c1-g-nominalisation",
       "c1-g-ellipsis"
     ]
+  },
+  {
+    "id": "a1-u5",
+    "level": "A1",
+    "order": 5,
+    "title": "Food and home",
+    "description": "Food, quantities and ordering a meal.",
+    "lessonIds": [
+      "a1-g-countable",
+      "a1-v-food"
+    ]
+  },
+  {
+    "id": "a1-u6",
+    "level": "A1",
+    "order": 6,
+    "title": "Free time",
+    "description": "Abilities, likes, hobbies and weather.",
+    "lessonIds": [
+      "a1-g-like",
+      "a1-v-freetime"
+    ]
+  },
+  {
+    "id": "a2-u5",
+    "level": "A2",
+    "order": 5,
+    "title": "Comparing and describing",
+    "description": "Compare things and describe people.",
+    "lessonIds": [
+      "a2-g-comparatives",
+      "a2-v-describe"
+    ]
+  },
+  {
+    "id": "a2-u6",
+    "level": "A2",
+    "order": 6,
+    "title": "Problems and health",
+    "description": "Too, enough, and a visit to the doctor.",
+    "lessonIds": [
+      "a2-g-too-enough",
+      "a2-v-health"
+    ]
+  },
+  {
+    "id": "b1-u5",
+    "level": "B1",
+    "order": 5,
+    "title": "Habits and relationships",
+    "description": "Gerunds, infinitives and everyday phrasal verbs.",
+    "lessonIds": [
+      "b1-g-gerund-inf",
+      "b1-v-phrasal"
+    ]
+  },
+  {
+    "id": "b1-u6",
+    "level": "B1",
+    "order": 6,
+    "title": "Then and now",
+    "description": "Past habits, money and shopping online.",
+    "lessonIds": [
+      "b1-g-used-to",
+      "b1-v-money"
+    ]
+  },
+  {
+    "id": "b2-u5",
+    "level": "B2",
+    "order": 5,
+    "title": "Future and society",
+    "description": "Advanced futures and social issues.",
+    "lessonIds": [
+      "b2-g-future-perfect",
+      "b2-v-society"
+    ]
+  },
+  {
+    "id": "b2-u6",
+    "level": "B2",
+    "order": 6,
+    "title": "Formal English toolkit",
+    "description": "Impersonal passive, causatives and word families.",
+    "lessonIds": [
+      "b2-g-passive-reporting",
+      "b2-v-word-formation"
+    ]
+  },
+  {
+    "id": "c1-u5",
+    "level": "C1",
+    "order": 5,
+    "title": "Precision in argument",
+    "description": "Future in the past and academic collocations.",
+    "lessonIds": [
+      "c1-g-future-past",
+      "c1-v-collocations"
+    ]
+  },
+  {
+    "id": "c1-u6",
+    "level": "C1",
+    "order": 6,
+    "title": "Sounding natural",
+    "description": "Spoken discourse markers and register.",
+    "lessonIds": [
+      "c1-g-discourse",
+      "c1-v-register"
+    ]
   }
 ]

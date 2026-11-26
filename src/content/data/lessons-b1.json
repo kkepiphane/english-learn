@@ -1477,5 +1477,689 @@
         "why": "Uncountable noun."
       }
     ]
+  },
+  {
+    "id": "b1-g-gerund-inf",
+    "unitId": "b1-u5",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Gerund or infinitive?",
+    "minutes": 14,
+    "objective": "Choose between -ing and to + verb after common verbs.",
+    "sections": [
+      {
+        "heading": "Verb + -ing",
+        "en": "enjoy, avoid, finish, mind, suggest, keep, consider + -ing. Also after prepositions: interested in learning.",
+        "examples": [
+          "I enjoy meeting new people.",
+          "She avoided answering the question.",
+          "I'm good at solving problems."
+        ]
+      },
+      {
+        "heading": "Verb + to + verb",
+        "en": "want, decide, hope, plan, agree, refuse, manage, need + to + verb.",
+        "fr": "Après une préposition, toujours -ing : « before leaving », « without paying ».",
+        "examples": [
+          "I decided to study abroad.",
+          "We managed to finish on time."
+        ]
+      },
+      {
+        "heading": "Change of meaning",
+        "en": "stop / remember / try change meaning.",
+        "table": [
+          [
+            "-ing",
+            "to + verb"
+          ],
+          [
+            "I stopped smoking. (no more)",
+            "I stopped to smoke. (in order to)"
+          ],
+          [
+            "I remember locking the door. (memory)",
+            "Remember to lock the door. (don't forget)"
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1gi-v1",
+        "word": "avoid",
+        "ipa": "/əˈvɔɪd/",
+        "pos": "verb",
+        "definition": "to stay away from or not do something",
+        "fr": "éviter",
+        "example": "Avoid eating late at night.",
+        "context": "Habits"
+      },
+      {
+        "id": "b1gi-v2",
+        "word": "manage",
+        "ipa": "/ˈmænɪdʒ/",
+        "pos": "verb",
+        "definition": "to succeed in doing something difficult",
+        "fr": "réussir à",
+        "example": "I managed to fix my phone.",
+        "context": "Success"
+      },
+      {
+        "id": "b1gi-v3",
+        "word": "consider",
+        "ipa": "/kənˈsɪdə/",
+        "pos": "verb",
+        "definition": "to think about carefully",
+        "fr": "envisager",
+        "example": "I'm considering changing jobs.",
+        "context": "Decisions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1gi-p1",
+        "type": "mcq",
+        "prompt": "I enjoy ___ in the morning.",
+        "options": [
+          "to run",
+          "running",
+          "run"
+        ],
+        "answer": 1,
+        "explanation": "enjoy is followed by -ing."
+      },
+      {
+        "id": "b1gi-p2",
+        "type": "mcq",
+        "prompt": "They decided ___ a new car.",
+        "options": [
+          "buying",
+          "to buy",
+          "buy"
+        ],
+        "answer": 1,
+        "explanation": "decide is followed by to + verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1gi-q1",
+        "type": "mcq",
+        "prompt": "Would you mind ___ the window?",
+        "options": [
+          "to open",
+          "opening",
+          "open",
+          "opened"
+        ],
+        "answer": 1,
+        "explanation": "mind + -ing."
+      },
+      {
+        "id": "b1gi-q2",
+        "type": "mcq",
+        "prompt": "I hope ___ you soon.",
+        "options": [
+          "seeing",
+          "to see",
+          "see",
+          "saw"
+        ],
+        "answer": 1,
+        "explanation": "hope + to + verb."
+      },
+      {
+        "id": "b1gi-q3",
+        "type": "gap",
+        "prompt": "He left without ___ (say) goodbye.",
+        "accepted": [
+          "saying"
+        ],
+        "explanation": "After a preposition (without), use -ing."
+      },
+      {
+        "id": "b1gi-q4",
+        "type": "truefalse",
+        "prompt": "\"Remember to call me\" means: don't forget to call me.",
+        "answer": true,
+        "explanation": "remember + to = a future action not to forget."
+      },
+      {
+        "id": "b1gi-q5",
+        "type": "mcq",
+        "prompt": "She refused ___ the contract.",
+        "options": [
+          "signing",
+          "to sign",
+          "sign",
+          "signed"
+        ],
+        "answer": 1,
+        "explanation": "refuse + to + verb."
+      },
+      {
+        "id": "b1gi-q6",
+        "type": "mcq",
+        "prompt": "I'm interested in ___ photography.",
+        "options": [
+          "learn",
+          "to learn",
+          "learning",
+          "learned"
+        ],
+        "answer": 2,
+        "explanation": "Preposition in + -ing."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I enjoy to dance.",
+        "right": "I enjoy dancing.",
+        "why": "enjoy + -ing."
+      },
+      {
+        "wrong": "before to leave",
+        "right": "before leaving",
+        "why": "Preposition + -ing."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-phrasal",
+    "unitId": "b1-u5",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Everyday phrasal verbs",
+    "minutes": 14,
+    "objective": "Understand and use the phrasal verbs people use every day.",
+    "sections": [
+      {
+        "heading": "Phrasal verbs",
+        "en": "A verb + particle with a new meaning: look after (take care of), get on with (have a good relationship), give up (stop), find out (discover), turn down (refuse), set up (start).",
+        "fr": "Ils sont partout à l'oral. Apprenez-les avec un exemple, pas en liste.",
+        "examples": [
+          "I look after my little brother.",
+          "She gets on well with her colleagues.",
+          "I found out the truth yesterday."
+        ]
+      },
+      {
+        "heading": "Separable or not?",
+        "en": "Some can be separated by the object: turn the offer down / turn down the offer. With a pronoun, put it in the middle: turn it down.",
+        "examples": [
+          "Can you pick me up at 6?",
+          "He gave it up last year."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1ph-v1",
+        "word": "look after",
+        "ipa": "/lʊk ˈɑːftə/",
+        "pos": "phrasal verb",
+        "definition": "to take care of",
+        "fr": "s'occuper de",
+        "example": "Who looks after your kids?",
+        "context": "Family"
+      },
+      {
+        "id": "b1ph-v2",
+        "word": "give up",
+        "ipa": "/ɡɪv ʌp/",
+        "pos": "phrasal verb",
+        "definition": "to stop doing something",
+        "fr": "abandonner, arrêter",
+        "example": "Don't give up!",
+        "context": "Motivation"
+      },
+      {
+        "id": "b1ph-v3",
+        "word": "find out",
+        "ipa": "/faɪnd aʊt/",
+        "pos": "phrasal verb",
+        "definition": "to discover information",
+        "fr": "découvrir, apprendre",
+        "example": "I found out the exam date.",
+        "context": "Information"
+      },
+      {
+        "id": "b1ph-v4",
+        "word": "turn down",
+        "ipa": "/tɜːn daʊn/",
+        "pos": "phrasal verb",
+        "definition": "to refuse an offer",
+        "fr": "refuser",
+        "example": "She turned down the job.",
+        "context": "Work"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1ph-p1",
+        "type": "mcq",
+        "prompt": "Take care of = ___",
+        "options": [
+          "look for",
+          "look after",
+          "look up"
+        ],
+        "answer": 1,
+        "explanation": "look after = take care of."
+      },
+      {
+        "id": "b1ph-p2",
+        "type": "mcq",
+        "prompt": "Stop doing = ___",
+        "options": [
+          "give up",
+          "give in",
+          "set up"
+        ],
+        "answer": 0,
+        "explanation": "give up = stop."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1ph-q1",
+        "type": "mcq",
+        "prompt": "Have a good relationship with = ___",
+        "options": [
+          "get on with",
+          "get over",
+          "get by",
+          "get up"
+        ],
+        "answer": 0,
+        "explanation": "get on with someone."
+      },
+      {
+        "id": "b1ph-q2",
+        "type": "gap",
+        "prompt": "I want to find ___ more about the course.",
+        "accepted": [
+          "out"
+        ],
+        "explanation": "find out = discover information."
+      },
+      {
+        "id": "b1ph-q3",
+        "type": "mcq",
+        "prompt": "He refused the offer. He ___ it ___.",
+        "options": [
+          "turned / down",
+          "turned / off",
+          "gave / out",
+          "set / up"
+        ],
+        "answer": 0,
+        "explanation": "turn something down = refuse."
+      },
+      {
+        "id": "b1ph-q4",
+        "type": "truefalse",
+        "prompt": "\"Pick up me\" is the correct order.",
+        "answer": false,
+        "explanation": "Pronoun goes in the middle: pick me up."
+      },
+      {
+        "id": "b1ph-q5",
+        "type": "mcq",
+        "prompt": "They ___ a new business last year.",
+        "options": [
+          "set up",
+          "gave up",
+          "looked after",
+          "found out"
+        ],
+        "answer": 0,
+        "explanation": "set up = start a business."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Pick up me at 6.",
+        "right": "Pick me up at 6.",
+        "why": "Pronoun in the middle."
+      },
+      {
+        "wrong": "I look after my keys. (= search)",
+        "right": "I'm looking for my keys.",
+        "why": "look for = search; look after = take care of."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-used-to",
+    "unitId": "b1-u6",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "used to and would",
+    "minutes": 14,
+    "objective": "Talk about past habits and how things have changed.",
+    "sections": [
+      {
+        "heading": "used to + verb",
+        "en": "A past habit or state that is no longer true. Negative: didn't use to. Question: Did you use to…?",
+        "fr": "Ne pas confondre avec « be used to + -ing » = être habitué à.",
+        "examples": [
+          "I used to live in Kara.",
+          "We didn't use to have a car.",
+          "Did you use to play football?"
+        ]
+      },
+      {
+        "heading": "would and be used to",
+        "en": "would + verb = repeated past actions (not states). be / get used to + -ing = be familiar with.",
+        "examples": [
+          "Every summer we would visit our grandparents.",
+          "I'm used to getting up early.",
+          "She's getting used to living abroad."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1ut-v1",
+        "word": "childhood",
+        "ipa": "/ˈtʃaɪldhʊd/",
+        "pos": "noun",
+        "definition": "the time when you were a child",
+        "fr": "enfance",
+        "example": "In my childhood, we lived by the sea.",
+        "context": "Memories"
+      },
+      {
+        "id": "b1ut-v2",
+        "word": "nowadays",
+        "ipa": "/ˈnaʊədeɪz/",
+        "pos": "adverb",
+        "definition": "at the present time",
+        "fr": "de nos jours",
+        "example": "Nowadays everyone has a phone.",
+        "context": "Change"
+      },
+      {
+        "id": "b1ut-v3",
+        "word": "get used to",
+        "ipa": "/ɡet juːst tə/",
+        "pos": "phrase",
+        "definition": "to become familiar with",
+        "fr": "s'habituer à",
+        "example": "You'll get used to the cold.",
+        "context": "Adapting"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1ut-p1",
+        "type": "mcq",
+        "prompt": "I ___ play the piano, but I stopped.",
+        "options": [
+          "use to",
+          "used to",
+          "am used to"
+        ],
+        "answer": 1,
+        "explanation": "Past habit → used to."
+      },
+      {
+        "id": "b1ut-p2",
+        "type": "mcq",
+        "prompt": "I'm used to ___ in English.",
+        "options": [
+          "work",
+          "working",
+          "worked"
+        ],
+        "answer": 1,
+        "explanation": "be used to + -ing."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1ut-q1",
+        "type": "mcq",
+        "prompt": "___ you use to live here?",
+        "options": [
+          "Do",
+          "Did",
+          "Were",
+          "Have"
+        ],
+        "answer": 1,
+        "explanation": "Question: Did you use to…?"
+      },
+      {
+        "id": "b1ut-q2",
+        "type": "mcq",
+        "prompt": "We ___ to have a TV.",
+        "options": [
+          "didn't used",
+          "didn't use",
+          "don't use",
+          "weren't used"
+        ],
+        "answer": 1,
+        "explanation": "Negative: didn't use to."
+      },
+      {
+        "id": "b1ut-q3",
+        "type": "gap",
+        "prompt": "She is getting used to ___ (drive) on the left.",
+        "accepted": [
+          "driving"
+        ],
+        "explanation": "get used to + -ing."
+      },
+      {
+        "id": "b1ut-q4",
+        "type": "truefalse",
+        "prompt": "\"I would live in Paris\" can mean a past state.",
+        "answer": false,
+        "explanation": "would is for repeated actions, not states: I used to live in Paris."
+      },
+      {
+        "id": "b1ut-q5",
+        "type": "mcq",
+        "prompt": "___, people send emails instead of letters.",
+        "options": [
+          "Childhood",
+          "Nowadays",
+          "Used to",
+          "Would"
+        ],
+        "answer": 1,
+        "explanation": "Nowadays = at the present time."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I use to live in Kara.",
+        "right": "I used to live in Kara.",
+        "why": "Past habit: used to."
+      },
+      {
+        "wrong": "I'm used to work late.",
+        "right": "I'm used to working late.",
+        "why": "be used to + -ing."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-money",
+    "unitId": "b1-u6",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Money and online shopping",
+    "minutes": 14,
+    "objective": "Talk about prices, payments, savings and buying online.",
+    "sections": [
+      {
+        "heading": "Money verbs",
+        "en": "spend (money on) · save (money for) · earn (from work) · borrow (from) · lend (to) · afford (have enough money for) · pay (for).",
+        "fr": "borrow = emprunter ; lend = prêter. Erreur très fréquente !",
+        "examples": [
+          "I spend too much on data.",
+          "Can you lend me 2,000 francs?",
+          "We can't afford a new car."
+        ]
+      },
+      {
+        "heading": "Online shopping",
+        "en": "add to cart · checkout · delivery · refund · return an item · a discount · a scam.",
+        "examples": [
+          "The delivery took three days.",
+          "I asked for a refund because it was broken."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1mo-v1",
+        "word": "afford",
+        "ipa": "/əˈfɔːd/",
+        "pos": "verb",
+        "definition": "to have enough money to buy something",
+        "fr": "avoir les moyens de",
+        "example": "I can't afford that phone.",
+        "context": "Money"
+      },
+      {
+        "id": "b1mo-v2",
+        "word": "refund",
+        "ipa": "/ˈriːfʌnd/",
+        "pos": "noun",
+        "definition": "money given back when you return something",
+        "fr": "remboursement",
+        "example": "I got a full refund.",
+        "context": "Shopping"
+      },
+      {
+        "id": "b1mo-v3",
+        "word": "discount",
+        "ipa": "/ˈdɪskaʊnt/",
+        "pos": "noun",
+        "definition": "a reduction in price",
+        "fr": "réduction",
+        "example": "There's a 20% discount today.",
+        "context": "Shopping"
+      },
+      {
+        "id": "b1mo-v4",
+        "word": "scam",
+        "ipa": "/skæm/",
+        "pos": "noun",
+        "definition": "a dishonest way to take people's money",
+        "fr": "arnaque",
+        "example": "That message is a scam.",
+        "context": "Safety"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1mo-p1",
+        "type": "mcq",
+        "prompt": "Can you ___ me some money? (give for a while)",
+        "options": [
+          "borrow",
+          "lend",
+          "earn"
+        ],
+        "answer": 1,
+        "explanation": "lend = give for a while."
+      },
+      {
+        "id": "b1mo-p2",
+        "type": "mcq",
+        "prompt": "Money given back = a ___",
+        "options": [
+          "refund",
+          "discount",
+          "salary"
+        ],
+        "answer": 0,
+        "explanation": "refund."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1mo-q1",
+        "type": "mcq",
+        "prompt": "I ___ 1,000 francs from my brother.",
+        "options": [
+          "lent",
+          "borrowed",
+          "earned",
+          "spent"
+        ],
+        "answer": 1,
+        "explanation": "borrow from someone."
+      },
+      {
+        "id": "b1mo-q2",
+        "type": "mcq",
+        "prompt": "We can't ___ a holiday this year.",
+        "options": [
+          "afford",
+          "pay",
+          "spend",
+          "save"
+        ],
+        "answer": 0,
+        "explanation": "afford = have enough money for."
+      },
+      {
+        "id": "b1mo-q3",
+        "type": "gap",
+        "prompt": "A reduction in price is a ___.",
+        "accepted": [
+          "discount"
+        ],
+        "explanation": "discount = lower price."
+      },
+      {
+        "id": "b1mo-q4",
+        "type": "truefalse",
+        "prompt": "A scam is an honest special offer.",
+        "answer": false,
+        "explanation": "A scam is a trick to steal money."
+      },
+      {
+        "id": "b1mo-q5",
+        "type": "mcq",
+        "prompt": "She ___ a lot of money on clothes.",
+        "options": [
+          "spends",
+          "saves",
+          "earns",
+          "affords"
+        ],
+        "answer": 0,
+        "explanation": "spend money on something."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Can you borrow me 500?",
+        "right": "Can you lend me 500?",
+        "why": "lend = give; borrow = take."
+      },
+      {
+        "wrong": "I spent money for clothes.",
+        "right": "I spent money on clothes.",
+        "why": "spend money on something."
+      }
+    ]
   }
 ]

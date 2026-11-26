@@ -1656,5 +1656,675 @@
         "why": "Days take \"on\"."
       }
     ]
+  },
+  {
+    "id": "a2-g-comparatives",
+    "unitId": "a2-u5",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Comparatives and superlatives",
+    "minutes": 12,
+    "objective": "Compare people, places and things.",
+    "sections": [
+      {
+        "heading": "Short adjectives",
+        "en": "Add -er / -est: cheap → cheaper → the cheapest. Double the consonant: big → bigger. y → i: easy → easier.",
+        "table": [
+          [
+            "Adjective",
+            "Comparative",
+            "Superlative"
+          ],
+          [
+            "cheap",
+            "cheaper",
+            "the cheapest"
+          ],
+          [
+            "big",
+            "bigger",
+            "the biggest"
+          ],
+          [
+            "busy",
+            "busier",
+            "the busiest"
+          ],
+          [
+            "good / bad",
+            "better / worse",
+            "the best / the worst"
+          ]
+        ]
+      },
+      {
+        "heading": "Long adjectives",
+        "en": "more / the most + adjective: more expensive, the most beautiful. Use than after the comparative.",
+        "fr": "« plus … que » = -er than / more … than. Jamais « more cheaper ».",
+        "examples": [
+          "Lomé is bigger than Kara.",
+          "This phone is more expensive than that one.",
+          "It's the best restaurant in town."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2cp-v1",
+        "word": "than",
+        "ipa": "/ðæn/",
+        "pos": "conjunction",
+        "definition": "used after a comparative",
+        "fr": "que (comparaison)",
+        "example": "She is taller than me.",
+        "context": "Comparing"
+      },
+      {
+        "id": "a2cp-v2",
+        "word": "crowded",
+        "ipa": "/ˈkraʊdɪd/",
+        "pos": "adjective",
+        "definition": "full of people",
+        "fr": "bondé",
+        "example": "The market is more crowded on Saturday.",
+        "context": "Places"
+      },
+      {
+        "id": "a2cp-v3",
+        "word": "quiet",
+        "ipa": "/ˈkwaɪət/",
+        "pos": "adjective",
+        "definition": "with little noise",
+        "fr": "calme",
+        "example": "My village is quieter than the city.",
+        "context": "Places"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2gc-p1",
+        "type": "mcq",
+        "prompt": "Accra is ___ than Lomé.",
+        "options": [
+          "big",
+          "bigger",
+          "biggest"
+        ],
+        "answer": 1,
+        "explanation": "big → bigger (double g)."
+      },
+      {
+        "id": "a2gc-p2",
+        "type": "mcq",
+        "prompt": "This is the ___ day of my life!",
+        "options": [
+          "good",
+          "better",
+          "best"
+        ],
+        "answer": 2,
+        "explanation": "Superlative of good → the best."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2gc-q1",
+        "type": "mcq",
+        "prompt": "Flights are ___ than buses.",
+        "options": [
+          "expensiver",
+          "more expensive",
+          "most expensive",
+          "expensive"
+        ],
+        "answer": 1,
+        "explanation": "Long adjective → more expensive."
+      },
+      {
+        "id": "a2gc-q2",
+        "type": "gap",
+        "prompt": "easy → ___ (comparative)",
+        "accepted": [
+          "easier"
+        ],
+        "explanation": "y → i + er."
+      },
+      {
+        "id": "a2gc-q3",
+        "type": "mcq",
+        "prompt": "It's ___ hotel in the city.",
+        "options": [
+          "the cheaper",
+          "the cheapest",
+          "cheapest",
+          "more cheap"
+        ],
+        "answer": 1,
+        "explanation": "Superlative: the cheapest."
+      },
+      {
+        "id": "a2gc-q4",
+        "type": "truefalse",
+        "prompt": "\"more better\" is correct.",
+        "answer": false,
+        "explanation": "better is already comparative."
+      },
+      {
+        "id": "a2gc-q5",
+        "type": "mcq",
+        "prompt": "Today is ___ than yesterday. (bad)",
+        "options": [
+          "badder",
+          "worse",
+          "worst",
+          "more bad"
+        ],
+        "answer": 1,
+        "explanation": "bad → worse."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "more cheaper",
+        "right": "cheaper",
+        "why": "One comparative only."
+      },
+      {
+        "wrong": "bigger that",
+        "right": "bigger than",
+        "why": "than, not that."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-describe",
+    "unitId": "a2-u5",
+    "level": "A2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Describing people",
+    "minutes": 12,
+    "objective": "Describe appearance and personality.",
+    "sections": [
+      {
+        "heading": "Appearance",
+        "en": "tall / short · slim / overweight · long / short hair · curly / straight hair · He has got a beard. She wears glasses.",
+        "examples": [
+          "My brother is tall and slim.",
+          "She's got long curly hair."
+        ]
+      },
+      {
+        "heading": "Personality",
+        "en": "friendly · shy · funny · kind · lazy · hard-working · generous. Ask: What's he like? (personality) / What does he look like? (appearance).",
+        "fr": "« What is he like? » = Comment est-il (caractère) ? Pas « Qu'est-ce qu'il aime »."
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2dp-v1",
+        "word": "shy",
+        "ipa": "/ʃaɪ/",
+        "pos": "adjective",
+        "definition": "nervous about talking to people",
+        "fr": "timide",
+        "example": "He's shy with new people.",
+        "context": "Personality"
+      },
+      {
+        "id": "a2dp-v2",
+        "word": "hard-working",
+        "ipa": "/ˌhɑːd ˈwɜːkɪŋ/",
+        "pos": "adjective",
+        "definition": "working with a lot of effort",
+        "fr": "travailleur",
+        "example": "My mum is very hard-working.",
+        "context": "Personality"
+      },
+      {
+        "id": "a2dp-v3",
+        "word": "curly",
+        "ipa": "/ˈkɜːli/",
+        "pos": "adjective",
+        "definition": "with lots of curves (hair)",
+        "fr": "frisé, bouclé",
+        "example": "She has curly hair.",
+        "context": "Appearance"
+      },
+      {
+        "id": "a2dp-v4",
+        "word": "generous",
+        "ipa": "/ˈdʒenərəs/",
+        "pos": "adjective",
+        "definition": "happy to give money or time",
+        "fr": "généreux",
+        "example": "My uncle is generous.",
+        "context": "Personality"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2dp-p1",
+        "type": "mcq",
+        "prompt": "\"What's she like?\" asks about…",
+        "options": [
+          "her appearance",
+          "her personality",
+          "her hobbies"
+        ],
+        "answer": 1,
+        "explanation": "What's she like? = personality."
+      },
+      {
+        "id": "a2dp-p2",
+        "type": "mcq",
+        "prompt": "Opposite of lazy:",
+        "options": [
+          "shy",
+          "hard-working",
+          "funny"
+        ],
+        "answer": 1,
+        "explanation": "lazy ≠ hard-working."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2dp-q1",
+        "type": "mcq",
+        "prompt": "Someone who makes you laugh is…",
+        "options": [
+          "kind",
+          "funny",
+          "shy",
+          "tall"
+        ],
+        "answer": 1,
+        "explanation": "funny."
+      },
+      {
+        "id": "a2dp-q2",
+        "type": "mcq",
+        "prompt": "\"What does he look like?\" — \"___\"",
+        "options": [
+          "He's friendly.",
+          "He's tall with a beard.",
+          "He likes music.",
+          "He's fine."
+        ],
+        "answer": 1,
+        "explanation": "Appearance."
+      },
+      {
+        "id": "a2dp-q3",
+        "type": "gap",
+        "prompt": "She is nervous with new people. She is ___.",
+        "accepted": [
+          "shy"
+        ],
+        "explanation": "Shy = nervous with people you don't know."
+      },
+      {
+        "id": "a2dp-q4",
+        "type": "truefalse",
+        "prompt": "\"generous\" describes someone who likes giving.",
+        "answer": true,
+        "explanation": "generous."
+      },
+      {
+        "id": "a2dp-q5",
+        "type": "mcq",
+        "prompt": "Hair that is not curly is…",
+        "options": [
+          "straight",
+          "long",
+          "short",
+          "dark"
+        ],
+        "answer": 0,
+        "explanation": "curly ≠ straight."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "He has 1.80 m.",
+        "right": "He is 1.80 m tall.",
+        "why": "Height uses be."
+      },
+      {
+        "wrong": "What is he like? (= his hobbies)",
+        "right": "What does he like?",
+        "why": "What is he like = personality."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-too-enough",
+    "unitId": "a2-u6",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "too, enough, too much, too many",
+    "minutes": 10,
+    "objective": "Say when something is a problem: too expensive, not big enough.",
+    "sections": [
+      {
+        "heading": "too / enough",
+        "en": "too + adjective (more than OK). adjective + enough (OK). not + adjective + enough (less than OK).",
+        "fr": "Attention à l'ordre : « big enough », pas « enough big ».",
+        "examples": [
+          "This bag is too heavy.",
+          "The room isn't big enough.",
+          "Are you warm enough?"
+        ]
+      },
+      {
+        "heading": "too much / too many / enough + noun",
+        "en": "too much + uncountable, too many + plural, enough + noun.",
+        "examples": [
+          "There's too much noise.",
+          "There are too many cars.",
+          "We haven't got enough chairs."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2te-v1",
+        "word": "heavy",
+        "ipa": "/ˈhevi/",
+        "pos": "adjective",
+        "definition": "weighing a lot",
+        "fr": "lourd",
+        "example": "This box is too heavy.",
+        "context": "Problems"
+      },
+      {
+        "id": "a2te-v2",
+        "word": "noise",
+        "ipa": "/nɔɪz/",
+        "pos": "noun (uncountable)",
+        "definition": "unpleasant loud sound",
+        "fr": "bruit",
+        "example": "There's too much noise here.",
+        "context": "City"
+      },
+      {
+        "id": "a2te-v3",
+        "word": "enough",
+        "ipa": "/ɪˈnʌf/",
+        "pos": "determiner / adverb",
+        "definition": "as much as you need",
+        "fr": "assez",
+        "example": "Do we have enough time?",
+        "context": "Quantity"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2te-p1",
+        "type": "mcq",
+        "prompt": "The coffee is ___ hot. I can't drink it.",
+        "options": [
+          "too",
+          "enough",
+          "very enough"
+        ],
+        "answer": 0,
+        "explanation": "Problem → too."
+      },
+      {
+        "id": "a2te-p2",
+        "type": "mcq",
+        "prompt": "He isn't old ___ to drive.",
+        "options": [
+          "too",
+          "enough",
+          "much"
+        ],
+        "answer": 1,
+        "explanation": "adjective + enough."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2te-q1",
+        "type": "mcq",
+        "prompt": "There are ___ people on the bus.",
+        "options": [
+          "too much",
+          "too many",
+          "enough much",
+          "too"
+        ],
+        "answer": 1,
+        "explanation": "Plural → too many."
+      },
+      {
+        "id": "a2te-q2",
+        "type": "mcq",
+        "prompt": "Which is correct?",
+        "options": [
+          "enough big",
+          "big enough",
+          "too enough",
+          "enough too"
+        ],
+        "answer": 1,
+        "explanation": "adjective + enough."
+      },
+      {
+        "id": "a2te-q3",
+        "type": "gap",
+        "prompt": "We don't have ___ money for the tickets.",
+        "accepted": [
+          "enough"
+        ],
+        "explanation": "enough + noun."
+      },
+      {
+        "id": "a2te-q4",
+        "type": "truefalse",
+        "prompt": "\"too much traffic\" is correct.",
+        "answer": true,
+        "explanation": "traffic is uncountable → too much."
+      },
+      {
+        "id": "a2te-q5",
+        "type": "mcq",
+        "prompt": "These shoes are ___ small. I need a bigger size.",
+        "options": [
+          "too",
+          "enough",
+          "many",
+          "much"
+        ],
+        "answer": 0,
+        "explanation": "too small = a problem."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "enough big",
+        "right": "big enough",
+        "why": "adjective + enough."
+      },
+      {
+        "wrong": "too much people",
+        "right": "too many people",
+        "why": "people is plural."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-health",
+    "unitId": "a2-u6",
+    "level": "A2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "At the doctor's",
+    "minutes": 12,
+    "objective": "Explain how you feel and understand simple advice.",
+    "sections": [
+      {
+        "heading": "Symptoms",
+        "en": "I've got a headache / a fever / a cough / a sore throat / stomach ache. I feel sick. My back hurts.",
+        "fr": "« J'ai mal à la tête » = I've got a headache. « J'ai mal au dos » = My back hurts.",
+        "examples": [
+          "I've got a fever and a sore throat.",
+          "My leg hurts."
+        ]
+      },
+      {
+        "heading": "Advice",
+        "en": "You should rest. · Take this medicine twice a day. · Drink plenty of water. · Come back if it gets worse.",
+        "examples": [
+          "You should stay in bed for two days.",
+          "Take one tablet after each meal."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2h-v1",
+        "word": "headache",
+        "ipa": "/ˈhedeɪk/",
+        "pos": "noun",
+        "definition": "a pain in your head",
+        "fr": "mal de tête",
+        "example": "I've got a terrible headache.",
+        "context": "Symptoms"
+      },
+      {
+        "id": "a2h-v2",
+        "word": "fever",
+        "ipa": "/ˈfiːvə/",
+        "pos": "noun",
+        "definition": "a high body temperature",
+        "fr": "fièvre",
+        "example": "She has a fever.",
+        "context": "Symptoms"
+      },
+      {
+        "id": "a2h-v3",
+        "word": "medicine",
+        "ipa": "/ˈmedsn/",
+        "pos": "noun",
+        "definition": "something you take to get better",
+        "fr": "médicament",
+        "example": "Take your medicine.",
+        "context": "Treatment"
+      },
+      {
+        "id": "a2h-v4",
+        "word": "appointment",
+        "ipa": "/əˈpɔɪntmənt/",
+        "pos": "noun",
+        "definition": "a fixed time to see a doctor or someone",
+        "fr": "rendez-vous",
+        "example": "I have an appointment at 10.",
+        "context": "Clinic"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2h-p1",
+        "type": "mcq",
+        "prompt": "Pain in your head:",
+        "options": [
+          "a fever",
+          "a headache",
+          "a cough"
+        ],
+        "answer": 1,
+        "explanation": "headache."
+      },
+      {
+        "id": "a2h-p2",
+        "type": "mcq",
+        "prompt": "Doctor's advice:",
+        "options": [
+          "You should rest.",
+          "You rest should.",
+          "Should you rest."
+        ],
+        "answer": 0,
+        "explanation": "should + verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2h-q1",
+        "type": "mcq",
+        "prompt": "My back ___.",
+        "options": [
+          "hurts",
+          "is hurt",
+          "pain",
+          "aches me"
+        ],
+        "answer": 0,
+        "explanation": "My back hurts."
+      },
+      {
+        "id": "a2h-q2",
+        "type": "gap",
+        "prompt": "A high body temperature is a ___.",
+        "accepted": [
+          "fever"
+        ],
+        "explanation": "fever."
+      },
+      {
+        "id": "a2h-q3",
+        "type": "mcq",
+        "prompt": "A fixed time to see the doctor:",
+        "options": [
+          "appointment",
+          "medicine",
+          "symptom",
+          "advice"
+        ],
+        "answer": 0,
+        "explanation": "appointment."
+      },
+      {
+        "id": "a2h-q4",
+        "type": "truefalse",
+        "prompt": "\"I have mal at my head\" is correct English.",
+        "answer": false,
+        "explanation": "I've got a headache."
+      },
+      {
+        "id": "a2h-q5",
+        "type": "mcq",
+        "prompt": "\"Take this twice a day\" means…",
+        "options": [
+          "once",
+          "two times every day",
+          "every two days",
+          "at night"
+        ],
+        "answer": 1,
+        "explanation": "twice = two times."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I have pain in my head.",
+        "right": "I've got a headache.",
+        "why": "Natural expression."
+      },
+      {
+        "wrong": "You should to rest.",
+        "right": "You should rest.",
+        "why": "should + base verb."
+      }
+    ]
   }
 ]

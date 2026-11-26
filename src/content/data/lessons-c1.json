@@ -1538,5 +1538,637 @@
         "why": "One negative only."
       }
     ]
+  },
+  {
+    "id": "c1-g-future-past",
+    "unitId": "c1-u5",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "The future seen from the past",
+    "minutes": 14,
+    "objective": "Talk about plans and predictions that were made in the past, including those that didn't happen.",
+    "sections": [
+      {
+        "heading": "Forms",
+        "en": "was / were going to · was / were about to · was / were to (formal, arranged or destined) · would.",
+        "fr": "Utile pour raconter : « j'allais partir quand… » = I was about to leave when…",
+        "examples": [
+          "I was going to call you, but my battery died.",
+          "We were about to leave when it started raining.",
+          "He was to become the youngest minister in history."
+        ]
+      },
+      {
+        "heading": "Plans that failed",
+        "en": "was to have + past participle (formal) = a plan that did not happen.",
+        "examples": [
+          "The ceremony was to have taken place in May, but it was cancelled.",
+          "They were going to get married, but they split up."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1fp-v1",
+        "word": "destined",
+        "ipa": "/ˈdestɪnd/",
+        "pos": "adjective",
+        "definition": "certain to happen, as if planned by fate",
+        "fr": "destiné à",
+        "example": "She was destined to lead.",
+        "context": "Narrative"
+      },
+      {
+        "id": "c1fp-v2",
+        "word": "postpone",
+        "ipa": "/pəˈspəʊn/",
+        "pos": "verb",
+        "definition": "to move an event to a later time",
+        "fr": "reporter",
+        "example": "The launch was postponed.",
+        "context": "Plans"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1fp-p1",
+        "type": "mcq",
+        "prompt": "I ___ leave when the phone rang.",
+        "options": [
+          "was about to",
+          "am about to",
+          "would about"
+        ],
+        "answer": 0,
+        "explanation": "was about to = on the point of."
+      },
+      {
+        "id": "c1fp-p2",
+        "type": "mcq",
+        "prompt": "She ___ become a doctor, but she changed her mind.",
+        "options": [
+          "was going to",
+          "will",
+          "is going to"
+        ],
+        "answer": 0,
+        "explanation": "Past plan → was going to."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1fp-q1",
+        "type": "mcq",
+        "prompt": "The match ___ played on Sunday, but it was cancelled.",
+        "options": [
+          "was to have been",
+          "will be",
+          "was being",
+          "is to be"
+        ],
+        "answer": 0,
+        "explanation": "Unfulfilled formal plan: was to have been."
+      },
+      {
+        "id": "c1fp-q2",
+        "type": "mcq",
+        "prompt": "Little did he know that he ___ president one day.",
+        "options": [
+          "will become",
+          "was to become",
+          "becomes",
+          "has become"
+        ],
+        "answer": 1,
+        "explanation": "Destiny seen from the past: was to + verb."
+      },
+      {
+        "id": "c1fp-q3",
+        "type": "gap",
+        "prompt": "We were ___ to go out when the storm began. (on the point of)",
+        "accepted": [
+          "about"
+        ],
+        "explanation": "be about to."
+      },
+      {
+        "id": "c1fp-q4",
+        "type": "truefalse",
+        "prompt": "\"I was going to email you\" suggests I didn't email you.",
+        "answer": true,
+        "explanation": "It usually describes a plan that did not happen."
+      },
+      {
+        "id": "c1fp-q5",
+        "type": "mcq",
+        "prompt": "The event was ___ until next year.",
+        "options": [
+          "postponed",
+          "posted",
+          "positioned",
+          "proposed"
+        ],
+        "answer": 0,
+        "explanation": "postpone = delay."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I was going to calling you.",
+        "right": "I was going to call you.",
+        "why": "going to + base verb."
+      },
+      {
+        "wrong": "He was about leaving.",
+        "right": "He was about to leave.",
+        "why": "be about to + verb."
+      }
+    ]
+  },
+  {
+    "id": "c1-v-collocations",
+    "unitId": "c1-u5",
+    "level": "C1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Academic collocations",
+    "minutes": 14,
+    "objective": "Use the word partnerships that make academic writing sound expert.",
+    "sections": [
+      {
+        "heading": "Verb + noun",
+        "en": "pose a threat · draw a conclusion · conduct research · raise a question · play a key role · bear in mind · meet the demand.",
+        "fr": "Ces associations font la différence entre B2 et C1 en « Lexical Resource ».",
+        "examples": [
+          "Climate change poses a serious threat to coastal cities.",
+          "It is too early to draw firm conclusions."
+        ]
+      },
+      {
+        "heading": "Adjective + noun / adverb + adjective",
+        "en": "a heated debate · a key factor · a growing body of evidence · widely accepted · highly controversial · deeply concerned.",
+        "examples": [
+          "There is a growing body of evidence that…",
+          "This view is widely accepted among economists."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1co-v1",
+        "word": "pose a threat",
+        "ipa": "/pəʊz ə θret/",
+        "pos": "collocation",
+        "definition": "to be a danger",
+        "fr": "représenter une menace",
+        "example": "Plastic poses a threat to marine life.",
+        "context": "Academic"
+      },
+      {
+        "id": "c1co-v2",
+        "word": "draw a conclusion",
+        "ipa": "/drɔː ə kənˈkluːʒn/",
+        "pos": "collocation",
+        "definition": "to decide something from evidence",
+        "fr": "tirer une conclusion",
+        "example": "What conclusion can we draw?",
+        "context": "Academic"
+      },
+      {
+        "id": "c1co-v3",
+        "word": "body of evidence",
+        "ipa": "/ˈbɒdi əv ˈevɪdəns/",
+        "pos": "collocation",
+        "definition": "a large amount of evidence",
+        "fr": "ensemble de preuves",
+        "example": "A growing body of evidence supports this.",
+        "context": "Research"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1co-p1",
+        "type": "mcq",
+        "prompt": "Researchers ___ an experiment.",
+        "options": [
+          "made",
+          "conducted",
+          "did up"
+        ],
+        "answer": 1,
+        "explanation": "conduct an experiment / research."
+      },
+      {
+        "id": "c1co-p2",
+        "type": "mcq",
+        "prompt": "Pollution ___ a threat to health.",
+        "options": [
+          "poses",
+          "puts",
+          "gives"
+        ],
+        "answer": 0,
+        "explanation": "pose a threat."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1co-q1",
+        "type": "mcq",
+        "prompt": "We can ___ several conclusions from the data.",
+        "options": [
+          "pull",
+          "draw",
+          "take out",
+          "make up"
+        ],
+        "answer": 1,
+        "explanation": "draw a conclusion."
+      },
+      {
+        "id": "c1co-q2",
+        "type": "mcq",
+        "prompt": "A ___ debate is a very emotional one.",
+        "options": [
+          "hot",
+          "heated",
+          "warm",
+          "burning"
+        ],
+        "answer": 1,
+        "explanation": "a heated debate."
+      },
+      {
+        "id": "c1co-q3",
+        "type": "gap",
+        "prompt": "This theory is ___ accepted. (by many people)",
+        "accepted": [
+          "widely"
+        ],
+        "explanation": "widely accepted."
+      },
+      {
+        "id": "c1co-q4",
+        "type": "truefalse",
+        "prompt": "\"Make research\" is a natural academic collocation.",
+        "answer": false,
+        "explanation": "Use conduct / carry out / do research."
+      },
+      {
+        "id": "c1co-q5",
+        "type": "mcq",
+        "prompt": "Education plays a key ___ in development.",
+        "options": [
+          "part",
+          "role",
+          "factor",
+          "place"
+        ],
+        "answer": 1,
+        "explanation": "play a key role."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "make research",
+        "right": "conduct research",
+        "why": "Academic collocation."
+      },
+      {
+        "wrong": "a hot debate",
+        "right": "a heated debate",
+        "why": "Fixed adjective."
+      }
+    ]
+  },
+  {
+    "id": "c1-g-discourse",
+    "unitId": "c1-u6",
+    "level": "C1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Discourse markers in speech",
+    "minutes": 14,
+    "objective": "Sound fluent and natural in conversations and IELTS Speaking with spoken discourse markers.",
+    "sections": [
+      {
+        "heading": "Managing the conversation",
+        "en": "Anyway (back to the topic) · Mind you (adding a contrast) · As it happens (by chance) · That said (however) · Having said that · Come to think of it.",
+        "fr": "Ils donnent un ton naturel et aident à gagner du temps pour réfléchir à l'oral.",
+        "examples": [
+          "The flat is small. Mind you, it's very central.",
+          "As it happens, I'm going there tomorrow.",
+          "It's expensive. That said, it's worth it."
+        ]
+      },
+      {
+        "heading": "Softening and approximating",
+        "en": "sort of · kind of · I mean · you know · to be honest · more or less. Use them sparingly; overuse sounds hesitant.",
+        "examples": [
+          "To be honest, I'm not a big fan of exams.",
+          "It's more or less finished."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1dm-v1",
+        "word": "mind you",
+        "ipa": "/maɪnd juː/",
+        "pos": "phrase",
+        "definition": "used to add something that contrasts",
+        "fr": "cela dit, remarque",
+        "example": "It's cold. Mind you, it's sunny.",
+        "context": "Speaking"
+      },
+      {
+        "id": "c1dm-v2",
+        "word": "as it happens",
+        "ipa": "/æz ɪt ˈhæpənz/",
+        "pos": "phrase",
+        "definition": "by chance, surprisingly",
+        "fr": "justement, il se trouve que",
+        "example": "As it happens, I know her.",
+        "context": "Speaking"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1dm-p1",
+        "type": "mcq",
+        "prompt": "The hotel was noisy. ___, the staff were lovely.",
+        "options": [
+          "Mind you",
+          "As it happens",
+          "Anyway"
+        ],
+        "answer": 0,
+        "explanation": "Mind you adds a contrast."
+      },
+      {
+        "id": "c1dm-p2",
+        "type": "mcq",
+        "prompt": "___, back to what I was saying…",
+        "options": [
+          "Anyway",
+          "Mind you",
+          "Come to think"
+        ],
+        "answer": 0,
+        "explanation": "Anyway returns to the topic."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1dm-q1",
+        "type": "mcq",
+        "prompt": "\"Do you know a good dentist?\" — \"___, my cousin is one.\"",
+        "options": [
+          "Mind you",
+          "As it happens",
+          "That said",
+          "Anyway"
+        ],
+        "answer": 1,
+        "explanation": "By chance → As it happens."
+      },
+      {
+        "id": "c1dm-q2",
+        "type": "mcq",
+        "prompt": "It's a long trip. ___, the views are amazing.",
+        "options": [
+          "Having said that",
+          "As it happens",
+          "Come to think",
+          "Anyway"
+        ],
+        "answer": 0,
+        "explanation": "Having said that = however."
+      },
+      {
+        "id": "c1dm-q3",
+        "type": "gap",
+        "prompt": "To be ___, I didn't enjoy the film. (frank)",
+        "accepted": [
+          "honest"
+        ],
+        "explanation": "To be honest."
+      },
+      {
+        "id": "c1dm-q4",
+        "type": "truefalse",
+        "prompt": "Using 'kind of' in every sentence sounds confident and precise.",
+        "answer": false,
+        "explanation": "Overuse sounds hesitant; use sparingly."
+      },
+      {
+        "id": "c1dm-q5",
+        "type": "mcq",
+        "prompt": "___ of it, I haven't seen him for years.",
+        "options": [
+          "Come to think",
+          "Mind",
+          "As happens",
+          "That said"
+        ],
+        "answer": 0,
+        "explanation": "Come to think of it = now that I think about it."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "By the way (to contrast)",
+        "right": "Mind you / That said",
+        "why": "By the way introduces a new topic."
+      },
+      {
+        "wrong": "As it happen,",
+        "right": "As it happens,",
+        "why": "Fixed phrase."
+      }
+    ]
+  },
+  {
+    "id": "c1-v-register",
+    "unitId": "c1-u6",
+    "level": "C1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Register and tone",
+    "minutes": 14,
+    "objective": "Switch between formal and informal English and choose the right tone for emails, essays and chats.",
+    "sections": [
+      {
+        "heading": "Formal vs informal",
+        "en": "Formal English prefers single Latin-origin verbs to phrasal verbs, full forms and impersonal structures.",
+        "table": [
+          [
+            "Informal",
+            "Formal"
+          ],
+          [
+            "find out",
+            "discover / ascertain"
+          ],
+          [
+            "get",
+            "obtain / receive"
+          ],
+          [
+            "ask for",
+            "request"
+          ],
+          [
+            "I'm sorry, but…",
+            "We regret to inform you that…"
+          ],
+          [
+            "Thanks a lot!",
+            "I am most grateful."
+          ]
+        ]
+      },
+      {
+        "heading": "Choosing the tone",
+        "en": "Ask: who is reading, and why? A complaint can be firm without being rude; an apology can be warm and professional. Avoid mixing registers in one text.",
+        "fr": "Un mail à un professeur ou une université : toujours formel ou neutre.",
+        "examples": [
+          "I would be grateful if you could send me the details.",
+          "Please do not hesitate to contact me should you require further information."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "c1rg-v1",
+        "word": "request",
+        "ipa": "/rɪˈkwest/",
+        "pos": "verb / noun",
+        "definition": "to ask for something formally",
+        "fr": "demander, requête",
+        "example": "I am writing to request information.",
+        "context": "Formal email"
+      },
+      {
+        "id": "c1rg-v2",
+        "word": "ascertain",
+        "ipa": "/ˌæsəˈteɪn/",
+        "pos": "verb",
+        "definition": "to find out for certain (formal)",
+        "fr": "vérifier, établir",
+        "example": "We need to ascertain the facts.",
+        "context": "Formal"
+      },
+      {
+        "id": "c1rg-v3",
+        "word": "grateful",
+        "ipa": "/ˈɡreɪtfl/",
+        "pos": "adjective",
+        "definition": "feeling thankful",
+        "fr": "reconnaissant",
+        "example": "I would be grateful for your help.",
+        "context": "Formal email"
+      }
+    ],
+    "practice": [
+      {
+        "id": "c1rg-p1",
+        "type": "mcq",
+        "prompt": "Formal version of 'ask for':",
+        "options": [
+          "request",
+          "get",
+          "find out"
+        ],
+        "answer": 0,
+        "explanation": "ask for → request."
+      },
+      {
+        "id": "c1rg-p2",
+        "type": "mcq",
+        "prompt": "Best opening to an admissions office:",
+        "options": [
+          "Hey guys!",
+          "Dear Sir or Madam,",
+          "Yo,"
+        ],
+        "answer": 1,
+        "explanation": "Formal greeting."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "c1rg-q1",
+        "type": "mcq",
+        "prompt": "Formal version of 'get':",
+        "options": [
+          "obtain",
+          "grab",
+          "pick up",
+          "fetch"
+        ],
+        "answer": 0,
+        "explanation": "get → obtain/receive."
+      },
+      {
+        "id": "c1rg-q2",
+        "type": "mcq",
+        "prompt": "Which sentence is formal?",
+        "options": [
+          "Can you send me the stuff?",
+          "I would be grateful if you could send the documents.",
+          "Send it ASAP.",
+          "Gimme the docs."
+        ],
+        "answer": 1,
+        "explanation": "Polite, impersonal, full forms."
+      },
+      {
+        "id": "c1rg-q3",
+        "type": "gap",
+        "prompt": "We ___ to inform you that your application was unsuccessful. (formal 'are sorry')",
+        "accepted": [
+          "regret"
+        ],
+        "explanation": "We regret to inform you…"
+      },
+      {
+        "id": "c1rg-q4",
+        "type": "truefalse",
+        "prompt": "Mixing slang and very formal phrases in one email is good style.",
+        "answer": false,
+        "explanation": "Keep one consistent register."
+      },
+      {
+        "id": "c1rg-q5",
+        "type": "mcq",
+        "prompt": "'Should you require further information' means…",
+        "options": [
+          "If you need more information",
+          "You must ask",
+          "You should not ask",
+          "Information is required"
+        ],
+        "answer": 0,
+        "explanation": "Inverted formal conditional."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Hey Professor!",
+        "right": "Dear Professor Mensah,",
+        "why": "Formal greeting for academics."
+      },
+      {
+        "wrong": "I want the documents quickly.",
+        "right": "I would be grateful if you could send the documents at your earliest convenience.",
+        "why": "Polite, formal request."
+      }
+    ]
   }
 ]
