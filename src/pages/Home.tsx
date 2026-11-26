@@ -14,6 +14,8 @@ import { lessonsFor, getLesson, availableLevels } from '../content'
 import { buildBites } from '../lib/lessonDeck'
 import { DREAMS, EXAM_RANGE, daysLeft, dreamTitle, records, weekVsWeek, whyOf } from '../lib/goals'
 import { LEVELS, type Level } from '../content/types'
+import { ArrowRight, CaretRight, Cards, Check, Compass, Fire, Flag, Lightning, Plus, Trophy } from '@phosphor-icons/react'
+import { DREAM_ICON } from '../components/dreamIcons'
 import type { Profile, StudySession, LessonProgress } from '../db/db'
 
 export default function Home() {
@@ -62,7 +64,7 @@ export default function Home() {
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1.5">
           <StreakChip streak={streak} />
-          <span className="chip bg-brand-100 font-bold text-brand-800 dark:bg-brand-900/50 dark:text-brand-200" title={`${xp.into} / ${xp.need} XP to level ${xp.lvl + 1}`}>⭐ Lv {xp.lvl}</span>
+          <span className="chip bg-brand-50 font-bold text-brand-800 dark:bg-brand-900/50 dark:text-brand-200" title={`${xp.into} / ${xp.need} XP to level ${xp.lvl + 1}`}><Lightning weight="fill" className="text-brand-500" aria-hidden /> Lv {xp.lvl}</span>
         </div>
       </header>
 
@@ -76,10 +78,10 @@ export default function Home() {
               <span className={clsx('text-[11px] font-semibold', d.isToday ? 'text-flame-600' : 'text-ink-400')}>{d.label}</span>
               <span aria-label={`${d.day}${d.done ? ': studied' : ''}`}
                 className={clsx('flex h-9 w-9 items-center justify-center rounded-full text-base', {
-                  'bg-flame-500 text-white shadow-[0_2px_0_0_theme(colors.flame.700)]': d.done,
+                  'bg-flame-500 text-white': d.done,
                   'border-2 border-dashed border-flame-400': !d.done && d.isToday,
                   'bg-ink-100 dark:bg-ink-800': !d.done && !d.isToday,
-                })}>{d.done ? '🔥' : ''}</span>
+                })}>{d.done && <Fire weight="fill" aria-hidden />}</span>
             </li>
           ))}
         </ol>
@@ -87,7 +89,7 @@ export default function Home() {
 
       {!data.placement && (
         <Card className="flex items-center gap-4 border-flame-200 bg-flame-50 dark:border-flame-900 dark:bg-flame-900/20">
-          <span className="text-4xl" aria-hidden>🧭</span>
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-flame-500 dark:bg-ink-900" aria-hidden><Compass size={28} weight="duotone" /></span>
           <div className="flex-1">
             <p className="font-display font-bold">Find your real level</p>
             <p className="text-sm text-ink-600 dark:text-ink-300">12 minutes so your path starts at the right place.</p>
@@ -97,12 +99,12 @@ export default function Home() {
       )}
 
       {/* Today's mission */}
-      <section aria-labelledby="mission-h" className="relative overflow-hidden rounded-3xl bg-brand-600 p-5 text-white shadow-[0_6px_0_0_theme(colors.brand.800)]">
-        <span className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 animate-float rounded-full bg-brand-500/60" aria-hidden />
-        <span className="pointer-events-none absolute -bottom-14 right-16 h-28 w-28 animate-float rounded-full bg-brand-700/60 [animation-delay:-3s]" aria-hidden />
+      <section aria-labelledby="mission-h" className="relative overflow-hidden rounded-[1.5rem] bg-brand-700 p-5 text-white">
+        <span className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 animate-float rounded-full bg-brand-600/70" aria-hidden />
+        <span className="pointer-events-none absolute -bottom-14 right-16 h-28 w-28 animate-float rounded-full bg-brand-800/60 [animation-delay:-3s]" aria-hidden />
         <div className="relative flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <h2 id="mission-h" className="text-xs font-bold uppercase tracking-wider text-brand-100">{goalDone ? 'Goal reached · bonus round' : "Today's mission"}</h2>
+            <h2 id="mission-h" className="text-[11px] font-bold uppercase tracking-[.08em] text-brand-200">{goalDone ? 'Goal reached · bonus round' : "Today's mission"}</h2>
             {next ? (<>
               <p className="mt-1.5 font-display text-2xl font-extrabold leading-tight">{next.title}</p>
               <p className="mt-1 text-sm text-brand-100">{next.objective}</p>
@@ -118,14 +120,14 @@ export default function Home() {
         </div>
         <div className="relative mt-4 flex items-center gap-3">
           <Link to={next ? `/learn/lesson/${next.id}` : `/learn/checkpoint/${level}`}
-            className="btn shine relative flex-1 overflow-hidden bg-white py-3.5 text-base text-brand-700 shadow-[0_4px_0_0_theme(colors.brand.900)] hover:bg-brand-50 active:translate-y-[3px] active:shadow-[0_1px_0_0_theme(colors.brand.900)]">
-            {next ? `${nextDone ? 'Continue' : 'Start'} · ${nextBites[nextDone]?.minutes ?? next.minutes} min` : 'Take the checkpoint'} →
+            className="btn-cta shine relative flex-1 overflow-hidden py-3.5 text-base shadow-[0_3px_0_0_theme(colors.flame.800)]">
+            {next ? `${nextDone ? 'Continue' : 'Start'} · ${nextBites[nextDone]?.minutes ?? next.minutes} min` : 'Take the checkpoint'} <ArrowRight weight="bold" aria-hidden />
           </Link>
         </div>
         {next && nextBites.length > 1 && <p className="relative mt-2 text-center text-xs text-brand-100">Bite {nextDone + 1} of {nextBites.length} · you can stop after each one</p>}
         <div className="relative mt-3 flex items-center gap-2 text-xs text-brand-100">
           <span className="shrink-0 font-semibold">{level} path</span>
-          <Bar value={(levelDone / Math.max(levelLessons.length, 1)) * 100} className="h-1.5" track="bg-brand-800/60" color="bg-flame-300" label={`${level} path progress`} />
+          <Bar value={(levelDone / Math.max(levelLessons.length, 1)) * 100} className="h-1.5" track="bg-brand-900/50" color="bg-sun-400" label={`${level} path progress`} />
           <span className="tabular-nums">{levelDone}/{levelLessons.length}</span>
         </div>
       </section>
@@ -133,7 +135,7 @@ export default function Home() {
       {pending.length > 0 && (
         <Card className="py-3">
           <p className="label">Unfinished</p>
-          <ul className="mt-1.5 space-y-1">{pending.map((l) => <li key={l!.id}><Link className="text-sm font-semibold text-brand-600 dark:text-brand-300" to={`/learn/lesson/${l!.id}`}>Finish: {l!.title} →</Link></li>)}</ul>
+          <ul className="mt-1.5 space-y-1">{pending.map((l) => <li key={l!.id}><Link className="text-sm font-semibold text-brand-600 dark:text-brand-300" to={`/learn/lesson/${l!.id}`}>Finish: {l!.title} <ArrowRight className="inline" aria-hidden /></Link></li>)}</ul>
         </Card>
       )}
 
@@ -142,7 +144,7 @@ export default function Home() {
       <div className="grid grid-cols-2 gap-3">
         <WordOfTheDay level={level} />
         <Link to="/practice/flashcards" className="card flex flex-col justify-between p-4 transition hover:border-brand-300">
-          <span className="label">Review</span>
+          <span className="label flex items-center gap-1.5"><Cards size={16} weight="bold" className="text-brand-600" aria-hidden />Review</span>
           <span className="mt-2 font-display text-3xl font-extrabold tabular-nums">{due}</span>
           <span className="text-sm text-ink-500">{due === 1 ? 'card due' : 'cards due'}{due ? ' · go!' : ''}</span>
         </Link>
@@ -155,7 +157,7 @@ export default function Home() {
           const ok = x.done >= x.target
           return (
             <li key={x.id} className="flex items-center gap-3 text-sm">
-              <span className={clsx('flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold', ok ? 'bg-emerald-500 text-white' : 'bg-ink-100 text-ink-400 dark:bg-ink-800')} aria-hidden>{ok ? '✓' : ''}</span>
+              <span className={clsx('flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold', ok ? 'bg-emerald-500 text-white' : 'bg-ink-100 text-ink-400 dark:bg-ink-800')} aria-hidden>{ok && <Check weight="bold" />}</span>
               <span className="min-w-0 flex-1">
                 <span className={clsx('flex justify-between gap-2', ok && 'text-ink-400 line-through')}><span>{x.label}</span><span className="tabular-nums text-ink-400">{Math.min(x.done, x.target)}/{x.target}</span></span>
                 <Bar value={(x.done / x.target) * 100} className="mt-1 h-1.5" color={ok ? 'bg-emerald-500' : 'bg-brand-500'} label={x.label} />
@@ -170,13 +172,13 @@ export default function Home() {
       {/* Badges */}
       <Link to="/progress" className="card flex items-center gap-3 p-4 transition hover:border-brand-300">
         <span className="flex -space-x-1.5 text-2xl" aria-hidden>
-          {(got.length ? got.slice(-4) : allBadges.slice(0, 3)).map((b) => <span key={b.id} className={clsx('flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-flame-50 dark:border-ink-900 dark:bg-ink-800', !got.length && 'opacity-40 grayscale')}>{b.icon}</span>)}
+          {(got.length ? got.slice(-4) : allBadges.slice(0, 3)).map((b) => <span key={b.id} className={clsx('flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-sun-100 dark:border-ink-900 dark:bg-ink-800', !got.length && 'opacity-40 grayscale')}>{b.icon}</span>)}
         </span>
         <span className="flex-1">
           <span className="block font-display font-bold">Badges</span>
           <span className="text-sm text-ink-500">{got.length}/{allBadges.length} collected</span>
         </span>
-        <span className="text-ink-300" aria-hidden>›</span>
+        <CaretRight className="text-ink-300" weight="bold" aria-hidden />
       </Link>
     </div>
   )
@@ -200,11 +202,11 @@ function WordOfTheDay({ level }: { level: Parameters<typeof lessonsFor>[0] }) {
           <span className="block text-ink-400">{w.fr}</span>
           <button className="mt-1.5 text-xs font-semibold text-brand-600 dark:text-brand-300" disabled={saved}
             onClick={() => void addCards([{ id: `${level}:${w.id}`, front: w.word, back: `${w.definition} — ${w.fr}`, ipa: w.ipa, example: w.example, source: `${level}:wotd` }]).then(() => setSaved(true))}>
-            {saved ? '✓ In your flashcards' : '+ Save to flashcards'}
+            {saved ? <><Check className="inline" weight="bold" aria-hidden /> In your flashcards</> : <><Plus className="inline" weight="bold" aria-hidden /> Save to flashcards</>}
           </button>
         </span>
       ) : (
-        <button className="mt-1 text-left text-sm font-semibold text-brand-600 dark:text-brand-300" onClick={() => setOpen(true)}>Guess it, then reveal →</button>
+        <button className="mt-1 text-left text-sm font-semibold text-brand-600 dark:text-brand-300" onClick={() => setOpen(true)}>Guess it, then reveal <ArrowRight className="inline" aria-hidden /></button>
       )}
     </div>
   )
@@ -224,7 +226,7 @@ function WeeklyChest({ challenges, opened }: { challenges: ReturnType<typeof wee
           <h2 className="font-display font-bold">Weekly chest</h2>
           <p className="text-sm text-ink-500">{opened ? `Opened! +${CHEST_XP} XP. A new chest arrives Monday.` : ready ? 'All weekly challenges done. Open it!' : `Finish the ${challenges.length} weekly challenges to win ${CHEST_XP} XP.`}</p>
         </div>
-        {ready && <button className="btn-primary bg-flame-500 shadow-[0_3px_0_0_theme(colors.flame.700)] hover:bg-flame-400" onClick={() => void open()}>Open</button>}
+        {ready && <button className="btn-cta" onClick={() => void open()}>Open</button>}
       </div>
       {!opened && (
         <ul className="mt-3 space-y-2">{challenges.map((x) => (
@@ -244,12 +246,12 @@ function DreamCard({ profile, progress }: { profile: Profile; progress: LessonPr
   if (!why)
     return (
       <Link to="/goal" className="card flex items-center gap-4 border-2 border-dashed border-brand-300 p-4 transition hover:border-brand-500 dark:border-brand-800">
-        <span className="grid shrink-0 grid-cols-2 gap-0.5 text-2xl leading-none" aria-hidden><span>✈️</span><span>🎓</span><span>💼</span><span>📝</span></span>
+        <span className="grid shrink-0 grid-cols-2 gap-1 text-brand-600 dark:text-brand-300" aria-hidden>{Object.values(DREAM_ICON).map((I, k) => <I key={k} size={22} weight="duotone" />)}</span>
         <span className="flex-1">
           <span className="block font-display font-extrabold">What is your English for?</span>
           <span className="text-sm text-ink-500">Travel, study abroad, a job, IELTS or TOEFL… Set your goal and keep it in sight.</span>
         </span>
-        <span className="text-ink-300" aria-hidden>›</span>
+        <CaretRight className="text-ink-300" weight="bold" aria-hidden />
       </Link>
     )
   const days = daysLeft(why.date)
@@ -264,14 +266,14 @@ function DreamCard({ profile, progress }: { profile: Profile; progress: LessonPr
   return (
     <Link to="/goal" className="card relative block overflow-hidden p-4 transition hover:border-brand-300">
       <div className="flex items-start gap-3">
-        <span className="animate-float text-4xl" aria-hidden>{DREAMS[why.dreams[0]].icon}</span>
+        <span className="flex h-12 w-12 shrink-0 animate-float items-center justify-center rounded-2xl bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200" aria-hidden>{(() => { const I = DREAM_ICON[why.dreams[0]]; return <I size={28} weight="duotone" /> })()}</span>
         <div className="min-w-0 flex-1">
           <p className="label">My goal</p>
           <p className="font-display text-xl font-extrabold leading-tight">{dreamTitle(why)}</p>
           <p className="mt-0.5 text-xs text-ink-500">{profile.goalLevel}{profile.exam !== 'none' ? ` · ${profile.exam === 'ielts' ? `IELTS ${range.ielts}` : `TOEFL iBT ${range.toefl}`}` : ''}</p>
         </div>
         {days !== null && (
-          <span className="shrink-0 rounded-2xl bg-flame-100 px-3 py-1.5 text-center text-flame-800 dark:bg-flame-900/40 dark:text-flame-100">
+          <span className="shrink-0 rounded-2xl bg-flame-50 px-3 py-1.5 text-center text-flame-700 dark:bg-flame-900/40 dark:text-flame-100">
             <span className="block font-display text-xl font-extrabold leading-none tabular-nums"><CountUp to={days} /></span>
             <span className="text-[10px] font-bold uppercase">days left</span>
           </span>
@@ -280,8 +282,8 @@ function DreamCard({ profile, progress }: { profile: Profile; progress: LessonPr
       <ol className="mt-4 flex items-center gap-1" aria-label={`Level ladder: demonstrated ${profile.currentLevel ?? 'unknown'}, goal ${profile.goalLevel}`}>
         {LEVELS.map((l: Level, i) => (
           <li key={l} className="flex flex-1 flex-col items-center gap-1">
-            <span className={clsx('h-2.5 w-full rounded-full', i <= demonstrated ? 'bg-emerald-500' : i <= goalIdx ? 'bg-brand-200 dark:bg-brand-900' : 'bg-ink-100 dark:bg-ink-800')} />
-            <span className={clsx('text-xs font-bold', i === goalIdx ? 'text-brand-700 dark:text-brand-300' : i <= demonstrated ? 'text-emerald-600' : 'text-ink-400')}>{l}{i === goalIdx ? ' 🏁' : i === demonstrated ? ' ✓' : ''}</span>
+            <span className={clsx('h-2.5 w-full rounded-full', i <= demonstrated ? 'bg-brand-500' : i <= goalIdx ? 'bg-brand-100 dark:bg-brand-900' : 'bg-ink-100 dark:bg-ink-800')} />
+            <span className={clsx('text-xs font-bold', i === goalIdx ? 'text-brand-700 dark:text-brand-300' : i <= demonstrated ? 'text-brand-600' : 'text-ink-400')}>{l}{i === goalIdx ? <Flag className="ml-0.5 inline" weight="fill" aria-hidden /> : i === demonstrated ? <Check className="ml-0.5 inline" weight="bold" aria-hidden /> : null}</span>
           </li>
         ))}
       </ol>
@@ -305,7 +307,7 @@ function YouVsYou({ sessions }: { sessions: StudySession[] }) {
       <div className="flex items-center justify-between">
         <h2 className="font-display text-lg font-extrabold">You vs you</h2>
         <span className={clsx('chip font-bold', ahead ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200' : 'bg-flame-100 text-flame-800 dark:bg-flame-900/40 dark:text-flame-200')}>
-          {ahead ? `🏆 +${thisWeek - lastWeek} XP ahead` : `${lastWeek - thisWeek + 1} XP to beat last week`}
+          {ahead ? <><Trophy weight="fill" aria-hidden /> +{thisWeek - lastWeek} XP ahead</> : `${lastWeek - thisWeek + 1} XP to beat last week`}
         </span>
       </div>
       <div className="mt-3 space-y-2 text-sm">
@@ -319,7 +321,7 @@ function YouVsYou({ sessions }: { sessions: StudySession[] }) {
       </div>
       <div className="mt-4 grid grid-cols-3 gap-2 text-center">
         <div className={clsx('rounded-2xl p-2', newRecord ? 'animate-pop bg-flame-100 dark:bg-flame-900/40' : 'bg-ink-50 dark:bg-ink-800')}>
-          <p className="font-display text-lg font-extrabold tabular-nums">{r.todayXp}</p><p className="text-[11px] text-ink-500">{newRecord ? '🔥 record!' : 'XP today'}</p>
+          <p className="font-display text-lg font-extrabold tabular-nums">{r.todayXp}</p><p className="text-[11px] text-ink-500">{newRecord ? <><Fire className="inline text-flame-500" weight="fill" aria-hidden /> record!</> : 'XP today'}</p>
         </div>
         <div className="rounded-2xl bg-ink-50 p-2 dark:bg-ink-800"><p className="font-display text-lg font-extrabold tabular-nums">{r.bestDay}</p><p className="text-[11px] text-ink-500">best day XP</p></div>
         <div className="rounded-2xl bg-ink-50 p-2 dark:bg-ink-800"><p className="font-display text-lg font-extrabold tabular-nums">{bestStreak(sessions)}</p><p className="text-[11px] text-ink-500">best streak</p></div>

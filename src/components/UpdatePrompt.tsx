@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { registerSW } from 'virtual:pwa-register'
+import { CloudCheck } from '@phosphor-icons/react'
 
 /**
  * Update strategy: a new service worker waits until the learner accepts the update,
@@ -37,7 +38,7 @@ export function UpdatePrompt() {
           </div>
         </div>
       ) : (
-        <p className="text-sm">✓ English Path is ready to work offline.</p>
+        <p className="flex items-center gap-2 text-sm"><CloudCheck size={20} weight="fill" className="text-brand-300" aria-hidden />English Path is ready to work offline.</p>
       )}
     </div>
   )

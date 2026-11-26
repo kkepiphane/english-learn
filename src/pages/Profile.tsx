@@ -9,6 +9,7 @@ import { saveProfile } from '../lib/repo'
 import { downloadBackup, restoreBackup, type RestoreMode } from '../lib/backup'
 import { aiHealth, getAiConfig, setAiConfig } from '../lib/ai'
 import type { Level } from '../content/types'
+import { CaretRight, Target } from '@phosphor-icons/react'
 
 export default function Profile() {
   const p = useProfile()
@@ -18,9 +19,9 @@ export default function Profile() {
     <div className="space-y-4">
       <PageTitle title="Profile" subtitle="Settings, backups and privacy" />
       <Link to="/goal" className="card flex items-center gap-3 p-4 transition hover:border-brand-300">
-        <span className="text-3xl" aria-hidden>🎯</span>
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-flame-50 text-flame-600 dark:bg-flame-900/30 dark:text-flame-300" aria-hidden><Target size={24} weight="duotone" /></span>
         <span className="flex-1"><span className="block font-display font-bold">My goal and daily reminder</span><span className="text-sm text-ink-500">Why you learn, where, when, and a reminder in your calendar</span></span>
-        <span className="text-ink-300" aria-hidden>›</span>
+        <CaretRight className="text-ink-300" weight="bold" aria-hidden />
       </Link>
       <Card className="space-y-4">
         <label className="block"><span className="label">Name</span><input className="input mt-1" defaultValue={p.name} onBlur={(e) => set({ name: e.target.value.trim() || 'Learner' })} /></label>

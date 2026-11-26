@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Lightbulb } from '@phosphor-icons/react'
 import { useParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
@@ -108,7 +109,7 @@ function Writer({ w }: { w: WritingPrompt }) {
               {fb.criteria.map((c) => <div key={c.name} className="rounded-xl bg-ink-50 p-3 dark:bg-ink-800/60"><p className="text-xs text-ink-500">{c.name}</p><p className="text-xl font-bold tabular-nums">{c.score}<span className="text-sm text-ink-400">/5</span></p><p className="text-[11px] text-ink-400">{c.comment}</p></div>)}
             </div>
             <p className="mt-2 text-xs text-ink-400">Indicative scores to guide practice — not an exam band. Coherence: {fb.connectors.length} linking words ({fb.connectors.slice(0, 6).join(', ') || 'none'}). Paragraphs: {fb.paragraphCount}.</p>
-            {fb.tips.length > 0 && <ul className="mt-3 space-y-1 text-sm">{fb.tips.map((t) => <li key={t}>💡 {t}</li>)}</ul>}
+            {fb.tips.length > 0 && <ul className="mt-3 space-y-1 text-sm">{fb.tips.map((t) => <li key={t} className="flex gap-2"><Lightbulb className="mt-0.5 shrink-0 text-sun-500" weight="fill" aria-hidden />{t}</li>)}</ul>}
           </Card>
           <Card>
             <h3 className="font-bold">Corrections explained ({fb.issues.length})</h3>

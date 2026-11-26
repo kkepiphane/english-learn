@@ -5,21 +5,24 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
-        display: ['"Bricolage Grotesque Variable"', 'system-ui', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans Variable"', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        display: ['"Plus Jakarta Sans Variable"', 'system-ui', 'sans-serif'],
       },
       colors: {
-        // Violet: the main brand colour (actions, current step, progress).
-        brand: { 50: '#f5f3ff', 100: '#ede8ff', 200: '#dcd3ff', 300: '#c1b0ff', 400: '#a083ff', 500: '#8257fb', 600: '#6d38ef', 700: '#5d27d6', 800: '#4d21ad', 900: '#3f1e8a', 950: '#260f5c' },
-        // Warm orange: streak, rewards, XP.
-        flame: { 50: '#fff7ed', 100: '#ffedd5', 200: '#fed7aa', 300: '#fdba74', 400: '#fb923c', 500: '#f97316', 600: '#ea580c', 700: '#c2410c', 800: '#9a3412', 900: '#7c2d12' },
-        ink: { 50: '#f8f7fb', 100: '#efedf5', 200: '#dfdbe9', 300: '#c4bfd3', 400: '#8f89a3', 500: '#625c78', 600: '#4a4560', 700: '#37334a', 800: '#252236', 900: '#181626', 950: '#0f0d1a' },
+        // Ocean teal: the main brand colour (actions, current step, progress).
+        brand: { 50: '#effcfa', 100: '#d3f5ef', 200: '#a9eadf', 300: '#71d6c8', 400: '#3dbaac', 500: '#1f9d91', 600: '#0f7f76', 700: '#0f6660', 800: '#11524e', 900: '#124442', 950: '#032826' },
+        // Coral: calls to action, streak, rewards, XP.
+        flame: { 50: '#fff4f1', 100: '#ffe5de', 200: '#ffcabd', 300: '#ffa592', 400: '#fb8068', 500: '#f4614a', 600: '#e0452f', 700: '#bc3524', 800: '#9a2f22', 900: '#7f2b21' },
+        // Sun: completed lessons and achievements.
+        sun: { 100: '#fef3c7', 300: '#fcd34d', 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706', 900: '#78350f' },
+        // Warm sand neutrals.
+        ink: { 50: '#fbf8f3', 100: '#f3eee6', 200: '#e7e0d4', 300: '#d2c8b8', 400: '#9d9485', 500: '#6f685d', 600: '#554f46', 700: '#3e3a34', 800: '#2a2824', 900: '#1d1c19', 950: '#131210' },
       },
       keyframes: {
         pop: { '0%': { transform: 'scale(.6)', opacity: '0' }, '60%': { transform: 'scale(1.08)', opacity: '1' }, '100%': { transform: 'scale(1)' } },
         rise: { '0%': { transform: 'translateY(8px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
         wiggle: { '0%,100%': { transform: 'rotate(0)' }, '25%': { transform: 'rotate(-8deg)' }, '75%': { transform: 'rotate(8deg)' } },
-        pulsering: { '0%': { boxShadow: '0 0 0 0 rgba(130,87,251,.45)' }, '100%': { boxShadow: '0 0 0 14px rgba(130,87,251,0)' } },
+        pulsering: { '0%': { boxShadow: '0 0 0 0 rgba(31,157,145,.45)' }, '100%': { boxShadow: '0 0 0 14px rgba(31,157,145,0)' } },
         float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-6px)' } },
         flicker: { '0%,100%': { transform: 'scale(1) rotate(0)' }, '30%': { transform: 'scale(1.12) rotate(-4deg)' }, '60%': { transform: 'scale(.96) rotate(3deg)' } },
         zoomin: { '0%': { transform: 'scale(.3) rotate(-12deg)', opacity: '0' }, '70%': { transform: 'scale(1.15) rotate(4deg)', opacity: '1' }, '100%': { transform: 'scale(1) rotate(0)' } },

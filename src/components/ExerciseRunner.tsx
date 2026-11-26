@@ -4,6 +4,7 @@ import type { Exercise } from '../content/types'
 import { correctAnswerText, isCorrect, shuffle, type Answer } from '../lib/exercise'
 import { speak, stop, ttsAvailable } from '../lib/tts'
 import { Bar, CountUp, Stars } from './ui'
+import { CheckCircle, Fire, Play, XCircle } from '@phosphor-icons/react'
 import { sfx } from '../lib/fx'
 import { addXp } from '../lib/repo'
 import { stars } from '../lib/rewards'
@@ -93,7 +94,7 @@ export function ExerciseRunner({
     <div className="space-y-4">
       {!bare && <div className="flex items-center gap-3">
         <Bar value={((i + (checked ? 1 : 0)) / items.length) * 100} className="h-3" color="bg-emerald-500" label="Exercise progress" />
-        {combo >= 2 && feedback === 'immediate' && <span key={combo} className="chip animate-pop bg-flame-100 font-bold text-flame-700 dark:bg-flame-900/40 dark:text-flame-200" aria-label={`${combo} correct in a row`}>🔥 {combo}</span>}
+        {combo >= 2 && feedback === 'immediate' && <span key={combo} className="chip animate-pop bg-flame-100 font-bold text-flame-700 dark:bg-flame-900/40 dark:text-flame-200" aria-label={`${combo} correct in a row`}><Fire weight="fill" aria-hidden /> {combo}</span>}
         <span className="shrink-0 text-xs font-semibold tabular-nums text-ink-400">{i + 1}/{items.length}</span>
       </div>}
       {title && <p className="label">{title}</p>}
@@ -103,9 +104,9 @@ export function ExerciseRunner({
       {checked && (
         <div role="status" className={clsx('animate-rise rounded-2xl border-2 p-4 text-sm', ok ? 'border-emerald-300 bg-emerald-50 dark:border-emerald-800 dark:bg-emerald-900/30' : 'border-rose-300 bg-rose-50 dark:border-rose-800 dark:bg-rose-900/30')}>
           <p className={clsx('font-display text-lg font-extrabold', ok ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300')}>
-            {ok ? <>✓ Correct! <span className="font-sans text-sm font-semibold">{PRAISE[i % PRAISE.length]}</span></> : `✗ Not quite. Answer: ${correctAnswerText(cur.item)}`}
+            {ok ? <><CheckCircle weight="fill" className="mr-1 inline align-[-3px]" aria-hidden />Correct! <span className="font-sans text-sm font-semibold">{PRAISE[i % PRAISE.length]}</span></> : <><XCircle weight="fill" className="mr-1 inline align-[-3px]" aria-hidden />Not quite. Answer: {correctAnswerText(cur.item)}</>}
           </p>
-          {comboHit && <p className="mt-1 animate-pop font-bold text-flame-600 dark:text-flame-300">🔥 {combo} in a row! +{COMBO_XP} XP</p>}
+          {comboHit && <p className="mt-1 animate-pop font-bold text-flame-600 dark:text-flame-300"><Fire weight="fill" className="inline align-[-2px]" aria-hidden /> {combo} in a row! +{COMBO_XP} XP</p>}
           <p className="mt-1 text-ink-700 dark:text-ink-200">{cur.item.explanation}</p>
         </div>
       )}
@@ -133,7 +134,7 @@ function ListenBox({ text }: { text: string }) {
   return (
     <div className="flex flex-wrap items-center gap-3 rounded-xl bg-brand-50 p-3 dark:bg-brand-900/30">
       <button className="btn-primary" onClick={() => { speak(text, { rate }); setPlays(plays + 1) }} disabled={plays >= 2}>
-        ▶ {plays === 0 ? 'Play audio' : plays === 1 ? 'Play again (last time)' : 'No more replays'}
+        <Play weight="fill" aria-hidden /> {plays === 0 ? 'Play audio' : plays === 1 ? 'Play again (last time)' : 'No more replays'}
       </button>
       <label className="flex items-center gap-2 text-sm">
         Speed
@@ -160,7 +161,7 @@ function ItemView({ ex, answer, setAnswer, disabled, onEnter }: { ex: Exercise; 
             const selected = answer === value(k)
             return (
               <button key={k} type="button" disabled={disabled} onClick={() => setAnswer(value(k))} aria-pressed={selected}
-                className={clsx('rounded-2xl border-2 border-b-4 px-4 py-3 text-left text-[15px] transition active:translate-y-px', {
+                className={clsx('rounded-xl border-2 px-4 py-3 text-left text-[15px] font-medium transition active:scale-[.99]', {
                   'border-brand-500 bg-brand-50 dark:bg-brand-900/30': selected && !showResult,
                   'border-ink-200 hover:border-ink-300 dark:border-ink-700': !selected && !showResult,
                   'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/30': showResult && k === correctIdx,

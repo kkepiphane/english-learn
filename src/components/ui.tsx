@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import { Fire, SpeakerHigh, Star } from '@phosphor-icons/react'
 import { speak, ttsAvailable } from '../lib/tts'
 
 export const Card = ({ className, children, ...p }: { className?: string; children: ReactNode } & React.HTMLAttributes<HTMLDivElement>) => (
@@ -46,7 +47,7 @@ export function SpeakButton({ text, rate, className, label = 'Listen' }: { text:
   if (!ttsAvailable()) return null
   return (
     <button type="button" onClick={(e) => { e.stopPropagation(); speak(text, { rate }) }} className={clsx('inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-700 hover:bg-brand-100 dark:bg-brand-900/40 dark:text-brand-300', className)} aria-label={`${label}: ${text}`} title={label}>
-      <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden><path d="M3 10v4h4l5 4V6L7 10H3zm13.5 2A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z" /></svg>
+      <SpeakerHigh size={17} weight="fill" aria-hidden />
     </button>
   )
 }
@@ -86,12 +87,12 @@ export function CountUp({ to, duration = 900, className }: { to: number; duratio
 
 export const Stars = ({ n, className }: { n: number; className?: string }) => (
   <span className={clsx('inline-flex gap-0.5', className)} role="img" aria-label={`${n} of 3 stars`}>
-    {[0, 1, 2].map((i) => <span key={i} className={i < n ? 'text-flame-400' : 'text-ink-200 dark:text-ink-700'}>★</span>)}
+    {[0, 1, 2].map((i) => <Star key={i} weight="fill" aria-hidden className={i < n ? 'text-sun-400' : 'text-ink-200 dark:text-ink-700'} />)}
   </span>
 )
 
 export const StreakChip = ({ streak, className }: { streak: number; className?: string }) => (
   <span className={clsx('chip text-sm font-bold', streak > 0 ? 'bg-flame-100 text-flame-800 dark:bg-flame-900/40 dark:text-flame-200' : 'bg-ink-100 text-ink-500 dark:bg-ink-800', className)} title="Day streak">
-    <span className={streak > 0 ? 'inline-block animate-flicker' : 'grayscale'} aria-hidden>🔥</span><span className="tabular-nums">{streak}</span><span className="sr-only"> day streak</span>
+    <Fire weight="fill" aria-hidden className={clsx('text-base', streak > 0 ? 'animate-flicker text-flame-500' : 'text-ink-300')} /><span className="tabular-nums">{streak}</span><span className="sr-only"> day streak</span>
   </span>
 )

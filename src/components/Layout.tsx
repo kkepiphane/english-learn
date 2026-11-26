@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
+import { Barbell, ChartBar, House, MapTrifold, User, type Icon as PhIcon } from '@phosphor-icons/react'
 import { db } from '../db/db'
 import { useOnline, useProfile, useTheme } from '../hooks/hooks'
 import { badges, earned, type Badge } from '../lib/rewards'
@@ -10,17 +11,14 @@ import { xpLevel } from '../lib/stats'
 import { UpdatePrompt } from './UpdatePrompt'
 
 // Speaking lives in Practice, Exams in Learn: five tabs fit comfortably on a phone.
-const NAV = [
-  { to: '/', label: 'Home', icon: 'M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z' },
-  { to: '/learn', label: 'Learn', icon: 'M9 4 3 6v14l6-2 6 2 6-2V4l-6 2zM9 4v14M15 6v14' },
-  { to: '/practice', label: 'Practice', icon: 'M6 4v16M18 4v16M3 8h3M18 8h3M3 16h3M18 16h3M6 12h12' },
-  { to: '/progress', label: 'Progress', icon: 'M4 20V10M10 20V4M16 20v-7M22 20H2' },
-  { to: '/profile', label: 'Profile', icon: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0' },
+const NAV: { to: string; label: string; icon: PhIcon }[] = [
+  { to: '/', label: 'Home', icon: House },
+  { to: '/learn', label: 'Learn', icon: MapTrifold },
+  { to: '/practice', label: 'Practice', icon: Barbell },
+  { to: '/progress', label: 'Progress', icon: ChartBar },
+  { to: '/profile', label: 'Profile', icon: User },
 ]
 
-const Icon = ({ d, className = 'h-6 w-6' }: { d: string; className?: string }) => (
-  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d={d} /></svg>
-)
 
 export function StatusPill() {
   const online = useOnline()
@@ -124,8 +122,8 @@ export function Layout() {
         </div>
         <nav className="flex flex-1 flex-col gap-1" aria-label="Main">
           {NAV.map((n) => (
-            <NavLink key={n.to} to={n.to} end={n.to === '/'} className={({ isActive }) => clsx('flex items-center gap-3 rounded-2xl px-3 py-2.5 text-[15px] font-semibold transition', isActive ? 'bg-brand-100 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200' : 'text-ink-500 hover:bg-ink-50 dark:text-ink-300 dark:hover:bg-ink-800')}>
-              <Icon d={n.icon} className="h-5 w-5" />{n.label}
+            <NavLink key={n.to} to={n.to} end={n.to === '/'} className={({ isActive }) => clsx('flex items-center gap-3 rounded-xl px-3 py-2.5 text-[15px] font-bold transition', isActive ? 'bg-brand-50 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200' : 'text-ink-500 hover:bg-ink-100 dark:text-ink-300 dark:hover:bg-ink-800')}>
+              {({ isActive }) => <><n.icon size={22} weight={isActive ? 'fill' : 'regular'} aria-hidden />{n.label}</>}
             </NavLink>
           ))}
         </nav>
@@ -148,7 +146,7 @@ export function Layout() {
         {NAV.map((n) => (
           <NavLink key={n.to} to={n.to} end={n.to === '/'} className={({ isActive }) => clsx('group flex flex-col items-center gap-0.5 py-2 text-[11px] font-semibold', isActive ? 'text-brand-600 dark:text-brand-300' : 'text-ink-400')}>
             {({ isActive }) => (<>
-              <span className={clsx('flex h-8 w-14 items-center justify-center rounded-full transition', isActive && 'bg-brand-100 dark:bg-brand-900/60')}><Icon d={n.icon} /></span>
+              <span className={clsx('flex h-8 w-14 items-center justify-center rounded-full transition', isActive && 'bg-brand-50 dark:bg-brand-900/60')}><n.icon size={24} weight={isActive ? 'fill' : 'regular'} aria-hidden /></span>
               {n.label}
             </>)}
           </NavLink>

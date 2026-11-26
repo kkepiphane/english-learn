@@ -48,7 +48,7 @@ export const sfx = {
   unlock() { notes([[880, 0, 0.12], [1175, 0.1, 0.12], [1568, 0.2, 0.35]], 'sine', 0.1); vibrate(40) },
 }
 
-const COLORS = ['#8257fb', '#a083ff', '#fb923c', '#fdba74', '#10b981', '#fde047', '#f472b6']
+const COLORS = ['#1f9d91', '#71d6c8', '#f4614a', '#ffa592', '#fbbf24', '#fcd34d', '#0f7f76']
 
 /** Fullscreen confetti burst; removes its own canvas when done. */
 export function confetti(pieces = 120) {

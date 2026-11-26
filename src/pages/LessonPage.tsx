@@ -13,6 +13,19 @@ import { XP } from '../lib/stats'
 import { buildBites, type DeckCard } from '../lib/lessonDeck'
 import { celebrate, confetti, sfx } from '../lib/fx'
 import { speak, ttsAvailable } from '../lib/tts'
+import { ArrowRight, Flag, Lightbulb, PencilSimpleLine, Question, SpeakerHigh, TextAa, X, type Icon } from '@phosphor-icons/react'
+
+const TAG_TONES = {
+  flame: 'bg-flame-50 text-flame-600 dark:bg-flame-900/30 dark:text-flame-300',
+  brand: 'bg-brand-50 text-brand-700 dark:bg-brand-900/40 dark:text-brand-200',
+  sun: 'bg-sun-100 text-sun-900 dark:bg-sun-900/40 dark:text-sun-300',
+}
+/** Small coloured heading that says what kind of card this is. */
+const Tag = ({ icon: I, tone, children }: { icon: Icon; tone: keyof typeof TAG_TONES; children: React.ReactNode }) => (
+  <p className="mb-2 flex items-center gap-2 font-display text-lg font-extrabold">
+    <span className={clsx('flex h-8 w-8 items-center justify-center rounded-full', TAG_TONES[tone])} aria-hidden><I size={18} weight="bold" /></span>{children}
+  </p>
+)
 
 export default function LessonPage() {
   const { id } = useParams()
@@ -78,7 +91,7 @@ function LessonView({ lesson, bitesDone }: { lesson: Lesson; bitesDone: number }
         <Header lesson={lesson} />
         <Card>
           <ResultsSummary results={results} xp={xp} onRetry={() => { setRun(run + 1); setPhase({ kind: 'card', bite: bites.length - 1, card: 0 }) }}>
-            {nextL ? <Link className="btn-primary" to={`/learn/lesson/${nextL.id}`}>Next lesson →</Link> : <Link className="btn-primary" to={`/learn/checkpoint/${lesson.level}`}>Take the {lesson.level} checkpoint</Link>}
+            {nextL ? <Link className="btn-primary" to={`/learn/lesson/${nextL.id}`}>Next lesson <ArrowRight weight="bold" aria-hidden /></Link> : <Link className="btn-primary" to={`/learn/checkpoint/${lesson.level}`}>Take the {lesson.level} checkpoint</Link>}
           </ResultsSummary>
         </Card>
         {lesson.rememberErrors.length > 0 && (
@@ -106,7 +119,7 @@ function LessonView({ lesson, bitesDone }: { lesson: Lesson; bitesDone: number }
           {phase.words > 0 && <p className="mt-2 text-sm text-ink-500">🃏 {phase.words} new words added to your flashcards.</p>}
           <p className="mt-3 text-sm text-ink-500">{nb ? `Next: ${nb.title} · ≈ ${nb.minutes} min. Go on now, or stop here — your place is saved.` : ''}</p>
           <div className="mt-5 flex flex-col gap-2 sm:flex-row sm:justify-center">
-            {nb && <button className="btn-primary py-3 text-base" onClick={() => setPhase({ kind: 'card', bite: phase.bite + 1, card: 0 })} autoFocus>Keep going →</button>}
+            {nb && <button className="btn-primary py-3 text-base" onClick={() => setPhase({ kind: 'card', bite: phase.bite + 1, card: 0 })} autoFocus>Keep going <ArrowRight weight="bold" aria-hidden /></button>}
             <Link to="/" className="btn-ghost py-3">Stop for today</Link>
           </div>
         </Card>
@@ -119,9 +132,9 @@ function LessonView({ lesson, bitesDone }: { lesson: Lesson; bitesDone: number }
   return (
     <div>
       <div className="mb-4 flex items-center gap-3">
-        <Link to="/learn" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xl text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800" aria-label="Close the lesson (your place is saved)">✕</Link>
+        <Link to="/learn" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-ink-400 hover:bg-ink-100 dark:hover:bg-ink-800" aria-label="Close the lesson (your place is saved)"><X size={22} weight="bold" /></Link>
         <ol className="flex flex-1 gap-1" aria-label={`Card ${phase.card + 1} of ${bite.cards.length}`}>
-          {bite.cards.map((_, k) => <li key={k} className={clsx('h-2.5 flex-1 rounded-full transition-colors', k < phase.card ? 'bg-emerald-500' : k === phase.card ? 'bg-brand-500' : 'bg-ink-200 dark:bg-ink-800')} />)}
+          {bite.cards.map((_, k) => <li key={k} className={clsx('h-2.5 flex-1 rounded-full transition-colors', k < phase.card ? 'bg-brand-500' : k === phase.card ? 'bg-flame-400' : 'bg-ink-200 dark:bg-ink-800')} />)}
         </ol>
       </div>
       <p className="mb-3 text-xs font-bold uppercase tracking-wider text-ink-400">{lesson.title} · bite {phase.bite + 1}/{bites.length} · {bite.title}</p>
@@ -143,7 +156,7 @@ function DeckCardView({ card, fr, onNext, onAnswer, onQuizAnswer, onQuiz }: { ca
   if (card.kind === 'hook')
     return (
       <Card>
-        <p className="mb-1 font-display text-lg font-extrabold">🤔 Guess first!</p>
+        <Tag icon={Question} tone="flame">Guess first!</Tag>
         <p className="mb-4 text-sm text-ink-500">You haven't seen the rule yet — trust your instinct. Getting it wrong is part of learning.</p>
         <ExerciseRunner bare items={[{ item: card.item }]} onAnswer={onAnswer} onFinish={onNext} />
       </Card>
@@ -151,7 +164,7 @@ function DeckCardView({ card, fr, onNext, onAnswer, onQuizAnswer, onQuiz }: { ca
   if (card.kind === 'exercise')
     return (
       <Card>
-        <p className="mb-3 font-display text-lg font-extrabold">✍️ Your turn</p>
+        <Tag icon={PencilSimpleLine} tone="brand">Your turn</Tag>
         <ExerciseRunner bare items={[{ item: card.item }]} onAnswer={onAnswer} onFinish={onNext} />
       </Card>
     )
@@ -159,7 +172,7 @@ function DeckCardView({ card, fr, onNext, onAnswer, onQuizAnswer, onQuiz }: { ca
   if (card.kind === 'word') return <WordCard v={card.vocab} fr={fr} onNext={onNext} />
   return (
     <Card>
-      <p className="mb-1 font-display text-lg font-extrabold">🏁 Final quiz</p>
+      <Tag icon={Flag} tone="sun">Final quiz</Tag>
       <p className="mb-4 text-sm text-ink-500">{card.items.length} questions — this score is saved for the lesson.</p>
       <ExerciseRunner items={card.items.map((item) => ({ item }))} onAnswer={onQuizAnswer} onFinish={onQuiz} />
     </Card>
@@ -170,13 +183,13 @@ function ExplainCard({ s, fr, onNext }: { s: LessonSection; fr: boolean; onNext:
   return (
     <div className="space-y-4">
       <Card>
-        <p className="label">💡 The rule</p>
-        <h2 className="mt-1 text-xl font-extrabold">{s.heading}</h2>
+        <Tag icon={Lightbulb} tone="brand">The rule</Tag>
+        <h2 className="text-xl font-extrabold">{s.heading}</h2>
         <p className="mt-2 text-[17px] leading-relaxed">{s.en}</p>
         {s.fr && <Fr show={fr}>{s.fr}</Fr>}
         {s.examples && (
           <ul className="mt-4 space-y-2">
-            {s.examples.map((e) => <li key={e} className="flex items-center gap-2 rounded-2xl bg-brand-50 px-3 py-2 dark:bg-brand-900/30"><SpeakButton text={e} /><span className="italic">{e}</span></li>)}
+            {s.examples.map((e) => <li key={e} className="flex items-center gap-2 rounded-xl bg-brand-50 px-3 py-2 dark:bg-brand-900/30"><SpeakButton text={e} /><span className="italic">{e}</span></li>)}
           </ul>
         )}
         {s.table && (
@@ -188,7 +201,7 @@ function ExplainCard({ s, fr, onNext }: { s: LessonSection; fr: boolean; onNext:
           </div>
         )}
       </Card>
-      <button className="btn-primary w-full py-3.5 text-base" onClick={onNext} autoFocus>Got it →</button>
+      <button className="btn-primary w-full py-3.5 text-base" onClick={onNext} autoFocus>Got it <ArrowRight weight="bold" aria-hidden /></button>
     </div>
   )
 }
@@ -198,7 +211,7 @@ function WordCard({ v, fr, onNext }: { v: VocabItem; fr: boolean; onNext: () => 
   return (
     <div className="space-y-4">
       <button type="button" onClick={() => setOpen(true)} disabled={open} className="card block w-full p-6 text-center">
-        <p className="label">🔤 New word{open ? '' : ' · do you know it?'}</p>
+        <p className="label inline-flex items-center gap-1.5"><TextAa size={15} weight="bold" aria-hidden />New word{open ? '' : ' · do you know it?'}</p>
         <p className="mt-3 font-display text-4xl font-extrabold">{v.word}</p>
         <p className="mt-1 font-mono text-sm text-ink-400">{v.ipa} · {v.pos}</p>
         {open ? (
@@ -210,8 +223,8 @@ function WordCard({ v, fr, onNext }: { v: VocabItem; fr: boolean; onNext: () => 
           </div>
         ) : <p className="mt-5 text-sm font-semibold text-brand-600 dark:text-brand-300">Think of its meaning, then tap to reveal</p>}
       </button>
-      {ttsAvailable() && <button type="button" className="btn-ghost w-full py-3" onClick={() => speak(`${v.word}. ${v.example}`)}>🔊 Listen</button>}
-      {open && <button className="btn-primary w-full py-3.5 text-base" onClick={onNext} autoFocus>Next →</button>}
+      {ttsAvailable() && <button type="button" className="btn-ghost w-full py-3" onClick={() => speak(`${v.word}. ${v.example}`)}><SpeakerHigh size={18} weight="fill" aria-hidden /> Listen</button>}
+      {open && <button className="btn-primary w-full py-3.5 text-base" onClick={onNext} autoFocus>Next <ArrowRight weight="bold" aria-hidden /></button>}
     </div>
   )
 }

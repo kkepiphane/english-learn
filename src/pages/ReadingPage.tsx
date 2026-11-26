@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { X } from '@phosphor-icons/react'
 import { useParams } from 'react-router-dom'
 import { READINGS } from '../content'
 import { Card, PageTitle, SpeakButton, Notice } from '../components/ui'
@@ -67,13 +68,13 @@ function Reader({ r }: { r: ReadingText }) {
             <div className="sticky bottom-20 z-10 mt-3 md:bottom-4" role="dialog" aria-label={`Definition of ${sel.key}`}>
               <Card className="shadow-lg">
                 <div className="flex items-center gap-2"><SpeakButton text={sel.key} /><span className="font-semibold">{sel.key}</span>{'ipa' in sel && sel.ipa && <span className="font-mono text-sm text-ink-400">{sel.ipa}</span>}
-                  <button className="ml-auto text-ink-400" onClick={() => setSel(null)} aria-label="Close">✕</button></div>
+                  <button className="ml-auto text-ink-400" onClick={() => setSel(null)} aria-label="Close"><X weight="bold" /></button></div>
                 {sel.def ? (
                   <>
                     <p className="mt-1 text-sm">{sel.def}{fr && 'fr' in sel && <span className="text-ink-500"> — {sel.fr}</span>}</p>
                     <button className="btn-ghost mt-2" disabled={saved.has(sel.key)} onClick={() => void save(sel.key, sel.def!, (sel as { fr: string }).fr, (sel as { ipa?: string }).ipa)}>{saved.has(sel.key) ? '✓ Saved to flashcards' : '+ Save word'}</button>
                   </>
-                ) : <p className="mt-1 text-sm text-ink-500">Common word — no glossary entry. Tap 🔊 to hear it. (A full offline dictionary is planned.)</p>}
+                ) : <p className="mt-1 text-sm text-ink-500">Common word — no glossary entry. Tap the speaker to hear it. (A full offline dictionary is planned.)</p>}
               </Card>
             </div>
           )}

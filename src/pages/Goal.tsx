@@ -6,6 +6,8 @@ import { Card, PageTitle } from '../components/ui'
 import { saveProfile } from '../lib/repo'
 import { DREAMS, EXAM_RANGE, dreamTitle, reminderGoogleUrl, reminderIcs, type Dream, type Why } from '../lib/goals'
 import { celebrate } from '../lib/fx'
+import { Alarm as AlarmIcon, CalendarPlus, GoogleLogo, RocketLaunch } from '@phosphor-icons/react'
+import { DREAM_ICON } from '../components/dreamIcons'
 import type { Level } from '../content/types'
 import type { Profile } from '../db/db'
 
@@ -54,8 +56,8 @@ function GoalForm({ p }: { p: Profile }) {
             const on = why.dreams.includes(d)
             return (
               <button key={d} type="button" aria-pressed={on} onClick={() => toggle(d)}
-                className={clsx('flex flex-col items-center gap-1 rounded-3xl border-2 border-b-4 px-3 py-4 text-sm font-bold transition active:translate-y-px', on ? 'border-brand-500 bg-brand-50 text-brand-800 dark:bg-brand-900/40 dark:text-brand-100' : 'border-ink-200 dark:border-ink-700')}>
-                <span className={clsx('text-4xl transition', on && 'animate-pop')} aria-hidden>{DREAMS[d].icon}</span>
+                className={clsx('flex flex-col items-center gap-1.5 rounded-2xl border-2 px-3 py-4 text-sm font-bold transition active:scale-[.98]', on ? 'border-brand-500 bg-brand-50 text-brand-800 dark:bg-brand-900/40 dark:text-brand-100' : 'border-ink-200 dark:border-ink-700')}>
+                {(() => { const I = DREAM_ICON[d]; return <I size={36} weight={on ? 'fill' : 'duotone'} className={clsx('transition', on ? 'animate-pop text-brand-600 dark:text-brand-300' : 'text-ink-400')} aria-hidden /> })()}
                 {DREAMS[d].label}
               </button>
             )
@@ -86,17 +88,17 @@ function GoalForm({ p }: { p: Profile }) {
       </Card>
 
       <Card>
-        <h2 className="font-display text-lg font-extrabold">⏰ Daily reminder</h2>
+        <h2 className="flex items-center gap-2 font-display text-lg font-extrabold"><AlarmIcon size={22} weight="duotone" className="text-flame-500" aria-hidden />Daily reminder</h2>
         <p className="text-sm text-ink-500">The app can't ring by itself when it's closed, so let your phone's calendar remind you every day.</p>
         <label className="mt-3 flex items-center gap-3"><span className="label">Time</span>
           <input type="time" className="input w-auto" value={why.reminder ?? '19:00'} onChange={(e) => setWhy({ ...why, reminder: e.target.value || '19:00' })} /></label>
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
-          <a className="btn-ghost" href={reminderGoogleUrl(why.reminder ?? '19:00', title, appUrl)} target="_blank" rel="noreferrer">📅 Google Calendar (Android)</a>
-          <button type="button" className="btn-ghost" onClick={downloadIcs}>🍎 iPhone / other calendar</button>
+          <a className="btn-ghost" href={reminderGoogleUrl(why.reminder ?? '19:00', title, appUrl)} target="_blank" rel="noreferrer"><GoogleLogo size={18} weight="bold" aria-hidden /> Google Calendar (Android)</a>
+          <button type="button" className="btn-ghost" onClick={downloadIcs}><CalendarPlus size={18} weight="bold" aria-hidden /> iPhone / other calendar</button>
         </div>
       </Card>
 
-      <button className="btn-primary w-full py-3.5 text-base" onClick={() => void save()}>Save my goal 🚀</button>
+      <button className="btn-cta w-full py-3.5 text-base" onClick={() => void save()}>Save my goal <RocketLaunch weight="fill" aria-hidden /></button>
     </div>
   )
 }
