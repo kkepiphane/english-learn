@@ -19,3 +19,14 @@ describe('sprint', () => {
     expect(await saveRun('t-sheet', [1, 2, 3])).toBe(true)
   })
 })
+
+describe('sprint kinds', () => {
+  it('every level, skill and unit sprint has items', async () => {
+    const { LEVELS } = await import('../content/types')
+    const { UNITS } = await import('../content')
+    const { sprintInfo, levelSprintId, skillSprintId, unitSprintId } = await import('./sprint')
+    for (const l of LEVELS) for (const id of [levelSprintId(l), skillSprintId(l, 'gram'), skillSprintId(l, 'vocab')]) expect(sprintInfo(id)?.pool.length, id).toBeGreaterThan(5)
+    for (const u of UNITS) expect(sprintInfo(unitSprintId(u.id))?.pool.length, u.id).toBeGreaterThan(3)
+    expect(sprintInfo('nope')).toBeUndefined()
+  })
+})

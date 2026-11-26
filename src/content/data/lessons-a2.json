@@ -1972,7 +1972,7 @@
         "type": "truefalse",
         "prompt": "\"generous\" describes someone who likes giving.",
         "answer": true,
-        "explanation": "generous."
+        "explanation": "Generous people like giving money or time."
       },
       {
         "id": "a2dp-q5",
@@ -2242,7 +2242,7 @@
           "a cough"
         ],
         "answer": 1,
-        "explanation": "headache."
+        "explanation": "A pain in your head is a headache."
       },
       {
         "id": "a2h-p2",
@@ -2575,7 +2575,7 @@
           "agent"
         ],
         "answer": 1,
-        "explanation": "landlord."
+        "explanation": "The landlord owns the flat and rents it to you."
       },
       {
         "id": "a2ho-q2",
@@ -2604,7 +2604,7 @@
           "rented"
         ],
         "answer": 1,
-        "explanation": "furnished."
+        "explanation": "Furnished = it comes with furniture (tables, beds…)."
       },
       {
         "id": "a2ho-q5",
@@ -2881,7 +2881,7 @@
         "accepted": [
           "back"
         ],
-        "explanation": "call back."
+        "explanation": "call back = phone someone who phoned you."
       },
       {
         "id": "a2ca-q3",
@@ -2927,6 +2927,1209 @@
         "wrong": "Can I talk with Ama?",
         "right": "Can I speak to Ama?",
         "why": "Usual phone phrase."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-ever",
+    "unitId": "a2-u9",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Have you ever…? Experiences",
+    "minutes": 12,
+    "objective": "Talk about life experiences with the present perfect.",
+    "sections": [
+      {
+        "heading": "Form",
+        "en": "have / has + past participle. ever in questions, never in negatives.",
+        "fr": "Pas de date précise → present perfect. Avec une date → past simple.",
+        "examples": [
+          "Have you ever been to Ghana? — Yes, I have.",
+          "I've never eaten snails.",
+          "She has visited Paris twice."
+        ]
+      },
+      {
+        "heading": "Common participles",
+        "en": "be → been · go → gone/been · eat → eaten · see → seen · do → done · try → tried · fly → flown.",
+        "examples": [
+          "Have you ever flown in a plane?",
+          "I've tried fufu, and I loved it."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2ev-v1",
+        "word": "ever",
+        "ipa": "/ˈevə/",
+        "pos": "adverb",
+        "definition": "at any time in your life",
+        "fr": "déjà (question)",
+        "example": "Have you ever lived abroad?",
+        "context": "Experiences"
+      },
+      {
+        "id": "a2ev-v2",
+        "word": "never",
+        "ipa": "/ˈnevə/",
+        "pos": "adverb",
+        "definition": "not at any time",
+        "fr": "jamais",
+        "example": "I've never seen snow.",
+        "context": "Experiences"
+      },
+      {
+        "id": "a2ev-v3",
+        "word": "twice",
+        "ipa": "/twaɪs/",
+        "pos": "adverb",
+        "definition": "two times",
+        "fr": "deux fois",
+        "example": "I've been there twice.",
+        "context": "Frequency"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2ev-p1",
+        "type": "mcq",
+        "prompt": "Have you ever ___ to Accra?",
+        "options": [
+          "went",
+          "been",
+          "go"
+        ],
+        "answer": 1,
+        "explanation": "Experience: have been."
+      },
+      {
+        "id": "a2ev-p2",
+        "type": "mcq",
+        "prompt": "I've ___ seen the sea.",
+        "options": [
+          "ever",
+          "never",
+          "yet"
+        ],
+        "answer": 1,
+        "explanation": "Negative experience: never."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2ev-q1",
+        "type": "mcq",
+        "prompt": "She ___ tried sushi.",
+        "options": [
+          "has never",
+          "have never",
+          "never has",
+          "is never"
+        ],
+        "answer": 0,
+        "explanation": "she → has never tried."
+      },
+      {
+        "id": "a2ev-q2",
+        "type": "gap",
+        "prompt": "Have you ever ___ (eat) attiéké?",
+        "accepted": [
+          "eaten"
+        ],
+        "explanation": "eat → eaten."
+      },
+      {
+        "id": "a2ev-q3",
+        "type": "mcq",
+        "prompt": "I ___ to London in 2022.",
+        "options": [
+          "have been",
+          "went",
+          "have gone",
+          "go"
+        ],
+        "answer": 1,
+        "explanation": "Specific date → past simple."
+      },
+      {
+        "id": "a2ev-q4",
+        "type": "truefalse",
+        "prompt": "\"Have you ever see a lion?\" is correct.",
+        "answer": false,
+        "explanation": "Use the past participle: seen."
+      },
+      {
+        "id": "a2ev-q5",
+        "type": "mcq",
+        "prompt": "Two times =",
+        "options": [
+          "twice",
+          "double",
+          "second",
+          "two"
+        ],
+        "answer": 0,
+        "explanation": "Twice = two times (once, twice, three times)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Have you ever went…?",
+        "right": "Have you ever been / gone…?",
+        "why": "Use the past participle."
+      },
+      {
+        "wrong": "I have been in Accra last year.",
+        "right": "I went to Accra last year.",
+        "why": "Finished time → past simple."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-hotel",
+    "unitId": "a2-u9",
+    "level": "A2",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Booking a hotel",
+    "minutes": 12,
+    "objective": "Book a room, check in and ask for help.",
+    "sections": [
+      {
+        "heading": "Booking",
+        "en": "I'd like to book a single / double room for two nights. · Is breakfast included? · How much is it per night?",
+        "examples": [
+          "I'd like to book a double room from Friday to Sunday."
+        ]
+      },
+      {
+        "heading": "At the hotel",
+        "en": "check in · check out · reception · key card · Wi-Fi password · room service.",
+        "fr": "check in = arriver et s'enregistrer ; check out = libérer la chambre.",
+        "examples": [
+          "What time is check-out?",
+          "Could I have the Wi-Fi password, please?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2hl-v1",
+        "word": "book",
+        "ipa": "/bʊk/",
+        "pos": "verb",
+        "definition": "to reserve",
+        "fr": "réserver",
+        "example": "I booked a room online.",
+        "context": "Hotel"
+      },
+      {
+        "id": "a2hl-v2",
+        "word": "reception",
+        "ipa": "/rɪˈsepʃn/",
+        "pos": "noun",
+        "definition": "the desk where guests arrive",
+        "fr": "réception",
+        "example": "Ask at reception.",
+        "context": "Hotel"
+      },
+      {
+        "id": "a2hl-v3",
+        "word": "included",
+        "ipa": "/ɪnˈkluːdɪd/",
+        "pos": "adjective",
+        "definition": "part of the price",
+        "fr": "compris",
+        "example": "Is breakfast included?",
+        "context": "Hotel"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2hl-p1",
+        "type": "mcq",
+        "prompt": "A room for one person:",
+        "options": [
+          "single room",
+          "double room",
+          "twin room"
+        ],
+        "answer": 0,
+        "explanation": "single = one person."
+      },
+      {
+        "id": "a2hl-p2",
+        "type": "mcq",
+        "prompt": "Leave the hotel = ___",
+        "options": [
+          "check in",
+          "check out",
+          "book"
+        ],
+        "answer": 1,
+        "explanation": "check out = leave."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2hl-q1",
+        "type": "mcq",
+        "prompt": "I'd like to ___ a room for Saturday.",
+        "options": [
+          "book",
+          "take place",
+          "do",
+          "make"
+        ],
+        "answer": 0,
+        "explanation": "book a room."
+      },
+      {
+        "id": "a2hl-q2",
+        "type": "gap",
+        "prompt": "Is breakfast ___ in the price?",
+        "accepted": [
+          "included"
+        ],
+        "explanation": "included = part of the price."
+      },
+      {
+        "id": "a2hl-q3",
+        "type": "truefalse",
+        "prompt": "You check in when you arrive at the hotel.",
+        "answer": true,
+        "explanation": "check in = arrive and register."
+      },
+      {
+        "id": "a2hl-q4",
+        "type": "mcq",
+        "prompt": "Where do you get your key?",
+        "options": [
+          "at reception",
+          "at room service",
+          "at check-out",
+          "at the gym"
+        ],
+        "answer": 0,
+        "explanation": "You get your key at reception, the front desk."
+      },
+      {
+        "id": "a2hl-q5",
+        "type": "mcq",
+        "prompt": "\"How much is it per night?\" asks about…",
+        "options": [
+          "the price",
+          "the time",
+          "the size",
+          "the food"
+        ],
+        "answer": 0,
+        "explanation": "\"How much\" asks about the price."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I want to reserve me a room.",
+        "right": "I'd like to book a room.",
+        "why": "Natural, polite form."
+      },
+      {
+        "wrong": "the check-in is at 12? (leaving)",
+        "right": "check-out is at 12",
+        "why": "check out = leave."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-must",
+    "unitId": "a2-u10",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "must, have to, don't have to",
+    "minutes": 12,
+    "objective": "Talk about rules and obligations.",
+    "sections": [
+      {
+        "heading": "Obligation",
+        "en": "must / have to + verb = it's necessary. must = rule or personal feeling; have to = external rule.",
+        "examples": [
+          "You must wear a seatbelt.",
+          "I have to work on Saturday."
+        ]
+      },
+      {
+        "heading": "Prohibition vs no obligation",
+        "en": "mustn't = it's not allowed. don't have to = it's not necessary.",
+        "fr": "Piège : « You don't have to come » = ce n'est pas obligatoire, PAS « tu ne dois pas venir ».",
+        "examples": [
+          "You mustn't smoke here.",
+          "You don't have to pay — it's free."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2mu-v1",
+        "word": "allowed",
+        "ipa": "/əˈlaʊd/",
+        "pos": "adjective",
+        "definition": "permitted",
+        "fr": "autorisé",
+        "example": "Phones are not allowed in the exam.",
+        "context": "Rules"
+      },
+      {
+        "id": "a2mu-v2",
+        "word": "seatbelt",
+        "ipa": "/ˈsiːtbelt/",
+        "pos": "noun",
+        "definition": "a belt that keeps you safe in a car",
+        "fr": "ceinture de sécurité",
+        "example": "Fasten your seatbelt.",
+        "context": "Rules"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2mu-p1",
+        "type": "mcq",
+        "prompt": "It's free. You ___ pay.",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "must"
+        ],
+        "answer": 1,
+        "explanation": "Not necessary → don't have to."
+      },
+      {
+        "id": "a2mu-p2",
+        "type": "mcq",
+        "prompt": "You ___ park here. It's forbidden.",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "have to"
+        ],
+        "answer": 0,
+        "explanation": "Not allowed → mustn't."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2mu-q1",
+        "type": "mcq",
+        "prompt": "She ___ wear a uniform at work. (rule)",
+        "options": [
+          "has to",
+          "have to",
+          "must to",
+          "musts"
+        ],
+        "answer": 0,
+        "explanation": "she → has to."
+      },
+      {
+        "id": "a2mu-q2",
+        "type": "gap",
+        "prompt": "You ___ use your phone in the exam. (it's forbidden, contraction)",
+        "accepted": [
+          "mustn't"
+        ],
+        "explanation": "Forbidden → mustn't."
+      },
+      {
+        "id": "a2mu-q3",
+        "type": "truefalse",
+        "prompt": "\"You don't have to come\" means you are not allowed to come.",
+        "answer": false,
+        "explanation": "It means it isn't necessary."
+      },
+      {
+        "id": "a2mu-q4",
+        "type": "mcq",
+        "prompt": "___ I have to bring my passport?",
+        "options": [
+          "Do",
+          "Must",
+          "Have",
+          "Am"
+        ],
+        "answer": 0,
+        "explanation": "Question: Do I have to…?"
+      },
+      {
+        "id": "a2mu-q5",
+        "type": "mcq",
+        "prompt": "I ___ to get up early tomorrow.",
+        "options": [
+          "must",
+          "have",
+          "has",
+          "need"
+        ],
+        "answer": 1,
+        "explanation": "have to + verb."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "You must to go.",
+        "right": "You must go.",
+        "why": "No to after must."
+      },
+      {
+        "wrong": "He have to work.",
+        "right": "He has to work.",
+        "why": "he → has to."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-should",
+    "unitId": "a2-u10",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "should: giving advice",
+    "minutes": 10,
+    "objective": "Give and ask for advice.",
+    "sections": [
+      {
+        "heading": "Form",
+        "en": "should / shouldn't + verb. Question: Should I…? Also: I think you should… / Why don't you…?",
+        "fr": "« Tu devrais » = you should.",
+        "examples": [
+          "You should drink more water.",
+          "You shouldn't stay up late.",
+          "What should I do?",
+          "Why don't you ask your teacher?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2sh-v1",
+        "word": "advice",
+        "ipa": "/ədˈvaɪs/",
+        "pos": "noun (uncountable)",
+        "definition": "an opinion about what someone should do",
+        "fr": "conseil(s)",
+        "example": "Can you give me some advice?",
+        "context": "Advice"
+      },
+      {
+        "id": "a2sh-v2",
+        "word": "stay up",
+        "ipa": "/steɪ ʌp/",
+        "pos": "phrasal verb",
+        "definition": "to not go to bed",
+        "fr": "veiller",
+        "example": "Don't stay up too late.",
+        "context": "Habits"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2sh-p1",
+        "type": "mcq",
+        "prompt": "You look tired. You ___ go to bed.",
+        "options": [
+          "should",
+          "shouldn't",
+          "should to"
+        ],
+        "answer": 0,
+        "explanation": "Advice → should."
+      },
+      {
+        "id": "a2sh-p2",
+        "type": "mcq",
+        "prompt": "Can you give me ___ advice?",
+        "options": [
+          "an",
+          "some",
+          "a"
+        ],
+        "answer": 1,
+        "explanation": "advice is uncountable → some advice."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2sh-q1",
+        "type": "mcq",
+        "prompt": "You ___ eat so much sugar.",
+        "options": [
+          "should",
+          "shouldn't",
+          "must to",
+          "should not to"
+        ],
+        "answer": 1,
+        "explanation": "Negative advice → shouldn't."
+      },
+      {
+        "id": "a2sh-q2",
+        "type": "gap",
+        "prompt": "What ___ I wear to the interview?",
+        "accepted": [
+          "should"
+        ],
+        "explanation": "Asking for advice → should."
+      },
+      {
+        "id": "a2sh-q3",
+        "type": "truefalse",
+        "prompt": "\"an advice\" is correct.",
+        "answer": false,
+        "explanation": "advice is uncountable: a piece of advice / some advice."
+      },
+      {
+        "id": "a2sh-q4",
+        "type": "mcq",
+        "prompt": "Why ___ you take a taxi?",
+        "options": [
+          "don't",
+          "doesn't",
+          "not",
+          "aren't"
+        ],
+        "answer": 0,
+        "explanation": "Suggestion: Why don't you…?"
+      },
+      {
+        "id": "a2sh-q5",
+        "type": "mcq",
+        "prompt": "She should ___ a doctor.",
+        "options": [
+          "see",
+          "sees",
+          "to see",
+          "seeing"
+        ],
+        "answer": 0,
+        "explanation": "should + base verb."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "You should to rest.",
+        "right": "You should rest.",
+        "why": "No to after should."
+      },
+      {
+        "wrong": "an advice",
+        "right": "some advice / a piece of advice",
+        "why": "Uncountable."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-will",
+    "unitId": "a2-u11",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "will: decisions, offers, promises",
+    "minutes": 10,
+    "objective": "Use will for quick decisions, offers and promises.",
+    "sections": [
+      {
+        "heading": "Uses of will",
+        "en": "Decision now: I'll have the chicken. Offer: I'll help you. Promise: I'll call you tonight. Prediction: It will be hot tomorrow.",
+        "fr": "going to = projet déjà décidé ; will = décision prise maintenant.",
+        "examples": [
+          "The phone is ringing. — I'll answer it.",
+          "Don't worry, I won't tell anyone.",
+          "Will you marry me?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2wi-v1",
+        "word": "promise",
+        "ipa": "/ˈprɒmɪs/",
+        "pos": "verb / noun",
+        "definition": "to say you will certainly do something",
+        "fr": "promettre",
+        "example": "I promise I'll be on time.",
+        "context": "Future"
+      },
+      {
+        "id": "a2wi-v2",
+        "word": "offer",
+        "ipa": "/ˈɒfə/",
+        "pos": "verb / noun",
+        "definition": "to say you are willing to do something",
+        "fr": "proposer",
+        "example": "She offered to help.",
+        "context": "Future"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2wi-p1",
+        "type": "mcq",
+        "prompt": "It's cold. — I ___ close the window.",
+        "options": [
+          "will",
+          "am going to",
+          "close"
+        ],
+        "answer": 0,
+        "explanation": "Decision now → I'll."
+      },
+      {
+        "id": "a2wi-p2",
+        "type": "mcq",
+        "prompt": "I promise I ___ forget.",
+        "options": [
+          "won't",
+          "don't",
+          "am not"
+        ],
+        "answer": 0,
+        "explanation": "Promise → won't."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2wi-q1",
+        "type": "mcq",
+        "prompt": "That bag looks heavy. I ___ carry it for you.",
+        "options": [
+          "'ll",
+          "'m",
+          "going",
+          "do"
+        ],
+        "answer": 0,
+        "explanation": "Offer → I'll."
+      },
+      {
+        "id": "a2wi-q2",
+        "type": "gap",
+        "prompt": "I ___ call you when I arrive. (promise, full form)",
+        "accepted": [
+          "will"
+        ],
+        "explanation": "Promise → will."
+      },
+      {
+        "id": "a2wi-q3",
+        "type": "truefalse",
+        "prompt": "\"I will to help you\" is correct.",
+        "answer": false,
+        "explanation": "will + base verb: I will help you."
+      },
+      {
+        "id": "a2wi-q4",
+        "type": "mcq",
+        "prompt": "I think it ___ rain tomorrow.",
+        "options": [
+          "will",
+          "is",
+          "does",
+          "going"
+        ],
+        "answer": 0,
+        "explanation": "Prediction → will."
+      },
+      {
+        "id": "a2wi-q5",
+        "type": "mcq",
+        "prompt": "Won't is the short form of…",
+        "options": [
+          "would not",
+          "will not",
+          "want not",
+          "was not"
+        ],
+        "answer": 1,
+        "explanation": "won't = will not."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I will to come.",
+        "right": "I will come.",
+        "why": "Base verb after will."
+      },
+      {
+        "wrong": "I call you later, I promise.",
+        "right": "I'll call you later, I promise.",
+        "why": "Promise → will."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-shopping-clothes",
+    "unitId": "a2-u11",
+    "level": "A2",
+    "category": "everyday",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Buying clothes",
+    "minutes": 12,
+    "objective": "Ask for sizes, try clothes on and return them.",
+    "sections": [
+      {
+        "heading": "In a clothes shop",
+        "en": "Can I try it on? · What size are you? · Do you have it in a bigger size / in blue? · It's too small. · It suits you.",
+        "examples": [
+          "Can I try these trousers on?",
+          "Do you have this shirt in a medium?"
+        ]
+      },
+      {
+        "heading": "Paying and returning",
+        "en": "the changing room · on sale · receipt · return · exchange.",
+        "fr": "« Ça te va bien » = It suits you.",
+        "examples": [
+          "Keep the receipt if you want to return it.",
+          "Can I exchange this for a smaller size?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2sc-v1",
+        "word": "try on",
+        "ipa": "/traɪ ɒn/",
+        "pos": "phrasal verb",
+        "definition": "to put on clothes to see if they fit",
+        "fr": "essayer (vêtement)",
+        "example": "Can I try it on?",
+        "context": "Shopping"
+      },
+      {
+        "id": "a2sc-v2",
+        "word": "receipt",
+        "ipa": "/rɪˈsiːt/",
+        "pos": "noun",
+        "definition": "a paper that proves you paid",
+        "fr": "ticket de caisse",
+        "example": "Here's your receipt.",
+        "context": "Shopping"
+      },
+      {
+        "id": "a2sc-v3",
+        "word": "suit",
+        "ipa": "/suːt/",
+        "pos": "verb",
+        "definition": "to look good on someone",
+        "fr": "aller bien à",
+        "example": "That colour suits you.",
+        "context": "Shopping"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2sc-p1",
+        "type": "mcq",
+        "prompt": "You want to check if a shirt fits. You ask:",
+        "options": [
+          "Can I try it on?",
+          "Can I try on it?",
+          "Can I wear?"
+        ],
+        "answer": 0,
+        "explanation": "try it on (pronoun in the middle)."
+      },
+      {
+        "id": "a2sc-p2",
+        "type": "mcq",
+        "prompt": "The paper that proves you paid:",
+        "options": [
+          "receipt",
+          "recipe",
+          "ticket of cash"
+        ],
+        "answer": 0,
+        "explanation": "A receipt proves you paid (a recipe is for cooking)."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2sc-q1",
+        "type": "mcq",
+        "prompt": "Where do you try clothes on?",
+        "options": [
+          "changing room",
+          "receipt",
+          "sale",
+          "till"
+        ],
+        "answer": 0,
+        "explanation": "The changing room."
+      },
+      {
+        "id": "a2sc-q2",
+        "type": "gap",
+        "prompt": "That dress really ___ you. (looks good on you)",
+        "accepted": [
+          "suits"
+        ],
+        "explanation": "It suits you."
+      },
+      {
+        "id": "a2sc-q3",
+        "type": "truefalse",
+        "prompt": "\"recipe\" is the paper you get after paying.",
+        "answer": false,
+        "explanation": "That's a receipt; a recipe is for cooking."
+      },
+      {
+        "id": "a2sc-q4",
+        "type": "mcq",
+        "prompt": "Cheaper than usual:",
+        "options": [
+          "on sale",
+          "on time",
+          "in size",
+          "sold out"
+        ],
+        "answer": 0,
+        "explanation": "On sale = at a lower price than usual."
+      },
+      {
+        "id": "a2sc-q5",
+        "type": "mcq",
+        "prompt": "Can I ___ this for a bigger size?",
+        "options": [
+          "exchange",
+          "change me",
+          "return back",
+          "try"
+        ],
+        "answer": 0,
+        "explanation": "exchange A for B."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Can I try on it?",
+        "right": "Can I try it on?",
+        "why": "Pronoun in the middle."
+      },
+      {
+        "wrong": "Give me the recipe.",
+        "right": "Could I have the receipt?",
+        "why": "receipt ≠ recipe."
+      }
+    ]
+  },
+  {
+    "id": "a2-g-possessive",
+    "unitId": "a2-u12",
+    "level": "A2",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "mine, yours, whose",
+    "minutes": 10,
+    "objective": "Talk about who owns things.",
+    "sections": [
+      {
+        "heading": "Possessive pronouns",
+        "en": "mine · yours · his · hers · ours · theirs. They replace adjective + noun.",
+        "examples": [
+          "This bag is mine. (= my bag)",
+          "Is this phone yours?",
+          "Their house is bigger than ours."
+        ]
+      },
+      {
+        "heading": "Whose?",
+        "en": "Whose + noun asks about the owner. Answer with 's or a pronoun.",
+        "fr": "Ne pas confondre whose (à qui) et who's (who is).",
+        "examples": [
+          "Whose keys are these? — They're Ama's.",
+          "Whose is this jacket? — It's mine."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2po-v1",
+        "word": "belong to",
+        "ipa": "/bɪˈlɒŋ tə/",
+        "pos": "verb",
+        "definition": "to be owned by",
+        "fr": "appartenir à",
+        "example": "This car belongs to my father.",
+        "context": "Possession"
+      },
+      {
+        "id": "a2po-v2",
+        "word": "whose",
+        "ipa": "/huːz/",
+        "pos": "pronoun",
+        "definition": "of which person",
+        "fr": "à qui",
+        "example": "Whose bag is this?",
+        "context": "Questions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2po-p1",
+        "type": "mcq",
+        "prompt": "This is my pen. It's ___.",
+        "options": [
+          "my",
+          "mine",
+          "me"
+        ],
+        "answer": 1,
+        "explanation": "my pen → mine."
+      },
+      {
+        "id": "a2po-p2",
+        "type": "mcq",
+        "prompt": "___ shoes are these?",
+        "options": [
+          "Who's",
+          "Whose",
+          "Who"
+        ],
+        "answer": 1,
+        "explanation": "Owner → Whose."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2po-q1",
+        "type": "mcq",
+        "prompt": "Is this your book? — Yes, it's ___.",
+        "options": [
+          "my",
+          "mine",
+          "me",
+          "I"
+        ],
+        "answer": 1,
+        "explanation": "my book → mine (possessive pronoun, no noun after it)."
+      },
+      {
+        "id": "a2po-q2",
+        "type": "mcq",
+        "prompt": "Their car is red. ___ is blue.",
+        "options": [
+          "Our",
+          "Ours",
+          "Us",
+          "We"
+        ],
+        "answer": 1,
+        "explanation": "our car → ours."
+      },
+      {
+        "id": "a2po-q3",
+        "type": "gap",
+        "prompt": "This laptop belongs to Sena. It's ___. (pronoun)",
+        "accepted": [
+          "hers"
+        ],
+        "explanation": "her laptop → hers."
+      },
+      {
+        "id": "a2po-q4",
+        "type": "truefalse",
+        "prompt": "\"Who's bag is this?\" is correct.",
+        "answer": false,
+        "explanation": "Whose bag is this?"
+      },
+      {
+        "id": "a2po-q5",
+        "type": "mcq",
+        "prompt": "The house ___ to my uncle.",
+        "options": [
+          "belongs",
+          "is belong",
+          "belong",
+          "belonging"
+        ],
+        "answer": 0,
+        "explanation": "belongs to."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "This is mine book.",
+        "right": "This is my book. / This book is mine.",
+        "why": "mine replaces my + noun."
+      },
+      {
+        "wrong": "Who's is this?",
+        "right": "Whose is this?",
+        "why": "whose = owner."
+      }
+    ]
+  },
+  {
+    "id": "a2-v-city",
+    "unitId": "a2-u12",
+    "level": "A2",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "City life",
+    "minutes": 12,
+    "objective": "Describe your town and its good and bad points.",
+    "sections": [
+      {
+        "heading": "Places and features",
+        "en": "neighbourhood · traffic · pollution · public transport · nightlife · parks · crowded · noisy · safe.",
+        "examples": [
+          "My neighbourhood is quiet and safe.",
+          "The traffic is terrible in the morning."
+        ]
+      },
+      {
+        "heading": "Good and bad points",
+        "en": "The best thing about… is… · One problem is… · There isn't enough…",
+        "examples": [
+          "The best thing about Lomé is the beach.",
+          "One problem is the traffic."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a2ci-v1",
+        "word": "neighbourhood",
+        "ipa": "/ˈneɪbəhʊd/",
+        "pos": "noun",
+        "definition": "the area around your home",
+        "fr": "quartier",
+        "example": "I love my neighbourhood.",
+        "context": "City"
+      },
+      {
+        "id": "a2ci-v2",
+        "word": "traffic",
+        "ipa": "/ˈtræfɪk/",
+        "pos": "noun (uncountable)",
+        "definition": "cars and vehicles on the road",
+        "fr": "circulation",
+        "example": "There's a lot of traffic.",
+        "context": "City"
+      },
+      {
+        "id": "a2ci-v3",
+        "word": "pollution",
+        "ipa": "/pəˈluːʃn/",
+        "pos": "noun (uncountable)",
+        "definition": "dirt in the air or water",
+        "fr": "pollution",
+        "example": "Air pollution is a problem.",
+        "context": "City"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a2ci-p1",
+        "type": "mcq",
+        "prompt": "The area where you live:",
+        "options": [
+          "neighbourhood",
+          "nightlife",
+          "traffic"
+        ],
+        "answer": 0,
+        "explanation": "neighbourhood."
+      },
+      {
+        "id": "a2ci-p2",
+        "type": "mcq",
+        "prompt": "Full of people:",
+        "options": [
+          "crowded",
+          "quiet",
+          "safe"
+        ],
+        "answer": 0,
+        "explanation": "Crowded = full of people."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a2ci-q1",
+        "type": "mcq",
+        "prompt": "Buses and trains for everyone:",
+        "options": [
+          "public transport",
+          "traffic",
+          "nightlife",
+          "pollution"
+        ],
+        "answer": 0,
+        "explanation": "public transport."
+      },
+      {
+        "id": "a2ci-q2",
+        "type": "gap",
+        "prompt": "There's too much ___ — the roads are full of cars.",
+        "accepted": [
+          "traffic"
+        ],
+        "explanation": "Traffic = cars and vehicles on the road (uncountable)."
+      },
+      {
+        "id": "a2ci-q3",
+        "type": "truefalse",
+        "prompt": "\"nightlife\" means bars, music and places to go in the evening.",
+        "answer": true,
+        "explanation": "Nightlife = places to go out in the evening."
+      },
+      {
+        "id": "a2ci-q4",
+        "type": "mcq",
+        "prompt": "The opposite of noisy:",
+        "options": [
+          "crowded",
+          "quiet",
+          "busy",
+          "polluted"
+        ],
+        "answer": 1,
+        "explanation": "Quiet is the opposite of noisy."
+      },
+      {
+        "id": "a2ci-q5",
+        "type": "mcq",
+        "prompt": "\"The best thing ___ my town is the market.\"",
+        "options": [
+          "about",
+          "of",
+          "for",
+          "in"
+        ],
+        "answer": 0,
+        "explanation": "The best thing about…"
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "There are many traffics.",
+        "right": "There's a lot of traffic.",
+        "why": "traffic is uncountable."
+      },
+      {
+        "wrong": "The best thing of Lomé",
+        "right": "The best thing about Lomé",
+        "why": "about."
       }
     ]
   }

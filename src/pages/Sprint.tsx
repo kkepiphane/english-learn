@@ -2,24 +2,21 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import clsx from 'clsx'
 import { ArrowClockwise, CheckCircle, Ghost, PersonSimpleRun, Timer, XCircle } from '@phosphor-icons/react'
-import { getSheet } from '../content'
 import type { Exercise } from '../content/types'
 import { Card, CountUp, Notice } from '../components/ui'
 import { correctAnswerText, isCorrect, type Answer } from '../lib/exercise'
 import { addXp } from '../lib/repo'
 import { celebrate, sfx } from '../lib/fx'
 import { useStudyTimer } from '../hooks/hooks'
-import { ghostAt, getRecord, MIX_ID, saveRun, sprintItems, sprintLevel, sprintSeconds, type SprintRecord } from '../lib/sprint'
+import { ghostAt, getRecord, saveRun, sprintInfo, sprintItems, type SprintRecord } from '../lib/sprint'
 
 const XP_PER_CORRECT = 2
 
 export default function Sprint() {
   const id = useParams().id!
-  const lvl = sprintLevel(id)
-  const sheet = getSheet(id)
-  if (id !== MIX_ID && !lvl && !sheet) return <Notice tone="error">Sprint not found.</Notice>
-  const title = lvl ? `${lvl} sprint` : sheet?.title ?? 'A1 mixed sprint'
-  return <SprintRun key={id} id={id} title={title} seconds={sprintSeconds(id)} back={lvl ?? 'A1'} />
+  const info = sprintInfo(id)
+  if (!info || !info.pool.length) return <Notice tone="error">Sprint not found.</Notice>
+  return <SprintRun key={id} id={id} title={info.title} seconds={info.seconds} back={info.level} />
 }
 
 type Phase = 'ready' | 'run' | 'done'

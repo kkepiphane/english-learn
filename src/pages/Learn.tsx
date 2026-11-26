@@ -1,6 +1,7 @@
 import { Link, useSearchParams } from 'react-router-dom'
 import { BasicsHome } from './Basics'
-import { levelSprintId, sprintKey, SPRINT_SECONDS, type SprintRecord } from '../lib/sprint'
+import { levelSprintId, skillSprintId, sprintKey, SPRINT_SECONDS, unitSprintId, type SprintRecord } from '../lib/sprint'
+import { unitTestKey, type UnitTestRecord } from '../lib/unitTest'
 import { useLiveQuery } from 'dexie-react-hooks'
 import clsx from 'clsx'
 import { db } from '../db/db'
@@ -12,7 +13,7 @@ import { stars } from '../lib/rewards'
 import { buildBites } from '../lib/lessonDeck'
 import type { Lesson, Level } from '../content/types'
 import { LEVELS } from '../content/types'
-import { ArrowRight, CaretRight, ChatsCircle, Check, Exam, Lock, PencilSimple, TextAa, Timer, Trophy, type Icon } from '@phosphor-icons/react'
+import { ArrowRight, CaretRight, ChatsCircle, Check, Exam, Lock, PencilSimple, ShieldCheck, TextAa, Timer, Trophy, type Icon } from '@phosphor-icons/react'
 
 const CAT: Record<Lesson['category'], { label: string; icon: Icon }> = {
   grammar: { label: 'Grammar', icon: PencilSimple },
@@ -41,7 +42,10 @@ export default function Learn() {
   const asked = params.get('level')
   const current: Level = LEVELS.includes(asked as Level) ? (asked as Level) : learningLevel(profile)
   const setLevel = (l: Level) => setParams({ level: l }, { replace: true })
-  const sprint = useLiveQuery(() => db.kv.get(sprintKey(levelSprintId(current))), [current])?.value as SprintRecord | undefined
+  // Sprint records and unit test results, by kv key.
+  const recRows = useLiveQuery(() => db.kv.where('key').startsWithAnyOf('sprint.', 'unittest.').toArray(), [], [])
+  const rec = new Map(recRows.map((r) => [r.key, r.value]))
+  const sprint = rec.get(sprintKey(levelSprintId(current))) as SprintRecord | undefined
   const map = new Map(progress.map((p) => [p.lessonId, p]))
   const units = unitsFor(current)
   const all = units.flatMap((u) => u.lessonIds)
@@ -78,6 +82,20 @@ export default function Learn() {
           <ArrowRight size={22} weight="bold" aria-hidden />
         </Link>
       )}
+      {current !== 'A1' && (
+        <div className="-mt-2 mb-6 grid grid-cols-2 gap-3">
+          {(['gram', 'vocab'] as const).map((k) => {
+            const r = rec.get(sprintKey(skillSprintId(current, k))) as SprintRecord | undefined
+            const I = k === 'gram' ? PencilSimple : TextAa
+            return (
+              <Link key={k} to={`/basics/sprint/${skillSprintId(current, k)}`} className="card flex items-center gap-2.5 p-3 shadow-[0_4px_0_0_theme(colors.ink.200)] transition active:translate-y-[2px] active:shadow-[0_2px_0_0_theme(colors.ink.200)] dark:shadow-[0_4px_0_0_theme(colors.ink.950)]">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-flame-50 text-flame-600 dark:bg-flame-900/30 dark:text-flame-300" aria-hidden><I size={20} /></span>
+                <span className="min-w-0"><span className="block text-sm font-bold">{k === 'gram' ? 'Grammar' : 'Vocab'} · {SPRINT_SECONDS.skill} s</span><span className="text-xs text-ink-400">{r ? `Best ${r.best}` : 'Sprint'}</span></span>
+              </Link>
+            )
+          })}
+        </div>
+      )}
 
       <div className="space-y-8">
         {units.map((u, ui) => (
@@ -112,6 +130,7 @@ export default function Learn() {
                 )
               })}
             </ol>
+            <UnitActions unitId={u.id} test={rec.get(unitTestKey(u.id)) as UnitTestRecord | undefined} sprint={rec.get(sprintKey(unitSprintId(u.id))) as SprintRecord | undefined} />
           </section>
         ))}
 
@@ -149,5 +168,21 @@ function BiteDots({ lesson, done }: { lesson: Lesson; done: number }) {
     <span className="mt-2 flex gap-1" role="img" aria-label={`${done} of ${total} bites done`}>
       {Array.from({ length: total }, (_, k) => <span key={k} className={clsx('h-1.5 w-4 rounded-full', k < done ? 'bg-brand-500' : 'bg-ink-200 dark:bg-ink-700')} />)}
     </span>
+  )
+}
+
+/** End of a unit: the unit test (pass at 70 %) and a 60-second unit sprint. */
+function UnitActions({ unitId, test, sprint }: { unitId: string; test?: UnitTestRecord; sprint?: SprintRecord }) {
+  return (
+    <div className="mt-6 grid grid-cols-2 gap-3">
+      <Link to={`/learn/unit-test/${unitId}`} className={clsx('flex items-center gap-2.5 rounded-2xl border-2 border-b-4 p-3 transition active:translate-y-[2px] active:border-b-2', test?.passed ? 'border-sun-400 bg-sun-100 text-sun-900 dark:bg-sun-900/30 dark:text-sun-300' : 'border-brand-200 bg-white dark:border-brand-800 dark:bg-ink-900')}>
+        <ShieldCheck size={26} className={test?.passed ? 'text-sun-600' : 'text-brand-600 dark:text-brand-300'} aria-hidden />
+        <span><span className="block text-sm font-bold">Unit test</span><span className="text-xs opacity-70">{test ? `Best ${test.best} %` : 'Pass at 70 %'}</span></span>
+      </Link>
+      <Link to={`/basics/sprint/${unitSprintId(unitId)}`} className="flex items-center gap-2.5 rounded-2xl border-2 border-b-4 border-flame-200 bg-white p-3 transition active:translate-y-[2px] active:border-b-2 dark:border-flame-900 dark:bg-ink-900">
+        <Timer size={26} className="text-flame-500" aria-hidden />
+        <span><span className="block text-sm font-bold">Unit sprint</span><span className="text-xs opacity-70">{sprint ? `Best ${sprint.best}` : '60 s'}</span></span>
+      </Link>
+    </div>
   )
 }

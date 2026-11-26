@@ -23,6 +23,7 @@ const Profile = lazy(() => import('./pages/Profile'))
 const Goal = lazy(() => import('./pages/Goal'))
 const SheetPage = lazy(() => import('./pages/Basics'))
 const Sprint = lazy(() => import('./pages/Sprint'))
+const UnitTest = lazy(() => import('./pages/UnitTest'))
 
 const Loading = () => <div className="flex h-40 items-center justify-center text-sm text-ink-400" role="status">Loading…</div>
 
@@ -51,6 +52,7 @@ export default function App() {
                 <Route path="learn" element={<Learn />} />
                 <Route path="learn/lesson/:id" element={<LessonPage />} />
                 <Route path="learn/checkpoint/:level" element={<Checkpoint />} />
+                <Route path="learn/unit-test/:unitId" element={<UnitTest />} />
                 <Route path="practice" element={<Practice />} />
                 <Route path="practice/reading/:id" element={<ReadingPage />} />
                 <Route path="practice/listening/:id" element={<ListeningPage />} />

@@ -2039,7 +2039,7 @@
         "accepted": [
           "umbrella"
         ],
-        "explanation": "umbrella."
+        "explanation": "An umbrella protects you from the rain."
       },
       {
         "id": "a1vf2-q4",
@@ -2649,7 +2649,7 @@
           "a shirt"
         ],
         "answer": 1,
-        "explanation": "trousers."
+        "explanation": "Trousers cover both legs (always plural)."
       },
       {
         "id": "a1vcl-q3",
@@ -2691,6 +2691,1228 @@
         "wrong": "He carries a hat.",
         "right": "He wears a hat.",
         "why": "wear clothes."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-questions",
+    "unitId": "a1-u9",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Asking questions",
+    "minutes": 10,
+    "objective": "Ask simple questions with do, does and be.",
+    "sections": [
+      {
+        "heading": "Questions with be",
+        "en": "Put be first: Are you…? Is it…? Where is…?",
+        "examples": [
+          "Are you a student?",
+          "Where is the toilet?"
+        ]
+      },
+      {
+        "heading": "Questions with do / does",
+        "en": "Do / Does + subject + verb. Question word first: What do you…?",
+        "fr": "Pas de -s après does : « Does she work? ».",
+        "examples": [
+          "Do you like rice?",
+          "Where does he live?",
+          "What time do you start work?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1q2-v1",
+        "word": "question",
+        "ipa": "/ˈkwestʃən/",
+        "pos": "noun",
+        "definition": "words you say to ask for information",
+        "fr": "question",
+        "example": "Can I ask a question?",
+        "context": "Classroom"
+      },
+      {
+        "id": "a1q2-v2",
+        "word": "answer",
+        "ipa": "/ˈɑːnsə/",
+        "pos": "noun / verb",
+        "definition": "what you say after a question",
+        "fr": "réponse, répondre",
+        "example": "What's the answer?",
+        "context": "Classroom"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gq-p1",
+        "type": "mcq",
+        "prompt": "___ you speak French?",
+        "options": [
+          "Are",
+          "Do",
+          "Does"
+        ],
+        "answer": 1,
+        "explanation": "Action verb (speak) with you → Do."
+      },
+      {
+        "id": "a1gq-p2",
+        "type": "mcq",
+        "prompt": "___ she your sister?",
+        "options": [
+          "Is",
+          "Does",
+          "Do"
+        ],
+        "answer": 0,
+        "explanation": "With be: Is she…?"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gq-q1",
+        "type": "mcq",
+        "prompt": "Where ___ your brother work?",
+        "options": [
+          "do",
+          "does",
+          "is",
+          "are"
+        ],
+        "answer": 1,
+        "explanation": "he → does."
+      },
+      {
+        "id": "a1gq-q2",
+        "type": "mcq",
+        "prompt": "___ they at home?",
+        "options": [
+          "Do",
+          "Does",
+          "Are",
+          "Is"
+        ],
+        "answer": 2,
+        "explanation": "be + they → Are."
+      },
+      {
+        "id": "a1gq-q3",
+        "type": "gap",
+        "prompt": "What ___ you do at the weekend?",
+        "accepted": [
+          "do"
+        ],
+        "explanation": "you + action verb → do."
+      },
+      {
+        "id": "a1gq-q4",
+        "type": "truefalse",
+        "prompt": "\"Does he lives here?\" is correct.",
+        "answer": false,
+        "explanation": "After does, no -s: Does he live here?"
+      },
+      {
+        "id": "a1gq-q5",
+        "type": "order",
+        "prompt": "Put the words in order.",
+        "words": [
+          "time",
+          "What",
+          "the",
+          "bank",
+          "does",
+          "open"
+        ],
+        "answer": "What time does the bank open",
+        "explanation": "Question word + does + subject + verb."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "You like coffee?",
+        "right": "Do you like coffee?",
+        "why": "Questions need do/does."
+      },
+      {
+        "wrong": "Where you live?",
+        "right": "Where do you live?",
+        "why": "Add do."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-classroom",
+    "unitId": "a1-u9",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Classroom English",
+    "minutes": 10,
+    "objective": "Use the phrases you need in an English class.",
+    "sections": [
+      {
+        "heading": "Useful phrases",
+        "en": "Can you repeat, please? · How do you say … in English? · What does … mean? · I don't understand. · Can you speak more slowly?",
+        "fr": "Ces phrases servent dans tous les cours et entretiens.",
+        "examples": [
+          "Sorry, I don't understand. Can you repeat, please?",
+          "How do you say « stylo » in English?"
+        ]
+      },
+      {
+        "heading": "Classroom words",
+        "en": "pen · notebook · page · exercise · homework · board · dictionary.",
+        "examples": [
+          "Open your notebook at page 12.",
+          "Do exercise 3 for homework."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1cr-v1",
+        "word": "repeat",
+        "ipa": "/rɪˈpiːt/",
+        "pos": "verb",
+        "definition": "to say again",
+        "fr": "répéter",
+        "example": "Can you repeat, please?",
+        "context": "Classroom"
+      },
+      {
+        "id": "a1cr-v2",
+        "word": "homework",
+        "ipa": "/ˈhəʊmwɜːk/",
+        "pos": "noun (uncountable)",
+        "definition": "work a teacher gives you to do at home",
+        "fr": "devoirs",
+        "example": "I have a lot of homework.",
+        "context": "School"
+      },
+      {
+        "id": "a1cr-v3",
+        "word": "mean",
+        "ipa": "/miːn/",
+        "pos": "verb",
+        "definition": "to have a meaning",
+        "fr": "signifier",
+        "example": "What does 'busy' mean?",
+        "context": "Classroom"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vc-p1",
+        "type": "mcq",
+        "prompt": "You don't understand. You say:",
+        "options": [
+          "Can you repeat, please?",
+          "Goodbye.",
+          "I'm fine."
+        ],
+        "answer": 0,
+        "explanation": "Ask the teacher to say it again."
+      },
+      {
+        "id": "a1vc-p2",
+        "type": "mcq",
+        "prompt": "What ___ 'quiet' mean?",
+        "options": [
+          "is",
+          "does",
+          "do"
+        ],
+        "answer": 1,
+        "explanation": "What does … mean?"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vc-q1",
+        "type": "mcq",
+        "prompt": "How do you ___ « cahier » in English?",
+        "options": [
+          "tell",
+          "say",
+          "speak",
+          "talk"
+        ],
+        "answer": 1,
+        "explanation": "How do you say…?"
+      },
+      {
+        "id": "a1vc-q2",
+        "type": "gap",
+        "prompt": "Can you speak more ___, please? (not fast)",
+        "accepted": [
+          "slowly"
+        ],
+        "explanation": "slowly = not fast."
+      },
+      {
+        "id": "a1vc-q3",
+        "type": "truefalse",
+        "prompt": "\"homeworks\" is correct.",
+        "answer": false,
+        "explanation": "homework is uncountable."
+      },
+      {
+        "id": "a1vc-q4",
+        "type": "mcq",
+        "prompt": "You write in a…",
+        "options": [
+          "notebook",
+          "board",
+          "dictionary",
+          "page"
+        ],
+        "answer": 0,
+        "explanation": "You write in a notebook."
+      },
+      {
+        "id": "a1vc-q5",
+        "type": "mcq",
+        "prompt": "A book with the meanings of words:",
+        "options": [
+          "notebook",
+          "dictionary",
+          "homework",
+          "exercise"
+        ],
+        "answer": 1,
+        "explanation": "A dictionary gives meanings."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "How do you tell 'pen'?",
+        "right": "How do you say 'pen'?",
+        "why": "Use say."
+      },
+      {
+        "wrong": "What means 'busy'?",
+        "right": "What does 'busy' mean?",
+        "why": "Question with does."
+      }
+    ]
+  },
+  {
+    "id": "a1-v-body",
+    "unitId": "a1-u10",
+    "level": "A1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "The body",
+    "minutes": 10,
+    "objective": "Name parts of the body and say what hurts.",
+    "sections": [
+      {
+        "heading": "Body parts",
+        "en": "head · eye · ear · nose · mouth · tooth (teeth) · arm · hand · leg · foot (feet) · back · stomach.",
+        "fr": "Pluriels irréguliers : tooth → teeth, foot → feet.",
+        "examples": [
+          "I've got a cold. My nose is red.",
+          "She has long legs."
+        ]
+      },
+      {
+        "heading": "It hurts",
+        "en": "My … hurts. · I've got a headache / stomach ache / toothache.",
+        "examples": [
+          "My arm hurts.",
+          "I've got a toothache."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1bd-v1",
+        "word": "teeth",
+        "ipa": "/tiːθ/",
+        "pos": "noun (plural)",
+        "definition": "the white things in your mouth",
+        "fr": "dents",
+        "example": "Brush your teeth.",
+        "context": "Body"
+      },
+      {
+        "id": "a1bd-v2",
+        "word": "hurt",
+        "ipa": "/hɜːt/",
+        "pos": "verb",
+        "definition": "to feel pain",
+        "fr": "faire mal",
+        "example": "My back hurts.",
+        "context": "Health"
+      },
+      {
+        "id": "a1bd-v3",
+        "word": "stomach",
+        "ipa": "/ˈstʌmək/",
+        "pos": "noun",
+        "definition": "where food goes in your body",
+        "fr": "ventre, estomac",
+        "example": "My stomach hurts.",
+        "context": "Body"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1vb-p1",
+        "type": "mcq",
+        "prompt": "You see with your…",
+        "options": [
+          "ears",
+          "eyes",
+          "hands"
+        ],
+        "answer": 1,
+        "explanation": "We see with our eyes."
+      },
+      {
+        "id": "a1vb-p2",
+        "type": "mcq",
+        "prompt": "One foot, two ___",
+        "options": [
+          "foots",
+          "feet",
+          "feets"
+        ],
+        "answer": 1,
+        "explanation": "Irregular plural: feet."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1vb-q1",
+        "type": "mcq",
+        "prompt": "You hear with your…",
+        "options": [
+          "eyes",
+          "nose",
+          "ears",
+          "mouth"
+        ],
+        "answer": 2,
+        "explanation": "We hear with our ears."
+      },
+      {
+        "id": "a1vb-q2",
+        "type": "gap",
+        "prompt": "One tooth, two ___.",
+        "accepted": [
+          "teeth"
+        ],
+        "explanation": "Irregular plural: teeth."
+      },
+      {
+        "id": "a1vb-q3",
+        "type": "mcq",
+        "prompt": "My head ___.",
+        "options": [
+          "hurts",
+          "hurt me",
+          "is hurt",
+          "pains"
+        ],
+        "answer": 0,
+        "explanation": "My head hurts."
+      },
+      {
+        "id": "a1vb-q4",
+        "type": "truefalse",
+        "prompt": "You walk with your legs and feet.",
+        "answer": true,
+        "explanation": "Legs and feet are for walking."
+      },
+      {
+        "id": "a1vb-q5",
+        "type": "mcq",
+        "prompt": "Pain in your tooth:",
+        "options": [
+          "headache",
+          "toothache",
+          "backache",
+          "stomach"
+        ],
+        "answer": 1,
+        "explanation": "A pain in a tooth is a toothache."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "two foots",
+        "right": "two feet",
+        "why": "Irregular plural."
+      },
+      {
+        "wrong": "I have mal at my arm.",
+        "right": "My arm hurts.",
+        "why": "Use hurt."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-imperatives",
+    "unitId": "a1-u10",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Instructions: open, don't touch",
+    "minutes": 10,
+    "objective": "Give and understand instructions.",
+    "sections": [
+      {
+        "heading": "Imperative",
+        "en": "Use the base verb, no subject: Sit down. Open your book. Negative: Don't + verb. Add please to be polite.",
+        "fr": "Pas de « you » : « Close the door » (pas « You close the door »).",
+        "examples": [
+          "Turn left at the bank.",
+          "Don't run!",
+          "Please wait here."
+        ]
+      },
+      {
+        "heading": "Let's",
+        "en": "Let's + verb = a suggestion for you and me.",
+        "examples": [
+          "Let's go to the beach!",
+          "Let's start."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1im-v1",
+        "word": "sit down",
+        "ipa": "/sɪt daʊn/",
+        "pos": "phrasal verb",
+        "definition": "to take a seat",
+        "fr": "s'asseoir",
+        "example": "Please sit down.",
+        "context": "Instructions"
+      },
+      {
+        "id": "a1im-v2",
+        "word": "let's",
+        "ipa": "/lets/",
+        "pos": "phrase",
+        "definition": "used to suggest doing something together",
+        "fr": "allons, faisons",
+        "example": "Let's eat!",
+        "context": "Suggestions"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gi2-p1",
+        "type": "mcq",
+        "prompt": "___ the window, please.",
+        "options": [
+          "Opens",
+          "Open",
+          "Opening"
+        ],
+        "answer": 1,
+        "explanation": "Imperative = base verb."
+      },
+      {
+        "id": "a1gi2-p2",
+        "type": "mcq",
+        "prompt": "___ touch it! It's hot!",
+        "options": [
+          "No",
+          "Don't",
+          "Not"
+        ],
+        "answer": 1,
+        "explanation": "Negative imperative: Don't + verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gi2-q1",
+        "type": "mcq",
+        "prompt": "___ go to the cinema tonight! (suggestion)",
+        "options": [
+          "Let's",
+          "Let",
+          "We go",
+          "Lets us"
+        ],
+        "answer": 0,
+        "explanation": "Let's + verb."
+      },
+      {
+        "id": "a1gi2-q2",
+        "type": "gap",
+        "prompt": "___ talk in the library. (negative)",
+        "accepted": [
+          "don't",
+          "do not"
+        ],
+        "explanation": "Negative imperative: Don't."
+      },
+      {
+        "id": "a1gi2-q3",
+        "type": "truefalse",
+        "prompt": "\"Please sit down\" is a polite instruction.",
+        "answer": true,
+        "explanation": "Imperative + please."
+      },
+      {
+        "id": "a1gi2-q4",
+        "type": "mcq",
+        "prompt": "Which is an instruction?",
+        "options": [
+          "She closes the door.",
+          "Close the door.",
+          "Closing the door.",
+          "Closed the door."
+        ],
+        "answer": 1,
+        "explanation": "Base verb, no subject."
+      },
+      {
+        "id": "a1gi2-q5",
+        "type": "mcq",
+        "prompt": "___ late for class!",
+        "options": [
+          "Don't be",
+          "No be",
+          "Not be",
+          "Be not"
+        ],
+        "answer": 0,
+        "explanation": "Don't be late!"
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "No touch!",
+        "right": "Don't touch!",
+        "why": "Negative: Don't + verb."
+      },
+      {
+        "wrong": "You open the book.",
+        "right": "Open the book.",
+        "why": "No subject in instructions."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-past-regular",
+    "unitId": "a1-u11",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Past simple: regular verbs",
+    "minutes": 12,
+    "objective": "Talk about yesterday with -ed verbs.",
+    "sections": [
+      {
+        "heading": "Positive",
+        "en": "Add -ed: work → worked, play → played. Verb ends in -e: add -d (live → lived). Consonant + y → -ied (study → studied).",
+        "fr": "Même forme pour toutes les personnes : I/you/he/we worked.",
+        "examples": [
+          "I worked all day yesterday.",
+          "She studied English last night.",
+          "We watched a film."
+        ]
+      },
+      {
+        "heading": "Negative and questions",
+        "en": "didn't + base verb. Did + subject + base verb?",
+        "examples": [
+          "I didn't call him.",
+          "Did you visit your parents? — Yes, I did."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1pr-v1",
+        "word": "last night",
+        "ipa": "/lɑːst naɪt/",
+        "pos": "phrase",
+        "definition": "the evening or night before today",
+        "fr": "hier soir",
+        "example": "I watched TV last night.",
+        "context": "Time"
+      },
+      {
+        "id": "a1pr-v2",
+        "word": "visit",
+        "ipa": "/ˈvɪzɪt/",
+        "pos": "verb",
+        "definition": "to go and see a person or place",
+        "fr": "rendre visite, visiter",
+        "example": "We visited my uncle.",
+        "context": "Activities"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gpr-p1",
+        "type": "mcq",
+        "prompt": "Yesterday I ___ football.",
+        "options": [
+          "play",
+          "played",
+          "plaied"
+        ],
+        "answer": 1,
+        "explanation": "Past simple: play → played."
+      },
+      {
+        "id": "a1gpr-p2",
+        "type": "mcq",
+        "prompt": "She ___ call me.",
+        "options": [
+          "didn't",
+          "doesn't",
+          "not"
+        ],
+        "answer": 0,
+        "explanation": "Past negative: didn't + verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gpr-q1",
+        "type": "mcq",
+        "prompt": "study → past:",
+        "options": [
+          "studyed",
+          "studied",
+          "studed",
+          "studies"
+        ],
+        "answer": 1,
+        "explanation": "consonant + y → -ied."
+      },
+      {
+        "id": "a1gpr-q2",
+        "type": "mcq",
+        "prompt": "___ you watch the match?",
+        "options": [
+          "Do",
+          "Did",
+          "Was",
+          "Does"
+        ],
+        "answer": 1,
+        "explanation": "Past question: Did."
+      },
+      {
+        "id": "a1gpr-q3",
+        "type": "gap",
+        "prompt": "We ___ (live) in Kara in 2019.",
+        "accepted": [
+          "lived"
+        ],
+        "explanation": "-e verb + d: lived."
+      },
+      {
+        "id": "a1gpr-q4",
+        "type": "truefalse",
+        "prompt": "\"I didn't worked\" is correct.",
+        "answer": false,
+        "explanation": "After didn't, base verb: I didn't work."
+      },
+      {
+        "id": "a1gpr-q5",
+        "type": "mcq",
+        "prompt": "He ___ his homework last night.",
+        "options": [
+          "finish",
+          "finished",
+          "finishs",
+          "finishing"
+        ],
+        "answer": 1,
+        "explanation": "Past simple: finished."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I didn't played.",
+        "right": "I didn't play.",
+        "why": "Base verb after didn't."
+      },
+      {
+        "wrong": "Did you visited?",
+        "right": "Did you visit?",
+        "why": "Base verb after did."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-past-irregular",
+    "unitId": "a1-u11",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Past simple: irregular verbs",
+    "minutes": 12,
+    "objective": "Use the most common irregular past verbs.",
+    "sections": [
+      {
+        "heading": "Top irregular verbs",
+        "en": "go → went · have → had · get → got · see → saw · eat → ate · make → made · buy → bought · come → came · take → took · say → said.",
+        "fr": "Ces 10 verbes couvrent une grande partie de l'anglais parlé au passé.",
+        "examples": [
+          "I went to the market.",
+          "We had rice for lunch.",
+          "She bought a new phone."
+        ]
+      },
+      {
+        "heading": "Negative and questions",
+        "en": "Same as regular verbs: didn't + base verb, Did + base verb.",
+        "examples": [
+          "I didn't go.",
+          "Did you see the film?"
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1pi-v1",
+        "word": "went",
+        "ipa": "/went/",
+        "pos": "verb (past)",
+        "definition": "past of go",
+        "fr": "suis allé, alla",
+        "example": "I went home early.",
+        "context": "Past"
+      },
+      {
+        "id": "a1pi-v2",
+        "word": "bought",
+        "ipa": "/bɔːt/",
+        "pos": "verb (past)",
+        "definition": "past of buy",
+        "fr": "ai acheté",
+        "example": "He bought bread.",
+        "context": "Past"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gpi-p1",
+        "type": "mcq",
+        "prompt": "go → past:",
+        "options": [
+          "goed",
+          "went",
+          "gone"
+        ],
+        "answer": 1,
+        "explanation": "Irregular: went."
+      },
+      {
+        "id": "a1gpi-p2",
+        "type": "mcq",
+        "prompt": "I ___ a big breakfast.",
+        "options": [
+          "haved",
+          "had",
+          "has"
+        ],
+        "answer": 1,
+        "explanation": "have → had."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gpi-q1",
+        "type": "mcq",
+        "prompt": "see → past:",
+        "options": [
+          "seed",
+          "saw",
+          "seen",
+          "sawed"
+        ],
+        "answer": 1,
+        "explanation": "see → saw."
+      },
+      {
+        "id": "a1gpi-q2",
+        "type": "mcq",
+        "prompt": "Did you ___ to the party?",
+        "options": [
+          "went",
+          "go",
+          "goes",
+          "going"
+        ],
+        "answer": 1,
+        "explanation": "After did → base verb: go."
+      },
+      {
+        "id": "a1gpi-q3",
+        "type": "gap",
+        "prompt": "She ___ (buy) shoes yesterday.",
+        "accepted": [
+          "bought"
+        ],
+        "explanation": "buy → bought."
+      },
+      {
+        "id": "a1gpi-q4",
+        "type": "truefalse",
+        "prompt": "\"eated\" is the past of eat.",
+        "answer": false,
+        "explanation": "eat → ate."
+      },
+      {
+        "id": "a1gpi-q5",
+        "type": "mcq",
+        "prompt": "They ___ the bus to Accra.",
+        "options": [
+          "taked",
+          "took",
+          "take",
+          "tooked"
+        ],
+        "answer": 1,
+        "explanation": "take → took."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I goed home.",
+        "right": "I went home.",
+        "why": "Irregular verb."
+      },
+      {
+        "wrong": "Did you went?",
+        "right": "Did you go?",
+        "why": "Base verb after did."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-going-to",
+    "unitId": "a1-u12",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "going to: plans",
+    "minutes": 10,
+    "objective": "Talk about your plans for tomorrow and the weekend.",
+    "sections": [
+      {
+        "heading": "Form",
+        "en": "am / is / are + going to + verb.",
+        "fr": "« Je vais voyager » = I'm going to travel.",
+        "examples": [
+          "I'm going to visit my grandmother.",
+          "We're going to watch the match.",
+          "Are you going to come? — Yes, I am."
+        ]
+      },
+      {
+        "heading": "Time words",
+        "en": "tomorrow · tonight · next week · this weekend · in July.",
+        "examples": [
+          "She's going to start a new job next month."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1gt2-v1",
+        "word": "tomorrow",
+        "ipa": "/təˈmɒrəʊ/",
+        "pos": "adverb",
+        "definition": "the day after today",
+        "fr": "demain",
+        "example": "See you tomorrow!",
+        "context": "Time"
+      },
+      {
+        "id": "a1gt2-v2",
+        "word": "plan",
+        "ipa": "/plæn/",
+        "pos": "noun / verb",
+        "definition": "something you decide to do",
+        "fr": "projet, prévoir",
+        "example": "What are your plans?",
+        "context": "Future"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1ggt-p1",
+        "type": "mcq",
+        "prompt": "I ___ going to study tonight.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "answer": 0,
+        "explanation": "I → am going to."
+      },
+      {
+        "id": "a1ggt-p2",
+        "type": "mcq",
+        "prompt": "They are going to ___ a car.",
+        "options": [
+          "buy",
+          "buying",
+          "bought"
+        ],
+        "answer": 0,
+        "explanation": "going to + base verb."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1ggt-q1",
+        "type": "mcq",
+        "prompt": "___ you going to call him?",
+        "options": [
+          "Do",
+          "Are",
+          "Is",
+          "Will"
+        ],
+        "answer": 1,
+        "explanation": "you → Are you going to…?"
+      },
+      {
+        "id": "a1ggt-q2",
+        "type": "gap",
+        "prompt": "She is going to ___ (travel) next week.",
+        "accepted": [
+          "travel"
+        ],
+        "explanation": "going to + base verb."
+      },
+      {
+        "id": "a1ggt-q3",
+        "type": "truefalse",
+        "prompt": "\"I going to eat\" is correct.",
+        "answer": false,
+        "explanation": "Add be: I'm going to eat."
+      },
+      {
+        "id": "a1ggt-q4",
+        "type": "mcq",
+        "prompt": "The day after today:",
+        "options": [
+          "yesterday",
+          "tomorrow",
+          "tonight",
+          "last week"
+        ],
+        "answer": 1,
+        "explanation": "Tomorrow = the day after today."
+      },
+      {
+        "id": "a1ggt-q5",
+        "type": "mcq",
+        "prompt": "We ___ going to visit Lomé.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "answer": 2,
+        "explanation": "we → are."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I going to study.",
+        "right": "I'm going to study.",
+        "why": "Don't forget be."
+      },
+      {
+        "wrong": "He is going to buys.",
+        "right": "He is going to buy.",
+        "why": "Base verb after to."
+      }
+    ]
+  },
+  {
+    "id": "a1-g-object-pronouns",
+    "unitId": "a1-u12",
+    "level": "A1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "me, him, her, us, them",
+    "minutes": 10,
+    "objective": "Use object pronouns after verbs and prepositions.",
+    "sections": [
+      {
+        "heading": "Subject vs object",
+        "en": "I → me · you → you · he → him · she → her · it → it · we → us · they → them.",
+        "fr": "Après un verbe ou une préposition : « Call me », « with them ».",
+        "examples": [
+          "Call me tomorrow.",
+          "I love them.",
+          "Come with us!"
+        ],
+        "table": [
+          [
+            "Subject",
+            "Object"
+          ],
+          [
+            "I",
+            "me"
+          ],
+          [
+            "he",
+            "him"
+          ],
+          [
+            "she",
+            "her"
+          ],
+          [
+            "we",
+            "us"
+          ],
+          [
+            "they",
+            "them"
+          ]
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "a1op-v1",
+        "word": "with",
+        "ipa": "/wɪð/",
+        "pos": "preposition",
+        "definition": "together",
+        "fr": "avec",
+        "example": "Come with me.",
+        "context": "Prepositions"
+      },
+      {
+        "id": "a1op-v2",
+        "word": "call",
+        "ipa": "/kɔːl/",
+        "pos": "verb",
+        "definition": "to phone",
+        "fr": "appeler",
+        "example": "Call her tonight.",
+        "context": "Phone"
+      }
+    ],
+    "practice": [
+      {
+        "id": "a1gop-p1",
+        "type": "mcq",
+        "prompt": "This is Ama. I like ___.",
+        "options": [
+          "she",
+          "her",
+          "hers"
+        ],
+        "answer": 1,
+        "explanation": "Object of like → her."
+      },
+      {
+        "id": "a1gop-p2",
+        "type": "mcq",
+        "prompt": "Can you help ___? (I)",
+        "options": [
+          "I",
+          "me",
+          "my"
+        ],
+        "answer": 1,
+        "explanation": "Object → me."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "a1gop-q1",
+        "type": "mcq",
+        "prompt": "My parents are great. I visit ___ every week.",
+        "options": [
+          "they",
+          "them",
+          "their",
+          "us"
+        ],
+        "answer": 1,
+        "explanation": "Object of visit → them."
+      },
+      {
+        "id": "a1gop-q2",
+        "type": "mcq",
+        "prompt": "Kofi is here. Talk to ___.",
+        "options": [
+          "he",
+          "him",
+          "his",
+          "her"
+        ],
+        "answer": 1,
+        "explanation": "Kofi → him."
+      },
+      {
+        "id": "a1gop-q3",
+        "type": "gap",
+        "prompt": "We're going to the beach. Come with ___!",
+        "accepted": [
+          "us"
+        ],
+        "explanation": "we → us."
+      },
+      {
+        "id": "a1gop-q4",
+        "type": "truefalse",
+        "prompt": "\"She called I\" is correct.",
+        "answer": false,
+        "explanation": "She called me."
+      },
+      {
+        "id": "a1gop-q5",
+        "type": "mcq",
+        "prompt": "Where is my phone? I can't find ___.",
+        "options": [
+          "it",
+          "him",
+          "them",
+          "its"
+        ],
+        "answer": 0,
+        "explanation": "A thing → it."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "Call I.",
+        "right": "Call me.",
+        "why": "Object pronoun after a verb."
+      },
+      {
+        "wrong": "with they",
+        "right": "with them",
+        "why": "Object pronoun after a preposition."
       }
     ]
   }

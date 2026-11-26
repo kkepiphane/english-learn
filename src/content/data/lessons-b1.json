@@ -2451,7 +2451,7 @@
         "accepted": [
           "proud"
         ],
-        "explanation": "proud of."
+        "explanation": "proud of = pleased about someone's success."
       },
       {
         "id": "b1fe-q4",
@@ -2471,7 +2471,7 @@
           "frustrated"
         ],
         "answer": 1,
-        "explanation": "relieved."
+        "explanation": "Relieved = happy because a worry has gone."
       }
     ],
     "rememberErrors": [
@@ -2790,6 +2790,1232 @@
         "wrong": "I want to complain you.",
         "right": "I'd like to make a complaint.",
         "why": "complain about something / make a complaint."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-deduction",
+    "unitId": "b1-u9",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "must, might, can't: guessing now",
+    "minutes": 14,
+    "objective": "Make guesses about the present based on evidence.",
+    "sections": [
+      {
+        "heading": "Degrees of certainty",
+        "en": "must = I'm sure it's true. might / may / could = it's possible. can't = I'm sure it's not true.",
+        "fr": "Le contraire de « must » (déduction) est « can't », pas « mustn't ».",
+        "examples": [
+          "She's not answering. She must be busy.",
+          "He might be at the gym.",
+          "That can't be Kofi — he's in Accra."
+        ]
+      },
+      {
+        "heading": "Continuous form",
+        "en": "must / might / can't + be + -ing for actions happening now.",
+        "examples": [
+          "They must be sleeping — the lights are off.",
+          "She might be working late."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1de-v1",
+        "word": "evidence",
+        "ipa": "/ˈevɪdəns/",
+        "pos": "noun",
+        "definition": "facts that help you believe something",
+        "fr": "indices",
+        "example": "What's your evidence?",
+        "context": "Deduction"
+      },
+      {
+        "id": "b1de-v2",
+        "word": "probably",
+        "ipa": "/ˈprɒbəbli/",
+        "pos": "adverb",
+        "definition": "very likely",
+        "fr": "probablement",
+        "example": "He's probably at home.",
+        "context": "Certainty"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1de-p1",
+        "type": "mcq",
+        "prompt": "The lights are on. They ___ be at home.",
+        "options": [
+          "must",
+          "can't",
+          "mustn't"
+        ],
+        "answer": 0,
+        "explanation": "Strong evidence → must."
+      },
+      {
+        "id": "b1de-p2",
+        "type": "mcq",
+        "prompt": "That ___ be true! It's impossible.",
+        "options": [
+          "must",
+          "can't",
+          "might"
+        ],
+        "answer": 1,
+        "explanation": "Impossible → can't."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1de-q1",
+        "type": "mcq",
+        "prompt": "I'm not sure where Ama is. She ___ be at the market.",
+        "options": [
+          "must",
+          "might",
+          "can't",
+          "mustn't"
+        ],
+        "answer": 1,
+        "explanation": "Possibility → might."
+      },
+      {
+        "id": "b1de-q2",
+        "type": "mcq",
+        "prompt": "He has just run 10 km. He ___ be tired.",
+        "options": [
+          "must",
+          "can't",
+          "mightn't",
+          "mustn't"
+        ],
+        "answer": 0,
+        "explanation": "Logical conclusion → must."
+      },
+      {
+        "id": "b1de-q3",
+        "type": "gap",
+        "prompt": "She ___ be hungry — she just ate. (impossible)",
+        "accepted": [
+          "can't",
+          "cannot"
+        ],
+        "explanation": "Not possible → can't."
+      },
+      {
+        "id": "b1de-q4",
+        "type": "truefalse",
+        "prompt": "\"He mustn't be at home\" is the usual way to say you're sure he isn't.",
+        "answer": false,
+        "explanation": "Use can't: He can't be at home."
+      },
+      {
+        "id": "b1de-q5",
+        "type": "mcq",
+        "prompt": "Listen! Someone ___ be playing the drums.",
+        "options": [
+          "must",
+          "can't",
+          "should",
+          "need"
+        ],
+        "answer": 0,
+        "explanation": "Evidence (sound) → must be playing."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "He mustn't be serious.",
+        "right": "He can't be serious.",
+        "why": "Negative deduction = can't."
+      },
+      {
+        "wrong": "She must to be tired.",
+        "right": "She must be tired.",
+        "why": "No to after must."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-personality",
+    "unitId": "b1-u9",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Personality adjectives",
+    "minutes": 12,
+    "objective": "Describe character precisely, as in interviews and recommendations.",
+    "sections": [
+      {
+        "heading": "Positive",
+        "en": "reliable · ambitious · patient · outgoing · open-minded · confident · organised.",
+        "examples": [
+          "She's very reliable: she always meets deadlines.",
+          "He's outgoing and makes friends easily."
+        ]
+      },
+      {
+        "heading": "Negative and opposites",
+        "en": "unreliable · impatient · arrogant · stubborn · bossy · selfish. Prefixes un-, im-, dis- make opposites.",
+        "fr": "« sympathique » ≠ sympathetic : nice/friendly. Sympathetic = compatissant.",
+        "examples": [
+          "Don't be so impatient!",
+          "My boss is a bit bossy."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1pe-v1",
+        "word": "reliable",
+        "ipa": "/rɪˈlaɪəbl/",
+        "pos": "adjective",
+        "definition": "someone you can trust",
+        "fr": "fiable",
+        "example": "We need a reliable assistant.",
+        "context": "Character"
+      },
+      {
+        "id": "b1pe-v2",
+        "word": "stubborn",
+        "ipa": "/ˈstʌbən/",
+        "pos": "adjective",
+        "definition": "refusing to change your opinion",
+        "fr": "têtu",
+        "example": "He's too stubborn to apologise.",
+        "context": "Character"
+      },
+      {
+        "id": "b1pe-v3",
+        "word": "outgoing",
+        "ipa": "/ˌaʊtˈɡəʊɪŋ/",
+        "pos": "adjective",
+        "definition": "friendly and liking to meet people",
+        "fr": "sociable",
+        "example": "She's outgoing and fun.",
+        "context": "Character"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1pe-p1",
+        "type": "mcq",
+        "prompt": "Someone who always does what they promise is…",
+        "options": [
+          "reliable",
+          "stubborn",
+          "bossy"
+        ],
+        "answer": 0,
+        "explanation": "reliable = trustworthy."
+      },
+      {
+        "id": "b1pe-p2",
+        "type": "mcq",
+        "prompt": "Opposite of patient:",
+        "options": [
+          "unpatient",
+          "impatient",
+          "dispatient"
+        ],
+        "answer": 1,
+        "explanation": "im- before p: impatient."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1pe-q1",
+        "type": "mcq",
+        "prompt": "Someone who wants to be very successful is…",
+        "options": [
+          "ambitious",
+          "selfish",
+          "shy",
+          "lazy"
+        ],
+        "answer": 0,
+        "explanation": "Ambitious people want to be very successful."
+      },
+      {
+        "id": "b1pe-q2",
+        "type": "mcq",
+        "prompt": "\"Nice, friendly\" in English is…",
+        "options": [
+          "sympathetic",
+          "nice",
+          "sympathic",
+          "compassion"
+        ],
+        "answer": 1,
+        "explanation": "False friend: use nice/friendly."
+      },
+      {
+        "id": "b1pe-q3",
+        "type": "gap",
+        "prompt": "He never changes his mind. He's so ___.",
+        "accepted": [
+          "stubborn"
+        ],
+        "explanation": "stubborn = won't change opinion."
+      },
+      {
+        "id": "b1pe-q4",
+        "type": "truefalse",
+        "prompt": "\"Bossy\" is a compliment.",
+        "answer": false,
+        "explanation": "Bossy = always telling others what to do (negative)."
+      },
+      {
+        "id": "b1pe-q5",
+        "type": "mcq",
+        "prompt": "Opposite of reliable:",
+        "options": [
+          "disreliable",
+          "unreliable",
+          "irreliable",
+          "imreliable"
+        ],
+        "answer": 1,
+        "explanation": "unreliable."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "He is very sympathic.",
+        "right": "He is very nice / friendly.",
+        "why": "False friend."
+      },
+      {
+        "wrong": "unpatient",
+        "right": "impatient",
+        "why": "im- before p."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-future-forms",
+    "unitId": "b1-u10",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "Future forms: will, going to, present continuous",
+    "minutes": 14,
+    "objective": "Choose the right future form for plans, arrangements and predictions.",
+    "sections": [
+      {
+        "heading": "Three futures",
+        "en": "Present continuous = fixed arrangement (date, time, people). going to = plan or evidence-based prediction. will = decision now, promise, opinion-based prediction.",
+        "table": [
+          [
+            "Form",
+            "Use",
+            "Example"
+          ],
+          [
+            "present continuous",
+            "arrangement",
+            "I'm meeting the bank manager at 3."
+          ],
+          [
+            "going to",
+            "plan / evidence",
+            "Look at the clouds — it's going to rain."
+          ],
+          [
+            "will",
+            "instant decision / opinion",
+            "I think she'll win."
+          ]
+        ]
+      },
+      {
+        "heading": "Timetables",
+        "en": "Present simple for schedules: The train leaves at 8.",
+        "fr": "Les horaires officiels (trains, cours) → présent simple.",
+        "examples": [
+          "The exam starts at 9 tomorrow.",
+          "My flight lands at 18:40."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1ff-v1",
+        "word": "arrangement",
+        "ipa": "/əˈreɪndʒmənt/",
+        "pos": "noun",
+        "definition": "a plan made with other people",
+        "fr": "rendez-vous, arrangement",
+        "example": "I have an arrangement with the dentist.",
+        "context": "Plans"
+      },
+      {
+        "id": "b1ff-v2",
+        "word": "schedule",
+        "ipa": "/ˈʃedjuːl/",
+        "pos": "noun",
+        "definition": "a timetable of planned events",
+        "fr": "horaire, planning",
+        "example": "The schedule changed.",
+        "context": "Plans"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1ff-p1",
+        "type": "mcq",
+        "prompt": "I ___ my cousin at 6 tonight. (arranged)",
+        "options": [
+          "meet",
+          "am meeting",
+          "will meet"
+        ],
+        "answer": 1,
+        "explanation": "Fixed arrangement → present continuous."
+      },
+      {
+        "id": "b1ff-p2",
+        "type": "mcq",
+        "prompt": "Look at that car! It ___ crash!",
+        "options": [
+          "will",
+          "is going to",
+          "crashes"
+        ],
+        "answer": 1,
+        "explanation": "Evidence now → going to."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1ff-q1",
+        "type": "mcq",
+        "prompt": "The bus ___ at 7:15. (timetable)",
+        "options": [
+          "leaves",
+          "is leaving",
+          "will leave",
+          "is going to leave"
+        ],
+        "answer": 0,
+        "explanation": "Timetable → present simple."
+      },
+      {
+        "id": "b1ff-q2",
+        "type": "mcq",
+        "prompt": "The phone's ringing. — I ___ get it.",
+        "options": [
+          "'m going to",
+          "'ll",
+          "'m getting",
+          "get"
+        ],
+        "answer": 1,
+        "explanation": "Instant decision → will."
+      },
+      {
+        "id": "b1ff-q3",
+        "type": "gap",
+        "prompt": "We're ___ (fly) to Paris next Monday — the tickets are booked.",
+        "accepted": [
+          "flying"
+        ],
+        "explanation": "Arrangement → present continuous."
+      },
+      {
+        "id": "b1ff-q4",
+        "type": "truefalse",
+        "prompt": "\"I think it will be sunny tomorrow\" is an opinion-based prediction.",
+        "answer": true,
+        "explanation": "I think + will."
+      },
+      {
+        "id": "b1ff-q5",
+        "type": "mcq",
+        "prompt": "She ___ study medicine. She decided last year.",
+        "options": [
+          "will",
+          "is going to",
+          "studies",
+          "would"
+        ],
+        "answer": 1,
+        "explanation": "Plan decided before → going to."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I will meet the doctor at 3. (arranged)",
+        "right": "I'm meeting the doctor at 3.",
+        "why": "Arrangement → present continuous."
+      },
+      {
+        "wrong": "The train will leave at 8. (timetable)",
+        "right": "The train leaves at 8.",
+        "why": "Timetable → present simple."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-careers",
+    "unitId": "b1-u10",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Jobs and careers",
+    "minutes": 14,
+    "objective": "Talk about your career path, CV and job applications.",
+    "sections": [
+      {
+        "heading": "Career vocabulary",
+        "en": "apply for · CV / résumé · cover letter · interview · hire · promotion · resign · salary · internship · full-time / part-time.",
+        "examples": [
+          "I applied for an internship at a bank.",
+          "She got a promotion after two years."
+        ]
+      },
+      {
+        "heading": "Talking about your career",
+        "en": "I'm in charge of… · I'm responsible for… · I'm looking for a job in… · My goal is to…",
+        "fr": "« Stage » = internship ; « candidature » = application.",
+        "examples": [
+          "I'm responsible for customer service.",
+          "My goal is to work in data analysis."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1ca-v1",
+        "word": "internship",
+        "ipa": "/ˈɪntɜːnʃɪp/",
+        "pos": "noun",
+        "definition": "a short period of work to gain experience",
+        "fr": "stage",
+        "example": "I did a three-month internship.",
+        "context": "Career"
+      },
+      {
+        "id": "b1ca-v2",
+        "word": "promotion",
+        "ipa": "/prəˈməʊʃn/",
+        "pos": "noun",
+        "definition": "a move to a higher position at work",
+        "fr": "promotion",
+        "example": "He got a promotion.",
+        "context": "Career"
+      },
+      {
+        "id": "b1ca-v3",
+        "word": "resign",
+        "ipa": "/rɪˈzaɪn/",
+        "pos": "verb",
+        "definition": "to leave your job by choice",
+        "fr": "démissionner",
+        "example": "She resigned last month.",
+        "context": "Career"
+      },
+      {
+        "id": "b1ca-v4",
+        "word": "apply for",
+        "ipa": "/əˈplaɪ fɔː/",
+        "pos": "phrasal verb",
+        "definition": "to formally ask for a job or place",
+        "fr": "postuler à",
+        "example": "I'm applying for a scholarship.",
+        "context": "Applications"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1ca-p1",
+        "type": "mcq",
+        "prompt": "A short work period to gain experience:",
+        "options": [
+          "internship",
+          "salary",
+          "promotion"
+        ],
+        "answer": 0,
+        "explanation": "internship = stage."
+      },
+      {
+        "id": "b1ca-p2",
+        "type": "mcq",
+        "prompt": "I'm going to ___ for that job.",
+        "options": [
+          "apply",
+          "postulate",
+          "candidate"
+        ],
+        "answer": 0,
+        "explanation": "apply for a job."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1ca-q1",
+        "type": "mcq",
+        "prompt": "Leave your job by choice:",
+        "options": [
+          "fire",
+          "resign",
+          "hire",
+          "promote"
+        ],
+        "answer": 1,
+        "explanation": "Resign = leave your job by choice (fire = the boss removes you)."
+      },
+      {
+        "id": "b1ca-q2",
+        "type": "gap",
+        "prompt": "She is ___ for the accounts department. (in charge of)",
+        "accepted": [
+          "responsible"
+        ],
+        "explanation": "responsible for."
+      },
+      {
+        "id": "b1ca-q3",
+        "type": "truefalse",
+        "prompt": "A promotion is a move to a higher position.",
+        "answer": true,
+        "explanation": "A promotion moves you to a higher position."
+      },
+      {
+        "id": "b1ca-q4",
+        "type": "mcq",
+        "prompt": "The letter you send with your CV:",
+        "options": [
+          "cover letter",
+          "receipt",
+          "contract",
+          "invoice"
+        ],
+        "answer": 0,
+        "explanation": "cover letter."
+      },
+      {
+        "id": "b1ca-q5",
+        "type": "mcq",
+        "prompt": "The company is going to ___ ten new staff.",
+        "options": [
+          "hire",
+          "resign",
+          "apply",
+          "promote"
+        ],
+        "answer": 0,
+        "explanation": "hire = employ."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I postulated for the job.",
+        "right": "I applied for the job.",
+        "why": "False friend."
+      },
+      {
+        "wrong": "I did a stage at a bank.",
+        "right": "I did an internship at a bank.",
+        "why": "False friend."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-relative-basic",
+    "unitId": "b1-u11",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "who, which, where",
+    "minutes": 12,
+    "objective": "Join sentences with defining relative clauses.",
+    "sections": [
+      {
+        "heading": "Relative pronouns",
+        "en": "who = people · which / that = things · where = places · whose = possession.",
+        "fr": "« qui / que » se traduit selon la chose : who (personne), which (chose).",
+        "examples": [
+          "The woman who lives next door is a nurse.",
+          "This is the phone which I bought.",
+          "That's the café where we met.",
+          "He's the man whose car was stolen."
+        ]
+      },
+      {
+        "heading": "Leaving out the pronoun",
+        "en": "If the pronoun is the object, you can omit it: The book (that) I'm reading is great.",
+        "examples": [
+          "The film (that) we saw was boring."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1rb-v1",
+        "word": "next door",
+        "ipa": "/nekst dɔː/",
+        "pos": "adverb",
+        "definition": "in the next house or room",
+        "fr": "à côté",
+        "example": "Our neighbours next door are friendly.",
+        "context": "Places"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1rb-p1",
+        "type": "mcq",
+        "prompt": "The man ___ called you is my uncle.",
+        "options": [
+          "who",
+          "which",
+          "where"
+        ],
+        "answer": 0,
+        "explanation": "Person → who."
+      },
+      {
+        "id": "b1rb-p2",
+        "type": "mcq",
+        "prompt": "This is the school ___ I studied.",
+        "options": [
+          "who",
+          "which",
+          "where"
+        ],
+        "answer": 2,
+        "explanation": "Place → where."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1rb-q1",
+        "type": "mcq",
+        "prompt": "The car ___ I bought is blue.",
+        "options": [
+          "who",
+          "which",
+          "where",
+          "whose"
+        ],
+        "answer": 1,
+        "explanation": "Thing → which (or that)."
+      },
+      {
+        "id": "b1rb-q2",
+        "type": "mcq",
+        "prompt": "She's the girl ___ brother is a doctor.",
+        "options": [
+          "who",
+          "whose",
+          "which",
+          "who's"
+        ],
+        "answer": 1,
+        "explanation": "Possession → whose."
+      },
+      {
+        "id": "b1rb-q3",
+        "type": "gap",
+        "prompt": "The people ___ work here are friendly.",
+        "accepted": [
+          "who",
+          "that"
+        ],
+        "explanation": "People → who/that."
+      },
+      {
+        "id": "b1rb-q4",
+        "type": "truefalse",
+        "prompt": "In \"The book that I read\", you can omit 'that'.",
+        "answer": true,
+        "explanation": "Object pronoun can be omitted."
+      },
+      {
+        "id": "b1rb-q5",
+        "type": "mcq",
+        "prompt": "Lomé is the city ___ I was born.",
+        "options": [
+          "which",
+          "where",
+          "who",
+          "whose"
+        ],
+        "answer": 1,
+        "explanation": "Place → where."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "The man which helped me",
+        "right": "The man who helped me",
+        "why": "who for people."
+      },
+      {
+        "wrong": "The book who I read",
+        "right": "The book (that) I read",
+        "why": "which/that for things."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-relationships",
+    "unitId": "b1-u11",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Relationships",
+    "minutes": 12,
+    "objective": "Talk about friends, family and colleagues.",
+    "sections": [
+      {
+        "heading": "Phrasal verbs",
+        "en": "get on (well) with · fall out (with) · make up · break up · look up to · get to know.",
+        "examples": [
+          "I get on well with my colleagues.",
+          "They fell out but made up the next day.",
+          "I look up to my grandmother."
+        ]
+      },
+      {
+        "heading": "Describing relationships",
+        "en": "close friend · acquaintance · colleague · flatmate · partner · trust · support.",
+        "fr": "« connaissance » = acquaintance ; « collègue » = colleague."
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1rl-v1",
+        "word": "fall out",
+        "ipa": "/fɔːl aʊt/",
+        "pos": "phrasal verb",
+        "definition": "to argue and stop being friendly",
+        "fr": "se brouiller",
+        "example": "They fell out over money.",
+        "context": "Relationships"
+      },
+      {
+        "id": "b1rl-v2",
+        "word": "look up to",
+        "ipa": "/lʊk ʌp tuː/",
+        "pos": "phrasal verb",
+        "definition": "to admire and respect",
+        "fr": "admirer",
+        "example": "I look up to my teacher.",
+        "context": "Relationships"
+      },
+      {
+        "id": "b1rl-v3",
+        "word": "acquaintance",
+        "ipa": "/əˈkweɪntəns/",
+        "pos": "noun",
+        "definition": "someone you know a little",
+        "fr": "connaissance",
+        "example": "He's just an acquaintance.",
+        "context": "People"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1rl-p1",
+        "type": "mcq",
+        "prompt": "Have a good relationship = ___ well with",
+        "options": [
+          "get on",
+          "get off",
+          "get up"
+        ],
+        "answer": 0,
+        "explanation": "get on well with."
+      },
+      {
+        "id": "b1rl-p2",
+        "type": "mcq",
+        "prompt": "Become friends again after an argument:",
+        "options": [
+          "make up",
+          "break up",
+          "fall out"
+        ],
+        "answer": 0,
+        "explanation": "make up = become friends again after an argument."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1rl-q1",
+        "type": "mcq",
+        "prompt": "End a romantic relationship:",
+        "options": [
+          "break up",
+          "make up",
+          "get on",
+          "look up"
+        ],
+        "answer": 0,
+        "explanation": "break up = end a romantic relationship."
+      },
+      {
+        "id": "b1rl-q2",
+        "type": "gap",
+        "prompt": "I really look ___ to my father. (admire)",
+        "accepted": [
+          "up"
+        ],
+        "explanation": "look up to = admire."
+      },
+      {
+        "id": "b1rl-q3",
+        "type": "truefalse",
+        "prompt": "An acquaintance is a very close friend.",
+        "answer": false,
+        "explanation": "An acquaintance is someone you know a little."
+      },
+      {
+        "id": "b1rl-q4",
+        "type": "mcq",
+        "prompt": "Someone you share a flat with:",
+        "options": [
+          "colleague",
+          "flatmate",
+          "partner",
+          "neighbour"
+        ],
+        "answer": 1,
+        "explanation": "A flatmate shares a flat with you."
+      },
+      {
+        "id": "b1rl-q5",
+        "type": "mcq",
+        "prompt": "They ___ out last week and don't talk now.",
+        "options": [
+          "fell",
+          "made",
+          "got",
+          "looked"
+        ],
+        "answer": 0,
+        "explanation": "fall out (past: fell out)."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I get well with him.",
+        "right": "I get on well with him.",
+        "why": "get on with."
+      },
+      {
+        "wrong": "We felt out.",
+        "right": "We fell out.",
+        "why": "fall → fell."
+      }
+    ]
+  },
+  {
+    "id": "b1-g-comparison-adv",
+    "unitId": "b1-u12",
+    "level": "B1",
+    "category": "grammar",
+    "skill": "grammar",
+    "version": 1,
+    "title": "as…as, much better, the more…the more",
+    "minutes": 14,
+    "objective": "Make precise comparisons.",
+    "sections": [
+      {
+        "heading": "as … as",
+        "en": "as + adjective + as = the same. not as/so … as = less.",
+        "examples": [
+          "Kara is not as big as Lomé.",
+          "This phone is as expensive as that one."
+        ]
+      },
+      {
+        "heading": "Modifying comparisons",
+        "en": "much / far / a lot + comparative = big difference. slightly / a bit = small difference. the + comparative, the + comparative.",
+        "fr": "« de plus en plus » = more and more / -er and -er.",
+        "examples": [
+          "Flying is much faster than driving.",
+          "The more you practise, the better you get.",
+          "It's getting hotter and hotter."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1ca2-v1",
+        "word": "slightly",
+        "ipa": "/ˈslaɪtli/",
+        "pos": "adverb",
+        "definition": "a little",
+        "fr": "légèrement",
+        "example": "It's slightly cheaper online.",
+        "context": "Comparison"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1ca2-p1",
+        "type": "mcq",
+        "prompt": "She is ___ tall as her brother.",
+        "options": [
+          "so",
+          "as",
+          "than"
+        ],
+        "answer": 1,
+        "explanation": "as … as."
+      },
+      {
+        "id": "b1ca2-p2",
+        "type": "mcq",
+        "prompt": "The ___ you read, the more you learn.",
+        "options": [
+          "most",
+          "more",
+          "much"
+        ],
+        "answer": 1,
+        "explanation": "the more…, the more…"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1ca2-q1",
+        "type": "mcq",
+        "prompt": "This exam was ___ easier than the last one. (big difference)",
+        "options": [
+          "much",
+          "very",
+          "more",
+          "so"
+        ],
+        "answer": 0,
+        "explanation": "much + comparative."
+      },
+      {
+        "id": "b1ca2-q2",
+        "type": "gap",
+        "prompt": "The bus is not ___ fast as the train.",
+        "accepted": [
+          "as",
+          "so"
+        ],
+        "explanation": "not as/so … as."
+      },
+      {
+        "id": "b1ca2-q3",
+        "type": "truefalse",
+        "prompt": "\"very better\" is correct.",
+        "answer": false,
+        "explanation": "Use much/far better."
+      },
+      {
+        "id": "b1ca2-q4",
+        "type": "mcq",
+        "prompt": "Prices are getting ___. (continuous rise)",
+        "options": [
+          "higher and higher",
+          "more high",
+          "high and high",
+          "the higher"
+        ],
+        "answer": 0,
+        "explanation": "comparative and comparative."
+      },
+      {
+        "id": "b1ca2-q5",
+        "type": "mcq",
+        "prompt": "The sooner we leave, ___ we'll arrive.",
+        "options": [
+          "the earlier",
+          "earlier",
+          "the earliest",
+          "more early"
+        ],
+        "answer": 0,
+        "explanation": "the + comparative, the + comparative."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "very cheaper",
+        "right": "much cheaper",
+        "why": "very doesn't go with comparatives."
+      },
+      {
+        "wrong": "as big than",
+        "right": "as big as",
+        "why": "as … as."
+      }
+    ]
+  },
+  {
+    "id": "b1-v-lifestyle",
+    "unitId": "b1-u12",
+    "level": "B1",
+    "category": "vocabulary",
+    "skill": "vocabulary",
+    "version": 1,
+    "title": "Health and lifestyle",
+    "minutes": 14,
+    "objective": "Talk about diet, exercise, sleep and stress.",
+    "sections": [
+      {
+        "heading": "Healthy habits",
+        "en": "a balanced diet · regular exercise · get enough sleep · cut down on (sugar) · give up (smoking) · stay hydrated.",
+        "examples": [
+          "I'm trying to cut down on sugar.",
+          "Regular exercise reduces stress."
+        ]
+      },
+      {
+        "heading": "Problems",
+        "en": "be overweight · lack of sleep · stress · junk food · a sedentary lifestyle.",
+        "fr": "Sujet fréquent à l'IELTS Speaking Part 1 et 3.",
+        "examples": [
+          "A sedentary lifestyle can cause health problems."
+        ]
+      }
+    ],
+    "vocab": [
+      {
+        "id": "b1ls-v1",
+        "word": "balanced diet",
+        "ipa": "/ˈbælənst ˈdaɪət/",
+        "pos": "noun",
+        "definition": "eating the right mix of foods",
+        "fr": "alimentation équilibrée",
+        "example": "A balanced diet includes vegetables.",
+        "context": "Health"
+      },
+      {
+        "id": "b1ls-v2",
+        "word": "cut down on",
+        "ipa": "/kʌt daʊn ɒn/",
+        "pos": "phrasal verb",
+        "definition": "to reduce",
+        "fr": "réduire",
+        "example": "Cut down on salt.",
+        "context": "Habits"
+      },
+      {
+        "id": "b1ls-v3",
+        "word": "sedentary",
+        "ipa": "/ˈsedntri/",
+        "pos": "adjective",
+        "definition": "involving a lot of sitting",
+        "fr": "sédentaire",
+        "example": "Office work is sedentary.",
+        "context": "Lifestyle"
+      }
+    ],
+    "practice": [
+      {
+        "id": "b1ls-p1",
+        "type": "mcq",
+        "prompt": "Reduce = ___",
+        "options": [
+          "cut down on",
+          "give up",
+          "put on"
+        ],
+        "answer": 0,
+        "explanation": "cut down on = reduce."
+      },
+      {
+        "id": "b1ls-p2",
+        "type": "mcq",
+        "prompt": "Unhealthy fast food:",
+        "options": [
+          "junk food",
+          "diet",
+          "fitness"
+        ],
+        "answer": 0,
+        "explanation": "Junk food = unhealthy fast food."
+      }
+    ],
+    "quiz": [
+      {
+        "id": "b1ls-q1",
+        "type": "mcq",
+        "prompt": "Stop completely:",
+        "options": [
+          "give up",
+          "cut down",
+          "take up",
+          "keep up"
+        ],
+        "answer": 0,
+        "explanation": "give up = stop."
+      },
+      {
+        "id": "b1ls-q2",
+        "type": "gap",
+        "prompt": "Drink water to stay ___.",
+        "accepted": [
+          "hydrated"
+        ],
+        "explanation": "stay hydrated."
+      },
+      {
+        "id": "b1ls-q3",
+        "type": "truefalse",
+        "prompt": "A sedentary lifestyle involves a lot of physical activity.",
+        "answer": false,
+        "explanation": "Sedentary = mostly sitting."
+      },
+      {
+        "id": "b1ls-q4",
+        "type": "mcq",
+        "prompt": "Eating the right mix of foods:",
+        "options": [
+          "a balanced diet",
+          "a junk diet",
+          "fast food",
+          "a big meal"
+        ],
+        "answer": 0,
+        "explanation": "a balanced diet."
+      },
+      {
+        "id": "b1ls-q5",
+        "type": "mcq",
+        "prompt": "Not sleeping enough = a ___ of sleep.",
+        "options": [
+          "lack",
+          "loss",
+          "less",
+          "few"
+        ],
+        "answer": 0,
+        "explanation": "lack of sleep."
+      }
+    ],
+    "rememberErrors": [
+      {
+        "wrong": "I make sport every day.",
+        "right": "I do exercise / play sport every day.",
+        "why": "Not make."
+      },
+      {
+        "wrong": "I want to stop to smoke.",
+        "right": "I want to stop smoking.",
+        "why": "stop + -ing = quit."
       }
     ]
   }
